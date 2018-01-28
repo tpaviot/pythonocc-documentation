@@ -1,5 +1,5 @@
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = "Open CASCADE Technology"
+PROJECT_NAME           = "pythonOCC"
 PROJECT_BRIEF          = 
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = English
