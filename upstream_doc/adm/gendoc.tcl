@@ -671,7 +671,7 @@ proc OCCDoc_MakeDoxyfile {docType outDir tagFileDir {doxyFileName} {generatorMod
       set title "OCCT [$modules:name]"
       set name $modules
     } else {
-      set title "Open CASCADE Technology"
+      set title "pythonOCC"
       set name OCCT
     }
 
@@ -705,8 +705,8 @@ proc OCCDoc_MakeDoxyfile {docType outDir tagFileDir {doxyFileName} {generatorMod
 
     set doxyFile [open $doxyFileName "a"]
   
-    puts $doxyFile "PROJECT_NAME           = \"$title\""
-    puts $doxyFile "PROJECT_NUMBER         = $occt_version"
+    puts $doxyFile "PROJECT_NAME           = pythonOCC"
+    puts $doxyFile "PROJECT_NUMBER         = 0.18.2"
     puts $doxyFile "OUTPUT_DIRECTORY       = $outDir/."
     puts $doxyFile "GENERATE_TAGFILE       = $outDir/${name}.tag"
 
@@ -752,9 +752,9 @@ proc OCCDoc_MakeDoxyfile {docType outDir tagFileDir {doxyFileName} {generatorMod
   } elseif { $docType == "OVERVIEW" } {
 
     # Add common options for generation of Overview and User Guides
-    puts $doxyFile "PROJECT_NUMBER         = $occt_version"
+    puts $doxyFile "PROJECT_NUMBER         = 0.18.2"
     puts $doxyFile "OUTPUT_DIRECTORY       = $outDir/."
-    puts $doxyFile "PROJECT_LOGO           = $inputDir/resources/occ_logo.png"
+    puts $doxyFile "PROJECT_LOGO           = $inputDir/resources/pythonocc_logo.png"
 
     set PARAM_INPUT "INPUT                 ="
     set PARAM_IMAGEPATH "IMAGE_PATH        = $inputDir/resources/ "
