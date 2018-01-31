@@ -5,6 +5,7 @@
 % Packages required by doxygen
 \usepackage{calc}
 \usepackage{doxygen}
+\usepackage{listings}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage{makeidx}
@@ -60,6 +61,15 @@
 }
 \makeatother
 
+% Used by @code ... @endcode
+\renewenvironment{DoxyCode}{%
+  \par%
+  \largesize%
+  \begin{alltt}%
+}{%
+  \end{alltt}%
+  \normalsize%
+}
 % Headers & footers
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
