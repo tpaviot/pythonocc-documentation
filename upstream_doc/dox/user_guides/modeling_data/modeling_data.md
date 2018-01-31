@@ -59,21 +59,21 @@ https://github.com/tpaviot/pythonocc-documentation.
 pythonocc Topology allows accessing and manipulating data of objects  without dealing with their 2D or 3D representations. Whereas pythonocc Geometry provides a description of objects in terms of coordinates or parametric values, Topology describes data structures of objects in parametric space. These descriptions use location in and restriction of parts of this space. 
 
 Topological library allows you to build pure topological data structures. Topology defines relationships between simple geometric entities. In this way, you can model complex shapes as assemblies of simpler entities. Due to a built-in non-manifold (or mixed-dimensional) feature, you can build models mixing:
-  * 0D entities such as points; 
-  * 1D entities such as curves; 
-  * 2D entities such as surfaces; 
+  * 0D entities such as points,
+  * 1D entities such as curves, 
+  * 2D entities such as surfaces,
   * 3D entities such as volumes. 
 
 You can, for example, represent a single object made of several distinct bodies containing embedded curves and surfaces connected or non-connected to an outer boundary.
 
 Abstract topological data structure describes a basic entity - a shape, which can be divided into the following component topologies:
-  * Vertex - a zero-dimensional shape corresponding to a point in geometry; 
-  * Edge - a shape corresponding to a curve, and bound by a vertex at each extremity;
-  * Wire - a sequence of edges connected by their vertices; 
-  * Face - part of a plane (in 2D geometry) or a surface (in 3D geometry) bounded by a closed wire;
-  * Shell - a collection of faces connected by some edges of their wire boundaries; 
-  * Solid - a part of 3D space bound by a shell; 
-  * Compound solid - a collection of solids. 
+  * vertex - a zero-dimensional shape corresponding to a point in geometry,
+  * edge - a shape corresponding to a curve, and bound by a vertex at each extremity,
+  * wire - a sequence of edges connected by their vertices,
+  * face - part of a plane (in 2D geometry) or a surface (in 3D geometry) bounded by a closed wire,
+  * shell - a collection of faces connected by some edges of their wire boundaries,
+  * solid - a part of 3D space bound by a shell,
+  * compound solid - a collection of solids. 
 
 The wire and the solid can be either infinite or closed.
 
@@ -84,24 +84,24 @@ Topology defines the relationship between simple geometric entities, which can t
 Abstract Topology is provided by six modules. 
 The first three modules describe the topological data structure used in pythonocc:
 
-  * <i>TopAbs</i> module provides general resources for topology-driven applications. It contains enumerations that are used to describe basic topological notions: topological shape, orientation and state. It also provides methods to manage these enumerations.
-  * <i>TopLoc</i> module provides resources to handle 3D local coordinate systems: <i>Datum3D</i>and <i>Location</i>. <i>Datum3D</i> describes an elementary coordinate system, while <i>Location</i> comprises a series of elementary coordinate systems.
+  * <i>TopAbs</i> module provides general resources for topology-driven applications. It contains enumerations that are used to describe basic topological notions: topological shape, orientation and state. It also provides methods to manage these enumerations,
+  * <i>TopLoc</i> module provides resources to handle 3D local coordinate systems: <i>Datum3D</i>and <i>Location</i>. <i>Datum3D</i> describes an elementary coordinate system, while <i>Location</i> comprises a series of elementary coordinate systems,
   * <i>TopoDS</i> module describes classes to model and build data structures that are purely topological.
 
 Three additional modules provide tools to access and manipulate this abstract topology:
 
-  * <i>TopTools</i> module provides basic tools to use on topological data structures.
-  * <i>TopExp</i> module provides classes to explore and manipulate the topological data structures described in the TopoDS module.
+  * <i>TopTools</i> module provides basic tools to use on topological data structures,
+  * <i>TopExp</i> module provides classes to explore and manipulate the topological data structures described in the TopoDS module,
   * <i>BRepTools</i> module provides classes to explore, manipulate, read and write BRep data structures. These more complex data structures combine topological descriptions with additional geometric information, and include rules for evaluating equivalence of different possible representations of the same object, for example, a point.
 
 @subsection occt_modat_5_1  Shape Location
 
 A local coordinate system can be viewed as either of the following: 
-- A right-handed trihedron with an origin and three orthonormal vectors. The *gp_Ax2* module corresponds to this definition. 
-- A transformation of a +1 determinant, allowing the transformation of coordinates between local and global references frames. This corresponds to the *gp_Trsf*. 
+- a right-handed trihedron with an origin and three orthonormal vectors. The *gp_Ax2* module corresponds to this definition,
+- a transformation of a +1 determinant, allowing the transformation of coordinates between local and global references frames. This corresponds to the *gp_Trsf*. 
 
 *TopLoc* module distinguishes two notions: 
-- *TopLoc_Datum3D* class provides the elementary reference coordinate, represented by a right-handed orthonormal system of axes or by a right-handed unitary transformation. 
+- *TopLoc_Datum3D* class provides the elementary reference coordinate, represented by a right-handed orthonormal system of axes or by a right-handed unitary transformation, 
 - *TopLoc_Location* class provides the composite reference coordinate made from elementary ones. It is a marker composed of a chain of references to elementary markers. The resulting cumulative transformation is stored in order to avoid recalculating the sum of the transformations for the whole list. 
 
 
@@ -131,21 +131,21 @@ Change of coordinates
 @subsection occt_modat_5_2 Naming shapes, sub-shapes, their orientation and state
 
 The *TopAbs* module provides general enumerations describing the basic concepts of topology and methods to handle these enumerations. It contains no classes. This module has been separated from the rest of the topology because the notions it contains are sufficiently general to be used by all topological tools. This avoids redefinition of enumerations by remaining independent of modeling resources. The TopAbs module defines three notions: 
-- the shape type: *TopAbs_ShapeEnum*
-- the shape orientation: *TopAbs_Orientation*
-- the shape state: *StateTopAbs_State* 
+- the shape type: *TopAbs_ShapeEnum*,
+- the shape orientation: *TopAbs_Orientation*,
+- the shape state: *StateTopAbs_State* .
 
 @subsubsection occt_modat_5_2_1 Topological types
 
 TopAbs contains the *TopAbs_ShapeEnum* enumeration,which lists the different topological types: 
-- TopAbs_COMPOUND: a group of any type of topological objects.
-- TopAbs_COMPSOLID: a composite solid is a set of solids connected by their faces. It expands the notions of WIRE and SHELL to solids.
-- TopAbs_SOLID: a part of space limited by shells. It is three dimensional.
-- TopAbs_SHELL: a set of faces connected by their edges. A shell can be open or closed.
-- TopAbs_FACE: in 2D it is a part of a plane; in 3D it is a part of a surface. Its geometry is constrained (trimmed) by contours. It is two dimensional.
-- TopAbs_WIRE: a set of edges connected by their vertices. It can be an open or closed contour depending on whether the edges are linked or not.
-- TopAbs_EDGE: a topological element corresponding to a restrained curve. An edge is generally limited by vertices. It has one dimension.
-- TopAbs_VERTEX: a topological element corresponding to a point. It has zero dimension.
+- TopAbs_COMPOUND: a group of any type of topological objects,
+- TopAbs_COMPSOLID: a composite solid is a set of solids connected by their faces. It expands the notions of WIRE and SHELL to solids,
+- TopAbs_SOLID: a part of space limited by shells. It is three dimensional,
+- TopAbs_SHELL: a set of faces connected by their edges. A shell can be open or closed,
+- TopAbs_FACE: in 2D it is a part of a plane; in 3D it is a part of a surface. Its geometry is constrained (trimmed) by contours. It is two dimensional,
+- TopAbs_WIRE: a set of edges connected by their vertices. It can be an open or closed contour depending on whether the edges are linked or not,
+- TopAbs_EDGE: a topological element corresponding to a restrained curve. An edge is generally limited by vertices. It has one dimension,
+- TopAbs_VERTEX: a topological element corresponding to a point. It has zero dimension,
 - TopAbs_SHAPE: a generic term covering all of the above.
 
 A topological model can be considered as a graph of objects with adjacency relationships. When modeling a part in 2D or 3D space it must belong to one of the categories listed in the ShapeEnum enumeration. The TopAbsmodule lists all the objects, which can be found in any model. It cannot be extended but a subset can be used. For example, the notion of solid is useless in 2D. 
@@ -157,9 +157,9 @@ The terms of the enumeration appear in order from the most complex to the most s
 @subsubsection occt_modat_5_2_2 Orientation
 
 The notion of orientation is represented by the *TopAbs_Orientation* enumeration. Orientation is a generalized notion of the sense of direction found in various modelers. This is used when a shape limits a geometric domain; and is closely linked to the notion of boundary. The three cases are the following: 
-- Curve limited by a vertex. 
-- Surface limited by an edge. 
-- Space limited by a face. 
+- curve limited by a vertex,
+- surface limited by an edge,
+- space limited by a face. 
 
 In each case the topological form used as the boundary of a geometric domain of a higher dimension defines two local regions of which one is arbitrarily considered as the *default region*. 
 
@@ -193,7 +193,13 @@ The notion of orientation is a very general one, and it can be used in any conte
 
 Along with the Orientation enumeration the *TopAbs* module defines four methods:
 
-TODO ??
+- *topabs_Complement*,
+
+- *topabs_Compose*,
+
+- *topabs_Print*,
+
+- *topabs_Reverse*.
 
 @subsubsection occt_modat_5_2_3 State
 
@@ -302,7 +308,6 @@ def process(a_shape):
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-
 @subsection occt_modat_5_4 Exploration of Topological Data Structures
 
 The *TopExp* module provides tools for exploring the data structure described with the *TopoDS* module. Exploring a topological structure means finding all sub-objects of a given type, for example, finding all the faces of a solid. 
@@ -367,74 +372,15 @@ The Explorer presumes that objects contain only objects of an equal or inferior 
 
 The *MapShapes* method from the *topexp* class allows filling a Map. An exploration using the *TopExp_Explorer* class can visit an object more than once if it is referenced more than once. For example, an edge of a solid is generally referenced by two faces. To process objects only once, they have to be placed in a Map. 
 
-In the following example all  faces and all  edges of an object are drawn in accordance with the following rules: 
-- the faces are represented by a network of *NbIso* iso-parametric lines with *FaceIsoColor* color,
-- the edges are drawn in a color, which indicates the number of faces sharing the edge:
-  - *FreeEdgeColor* for edges, which do not belong to a face (i.e. wireframe element),
-  - *BorderEdgeColor* for an edge belonging to a single face,
-  - *SharedEdgeColor* for an edge belonging to more than one face,
-- the methods *DrawEdge* and *DrawFaceIso* are also available to display individual edges and faces. 
-
-The following steps are performed: 
-1. Storing the edges in a map and create in parallel an array of integers to count the number of faces sharing the edge. This array is initialized to zero. 
-2. Exploring the faces. Each face is drawn. 
-3. Exploring the edges and for each of them increment the counter of faces in the array. 
-4. From the Map of edges, drawing each edge with the color corresponding to the number of faces. 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.py}
-  void DrawShape ( const TopoDS_Shape& aShape, 
-  const Standard_Integer nbIsos, 
-  const Color FaceIsocolor, 
-  const Color FreeEdgeColor, 
-  const Color BorderEdgeColor, 
-  const Color SharedEdgeColor) 
-  { 
-    // Store the edges in aMap. 
-    TopTools_IndexedMapOfShape edgemap; 
-    TopExp::MapShapes(aShape,TopAbs_EDGE,edgeMap); 
-    // Create an array set to zero. 
-    TColStd_Array1OfInteger faceCount(1,edgeMap.Extent()); 
-    faceCount.Init (0); 
-    // Explore the faces. 
-    TopExp_Explorer expFace(aShape,TopAbs_FACE); 
-    while (expFace.More()) { 
-      //Draw the current face. 
-      DrawFaceIsos(TopoDS::Face(expFace.Current()),nbIsos,FaceIsoColor); 
-      // Explore the edges ofthe face. 
-      TopExp_Explorer expEdge(expFace.Current(),TopAbs_EDGE); 
-      while (expEdge.More()) { 
-        //Increment the face count for this edge. 
-        faceCount(edgemap.FindIndex(expEdge.Current()))++; 
-        expEdge.Next(); 
-      } 
-      expFace.Next(); 
-    } 
-    //Draw the edges of theMap 
-    Standard_Integer i; 
-    for (i=1;i<=edgemap.Extent();i++) { 
-      switch (faceCount(i)) { 
-        case 0 : 
-        DrawEdge(TopoDS::Edge(edgemap(i)),FreeEdgeColor); 
-        break; 
-        case 1 : 
-        DrawEdge(TopoDS::Edge(edgemap(i)),BorderEdgeColor); 
-        break; 
-        default : 
-        DrawEdge(TopoDS::Edge(edgemap(i)),SharedEdgeColor); 
-        break; 
-      }
-    } 
-  } 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 @subsection occt_modat_5_5 Lists and Maps of Shapes
 
-*TopTools** module contains tools for exploiting the *TopoDS* data structure. It is an instantiation of the tools from *TCollection* module with the Shape classes of *TopoDS*. 
+*TopTools* module contains tools for exploiting the *TopoDS* data structure. It is an instantiation of the tools from *TCollection* module with the Shape classes of *TopoDS*. 
 
 
-* *TopTools_Array1OfShape, HArray1OfShape* -  Instantiation of the *TCollection_Array1* and *TCollection_HArray1* with *TopoDS_Shape*. 
-* *TopTools_SequenceOfShape* - Instantiation of the *TCollection_Sequence* with *TopoDS_Shape*. 
-* *TopTools_MapOfShape* - Instantiation of the *TCollection_Map*. Allows the construction of sets of shapes. 
+* *TopTools_Array1OfShape, HArray1OfShape* -  Instantiation of the *TCollection_Array1* and *TCollection_HArray1* with *TopoDS_Shape*,
+* *TopTools_SequenceOfShape* - Instantiation of the *TCollection_Sequence* with *TopoDS_Shape*,
+* *TopTools_MapOfShape* - Instantiation of the *TCollection_Map*. Allows the construction of sets of shapes,
 * *TopTools_IndexedMapOfShape* -  Instantiation of the *TCollection_IndexedMap*. Allows the construction of tables of shapes and other data structures. 
 
 With a *TopTools_Map*, a set of references to Shapes can be kept without duplication. 
@@ -464,37 +410,40 @@ Thus for a contour of four edges it should count 1 wire + 4 edges +4 vertices wi
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.py}
-  #include <TopoDS_Iterator.hxx> 
-  #include <TopTools_MapOfShape.hxx> 
+def map_shapes(a_shape, a_map):
+  """
+  a_shape: a TopoDS_Shape
+  a_map: a TopTools_MapOfShape
+  """
+  # This is a recursive auxiliary method. It stores all subShapes of aShape in a Map.
+  if a_map.Add(a_shape):
+      ## Add returns True if aShape was not already in the Map. 
+      it = TopoDS_Iterator()
+      it.Initiliaze(a_shape)
+      while it.More():
+         map_shapes(it.Value(), a_map)
+         it.Next()
 
-  void MapShapes(const TopoDS_Shape& aShape, 
-  TopTools_MapOfShape& aMap)
-  { 
-    //This is a recursive auxiliary method. It stores all subShapes of aShape in a Map.
-    if (aMap.Add(aShape)) { 
-      //Add returns True if aShape was not already in the Map. 
-      TopoDS_Iterator It; 
-      for (It.Initialize(aShape);It.More();It.Next()){ 
-        MapShapes(It.Value(),aMap); 
-      } 
-    } 
-  }
 
-  Standard_Integer Size(const TopoDS_Shape& aShape) 
-  { 
-    // Store Shapes in a Mapand return the size. 
-    TopTools_MapOfShape M; 
-    MapShapes(aShape,M); 
-    return M.Extent();
-  }
+def size(a_shape):
+    """
+    a_shape: a TopoDS_Shape
+    """
+    # Store Shapes in a Mapand return the size. 
+    m = TopTools_MapOfShape()
+    map_shapes(a_shape, m)
+    return m.Extent()
+
+
+sh = ... # any TopoDS_Shape
+print(size(sh))
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Note** For more details about Maps please, refer to the TCollection documentation. (Foundation Classes Reference Manual) 
 
-The following example is more ambitious and writes a program which copies a data structure using an *IndexedMap*. The copy is an identical structure but it shares nothing with the original. The principal algorithm is as follows: 
-- All Shapes in the structure are put into an *IndexedMap*. 
-- A table of Shapes is created in parallel with the map to receive the copies. 
-- The structure is copied using the auxiliary recursive function,which copies from the map to the array. 
+The following example is more ambitious and writes a program which copies a data structure using an *TopTools_IndexedMap*. The copy is an identical structure but it shares nothing with the original. The principal algorithm is as follows: 
+- all Shapes in the structure are put into an *TopTools_IndexedMap*,
+- a table of Shapes is created in parallel with the map to receive the copies,
+- the structure is copied using the auxiliary recursive function,which copies from the map to the array. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.py}
   def copy(a_shape, a_builder):
@@ -541,26 +490,26 @@ For example, in the wire in the image we want to recuperate the edges in the ord
 @section occt_modat_1 Geometry Utilities
 
 Geometry Utilities provide the following services: 
-  * Creation of shapes by interpolation and approximation 
-  * Direct construction of shapes 
-  * Conversion of curves and surfaces to BSpline curves and surfaces 
-  * Computation of the coordinates of points on 2D and 3D curves 
-  * Calculation of extrema between shapes. 
+  * creation of shapes by interpolation and approximation,
+  * direct construction of shapes,
+  * conversion of curves and surfaces to BSpline curves and surfaces,
+  * computation of the coordinates of points on 2D and 3D curves,
+  * calculation of extrema between shapes. 
 
 @subsection occt_modat_1_1 Interpolations and Approximations
 
 In modeling, it is often required to approximate or interpolate points into curves and surfaces. In interpolation, the process is complete when the curve or surface passes through all the points; in approximation, when it is as close to these points as possible.
 
 Approximation of Curves and Surfaces groups together a variety of functions used in 2D and 3D geometry for:
-  * the interpolation of a set of 2D points using a 2D BSpline or Bezier curve;
-  * the approximation of a set of 2D points using a 2D BSpline or Bezier curve;
-  * the interpolation of a set of 3D points using a 3D BSpline or Bezier curve, or a BSpline surface;
+  * the interpolation of a set of 2D points using a 2D BSpline or Bezier curve,
+  * the approximation of a set of 2D points using a 2D BSpline or Bezier curve,
+  * the interpolation of a set of 3D points using a 3D BSpline or Bezier curve, or a BSpline surface,
   * the approximation of a set of 3D points using a 3D BSpline or Bezier curve, or a BSpline surface.
 
 You can program approximations in two ways:
 
-  * Using high-level functions, designed to provide a simple method for obtaining approximations with minimal programming,
-  * Using low-level functions, designed for users requiring more control over the approximations.
+  * using high-level functions, designed to provide a simple method for obtaining approximations with minimal programming,
+  * using low-level functions, designed for users requiring more control over the approximations.
 
 @subsubsection occt_modat_1_1_1 Analysis of a set of points
 
@@ -588,7 +537,7 @@ interp = GeomAPI_Interpolate(points)
 
 From this object, the BSpline curve may be requested as follows: 
 ~~~~~{.py}
-C = interp.Curve()
+curve = interp.Curve()
 ~~~~~
 
 #### 2D Approximation
@@ -608,7 +557,7 @@ approx = GeomAPI_PointsToBSpline(points, deg_min, deg_max, continuity, tol)
 From this object, the BSpline curve may be requested as follows: 
 
 ~~~~~{.py}
-K = approx.Curve()
+curve = approx.Curve()
 ~~~~~
 
 #### Surface Approximation 
@@ -620,13 +569,13 @@ The class **PointsToBSplineSurface** from GeomAPI module allows building a BSpli
 Modules *AppDef* and *AppParCurves* provide low-level functions, allowing more control over the approximations.
 
 The low-level functions provide a second API with functions to:
-  * Define compulsory tangents for an approximation. These tangents have origins and extremities.
-  * Approximate a set of curves in parallel to respect identical parameterization.
-  * Smooth approximations. This is to produce a faired curve.
+  * define compulsory tangents for an approximation. These tangents have origins and extremities,
+  * approximate a set of curves in parallel to respect identical parameterization,
+  * smooth approximations. This is to produce a faired curve.
 
 You can also find functions to compute:
-  * The minimal box which includes a set of points
-  * The mean plane, line or point of a set of coplanar, collinear or coincident points.
+  * the minimal box which includes a set of points,
+  * the mean plane, line or point of a set of coplanar, collinear or coincident points.
 
 #### Approximation by multiple point constraints
 
@@ -642,8 +591,8 @@ The following low level services are provided:
   @image latex /user_guides/modeling_data/images/modeling_data_image004.png "Definition of a MultiLine using Multiple Point Constraints"
 
   In this image:
-  * \f$Pi\f$, \f$Qi\f$, \f$Ri\f$ ... \f$Si\f$ can be 2D or 3D points. 
-  * Defined as a group: \f$Pn\f$, \f$Qn\f$, \f$Rn\f$, ... \f$Sn\f$ form a MultipointConstraint. They possess the same passage, tangency and curvature constraints. 
+  * \f$Pi\f$, \f$Qi\f$, \f$Ri\f$ ... \f$Si\f$ can be 2D or 3D points, 
+  * defined as a group: \f$Pn\f$, \f$Qn\f$, \f$Rn\f$, ... \f$Sn\f$ form a MultipointConstraint. They possess the same passage, tangency and curvature constraints,
   * \f$P1\f$, \f$P2\f$, ... \f$Pn\f$, or the \f$Q\f$, \f$R\f$, ... or \f$S\f$ series represent the lines to be approximated. 
 
 * Definition of a set of point constraints:
@@ -668,7 +617,7 @@ The class *AppDef_Variational* allows fairing the approximation curve to a given
 *AppParCurves* module provides low-level tools to allow parallel approximation of groups of points into Bezier or B-Spline curve with parametric or geometric constraints, such as a requirement for the curve to pass through given points, or to have a given tangency or curvature at a particular point. 
 
 The algorithms used include: 
-- the least squares method 
+- the least squares method,
 - a search for the best approximation within a given tolerance value. 
 
 The following low-level services are provided: 
@@ -780,9 +729,9 @@ It is possible to create a point using a *gce* module class, then question it to
 point1 = ... # any gp_Pnt2d
 point2 = ... # any gp_Pnt2d
 
-l = gce_MakeLin2d(point1, point2); 
+l = gce_MakeLin2d(point1, point2)
 if l.Status() == gce_Done:
-  l2d = L.Value() # returns a gp_Lin2d
+  l2d = l.Value() # returns a gp_Lin2d
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -825,11 +774,12 @@ The *Value* method for following classes return objects of type *Geom_TrimmedCur
 @subsection occt_modat_1_3 Conversion to and from BSplines
 
 The conversion to and from BSplines component has two distinct purposes:
-  * Firstly, it provides a homogeneous formulation which can be used to describe any curve or surface. 
+  * firstly, it provides a homogeneous formulation which can be used to describe any curve or surface. 
   This is useful for writing algorithms for a single data structure model. 
   The BSpline formulation can be used to represent most basic geometric objects provided 
-  by the components which describe geometric data structures ("Fundamental Geometry Types", "2D Geometry Types" and "3D Geometry Types" components).
-  * Secondly, it can be used to divide a BSpline curve or surface into a series of curves or surfaces, 
+  by the components which describe geometric data structures ("Fundamental Geometry Types", "2D Geometry Types" and "3D Geometry Types" components),
+
+  * secondly, it can be used to divide a BSpline curve or surface into a series of curves or surfaces, 
   thereby providing a higher degree of continuity. This is useful for writing algorithms 
   which require a specific degree of continuity in the objects to which they are applied. 
   Discontinuities are situated on the boundaries of objects only.
@@ -945,7 +895,7 @@ In particular, <i>Geom2d</i> module provides classes for:
 
 The following objects are available: 
 - point, 
-- Cartesian point, 
+- cartesian point, 
 - vector,
 - direction, 
 - vector with magnitude, 
@@ -959,7 +909,7 @@ The following objects are available:
 Before creating a geometric object, it is necessary to decide how the object is handled. 
 The objects provided by *Geom2d* module are handled by reference rather than by value. Copying an instance copies the handle, not the object, so that a change to one instance is reflected in each occurrence of it. 
 If a set of object instances is needed rather than a  single object instance,  *TColGeom2d* module can be used. This module provides standard and frequently used instantiations of one-dimensional arrays and sequences for curves from *Geom2d* module. All objects are available in two versions: 
-- handled by reference and 
+- handled by reference,
 - handled by value. 
 
 The key characteristic of <i>Geom2d</i> curves is that they are parameterized. 
@@ -997,25 +947,25 @@ The *Geom* module defines geometric objects in 3d space and contains all basic g
 
 In particular, it provides classes for:
  * description of points, vectors, curves and surfaces,
- * their positioning in 3D space using axis or coordinate systems, and
+ * their positioning in 3D space using axis or coordinate systems,
  * their geometric transformation, by applying translations, rotations, symmetries, scaling transformations and combinations thereof.
 
 The following non-persistent and reference-handled objects are available: 
-- Point 
-- Cartesian point 
-- Vector
-- Direction
-- Vector with magnitude 
-- Axis
-- Curve
-- Line 
-- Conic: circle, ellipse, hyperbola, parabola 
-- Offset curve
-- Elementary surface: plane, cylinder, cone, sphere, torus
-- Bounded curve: trimmed curve, NURBS curve, Bezier curve
-- Bounded surface: rectangular trimmed surface, NURBS surface,Bezier surface
-- Swept surface: surface of linear extrusion, surface of revolution
-- Offset surface. 
+- point,
+- cartesian point,
+- vector,
+- direction,
+- vector with magnitude,
+- axis,
+- curve,
+- line,
+- conic: circle, ellipse, hyperbola, parabola,
+- offset curve,
+- elementary surface: plane, cylinder, cone, sphere, torus,
+- bounded curve: trimmed curve, NURBS curve, Bezier curve,
+- bounded surface: rectangular trimmed surface, NURBS surface, Bezier surface,
+- swept surface: surface of linear extrusion, surface of revolution,
+- offset surface. 
 
 The key characteristic of *Geom* curves and surfaces is that they are parameterized.
 Each class provides functions to work with the parametric equation of the curve or
@@ -1097,7 +1047,7 @@ is defined by its u parameter value on a curve, and its \f$(u, v)\f$ parameter v
 
 It is possible to query the same local properties for points as mentioned above, and additionally for 2D curves:
 
-  * the points corresponding to a minimum or a maximum of curvature;
+  * the points corresponding to a minimum or a maximum of curvature,
   * the inflection points.
   
   
@@ -1107,7 +1057,7 @@ To check the concavity of a surface, proceed as follows:
 
   1. Sample the surface and compute at each point the Gaussian curvature.
   2. If the value of the curvature changes of sign, the surface is concave or convex depending on the point of view.
-  3. To compute a Gaussian curvature, use the class <i>SLprops</i> from <i>GeomLProp</i>, which instantiates the generic class <i>SLProps</i>from <i>LProp</i> and use the method <i>GaussianCurvature</i>.
+  3. To compute a Gaussian curvature, use the class <i>GeomLProp_SLprops</i>, which instantiates the generic class <i>LProp_SLProps</i> and use the method <i>GaussianCurvature</i>.
   
 @subsection occt_modat_4_3 Global Properties of Shapes
 
@@ -1125,42 +1075,42 @@ The global properties computed for a system are :
 Geometric systems are generally defined as shapes. Depending on the way they are analyzed, these shapes will give properties of:
 
   * lines induced from the edges of the shape,
-  * surfaces induced from the faces of the shape, or
+  * surfaces induced from the faces of the shape,
   * volumes induced from the solid bounded by the shape.
 
 The global properties of several systems may be brought together to give the global properties of the system composed of the sum of all individual systems.
 
 The Global Properties of Shapes component is composed of:
-* seven functions for computing global properties of a shape: one function for lines, two functions for surfaces and four functions for volumes. The choice of functions depends on input parameters and algorithms used for computation (<i>BRepGProp</i> global functions),
+* seven functions for computing global properties of a shape: one function for lines, two functions for surfaces and four functions for volumes. The choice of functions depends on input parameters and algorithms used for computation (<i>brepgprop_*</i> global functions),
 * a framework for computing global properties for a set of points (<i>GProp_PGProps</i>),
 * a general framework to bring together the global properties retained by several more elementary frameworks, and provide a general programming interface to consult computed global properties.
 
 Modules *GeomLProp* and *Geom2dLProp*  provide algorithms calculating the local properties of curves and surfaces
 
 A curve (for one parameter) has the following local properties: 
-- Point 
-- Derivative
-- Tangent 
-- Normal
-- Curvature
-- Center of curvature. 
+- point,
+- derivative,
+- tangent,
+- normal,
+- curvature,
+- center of curvature. 
 
 A surface (for two parameters \f$u\f$ and \f$v\f$) has the following local properties: 
-- point
-- derivative (for \f$u\f$ and \f$v\f$)
-- tangent line (for \f$u\f$ and \f$v\f$)
-- normal
-- max curvature 
-- min curvature 
-- main directions of curvature
-- mean curvature
-- Gaussian curvature
+- point,
+- derivative (for \f$u\f$ and \f$v\f$),
+- tangent line (for \f$u\f$ and \f$v\f$),
+- normal,
+- max curvature,
+- min curvature,
+- main directions of curvature,
+- mean curvature,
+- gaussian curvature.
 
-The following methods are available:
-* *CLProps* - calculates the local properties of a curve (tangency, curvature,normal); 
-* *CurAndInf2d* - calculates the maximum and minimum curvatures and the inflection points of 2d curves; 
-* *SLProps* - calculates the local properties of a surface (tangency, the normal and curvature). 
-* *Continuity* - calculates regularity at the junction of two curves. 
+Among others, the following classes/methods are available:
+* *GeomLProp_CLProps* - calculates the local properties of a curve (tangency, curvature,normal),
+* *Geom2dLProp_CurAndInf2d* - calculates the maximum and minimum curvatures and the inflection points of 2d curves,
+* *GeomLProp_SLProps* - calculates the local properties of a surface (tangency, the normal and curvature),
+* *Geom2dLProp_Curve2dTool.Continuity* - calculates regularity at the junction of two curves. 
 
 Note that the B-spline curve and surface are accepted but they are not cut into pieces of the desired continuity. It is the global continuity, which is seen. 
 
@@ -1173,25 +1123,23 @@ To do this, they simply get the services required of the analyzed  curve or surf
 For example, <i>Adaptor3d_Curve</i> is the abstract class which provides  the required services by an algorithm which uses any 3d curve.
 
 <i>GeomAdaptor</i> module provides interfaces:
-  * on a Geom curve;
-  * on a curve lying on a Geom surface;
-  * on a Geom surface;
+  * on a Geom curve,
+  * on a curve lying on a Geom surface,
+  * on a Geom surface.
 
 <i>Geom2dAdaptor</i> module provides interfaces :
   * on a <i>Geom2d</i> curve.
 
 <i>BRepAdaptor</i> module provides interfaces:
-  * on a Face
-  * on an Edge
+  * on a face,
+  * on an edge.
 
 When you write an algorithm which operates on geometric objects, use <i>Adaptor3d</i> (or <i>Adaptor2d</i>) objects. 
 
 As a result, you can use the algorithm with any kind of object, if you provide for this object an interface derived from *Adaptor3d* or *Adaptor2d*.
-These interfaces are easy to use: simply create an adapted curve or surface from a *Geom2d* curve, and then use this adapted curve as an argument for the algorithm? which requires it.
+These interfaces are easy to use: simply create an adapted curve or surface from a *Geom2d* curve, and then use this adapted curve as an argument for the algorithm which requires it.
 
 
 @section occt_modat_history History of this document:
 
-
 january 2018: first public release - tagged v0
-
