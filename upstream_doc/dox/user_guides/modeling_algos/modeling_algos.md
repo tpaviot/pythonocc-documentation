@@ -3,70 +3,115 @@ Modeling Algorithms  {#occt_user_guides__modeling_algos}
 
 @tableofcontents
 
-@section occt_modalg_1 Introduction
 
-This manual explains how  to use the Modeling Algorithms. It provides basic documentation on modeling  algorithms. For advanced information on Modeling Algorithms, see our <a href="http://www.opencascade.com/content/tutorial-learning">E-learning & Training</a> offerings.
+@section occt_modat_0 Introduction
 
-The Modeling Algorithms module brings together a  wide range of topological algorithms used in modeling. Along with these tools,  you will find the geometric algorithms, which they call. 
+@subsection label_about About this document
+
+The Modeling Algorithms modules brings together a  wide range of topological algorithms used in modeling. Along with these tools, you will find the geometric algorithms, which they call.
+
+@subsection label_credits Credits and license
+
+This manual was originally written by the <a href="http://www.opencascade.com">Open CASCADE company</a>. They're the dev team that developed OCC Technology (OCCT), the underlying c++ layer on which pythonocc ia based.
+
+This manual contains additions and modifications to fit with python specific syntax, and pythonocc usage in general. However, the basic concepts are the one available from OCCT. If you need further details related to OCC Technology, be aware that they offer commercial support and trainings, just check their <a href="http://www.opencascade.com/content/tutorial-learning">E-learning & Training</a> offerings. For your information, there is not any commercial agreement between the OCC Company and pythonocc development teams.
+
+This document is distributed under the terms of the GNU Lesser General Public License 
+(LGPL) version 2.1 with additional exception. Check the <a href="https://github.com/tpaviot/pythonocc-documentation/upstream_doc/LICENCES.md">license file</a> for more information.
+
+@subsection label_resources Online resources
+If you need pythonocc specific help, please refer to the following online resources:
+
+  * PythonOCC source code repository
+      https://github.com/tpaviot/pythonocc-core
+
+  * Mailing list
+       http://groups.google.com/group/pythonocc
+
+Finally, email \email{tpaviot@gmail.com} for any other request.
+
+@subsection typo Typographic conventions
+
+python code snippets use: lower_case convention for variable names and functions, CamelCase for classes and methods.
+Example:
+
+~~~~~{.py}
+def create_box():  # this is a function
+    my_box = BRepPrimAPI_MakeBox(10, 20, 30)  # a variable created from a Class
+    return my_box.Shape()  # calling a .Method
+
+a_box_shape = create_box()
+~~~~~
+
+In each code snippet, we assume that all required modules are loaded. For instance, in order to run the previous snippet, you have to import the BRepPrimAPI_Box class from the BRepPrimAPI module just before:
+
+~~~~~{.py}
+from OCC.BRepPrimAPI import BRepPrimAPI_MakeBox
+~~~~~
+
+@subsection improve Contribute improving this document
+
+The source code for this document is available in Doxygen mardkown format. Feel free to report issues, mistakes or submit patches using the issue tracker or pull request feature at:
+
+https://github.com/tpaviot/pythonocc-documentation.
+
 
 @section occt_modalg_2 Geometric Tools
 
 Open CASCADE Technology geometric tools provide algorithms to: 
-  * Calculate the intersection of two 2D curves, surfaces, or a 3D curve and a surface;
-  * Project points onto 2D and 3D curves, points onto surfaces, and 3D curves onto surfaces;
-  * Construct lines and circles from constraints; 
-  * Construct curves and surfaces from constraints; 
-  * Construct curves and surfaces by interpolation.
+  * calculate the intersection of two 2D curves, surfaces, or a 3D curve and a surface,
+  * project points onto 2D and 3D curves, points onto surfaces, and 3D curves onto surfaces,
+  * construct lines and circles from constraints,
+  * construct curves and surfaces from constraints,
+  * construct curves and surfaces by interpolation.
   
 @subsection occt_modalg_2_2 Intersections
 
-The Intersections component is used to compute intersections between 2D or 3D geometrical objects: 
-  * the intersections between two 2D curves;
-  * the self-intersections of a 2D curve;
-  * the intersection between a 3D curve and a surface;
+The Intersections component is used to compute intersections between 2D or 3D geometrical objects:
+  * the intersections between two 2D curves,
+  * the self-intersections of a 2D curve,
+  * the intersection between a 3D curve and a surface,
   * the intersection between two surfaces.
 
 The *Geom2dAPI_InterCurveCurve* class  allows the evaluation of the intersection points (*gp_Pnt2d*) between two  geometric curves (*Geom2d_Curve*) and the evaluation of the points  of self-intersection of a curve. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image003.png  "Intersection and self-intersection of curves"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image003.png  "Intersection and self-intersection of curves"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image003.png  "Intersection and self-intersection of curves"}
 
-In both cases, the  algorithm requires a value for the tolerance (Standard_Real) for the confusion  between two points. The default tolerance value used in all constructors is *1.0e-6.* 
+In both cases, the  algorithm requires a value for the tolerance (float) for the confusion  between two points. The default tolerance value used in all constructors is *1.0e-6.* 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image004.png "Intersection and tangent intersection"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image004.png "Intersection and tangent intersection"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image004.png "Intersection and tangent intersection"}
 
 The algorithm returns a  point in the case of an intersection and a segment in the case of tangent  intersection. 
 
 @subsubsection occt_modalg_2_2_1 Intersection of two curves
 
-*Geom2dAPI_InterCurveCurve* class may be instantiated for intersection of curves *C1* and *C2*.
-~~~~~
-Geom2dAPI_InterCurveCurve Intersector(C1,C2,tolerance); 
-~~~~~
-
-or for self-intersection of curve *C3*.
-~~~~~
-Geom2dAPI_InterCurveCurve Intersector(C3,tolerance); 
+*Geom2dAPI_InterCurveCurve* class may be instantiated for intersection of curves *curve_1* and *curve_2*.
+~~~~~{.py}
+intersector = Geom2dAPI_InterCurveCurve(curve_1, curve_2, tolerance)
 ~~~~~
 
+or for self-intersection of curve *curve_3*.
+~~~~~{.py}
+intersector = Geom2dAPI_InterCurveCurve(curve_C3, tolerance)
 ~~~~~
-Standard_Integer N = Intersector.NbPoints(); 
+
+~~~~~{.py}
+n = intersector.NbPoints()
 ~~~~~
 Calls the number of intersection points
 
 To select the desired intersection point, pass an integer index value in argument. 
-~~~~~
-gp_Pnt2d P = Intersector.Point(Index); 
+~~~~~{.py}
+point_2d = intersector.Point(Index)  # a gp_Pnt2d insance
 ~~~~~
 
 To call the number of intersection segments, use
-~~~~~
-Standard_Integer M = Intersector.NbSegments(); 
+~~~~~{.py}
+m = intersector.NbSegments() 
 ~~~~~
 
 To select the desired intersection segment pass integer index values in argument. 
-~~~~~
+~~~~~{.py}
 Handle(Geom2d_Curve) Seg1, Seg2; 
 Intersector.Segment(Index,Seg1,Seg2); 
 // if intersection of 2 curves 
@@ -76,8 +121,8 @@ Intersector.Segment(Index,Seg1);
 
 If you need access to a wider range of functionalities the following method will return the algorithmic  object for the calculation of intersections: 
 
-~~~~~
-Geom2dInt_GInter& TheIntersector = Intersector.Intersector(); 
+~~~~~{.py}
+the_intersector = intersector.Intersector() # returns a Geom2dInt_GInter instance
 ~~~~~
 
 @subsubsection occt_modalg_2_2_2 Intersection of Curves and Surfaces
@@ -85,49 +130,50 @@ Geom2dInt_GInter& TheIntersector = Intersector.Intersector();
 The *GeomAPI_IntCS* class  is used to compute the intersection points between a curve and a surface. 
 
 This class is  instantiated as follows: 
-~~~~~
-GeomAPI_IntCS Intersector(C, S); 
+~~~~~{.py}
+intersector = GeomAPI_IntCS(curve, surface)
 ~~~~~
 
 To call the number of intersection points, use:
-~~~~~
-Standard_Integer nb = Intersector.NbPoints(); 
-~~~~~
-
-
-~~~~~
-gp_Pnt& P = Intersector.Point(Index); 
+~~~~~{.py}
+nb = intersector.NbPoints()
 ~~~~~
 
-Where *Index* is an  integer between 1 and *nb*, calls the intersection points.
+
+~~~~~{.py}
+pnt = Intersector.Point(index)  # returns a gp_Pnt instance
+~~~~~
+
+Where *index* is an  integer between 1 and *nb*, calls the intersection points.
 
 @subsubsection occt_modalg_2_2_3 Intersection of two Surfaces
 The *GeomAPI_IntSS* class  is used to compute the intersection of two surfaces from *Geom_Surface* with  respect to a given tolerance. 
 
 This class is  instantiated as follows: 
-~~~~~
-GeomAPI_IntSS Intersector(S1, S2, Tolerance); 
+~~~~~{.py}
+intersector =  GeomAPI_IntSS(surface_1, surface_2, tolerance)
 ~~~~~
 Once the *GeomAPI_IntSS* object has been created, it can be interpreted. 
 
+Followig line calls the number of intersection curves.
+~~~~~{.py}
+nb = Intersector.NbLines()
 ~~~~~
-Standard_Integer nb = Intersector. NbLines(); 
-~~~~~
-Calls the number of intersection curves.
 
+
+~~~~~{.py}
+curve_handle = intersector.Line(index) # a Geom_Cuvre handle
 ~~~~~
-Handle(Geom_Curve) C = Intersector.Line(Index) 
-~~~~~
-Where *Index* is an  integer between 1 and *nb*, calls the intersection curves.
+Where *index* is an  integer between 1 and *nb*, calls the intersection curves.
 
 
 @subsection occt_modalg_2_3  Interpolations
 
-The Interpolation Laws component provides definitions of functions: <i> y=f(x) </i>.
+The Interpolation Laws component provides definitions of functions: *y=f(x)*.
 
 In particular, it provides definitions of:
   * a linear function,
-  * an <i> S </i> function, and
+  * an *S* function,
   * an interpolation function for a range of values.
 
 Such functions can be used to define, for example, the evolution law of a fillet along the edge of a shape.
@@ -137,35 +183,25 @@ The validity of the function built is never checked: the Law package does not kn
 @subsubsection occt_modalg_2_3_1 Geom2dAPI_Interpolate
 This class is used to  interpolate a BSplineCurve passing through an array of points. If tangency is  not requested at the point of interpolation, continuity will be *C2*. If  tangency is requested at the point, continuity will be *C1*. If  Periodicity is requested, the curve will be closed and the junction will be the  first point given. The curve will then have a continuity of *C1* only. 
 This class may be  instantiated as follows: 
-~~~~~
+~~~~~{.py}
 Geom2dAPI_Interpolate 
 (const  Handle_TColgp_HArray1OfPnt2d& Points, 
 const  Standard_Boolean PeriodicFlag, 
 const Standard_Real  Tolerance); 
 
-Geom2dAPI_Interpolate Interp(Points, Standard_False, 
-                                    Precision::Confusion()); 
+interp = Geom2dAPI_Interpolate(points, False, Precision.Confusion())
 ~~~~~
 
 
 It is possible to call the BSpline curve from the object defined  above it. 
-~~~~~
-Handle(Geom2d_BSplineCurve) C = Interp.Curve(); 
-~~~~~
-
-Note that the *Handle(Geom2d_BSplineCurve)* operator has been redefined by the method *Curve()*. Consequently, it is  unnecessary to pass via the construction of an intermediate object of the *Geom2dAPI_Interpolate* type and the following syntax is correct. 
-
-~~~~~
-Handle(Geom2d_BSplineCurve) C = 
-Geom2dAPI_Interpolate(Points, 
-    Standard_False, 
-    Precision::Confusion()); 
+~~~~~{.py}
+bspline_curve = interp.Curve() # a Geom2d_BSplineCurve handle
 ~~~~~
 
 @subsubsection occt_modalg_2_3_2 GeomAPI_Interpolate
 
 This class may be  instantiated as follows: 
-~~~~~
+~~~~~{.py}
 GeomAPI_Interpolate 
 (const  Handle_TColgp_HArray1OfPnt& Points, 
 const  Standard_Boolean PeriodicFlag, 
@@ -176,21 +212,14 @@ GeomAPI_Interpolate Interp(Points, Standard_False,
 ~~~~~
 
 It is possible to call the BSpline curve from the object defined  above it. 
-~~~~~
+~~~~~{.py}
 Handle(Geom_BSplineCurve) C = Interp.Curve(); 
 ~~~~~
-Note that the *Handle(Geom_BSplineCurve)* operator has been redefined by the method *Curve()*. Thus, it is unnecessary  to pass via the construction of an intermediate object of the *GeomAPI_Interpolate*  type and the following syntax is correct. 
-
-Handle(Geom_BSplineCurve) C = 
-	GeomAPI_Interpolate(Points,  
-						Standard_False,
-						1.0e-7); 
 
 Boundary conditions may  be imposed with the method Load. 
-~~~~~
-GeomAPI_Interpolate AnInterpolator 
-(Points, Standard_False, 1.0e-5); 
-AnInterpolator.Load (StartingTangent, EndingTangent); 
+~~~~~{.py}
+an_interpolator = GeomAPI_Interpolate(points, False, 1.0e-5) 
+an_interpolator.Load(starting_tangent, ending_tangent)
 ~~~~~
 
 @subsection occt_modalg_2_4 Lines and  Circles from Constraints
@@ -213,7 +242,7 @@ The implemented algorithms are more complex than those provided by the Direct Co
 The expression of a tangency problem generally leads to several results, according to the relative positions of the solution and the circles or straight lines in relation to which the tangency constraints are expressed. For example, consider the following
 case of a circle of a given radius (a small one) which is tangential to two secant circles C1 and C2:
 
-@figure{/user_guides/modeling_algos/images/modeling_algos_image058.png,"Example of a Tangency Constraint"}
+@figure{/user_guides/modeling_algos/images/modeling_algos_image058.png, "Example of a Tangency Constraint"}
 
 This diagram clearly shows that there are 8 possible solutions.
 
@@ -235,14 +264,15 @@ line by geometric constraints. Four qualifiers are used:
   * **Outside** - the solution(s) and the argument must be external to one another;
   * **Unqualified** - the relative position is not qualified, i.e. all solutions apply.
     
-It is possible to create expressions using the qualifiers,  for example:
-~~~~~
-GccAna_Circ2d2TanRad 
-	Solver(GccEnt::Outside(C1), 
-		GccEnt::Enclosing(C2),  Rad, Tolerance); 
+It is possible to create expressions using the qualifiers, for example:
+~~~~~{.py}
+solver = GccAna_Circ2d2TanRad(gccent_Outside(cirlce_1),
+                              gccent_Enclosing(circle_2),
+                              radius,
+                              tolerance) 
 ~~~~~
 
-This expression finds all circles  of radius *Rad*, which are tangent to both circle *C1* and *C2*, while *C1* is outside and *C2* is inside.
+This expression finds all circles  of radius *radius*, which are tangent to both circle *circle_1* and *circle_2*, while *circle_1* is outside and *circle_2* is inside.
   
 @subsubsection occt_modalg_2_4_2 Available types of lines and circles
 
@@ -266,43 +296,38 @@ The following analytic algorithms using value-handled entities for creation of 2
 #### Exterior/Interior
 It is not hard to define  the interior and exterior of a circle. As is shown in the following diagram,  the exterior is indicated by the sense of the binormal, that is to say the  right side according to the sense of traversing the circle. The left side is  therefore the interior (or &quot;material&quot;). 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image006.png "Exterior/Interior of a Circle"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image006.png "Exterior/Interior of a Circle"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image006.png "Exterior/Interior of a Circle"}
 
 By extension, the  interior of a line or any open curve is defined as the left side according to  the passing direction, as shown in the following diagram: 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image007.png "Exterior/Interior of a Line and a Curve"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image007.png "Exterior/Interior of a Line and a Curve"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image007.png "Exterior/Interior of a Line and a Curve"}
 
 #### Orientation of a Line
 It is sometimes  necessary to define in advance the sense of travel along a line to be created.  This sense will be from first to second argument. 
 
 The following figure shows a line, which is  first tangent to circle C1 which is interior to the line, and then passes  through point P1. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image008.png "An Oriented Line"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image008.png "An Oriented Line"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image008.png "An Oriented Line" width=300}
 
 
 #### Line tangent to two circles
-The following four  diagrams illustrate four cases of using qualifiers in the creation of a line.  The fifth shows the solution if no qualifiers are given.
+The following four diagrams illustrate four cases of using qualifiers in the creation of a line. The fifth shows the solution if no qualifiers are given.
 
 
 **Example 1 Case 1** 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image009.png "Both circles outside"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image009.png "Both circles outside"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image009.png "Both circles outside" width=300}
 
 Constraints: 
-Tangent and Exterior to  C1. 
-Tangent and Exterior to  C2. 
+- Tangent and Exterior to  C1. 
+- Tangent and Exterior to  C2.
 
 Syntax: 
 
-~~~~~
-GccAna_Lin2d2Tan 
-	Solver(GccEnt::Outside(C1), 
-		GccEnt::Outside(C2), 
-		Tolerance); 
+~~~~~{.py}
+solver = GccAna_Lin2d2Tan(gccent_Outside(C1),
+                          gccent_Outside(C2),
+                          tolerance)
 ~~~~~
 
 **Example 1 Case 2** 
@@ -316,115 +341,109 @@ Tangent and Including  C2.
 
 Syntax: 
 
-~~~~~
-GccAna_Lin2d2Tan 
-	Solver(GccEnt::Enclosing(C1), 
-		GccEnt::Enclosing(C2), 
-		Tolerance); 
+~~~~~{.py}
+solver = GccAna_Lin2d2Tan(gccent_Enclosing(C1),
+                          gccent_Enclosing(C2),
+                          tolerance)
 ~~~~~
 
 **Example  1 Case 3**
  
-@image html /user_guides/modeling_algos/images/modeling_algos_image011.png "C1 enclosed, C2 outside"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image011.png "C1 enclosed, C2 outside"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image011.png "C1 enclosed, C2 outside" width=300}
 
 Constraints: 
 Tangent and Including C1. 
 Tangent and Exterior to C2. 
 
 Syntax: 
-~~~~~
-GccAna_Lin2d2Tan 
-	Solver(GccEnt::Enclosing(C1), 
-		GccEnt::Outside(C2), 
-		Tolerance); 
+~~~~~{.py}
+solver = GccAna_Lin2d2Tan(gccent_Enclosing(C1), 
+                          gccent_Outside(C2),
+                          tolerance)
 ~~~~~
 
 **Example 1 Case 4** 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image012.png "C1 outside, C2 enclosed"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image012.png "C1 outside, C2 enclosed"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image012.png "C1 outside, C2 enclosed" width=300}
+
 Constraints: 
 Tangent and Exterior to  C1. 
 Tangent and Including  C2. 
 
 Syntax: 
-~~~~~
-GccAna_Lin2d2Tan 
-	Solver(GccEnt::Outside(C1), 
-		GccEnt::Enclosing(C2), 
-		Tolerance); 
+~~~~~{.py}
+solver = GccAna_Lin2d2Tan(gccent_Outside(C1), 
+                          gccent_Enclosing(C2), 
+                          tolerance); 
 ~~~~~
 
 **Example 1 Case 5** 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image013.png "With no qualifiers specified"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image013.png "With no qualifiers specified"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image013.png "With no qualifiers specified" width=300}
 
 Constraints: 
 Tangent and Undefined  with respect to C1. 
 Tangent and Undefined  with respect to C2. 
 
 Syntax: 
-~~~~~
-GccAna_Lin2d2Tan 
-	Solver(GccEnt::Unqualified(C1), 
-		GccEnt::Unqualified(C2), 
-		Tolerance); 
+~~~~~{.py}
+solver = GccAna_Lin2d2Tan(gccent_Unqualified(C1),
+                          gccent_Unqualified(C2), 
+                          tolerance)
 ~~~~~
 
 #### Circle of given radius tangent to two circles
 The following four  diagrams show the four cases in using qualifiers in the creation of a circle. 
 
 **Example 2 Case 1** 
-@image html /user_guides/modeling_algos/images/modeling_algos_image014.png "Both solutions outside"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image014.png "Both solutions outside"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image014.png "Both solutions outside" width=300}
 
 Constraints: 
 Tangent and Exterior to  C1. 
 Tangent and Exterior to  C2. 
 
 Syntax: 
-~~~~~
-GccAna_Circ2d2TanRad 
-	Solver(GccEnt::Outside(C1), 
-	GccEnt::Outside(C2),  Rad, Tolerance); 
+~~~~~{.py}
+solver = GccAna_Circ2d2TanRad(gccent_Outside(C1), 
+                              gccent_Outside(C2),
+                              radius,
+                              tolerance)
 ~~~~~
 
 **Example 2 Case 2** 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image015.png "C2 encompasses C1"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image015.png "C2 encompasses C1"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image015.png "C2 encompasses C1" width=300}
 
 Constraints: 
 Tangent and Exterior to  C1. 
 Tangent and Included by  C2. 
 
 Syntax: 
-~~~~~
-GccAna_Circ2d2TanRad 
-	Solver(GccEnt::Outside(C1), 
-		GccEnt::Enclosed(C2),  Rad, Tolerance); 
+~~~~~{.py}
+solver = GccAna_Circ2d2TanRad(gccent_Outside(C1), 
+                              gccent_Enclosed(C2),
+                              radius,
+                              rad,
+                              tolerance)
 ~~~~~
 
 **Example  2 Case 3**
-@image html /user_guides/modeling_algos/images/modeling_algos_image016.png "Solutions enclose C2"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image016.png "Solutions enclose C2"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image016.png "Solutions enclose C2" width=300}
 
 Constraints: 
 Tangent and Exterior to  C1. 
 Tangent and Including  C2. 
 
 Syntax: 
+~~~~~{.py}
+solver = GccAna_Circ2d2TanRad(gccent_Outside(C1), 
+                              gccent_Enclosing(C2),
+                              radius,
+                              tolerance);
 ~~~~~
-GccAna_Circ2d2TanRad 
-	Solver(GccEnt::Outside(C1), 
-		GccEnt::Enclosing(C2),  Rad, Tolerance); 
-~~~~~
-		
+    
 **Example 2 Case 4**
-@image html /user_guides/modeling_algos/images/modeling_algos_image017.png "Solutions enclose C1"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image017.png "Solutions enclose C1"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image017.png "Solutions enclose C1" width=300}
 
 Constraints: 
 Tangent and Enclosing  C1. 
@@ -432,9 +451,10 @@ Tangent and Enclosing  C2.
 
 Syntax: 
 ~~~~~
-GccAna_Circ2d2TanRad 
-	Solver(GccEnt::Enclosing(C1), 
-		GccEnt::Enclosing(C2),  Rad, Tolerance); 
+solver = GccAna_Circ2d2TanRad(gccent_Enclosing(C1), 
+                              gccent_Enclosing(C2),
+                              radius,
+                              tolerance)
 ~~~~~
 
 **Example 2 Case 5**
@@ -442,10 +462,11 @@ GccAna_Circ2d2TanRad
 The following syntax  will give all the circles of radius *Rad*, which are tangent to *C1* and *C2* without discrimination of relative position: 
 
 ~~~~~
-GccAna_Circ2d2TanRad  Solver(GccEnt::Unqualified(C1), 
-							GccEnt::Unqualified(C2), 
-							Rad,Tolerance); 
-~~~~~							
+solver = GccAna_Circ2d2TanRad(gccent_Unqualified(C1),
+                              gccent_Unqualified(C2), 
+                              radius,
+                              tolerance)
+~~~~~             
 
 
 @subsubsection occt_modalg_2_4_3 Types of  algorithms
@@ -458,8 +479,8 @@ OCCT implements several categories of algorithms:
   
 For each kind of geometric construction of a constrained line or circle, OCCT provides two types of access:
 
-  * algorithms from the package <i> Geom2dGcc </i> automatically select the algorithm best suited to the problem, both in the general case and in all types of specific cases; the used arguments  are *Geom2d* objects, while the computed solutions are <i> gp </i> objects;
-  * algorithms from the package <i> GccAna</i> resolve the problem analytically, and can only be used when the geometries to be worked on are lines or circles; both the used arguments and the computed solutions  are <i> gp </i> objects.
+  * algorithms from the package *Geom2dGcc* automatically select the algorithm best suited to the problem, both in the general case and in all types of specific cases; the used arguments  are *Geom2d* objects, while the computed solutions are *gp* objects;
+  * algorithms from the package *GccAna</i> resolve the problem analytically, and can only be used when the geometries to be worked on are lines or circles; both the used arguments and the computed solutions  are *gp* objects.
 
 The provided algorithms compute all solutions, which correspond to the stated geometric problem, unless the solution is found by an iterative algorithm.
 
@@ -468,16 +489,16 @@ Iterative algorithms compute only one solution, closest to an initial position. 
   * to build a line, when a tangency argument is more complex than a line or a circle.
 
 Qualified curves (for tangency arguments) are provided either by:
-  * the <i> GccEnt</i> package, for direct use by <i> GccAna</i> algorithms, or
-  * the <i> Geom2dGcc </i> package, for general use by <i> Geom2dGcc </i> algorithms.
+  * the *GccEnt</i> package, for direct use by *GccAna</i> algorithms, or
+  * the *Geom2dGcc* package, for general use by *Geom2dGcc* algorithms.
 
-The <i> GccEnt</i> and <i> Geom2dGcc</i> packages also provide simple functions for building qualified curves in a very efficient way.
+The *GccEnt</i> and *Geom2dGcc</i> packages also provide simple functions for building qualified curves in a very efficient way.
 
-The <i> GccAna </i>package also provides algorithms for constructing bisecting loci between circles, lines or points. Bisecting loci between two geometric objects are such that each of their points is at the same distance from the two geometric objects. They
-are typically curves, such as circles, lines or conics for <i> GccAna</i> algorithms. 
+The *GccAna*package also provides algorithms for constructing bisecting loci between circles, lines or points. Bisecting loci between two geometric objects are such that each of their points is at the same distance from the two geometric objects. They
+are typically curves, such as circles, lines or conics for *GccAna</i> algorithms. 
 Each elementary solution is given as an elementary bisecting locus object (line, circle, ellipse, hyperbola, parabola), described by the <i>GccInt</i> package.
 
-Note: Curves used by <i>GccAna</i> algorithms to define the geometric problem to be solved, are 2D lines or circles from the <i> gp</i> package: they are not explicitly parameterized. However, these lines or circles retain an implicit parameterization, corresponding to that which they induce on equivalent Geom2d objects. This induced parameterization is the one used when returning parameter values on such curves, for instance with the functions <i> Tangency1, Tangency2, Tangency3, Intersection2</i> and <i> CenterOn3</i> provided by construction algorithms from the <i> GccAna </i> or <i> Geom2dGcc</i> packages.
+Note: Curves used by <i>GccAna</i> algorithms to define the geometric problem to be solved, are 2D lines or circles from the *gp</i> package: they are not explicitly parameterized. However, these lines or circles retain an implicit parameterization, corresponding to that which they induce on equivalent Geom2d objects. This induced parameterization is the one used when returning parameter values on such curves, for instance with the functions *Tangency1, Tangency2, Tangency3, Intersection2</i> and *CenterOn3</i> provided by construction algorithms from the *GccAna* or *Geom2dGcc</i> packages.
 
 @subsection occt_modalg_2_5 Curves and Surfaces from Constraints
 
@@ -600,7 +621,7 @@ The enumerations *FillingStyle* specify the styles used to build the surface. Th
 In CAD, it is often necessary to generate a surface which has no exact mathematical definition, but which is defined by respective constraints. These can be of a mathematical, a technical or an aesthetic order.
 
 Essentially, a plate surface is constructed by deforming a surface so that it conforms to a given number of curve or point constraints. In the figure below, you can see four segments of the outline of the plane, and a point which have been used as the
-curve constraints and the point constraint respectively. The resulting surface can be converted into a BSpline surface by using the function <i> MakeApprox </i>.
+curve constraints and the point constraint respectively. The resulting surface can be converted into a BSpline surface by using the function *MakeApprox*.
 
 The surface is built using a variational spline algorithm. It uses the principle of deformation of a thin plate by localised mechanical forces. If not already given in the input, an initial surface is calculated. This corresponds to the plate prior
 to deformation. Then, the algorithm is called to calculate the final surface. It looks for a solution satisfying constraints and minimizing energy input.
@@ -710,7 +731,7 @@ The class *Geom2dAPI_ProjectPointOnCurve* may be instantiated as in the followin
 ~~~~~
 gp_Pnt2d P; 
 Handle(Geom2d_BezierCurve) C = 
-	new  Geom2d_BezierCurve(args); 
+  new  Geom2d_BezierCurve(args); 
 Geom2dAPI_ProjectPointOnCurve Projector (P, C); 
 ~~~~~
 
@@ -826,7 +847,7 @@ The class *GeomAPI_ProjectPointOnCurve* is  instantiated as in the following exa
 ~~~~~
 gp_Pnt P; 
 Handle(Geom_BezierCurve) C = 
-	new  Geom_BezierCurve(args); 
+  new  Geom_BezierCurve(args); 
 GeomAPI_ProjectPointOnCurve Projector (P, C); 
 ~~~~~
 
@@ -1639,7 +1660,7 @@ TopoDS_Solid myCopy = BRepBuilderAPI_Copy(mySolid);
 
 @section occt_modalg_4 Primitives
 
-The <i> BRepPrimAPI</i> package provides an API (Application Programming Interface) for construction of primitives such as:
+The *BRepPrimAPI</i> package provides an API (Application Programming Interface) for construction of primitives such as:
     * Boxes;
     * Cones;
     * Cylinders;
@@ -1658,14 +1679,14 @@ Sweeps are objects obtained by sweeping a profile along a path. The profile can 
   * Faces generate Solids.
   * Shells generate Composite Solids.
 
-It is not allowed to sweep Solids and Composite Solids. Swept constructions along complex profiles such as BSpline curves also available in the <i> BRepOffsetAPI </i> package. This API provides simple, high level calls for the most common operations.
+It is not allowed to sweep Solids and Composite Solids. Swept constructions along complex profiles such as BSpline curves also available in the *BRepOffsetAPI* package. This API provides simple, high level calls for the most common operations.
 
 @subsection occt_modalg_4_1 Making  Primitives
 @subsubsection occt_modalg_4_1_1 Box
 
 The class *BRepPrimAPI_MakeBox* allows building a parallelepiped box. The result is either a **Shell** or a **Solid**. There are  four ways to build a box: 
 
-* From three dimensions *dx, dy* and *dz*. The box is parallel to the axes and extends for <i>[0,dx] [0,dy] [0,dz] </i>. 
+* From three dimensions *dx, dy* and *dz*. The box is parallel to the axes and extends for <i>[0,dx] [0,dy] [0,dz]*. 
 * From a point and three  dimensions. The same as above but the point is the new origin. 
 * From two points, the box  is parallel to the axes and extends on the intervals defined by the coordinates  of the two points. 
 * From a system of axes *gp_Ax2* and three dimensions. Same as the first way but the box is parallel to the given system of axes. 
@@ -1746,14 +1767,14 @@ TopoDS_Solid S = BRepPrimAPI_MakeCone(R1,R2,H);
 
   * From a radius - builds a full  sphere. 
   * From a radius and an angle - builds  a lune (digon).
-  * From a radius and two angles - builds a wraparound spherical segment between two latitudes. The angles *a1* and *a2* must follow the relation: <i>PI/2 <= a1 < a2 <= PI/2 </i>. 
+  * From a radius and two angles - builds a wraparound spherical segment between two latitudes. The angles *a1* and *a2* must follow the relation: <i>PI/2 <= a1 < a2 <= PI/2*. 
   * From a radius and three angles - a combination of two previous methods builds a portion of spherical segment. 
 
 The following code  builds four spheres from a radius and three angles. 
 
 ~~~~~
 Standard_Real R = 30, ang = 
-	PI/2, a1 = -PI/2.3,  a2 = PI/4; 
+  PI/2, a1 = -PI/2.3,  a2 = PI/4; 
 TopoDS_Solid S1 = BRepPrimAPI_MakeSphere(R); 
 TopoDS_Solid S2 = BRepPrimAPI_MakeSphere(R,ang); 
 TopoDS_Solid S3 = BRepPrimAPI_MakeSphere(R,a1,a2); 
@@ -1781,12 +1802,12 @@ The following code  builds four toroidal shells from two radii and three angles.
 
 ~~~~~
 Standard_Real R1 = 30, R2 = 10, ang = PI, a1 = 0, 
-	a2 = PI/2; 
+  a2 = PI/2; 
 TopoDS_Shell S1 = BRepPrimAPI_MakeTorus(R1,R2); 
 TopoDS_Shell S2 = BRepPrimAPI_MakeTorus(R1,R2,ang); 
 TopoDS_Shell S3 = BRepPrimAPI_MakeTorus(R1,R2,a1,a2); 
 TopoDS_Shell S4 = 
-	BRepPrimAPI_MakeTorus(R1,R2,a1,a2,ang); 
+  BRepPrimAPI_MakeTorus(R1,R2,a1,a2,ang); 
 ~~~~~
 
 Note that we could  equally well choose to create Solids instead of Shells. 
@@ -1974,22 +1995,22 @@ In the following example  a filleted box with dimensions a,b,c and radius r is c
 #include <TopExp_Explorer.hxx> 
 
 TopoDS_Shape FilletedBox(const Standard_Real a, 
-						const Standard_Real  b, 
-						const Standard_Real  c, 
-						const Standard_Real  r) 
+            const Standard_Real  b, 
+            const Standard_Real  c, 
+            const Standard_Real  r) 
 { 
-	TopoDS_Solid Box =  BRepPrimAPI_MakeBox(a,b,c); 
-	BRepFilletAPI_MakeFillet  MF(Box); 
+  TopoDS_Solid Box =  BRepPrimAPI_MakeBox(a,b,c); 
+  BRepFilletAPI_MakeFillet  MF(Box); 
 
-	// add all the edges  to fillet 
-	TopExp_Explorer  ex(Box,TopAbs_EDGE); 
-	while (ex.More()) 
-	{ 
-	MF.Add(r,TopoDS::Edge(ex.Current())); 
-	ex.Next(); 
-	} 
-	return MF.Shape(); 
-	} 
+  // add all the edges  to fillet 
+  TopExp_Explorer  ex(Box,TopAbs_EDGE); 
+  while (ex.More()) 
+  { 
+  MF.Add(r,TopoDS::Edge(ex.Current())); 
+  ex.Next(); 
+  } 
+  return MF.Shape(); 
+  } 
 ~~~~~
 
 @image html /user_guides/modeling_algos/images/modeling_algos_image039.png "Fillet with constant radius"
@@ -2001,28 +2022,28 @@ TopoDS_Shape FilletedBox(const Standard_Real a,
 ~~~~~
 void CSampleTopologicalOperationsDoc::OnEvolvedblend1() 
 { 
-	TopoDS_Shape theBox  = BRepPrimAPI_MakeBox(200,200,200); 
+  TopoDS_Shape theBox  = BRepPrimAPI_MakeBox(200,200,200); 
 
-	BRepFilletAPI_MakeFillet  Rake(theBox); 
-	ChFi3d_FilletShape  FSh = ChFi3d_Rational; 
-	Rake.SetFilletShape(FSh); 
+  BRepFilletAPI_MakeFillet  Rake(theBox); 
+  ChFi3d_FilletShape  FSh = ChFi3d_Rational; 
+  Rake.SetFilletShape(FSh); 
 
-	TColgp_Array1OfPnt2d  ParAndRad(1, 6); 
-	ParAndRad(1).SetCoord(0.,  10.); 
-	ParAndRad(1).SetCoord(50.,  20.); 
-	ParAndRad(1).SetCoord(70.,  20.); 
-	ParAndRad(1).SetCoord(130.,  60.); 
-	ParAndRad(1).SetCoord(160.,  30.); 
-	ParAndRad(1).SetCoord(200.,  20.); 
+  TColgp_Array1OfPnt2d  ParAndRad(1, 6); 
+  ParAndRad(1).SetCoord(0.,  10.); 
+  ParAndRad(1).SetCoord(50.,  20.); 
+  ParAndRad(1).SetCoord(70.,  20.); 
+  ParAndRad(1).SetCoord(130.,  60.); 
+  ParAndRad(1).SetCoord(160.,  30.); 
+  ParAndRad(1).SetCoord(200.,  20.); 
 
-	TopExp_Explorer  ex(theBox,TopAbs_EDGE); 
-	Rake.Add(ParAndRad, TopoDS::Edge(ex.Current())); 
-	TopoDS_Shape  evolvedBox = Rake.Shape(); 
+  TopExp_Explorer  ex(theBox,TopAbs_EDGE); 
+  Rake.Add(ParAndRad, TopoDS::Edge(ex.Current())); 
+  TopoDS_Shape  evolvedBox = Rake.Shape(); 
 } 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image040.png	"Fillet with changing radius"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image040.png	"Fillet with changing radius"
+@image html /user_guides/modeling_algos/images/modeling_algos_image040.png  "Fillet with changing radius"
+@image latex /user_guides/modeling_algos/images/modeling_algos_image040.png "Fillet with changing radius"
  
 @subsection occt_modalg_6_1_2 Chamfer
 
@@ -2037,8 +2058,8 @@ Add(dist,  E, F)
 Add(d1,  d2, E, F) with d1 on the face F. 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image041.png	"Chamfer"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image041.png	"Chamfer"
+@image html /user_guides/modeling_algos/images/modeling_algos_image041.png  "Chamfer"
+@image latex /user_guides/modeling_algos/images/modeling_algos_image041.png "Chamfer"
 
 @subsection occt_modalg_6_1_3 Fillet on a planar face
 
@@ -2068,24 +2089,24 @@ Planar Fillet
 #include “TopoDS_Solid.hxx” 
 
 TopoDS_Shape FilletFace(const Standard_Real a, 
-						const Standard_Real  b, 
-						const Standard_Real c, 
-						const Standard_Real  r) 
+            const Standard_Real  b, 
+            const Standard_Real c, 
+            const Standard_Real  r) 
 
 { 
-	TopoDS_Solid Box =  BRepPrimAPI_MakeBox (a,b,c); 
-	TopExp_Explorer  ex1(Box,TopAbs_FACE); 
+  TopoDS_Solid Box =  BRepPrimAPI_MakeBox (a,b,c); 
+  TopExp_Explorer  ex1(Box,TopAbs_FACE); 
 
-	const  TopoDS_Face& F = TopoDS::Face(ex1.Current()); 
-	BRepFilletAPI_MakeFillet2d  MF(F); 
-	TopExp_Explorer  ex2(F, TopAbs_VERTEX); 
-	while (ex2.More()) 
-	{ 
-	MF.AddFillet(TopoDS::Vertex(ex2.Current()),r); 
-	ex2.Next(); 
-	} 
-	// while... 
-	return MF.Shape(); 
+  const  TopoDS_Face& F = TopoDS::Face(ex1.Current()); 
+  BRepFilletAPI_MakeFillet2d  MF(F); 
+  TopExp_Explorer  ex2(F, TopAbs_VERTEX); 
+  while (ex2.More()) 
+  { 
+  MF.AddFillet(TopoDS::Vertex(ex2.Current()),r); 
+  ex2.Next(); 
+  } 
+  // while... 
+  return MF.Shape(); 
 } 
 ~~~~~
 
@@ -2109,24 +2130,24 @@ The constructor *BRepOffsetAPI_MakeThickSolid* shelling operator takes the solid
 ~~~~~
 TopoDS_Solid SolidInitial = ...;
 
-Standard_Real 			Of 		= ...;
-TopTools_ListOfShape 	LCF;
-TopoDS_Shape 			Result;
-Standard_Real 			Tol = Precision::Confusion();
+Standard_Real       Of    = ...;
+TopTools_ListOfShape  LCF;
+TopoDS_Shape      Result;
+Standard_Real       Tol = Precision::Confusion();
 
 for (Standard_Integer i = 1 ;i <= n; i++) {
-	TopoDS_Face SF = ...; // a face from SolidInitial
-	LCF.Append(SF);
+  TopoDS_Face SF = ...; // a face from SolidInitial
+  LCF.Append(SF);
 }
 
-Result = BRepOffsetAPI_MakeThickSolid 	(SolidInitial,
-										LCF,
-										Of,
-										Tol);
+Result = BRepOffsetAPI_MakeThickSolid   (SolidInitial,
+                    LCF,
+                    Of,
+                    Tol);
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image042.png	"Shelling"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image042.png	"Shelling"
+@image html /user_guides/modeling_algos/images/modeling_algos_image042.png  "Shelling"
+@image latex /user_guides/modeling_algos/images/modeling_algos_image042.png "Shelling"
 
 
 @subsection occt_modalg_7_2  Draft Angle
@@ -2157,25 +2178,25 @@ gp_Pln Neutral(gp_Pnt(0.,0.,5.), Direc);
 BRepOffsetAPI_DraftAngle theDraft(myShape); 
 TopTools_ListIteratorOfListOfShape itl; 
 for (itl.Initialize(ListOfFace); itl.More(); itl.Next())  { 
-	theDraft.Add(TopoDS::Face(itl.Value()),Direc,Angle,Neutral); 
-	if  (!theDraft.AddDone()) { 
-		// An error has occurred. The faulty face is given by //  ProblematicShape 
-		break; 
-		} 
+  theDraft.Add(TopoDS::Face(itl.Value()),Direc,Angle,Neutral); 
+  if  (!theDraft.AddDone()) { 
+    // An error has occurred. The faulty face is given by //  ProblematicShape 
+    break; 
+    } 
 } 
 if (!theDraft.AddDone()) { 
-	// An error has  occurred 
-	TopoDS_Face guilty =  theDraft.ProblematicShape(); 
-	... 
+  // An error has  occurred 
+  TopoDS_Face guilty =  theDraft.ProblematicShape(); 
+  ... 
 } 
 theDraft.Build(); 
 if (!theDraft.IsDone()) { 
-	// Problem  encountered during reconstruction 
-	... 
+  // Problem  encountered during reconstruction 
+  ... 
 } 
 else { 
-	TopoDS_Shape  myResult = theDraft.Shape(); 
-	... 
+  TopoDS_Shape  myResult = theDraft.Shape(); 
+  ... 
 } 
 ~~~~~
 
@@ -2408,8 +2429,8 @@ BRepFeat_MakePrism thePrism(Sbase, Fbase, TopoDS_Face(),  Extrusion, Standard_Tr
 
 thePrism, Perform(100.); 
 if (thePrism.IsDone()) { 
-	TopoDS_Shape  theResult = thePrism; 
-	... 
+  TopoDS_Shape  theResult = thePrism; 
+  ... 
 } 
 ~~~~~
 
@@ -2465,7 +2486,7 @@ MKF.Add(MW.Wire());
 TopoDS_Face FP = MKF.Face(); 
 BRepLib::BuildCurves3d(FP); 
 BRepFeat_MakeDPrism MKDP (S,FP,F,10*PI180,Standard_True, 
-							Standard_True); 
+              Standard_True); 
 MKDP.Perform(200); 
 TopoDS_Shape res1 = MKDP.Shape(); 
 ~~~~~
@@ -2510,8 +2531,8 @@ BRepFeat_MakeRevol theRevol(Sbase, Frevol, TopoDS_Face(), RevolAx,  Standard_Tru
 
 theRevol.Perform(FUntil); 
 if (theRevol.IsDone()) { 
-	TopoDS_Shape  theResult = theRevol; 
-	... 
+  TopoDS_Shape  theResult = theRevol; 
+  ... 
 } 
 ~~~~~
 
@@ -2629,15 +2650,15 @@ mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2));
 p1 = p2; 
 mkw.Add(BRepBuilderAPI_MakeEdge(p2,gp_Pnt(0.,0.,0.))); 
 TopoDS_Shape S = BRepBuilderAPI_MakePrism(BRepBuilderAPI_MakeFace 
-	(mkw.Wire()),gp_Vec(gp_Pnt(0.,0.,0.),gp_P 
-	 nt(0.,100.,0.))); 
+  (mkw.Wire()),gp_Vec(gp_Pnt(0.,0.,0.),gp_P 
+   nt(0.,100.,0.))); 
 TopoDS_Wire W = BRepBuilderAPI_MakeWire(BRepBuilderAPI_MakeEdge(gp_Pnt 
-	(50.,45.,100.), 
+  (50.,45.,100.), 
 gp_Pnt(100.,45.,50.))); 
 Handle(Geom_Plane) aplane = 
-	new Geom_Plane(gp_Pnt(0.,45.,0.),  gp_Vec(0.,1.,0.)); 
+  new Geom_Plane(gp_Pnt(0.,45.,0.),  gp_Vec(0.,1.,0.)); 
 BRepFeat_MakeLinearForm aform(S, W, aplane, gp_Dir 
-	(0.,5.,0.), gp_Dir(0.,-3.,0.),  1, Standard_True); 
+  (0.,5.,0.), gp_Dir(0.,-3.,0.),  1, Standard_True); 
 aform.Perform(); 
 TopoDS_Shape res = aform.Shape(); 
 ~~~~~
