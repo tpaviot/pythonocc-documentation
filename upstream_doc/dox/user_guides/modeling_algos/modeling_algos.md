@@ -619,15 +619,15 @@ The class *PointConstraint* allows defining points as constraints to the surface
 
 #### Applying Geom_Surface to Plate Surfaces
 
-The class *Surface* allows describing the characteristics of plate surface objects returned by **BuildPlateSurface::Surface** using the methods of *Geom_Surface* 
+The method *Surface()* allows describing the characteristics of plate surface objects returned by *GeomPlate_BuildPlateSurface.Surface()* using the methods of *Geom_Surface*.
 
 #### Approximating a Plate surface to a BSpline
 
-The class *MakeApprox* allows converting a *GeomPlate* surface into a *Geom_BSplineSurface*. 
+The class *GeomPlate_MakeApprox* allows converting a *GeomPlate* surface into a *Geom_BSplineSurface*. 
 
 @figure{/user_guides/modeling_algos/images/modeling_algos_image060.png,"Surface generated from four curves and a point"}
 
-Let us create a Plate surface and approximate it from a polyline as a curve constraint and a point constraint 
+Let's create a Plate surface and approximate it from a polyline as a curve constraint and a point constraint:
 
 ~~~~~{.py}
 NbCurFront=4
@@ -664,15 +664,14 @@ BPSurf.Perform()
 MaxSeg=9
 MaxDegree=8
 CritOrder=0
-Standard_Real dmax,Tol; 
 PSurf = BPSurf.Surface()
-dmax = Max(0.0001,10*BPSurf.G0Error())
+dmax = max(0.0001, 10*BPSurf.G0Error())
 Tol=0.0001
-Mapp = GeomPlate_MakeApprox(PSurf,Tol,MaxSeg,MaxDegree,dmax,CritOrder)
-Surf =(Mapp.Surface()
+Mapp = GeomPlate_MakeApprox(PSurf, Tol, MaxSeg, MaxDegree, dmax, CritOrder)
+Surf = Mapp.Surface()
 # create a face corresponding to the approximated Plate Surface 
 Umin, Umax, Vmin, Vminx = PSurf.Bounds()
-BRepBuilderAPI_MakeFace MF(Surf,Umin, Umax, Vmin, Vmax); 
+BRepBuilderAPI_MakeFace MF(Surf, Umin, Umax, Vmin, Vmax); 
 ~~~~~
 
 @subsection occt_modalg_2_6 Projections
@@ -695,9 +694,9 @@ The curve does not have to be a *Geom2d_TrimmedCurve*. The algorithm will functi
 The class *Geom2dAPI_ProjectPointOnCurve* may be instantiated as in the following example: 
 
 ~~~~~{.py}
-gp_Pnt2d P; 
-Handle(Geom2d_BezierCurve) C = new Geom2d_BezierCurve(args);
-Projector = Geom2dAPI_ProjectPointOnCurve (P, C)
+P = gp_Pnt2d()
+C = Geom2d_BezierCurve(args)
+projector = Geom2dAPI_ProjectPointOnCurve(P, C)
 ~~~~~
 
 To restrict the search for normals to a given domain \f$[U1,U2]\f$, use the following constructor: 
@@ -775,70 +774,69 @@ TheExtrema = Projector.Extrema()
 The class *GeomAPI_ProjectPointOnCurve* is instantiated as in the following example: 
 
 ~~~~~{.py}
-gp_Pnt P; 
-Handle(Geom_BezierCurve) C = 
- new Geom_BezierCurve(args); 
-GeomAPI_ProjectPointOnCurve Projector (P, C); 
+P=gp_Pnt()
+C =  Geom_BezierCurve(args);
+Projector = GeomAPI_ProjectPointOnCurve(P, C)
 ~~~~~
 
 If you wish to restrict the search for normals to the given domain \f$[U1,U2]\f$, use the following constructor: 
 
+~~~~~{.py}
+Projector  = GeomAPI_ProjectPointOnCurve(P, C, U1, U2)
 ~~~~~
-GeomAPI_ProjectPointOnCurve Projector (P, C, U1, U2); 
-~~~~~
+
 Having thus created the *GeomAPI_ProjectPointOnCurve* object, you can now interrogate it. 
 
 #### Calling the number of solution points
 
-~~~~~
-Standard_Integer NumSolutions = Projector.NbPoints(); 
+~~~~~{.py}
+NumSolutions = Projector.NbPoints()
 ~~~~~
 
 #### Calling the location of a solution point
 
 The solutions are indexed in a range from 1 to *Projector.NbPoints()*. The point, which corresponds to a given index, may be found: 
-~~~~~
-gp_Pnt Pn = Projector.Point(Index); 
+~~~~~{.py}
+Pn = Projector.Point(Index)
 ~~~~~
 
 #### Calling the parameter of a solution point
 
 For a given point corresponding to a given index: 
 
-~~~~~
-Standard_Real U = Projector.Parameter(Index); 
+~~~~~{.py}
+U = Projector.Parameter(Index)
 ~~~~~
 
 This can also be programmed as: 
-~~~~~
-Standard_Real U; 
-Projector.Parameter(Index,U); 
+~~~~~{.py}
+U = Projector.Parameter(Index);
 ~~~~~
 
 #### Calling the distance between the start and end point
 
 The distance between the initial point and a point, which corresponds to a given index, may be found: 
-~~~~~
-Standard_Real D = Projector.Distance(Index); 
+~~~~~{.py}
+D = Projector.Distance(Index)
 ~~~~~
 
 #### Calling the nearest solution point
 
 This class offers a method to return the closest solution point to the starting point. This solution is accessed as follows: 
-~~~~~
-gp_Pnt P1 = Projector.NearestPoint(); 
+~~~~~{.py}
+P1 = Projector.NearestPoint()
 ~~~~~
 
 #### Calling the parameter of the nearest solution point
 
-~~~~~
-Standard_Real U = Projector.LowerDistanceParameter(); 
+~~~~~{.py}
+U = Projector.LowerDistanceParameter()
 ~~~~~
 
 #### Calling the minimum distance from the point to the curve
 
-~~~~~
-Standard_Real D = Projector.LowerDistance(); 
+~~~~~{.py}
+D = Projector.LowerDistance()
 ~~~~~
 
 
@@ -846,31 +844,29 @@ Standard_Real D = Projector.LowerDistance();
 
 If you want to use the wider range of functionalities available from the *Extrema* module, a call to the *Extrema()* method will return the algorithmic object for calculating the extrema. For example: 
 
-~~~~~
-Extrema_ExtPC& TheExtrema = Projector.Extrema(); 
+~~~~~{.py}
+TheExtrema = Projector.Extrema()
 ~~~~~
 
 @subsubsection occt_modalg_2_6_3 Projection of a Point on a Surface
 
 The class *GeomAPI_ProjectPointOnSurf* allows calculation of all normals projected from a point from *gp_Pnt* onto a geometric surface from *Geom_Surface*. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image021.png "Projection of normals from a point to a surface"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image021.png "Projection of normals from a point to a surface"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image021.png "Projection of normals from a point to- a surface"}
 
-Note that the surface does not have to be of *Geom_RectangularTrimmedSurface* type. 
-The algorithm will function with any class inheriting *Geom_Surface*.
+Note that the surface does not have to be of *Geom_RectangularTrimmedSurface* type. The algorithm will function with any class inheriting *Geom_Surface*.
 
 *GeomAPI_ProjectPointOnSurf* is instantiated as in the following example: 
-~~~~~
-gp_Pnt P; 
-Handle (Geom_Surface) S = new Geom_BezierSurface(args); 
-GeomAPI_ProjectPointOnSurf Proj (P, S); 
+~~~~~{.py} 
+P=gp_Pnt(); 
+S = Geom_BezierSurface(args)
+Proj = GeomAPI_ProjectPointOnSurf(P, S)
 ~~~~~
 
-To restrict the search for normals within the given rectangular domain \f$[U1, U2, V1, V2]\f$, use the constructor *GeomAPI_ProjectPointOnSurf Proj (P, S, U1, U2, V1, V2)*
+To restrict the search for normals within the given rectangular domain \f$[U1, U2, V1, V2]\f$, use the constructor *GeomAPI_ProjectPointOnSurf(P, S, U1, U2, V1, V2)*
 
-The values of *U1, U2, V1* and *V2* lie at or within their maximum and minimum limits, i.e.: 
-~~~~~
+The values of \f$U1, U2, V1\f$ and \f$V2\f$ lie at or within their maximum and minimum limits, i.e.: 
+~~~~~{.py}
 Umin <= U1 < U2 <= Umax 
 Vmin <= V1 < V2 <= Vmax 
 ~~~~~
@@ -878,53 +874,51 @@ Having thus created the *GeomAPI_ProjectPointOnSurf* object, you can interrogate
 
 #### Calling the number of solution points
 
-~~~~~
-Standard_Integer NumSolutions = Proj.NbPoints(); 
+~~~~~{.py}
+NumSolutions = Proj.NbPoints()
 ~~~~~
 
 #### Calling the location of a solution point
 
 The solutions are indexed in a range from 1 to *Proj.NbPoints()*. The point corresponding to the given index may be found: 
 
-~~~~~
-gp_Pnt Pn = Proj.Point(Index); 
+~~~~~{.py}
+Pn = Proj.Point(Index)
 ~~~~~
 
 #### Calling the parameters of a solution point
 
 For a given point corresponding to the given index: 
 
-~~~~~
-Standard_Real U,V; 
-Proj.Parameters(Index, U, V); 
+~~~~~{.py}
+U, V = Proj.Parameters(Index) 
 ~~~~~
 
 #### Calling the distance between the start and end point
 
 
 The distance between the initial point and a point corresponding to the given index may be found: 
-~~~~~
-Standard_Real D = Projector.Distance(Index); 
+~~~~~{.py}
+D = Projector.Distance(Index)
 ~~~~~
 
 #### Calling the nearest solution point
 
 This class offers a method, which returns the closest solution point to the starting point. This solution is accessed as follows: 
-~~~~~
-gp_Pnt P1 = Proj.NearestPoint(); 
+~~~~~{.py}
+P1 = Proj.NearestPoint()
 ~~~~~
 
 #### Calling the parameters of the nearest solution point
 
-~~~~~
-Standard_Real U,V; 
-Proj.LowerDistanceParameters (U, V); 
+~~~~~{.py}
+U, V = Proj.LowerDistanceParameters (U, V)
 ~~~~~
 
 #### Calling the minimum distance from a point to the surface
 
-~~~~~
-Standard_Real D = Proj.LowerDistance(); 
+~~~~~{.py}
+D = Proj.LowerDistance()
 ~~~~~
 
 
@@ -932,8 +926,8 @@ Standard_Real D = Proj.LowerDistance();
 
 If you want to use the wider range of functionalities available from the *Extrema* module, a call to the *Extrema()* method will return the algorithmic object for calculating the extrema as follows: 
 
-~~~~~
-Extrema_ExtPS& TheExtrema = Proj.Extrema(); 
+~~~~~{.py}
+TheExtrema = Proj.Extrema()
 ~~~~~
 
 @subsubsection occt_modalg_2_12_8 Switching from 2d and 3d Curves
@@ -944,56 +938,46 @@ The *To2d* and *To3d* methods are used to;
  * build a 3d curve from a *Geom2d_Curve* and a *gp_Pln* plane.
 
 These methods are called as follows: 
-~~~~~
-Handle(Geom2d_Curve) C2d = GeomAPI::To2d(C3d, Pln); 
-Handle(Geom_Curve) C3d = GeomAPI::To3d(C2d, Pln); 
+~~~~~{.py}
+C2d = geomapi_To2d(C3d, Pln)
+C3d = geomapi_To3d(C2d, Pln)
 ~~~~~
 
 @section occt_modalg_3a The Topology API
  
 The Topology API of PythonOCC includes the following six modules: 
- * *BRepAlgoAPI*
- * *BRepBuilderAPI*
- * *BRepFilletAPI*
- * *BRepFeat*
- * *BRepOffsetAPI*
- * *BRepPrimAPI*
+ * *BRepAlgoAPI*,
+ * *BRepBuilderAPI*,
+ * *BRepFilletAPI*,
+ * *BRepFeat*,
+ * *BRepOffsetAPI*,
+ * *BRepPrimAPI*.
 
 The classes provided by the API have the following features:
- * The constructors of classes provide different construction methods;
- * The class retains different tools used to build objects as fields;
- * The class provides a casting method to obtain the result automatically with a function-like call.  
+ * the constructors of classes provide different construction methods,
+ * the class retains different tools used to build objects as fields,
+ * the class provides a casting method to obtain the result automatically with a function-like call.  
  
 Let us use the class *BRepBuilderAPI_MakeEdge* to create a linear edge from two points. 
 
-~~~~~
-gp_Pnt P1(10,0,0), P2(20,0,0); 
-TopoDS_Edge E = BRepBuilderAPI_MakeEdge(P1,P2);
+~~~~~{.py}
+P1 = gp_Pnt(10,0,0)
+P2 = gp_Pnt(20,0,0)
+E = BRepBuilderAPI_MakeEdge(P1,P2).Edge()
 ~~~~~
 
 This is the simplest way to create edge E from two points P1, P2, but the developer can test for errors when he is not as confident of the data as in the previous example. 
 
-~~~~~
-#include <gp_Pnt.hxx> 
-#include <TopoDS_Edge.hxx> 
-#include <BRepBuilderAPI_MakeEdge.hxx> 
-void EdgeTest() 
-{ 
-gp_Pnt P1; 
-gp_Pnt P2; 
-BRepBuilderAPI_MakeEdge ME(P1,P2); 
-if (!ME.IsDone()) 
-{ 
-// doing ME.Edge() or E = ME here 
-// would raise StdFail_NotDone 
-Standard_DomainError::Raise 
-(“ProcessPoints::Failed to createan edge”); 
-} 
-TopoDS_Edge E = ME; 
-} 
+~~~~~{.py}
+def EdgeTest():
+    P1 = gp_Pnt(10,0,0)
+    P2 = gp_Pnt(20,0,0)
+    ME = BRepBuilderAPI_MakeEdge(P1,P2)
+    assert ME.IsDone()  # will raise an exception if ME is not done
+    E = ME.Edge()
 ~~~~~
 
-In this example an intermediary object ME has been introduced. This can be tested for the completion of the function before accessing the result. More information on **error handling** in the topology programming interface can be found in the next section. 
+In this example an intermediary object ME has been introduced. This can be tested for the completion of the function before accessing the result. More information on *error handling* in the topology programming interface can be found in the next section. 
 
 *BRepBuilderAPI_MakeEdge* provides valuable information. For example, when creating an edge from two points, two vertices have to be created from the points. Sometimes you may be interested in getting these vertices quickly without exploring the new edge. Such information can be provided when using a class. The following example shows a function creating an edge and two vertices from two points. 
 
@@ -1030,10 +1014,10 @@ This feature allows you to provide classes, which have the simplicity of functio
 @subsection occt_modalg_3a_1 Error Handling in the Topology API
 
 A method can report an error in the two following situations: 
- * The data or arguments of the method are incorrect, i.e. they do not respect the restrictions specified by the methods in its specifications. Typical example: creating a linear edge from two identical points is likely to lead to a zero divide when computing the direction of the line.
- * Something unexpected happened. This situation covers every error not included in the first category. Including: interruption, programming errors in the method or in another method called by the first method, bad specifications of the arguments (i.e. a set of arguments that was not expected to fail).
+ * the data or arguments of the method are incorrect, i.e. they do not respect the restrictions specified by the methods in its specifications. Typical example: creating a linear edge from two identical points is likely to lead to a zero divide when computing the direction of the line,
+ * something unexpected happened. This situation covers every error not included in the first category. Including: interruption, programming errors in the method or in another method called by the first method, bad specifications of the arguments (i.e. a set of arguments that was not expected to fail).
 
-The second situation is supposed to become increasingly exceptional as a system is debugged and it is handled by the **exception mechanism**. Using exceptions avoids handling error statuses in the call to a method: a very cumbersome style of programming. 
+The second situation is supposed to become increasingly exceptional as a system is debugged and it is handled by the *exception mechanism*. Using exceptions avoids handling error statuses in the call to a method: a very cumbersome style of programming. 
 
 In the first situation, an exception is also supposed to be raised because the calling method should have verified the arguments and if it did not do so, there is a bug. For example, if before calling *MakeEdge* you are not sure that the two points are non-identical, this situation must be tested. 
 
@@ -1071,13 +1055,13 @@ TopoDS_Edge E = ME;
 @section occt_modalg_3 Standard Topological Objects
 
 The following standard topological objects can be created:
- * Vertices
- * Edges
- * Faces
- * Wires
- * Polygonal wires
- * Shells
- * Solids.
+ * vertices,
+ * edges,
+ * faces,
+ * wires,
+ * polygonal wires,
+ * shells,
+ * solids.
 
 There are two root classes for their construction and modification: 
 * The deferred class *BRepBuilderAPI_MakeShape* is the root of all *BRepBuilderAPI* classes, which build shapes. It inherits from the class *BRepBuilderAPI_Command* and provides a field to store the constructed shape. 
@@ -1086,9 +1070,9 @@ There are two root classes for their construction and modification:
 @subsection occt_modalg_3_1 Vertex
 
 *BRepBuilderAPI_MakeVertex* creates a new vertex from a 3D point from gp. 
-~~~~~
-gp_Pnt P(0,0,10); 
-TopoDS_Vertex V = BRepBuilderAPI_MakeVertex(P); 
+~~~~~{.py}
+P = gp_Pnt P(0,0,10)
+V = BRepBuilderAPI_MakeVertex(P)
 ~~~~~
 
 This class always creates a new vertex and has no other methods.
