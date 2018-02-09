@@ -12,21 +12,21 @@ The Modeling Algorithms modules brings together a wide range of topological algo
 
 @subsection label_credits Credits and license
 
-This manual was originally written by the <a href="http://www.opencascade.com">Open CASCADE company</a>. They're the dev team that developed OCC Technology (PythonOCC), the underlying c++ layer on which pythonocc ia based.
+This manual was originally written by the <a href="http:#www.opencascade.com">Open CASCADE company</a>. They're the dev team that developed OCC Technology (PythonOCC), the underlying c++ layer on which pythonocc ia based.
 
-This manual contains additions and modifications to fit with python specific syntax, and pythonocc usage in general. However, the basic concepts are the one available from PythonOCC. If you need further details related to OCC Technology, be aware that they offer commercial support and trainings, just check their <a href="http://www.opencascade.com/content/tutorial-learning">E-learning & Training</a> offerings. For your information, there is not any commercial agreement between the OCC Company and pythonocc development teams.
+This manual contains additions and modifications to fit with python specific syntax, and pythonocc usage in general. However, the basic concepts are the one available from PythonOCC. If you need further details related to OCC Technology, be aware that they offer commercial support and trainings, just check their <a href="http:#www.opencascade.com/content/tutorial-learning">E-learning & Training</a> offerings. For your information, there is not any commercial agreement between the OCC Company and pythonocc development teams.
 
 This document is distributed under the terms of the GNU Lesser General Public License 
-(LGPL) version 2.1 with additional exception. Check the <a href="https://github.com/tpaviot/pythonocc-documentation/upstream_doc/LICENCES.md">license file</a> for more information.
+(LGPL) version 2.1 with additional exception. Check the <a href="https:#github.com/tpaviot/pythonocc-documentation/upstream_doc/LICENCES.md">license file</a> for more information.
 
 @subsection label_resources Online resources
 If you need pythonocc specific help, please refer to the following online resources:
 
  * PythonOCC source code repository
-   https://github.com/tpaviot/pythonocc-core
+   https:#github.com/tpaviot/pythonocc-core
 
  * Mailing list
-    http://groups.google.com/group/pythonocc
+    http:#groups.google.com/group/pythonocc
 
 Finally, email \email{tpaviot@gmail.com} for any other request.
 
@@ -53,7 +53,7 @@ from OCC.BRepPrimAPI import BRepPrimAPI_MakeBox
 
 The source code for this document is available in Doxygen mardkown format. Feel free to report issues, mistakes or submit patches using the issue tracker or pull request feature at:
 
-https://github.com/tpaviot/pythonocc-documentation.
+https:#github.com/tpaviot/pythonocc-documentation.
 
 
 @section occt_modalg_2 Geometric Tools
@@ -102,7 +102,7 @@ n = intersector.NbPoints()
 
 To select the desired intersection point, pass an integer index value in argument. 
 ~~~~~{.py}
-point_2d = intersector.Point(Index) # a gp_Pnt2d instance
+point_2d = intersector.Point(index) # a gp_Pnt2d instance
 ~~~~~
 
 To get the number of intersection segments, use
@@ -113,10 +113,10 @@ m = intersector.NbSegments()
 To select the desired intersection segment pass integer index values in argument. 
 ~~~~~{.py}
 Handle(Geom2d_Curve) Seg1, Seg2; 
-Intersector.Segment(Index,Seg1,Seg2); 
-// if intersection of 2 curves 
-Intersector.Segment(Index,Seg1); 
-// if self-intersection of a curve 
+Intersector.Segment(Index,Seg1,Seg2) 
+# if intersection of 2 curves 
+Intersector.Segment(Index,Seg1) 
+# if self-intersection of a curve 
 ~~~~~
 
 If you need access to a wider range of functionalities the following method will return the algorithmic object for the calculation of intersections: 
@@ -190,7 +190,7 @@ bspline_curve = interp.Curve() # a Geom2d_BSplineCurve handle
 
 This class may be instantiated as follows: 
 ~~~~~{.py}
-Interp = GeomAPI_Interpolate (Points, PeriodicFlag=False, Tolerance=1e-4)
+Interp = GeomAPI_Interpolate (points, PeriodicFlag=False, Tolerance=1e-4)
 ~~~~~
 
 It is possible to call the BSpline curve from the object defined above it. 
@@ -241,10 +241,10 @@ as the left-hand side of the curve in relation to its orientation.
 This technique of qualification of a solution, in relation to the curves to which
 it is tangential, can be used in all algorithms for constructing a circle or a straight
 line by geometric constraints. Four qualifiers are used:
- * **Enclosing** - the solution(s) must enclose the argument;
- * **Enclosed** - the solution(s) must be enclosed by the argument;
- * **Outside** - the solution(s) and the argument must be external to one another;
- * **Unqualified** - the relative position is not qualified, i.e. all solutions apply.
+ * *Enclosing* - the solution(s) must enclose the argument;
+ * *Enclosed* - the solution(s) must be enclosed by the argument;
+ * *Outside* - the solution(s) and the argument must be external to one another;
+ * *Unqualified* - the relative position is not qualified, i.e. all solutions apply.
   
 It is possible to create expressions using the qualifiers, for example:
 ~~~~~{.py}
@@ -304,7 +304,6 @@ Constraints:
 - Tangent and Exterior to C1. 
 - Tangent and Exterior to C2.
 
-Syntax: 
 
 ~~~~~{.py}
 solver = GccAna_Lin2d2Tan(gccent_Outside(C1),
@@ -320,8 +319,6 @@ Constraints:
 Tangent and Including C1. 
 Tangent and Including C2. 
 
-Syntax: 
-
 ~~~~~{.py}
 solver = GccAna_Lin2d2Tan(gccent_Enclosing(C1),
                           gccent_Enclosing(C2),
@@ -336,7 +333,6 @@ Constraints:
 Tangent and Including C1. 
 Tangent and Exterior to C2. 
 
-Syntax: 
 ~~~~~{.py}
 solver = GccAna_Lin2d2Tan(gccent_Enclosing(C1), 
                           gccent_Outside(C2),
@@ -351,7 +347,6 @@ Constraints:
 Tangent and Exterior to C1. 
 Tangent and Including C2. 
 
-Syntax: 
 ~~~~~{.py}
 solver = GccAna_Lin2d2Tan(gccent_Outside(C1), 
                           gccent_Enclosing(C2), 
@@ -366,7 +361,6 @@ Constraints:
 Tangent and Undefined with respect to C1. 
 Tangent and Undefined with respect to C2. 
 
-Syntax: 
 ~~~~~{.py}
 solver = GccAna_Lin2d2Tan(gccent_Unqualified(C1),
                           gccent_Unqualified(C2), 
@@ -383,7 +377,6 @@ Constraints:
 Tangent and Exterior to C1. 
 Tangent and Exterior to C2. 
 
-Syntax: 
 ~~~~~{.py}
 solver = GccAna_Circ2d2TanRad(gccent_Outside(C1), 
                               gccent_Outside(C2),
@@ -399,7 +392,6 @@ Constraints:
 Tangent and Exterior to C1. 
 Tangent and Included by C2. 
 
-Syntax: 
 ~~~~~{.py}
 solver = GccAna_Circ2d2TanRad(gccent_Outside(C1), 
                               gccent_Enclosed(C2),
@@ -414,7 +406,6 @@ Constraints:
 Tangent and Exterior to C1. 
 Tangent and Including C2. 
 
-Syntax: 
 ~~~~~{.py}
 solver = GccAna_Circ2d2TanRad(gccent_Outside(C1), 
                               gccent_Enclosing(C2),
@@ -429,7 +420,6 @@ Constraints:
 Tangent and Enclosing C1. 
 Tangent and Enclosing C2. 
 
-Syntax: 
 ~~~~~{.py}
 solver = GccAna_Circ2d2TanRad(gccent_Enclosing(C1), 
                               gccent_Enclosing(C2),
@@ -453,9 +443,9 @@ solver = GccAna_Circ2d2TanRad(gccent_Unqualified(C1),
 
 PythonOCC implements several categories of algorithms:
 
-* **analytic** algorithms, where solutions are obtained by the resolution of an equation, such algorithms are used when the geometries which are worked on (tangency arguments,  position of the center, etc.) are points, lines or circles,
-* **geometric** algorithms, where the solution is generally obtained by calculating the intersection of parallel or bisecting curves built from geometric arguments,
-* **iterative** algorithms, where the solution is obtained by a process of iteration.
+* *analytic* algorithms, where solutions are obtained by the resolution of an equation, such algorithms are used when the geometries which are worked on (tangency arguments,  position of the center, etc.) are points, lines or circles,
+* *geometric* algorithms, where the solution is generally obtained by calculating the intersection of parallel or bisecting curves built from geometric arguments,
+* *iterative* algorithms, where the solution is obtained by a process of iteration.
  
 For each kind of geometric construction of a constrained line or circle, PythonOCC provides two types of access:
 
@@ -525,19 +515,15 @@ The class *FairCurve_MinimalVariation* allows producing curves with minimal vari
 
 Constraint orders of 0, 1 and 2 can be used. The algorithm minimizes tension, sagging and jerk energy. 
 
-The function *Curve* returns the result as a 2D BSpline curve. 
-
-If you want to give a specific *length* to a batten curve, use: 
+The function *Curve* returns the result as a 2D BSpline curve. If you want to give a specific *length* to a batten curve, use: 
 
 ~~~~~{.py}
 b.SetSlidingFactor(length / b.SlidingOfReference()) 
 ~~~~~
 where *b* is the name of the batten curve object 
 
-Free sliding is generally more aesthetically pleasing than constrained sliding. However, the computation can fail with values such as angles greater than \f$p/2\f$ because in this case the length is theoretically infinite. 
-
+Free sliding is generally more aesthetically pleasing than constrained sliding. However, the computation can fail with values such as angles greater than \f$p/2\f$ because in this case the length is theoretically infinite.
 In other cases, when sliding is imposed and the sliding factor is too large, the batten can collapse. 
-
 The constructor parameters, *Tolerance* and *NbIterations*, control how precise the computation is, and how long it will take. 
 
 @subsubsection occt_modalg_2_5_2 Ruled Surfaces 
@@ -619,7 +605,7 @@ The class *PointConstraint* allows defining points as constraints to the surface
 
 #### Applying Geom_Surface to Plate Surfaces
 
-The method *Surface()* allows describing the characteristics of plate surface objects returned by *GeomPlate_BuildPlateSurface.Surface()* using the methods of *Geom_Surface*.
+The method *Surface* allows describing the characteristics of plate surface objects returned by *GeomPlate_BuildPlateSurface.Surface()* using the methods of *Geom_Surface*.
 
 #### Approximating a Plate surface to a BSpline
 
@@ -632,22 +618,24 @@ Let's create a Plate surface and approximate it from a polyline as a curve const
 ~~~~~{.py}
 NbCurFront=4
 NbPointConstraint=1
-P1 = gp_Pnt(0., 0., 0.)
-P2 = gp_Pnt(0., 10., 0.) 
-P3 = gp_Pnt(0., 10., 10.)
-P4 = gp_Pnt(0., 0., 10.)
-P5 = gp_Pnt(5., 5., 5.)
-W = BRepBuilderAPI_MakePolygon()
-W.Add(P1)
-W.Add(P2)
-W.Add(P3)
-W.Add(P4)
-W.Add(P1)
+
+p1 = gp_Pnt(0., 0., 0.)
+p2 = gp_Pnt(0., 10., 0.) 
+p3 = gp_Pnt(0., 10., 10.)
+p4 = gp_Pnt(0., 0., 10.)
+p5 = gp_Pnt(5., 5., 5.)
+
+polygon = BRepBuilderAPI_MakePolygon() # polygon is a Wire
+polygon.Add(p1)
+polygon.Add(p2)
+polygon.Add(p3)
+polygon.Add(p4)
+polygon.Add(p1)
 # Initialize a BuildPlateSurface 
 BPSurf = GeomPlate_BuildPlateSurface(3, 15, 2)
 # Create the curve constraints 
 an_exp = BRepTools_WireExplorer()
-an_exp.Init(W)
+an_exp.Init(polygon)
 while an_exp.More():
     current_edge = anExp.Current()
     C = BRepAdaptor_HCurve()
@@ -656,7 +644,7 @@ while an_exp.More():
     BPSurf.Add(Cont)
     exp.Next()
 # Point constraint 
-PCont = GeomPlate_PointConstraint(P5, 0)
+PCont = GeomPlate_PointConstraint(p5, 0)
 BPSurf.Add(PCont)
 # Compute the Plate surface 
 BPSurf.Perform()
@@ -671,7 +659,7 @@ Mapp = GeomPlate_MakeApprox(PSurf, Tol, MaxSeg, MaxDegree, dmax, CritOrder)
 Surf = Mapp.Surface()
 # create a face corresponding to the approximated Plate Surface 
 Umin, Umax, Vmin, Vminx = PSurf.Bounds()
-BRepBuilderAPI_MakeFace MF(Surf, Umin, Umax, Vmin, Vmax); 
+BRepBuilderAPI_MakeFace MF(Surf, Umin, Umax, Vmin, Vmax) 
 ~~~~~
 
 @subsection occt_modalg_2_6 Projections
@@ -713,31 +701,31 @@ NumSolutions = Projector.NbPoints()
 
 #### Calling the location of a solution point
 
-The solutions are indexed in a range from *1* to *Projector.NbPoints()*. The point, which corresponds to a given *Index* may be found: 
+The solutions are indexed in a range from *1* to *Projector.NbPoints()*. The point, which corresponds to a given *index* may be found: 
 ~~~~~{.py}
-Pn = Projector.Point(Index)
+pn = Projector.Point(index)
 ~~~~~
 
 #### Calling the parameter of a solution point
 
-For a given point corresponding to a given *Index*: 
+For a given point corresponding to a given *index*: 
 
 ~~~~~{.py}
-U = Projector.Parameter(Index)
+u = Projector.Parameter(index)
 ~~~~~
 
 This can also be programmed as: 
 
 ~~~~~{.py}
-U = Projector.Parameter(Index)
+u = Projector.Parameter(index)
 ~~~~~
 
 #### Calling the distance between the start and end points
 
-We can find the distance between the initial point and a point, which corresponds to the given *Index*: 
+We can find the distance between the initial point and a point, which corresponds to the given *index*: 
 
 ~~~~~{.py}
-D = Projector.Distance(Index)
+d = Projector.Distance(index)
 ~~~~~
 
 #### Calling the nearest solution point
@@ -745,19 +733,19 @@ D = Projector.Distance(Index)
 
 This class offers a method to return the closest solution point to the starting point. This solution is accessed as follows: 
 ~~~~~{.py}
-gp_Pnt2d P1 = Projector.NearestPoint()
+P1 = Projector.NearestPoint() # gp_Pnt2d 
 ~~~~~
 
 #### Calling the parameter of the nearest solution point
 
 ~~~~~{.py}
-U = Projector.LowerDistanceParameter()
+u = Projector.LowerDistanceParameter()
 ~~~~~
 
 #### Calling the minimum distance from the point to the curve
 
 ~~~~~{.py}
-D = Projector.LowerDistance() 
+d = Projector.LowerDistance() 
 ~~~~~
 
 
@@ -766,7 +754,7 @@ D = Projector.LowerDistance()
 If you want to use the wider range of functionalities available from the *Extrema* module, a call to the *Extrema()* method will return the algorithmic object for calculating extrema. For example: 
 
 ~~~~~{.py}
-TheExtrema = Projector.Extrema()
+the_extrema = Projector.Extrema()
 ~~~~~
 
 @subsubsection occt_modalg_2_6_2 Projection of a 3D Point on a Curve
@@ -774,15 +762,15 @@ TheExtrema = Projector.Extrema()
 The class *GeomAPI_ProjectPointOnCurve* is instantiated as in the following example: 
 
 ~~~~~{.py}
-P=gp_Pnt()
-C =  Geom_BezierCurve(args);
-Projector = GeomAPI_ProjectPointOnCurve(P, C)
+point = gp_Pnt()
+curve =  Geom_BezierCurve(args)
+Projector = GeomAPI_ProjectPointOnCurve(point, curve)
 ~~~~~
 
-If you wish to restrict the search for normals to the given domain \f$[U1,U2]\f$, use the following constructor: 
+If you wish to restrict the search for normals to the given domain \f$[u1,u2]\f$, use the following constructor: 
 
 ~~~~~{.py}
-Projector  = GeomAPI_ProjectPointOnCurve(P, C, U1, U2)
+Projector  = GeomAPI_ProjectPointOnCurve(point, curve, u1, u2)
 ~~~~~
 
 Having thus created the *GeomAPI_ProjectPointOnCurve* object, you can now interrogate it. 
@@ -790,14 +778,14 @@ Having thus created the *GeomAPI_ProjectPointOnCurve* object, you can now interr
 #### Calling the number of solution points
 
 ~~~~~{.py}
-NumSolutions = Projector.NbPoints()
+nbr_solutions = Projector.NbPoints()
 ~~~~~
 
 #### Calling the location of a solution point
 
-The solutions are indexed in a range from 1 to *Projector.NbPoints()*. The point, which corresponds to a given index, may be found: 
+The solutions are indexed in a range from 1 to *Projector.NbPoints()*. The point, which corresponds to a given *index*, may be found: 
 ~~~~~{.py}
-Pn = Projector.Point(Index)
+pn = Projector.Point(index)
 ~~~~~
 
 #### Calling the parameter of a solution point
@@ -805,38 +793,38 @@ Pn = Projector.Point(Index)
 For a given point corresponding to a given index: 
 
 ~~~~~{.py}
-U = Projector.Parameter(Index)
+u = Projector.Parameter(index)
 ~~~~~
 
 This can also be programmed as: 
 ~~~~~{.py}
-U = Projector.Parameter(Index);
+u = Projector.Parameter(index)
 ~~~~~
 
 #### Calling the distance between the start and end point
 
-The distance between the initial point and a point, which corresponds to a given index, may be found: 
+The distance between the initial point and a point, which corresponds to a given *index*, may be found: 
 ~~~~~{.py}
-D = Projector.Distance(Index)
+d = Projector.Distance(index)
 ~~~~~
 
 #### Calling the nearest solution point
 
 This class offers a method to return the closest solution point to the starting point. This solution is accessed as follows: 
 ~~~~~{.py}
-P1 = Projector.NearestPoint()
+p1 = Projector.NearestPoint()
 ~~~~~
 
 #### Calling the parameter of the nearest solution point
 
 ~~~~~{.py}
-U = Projector.LowerDistanceParameter()
+u = Projector.LowerDistanceParameter()
 ~~~~~
 
 #### Calling the minimum distance from the point to the curve
 
 ~~~~~{.py}
-D = Projector.LowerDistance()
+d = Projector.LowerDistance()
 ~~~~~
 
 
@@ -845,7 +833,7 @@ D = Projector.LowerDistance()
 If you want to use the wider range of functionalities available from the *Extrema* module, a call to the *Extrema()* method will return the algorithmic object for calculating the extrema. For example: 
 
 ~~~~~{.py}
-TheExtrema = Projector.Extrema()
+the_extrema = Projector.Extrema()
 ~~~~~
 
 @subsubsection occt_modalg_2_6_3 Projection of a Point on a Surface
@@ -858,32 +846,32 @@ Note that the surface does not have to be of *Geom_RectangularTrimmedSurface* ty
 
 *GeomAPI_ProjectPointOnSurf* is instantiated as in the following example: 
 ~~~~~{.py} 
-P=gp_Pnt(); 
-S = Geom_BezierSurface(args)
-Proj = GeomAPI_ProjectPointOnSurf(P, S)
+point = gp_Pnt()
+surf = Geom_BezierSurface(args)
+proj = GeomAPI_ProjectPointOnSurf(point, surf)
 ~~~~~
 
-To restrict the search for normals within the given rectangular domain \f$[U1, U2, V1, V2]\f$, use the constructor *GeomAPI_ProjectPointOnSurf(P, S, U1, U2, V1, V2)*
+To restrict the search for normals within the given rectangular domain \f$[u1, u2, v1, v2]\f$, use the constructor *GeomAPI_ProjectPointOnSurf(point, surf, u1, u2, v1, v2)*
 
-The values of \f$U1, U2, V1\f$ and \f$V2\f$ lie at or within their maximum and minimum limits, i.e.: 
+The values of \f$u1, u2, v1\f$ and \f$v2\f$ lie at or within their maximum and minimum limits, i.e.: 
 ~~~~~{.py}
-Umin <= U1 < U2 <= Umax 
-Vmin <= V1 < V2 <= Vmax 
+umin <= u1 < u2 <= umax 
+vmin <= v1 < v2 <= vmax 
 ~~~~~
 Having thus created the *GeomAPI_ProjectPointOnSurf* object, you can interrogate it. 
 
 #### Calling the number of solution points
 
 ~~~~~{.py}
-NumSolutions = Proj.NbPoints()
+nbr_solutions = Proj.NbPoints()
 ~~~~~
 
 #### Calling the location of a solution point
 
-The solutions are indexed in a range from 1 to *Proj.NbPoints()*. The point corresponding to the given index may be found: 
+The solutions are indexed in a range from 1 to *Proj.NbPoints()*. The point corresponding to the given *index* may be found: 
 
 ~~~~~{.py}
-Pn = Proj.Point(Index)
+pn = Proj.Point(index)
 ~~~~~
 
 #### Calling the parameters of a solution point
@@ -891,34 +879,34 @@ Pn = Proj.Point(Index)
 For a given point corresponding to the given index: 
 
 ~~~~~{.py}
-U, V = Proj.Parameters(Index) 
+u, v = Proj.Parameters(index) 
 ~~~~~
 
 #### Calling the distance between the start and end point
 
 
-The distance between the initial point and a point corresponding to the given index may be found: 
+The distance between the initial point and a point corresponding to the given *index* may be found: 
 ~~~~~{.py}
-D = Projector.Distance(Index)
+d = Projector.Distance(index)
 ~~~~~
 
 #### Calling the nearest solution point
 
 This class offers a method, which returns the closest solution point to the starting point. This solution is accessed as follows: 
 ~~~~~{.py}
-P1 = Proj.NearestPoint()
+p1 = Proj.NearestPoint()
 ~~~~~
 
 #### Calling the parameters of the nearest solution point
 
 ~~~~~{.py}
-U, V = Proj.LowerDistanceParameters (U, V)
+u, v = Proj.LowerDistanceParameters()
 ~~~~~
 
 #### Calling the minimum distance from a point to the surface
 
 ~~~~~{.py}
-D = Proj.LowerDistance()
+d = Proj.LowerDistance()
 ~~~~~
 
 
@@ -927,7 +915,7 @@ D = Proj.LowerDistance()
 If you want to use the wider range of functionalities available from the *Extrema* module, a call to the *Extrema()* method will return the algorithmic object for calculating the extrema as follows: 
 
 ~~~~~{.py}
-TheExtrema = Proj.Extrema()
+the_extrema = Proj.Extrema()
 ~~~~~
 
 @subsubsection occt_modalg_2_12_8 Switching from 2d and 3d Curves
@@ -969,47 +957,28 @@ E = BRepBuilderAPI_MakeEdge(P1,P2).Edge()
 This is the simplest way to create edge E from two points P1, P2, but the developer can test for errors when he is not as confident of the data as in the previous example. 
 
 ~~~~~{.py}
-def EdgeTest():
-    P1 = gp_Pnt(10,0,0)
-    P2 = gp_Pnt(20,0,0)
-    ME = BRepBuilderAPI_MakeEdge(P1,P2)
+def edge_test():
+    point_1 = gp_Pnt(10,0,0)
+    point_2 = gp_Pnt(20,0,0)
+    me = BRepBuilderAPI_MakeEdge(point_1, point_2)
     assert ME.IsDone()  # will raise an exception if ME is not done
-    E = ME.Edge()
+    e = me.Edge()
 ~~~~~
 
 In this example an intermediary object ME has been introduced. This can be tested for the completion of the function before accessing the result. More information on *error handling* in the topology programming interface can be found in the next section. 
 
-*BRepBuilderAPI_MakeEdge* provides valuable information. For example, when creating an edge from two points, two vertices have to be created from the points. Sometimes you may be interested in getting these vertices quickly without exploring the new edge. Such information can be provided when using a class. The following example shows a function creating an edge and two vertices from two points. 
+*BRepBuilderAPI_MakeEdge* provides valuable information. For example, when creating an edge from two points, two vertices have to be created from the points. Sometimes you may be interested in getting these vertices quickly without exploring the new edge. Such information can be provided when using a class. The following example shows a function creating an edge and two vertices from two points. The class *BRepBuilderAPI_MakeEdge* provides two methods *Vertex1* and *Vertex2*, which return two vertices used to create the edge.
 
+~~~~~{.py}
+def make_edge_and_vertices_from_points(point_1, point_2):
+    """" point_1 and point_2 are instances of gp_Pnt
+    """
+    edge = BRepBuilderAPI_MakeEdge(point_1, point_2).Edge()
+    assert ME.IsDone()
+    vertex_1 = ME.Vextex1()
+    vertex_2 = ME.Vertex2()
+    return edge, vertex_1, vertex_2
 ~~~~~
-void MakeEdgeAndVertices(const gp_Pnt& P1, 
-const gp_Pnt& P2, 
-TopoDS_Edge& E, 
-TopoDS_Vertex& V1, 
-TopoDS_Vertex& V2) 
-{ 
-BRepBuilderAPI_MakeEdge ME(P1,P2); 
-if (!ME.IsDone()) { 
-Standard_DomainError::Raise 
-(“MakeEdgeAndVerices::Failed to create an edge”); 
-} 
-E = ME; 
-V1 = ME.Vextex1(); 
-V2 = ME.Vertex2(); 
-~~~~~
-
-The class *BRepBuilderAPI_MakeEdge* provides two methods *Vertex1* and *Vertex2*, which return two vertices used to create the edge. 
-
-How can *BRepBuilderAPI_MakeEdge* be both a function and a class? It can do this because it uses the casting capabilities of C++. The *BRepBuilderAPI_MakeEdge* class has a method called Edge; in the previous example the line *E = ME* could have been written. 
-
-~~~~~
-E = ME.Edge(); 
-~~~~~
-
-This instruction tells the C++ compiler that there is an **implicit casting** of a *BRepBuilderAPI_MakeEdge* into a *TopoDS_Edge* using the *Edge* method. It means this method is automatically called when a *BRepBuilderAPI_MakeEdge* is found where a *TopoDS_Edge* is required. 
-
-This feature allows you to provide classes, which have the simplicity of function calls when required and the power of classes when advanced processing is necessary. All the benefits of this approach are explained when describing the topology programming interface classes. 
-
 
 @subsection occt_modalg_3a_1 Error Handling in the Topology API
 
@@ -1026,30 +995,27 @@ As the test involves a great deal of computation, performing it twice is also ti
 
 Consequently, you might be tempted to adopt the highly inadvisable style of programming illustrated in the following example: 
 
-~~~~~
-#include <Standard_ErrorHandler.hxx> 
-try { 
-TopoDS_Edge E = BRepBuilderAPI_MakeEdge(P1,P2); 
-// go on with the edge 
-} 
-catch { 
-// process the error. 
-} 
+~~~~~{.py}
+point_0 = gp_Pnt(0., 0., 0.)
+try:
+    # following line will raise an exception
+    E = BRepBuilderAPI_MakeEdge(point_0, point_0).Edge()
+except:
+    ...
 ~~~~~
 
 To help the user, the Topology API classes only raise the exception *StdFail_NotDone*. Any other exception means that something happened which was unforeseen in the design of this API. 
 
-The *NotDone* exception is only raised when the user tries to access the result of the computation and the original data is corrupted. At the construction of the class instance, if the algorithm cannot be completed, the internal flag *NotDone* is set. This flag can be tested and in some situations a more complete description of the error can be queried. If the user ignores the *NotDone* status and tries to access the result, an exception is raised. 
+The *StdFail_NotDone* exception is only raised when the user tries to access the result of the computation and the original data is corrupted. At the construction of the class instance, if the algorithm cannot be completed, the internal flag *StdFail_NotDone* is set. This flag can be tested and in some situations a more complete description of the error can be queried. If the user ignores the *StdFail_NotDone* status and tries to access the result, an exception is raised. 
 
-~~~~~
-BRepBuilderAPI_MakeEdge ME(P1,P2); 
-if (!ME.IsDone()) { 
-// doing ME.Edge() or E = ME here 
-// would raise StdFail_NotDone 
-Standard_DomainError::Raise 
-(“ProcessPoints::Failed to create an edge”); 
-} 
-TopoDS_Edge E = ME; 
+~~~~~{.py}
+point_0 = gp_Pnt(0., 0., 0.)
+me = BRepBuilderAPI_MakeEdge(point_0, point_0)  # this will not raise an exception
+if me.IsDone():
+    # this line will never be accessed, since me should not be done
+    edge = me.Edge()
+else: #you can do whatever you want here
+    raise EdgeNotDone  # for instance raise your own exception
 ~~~~~
 
 @section occt_modalg_3 Standard Topological Objects
@@ -1071,8 +1037,8 @@ There are two root classes for their construction and modification:
 
 *BRepBuilderAPI_MakeVertex* creates a new vertex from a 3D point from gp. 
 ~~~~~{.py}
-P = gp_Pnt P(0,0,10)
-V = BRepBuilderAPI_MakeVertex(P)
+point = gp_Pnt(0,0,10)
+vertex = BRepBuilderAPI_MakeVertex(point)
 ~~~~~
 
 This class always creates a new vertex and has no other methods.
@@ -1083,44 +1049,43 @@ This class always creates a new vertex and has no other methods.
 
 Use *BRepBuilderAPI_MakeEdge* to create from a curve and vertices. The basic method constructs an edge from a curve, two vertices, and two parameters. 
 
-~~~~~
-Handle(Geom_Curve) C = ...; // a curve 
-TopoDS_Vertex V1 = ...,V2 = ...;// two Vertices 
-Standard_Real p1 = ..., p2 = ..;// two parameters 
-TopoDS_Edge E = BRepBuilderAPI_MakeEdge(C,V1,V2,p1,p2); 
+~~~~~{.py}
+curve = ... # a Geom_Curve 
+vertex_1 = ...
+vertex_2 = ... # two TopoDS_Vertex
+param_1 = ...
+param_2 = .. # two parameters 
+edge = BRepBuilderAPI_MakeEdge(curve, vertex_1, vertex_2, point_1, point_2).Edge()
 ~~~~~
 
-where C is the domain of the edge; V1 is the first vertex oriented FORWARD; V2 is the second vertex oriented REVERSED; p1 and p2 are the parameters for the vertices V1 and V2 on the curve. The default tolerance is associated with this edge. 
-
-@image html /user_guides/modeling_algos/images/modeling_algos_image022.png "Basic Edge Construction"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image022.png "Basic Edge Construction"
+where *curve* is the domain of the edge; *vertex_1* is the first vertex oriented TopAbs_FORWARD; *vertex_2* is the second vertex oriented TopAbs_REVERSED; *param_1p and *param_2* are the parameters for the vertices *vertex_1* and *vertex_2* on the curve. The default tolerance is associated with this edge.
+@figure{/user_guides/modeling_algos/images/modeling_algos_image022.png "Basic Edge Construction"}
 
 The following rules apply to the arguments: 
 
 **The curve**
- * Must not be a Null Handle.
- * If the curve is a trimmed curve, the basis curve is used.
+ * must not be a Null Handle, ie. curve.IsNull() should return False;
+ * if the curve is a trimmed curve, the basis curve is used.
 
 **The vertices** 
- * Can be null shapes. When V1 or V2 is Null the edge is open in the corresponding direction and the corresponding parameter p1 or p2 must be infinite (i.e p1 is RealFirst(), p2 is RealLast()).
- * Must be different vertices if they have different 3d locations and identical vertices if they have the same 3d location (identical vertices are used when the curve is closed).
+ * can be null shapes. When *vertex_1* or *vertex_2* is Null, the edge is open in the corresponding direction and the corresponding parameter *param_1* or *param_2* must be infinite (i.e param_1 is RealFirst(), param_2 is RealLast()),
+ * must be different vertices if they have different 3d locations and identical vertices if they have the same 3d location (identical vertices are used when the curve is closed).
 
 **The parameters**
  * Must be increasing and in the range of the curve, i.e.:
 
 ~~~~~
- C->FirstParameter() <= p1 < p2 <= C->LastParameter() 
+ curve.FirstParameter() <= param_1 < param_2 <= curve.LastParameter() 
 ~~~~~ 
  
- * If the parameters are decreasing, the Vertices are switched, i.e. V2 becomes V1 and V1 becomes V2.
- * On a periodic curve the parameters p1 and p2 are adjusted by adding or subtracting the period to obtain p1 in the range of the curve and p2 in the range p1 < p2 <= p1+ Period. So on a parametric curve p2 can be greater than the second parameter, see the figure below.
- * Can be infinite but the corresponding vertex must be Null (see above).
- * The distance between the Vertex 3d location and the point evaluated on the curve with the parameter must be lower than the default precision.
+ * if the parameters are decreasing, the vertices are switched, i.e. vertex_2 becomes vertex_1 and vertex_1 becomes vertex_2,
+ * on a periodic curve the parameters param_1 and param_2 are adjusted by adding or subtracting the period to obtain param_1 in the range of the curve and param_2 in the range \f$ p1 < p2 <= p1 + Period\f$. So on a parametric curve p2 can be greater than the second parameter, see the figure below.
+ * can be infinite but the corresponding vertex must be Null (see above),
+ * the distance between the Vertex 3d location and the point evaluated on the curve with the parameter must be lower than the default precision.
 
 The figure below illustrates two special cases, a semi-infinite edge and an edge on a periodic curve. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image023.png  "Infinite and Periodic Edges"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image023.png  "Infinite and Periodic Edges"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image023.png  "Infinite and Periodic Edges"}
 
 @subsubsection occt_modalg_3_2_2 Supplementary edge construction methods
 
@@ -1128,53 +1093,56 @@ There exist supplementary edge construction methods derived from the basic one.
 
 *BRepBuilderAPI_MakeEdge* class provides methods, which are all simplified calls of the previous one: 
 
- * The parameters can be omitted. They are computed by projecting the vertices on the curve.
- * 3d points (Pnt from gp) can be given in place of vertices. Vertices are created from the points. Giving vertices is useful when creating connected vertices.
- * The vertices or points can be omitted if the parameters are given. The points are computed by evaluating the parameters on the curve.
- * The vertices or points and the parameters can be omitted. The first and the last parameters of the curve are used.
+ * the parameters can be omitted. They are computed by projecting the vertices on the curve,
+ * 3d points (Pnt from gp) can be given in place of vertices. Vertices are created from the points. Giving vertices is useful when creating connected vertices,
+ * the vertices or points can be omitted if the parameters are given. The points are computed by evaluating the parameters on the curve,
+ * the vertices or points and the parameters can be omitted. The first and the last parameters of the curve are used.
 
 The five following methods are thus derived from the basic construction: 
 
-~~~~~
-Handle(Geom_Curve) C = ...; // a curve 
-TopoDS_Vertex V1 = ...,V2 = ...;// two Vertices 
-Standard_Real p1 = ..., p2 = ..;// two parameters 
-gp_Pnt P1 = ..., P2 = ...;// two points 
-TopoDS_Edge E; 
-// project the vertices on the curve 
-E = BRepBuilderAPI_MakeEdge(C,V1,V2); 
-// Make vertices from points 
-E = BRepBuilderAPI_MakeEdge(C,P1,P2,p1,p2); 
-// Make vertices from points and project them 
-E = BRepBuilderAPI_MakeEdge(C,P1,P2); 
-// Computes the points from the parameters 
-E = BRepBuilderAPI_MakeEdge(C,p1,p2); 
-// Make an edge from the whole curve 
-E = BRepBuilderAPI_MakeEdge(C); 
+~~~~~{.py}
+C = ... # a curve 
+V1 = ...
+V2 = ... # two Vertices 
+param_1 = ... 
+param_2 = .. # two parameters 
+point_1 = gp_Pnt(...
+point_2 = gp_Pnt(... #two gp_Pnt points 
+# project the vertices on the curve 
+BRepBuilderAPI_MakeEdge(curve, vertex_1, vertex_2)
+# make vertices from points  
+BRepBuilderAPI_MakeEdge(curve, point_1, point_2, param_1, param_2)
+# Make vertices from points and project them 
+E = BRepBuilderAPI_MakeEdge(curve, point_1, point_2)
+# Computes the points from the parameters 
+E = BRepBuilderAPI_MakeEdge(curve, param_1, param_2) 
+# Make an edge from the whole curve 
+E = BRepBuilderAPI_MakeEdge(curve)
 ~~~~~
 
 
 Six methods (the five above and the basic method) are also provided for curves from the gp module in place of Curve from Geom. The methods create the corresponding Curve from Geom and are implemented for the following classes: 
 
-*gp_Lin*    creates a *Geom_Line* 
-*gp_Circ*   creates a *Geom_Circle* 
-*gp_Elips*  creates a *Geom_Ellipse* 
-*gp_Hypr*  creates a *Geom_Hyperbola* 
-*gp_Parab*  creates a *Geom_Parabola* 
+* *gp_Lin* creates a *Geom_Line*,
+* *gp_Circ* creates a *Geom_Circle*,
+* *gp_Elips* creates a *Geom_Ellipse*,
+* *gp_Hypr* creates a *Geom_Hyperbola*,
+* *gp_Parab* creates a *Geom_Parabola*.
 
 There are also two methods to construct edges from two vertices or two points. These methods assume that the curve is a line; the vertices or points must have different locations. 
 
 ~~~~~
 
-TopoDS_Vertex V1 = ...,V2 = ...;// two Vertices 
-gp_Pnt P1 = ..., P2 = ...;// two points 
-TopoDS_Edge E; 
+vertex_1 = TopoDS_vertex(...
+vertex_2 = TopoDS_Vertex(... # two Vertices TopoDS_Vertex
+point_1 = gp_Pnt(...
+point_2 = gp_Pnt(... #two points 
 
-// linear edge from two vertices 
-E = BRepBuilderAPI_MakeEdge(V1,V2); 
+# linear edge from two vertices 
+E = BRepBuilderAPI_MakeEdge(vertex_1, vertex_2)
 
-// linear edge from two points 
-E = BRepBuilderAPI_MakeEdge(P1,P2); 
+# linear edge from two points 
+E = BRepBuilderAPI_MakeEdge(point_1, point_2)
 ~~~~~
 
 @subsubsection occt_modalg_3_2_3 Other information and error status
@@ -1185,83 +1153,62 @@ If *BRepBuilderAPI_MakeEdge* is used as a class, it can provide two vertices. Th
 
 The *Error* method returns a term of the *BRepBuilderAPI_EdgeError* enumeration. It can be used to analyze the error when *IsDone* method returns False. The terms are: 
 
- * **EdgeDone** - No error occurred, *IsDone* returns True. 
- * **PointProjectionFailed** - No parameters were given, but the projection of the 3D points on the curve failed. This happens if the point distance to the curve is greater than the precision. 
- * **ParameterOutOfRange** - The given parameters are not in the range *C->FirstParameter()*, *C->LastParameter()* 
- * **DifferentPointsOnClosedCurve** - The two vertices or points have different locations but they are the extremities of a closed curve. 
- * **PointWithInfiniteParameter** - A finite coordinate point was associated with an infinite parameter (see the Precision module for a definition of infinite values). 
- * **DifferentsPointAndParameter** - The distance of the 3D point and the point evaluated on the curve with the parameter is greater than the precision. 
- * **LineThroughIdenticPoints** - Two identical points were given to define a line (construction of an edge without curve), *gp::Resolution* is used to test confusion . 
+ * *BRepBuilderAPI_EdgeDone* - No error occurred, *IsDone* returns True. 
+ * *BRepBuilderAPI_PointProjectionFailed* - No parameters were given, but the projection of the 3D points on the curve failed. This happens if the point distance to the curve is greater than the precision. 
+ * *BRepBuilderAPI_ParameterOutOfRange* - The given parameters are not in the range *C->FirstParameter()*, *C->LastParameter()* 
+ * *BRepBuilderAPI_DifferentPointsOnClosedCurve* - The two vertices or points have different locations but they are the extremities of a closed curve. 
+ * *BRepBuilderAPI_PointWithInfiniteParameter* - A finite coordinate point was associated with an infinite parameter (see the Precision module for a definition of infinite values). 
+ * *BRepBuilderAPI_DifferentsPointAndParameter* - The distance of the 3D point and the point evaluated on the curve with the parameter is greater than the precision. 
+ * *LineThroughIdenticPoints* - Two identical points were given to define a line (construction of an edge without curve), the function *gp_Resolution()* is used to test confusion . 
 
-The following example creates a rectangle centered on the origin of dimensions H, L with fillets of radius R. The edges and the vertices are stored in the arrays *theEdges* and *theVertices*. We use class *Array1OfShape* (i.e. not arrays of edges or vertices). See the image below. 
+The following example creates a rectangle centered on the origin of dimensions H, L with fillets of radius R. The edges and the vertices are stored in the arrays *theEdges* and *theVertices*. See the image below. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image024.png "Creating a Wire"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image024.png "Creating a Wire"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image024.png "Creating a Wire"}
 
-~~~~~
-#include <BRepBuilderAPI_MakeEdge.hxx> 
-#include <TopoDS_Shape.hxx> 
-#include <gp_Circ.hxx> 
-#include <gp.hxx> 
-#include <TopoDS_Wire.hxx> 
-#include <TopTools_Array1OfShape.hxx> 
-#include <BRepBuilderAPI_MakeWire.hxx> 
+~~~~~{.py}
+from math import pi
 
-// Use MakeArc method to make an edge and two vertices 
-void MakeArc(Standard_Real x,Standard_Real y, 
-Standard_Real R, 
-Standard_Real ang, 
-TopoDS_Shape& E, 
-TopoDS_Shape& V1, 
-TopoDS_Shape& V2) 
-{ 
-gp_Ax2 Origin = gp::XOY(); 
-gp_Vec Offset(x, y, 0.); 
-Origin.Translate(Offset); 
-BRepBuilderAPI_MakeEdge 
-ME(gp_Circ(Origin,R), ang, ang+PI/2); 
-E = ME; 
-V1 = ME.Vertex1(); 
-V2 = ME.Vertex2(); 
-} 
+# Use MakeArc method to make an edge and two vertices 
+def make_arc(x, y, R, ang):
+    """ x, y, R, ang: floats
+    Returns E, V1 and V2: TopoDS_Shape instances
+    """
+    origin = gp_XOY() 
+    offset = gp_Vec(x, y, 0.) 
+    origin.translate(offset) 
+    E = BRepBuilderAPI_MakeEdge(gp_Circ(origin, R), ang, ang+pi/2).Edge()
+    V1 = ME.Vertex1() 
+    V2 = ME.Vertex2()
+    return E, V1, V2
 
-TopoDS_Wire MakeFilletedRectangle(const Standard_Real H, 
-const Standard_Real L, 
-const Standard_Real R) 
-{ 
-TopTools_Array1OfShape theEdges(1,8); 
-TopTools_Array1OfShape theVertices(1,8); 
+def make_filleted_rectangle(H, L, R):
+    """" H, L and R: floats
+    Returns a TopoDS_Wire 
+    """
+    theEdges = TopTools_Array1OfShape(1,8) 
+    theVertices = TopTools_Array1OfShape(1,8) 
 
-// First create the circular edges and the vertices 
-// using the MakeArc function described above. 
-void MakeArc(Standard_Real, Standard_Real, 
-Standard_Real, Standard_Real, 
-TopoDS_Shape&, TopoDS_Shape&, TopoDS_Shape&); 
+    # First create the circular edges and the vertices 
+    # using the MakeArc function described above. 
 
-Standard_Real x = L/2 - R, y = H/2 - R; 
-MakeArc(x,-y,R,3.*PI/2.,theEdges(2),theVertices(2), 
-theVertices(3)); 
-MakeArc(x,y,R,0.,theEdges(4),theVertices(4), 
-theVertices(5)); 
-MakeArc(-x,y,R,PI/2.,theEdges(6),theVertices(6), 
-theVertices(7)); 
-MakeArc(-x,-y,R,PI,theEdges(8),theVertices(8), 
-theVertices(1)); 
-// Create the linear edges 
-for (Standard_Integer i = 1; i <= 7; i += 2) 
-{ 
-theEdges(i) = BRepBuilderAPI_MakeEdge 
-(TopoDS::Vertex(theVertices(i)),TopoDS::Vertex 
-(theVertices(i+1))); 
-} 
-// Create the wire using the BRepBuilderAPI_MakeWire 
-BRepBuilderAPI_MakeWire MW; 
-for (i = 1; i <= 8; i++) 
-{ 
-MW.Add(TopoDS::Edge(theEdges(i))); 
-} 
-return MW.Wire(); 
-} 
+    x = L/2 - R
+    y = H/2 - R;
+    E1, V1, V2 = make_arc(x, -y, R, 3.*pi/2)
+    E2, V3, V4 = make_arc(x, y, R, 0.)
+    E3, V5, V6 = make_arc(-x, y, R, pi/2.)
+    E4, V7, V8 = make_arc(-x, -y, R, pi)
+
+    # Create the linear edges 
+    E5 = BRepBuilderAPI_MakeEdge(V1, V2).Edge()
+    E6 = BRepBuilderAPI_MakeEdge(V3, V4).Edge()
+    E7 = BRepBuilderAPI_MakeEdge(V5, V6).Edge()
+    E8 = BRepBuilderAPI_MakeEdge(V7, V8).Edge()
+
+    # Create the wire using the BRepBuilderAPI_MakeWire 
+    MW = BRepBuilderAPI_MakeWire()
+    for ed in [E1, E2, E3, E4, E5, E6, E7, E8]:
+        MW.Add(ed)
+    return MW.Wire() 
 ~~~~~
 
 @subsection occt_modalg_3_3 Edge 2D
@@ -1274,23 +1221,20 @@ Use *BRepBuilderAPI_MakeEdge2d* class to make edges on a working plane from 2d c
 
 *BRepBuilderAPI_MakePolygon* class is used to build polygonal wires from vertices or points. Points are automatically changed to vertices as in *BRepBuilderAPI_MakeEdge*. 
 
-The basic usage of *BRepBuilderAPI_MakePolygon* is to create a wire by adding vertices or points using the Add method. At any moment, the current wire can be extracted. The close method can be used to close the current wire. In the following example, a closed wire is created from an array of points. 
+The basic usage of *BRepBuilderAPI_MakePolygon* is to create a wire by adding vertices or points using the Add method. At any moment, the current wire can be extracted. The *Close* method can be used to close the current wire. In the following example, a closed wire is created from an array of points. 
 
-~~~~~
-#include <TopoDS_Wire.hxx> 
-#include <BRepBuilderAPI_MakePolygon.hxx> 
-#include <TColgp_Array1OfPnt.hxx> 
-
-TopoDS_Wire ClosedPolygon(const TColgp_Array1OfPnt& Points) 
-{ 
-BRepBuilderAPI_MakePolygon MP; 
-for(Standard_Integer i=Points.Lower();i=Points.Upper();i++) 
-{ 
-MP.Add(Points(i)); 
-} 
-MP.Close(); 
-return MP; 
-} 
+~~~~~{.py}
+def make_closed_polygon(array_of_points):
+    """
+    Buids a closed polygon from a TColgp_Array1OfPnt
+    array_of_points: TColgp_Array1OfPnt
+    Returns a TopoD_Wire
+    """
+    make_polygon = BRepBuilderAPI_MakePolygon()
+    for i in range(array_of_points.Lower(), array_of_points.Upper()): 
+        make_polygon.Add(Points(i)) 
+    make_polygon.Close() 
+    return make_polygon.Wire()
 ~~~~~
 
 Short-cuts are provided for 2, 3, or 4 points or vertices. Those methods have a Boolean last argument to tell if the polygon is closed. The default value is False. 
@@ -1298,13 +1242,13 @@ Short-cuts are provided for 2, 3, or 4 points or vertices. Those methods have a 
 Two examples: 
 
 Example of a closed triangle from three vertices:
-~~~~~ 
-TopoDS_Wire W = BRepBuilderAPI_MakePolygon(V1,V2,V3,Standard_True); 
+~~~~~{.py} 
+wire = BRepBuilderAPI_MakePolygon(vertex_1, vertex_2, vertex_3, True).Wire()
 ~~~~~
 
 Example of an open polygon from four points:
 ~~~~~
-TopoDS_Wire W = BRepBuilderAPI_MakePolygon(P1,P2,P3,P4); 
+wire = BRepBuilderAPI_MakePolygon(point_1, point_2, point_3, point_4).Wire()
 ~~~~~
 
 *BRepBuilderAPI_MakePolygon* class maintains a current wire. The current wire can be extracted at any moment and the construction can proceed to a longer wire. After each point insertion, the class maintains the last created edge and vertex, which are returned by the methods *Edge, FirstVertex* and *LastVertex*. 
@@ -1319,20 +1263,19 @@ Use *BRepBuilderAPI_MakeFace* class to create a face from a surface and wires. A
 
 A face can be constructed from a surface and four parameters to determine a limitation of the UV space. The parameters are optional, if they are omitted the natural bounds of the surface are used. Up to four edges and vertices are created with a wire. No edge is created when the parameter is infinite. 
 
-~~~~~
-Handle(Geom_Surface) S = ...; // a surface 
-Standard_Real umin,umax,vmin,vmax; // parameters 
-TopoDS_Face F = BRepBuilderAPI_MakeFace(S,umin,umax,vmin,vmax); 
+~~~~~{.py}
+Handle(Geom_Surface) S = ...; # a surface 
+Standard_Real umin,umax,vmin,vmax; # parameters 
+TopoDS_Face F = BRepBuilderAPI_MakeFace(S,umin,umax,vmin,vmax) 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image025.png "Basic Face Construction"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image025.png "Basic Face Construction"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image025.png "Basic Face Construction"}
 
 To make a face from the natural boundary of a surface, the parameters are not required: 
 
-~~~~~
-Handle(Geom_Surface) S = ...; // a surface 
-TopoDS_Face F = BRepBuilderAPI_MakeFace(S); 
+~~~~~{.py}
+Handle(Geom_Surface) S = ...; # a surface 
+TopoDS_Face F = BRepBuilderAPI_MakeFace(S) 
 ~~~~~
 
 Constraints on the parameters are similar to the constraints in *BRepBuilderAPI_MakeEdge*. 
@@ -1355,10 +1298,10 @@ The two basic constructions (from a surface and from a surface and parameters) a
 Once a face has been created, a wire can be added using the *Add* method. For example, the following code creates a cylindrical surface and adds a wire. 
 
 ~~~~~
-gp_Cylinder C = ..; // a cylinder 
-TopoDS_Wire W = ...;// a wire 
-BRepBuilderAPI_MakeFace MF(C); 
-MF.Add(W); 
+gp_Cylinder C = ..; # a cylinder 
+TopoDS_Wire W = ...;# a wire 
+BRepBuilderAPI_MakeFace MF(C) 
+MF.Add(W) 
 TopoDS_Face F = MF; 
 ~~~~~
 
@@ -1369,7 +1312,7 @@ If there is no parametric curve for an edge of the wire on the Face it is comput
 For one wire, a simple syntax is provided to construct the face from the surface and the wire. The above lines could be written: 
 
 ~~~~~
-TopoDS_Face F = BRepBuilderAPI_MakeFace(C,W); 
+F = BRepBuilderAPI_MakeFace(C,W)
 ~~~~~
 
 A planar face can be created from only a wire, provided this wire defines a plane. For example, to create a planar face from a set of points you can use *BRepBuilderAPI_MakePolygon* and *BRepBuilderAPI_MakeFace*.
@@ -1383,23 +1326,23 @@ A planar face can be created from only a wire, provided this wire defines a plan
 TopoDS_Face PolygonalFace(const TColgp_Array1OfPnt& thePnts) 
 { 
 BRepBuilderAPI_MakePolygon MP; 
-for(Standard_Integer i=thePnts.Lower(); 
-i<=thePnts.Upper(); i++) 
+for(Standard_Integer i=thePnts.Lower() 
+i<=thePnts.Upper() i++) 
 { 
-MP.Add(thePnts(i)); 
+MP.Add(thePnts(i)) 
 } 
-MP.Close(); 
-TopoDS_Face F = BRepBuilderAPI_MakeFace(MP.Wire()); 
+MP.Close() 
+TopoDS_Face F = BRepBuilderAPI_MakeFace(MP.Wire()) 
 return F; 
 } 
 ~~~~~
 
-The last use of *MakeFace* is to copy an existing face to add new wires. For example, the following code adds a new wire to a face: 
+The last use of *BRepBuilderAPI_MakeFace* is to copy an existing face to add new wires. For example, the following code adds a new wire to a face: 
 
 ~~~~~
-TopoDS_Face F = ...; // a face 
-TopoDS_Wire W = ...; // a wire 
-F = BRepBuilderAPI_MakeFace(F,W); 
+TopoDS_Face F = ...; # a face 
+TopoDS_Wire W = ...; # a wire 
+F = BRepBuilderAPI_MakeFace(F,W) 
 ~~~~~
 
 To add more than one wire an instance of the *BRepBuilderAPI_MakeFace* class can be created with the face and the first wire and the new wires inserted with the *Add* method. 
@@ -1408,10 +1351,10 @@ To add more than one wire an instance of the *BRepBuilderAPI_MakeFace* class can
 
 The *Error* method returns an error status, which is a term from the *BRepBuilderAPI_FaceError* enumeration. 
 
-* *FaceDone* - no error occurred. 
-* *NoFace* - no initialization of the algorithm; an empty constructor was used. 
-* *NotPlanar* - no surface was given and the wire was not planar. 
-* *CurveProjectionFailed* - no curve was found in the parametric space of the surface for an edge. 
+* *FaceDone* - no error occurred,
+* *NoFace* - no initialization of the algorithm; an empty constructor was used,
+* *NotPlanar* - no surface was given and the wire was not planar,
+* *CurveProjectionFailed* - no curve was found in the parametric space of the surface for an edge,
 * *ParametersOutOfRange* - the parameters *umin, umax, vmin, vmax* are out of the surface. 
 
 @subsection occt_modalg_3_6 Wire
@@ -1419,32 +1362,32 @@ The wire is a composite shape built not from a geometry, but by the assembly of 
 
 Up to four edges can be used directly, for example: 
 
-~~~~~
-TopoDS_Wire W = BRepBuilderAPI_MakeWire(E1,E2,E3,E4); 
+~~~~~{.py}
+Wire W = BRepBuilderAPI_MakeWire(E1, E2, E3, E4)
 ~~~~~
 
 For a higher or unknown number of edges the Add method must be used; for example, to build a wire from an array of shapes (to be edges). 
 
-~~~~~
+~~~~~{.py}
 TopTools_Array1OfShapes theEdges; 
 BRepBuilderAPI_MakeWire MW; 
-for (Standard_Integer i = theEdge.Lower(); 
-i <= theEdges.Upper(); i++) 
-MW.Add(TopoDS::Edge(theEdges(i)); 
+for (Standard_Integer i = theEdge.Lower() 
+i <= theEdges.Upper() i++) 
+MW.Add(TopoDS::Edge(theEdges(i)) 
 TopoDS_Wire W = MW; 
 ~~~~~
 
 The class can be constructed with a wire. A wire can also be added. In this case, all the edges of the wires are added. For example to merge two wires: 
 
-~~~~~
+~~~~~{.py}
 #include <TopoDS_Wire.hxx> 
 #include <BRepBuilderAPI_MakeWire.hxx> 
 
 TopoDS_Wire MergeWires (const TopoDS_Wire& W1, 
 const TopoDS_Wire& W2) 
 { 
-BRepBuilderAPI_MakeWire MW(W1); 
-MW.Add(W2); 
+BRepBuilderAPI_MakeWire MW(W1) 
+MW.Add(W2) 
 return MW; 
 } 
 ~~~~~
@@ -1454,10 +1397,10 @@ return MW;
 BRepBuilderAPI_MakeWire class can return the last edge added to the wire (Edge method). This edge can be different from the original edge if it was copied. 
 
 The Error method returns a term of the *BRepBuilderAPI_WireError* enumeration: 
-*WireDone* - no error occurred. 
-*EmptyWire* - no initialization of the algorithm, an empty constructor was used. 
-*DisconnectedWire* - the last added edge was not connected to the wire. 
-*NonManifoldWire* - the wire with some singularity. 
+* *WireDone* - no error occurred,
+* *EmptyWire* - no initialization of the algorithm, an empty constructor was used,
+* *DisconnectedWire* - the last added edge was not connected to the wire,
+* *NonManifoldWire* - the wire with some singularity. 
 
 @subsection occt_modalg_3_7 Shell
 The shell is a composite shape built not from a geometry, but by the assembly of faces.
@@ -1474,20 +1417,20 @@ The solid is a composite shape built not from a geometry, but by the assembly of
 
 The following example deals with the rotation of shapes. 
 
-~~~~~
+~~~~~{.py}
 
 TopoDS_Shape myShape1 = ...; 
-// The original shape 1 
+# The original shape 1 
 TopoDS_Shape myShape2 = ...; 
-// The original shape2 
+# The original shape2 
 gp_Trsf T; 
 T.SetRotation(gp_Ax1(gp_Pnt(0.,0.,0.),gp_Vec(0.,0.,1.)), 
-2.*PI/5.); 
-BRepBuilderAPI_Transformation theTrsf(T); 
-theTrsf.Perform(myShape1); 
+2.*PI/5.) 
+BRepBuilderAPI_Transformation theTrsf(T) 
+theTrsf.Perform(myShape1) 
 TopoDS_Shape myNewShape1 = theTrsf.Shape() 
-theTrsf.Perform(myShape2,Standard_True); 
-// Here duplication is forced 
+theTrsf.Perform(myShape2,Standard_True) 
+# Here duplication is forced 
 TopoDS_Shape myNewShape2 = theTrsf.Shape() 
 ~~~~~
 
@@ -1496,49 +1439,49 @@ TopoDS_Shape myNewShape2 = theTrsf.Shape()
 Use the *BRepBuilderAPI_Copy* class to duplicate a shape. A new shape is thus created. 
 In the following example, a solid is copied: 
 
-~~~~~
+~~~~~{.py}
 TopoDS Solid MySolid; 
-....// Creates a solid 
+....# Creates a solid 
 
-TopoDS_Solid myCopy = BRepBuilderAPI_Copy(mySolid); 
+TopoDS_Solid myCopy = BRepBuilderAPI_Copy(mySolid) 
 ~~~~~
 
 
 @section occt_modalg_4 Primitives
 
 The *BRepPrimAPI* module provides an API (Application Programming Interface) for construction of primitives such as:
-  * Boxes;
-  * Cones;
-  * Cylinders;
-  * Prisms.
+  * boxe,
+  * cones,
+  * cylinders,
+  * crisms.
 
 It is possible to create partial solids, such as a sphere limited by longitude. In real models, primitives can be used for easy creation of specific sub-parts.
 
- * Construction by sweeping along a profile:
-  * Linear;
-  * Rotational (through an angle of rotation).
+  * construction by sweeping along a profile:
+  * linear;
+  * rotational (through an angle of rotation).
 
 Sweeps are objects obtained by sweeping a profile along a path. The profile can be any topology and the path is usually a curve or a wire. The profile generates objects according to the following rules:
- * Vertices generate Edges
- * Edges generate Faces.
- * Wires generate Shells.
- * Faces generate Solids.
- * Shells generate Composite Solids.
+ * bertices generate edges
+ * edges generate faces.
+ * wires generate shells.
+ * faces generate solids.
+ * shells generate composite solids.
 
-It is not allowed to sweep Solids and Composite Solids. Swept constructions along complex profiles such as BSpline curves also available in the *BRepOffsetAPI* module. This API provides simple, high level calls for the most common operations.
+It is not allowed to sweep solids and composite solids. Swept constructions along complex profiles such as BSpline curves also available in the *BRepOffsetAPI* module. This API provides simple, high level calls for the most common operations.
 
 @subsection occt_modalg_4_1 Making Primitives
 @subsubsection occt_modalg_4_1_1 Box
 
-The class *BRepPrimAPI_MakeBox* allows building a parallelepiped box. The result is either a **Shell** or a **Solid**. There are four ways to build a box: 
+The class *BRepPrimAPI_MakeBox* allows building a parallelepiped box. The result is either a *Shell* or a *Solid*. There are four ways to build a box: 
 
-* From three dimensions *dx, dy* and *dz*. The box is parallel to the axes and extends for *[0,dx] [0,dy] [0,dz]*. 
-* From a point and three dimensions. The same as above but the point is the new origin. 
-* From two points, the box is parallel to the axes and extends on the intervals defined by the coordinates of the two points. 
-* From a system of axes *gp_Ax2* and three dimensions. Same as the first way but the box is parallel to the given system of axes. 
+* from three dimensions *dx, dy* and *dz*. The box is parallel to the axes and extends for *[0,dx] [0,dy] [0,dz]*,
+* from a point and three dimensions. The same as above but the point is the new origin,
+* from two points, the box is parallel to the axes and extends on the intervals defined by the coordinates of the two points,
+* from a system of axes *gp_Ax2* and three dimensions. Same as the first way but the box is parallel to the given system of axes. 
 
 An error is raised if the box is flat in any dimension using the default precision. The following code shows how to create a box: 
-~~~~~
+~~~~~{.py}
 theBox = BRepPrimAPI_MakeBox(10.,20.,30.)
 theBox.Shape() # returns the TopoDS_Shape
 ~~~~~
@@ -1555,21 +1498,19 @@ The following figure shows two ways to build wedges. One is to add a dimension *
 The first method is a particular case of the second with *xmin = 0, xmax = ltx, zmin = 0, zmax = dz*. 
 To make a centered pyramid you can use *xmin = xmax = dx / 2, zmin = zmax = dz / 2*. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image027.png "Making Wedges"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image027.png "Making Wedges"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image027.png "Making Wedges"}
 
 @subsubsection occt_modalg_4_1_3 Rotation object
 *BRepPrimAPI_MakeOneAxis* is a deferred class used as a root class for all classes constructing rotational primitives. Rotational primitives are created by rotating a curve around an axis. They cover the cylinder, the cone, the sphere, the torus, and the revolution, which provides all other curves. 
 
 The particular constructions of these primitives are described, but they all have some common arguments, which are:
  * a system of coordinates, where the Z axis is the rotation axis,
- * an angle in the range [0,2*PI],
+ * an angle in the range \f$[0,2 \pi ]\f$,
  * a vmin, vmax parameter range on the curve.
 
 The result of the OneAxis construction is a Solid, a Shell, or a Face. The face is the face covering the rotational surface. Remember that you will not use the OneAxis directly but one of the derived classes, which provide improved constructions. The following figure illustrates the OneAxis arguments. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image028.png "MakeOneAxis arguments"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image028.png "MakeOneAxis arguments"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image028.png "MakeOneAxis arguments"}
 
 @subsubsection occt_modalg_4_1_4 Cylinder
 *BRepPrimAPI_MakeCylinder* class allows creating cylindrical primitives. A cylinder is created either in the default coordinate system or in a given coordinate system *gp_Ax2*. There are two constructions: 
@@ -1582,14 +1523,13 @@ The following code builds the cylindrical face of the figure, which is a quarter
 ~~~~~
 
 Standard_Real X = 20, Y = 10, Z = 15, R = 10, DY = 30; 
-// Make the system of coordinates 
-gp_Ax2 axes = gp::ZOX(); 
-axes.Translate(gp_Vec(X,Y,Z)); 
+# Make the system of coordinates 
+gp_Ax2 axes = gp::ZOX() 
+axes.Translate(gp_Vec(X,Y,Z)) 
 TopoDS_Face F = 
-BRepPrimAPI_MakeCylinder(axes,R,DY,PI/2.); 
+BRepPrimAPI_MakeCylinder(axes,R,DY,PI/2.) 
 ~~~~~
-@image html /user_guides/modeling_algos/images/modeling_algos_image029.png "Cylinder"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image029.png "Cylinder"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image029.png "Cylinder"}
 
 @subsubsection occt_modalg_4_1_5 Cone
 *BRepPrimAPI_MakeCone* class allows creating conical primitives. Like a cylinder, a cone is created either in the default coordinate system or in a given coordinate system (gp_Ax2). There are two constructions: 
@@ -1601,58 +1541,55 @@ The following code builds the solid cone of the figure, which is located in the 
 
 ~~~~~
 Standard_Real R1 = 30, R2 = 10, H = 15; 
-TopoDS_Solid S = BRepPrimAPI_MakeCone(R1,R2,H); 
+TopoDS_Solid S = BRepPrimAPI_MakeCone(R1,R2,H) 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image030.png "Cone"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image030.png "Cone"
+@figure{html /user_guides/modeling_algos/images/modeling_algos_image030.png "Cone"}
 
 @subsubsection occt_modalg_4_1_6 Sphere
 *BRepPrimAPI_MakeSphere* class allows creating spherical primitives. Like a cylinder, a sphere is created either in the default coordinate system or in a given coordinate system *gp_Ax2*. There are four constructions: 
 
- * From a radius - builds a full sphere. 
- * From a radius and an angle - builds a lune (digon).
- * From a radius and two angles - builds a wraparound spherical segment between two latitudes. The angles *a1* and *a2* must follow the relation: *PI/2 <= a1 < a2 <= PI/2*. 
- * From a radius and three angles - a combination of two previous methods builds a portion of spherical segment. 
+ * from a radius - builds a full sphere,
+ * from a radius and an angle - builds a lune (digon),
+ * from a radius and two angles - builds a wraparound spherical segment between two latitudes. The angles *a1* and *a2* must follow the relation: \f$ \pi /2 \leqslant a1 < a2 \leqslant \pi /2 \f$,
+ * from a radius and three angles - a combination of two previous methods builds a portion of spherical segment. 
 
 The following code builds four spheres from a radius and three angles. 
 
 ~~~~~
 Standard_Real R = 30, ang = 
  PI/2, a1 = -PI/2.3, a2 = PI/4; 
-TopoDS_Solid S1 = BRepPrimAPI_MakeSphere(R); 
-TopoDS_Solid S2 = BRepPrimAPI_MakeSphere(R,ang); 
-TopoDS_Solid S3 = BRepPrimAPI_MakeSphere(R,a1,a2); 
-TopoDS_Solid S4 = BRepPrimAPI_MakeSphere(R,a1,a2,ang); 
+TopoDS_Solid S1 = BRepPrimAPI_MakeSphere(R) 
+TopoDS_Solid S2 = BRepPrimAPI_MakeSphere(R,ang) 
+TopoDS_Solid S3 = BRepPrimAPI_MakeSphere(R,a1,a2) 
+TopoDS_Solid S4 = BRepPrimAPI_MakeSphere(R,a1,a2,ang) 
 ~~~~~
 
 Note that we could equally well choose to create Shells instead of Solids. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image031.png "Examples of Spheres"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image031.png "Examples of Spheres"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image031.png "Examples of Spheres"}
 
 
 @subsubsection occt_modalg_4_1_7 Torus
 *BRepPrimAPI_MakeTorus* class allows creating toroidal primitives. Like the other primitives, a torus is created either in the default coordinate system or in a given coordinate system *gp_Ax2*. There are four constructions similar to the sphere constructions: 
 
- * Two radii - builds a full torus.
- * Two radii and an angle - builds an angular torus segment.
- * Two radii and two angles - builds a wraparound torus segment between two radial planes. The angles a1, a2 must follow the relation 0 < a2 - a1 < 2*PI. 
- * Two radii and three angles - a combination of two previous methods builds a portion of torus segment.
+ * two radii - builds a full torus,
+ * two radii and an angle - builds an angular torus segment,
+ * two radii and two angles - builds a wraparound torus segment between two radial planes. The angles a1, a2 must follow the relation \f$ 0 < a2 - a1 < 2 \pi  \f$,
+ * two radii and three angles - a combination of two previous methods builds a portion of torus segment.
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image032.png "Examples of Tori"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image032.png "Examples of Tori"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image032.png "Examples of Tori"}
 
 The following code builds four toroidal shells from two radii and three angles. 
 
 ~~~~~
 Standard_Real R1 = 30, R2 = 10, ang = PI, a1 = 0, 
  a2 = PI/2; 
-TopoDS_Shell S1 = BRepPrimAPI_MakeTorus(R1,R2); 
-TopoDS_Shell S2 = BRepPrimAPI_MakeTorus(R1,R2,ang); 
-TopoDS_Shell S3 = BRepPrimAPI_MakeTorus(R1,R2,a1,a2); 
+TopoDS_Shell S1 = BRepPrimAPI_MakeTorus(R1,R2) 
+TopoDS_Shell S2 = BRepPrimAPI_MakeTorus(R1,R2,ang) 
+TopoDS_Shell S3 = BRepPrimAPI_MakeTorus(R1,R2,a1,a2) 
 TopoDS_Shell S4 = 
- BRepPrimAPI_MakeTorus(R1,R2,a1,a2,ang); 
+ BRepPrimAPI_MakeTorus(R1,R2,a1,a2,ang) 
 ~~~~~
 
 Note that we could equally well choose to create Solids instead of Shells. 
@@ -1662,10 +1599,10 @@ Note that we could equally well choose to create Solids instead of Shells.
 
 The curve can be any *Geom_Curve*, provided it is planar and lies in the same plane as the Z-axis of local coordinate system. There are four modes of construction: 
 
- * From a curve, use the full curve and make a full rotation.
- * From a curve and an angle of rotation.
- * From a curve and two parameters to trim the curve. The two parameters must be growing and within the curve range.
- * From a curve, two parameters, and an angle. The two parameters must be growing and within the curve range.
+ * from a curve, use the full curve and make a full rotation,
+ * from a curve and an angle of rotation,
+ * from a curve and two parameters to trim the curve. The two parameters must be growing and within the curve range,
+ * from a curve, two parameters, and an angle. The two parameters must be growing and within the curve range.
 
 
 @subsection occt_modalg_4_2 Sweeping: Prism, Revolution and Pipe
@@ -1673,64 +1610,60 @@ The curve can be any *Geom_Curve*, provided it is planar and lies in the same pl
 
 Sweeps are the objects you obtain by sweeping a **profile** along a **path**. The profile can be of any topology. The path is usually a curve or a wire. The profile generates objects according to the following rules: 
 
- * Vertices generate Edges
- * Edges generate Faces.
- * Wires generate Shells.
- * Faces generate Solids.
- * Shells generate Composite Solids
+ * vertices generate edges,
+ * edges generate faces,
+ * wires generate shells,
+ * faces generate solids,
+ * shells generate composite solids.
 
-It is forbidden to sweep Solids and Composite Solids. A Compound generates a Compound with the sweep of all its elements. 
+It is forbidden to sweep solids and composite solids. A compound generates a compound with the sweep of all its elements. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image033.png "Generating a sweep"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image033.png "Generating a sweep"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image033.png "Generating a sweep"}
 
 *BRepPrimAPI_MakeSweep class* is a deferred class used as a root of the the following sweep classes:
-* *BRepPrimAPI_MakePrism* - produces a linear sweep
-* *BRepPrimAPI_MakeRevol* - produces a rotational sweep
+* *BRepPrimAPI_MakePrism* - produces a linear sweep,
+* *BRepPrimAPI_MakeRevol* - produces a rotational sweep,
 * *BRepPrimAPI_MakePipe* - produces a general sweep. 
 
 
 @subsubsection occt_modalg_4_2_2 Prism
 *BRepPrimAPI_MakePrism* class allows creating a linear **prism** from a shape and a vector or a direction. 
-* A vector allows creating a finite prism;
-* A direction allows creating an infinite or semi-infinite prism. The semi-infinite or infinite prism is toggled by a Boolean argument. All constructors have a boolean argument to copy the original shape or share it (by default). 
+* a vector allows creating a finite prism,
+* a direction allows creating an infinite or semi-infinite prism. The semi-infinite or infinite prism is toggled by a Boolean argument. All constructors have a boolean argument to copy the original shape or share it (by default). 
 
 The following code creates a finite, an infinite and a semi-infinite solid using a face, a direction and a length. 
 
 ~~~~~
-TopoDS_Face F = ..; // The swept face 
-gp_Dir direc(0,0,1); 
+TopoDS_Face F = ..; # The swept face 
+gp_Dir direc(0,0,1) 
 Standard_Real l = 10; 
-// create a vector from the direction and the length 
+# create a vector from the direction and the length 
 gp_Vec v = direc; 
 v *= l; 
-TopoDS_Solid P1 = BRepPrimAPI_MakePrism(F,v); 
-// finite 
-TopoDS_Solid P2 = BRepPrimAPI_MakePrism(F,direc); 
-// infinite 
-TopoDS_Solid P3 = BRepPrimAPI_MakePrism(F,direc,Standard_False); 
-// semi-infinite 
+TopoDS_Solid P1 = BRepPrimAPI_MakePrism(F,v) 
+# finite 
+TopoDS_Solid P2 = BRepPrimAPI_MakePrism(F,direc) 
+# infinite 
+TopoDS_Solid P3 = BRepPrimAPI_MakePrism(F,direc,Standard_False) 
+# semi-infinite 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image034.png  "Finite, infinite, and semi-infinite prisms"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image034.png  "Finite, infinite, and semi-infinite prisms"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image034.png  "Finite, infinite, and semi-infinite prisms"}
 
 @subsubsection occt_modalg_4_2_3 Rotational Sweep 
-*BRepPrimAPI_MakeRevol* class allows creating a rotational sweep from a shape, an axis (gp_Ax1), and an angle. The angle has a default value of 2*PI which means a closed revolution. 
-
+*BRepPrimAPI_MakeRevol* class allows creating a rotational sweep from a shape, an axis (gp_Ax1), and an angle. The angle has a default value of \f$ 2 \pi \f$ which means a closed revolution. 
 *BRepPrimAPI_MakeRevol* constructors have a last argument to copy or share the original shape. The following code creates a a full and a partial rotation using a face, an axis and an angle.
 
 ~~~~~
-TopoDS_Face F = ...; // the profile 
-gp_Ax1 axis(gp_Pnt(0,0,0),gp_Dir(0,0,1)); 
+TopoDS_Face F = ...; # the profile 
+gp_Ax1 axis(gp_Pnt(0,0,0),gp_Dir(0,0,1)) 
 Standard_Real ang = PI/3; 
-TopoDS_Solid R1 = BRepPrimAPI_MakeRevol(F,axis); 
-// Full revol 
-TopoDS_Solid R2 = BRepPrimAPI_MakeRevol(F,axis,ang); 
+TopoDS_Solid R1 = BRepPrimAPI_MakeRevol(F,axis) 
+# Full revol 
+TopoDS_Solid R2 = BRepPrimAPI_MakeRevol(F,axis,ang) 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image035.png "Full and partial rotation"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image035.png "Full and partial rotation"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image035.png "Full and partial rotation"}
 
 @section occt_modalg_5 Boolean Operations
 
@@ -1742,23 +1675,20 @@ Boolean operations are used to create new shapes from the combinations of two sh
 | Common | all points in S1 and S2 |
 | Cut S1 by S2| all points in S1 and not in S2 | 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image036.png "Boolean Operations"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image036.png "Boolean Operations"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image036.png "Boolean Operations"}
 
-From the viewpoint of Topology these are topological operations followed by blending (putting fillets onto edges created after the topological operation).
-
-Topological operations are the most convenient way to create real industrial parts. As most industrial parts consist of several simple elements such as gear wheels, arms, holes, ribs, tubes and pipes. It is usually easy to create those elements separately and then to combine them by Boolean operations in the whole final part.
+From the viewpoint of Topology these are topological operations followed by blending (putting fillets onto edges created after the topological operation). Topological operations are the most convenient way to create real industrial parts. As most industrial parts consist of several simple elements such as gear wheels, arms, holes, ribs, tubes and pipes. It is usually easy to create those elements separately and then to combine them by Boolean operations in the whole final part.
 
 See @ref occt_user_guides__boolean_operations "Boolean Operations" for detailed documentation.
 
 @subsection occt_modalg_5_1 Input and Result Arguments
 
 Boolean Operations have the following types of the arguments and produce the following results:
-* For arguments having the same shape type (e.g. SOLID / SOLID) the type of the resulting shape will be a COMPOUND, containing shapes of this type;
-* For arguments having different shape types (e.g. SHELL / SOLID) the type of the resulting shape will be a COMPOUND, containing shapes of the type that is the same as that of the low type of the argument. Example: For SHELL/SOLID the result is a COMPOUND of SHELLs. 
-* For arguments with different shape types some of Boolean Operations can not be done using the default implementation, because of a non-manifold type of the result. Example: the FUSE operation for SHELL and SOLID can not be done, but the CUT operation can be done, where SHELL is the object and SOLID is the tool.
-* It is possible to perform Boolean Operations on arguments of the COMPOUND shape type. In this case each compound must not be heterogeneous, i.e. it must contain equidimensional shapes (EDGEs or/and WIREs, FACEs or/and SHELLs, SOLIDs). SOLIDs inside the COMPOUND must not contact (intersect or touch) each other. The same condition should be respected for SHELLs or FACEs, WIREs or EDGEs.
-* Boolean Operations for COMPSOLID type of shape are not supported.
+* for arguments having the same shape type (e.g. SOLID / SOLID) the type of the resulting shape will be a COMPOUND, containing shapes of this type;
+* for arguments having different shape types (e.g. SHELL / SOLID) the type of the resulting shape will be a COMPOUND, containing shapes of the type that is the same as that of the low type of the argument. Example: For SHELL/SOLID the result is a COMPOUND of SHELLs. 
+* for arguments with different shape types some of Boolean Operations can not be done using the default implementation, because of a non-manifold type of the result. Example: the FUSE operation for SHELL and SOLID can not be done, but the CUT operation can be done, where SHELL is the object and SOLID is the tool.
+* it is possible to perform Boolean Operations on arguments of the COMPOUND shape type. In this case each compound must not be heterogeneous, i.e. it must contain equidimensional shapes (EDGEs or/and WIREs, FACEs or/and SHELLs, SOLIDs). SOLIDs inside the COMPOUND must not contact (intersect or touch) each other. The same condition should be respected for SHELLs or FACEs, WIREs or EDGEs.
+* boolean operations for COMPSOLID type of shape are not supported.
 
 @subsection occt_modalg_5_2 Implementation
 
@@ -1768,38 +1698,33 @@ Boolean Operations have the following types of the arguments and produce the fol
 
 *BRepAlgoAPI_Fuse* performs the Fuse operation. 
 
-~~~~~
-TopoDS_Shape A = ..., B = ...; 
-TopoDS_Shape S = BRepAlgoAPI_Fuse(A,B); 
+~~~~~{.py}
+S = BRepAlgoAPI_Fuse(A ,B).Shape()
 ~~~~~
 
 #### Common
 
 *BRepAlgoAPI_Common* performs the Common operation. 
 
-~~~~~
-TopoDS_Shape A = ..., B = ...; 
-TopoDS_Shape S = BRepAlgoAPI_Common(A,B); 
+~~~~~{.py}
+S = BRepAlgoAPI_Common(A,B).Shape()
 ~~~~~
 
 #### Cut
 *BRepAlgoAPI_Cut* performs the Cut operation. 
 
-~~~~~
-TopoDS_Shape A = ..., B = ...; 
-TopoDS_Shape S = BRepAlgoAPI_Cut(A,B); 
+~~~~~{.py}
+S = BRepAlgoAPI_Cut(A,B).Shape()
 ~~~~~
 
 #### Section
 
 *BRepAlgoAPI_Section* performs the section, described as a *TopoDS_Compound* made of *TopoDS_Edge*. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image037.png "Section operation"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image037.png "Section operation"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image037.png "Section operation"}
 
 ~~~~~
-TopoDS_Shape A = ..., TopoDS_ShapeB = ...; 
-TopoDS_Shape S = BRepAlgoAPI_Section(A,B); 
+S = BRepAlgoAPI_Section(A,B).Shape()
 ~~~~~
 
 @section occt_modalg_6 Fillets and Chamfers
@@ -1807,24 +1732,17 @@ TopoDS_Shape S = BRepAlgoAPI_Section(A,B);
 This library provides algorithms to make fillets and chamfers on shape edges.
 The following cases are addressed:
 
- * Corners and apexes with different radii; 
- * Corners and apexes with different concavity. 
+ * corners and apexes with different radii,
+ * Ccorners and apexes with different concavity. 
 
 If there is a concavity, both surfaces that need to be extended and those, which do not, are processed.
 
 @subsection occt_modalg_6_1 Fillets 
 @subsection occt_modalg_6_1_1 Fillet on shape
 
-A fillet is a smooth face replacing a sharp edge.
+A fillet is a smooth face replacing a sharp edge. *BRepFilletAPI_MakeFillet* class allows filleting a shape.  To produce a fillet, it is necessary to define the filleted shape at the construction of the class and add fillet descriptions using the *Add* method. A fillet description contains an edge and a radius. The edge must be shared by two faces. The fillet is automatically extended to all edges in a smooth continuity with the original edge. It is not an error to add a fillet twice, the last description holds. 
 
-*BRepFilletAPI_MakeFillet* class allows filleting a shape. 
-
-To produce a fillet, it is necessary to define the filleted shape at the construction of the class and add fillet descriptions using the *Add* method.
-
-A fillet description contains an edge and a radius. The edge must be shared by two faces. The fillet is automatically extended to all edges in a smooth continuity with the original edge. It is not an error to add a fillet twice, the last description holds. 
-
-@image html /user_guides/modeling_algos/images/modeling_algos_image038.png "Filleting two edges using radii r1 and r2."
-@image latex /user_guides/modeling_algos/images/modeling_algos_image038.png "Filleting two edges using radii r1 and r2."
+@figure{/user_guides/modeling_algos/images/modeling_algos_image038.png "Filleting two edges using radii r1 and r2."}
 
 In the following example a filleted box with dimensions a,b,c and radius r is created. 
 
@@ -1844,22 +1762,21 @@ TopoDS_Shape FilletedBox(const Standard_Real a,
       const Standard_Real c, 
       const Standard_Real r) 
 { 
- TopoDS_Solid Box = BRepPrimAPI_MakeBox(a,b,c); 
- BRepFilletAPI_MakeFillet MF(Box); 
+ TopoDS_Solid Box = BRepPrimAPI_MakeBox(a,b,c) 
+ BRepFilletAPI_MakeFillet MF(Box) 
 
- // add all the edges to fillet 
- TopExp_Explorer ex(Box,TopAbs_EDGE); 
+ # add all the edges to fillet 
+ TopExp_Explorer ex(Box,TopAbs_EDGE) 
  while (ex.More()) 
  { 
- MF.Add(r,TopoDS::Edge(ex.Current())); 
- ex.Next(); 
+ MF.Add(r,TopoDS::Edge(ex.Current())) 
+ ex.Next() 
  } 
- return MF.Shape(); 
+ return MF.Shape() 
  } 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image039.png "Fillet with constant radius"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image039.png "Fillet with constant radius"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image039.png "Fillet with constant radius"}
 
 #### Changing radius
 
@@ -1867,44 +1784,40 @@ TopoDS_Shape FilletedBox(const Standard_Real a,
 ~~~~~
 void CSampleTopologicalOperationsDoc::OnEvolvedblend1() 
 { 
- TopoDS_Shape theBox = BRepPrimAPI_MakeBox(200,200,200); 
+ TopoDS_Shape theBox = BRepPrimAPI_MakeBox(200,200,200) 
 
- BRepFilletAPI_MakeFillet Rake(theBox); 
+ BRepFilletAPI_MakeFillet Rake(theBox) 
  ChFi3d_FilletShape FSh = ChFi3d_Rational; 
- Rake.SetFilletShape(FSh); 
+ Rake.SetFilletShape(FSh) 
 
- TColgp_Array1OfPnt2d ParAndRad(1, 6); 
- ParAndRad(1).SetCoord(0., 10.); 
- ParAndRad(1).SetCoord(50., 20.); 
- ParAndRad(1).SetCoord(70., 20.); 
- ParAndRad(1).SetCoord(130., 60.); 
- ParAndRad(1).SetCoord(160., 30.); 
- ParAndRad(1).SetCoord(200., 20.); 
+ TColgp_Array1OfPnt2d ParAndRad(1, 6) 
+ ParAndRad(1).SetCoord(0., 10.) 
+ ParAndRad(1).SetCoord(50., 20.) 
+ ParAndRad(1).SetCoord(70., 20.) 
+ ParAndRad(1).SetCoord(130., 60.) 
+ ParAndRad(1).SetCoord(160., 30.) 
+ ParAndRad(1).SetCoord(200., 20.) 
 
- TopExp_Explorer ex(theBox,TopAbs_EDGE); 
- Rake.Add(ParAndRad, TopoDS::Edge(ex.Current())); 
- TopoDS_Shape evolvedBox = Rake.Shape(); 
+ TopExp_Explorer ex(theBox,TopAbs_EDGE) 
+ Rake.Add(ParAndRad, TopoDS::Edge(ex.Current())) 
+ TopoDS_Shape evolvedBox = Rake.Shape() 
 } 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image040.png "Fillet with changing radius"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image040.png "Fillet with changing radius"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image040.png "Fillet with changing radius"}
  
 @subsection occt_modalg_6_1_2 Chamfer
 
-A chamfer is a rectilinear edge replacing a sharp vertex of the face.
-
-The use of *BRepFilletAPI_MakeChamfer* class is similar to the use of *BRepFilletAPI_MakeFillet*, except for the following: 
-* The surfaces created are ruled and not smooth. 
-* The *Add* syntax for selecting edges requires one or two distances, one edge and one face (contiguous to the edge).
+A chamfer is a rectilinear edge replacing a sharp vertex of the face. The use of *BRepFilletAPI_MakeChamfer* class is similar to the use of *BRepFilletAPI_MakeFillet*, except for the following: 
+* the surfaces created are ruled and not smooth,
+* the *Add* syntax for selecting edges requires one or two distances, one edge and one face (contiguous to the edge).
 
 ~~~~~ 
 Add(dist, E, F) 
 Add(d1, d2, E, F) with d1 on the face F. 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image041.png "Chamfer"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image041.png "Chamfer"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image041.png "Chamfer"}
 
 @subsection occt_modalg_6_1_3 Fillet on a planar face
 
@@ -1912,14 +1825,14 @@ Add(d1, d2, E, F) with d1 on the face F.
 To create a fillet on planar face: define it, indicate, which vertex is to be deleted, and give the fillet radius with *AddFillet* method. 
 
 A chamfer can be calculated with *AddChamfer* method. It can be described by 
- * two edges and two distances
+ * two edges and two distances,
  * one edge, one vertex, one distance and one angle.
 Fillets and chamfers are calculated when addition is complete. 
 
 If face F2 is created by 2D fillet and chamfer builder from face F1, the builder can be rebuilt (the builder recovers the status it had before deletion). To do so, use the following syntax: 
 ~~~~~
 BRepFilletAPI_MakeFillet2d builder; 
-builder.Init(F1,F2); 
+builder.Init(F1,F2) 
 ~~~~~
 
 Planar Fillet
@@ -1939,19 +1852,19 @@ TopoDS_Shape FilletFace(const Standard_Real a,
       const Standard_Real r) 
 
 { 
- TopoDS_Solid Box = BRepPrimAPI_MakeBox (a,b,c); 
- TopExp_Explorer ex1(Box,TopAbs_FACE); 
+ TopoDS_Solid Box = BRepPrimAPI_MakeBox (a,b,c) 
+ TopExp_Explorer ex1(Box,TopAbs_FACE) 
 
- const TopoDS_Face& F = TopoDS::Face(ex1.Current()); 
- BRepFilletAPI_MakeFillet2d MF(F); 
- TopExp_Explorer ex2(F, TopAbs_VERTEX); 
+ const TopoDS_Face& F = TopoDS::Face(ex1.Current()) 
+ BRepFilletAPI_MakeFillet2d MF(F) 
+ TopExp_Explorer ex2(F, TopAbs_VERTEX) 
  while (ex2.More()) 
  { 
- MF.AddFillet(TopoDS::Vertex(ex2.Current()),r); 
- ex2.Next(); 
+ MF.AddFillet(TopoDS::Vertex(ex2.Current()),r) 
+ ex2.Next() 
  } 
- // while... 
- return MF.Shape(); 
+ # while... 
+ return MF.Shape() 
 } 
 ~~~~~
 
@@ -1960,17 +1873,15 @@ TopoDS_Shape FilletFace(const Standard_Real a,
 These classes provide the following services:
 
  * Creation of offset shapes and their variants such as: 
-  * Hollowing; 
-  * Shelling; 
-  * Lofting; 
- * Creation of tapered shapes using draft angles;
- * Creation of sweeps.
+  * hollowing,
+  * shelling,
+  * lofting,
+ * creation of tapered shapes using draft angles,
+ * creation of sweeps.
  
 @subsection occt_modalg_7_1 Shelling 
 
-Shelling is used to offset given faces of a solid by a specific value. It rounds or intersects adjacent faces along its edges depending on the convexity of the edge. 
-
-The constructor *BRepOffsetAPI_MakeThickSolid* shelling operator takes the solid, the list of faces to remove and an offset value as input.
+Shelling is used to offset given faces of a solid by a specific value. It rounds or intersects adjacent faces along its edges depending on the convexity of the edge.  The constructor *BRepOffsetAPI_MakeThickSolid* shelling operator takes the solid, the list of faces to remove and an offset value as input.
 
 ~~~~~
 TopoDS_Solid SolidInitial = ...;
@@ -1978,21 +1889,20 @@ TopoDS_Solid SolidInitial = ...;
 Standard_Real    Of  = ...;
 TopTools_ListOfShape LCF;
 TopoDS_Shape   Result;
-Standard_Real    Tol = Precision::Confusion();
+Standard_Real    Tol = Precision::Confusion()
 
 for (Standard_Integer i = 1 ;i <= n; i++) {
- TopoDS_Face SF = ...; // a face from SolidInitial
- LCF.Append(SF);
+ TopoDS_Face SF = ...; # a face from SolidInitial
+ LCF.Append(SF)
 }
 
 Result = BRepOffsetAPI_MakeThickSolid  (SolidInitial,
           LCF,
           Of,
-          Tol);
+          Tol)
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image042.png "Shelling"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image042.png "Shelling"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image042.png "Shelling"}
 
 
 @subsection occt_modalg_7_2 Draft Angle
@@ -2001,52 +1911,51 @@ Result = BRepOffsetAPI_MakeThickSolid  (SolidInitial,
 
 
 The class is created or initialized from a shape, then faces to be modified are added; for each face, three arguments are used: 
- * Direction: the direction with which the draft angle is measured
- * Angle: value of the angle
- * Neutral plane: intersection between the face and the neutral plane is invariant.
+ * direction: the direction with which the draft angle is measured,
+ * angle: value of the angle,
+ * neutral plane: intersection between the face and the neutral plane is invariant.
 
 The following code places a draft angle on several faces of a shape; the same direction, angle and neutral plane are used for each face: 
 
 ~~~~~
 TopoDS_Shape myShape = ... 
-// The original shape 
+# The original shape 
 TopTools_ListOfShape ListOfFace; 
-// Creation of the list of faces to be modified 
+# Creation of the list of faces to be modified 
 ... 
 
-gp_Dir Direc(0.,0.,1.); 
-// Z direction 
+gp_Dir Direc(0.,0.,1.) 
+# Z direction 
 Standard_Real Angle = 5.*PI/180.; 
-// 5 degree angle 
-gp_Pln Neutral(gp_Pnt(0.,0.,5.), Direc); 
-// Neutral plane Z=5 
-BRepOffsetAPI_DraftAngle theDraft(myShape); 
+# 5 degree angle 
+gp_Pln Neutral(gp_Pnt(0.,0.,5.), Direc) 
+# Neutral plane Z=5 
+BRepOffsetAPI_DraftAngle theDraft(myShape) 
 TopTools_ListIteratorOfListOfShape itl; 
-for (itl.Initialize(ListOfFace); itl.More(); itl.Next()) { 
- theDraft.Add(TopoDS::Face(itl.Value()),Direc,Angle,Neutral); 
+for (itl.Initialize(ListOfFace) itl.More() itl.Next()) { 
+ theDraft.Add(TopoDS::Face(itl.Value()),Direc,Angle,Neutral) 
  if (!theDraft.AddDone()) { 
-  // An error has occurred. The faulty face is given by // ProblematicShape 
+  # An error has occurred. The faulty face is given by # ProblematicShape 
   break; 
   } 
 } 
 if (!theDraft.AddDone()) { 
- // An error has occurred 
- TopoDS_Face guilty = theDraft.ProblematicShape(); 
+ # An error has occurred 
+ TopoDS_Face guilty = theDraft.ProblematicShape() 
  ... 
 } 
-theDraft.Build(); 
+theDraft.Build() 
 if (!theDraft.IsDone()) { 
- // Problem encountered during reconstruction 
+ # Problem encountered during reconstruction 
  ... 
 } 
 else { 
- TopoDS_Shape myResult = theDraft.Shape(); 
+ TopoDS_Shape myResult = theDraft.Shape() 
  ... 
 } 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image043.png "DraftAngle"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image043.png "DraftAngle"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image043.png "DraftAngle"}
 
 @subsection occt_modalg_7_3 Pipe Constructor
 
@@ -2057,11 +1966,10 @@ The angle between the spine and the profile is preserved throughout the pipe.
 ~~~~~
 TopoDS_Wire Spine = ...; 
 TopoDS_Shape Profile = ...; 
-TopoDS_Shape Pipe = BRepOffsetAPI_MakePipe(Spine,Profile); 
+TopoDS_Shape Pipe = BRepOffsetAPI_MakePipe(Spine,Profile) 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image044.png "Example of a Pipe"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image044.png "Example of a Pipe"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image044.png "Example of a Pipe"}
 
 @subsection occt_modalg_7_4 Evolved Solid
 
@@ -2073,17 +1981,17 @@ The evolved solid is created by sweeping the profile’s reference axes on the s
 
 The reference axes of the profile can be defined following two distinct modes: 
 
-* The reference axes of the profile are the origin axes. 
-* The references axes of the profile are calculated as follows: 
- + the origin is given by the point on the spine which is the closest to the profile
- + the X axis is given by the tangent to the spine at the point defined above
+* the reference axes of the profile are the origin axes,
+* the references axes of the profile are calculated as follows: 
+ + the origin is given by the point on the spine which is the closest to the profile,
+ + the X axis is given by the tangent to the spine at the point defined above,
  + the Z axis is the normal to the plane which contains the spine.
 
 ~~~~~
 TopoDS_Face Spine = ...; 
 TopoDS_Wire Profile = ...; 
 TopoDS_Shape Evol = 
-BRepOffsetAPI_MakeEvolved(Spine,Profile); 
+BRepOffsetAPI_MakeEvolved(Spine,Profile) 
 ~~~~~
 
 @section occt_modalg_8 Sewing
@@ -2092,28 +2000,27 @@ BRepOffsetAPI_MakeEvolved(Spine,Profile);
 
 Sewing allows creation of connected topology (shells and wires) from a set of separate topological elements (faces and edges). For example, Sewing can be used to create of shell from a compound of separate faces. 
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image045.png "Shapes with partially shared edges"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image045.png "Shapes with partially shared edges"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image045.png "Shapes with partially shared edges"}
 
 It is important to distinguish between sewing and other procedures, which modify the geometry, such as filling holes or gaps, gluing, bending curves and surfaces, etc.
 
 Sewing does not change geometrical representation of the shapes. Sewing applies to topological elements (faces, edges) which are not connected but can be connected because they are geometrically coincident : it adds the information about topological connectivity. Already connected elements are left untouched in case of manifold sewing.
 
 Let us define several terms:
-* **Floating edges** do not belong to any face;
-* **Free boundaries** belong to one face only;
-* **Shared edges** belong to several faces, (i.e. two faces in a manifold topology).
-* **Sewn faces** should have edges shared with each other.
-* **Sewn edges** should have vertices shared with each other.
+* *Floating edges* do not belong to any face,
+* *Free boundaries* belong to one face only,
+* *Shared edges* belong to several faces, (i.e. two faces in a manifold topology),
+* *Sewn faces* should have edges shared with each other,
+* *Sewn edges* should have vertices shared with each other.
 
 @subsection occt_modalg_8_2 Sewing Algorithm
 
 The sewing algorithm is one of the basic algorithms used for shape processing, therefore its quality is very important.
 
 Sewing algorithm is implemented in the class *BRepBuilder_Sewing*. This class provides the following methods: 
-* loading initial data for global or local sewing; 
-* setting customization parameters, such as special operation modes, tolerances and output results;
-* applying analysis methods that can be used to obtain connectivity data required by external algorithms;
+* loading initial data for global or local sewing,
+* setting customization parameters, such as special operation modes, tolerances and output results,
+* applying analysis methods that can be used to obtain connectivity data required by external algorithms,
 * sewing of the loaded shapes. 
 
 Sewing supports working mode with big value tolerance. It is not necessary to repeat sewing step by step while smoothly increasing tolerance.
@@ -2125,37 +2032,37 @@ The Sewing algorithm can be subdivided into several independent stages, some of 
 In brief, the algorithm should find a set of merge candidates for each free boundary, filter them according to certain criteria, and finally merge the found candidates and build the resulting sewn shape.
 
 Each stage of the algorithm or the whole algorithm can be adjusted with the following parameters: 
-* **Working tolerance** defines the maximal distance between topological elements which can be sewn. It is not ultimate that such elements will be actually sewn as many other criteria are applied to make the final decision.
-* **Minimal tolerance** defines the size of the smallest element (edge) in the resulting shape. It is declared that no edges with size less than this value are created after sewing. If encountered, such topology becomes degenerated.
-* **Non-manifold mode** enables sewing of non-manifold topology. 
+* *Working tolerance* defines the maximal distance between topological elements which can be sewn. It is not ultimate that such elements will be actually sewn as many other criteria are applied to make the final decision,
+* *Minimal tolerance* defines the size of the smallest element (edge) in the resulting shape. It is declared that no edges with size less than this value are created after sewing. If encountered, such topology becomes degenerated,
+* *Non-manifold mode* enables sewing of non-manifold topology. 
 
 #### Example
 
-To connect a set of *n* contiguous but independent faces, do the following: 
+To connect a set of \f$ n \f$ contiguous but independent faces, do the following: 
 
 ~~~~~
   BRepBuilderAPI_Sewing Sew;
-  Sew.Add(Face1); 
-  Sew.Add(Face2); 
+  Sew.Add(Face1) 
+  Sew.Add(Face2) 
   ...
-  Sew.Add(Facen); 
-  Sew.Perform();
-  TopoDS_Shape result= Sew.SewedShape();
+  Sew.Add(Facen) 
+  Sew.Perform()
+  TopoDS_Shape result= Sew.SewedShape()
 ~~~~~
 
 If all faces have been sewn correctly, the result is a shell. Otherwise, it is a compound. After a successful sewing operation all faces have a coherent orientation.
 
 @subsection occt_modalg_8_3 Tolerance Management
 
-To produce a closed shell, Sewing allows specifying the value of working tolerance, exceeding the size of small faces belonging to the shape.
+To produce a closed shell, sewing allows specifying the value of working tolerance, exceeding the size of small faces belonging to the shape.
 
 However, if we produce an open shell, it is possible to get incorrect sewing results if the value of working tolerance is too large (i.e. it exceeds the size of faces lying on an open boundary).
 
 The following recommendations can be proposed for tuning-up the sewing process:
 - use as small working tolerance as possible. This will reduce the sewing time and, consequently, the number of incorrectly sewn edges for shells with free boundaries,
-- use as large minimal tolerance as possible. This will reduce the number of small geometry in the shape, both original and appearing after cutting.
-- If it is expected to obtain a shell with holes (free boundaries) as a result of sewing, the working tolerance should be set to a value not greater than the size of the smallest element (edge) or smallest distance between elements of such free boundary. Otherwise the free boundary may be sewn only partially.
-- It should be mentioned that the Sewing algorithm is unable to understand which small (less than working tolerance) free boundary should be kept and which should be sewn.
+- use as large minimal tolerance as possible. This will reduce the number of small geometry in the shape, both original and appearing after cutting,
+- if it is expected to obtain a shell with holes (free boundaries) as a result of sewing, the working tolerance should be set to a value not greater than the size of the smallest element (edge) or smallest distance between elements of such free boundary. Otherwise the free boundary may be sewn only partially,
+- it should be mentioned that the Sewing algorithm is unable to understand which small (less than working tolerance) free boundary should be kept and which should be sewn.
 
 @subsection occt_modalg_8_4 Manifold and Non-manifold Sewing
 
@@ -2183,23 +2090,23 @@ See the example:
 
 ~~~~
 
-//initial sewn shapes
-TopoDS_Shape aS1, aS2; // these shapes are expected to be well sewn shells
+#initial sewn shapes
+TopoDS_Shape aS1, aS2; # these shapes are expected to be well sewn shells
 TopoDS_Shape aComp;
 BRep_Builder aB;
-aB.MakeCompound(aComp);
-aB.Add(aComp, aS1);
-aB.Add(aComp, aS2);
+aB.MakeCompound(aComp)
+aB.Add(aComp, aS1)
+aB.Add(aComp, aS2)
 ................................
-aSewing.Load(aComp);
+aSewing.Load(aComp)
 
-//sub shapes which should be locally sewed
-aSewing.Add(aF1);
-aSewing.Add(aF2);
-//performing sewing
-aSewing.Perform();
-//result shape
-TopoDS_Shape aRes = aSewing.SewedShape();
+#sub shapes which should be locally sewed
+aSewing.Add(aF1)
+aSewing.Add(aF2)
+#performing sewing
+aSewing.Perform()
+#result shape
+TopoDS_Shape aRes = aSewing.SewedShape()
 
 ~~~~
 
@@ -2211,20 +2118,20 @@ This library contained in *BRepFeat* module is necessary for creation and manipu
 
 The form features are depressions or protrusions including the following types:
 
- * Cylinder;
- * Draft Prism;
- * Prism;
- * Revolved feature;
- * Pipe.
+ * cylinder,
+ * draft Prism,
+ * prism,
+ * revolved feature,
+ * pipe.
 
 Depending on whether you wish to make a depression or a protrusion, 
 you can choose either to remove matter (Boolean cut: Fuse equal to 0) or to add it (Boolean fusion: Fuse equal to 1).
 
 The semantics of form feature creation is based on the construction of shapes:
 
- * for a certain length in a certain direction;
- * up to the limiting face;
- * from the limiting face at a height;
+ * for a certain length in a certain direction,
+ * up to the limiting face,
+ * from the limiting face at a height,
  * above and/or below a plane.
 
 The shape defining the construction of a feature can be either a supporting edge or a concerned area of a face.
@@ -2245,8 +2152,8 @@ The class *BRepFeat_MakePrism* is used to build a prism interacting with a shape
  * the base of the prism,
  * a face (the face of sketch on which the base has been defined and used to determine whether the base has been defined on the basic shape or not),
  * a direction,
- * a Boolean indicating the type of operation (fusion=protrusion or cut=depression) on the basic shape,
- * another Boolean indicating if the self-intersections have to be found (not used in every case).
+ * a boolean indicating the type of operation (fusion=protrusion or cut=depression) on the basic shape,
+ * another boolean indicating if the self-intersections have to be found (not used in every case).
 
 There are six Perform methods: 
 | Method | Description |
@@ -2263,8 +2170,8 @@ There are six Perform methods:
 In the following sequence, a protrusion is performed, i.e. a face of the shape is changed into a prism. 
 
 ~~~~~
-Sbase = ...; // an initial TopoDS_Shape  shape 
-Fbase = ....; // TopoDS_Face a base of prism 
+Sbase = ...; # an initial TopoDS_Shape  shape 
+Fbase = ....; # TopoDS_Face a base of prism 
 
 Extrusion = gp_Dir(.,.,.)
 
@@ -2304,40 +2211,39 @@ In case of the concerned area of a face, it is possible to cut it out and move i
 The *Perform* methods are the same as for *MakePrism*. 
 
 ~~~~~
-TopoDS_Shape S = BRepPrimAPI_MakeBox(400.,250.,300.); 
+TopoDS_Shape S = BRepPrimAPI_MakeBox(400.,250.,300.) 
 TopExp_Explorer Ex; 
-Ex.Init(S,TopAbs_FACE); 
-Ex.Next(); 
-Ex.Next(); 
-Ex.Next(); 
-Ex.Next(); 
-Ex.Next(); 
-TopoDS_Face F = TopoDS::Face(Ex.Current()); 
-Handle(Geom_Surface) surf = BRep_Tool::Surface(F); 
+Ex.Init(S,TopAbs_FACE) 
+Ex.Next() 
+Ex.Next() 
+Ex.Next() 
+Ex.Next() 
+Ex.Next() 
+TopoDS_Face F = TopoDS::Face(Ex.Current()) 
+Handle(Geom_Surface) surf = BRep_Tool::Surface(F) 
 gp_Circ2d 
-c(gp_Ax2d(gp_Pnt2d(200.,130.),gp_Dir2d(1.,0.)),50.); 
+c(gp_Ax2d(gp_Pnt2d(200.,130.),gp_Dir2d(1.,0.)),50.) 
 BRepBuilderAPI_MakeWire MW; 
-Handle(Geom2d_Curve) aline = new Geom2d_Circle(c); 
-MW.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,PI)); 
-MW.Add(BRepBuilderAPI_MakeEdge(aline,surf,PI,2.*PI)); 
+Handle(Geom2d_Curve) aline = new Geom2d_Circle(c) 
+MW.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,PI)) 
+MW.Add(BRepBuilderAPI_MakeEdge(aline,surf,PI,2.*PI)) 
 BRepBuilderAPI_MakeFace MKF; 
-MKF.Init(surf,Standard_False); 
-MKF.Add(MW.Wire()); 
-TopoDS_Face FP = MKF.Face(); 
-BRepLib::BuildCurves3d(FP); 
+MKF.Init(surf,Standard_False) 
+MKF.Add(MW.Wire()) 
+TopoDS_Face FP = MKF.Face() 
+BRepLib::BuildCurves3d(FP) 
 BRepFeat_MakeDPrism MKDP (S,FP,F,10*PI180,Standard_True, 
-       Standard_True); 
-MKDP.Perform(200); 
-TopoDS_Shape res1 = MKDP.Shape(); 
+       Standard_True) 
+MKDP.Perform(200) 
+TopoDS_Shape res1 = MKDP.Shape() 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image049.png "A tapered prism"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image049.png "A tapered prism"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image049.png "A tapered prism"}
 
 @subsubsection occt_modalg_9_1_3 Revolution
 
 The class *BRepFeat_MakeRevol* is used to build a revolution interacting with a shape. It is created or initialized from:
- * a shape (the basic shape,)
+ * a shape (the basic shape),
  * the base of the revolution,
  * a face (the face of sketch on which the base has been defined and used to determine whether the base has been defined on the basic shape or not),
  * an axis of revolution,
@@ -2350,7 +2256,7 @@ There are four Perform methods:
 | *Perform(Angle)*    | The resulting revolution is of the given magnitude. |
 | *Perform(Until)*    | The revolution is defined between the actual position of the base and the given face. |
 | *Perform(From, Until)* | The revolution is defined between the two faces, From and Until. |
-| *PerformThruAll()*   |     The result is similar to Perform(2*PI). |
+| *PerformThruAll()*   |     The result is similar to Perform(\f$ 2 \pi \f$). |
 
 **Note** that *Add* method can be used before *Perform* methods to indicate that a face generated by an edge slides onto a face of the base shape.
 
@@ -2358,18 +2264,18 @@ There are four Perform methods:
 In the following sequence, a face is revolved and the revolution is limited by a face of the base shape. 
 
 ~~~~~
-TopoDS_Shape Sbase = ...; // an initial shape 
-TopoDS_Face Frevol = ....; // a base of prism 
-TopoDS_Face FUntil = ....; // face limiting the revol 
+TopoDS_Shape Sbase = ...; # an initial shape 
+TopoDS_Face Frevol = ....; # a base of prism 
+TopoDS_Face FUntil = ....; # face limiting the revol 
 
-gp_Dir RevolDir (.,.,.); 
-gp_Ax1 RevolAx(gp_Pnt(.,.,.), RevolDir); 
+gp_Dir RevolDir (.,.,.) 
+gp_Ax1 RevolAx(gp_Pnt(.,.,.), RevolDir) 
 
-// An empty face is given as the sketch face 
+# An empty face is given as the sketch face 
 
-BRepFeat_MakeRevol theRevol(Sbase, Frevol, TopoDS_Face(), RevolAx, Standard_True, Standard_True); 
+BRepFeat_MakeRevol theRevol(Sbase, Frevol, TopoDS_Face(), RevolAx, Standard_True, Standard_True) 
 
-theRevol.Perform(FUntil); 
+theRevol.Perform(FUntil) 
 if (theRevol.IsDone()) { 
  TopoDS_Shape theResult = theRevol; 
  ... 
@@ -2396,54 +2302,53 @@ There are three Perform methods:
 Let us have a look at the example:
 
 ~~~~~
-TopoDS_Shape S = BRepPrimAPI_MakeBox(400.,250.,300.); 
+TopoDS_Shape S = BRepPrimAPI_MakeBox(400.,250.,300.) 
 TopExp_Explorer Ex; 
-Ex.Init(S,TopAbs_FACE); 
-Ex.Next(); 
-Ex.Next(); 
-TopoDS_Face F1 = TopoDS::Face(Ex.Current()); 
-Handle(Geom_Surface) surf = BRep_Tool::Surface(F1); 
+Ex.Init(S,TopAbs_FACE) 
+Ex.Next() 
+Ex.Next() 
+TopoDS_Face F1 = TopoDS::Face(Ex.Current()) 
+Handle(Geom_Surface) surf = BRep_Tool::Surface(F1) 
 BRepBuilderAPI_MakeWire MW1; 
 gp_Pnt2d p1,p2; 
-p1 = gp_Pnt2d(100.,100.); 
-p2 = gp_Pnt2d(200.,100.); 
-Handle(Geom2d_Line) aline = GCE2d_MakeLine(p1,p2).Value(); 
+p1 = gp_Pnt2d(100.,100.) 
+p2 = gp_Pnt2d(200.,100.) 
+Handle(Geom2d_Line) aline = GCE2d_MakeLine(p1,p2).Value() 
 
-MW1.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,p1.Distance(p2))); 
+MW1.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,p1.Distance(p2))) 
 p1 = p2; 
-p2 = gp_Pnt2d(150.,200.); 
-aline = GCE2d_MakeLine(p1,p2).Value(); 
+p2 = gp_Pnt2d(150.,200.) 
+aline = GCE2d_MakeLine(p1,p2).Value() 
 
-MW1.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,p1.Distance(p2))); 
+MW1.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,p1.Distance(p2))) 
 p1 = p2; 
-p2 = gp_Pnt2d(100.,100.); 
-aline = GCE2d_MakeLine(p1,p2).Value(); 
+p2 = gp_Pnt2d(100.,100.) 
+aline = GCE2d_MakeLine(p1,p2).Value() 
 
-MW1.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,p1.Distance(p2))); 
+MW1.Add(BRepBuilderAPI_MakeEdge(aline,surf,0.,p1.Distance(p2))) 
 BRepBuilderAPI_MakeFace MKF1; 
-MKF1.Init(surf,Standard_False); 
-MKF1.Add(MW1.Wire()); 
-TopoDS_Face FP = MKF1.Face(); 
-BRepLib::BuildCurves3d(FP); 
-TColgp_Array1OfPnt CurvePoles(1,3); 
-gp_Pnt pt = gp_Pnt(150.,0.,150.); 
+MKF1.Init(surf,Standard_False) 
+MKF1.Add(MW1.Wire()) 
+TopoDS_Face FP = MKF1.Face() 
+BRepLib::BuildCurves3d(FP) 
+TColgp_Array1OfPnt CurvePoles(1,3) 
+gp_Pnt pt = gp_Pnt(150.,0.,150.) 
 CurvePoles(1) = pt; 
-pt = gp_Pnt(200.,100.,150.); 
+pt = gp_Pnt(200.,100.,150.) 
 CurvePoles(2) = pt; 
-pt = gp_Pnt(150.,200.,150.); 
+pt = gp_Pnt(150.,200.,150.) 
 CurvePoles(3) = pt; 
 Handle(Geom_BezierCurve) curve = new Geom_BezierCurve 
-(CurvePoles); 
-TopoDS_Edge E = BRepBuilderAPI_MakeEdge(curve); 
-TopoDS_Wire W = BRepBuilderAPI_MakeWire(E); 
+(CurvePoles) 
+TopoDS_Edge E = BRepBuilderAPI_MakeEdge(curve) 
+TopoDS_Wire W = BRepBuilderAPI_MakeWire(E) 
 BRepFeat_MakePipe MKPipe (S,FP,F1,W,Standard_False, 
-Standard_True); 
-MKPipe.Perform(); 
-TopoDS_Shape res1 = MKPipe.Shape(); 
+Standard_True) 
+MKPipe.Perform() 
+TopoDS_Shape res1 = MKPipe.Shape() 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image050.png "Pipe depression"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image050.png "Pipe depression"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image050.png "Pipe depression"}
 
 @subsection occt_modalg_9_2 Mechanical Features
 
@@ -2453,17 +2358,17 @@ The semantics of mechanical features is built around giving thickness to a conto
 
 The development contexts differ, however, in the case of mechanical features. 
 Here they include extrusion: 
- * to a limiting face of the basis shape;
- * to or from a limiting plane;
+ * to a limiting face of the basis shape,
+ * to or from a limiting plane,
  * to a height.
 
 A class object is created or initialized from 
- * a shape (basic shape);
- * a wire (base of rib or groove);
- * a plane (plane of the wire);
- * direction1 (a vector along which thickness will be built up);
- * direction2 (vector opposite to the previous one along which thickness will be built up, may be null);
- * a Boolean indicating the type of operation (fusion=rib or cut=groove) on the basic shape;
+ * a shape (basic shape),
+ * a wire (base of rib or groove),
+ * a plane (plane of the wire),
+ * direction1 (a vector along which thickness will be built up),
+ * direction2 (vector opposite to the previous one along which thickness will be built up, may be null),
+ * a Boolean indicating the type of operation (fusion=rib or cut=groove) on the basic shape,
  * another Boolean indicating if self-intersections have to be found (not used in every case).
  
 @subsubsection occt_modalg_9_2_1 Linear Form
@@ -2472,39 +2377,38 @@ Linear form is implemented in *MakeLinearForm* class, which creates a rib or a g
 
 ~~~~~
 BRepBuilderAPI_MakeWire mkw; 
-gp_Pnt p1 = gp_Pnt(0.,0.,0.); 
-gp_Pnt p2 = gp_Pnt(200.,0.,0.); 
-mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)); 
+gp_Pnt p1 = gp_Pnt(0.,0.,0.) 
+gp_Pnt p2 = gp_Pnt(200.,0.,0.) 
+mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)) 
 p1 = p2; 
-p2 = gp_Pnt(200.,0.,50.); 
-mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)); 
+p2 = gp_Pnt(200.,0.,50.) 
+mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)) 
 p1 = p2; 
-p2 = gp_Pnt(50.,0.,50.); 
-mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)); 
+p2 = gp_Pnt(50.,0.,50.) 
+mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)) 
 p1 = p2; 
-p2 = gp_Pnt(50.,0.,200.); 
-mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)); 
+p2 = gp_Pnt(50.,0.,200.) 
+mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)) 
 p1 = p2; 
-p2 = gp_Pnt(0.,0.,200.); 
-mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)); 
+p2 = gp_Pnt(0.,0.,200.) 
+mkw.Add(BRepBuilderAPI_MakeEdge(p1,p2)) 
 p1 = p2; 
-mkw.Add(BRepBuilderAPI_MakeEdge(p2,gp_Pnt(0.,0.,0.))); 
+mkw.Add(BRepBuilderAPI_MakeEdge(p2,gp_Pnt(0.,0.,0.))) 
 TopoDS_Shape S = BRepBuilderAPI_MakePrism(BRepBuilderAPI_MakeFace 
  (mkw.Wire()),gp_Vec(gp_Pnt(0.,0.,0.),gp_P 
-  nt(0.,100.,0.))); 
+  nt(0.,100.,0.))) 
 TopoDS_Wire W = BRepBuilderAPI_MakeWire(BRepBuilderAPI_MakeEdge(gp_Pnt 
  (50.,45.,100.), 
-gp_Pnt(100.,45.,50.))); 
+gp_Pnt(100.,45.,50.))) 
 Handle(Geom_Plane) aplane = 
- new Geom_Plane(gp_Pnt(0.,45.,0.), gp_Vec(0.,1.,0.)); 
+ new Geom_Plane(gp_Pnt(0.,45.,0.), gp_Vec(0.,1.,0.)) 
 BRepFeat_MakeLinearForm aform(S, W, aplane, gp_Dir 
- (0.,5.,0.), gp_Dir(0.,-3.,0.), 1, Standard_True); 
-aform.Perform(); 
-TopoDS_Shape res = aform.Shape(); 
+ (0.,5.,0.), gp_Dir(0.,-3.,0.), 1, Standard_True) 
+aform.Perform() 
+TopoDS_Shape res = aform.Shape() 
 ~~~~~
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image051.png "Creating a rib"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image051.png "Creating a rib"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image051.png "Creating a rib"}
 
 @subsubsection occt_modalg_9_2_3 Gluer
 
@@ -2516,29 +2420,29 @@ Two *Bind* methods are used to bind a face of the glued shape to a face of the b
 **Note** that every face and edge has to be bounded, if two edges of two glued faces are coincident they must be explicitly bounded.
 
 ~~~~~
-TopoDS_Shape Sbase = ...; // the basic shape 
-TopoDS_Shape Sglued = ...; // the glued shape 
+TopoDS_Shape Sbase = ...; # the basic shape 
+TopoDS_Shape Sglued = ...; # the glued shape 
 
 TopTools_ListOfShape Lfbase; 
 TopTools_ListOfShape Lfglued; 
-// Determination of the glued faces 
+# Determination of the glued faces 
 ... 
 
-BRepFeat_Gluer theGlue(Sglue, Sbase); 
-TopTools_ListIteratorOfListOfShape itlb(Lfbase); 
-TopTools_ListIteratorOfListOfShape itlg(Lfglued); 
-for (; itlb.More(); itlb.Next(), itlg(Next()) { 
-const TopoDS_Face& f1 = TopoDS::Face(itlg.Value()); 
-const TopoDS_Face& f2 = TopoDS::Face(itlb.Value()); 
-theGlue.Bind(f1,f2); 
-// for example, use the class FindEdges from LocOpe to 
-// determine coincident edges 
-LocOpe_FindEdge fined(f1,f2); 
-for (fined.InitIterator(); fined.More(); fined.Next()) { 
-theGlue.Bind(fined.EdgeFrom(),fined.EdgeTo()); 
+BRepFeat_Gluer theGlue(Sglue, Sbase) 
+TopTools_ListIteratorOfListOfShape itlb(Lfbase) 
+TopTools_ListIteratorOfListOfShape itlg(Lfglued) 
+for (; itlb.More() itlb.Next(), itlg(Next()) { 
+const TopoDS_Face& f1 = TopoDS::Face(itlg.Value()) 
+const TopoDS_Face& f2 = TopoDS::Face(itlb.Value()) 
+theGlue.Bind(f1,f2) 
+# for example, use the class FindEdges from LocOpe to 
+# determine coincident edges 
+LocOpe_FindEdge fined(f1,f2) 
+for (fined.InitIterator() fined.More() fined.Next()) { 
+theGlue.Bind(fined.EdgeFrom(),fined.EdgeTo()) 
 } 
 } 
-theGlue.Build(); 
+theGlue.Build() 
 if (theGlue.IsDone() { 
 TopoDS_Shape theResult = theGlue; 
 ... 
@@ -2551,18 +2455,18 @@ The class *BRepFeat_SplitShape* is used to split faces of a shape into wires or 
 
 The class is created or initialized from a shape (the basic shape). 
 Three Add methods are available: 
-* *Add(Wire, Face)* - adds a new wire on a face of the basic shape. 
-* *Add(Edge, Face)* - adds a new edge on a face of the basic shape. 
+* *Add(Wire, Face)* - adds a new wire on a face of the basic shape,
+* *Add(Edge, Face)* - adds a new edge on a face of the basic shape, 
 * *Add(EdgeNew, EdgeOld)* - adds a new edge on an existing one (the old edge must contain the new edge). 
 
 **Note** The added wires and edges must define closed wires on faces or wires located between two existing edges. Existing edges must not be intersected. 
 
 ~~~~~
-TopoDS_Shape Sbase = ...; // basic shape 
-TopoDS_Face Fsplit = ...; // face of Sbase 
-TopoDS_Wire Wsplit = ...; // new wire contained in Fsplit 
-BRepFeat_SplitShape Spls(Sbase); 
-Spls.Add(Wsplit, Fsplit); 
+TopoDS_Shape Sbase = ...; # basic shape 
+TopoDS_Face Fsplit = ...; # face of Sbase 
+TopoDS_Wire Wsplit = ...; # new wire contained in Fsplit 
+BRepFeat_SplitShape Spls(Sbase) 
+Spls.Add(Wsplit, Fsplit) 
 TopoDS_Shape theResult = Spls; 
 ...
 ~~~~~
@@ -2584,22 +2488,18 @@ No smoothing algorithm is provided. Consequently, a polyhedron will be treated a
 *HLRBRep_Algo* and *HLRBRep_PolyAlgo* can deal with any kind of object, for example, assemblies of volumes, surfaces, and lines, as long as there are no unfinished objects or points within it. 
 
 However, there some restrictions in HLR use:
- * Points are not processed;
- * Z-clipping planes are not used;
- * Infinite faces or lines are not processed.
+ * points are not processed,
+ * Z-clipping planes are not used,
+ * infinite faces or lines are not processed.
 
  
-@image html /user_guides/modeling_algos/images/modeling_algos_image052.png "Sharp, smooth and sewn edges in a simple screw shape"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image052.png "Sharp, smooth and sewn edges in a simple screw shape"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image052.png "Sharp, smooth and sewn edges in a simple screw shape"}
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image053.png "Outline edges and isoparameters in the same shape"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image053.png "Outline edges and isoparameters in the same shape"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image053.png "Outline edges and isoparameters in the same shape"}
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image054.png "A simple screw shape seen with shading"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image054.png "A simple screw shape seen with shading"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image054.png "A simple screw shape seen with shading"}
 
-@image html /user_guides/modeling_algos/images/modeling_algos_image055.png "An extraction showing hidden sharp edges"
-@image latex /user_guides/modeling_algos/images/modeling_algos_image055.png "An extraction showing hidden sharp edges"
+@figure{/user_guides/modeling_algos/images/modeling_algos_image055.png "An extraction showing hidden sharp edges"}
 
 
 The following services are related to Hidden Lines Removal : 
@@ -2621,15 +2521,15 @@ In the case of *HLRBRep_Algo*, use *HLRBRep_Algo::Update*. With this algorithm, 
 ### Extracting edges
 
 The classes *HLRBRep_HLRToShape* and *HLRBRep_PolyHLRToShape* present a range of extraction filters for an *HLRBRep_Algo object* and an *HLRBRep_PolyAlgo* object, respectively. They highlight the type of edge from the results calculated by the algorithm on a shape. With both extraction classes, you can highlight the following types of output: 
- * visible/hidden sharp edges;
- * visible/hidden smooth edges;
- * visible/hidden sewn edges;
+ * visible/hidden sharp edges,
+ * visible/hidden smooth edges,
+ * visible/hidden sewn edges,
  * visible/hidden outline edges. 
 
 To perform extraction on an *HLRBRep_PolyHLRToShape* object, use *HLRBRep_PolyHLRToShape::Update* function. 
 
 For an *HLRBRep_HLRToShape* object built from an *HLRBRepAlgo* object you can also highlight: 
- * visible isoparameters and
+ * visible isoparameters,
  * hidden isoparameters.
 
 @subsection occt_modalg_10_1 Examples
@@ -2637,46 +2537,46 @@ For an *HLRBRep_HLRToShape* object built from an *HLRBRepAlgo* object you can al
 ### HLRBRep_Algo
 
 ~~~~~
-// Build The algorithm object 
-myAlgo = new HLRBRep_Algo(); 
+# Build The algorithm object 
+myAlgo = new HLRBRep_Algo() 
 
-// Add Shapes into the algorithm 
-TopTools_ListIteratorOfListOfShape anIterator(myListOfShape); 
-for (;anIterator.More();anIterator.Next()) 
-myAlgo-Add(anIterator.Value(),myNbIsos); 
+# Add Shapes into the algorithm 
+TopTools_ListIteratorOfListOfShape anIterator(myListOfShape) 
+for (;anIterator.More()anIterator.Next()) 
+myAlgo-Add(anIterator.Value(),myNbIsos) 
 
-// Set The Projector (myProjector is a 
+# Set The Projector (myProjector is a 
 HLRAlgo_Projector) 
-myAlgo-Projector(myProjector); 
+myAlgo-Projector(myProjector) 
 
-// Build HLR 
-myAlgo->Update(); 
+# Build HLR 
+myAlgo->Update() 
 
-// Set The Edge Status 
-myAlgo->Hide(); 
+# Set The Edge Status 
+myAlgo->Hide() 
 
-// Build the extraction object : 
-HLRBRep_HLRToShape aHLRToShape(myAlgo); 
+# Build the extraction object : 
+HLRBRep_HLRToShape aHLRToShape(myAlgo) 
 
-// extract the results : 
-TopoDS_Shape VCompound      = aHLRToShape.VCompound(); 
+# extract the results : 
+TopoDS_Shape VCompound      = aHLRToShape.VCompound() 
 TopoDS_Shape Rg1LineVCompound              = 
-aHLRToShape.Rg1LineVCompound(); 
+aHLRToShape.Rg1LineVCompound() 
 TopoDS_Shape RgNLineVCompound              = 
-aHLRToShape.RgNLineVCompound(); 
+aHLRToShape.RgNLineVCompound() 
 TopoDS_Shape OutLineVCompound              = 
-aHLRToShape.OutLineVCompound(); 
+aHLRToShape.OutLineVCompound() 
 TopoDS_Shape IsoLineVCompound              = 
-aHLRToShape.IsoLineVCompound(); 
-TopoDS_Shape HCompound      = aHLRToShape.HCompound(); 
+aHLRToShape.IsoLineVCompound() 
+TopoDS_Shape HCompound      = aHLRToShape.HCompound() 
 TopoDS_Shape Rg1LineHCompound              = 
-aHLRToShape.Rg1LineHCompound(); 
+aHLRToShape.Rg1LineHCompound() 
 TopoDS_Shape RgNLineHCompound              = 
-aHLRToShape.RgNLineHCompound(); 
+aHLRToShape.RgNLineHCompound() 
 TopoDS_Shape OutLineHCompound              = 
-aHLRToShape.OutLineHCompound(); 
+aHLRToShape.OutLineHCompound() 
 TopoDS_Shape IsoLineHCompound              = 
-aHLRToShape.IsoLineHCompound(); 
+aHLRToShape.IsoLineHCompound() 
 ~~~~~
 
 ### HLRBRep_PolyAlgo
@@ -2684,43 +2584,43 @@ aHLRToShape.IsoLineHCompound();
 
 ~~~~~
 
-// Build The algorithm object 
-myPolyAlgo = new HLRBRep_PolyAlgo(); 
+# Build The algorithm object 
+myPolyAlgo = new HLRBRep_PolyAlgo() 
 
-// Add Shapes into the algorithm 
+# Add Shapes into the algorithm 
 TopTools_ListIteratorOfListOfShape 
-anIterator(myListOfShape); 
-for (;anIterator.More();anIterator.Next()) 
-myPolyAlgo-Load(anIterator.Value()); 
+anIterator(myListOfShape) 
+for (;anIterator.More()anIterator.Next()) 
+myPolyAlgo-Load(anIterator.Value()) 
 
-// Set The Projector (myProjector is a 
+# Set The Projector (myProjector is a 
 HLRAlgo_Projector) 
-myPolyAlgo->Projector(myProjector); 
+myPolyAlgo->Projector(myProjector) 
 
-// Build HLR 
-myPolyAlgo->Update(); 
+# Build HLR 
+myPolyAlgo->Update() 
 
-// Build the extraction object : 
+# Build the extraction object : 
 HLRBRep_PolyHLRToShape aPolyHLRToShape; 
-aPolyHLRToShape.Update(myPolyAlgo); 
+aPolyHLRToShape.Update(myPolyAlgo) 
 
-// extract the results : 
+# extract the results : 
 TopoDS_Shape VCompound = 
-aPolyHLRToShape.VCompound(); 
+aPolyHLRToShape.VCompound() 
 TopoDS_Shape Rg1LineVCompound = 
-aPolyHLRToShape.Rg1LineVCompound(); 
+aPolyHLRToShape.Rg1LineVCompound() 
 TopoDS_Shape RgNLineVCompound = 
-aPolyHLRToShape.RgNLineVCompound(); 
+aPolyHLRToShape.RgNLineVCompound() 
 TopoDS_Shape OutLineVCompound = 
-aPolyHLRToShape.OutLineVCompound(); 
+aPolyHLRToShape.OutLineVCompound() 
 TopoDS_Shape HCompound = 
-aPolyHLRToShape.HCompound(); 
+aPolyHLRToShape.HCompound() 
 TopoDS_Shape Rg1LineHCompound = 
-aPolyHLRToShape.Rg1LineHCompound(); 
+aPolyHLRToShape.Rg1LineHCompound() 
 TopoDS_Shape RgNLineHCompound = 
-aPolyHLRToShape.RgNLineHCompound(); 
+aPolyHLRToShape.RgNLineHCompound() 
 TopoDS_Shape OutLineHCompound = 
-aPolyHLRToShape.OutLineHCompound(); 
+aPolyHLRToShape.OutLineHCompound() 
 ~~~~~
 
 @section occt_modalg_11 Meshing 
@@ -2729,14 +2629,14 @@ aPolyHLRToShape.OutLineHCompound();
 
 In addition to support of exact geometrical representation of 3D objects  PythonOCC provides functionality to work with tessellated representations of objects in form of meshes.
 
- PythonOCC mesh functionality provides:
-- data structures to store surface mesh data associated to shapes, and some basic algorithms to handle these data
-- data structures and algorithms to build surface triangular mesh from *BRep* objects (shapes).
+PythonOCC mesh functionality provides:
+- data structures to store surface mesh data associated to shapes, and some basic algorithms to handle these data,
+- data structures and algorithms to build surface triangular mesh from *BRep* objects (shapes),
 - tools to extend 3D visualization capabilities of  PythonOCC with displaying meshes along with associated pre- and post-processor data.
 
- PythonOCC includes two mesh converters:
-- VRML converter translates Open CASCADE shapes to VRML 1.0 files (Virtual Reality Modeling Language). Open CASCADE shapes may be translated in two representations: shaded or wireframe. A shaded representation present shapes as sets of triangles computed by a mesh algorithm while a wireframe representation present shapes as sets of curves.
-- STL converter translates Open CASCADE shapes to STL files. STL (STtereoLithography) format is widely used for rapid prototyping.
+PythonOCC includes two mesh converters:
+- VRML converter translates shapes to VRML 1.0 files (Virtual Reality Modeling Language). Shapes may be translated in two representations: shaded or wireframe. A shaded representation present shapes as sets of triangles computed by a mesh algorithm while a wireframe representation present shapes as sets of curves.
+- STL converter translates shapes to STL files. STL (STtereoLithography) format is widely used for rapid prototyping.
 
 @subsection occt_modalg_11_2 Meshing algorithm
 
@@ -2751,7 +2651,7 @@ aShape = aCylinder.Shape()
 aLinearDeflection  = 0.01
 anAngularDeflection = 0.5
 
-aMesh = BRepMesh_IncrementalMesh(aShape, aLinearDeflection,False, anAngularDeflection);
+aMesh = BRepMesh_IncrementalMesh(aShape, aLinearDeflection,False, anAngularDeflection)
 ~~~~~
 
 The default meshing algorithm *BRepMesh_IncrementalMesh* has two major options to define triangulation – linear and angular deflections. 
