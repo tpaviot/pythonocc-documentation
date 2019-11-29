@@ -1,11 +1,13 @@
 sphinx based api documentation
 
-rst files were generated wih::
+install sphinx and sphinx_rtd_theme
 
-    $ sphinx-apidoc /Library/Python/2.7/site-packages/OCC --separate -o apidoc
+    $ conda install sphinx sphinx_rtd_theme
 
-(on osx)
+rst files generation::
 
-To build the doc by yourself::
+    $ sphinx-apidoc /Library/Python/2.7/site-packages/OCC --separate -o api_doc
+
+Then::
 
     $ make html
