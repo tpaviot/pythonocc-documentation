@@ -1,0 +1,1552 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.Geom2dAPI module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.Geom2dAPI module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.Geom2dAPI module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.Geom2dAPI.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.Geom2dAPI">
+<span id="occ-core-geom2dapi-module"></span><h1>OCC.Core.Geom2dAPI module<a class="headerlink" href="#module-OCC.Core.Geom2dAPI" title="Permalink to this headline">¶</a></h1>
+<p>Geom2dAPI module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geom2dapi.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geom2dapi.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve">
+<em class="property">class </em><code class="sig-name descname">Geom2dAPI_ExtremaCurveCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Computes the extrema between - the portion of the curve C1 limited by the two points of parameter (U1min,U1max), and - the portion of the curve C2 limited by the two points of parameter (U2min,U2max). Warning Use the function NbExtrema to obtain the number of solutions. If this algorithm fails, NbExtrema returns 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param C2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param U1min</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1min</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U1max</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1max</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2min</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2min</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2max</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2max</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Distance">
+<code class="sig-name descname">Distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Distance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Extrema">
+<code class="sig-name descname">Extrema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Extrema" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.Extrema.html#OCC.Core.Extrema.Extrema_ExtCC2d" title="OCC.Core.Extrema.Extrema_ExtCC2d">Extrema_ExtCC2d</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.LowerDistance">
+<code class="sig-name descname">LowerDistance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.LowerDistance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.LowerDistanceParameters">
+<code class="sig-name descname">LowerDistanceParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.LowerDistanceParameters" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.NbExtrema">
+<code class="sig-name descname">NbExtrema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.NbExtrema" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.NearestPoints">
+<code class="sig-name descname">NearestPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.NearestPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Parameters">
+<code class="sig-name descname">Parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Parameters" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Points">
+<code class="sig-name descname">Points</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.Points" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ExtremaCurveCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve">
+<em class="property">class </em><code class="sig-name descname">Geom2dAPI_InterCurveCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Create an empty intersector. Use the function Init for further initialization of the intersection algorithm by curves or curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates an object and computes the intersections between the curves C1 and C2.</p>
+</dd>
+<dt class="field-even">param C1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates an object and computes self-intersections of the curve C1. Tolerance value Tol, defaulted to 1.0e-6, defines the precision of computing the intersection points. In case of a tangential intersection, Tol also defines the size of intersection segments (limited portions of the curves) where the distance between all points from two curves (or a curve in case of self-intersection) is less than Tol. Warning Use functions NbPoints and NbSegments to obtain the number of solutions. If the algorithm finds no intersections NbPoints and NbSegments return 0.</p>
+</dd>
+<dt class="field-odd">param C1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes an algorithm with the given arguments and computes the intersections between the curves C1. and C2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param C2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes an algorithm with the given arguments and computes the self-intersections of the curve C1. Tolerance value Tol, defaulted to 1.0e-6, defines the precision of computing the intersection points. In case of a tangential intersection, Tol also defines the size of intersection segments (limited portions of the curves) where the distance between all points from two curves (or a curve in case of self-intersection) is less than Tol. Warning Use functions NbPoints and NbSegments to obtain the number of solutions. If the algorithm finds no intersections NbPoints and NbSegments return 0.</p>
+</dd>
+<dt class="field-even">param C1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Intersector">
+<code class="sig-name descname">Intersector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Intersector" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the algorithmic object from Intersection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dInt_GInter</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.NbPoints">
+<code class="sig-name descname">NbPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.NbPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of intersection-points in case of cross intersections. NbPoints returns 0 if no intersections were found.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.NbSegments">
+<code class="sig-name descname">NbSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.NbSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of tangential intersections. NbSegments returns 0 if no intersections were found</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the intersection point of index Index. Intersection points are computed in case of cross intersections with a precision equal to the tolerance value assigned at the time of construction or in the function Init (this value is defaulted to 1.0e-6). Exceptions Standard_OutOfRange if index is not in the range [ 1,NbPoints ], where NbPoints is the number of computed intersection points</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Segment">
+<code class="sig-name descname">Segment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.Segment" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Use this syntax only to get solutions of tangential intersection between two curves. Output values Curve1 and Curve2 are the intersection segments on the first curve and on the second curve accordingly. Parameter Index defines a number of computed solution. An intersection segment is a portion of an initial curve limited by two points. The distance from each point of this segment to the other curve is less or equal to the tolerance value assigned at the time of construction or in function Init (this value is defaulted to 1.0e-6). Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbSegments ], where NbSegments is the number of computed tangential intersections. Standard_NullObject if the algorithm is initialized for the computing of self-intersections on a curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Curve1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Curve2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_InterCurveCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate">
+<em class="property">class </em><code class="sig-name descname">Geom2dAPI_Interpolate</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Tolerance is to check if the points are not too close to one an other It is also used to check if the tangent vector is not too small. There should be at least 2 points if PeriodicFlag is True then the curve will be periodic.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Points</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Points</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+<dt class="field-odd">param PeriodicFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PeriodicFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Tolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* if PeriodicFlag is True then the curve will be periodic Warning: There should be as many parameters as there are points except if PeriodicFlag is True : then there should be one more parameter to close the curve</p>
+</dd>
+<dt class="field-even">param Points</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Points</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+<dt class="field-even">param Parameters</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Parameters</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PeriodicFlag</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PeriodicFlag</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Tolerance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.Curve">
+<code class="sig-name descname">Curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the computed BSpline curve. Raises StdFail_NotDone if the interpolation fails.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the constrained BSpline curve is successfully constructed. Note: in this case, the result is given by the function Curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.Load">
+<code class="sig-name descname">Load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.Load" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Assigns this constrained BSpline curve to be tangential to vectors InitialTangent and FinalTangent at its first and last points respectively (i.e. the first and last points of the table of points through which the curve passes, as defined at the time of initialization). &lt;Scale&gt; - boolean flag defining whether tangent vectors are to be scaled according to derivatives of lagrange interpolation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param InitialTangent</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type InitialTangent</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">param FinalTangent</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FinalTangent</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">param Scale</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Scale</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Assigns this constrained BSpline curve to be tangential to vectors defined in the table Tangents, which is parallel to the table of points through which the curve passes, as defined at the time of initialization. Vectors in the table Tangents are defined only if the flag given in the parallel table TangentFlags is true: only these vectors are set as tangency constraints. &lt;Scale&gt; - boolean flag defining whether tangent vectors are to be scaled according to derivatives of lagrange interpolation.</p>
+</dd>
+<dt class="field-even">param Tangents</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tangents</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param TangentFlags</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TangentFlags</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfBoolean&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Scale</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Scale</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the constrained BSpline curve. Use the function IsDone to verify that the computation is successful, and then the function Curve to obtain the result.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_Interpolate.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline">
+<em class="property">class </em><code class="sig-name descname">Geom2dAPI_PointsToBSpline</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an empty approximation algorithm. Use an Init function to define and build the BSpline curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</p>
+</dd>
+<dt class="field-even">param Points</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Points</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DegMin</dt>
+<dd class="field-even"><p>default value is 3</p>
+</dd>
+<dt class="field-odd">type DegMin</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param DegMax</dt>
+<dd class="field-even"><p>default value is 8</p>
+</dd>
+<dt class="field-odd">type DegMax</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param Tol2D</dt>
+<dd class="field-even"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-odd">type Tol2D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Approximate a BSpline Curve passing through an array of Point. Of coordinates : //! X = X0 + DX * (i-YValues.Lower()) Y = YValues(i) //! With i in the range YValues.Lower(), YValues.Upper() //! The BSpline will be parametrized from t = X0 to X0 + DX * (YValues.Upper() - YValues.Lower()) //! And will satisfy X(t) = t //! The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</p>
+</dd>
+<dt class="field-odd">param YValues</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type YValues</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param X0</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X0</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param DX</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DX</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param DegMin</dt>
+<dd class="field-odd"><p>default value is 3</p>
+</dd>
+<dt class="field-even">type DegMin</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param DegMax</dt>
+<dd class="field-odd"><p>default value is 8</p>
+</dd>
+<dt class="field-even">type DegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Continuity</dt>
+<dd class="field-odd"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-even">type Continuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param Tol2D</dt>
+<dd class="field-odd"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-even">type Tol2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</p>
+</dd>
+<dt class="field-even">param Points</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Points</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param ParType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ParType</dt>
+<dd class="field-odd"><p>Approx_ParametrizationType</p>
+</dd>
+<dt class="field-even">param DegMin</dt>
+<dd class="field-even"><p>default value is 3</p>
+</dd>
+<dt class="field-odd">type DegMin</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param DegMax</dt>
+<dd class="field-even"><p>default value is 8</p>
+</dd>
+<dt class="field-odd">type DegMax</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param Tol2D</dt>
+<dd class="field-even"><p>default value is 1.0e-3</p>
+</dd>
+<dt class="field-odd">type Tol2D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array &lt;Parameters&gt;. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</p>
+</dd>
+<dt class="field-odd">param Points</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Points</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Parameters</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DegMin</dt>
+<dd class="field-odd"><p>default value is 3</p>
+</dd>
+<dt class="field-even">type DegMin</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param DegMax</dt>
+<dd class="field-odd"><p>default value is 8</p>
+</dd>
+<dt class="field-even">type DegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Continuity</dt>
+<dd class="field-odd"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-even">type Continuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param Tol2D</dt>
+<dd class="field-odd"><p>default value is 1.0e-3</p>
+</dd>
+<dt class="field-even">type Tol2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion</p>
+</dd>
+<dt class="field-even">param Points</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Points</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param Weight1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weight1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Weight2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weight2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Weight3</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weight3</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param DegMax</dt>
+<dd class="field-even"><p>default value is 8</p>
+</dd>
+<dt class="field-odd">type DegMax</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param Tol3D</dt>
+<dd class="field-even"><p>default value is 1.0e-3</p>
+</dd>
+<dt class="field-odd">type Tol3D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.Curve">
+<code class="sig-name descname">Curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the approximate BSpline Curve</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Points</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Points</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DegMin</dt>
+<dd class="field-odd"><p>default value is 3</p>
+</dd>
+<dt class="field-even">type DegMin</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param DegMax</dt>
+<dd class="field-odd"><p>default value is 8</p>
+</dd>
+<dt class="field-even">type DegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Continuity</dt>
+<dd class="field-odd"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-even">type Continuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param Tol2D</dt>
+<dd class="field-odd"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-even">type Tol2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Approximate a BSpline Curve passing through an array of Point. Of coordinates : //! X = X0 + DX * (i-YValues.Lower()) Y = YValues(i) //! With i in the range YValues.Lower(), YValues.Upper() //! The BSpline will be parametrized from t = X0 to X0 + DX * (YValues.Upper() - YValues.Lower()) //! And will satisfy X(t) = t //! The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</p>
+</dd>
+<dt class="field-even">param YValues</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type YValues</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param X0</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X0</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param DX</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DX</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param DegMin</dt>
+<dd class="field-even"><p>default value is 3</p>
+</dd>
+<dt class="field-odd">type DegMin</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param DegMax</dt>
+<dd class="field-even"><p>default value is 8</p>
+</dd>
+<dt class="field-odd">type DegMax</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param Tol2D</dt>
+<dd class="field-even"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-odd">type Tol2D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</p>
+</dd>
+<dt class="field-odd">param Points</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Points</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param ParType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ParType</dt>
+<dd class="field-even"><p>Approx_ParametrizationType</p>
+</dd>
+<dt class="field-odd">param DegMin</dt>
+<dd class="field-odd"><p>default value is 3</p>
+</dd>
+<dt class="field-even">type DegMin</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param DegMax</dt>
+<dd class="field-odd"><p>default value is 8</p>
+</dd>
+<dt class="field-even">type DegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Continuity</dt>
+<dd class="field-odd"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-even">type Continuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param Tol2D</dt>
+<dd class="field-odd"><p>default value is 1.0e-3</p>
+</dd>
+<dt class="field-even">type Tol2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array &lt;Parameters&gt;. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least &lt;Continuity&gt; 3- the distance from the point &lt;Points&gt; to the BSpline will be lower to Tol2D</p>
+</dd>
+<dt class="field-even">param Points</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Points</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param Parameters</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Parameters</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DegMin</dt>
+<dd class="field-even"><p>default value is 3</p>
+</dd>
+<dt class="field-odd">type DegMin</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param DegMax</dt>
+<dd class="field-even"><p>default value is 8</p>
+</dd>
+<dt class="field-odd">type DegMax</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param Tol2D</dt>
+<dd class="field-even"><p>default value is 1.0e-3</p>
+</dd>
+<dt class="field-odd">type Tol2D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion</p>
+</dd>
+<dt class="field-odd">param Points</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Points</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param Weight1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weight1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Weight2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weight2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Weight3</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weight3</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param DegMax</dt>
+<dd class="field-odd"><p>default value is 8</p>
+</dd>
+<dt class="field-even">type DegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Continuity</dt>
+<dd class="field-odd"><p>default value is GeomAbs_C2</p>
+</dd>
+<dt class="field-even">type Continuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param Tol2D</dt>
+<dd class="field-odd"><p>default value is 1.0e-3</p>
+</dd>
+<dt class="field-even">type Tol2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_PointsToBSpline.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve">
+<em class="property">class </em><code class="sig-name descname">Geom2dAPI_ProjectPointOnCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an empty projector algorithm. Use an Init function to define the point and the curve on which it is going to work.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Create the projection of a point &lt;P&gt; on a curve &lt;Curve&gt;</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Curve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Curve</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Create the projection of a point &lt;P&gt; on a curve &lt;Curve&gt; limited by the two points of parameter Umin and Usup. Warning Use the function NbPoints to obtain the number of solutions. If projection fails, NbPoints returns 0.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Curve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Umin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Umin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Usup</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Usup</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Distance">
+<code class="sig-name descname">Distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Distance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the distance between the point and its computed orthogonal projection on the curve. Index is a number of computed projected point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Extrema">
+<code class="sig-name descname">Extrema</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Extrema" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the algorithmic object from Extrema</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Extrema_ExtPC2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes this algorithm with the given arguments, and computes the orthogonal projections of a point &lt;P&gt; on a curve &lt;Curve&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Curve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes this algorithm with the given arguments, and computes the orthogonal projections of the point P onto the portion of the curve Curve limited by the two points of parameter Umin and Usup.</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Curve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Curve</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Umin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Umin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Usup</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Usup</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.LowerDistance">
+<code class="sig-name descname">LowerDistance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.LowerDistance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the distance between the point and its nearest orthogonal projection on the curve. Exceptions StdFail_NotDone if this algorithm fails.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.LowerDistanceParameter">
+<code class="sig-name descname">LowerDistanceParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.LowerDistanceParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter on the curve of the nearest orthogonal projection of the point. Exceptions StdFail_NotDone if this algorithm fails.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.NbPoints">
+<code class="sig-name descname">NbPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.NbPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the number of of computed orthogonal projectionn points.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.NearestPoint">
+<code class="sig-name descname">NearestPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.NearestPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the nearest orthogonal projection of the point on the curve. Exceptions StdFail_NotDone if this algorithm fails.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Parameter">
+<code class="sig-name descname">Parameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Parameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter on the curve of a point which is the orthogonal projection. Index is a number of a computed projected point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Returns the parameter on the curve of a point which is the orthogonal projection. Index is a number of a computed projected point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the orthogonal projection on the curve. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dAPI.Geom2dAPI_ProjectPointOnCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dAPI.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dAPI.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,833 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.SelectBasics module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.SelectBasics module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.SelectBasics module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.SelectBasics.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.SelectBasics">
+<span id="occ-core-selectbasics-module"></span><h1>OCC.Core.SelectBasics module<a class="headerlink" href="#module-OCC.Core.SelectBasics" title="Permalink to this headline">¶</a></h1>
+<p>SelectBasics module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_selectbasics.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_selectbasics.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult">
+<em class="property">class </em><code class="sig-name descname">SelectBasics_PickResult</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor defining an invalid result.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with initialization.</p>
+</dd>
+<dt class="field-even">param theDepth</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDepth</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theDistToCenter</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDistToCenter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theObjPickedPnt</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theObjPickedPnt</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.Depth">
+<code class="sig-name descname">Depth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.Depth" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return depth along picking ray.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.DistToGeomCenter">
+<code class="sig-name descname">DistToGeomCenter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.DistToGeomCenter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return distance to geometry center (auxiliary value for comparing results).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.HasPickedPoint">
+<code class="sig-name descname">HasPickedPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.HasPickedPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return True if Picked Point lying on detected entity was set.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.Invalidate">
+<code class="sig-name descname">Invalidate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.Invalidate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reset depth value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.IsValid">
+<code class="sig-name descname">IsValid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.IsValid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return True if result was been defined.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.Min">
+<em class="property">static </em><code class="sig-name descname">Min</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.Min" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return closest result between two Pick Results according to Depth value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePickResult1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePickResult1</dt>
+<dd class="field-even"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-odd">param thePickResult2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePickResult2</dt>
+<dd class="field-even"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>SelectBasics_PickResult</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.PickedPoint">
+<code class="sig-name descname">PickedPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.PickedPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return picked point lying on detected entity. WARNING! Point is defined in local coordinate system and should be translated into World System before usage!</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.SetDepth">
+<code class="sig-name descname">SetDepth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.SetDepth" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set depth along picking ray.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theDepth</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDepth</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.SetDistToGeomCenter">
+<code class="sig-name descname">SetDistToGeomCenter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.SetDistToGeomCenter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set distance to geometry center.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theDistToCenter</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDistToCenter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.SetPickedPoint">
+<code class="sig-name descname">SetPickedPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.SetPickedPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set picked point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theObjPickedPnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theObjPickedPnt</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_PickResult.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_PickResult.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager">
+<em class="property">class </em><code class="sig-name descname">SelectBasics_SelectingVolumeManager</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="attribute">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Box">
+<code class="sig-name descname">Box</code><em class="property"> = 1</em><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Box" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.DetectedPoint">
+<code class="sig-name descname">DetectedPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.DetectedPoint" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theDepth</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theDepth</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.DistToGeometryCenter">
+<code class="sig-name descname">DistToGeometryCenter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.DistToGeometryCenter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calculates distance from 3d projection of user-defined selection point to the given point theCOG</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theCOG</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCOG</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetActiveSelectionType">
+<code class="sig-name descname">GetActiveSelectionType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetActiveSelectionType" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetFarPickedPnt">
+<code class="sig-name descname">GetFarPickedPnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetFarPickedPnt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Valid only for point and rectangular selection. Returns projection of 2d mouse picked point or projection of center of 2d rectangle (for point and rectangular selection correspondingly) onto far view frustum plane</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetMousePosition">
+<code class="sig-name descname">GetMousePosition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetMousePosition" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return mouse coordinates for Point selection mode.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetNearPickedPnt">
+<code class="sig-name descname">GetNearPickedPnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetNearPickedPnt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Valid only for point and rectangular selection. Returns projection of 2d mouse picked point or projection of center of 2d rectangle (for point and rectangular selection correspondingly) onto near view frustum plane</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetPlanes">
+<code class="sig-name descname">GetPlanes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.GetPlanes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Stores plane equation coefficients (in the following form: Ax + By + Cz + D = 0) to the given vector</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePlaneEquations</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePlaneEquations</dt>
+<dd class="field-even"><p>NCollection_Vector&lt;NCollection_Vec4&lt;float&gt; &gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.IsOverlapAllowed">
+<code class="sig-name descname">IsOverlapAllowed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.IsOverlapAllowed" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Overlaps">
+<code class="sig-name descname">Overlaps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Overlaps" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if selecting volume is overlapped by box theBox</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBoxMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBoxMin</dt>
+<dd class="field-even"><p>NCollection_Vec3&lt;float&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theBoxMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBoxMax</dt>
+<dd class="field-even"><p>NCollection_Vec3&lt;float&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param thePickResult</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePickResult</dt>
+<dd class="field-even"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns true if selecting volume is overlapped by axis-aligned bounding box with minimum corner at point theMinPt and maximum at point theMaxPt</p>
+</dd>
+<dt class="field-even">param theBoxMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theBoxMin</dt>
+<dd class="field-odd"><p>NCollection_Vec3&lt;float&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theBoxMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theBoxMax</dt>
+<dd class="field-odd"><p>NCollection_Vec3&lt;float&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theInside</dt>
+<dd class="field-even"><p>default value is NULL</p>
+</dd>
+<dt class="field-odd">type theInside</dt>
+<dd class="field-odd"><p>bool *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Returns true if selecting volume is overlapped by point thePnt</p>
+</dd>
+<dt class="field-odd">param thePnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePnt</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param thePickResult</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePickResult</dt>
+<dd class="field-even"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns true if selecting volume is overlapped by point thePnt. Does not perform depth calculation, so this method is defined as helper function for inclusion test.</p>
+</dd>
+<dt class="field-even">param thePnt</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePnt</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Returns true if selecting volume is overlapped by planar convex polygon, which points are stored in theArrayOfPts, taking into account sensitivity type theSensType</p>
+</dd>
+<dt class="field-odd">param theArrayOfPts</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theArrayOfPts</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColgp_HArray1OfPnt&gt;</p>
+</dd>
+<dt class="field-odd">param theSensType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSensType</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param thePickResult</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePickResult</dt>
+<dd class="field-even"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns true if selecting volume is overlapped by planar convex polygon, which points are stored in theArrayOfPts, taking into account sensitivity type theSensType</p>
+</dd>
+<dt class="field-even">param theArrayOfPts</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theArrayOfPts</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param theSensType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theSensType</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param thePickResult</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePickResult</dt>
+<dd class="field-odd"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Returns true if selecting volume is overlapped by line segment with start point at thePt1 and end point at thePt2</p>
+</dd>
+<dt class="field-odd">param thePt1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePt1</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param thePt2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePt2</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param thePickResult</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePickResult</dt>
+<dd class="field-even"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns true if selecting volume is overlapped by triangle with vertices thePt1, thePt2 and thePt3, taking into account sensitivity type theSensType</p>
+</dd>
+<dt class="field-even">param thePt1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePt1</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param thePt2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePt2</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param thePt3</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePt3</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param theSensType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theSensType</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param thePickResult</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePickResult</dt>
+<dd class="field-odd"><p>SelectBasics_PickResult &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Point">
+<code class="sig-name descname">Point</code><em class="property"> = 0</em><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Point" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Polyline">
+<code class="sig-name descname">Polyline</code><em class="property"> = 2</em><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Polyline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Unknown">
+<code class="sig-name descname">Unknown</code><em class="property"> = 3</em><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.Unknown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.SelectBasics.SelectBasics_SelectingVolumeManager.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.SelectBasics.selectbasics">
+<em class="property">class </em><code class="sig-name descname">selectbasics</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.selectbasics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.selectbasics.MaxOwnerPriority">
+<em class="property">static </em><code class="sig-name descname">MaxOwnerPriority</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.selectbasics.MaxOwnerPriority" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Structure to provide all-in-one result of selection of sensitive for ‘Matches’ method of Select3D_SensitiveEntity.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.selectbasics.MinOwnerPriority">
+<em class="property">static </em><code class="sig-name descname">MinOwnerPriority</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.SelectBasics.selectbasics.MinOwnerPriority" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.SelectBasics.selectbasics.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.SelectBasics.selectbasics.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

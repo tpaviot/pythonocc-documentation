@@ -1,0 +1,1192 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.CPnts module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.CPnts module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.CPnts module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.CPnts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.CPnts">
+<span id="occ-core-cpnts-module"></span><h1>OCC.Core.CPnts module<a class="headerlink" href="#module-OCC.Core.CPnts" title="Permalink to this headline">¶</a></h1>
+<p>CPnts module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_cpnts.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_cpnts.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint">
+<em class="property">class </em><code class="sig-name descname">CPnts_AbscissaPoint</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* the algorithm computes a point on a curve &lt;Curve&gt; at the distance &lt;Abscissa&gt; from the point of parameter &lt;U0&gt;. &lt;Resolution&gt; is the error allowed in the computation. The computed point can be outside of the curve ‘s bounds.
+:param C:
+:type C: Adaptor3d_Curve &amp;
+:param Abscissa:
+:type Abscissa: float
+:param U0:
+:type U0: float
+:param Resolution:
+:type Resolution: float
+:rtype: None* the algorithm computes a point on a curve &lt;Curve&gt; at the distance &lt;Abscissa&gt; from the point of parameter &lt;U0&gt;. &lt;Resolution&gt; is the error allowed in the computation. The computed point can be outside of the curve ‘s bounds.
+:param C:
+:type C: Adaptor2d_Curve2d &amp;
+:param Abscissa:
+:type Abscissa: float
+:param U0:
+:type U0: float
+:param Resolution:
+:type Resolution: float
+:rtype: None* the algorithm computes a point on a curve &lt;Curve&gt; at the distance &lt;Abscissa&gt; from the point of parameter &lt;U0&gt;. &lt;Ui&gt; is the starting value used in the iterative process which find the solution, it must be closed to the final solution &lt;Resolution&gt; is the error allowed in the computation. The computed point can be outside of the curve ‘s bounds.
+:param C:
+:type C: Adaptor3d_Curve &amp;
+:param Abscissa:
+:type Abscissa: float
+:param U0:
+:type U0: float
+:param Ui:
+:type Ui: float
+:param Resolution:
+:type Resolution: float
+:rtype: None* the algorithm computes a point on a curve &lt;Curve&gt; at the distance &lt;Abscissa&gt; from the point of parameter &lt;U0&gt;. &lt;Ui&gt; is the starting value used in the iterative process which find the solution, it must be closed to the final solution &lt;Resolution&gt; is the error allowed in the computation. The computed point can be outside of the curve ‘s bounds.
+:param C:
+:type C: Adaptor2d_Curve2d &amp;
+:param Abscissa:
+:type Abscissa: float
+:param U0:
+:type U0: float
+:param Ui:
+:type Ui: float
+:param Resolution:
+:type Resolution: float
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.AdvPerform">
+<code class="sig-name descname">AdvPerform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.AdvPerform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the point at the distance &lt;Abscissa&gt; of the curve; performs more appropriate tolerance managment; to use this method in right way it is necessary to call empty consructor. then call method Init with Tolerance = Resolution, then call AdvPermorm. U0 is the parameter of the point from which the distance is measured and Ui is the starting value for the iterative process (should be close to the final solution).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Abscissa</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Abscissa</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U0</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U0</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Ui</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Ui</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the resolution function with &lt;C&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes the resolution function with &lt;C&gt;.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initializes the resolution function with &lt;C&gt;.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes the resolution function with &lt;C&gt;.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initializes the resolution function with &lt;C&gt; between U1 and U2.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes the resolution function with &lt;C&gt; between U1 and U2.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initializes the resolution function with &lt;C&gt; between U1 and U2.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes the resolution function with &lt;C&gt; between U1 and U2.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>True if the computation was successful, False otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.Length">
+<em class="property">static </em><code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.Length" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the length of the Curve &lt;C&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Computes the length of the Curve &lt;C&gt;.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float* Computes the length of the Curve &lt;C&gt; with the given tolerance.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Computes the length of the Curve &lt;C&gt; with the given tolerance.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float* Computes the length of the Curve &lt;C&gt; between &lt;U1&gt; and &lt;U2&gt;.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Computes the length of the Curve &lt;C&gt; between &lt;U1&gt; and &lt;U2&gt;.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float* Computes the length of the Curve &lt;C&gt; between &lt;U1&gt; and &lt;U2&gt; with the given tolerance.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Computes the length of the Curve &lt;C&gt; between &lt;U1&gt; and &lt;U2&gt; with the given tolerance. creation of a indefinite AbscissaPoint.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.Parameter">
+<code class="sig-name descname">Parameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.Parameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter of the solution.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the point at the distance &lt;Abscissa&gt; of the curve. U0 is the parameter of the point from which the distance is measured.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Abscissa</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Abscissa</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U0</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U0</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Computes the point at the distance &lt;Abscissa&gt; of the curve. U0 is the parameter of the point from which the distance is measured and Ui is the starting value for the iterative process (should be close to the final solution).</p>
+</dd>
+<dt class="field-even">param Abscissa</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Abscissa</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U0</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U0</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Ui</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Ui</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Resolution</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resolution</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.SetParameter">
+<code class="sig-name descname">SetParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.SetParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Enforce the solution, used by GCPnts.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_AbscissaPoint.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.CPnts.CPnts_AbscissaPoint.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.CPnts.CPnts_MyGaussFunction">
+<em class="property">class </em><code class="sig-name descname">CPnts_MyGaussFunction</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_MyGaussFunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_Function" title="OCC.Core.math.math_Function"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_Function</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_MyGaussFunction.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_MyGaussFunction.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>F is a pointer on a function D is a client data //! Each value is computed with F(D)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>CPnts_RealFunction &amp;</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>Standard_Address</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_MyGaussFunction.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.CPnts.CPnts_MyGaussFunction.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.CPnts.CPnts_MyRootFunction">
+<em class="property">class </em><code class="sig-name descname">CPnts_MyRootFunction</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_MyRootFunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_FunctionWithDerivative" title="OCC.Core.math.math_FunctionWithDerivative"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_FunctionWithDerivative</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_MyRootFunction.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_MyRootFunction.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>F is a pointer on a function D is a client data Order is the order of integration to use</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>CPnts_RealFunction &amp;</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>Standard_Address</p>
+</dd>
+<dt class="field-odd">param Order</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Order</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* We want to solve Integral(X0,X,F(X,D)) = L</p>
+</dd>
+<dt class="field-even">param X0</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X0</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* We want to solve Integral(X0,X,F(X,D)) = L with given tolerance</p>
+</dd>
+<dt class="field-odd">param X0</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X0</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_MyRootFunction.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.CPnts.CPnts_MyRootFunction.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection">
+<em class="property">class </em><code class="sig-name descname">CPnts_UniformDeflection</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>creation of a indefinite UniformDeflection</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Computes a uniform deflection distribution of points on the curve &lt;C&gt;. &lt;Deflection&gt; defines the constant deflection value. The algorithm computes the number of points and the points. The curve &lt;C&gt; must be at least C2 else the computation can fail. If just some parts of the curve is C2 it is better to give the parameters bounds and to use the below constructor . if &lt;WithControl&gt; is True, the algorithm controls the estimate deflection when the curve is singular at the point P(u),the algorithm computes the next point as P(u + Max(CurrentStep,Abs(LastParameter-FirstParameter))) if the singularity is at the first point ,the next point calculated is the P(LastParameter)</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-even">param Deflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Deflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Resolution</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resolution</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param WithControl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type WithControl</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* As above with 2d curve</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-odd">param Deflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Deflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param WithControl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type WithControl</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Computes an uniform deflection distribution of points on a part of the curve &lt;C&gt;. Deflection defines the step between the points. &lt;U1&gt; and &lt;U2&gt; define the distribution span. &lt;U1&gt; and &lt;U2&gt; must be in the parametric range of the curve.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-even">param Deflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Deflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Resolution</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resolution</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param WithControl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type WithControl</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* As above with 2d curve</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-odd">param Deflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Deflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param WithControl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type WithControl</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection.Initialize">
+<code class="sig-name descname">Initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection.Initialize" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initialize the algoritms with &lt;C&gt;, &lt;Deflection&gt;, &lt;UStep&gt;, &lt;Resolution&gt; and &lt;WithControl&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param Deflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Deflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param WithControl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type WithControl</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initialize the algoritms with &lt;C&gt;, &lt;Deflection&gt;, &lt;UStep&gt;, &lt;Resolution&gt; and &lt;WithControl&gt;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param Deflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Deflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Resolution</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resolution</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param WithControl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type WithControl</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initialize the algoritms with &lt;C&gt;, &lt;Deflection&gt;, &lt;UStep&gt;, &lt;U1&gt;, &lt;U2&gt; and &lt;WithControl&gt;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param Deflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Deflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param WithControl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type WithControl</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initialize the algoritms with &lt;C&gt;, &lt;Deflection&gt;, &lt;UStep&gt;, &lt;U1&gt;, &lt;U2&gt; and &lt;WithControl&gt;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d &amp;</p>
+</dd>
+<dt class="field-even">param Deflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Deflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Resolution</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resolution</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param WithControl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type WithControl</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection.IsAllDone">
+<code class="sig-name descname">IsAllDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection.IsAllDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>To know if all the calculus were done successfully (ie all the points have been computed). The calculus can fail if the Curve is not C1 in the considered domain. Returns True if the calculus was successful.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection.More" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns True if it exists a next Point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection.Next" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>go to the next Point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the computed parameter</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the computed parameter</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.CPnts_UniformDeflection.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.CPnts.CPnts_UniformDeflection.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.CPnts.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.CPnts.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.CPnts.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

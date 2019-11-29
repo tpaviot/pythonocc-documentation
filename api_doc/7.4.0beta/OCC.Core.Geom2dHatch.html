@@ -1,0 +1,2413 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.Geom2dHatch module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.Geom2dHatch module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.Geom2dHatch module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.Geom2dHatch.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.Geom2dHatch">
+<span id="occ-core-geom2dhatch-module"></span><h1>OCC.Core.Geom2dHatch module<a class="headerlink" href="#module-OCC.Core.Geom2dHatch" title="Permalink to this headline">¶</a></h1>
+<p>Geom2dHatch module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geom2dhatch.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geom2dhatch.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_Classifier</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor, undefined algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates an algorithm to classify the Point P with Tolerance &lt;T&gt; on the face described by &lt;F&gt;.</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>Geom2dHatch_Elements &amp;</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Edge">
+<code class="sig-name descname">Edge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Edge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Edge used to determine the classification. When the State is ON this is the Edge containing the point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.EdgeParameter">
+<code class="sig-name descname">EdgeParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.EdgeParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter on Edge() used to determine the classification.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.NoWires">
+<code class="sig-name descname">NoWires</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.NoWires" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the face contains no wire. The state is IN.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Classify the Point P with Tolerance &lt;T&gt; on the face described by &lt;F&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>Geom2dHatch_Elements &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Position">
+<code class="sig-name descname">Position</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Position" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the position of the point on the edge returned by Edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_Position</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Rejected">
+<code class="sig-name descname">Rejected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.Rejected" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True when the state was computed by a rejection. The state is OUT.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.State">
+<code class="sig-name descname">State</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.State" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the result of the classification.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_State</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Classifier.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Element">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_Element</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Magic constructor.
+:param Other:
+:type Other: Geom2dHatch_Element &amp;
+:rtype: None* Creates an element.
+:param Curve:
+:type Curve: Geom2dAdaptor_Curve &amp;
+:param Orientation: default value is TopAbs_FORWARD
+:type Orientation: TopAbs_Orientation
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Element.ChangeCurve">
+<code class="sig-name descname">ChangeCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Element.ChangeCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve associated to the element.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Element.Curve">
+<code class="sig-name descname">Curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Element.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve associated to the element.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Element.Orientation">
+<code class="sig-name descname">Orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Element.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the orientation of the element.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Orientation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Orientation</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the orientation of the element.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Element.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Element.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_Elements</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param Other:
+:type Other: Geom2dHatch_Elements &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Bind" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>K</strong> – <dl class="field-list simple">
+<dt class="field-odd">type K</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param I</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I</dt>
+<dd class="field-odd"><p>Geom2dHatch_Element &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>K</strong> – <dl class="field-list simple">
+<dt class="field-odd">type K</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Geom2dHatch_Element</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.CheckPoint">
+<code class="sig-name descname">CheckPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.CheckPoint" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>P</strong> – <dl class="field-list simple">
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.CurrentEdge">
+<code class="sig-name descname">CurrentEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.CurrentEdge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>E</strong> – <dl class="field-list simple">
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-even">param Or</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or</dt>
+<dd class="field-odd"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Find" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>K</strong> – <dl class="field-list simple">
+<dt class="field-odd">type K</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Geom2dHatch_Element</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.InitEdges">
+<code class="sig-name descname">InitEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.InitEdges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.InitWires">
+<code class="sig-name descname">InitWires</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.InitWires" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>K</strong> – <dl class="field-list simple">
+<dt class="field-odd">type K</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.MoreEdges">
+<code class="sig-name descname">MoreEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.MoreEdges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.MoreWires">
+<code class="sig-name descname">MoreWires</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.MoreWires" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.NextEdge">
+<code class="sig-name descname">NextEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.NextEdge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.NextWire">
+<code class="sig-name descname">NextWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.NextWire" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.OtherSegment">
+<code class="sig-name descname">OtherSegment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.OtherSegment" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>P</strong> – <dl class="field-list simple">
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param Par</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Par</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Reject">
+<code class="sig-name descname">Reject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Reject" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>P</strong> – <dl class="field-list simple">
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.RejectEdge">
+<code class="sig-name descname">RejectEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.RejectEdge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param Par</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Par</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.RejectWire">
+<code class="sig-name descname">RejectWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.RejectWire" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param Par</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Par</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Segment">
+<code class="sig-name descname">Segment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.Segment" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>P</strong> – <dl class="field-list simple">
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param Par</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Par</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>K</strong> – <dl class="field-list simple">
+<dt class="field-odd">type K</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Elements.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Elements.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_FClass2dOfClassifier</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an undefined classifier.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.ClosestIntersection">
+<code class="sig-name descname">ClosestIntersection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.ClosestIntersection" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns 0 if the last compared edge had no relevant intersection. Else returns the index of this intersection in the last intersection algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Compare">
+<code class="sig-name descname">Compare</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Compare" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Updates the classification process with the edge &lt;E&gt; from the boundary.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param Or</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Intersector">
+<code class="sig-name descname">Intersector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Intersector" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the intersecting algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dHatch_Intersector</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.IsHeadOrEnd">
+<code class="sig-name descname">IsHeadOrEnd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.IsHeadOrEnd" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Standard_True if the closest intersection point represents head or end of the edge. Returns Standard_False otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Parameter">
+<code class="sig-name descname">Parameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Parameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the current value of the parameter.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Reset">
+<code class="sig-name descname">Reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.Reset" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Starts a classification process. The point to classify is the origin of the line &lt;L&gt;. &lt;P&gt; is the original length of the segment on &lt;L&gt; used to compute intersections. &lt;Tol&gt; is the tolerance attached to the line segment in intersections.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.State">
+<code class="sig-name descname">State</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.State" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the current state of the point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_State</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_FClass2dOfClassifier.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_Hatcher</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty hatcher.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Intersector</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Intersector</dt>
+<dd class="field-even"><p>Geom2dHatch_Intersector &amp;</p>
+</dd>
+<dt class="field-odd">param Confusion2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Confusion2d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Confusion3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Confusion3d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param KeepPnt</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type KeepPnt</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param KeepSeg</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type KeepSeg</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.AddElement">
+<code class="sig-name descname">AddElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.AddElement" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds an element to the hatcher and returns its index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Curve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve</dt>
+<dd class="field-even"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param Orientation</dt>
+<dd class="field-odd"><p>default value is TopAbs_FORWARD</p>
+</dd>
+<dt class="field-even">type Orientation</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Adds an element to the hatcher and returns its index.</p>
+</dd>
+<dt class="field-even">param Curve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Curve</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Orientation</dt>
+<dd class="field-even"><p>default value is TopAbs_FORWARD</p>
+</dd>
+<dt class="field-odd">type Orientation</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.AddHatching">
+<code class="sig-name descname">AddHatching</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.AddHatching" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds a hatching to the hatcher and returns its index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Curve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve</dt>
+<dd class="field-even"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ChangeIntersector">
+<code class="sig-name descname">ChangeIntersector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ChangeIntersector" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the associated intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dHatch_Intersector</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes all the hatchings and all the elements.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ClrElements">
+<code class="sig-name descname">ClrElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ClrElements" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes all the elements from the hatcher.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ClrHatchings">
+<code class="sig-name descname">ClrHatchings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ClrHatchings" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes all the hatchings from the hatcher.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ComputeDomains">
+<code class="sig-name descname">ComputeDomains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ComputeDomains" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the domains of all the hatchings.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Computes the domains of the IndH-th hatching.</p>
+</dd>
+<dt class="field-even">param IndH</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IndH</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Confusion2d">
+<code class="sig-name descname">Confusion2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Confusion2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the confusion tolerance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Confusion</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Confusion</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the 2d confusion tolerance, i.e. the value under which two points are considered identical in the parametric space of the hatching.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Confusion3d">
+<code class="sig-name descname">Confusion3d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Confusion3d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the confusion tolerance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Confusion</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Confusion</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the 3d confusion tolerance, i.e. the value under which two points are considered identical in the 3d space of the hatching.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Domain">
+<code class="sig-name descname">Domain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Domain" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the IDom-th domain of the IndH-th hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param IDom</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IDom</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>HatchGen_Domain</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Dump">
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Dump the hatcher.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ElementCurve">
+<code class="sig-name descname">ElementCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.ElementCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve associated to the IndE-th element.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndE</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.HatchingCurve">
+<code class="sig-name descname">HatchingCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.HatchingCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve associated to the IndH-th hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Intersector">
+<code class="sig-name descname">Intersector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Intersector" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the associated intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Intersector</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Intersector</dt>
+<dd class="field-even"><p>Geom2dHatch_Intersector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the associated intersector.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Geom2dHatch_Intersector</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.KeepPoints">
+<code class="sig-name descname">KeepPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.KeepPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the above flag.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Keep</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Keep</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the flag about the points consideration.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.KeepSegments">
+<code class="sig-name descname">KeepSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.KeepSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the above flag.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Keep</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Keep</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the flag about the segments consideration.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.NbDomains">
+<code class="sig-name descname">NbDomains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.NbDomains" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of domains of the IndH-th hatching. Only ONE ‘INFINITE’ domain means that the hatching is fully included in the contour defined by the elements.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.NbPoints">
+<code class="sig-name descname">NbPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.NbPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of intersection points of the IndH-th hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the IndP-th intersection point of the IndH-th hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param IndP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndP</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>HatchGen_PointOnHatching</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.RemElement">
+<code class="sig-name descname">RemElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.RemElement" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes the IndE-th element from the hatcher.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndE</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.RemHatching">
+<code class="sig-name descname">RemHatching</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.RemHatching" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes the IndH-th hatching from the hatcher.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Status" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the status about the IndH-th hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>HatchGen_ErrorStatus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Trim">
+<code class="sig-name descname">Trim</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.Trim" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Trims all the hatchings of the hatcher by all the elements of the hatcher.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Adds a hatching to the hatcher and trims it by the elements already given and returns its index.</p>
+</dd>
+<dt class="field-even">param Curve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Curve</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int* Trims the IndH-th hatching by the elements already given.</p>
+</dd>
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.TrimDone">
+<code class="sig-name descname">TrimDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.TrimDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the fact that the intersections were computed for the IndH-th hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.TrimFailed">
+<code class="sig-name descname">TrimFailed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.TrimFailed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the fact that the intersections failed for the IndH-th hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndH</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatcher.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_Hatching</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Creates a hatching.
+:param Curve:
+:type Curve: Geom2dAdaptor_Curve &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.AddDomain">
+<code class="sig-name descname">AddDomain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.AddDomain" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds a domain to the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Domain</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Domain</dt>
+<dd class="field-even"><p>HatchGen_Domain &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.AddPoint">
+<code class="sig-name descname">AddPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.AddPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds an intersection point to the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>HatchGen_PointOnHatching &amp;</p>
+</dd>
+<dt class="field-odd">param Confusion</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Confusion</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ChangeCurve">
+<code class="sig-name descname">ChangeCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ChangeCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve associated to the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ChangePoint">
+<code class="sig-name descname">ChangePoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ChangePoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Index-th intersection point of the hatching. The exception OutOfRange is raised if Index &lt; 1 or Index &gt; NbPoints.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>HatchGen_PointOnHatching</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ClassificationPoint">
+<code class="sig-name descname">ClassificationPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ClassificationPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns a point on the curve. This point will be used for the classification.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ClrDomains">
+<code class="sig-name descname">ClrDomains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ClrDomains" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes all the domains of the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ClrPoints">
+<code class="sig-name descname">ClrPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.ClrPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes all the intersection points of the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Curve">
+<code class="sig-name descname">Curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve associated to the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Geom2dAdaptor_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Domain">
+<code class="sig-name descname">Domain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Domain" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Index-th domain of the hatching. The exception OutOfRange is raised if Index &lt; 1 or Index &gt; NbDomains.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>HatchGen_Domain</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the flag about the domains computation to the given value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Flag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Flag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the flag about the domains computation.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.NbDomains">
+<code class="sig-name descname">NbDomains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.NbDomains" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of domains of the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.NbPoints">
+<code class="sig-name descname">NbPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.NbPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of intersection points of the hatching.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Index-th intersection point of the hatching. The exception OutOfRange is raised if Index &lt; 1 or Index &gt; NbPoints.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>HatchGen_PointOnHatching</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.RemDomain">
+<code class="sig-name descname">RemDomain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.RemDomain" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes the Index-th domain of the hatching. The exception OutOfRange is raised if Index &lt; 1 or Index &gt; NbDomains.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.RemPoint">
+<code class="sig-name descname">RemPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.RemPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes the Index-th intersection point of the hatching. The exception OutOfRange is raised if Index &lt; 1 or Index &gt; NbPoints.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.Status" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the error status.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theStatus</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theStatus</dt>
+<dd class="field-even"><p>HatchGen_ErrorStatus</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the error status.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>HatchGen_ErrorStatus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.TrimDone">
+<code class="sig-name descname">TrimDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.TrimDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the flag about the trimming computations to the given value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Flag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Flag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the flag about the trimming computations.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.TrimFailed">
+<code class="sig-name descname">TrimFailed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.TrimFailed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the flag about the trimming failure to the given value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Flag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Flag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Returns the flag about the trimming failure.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatching.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_Hatchings</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Hatchings.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_Intersector</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Geom2dInt.html#OCC.Core.Geom2dInt.Geom2dInt_GInter" title="OCC.Core.Geom2dInt.Geom2dInt_GInter"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Geom2dInt.Geom2dInt_GInter</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Confusion</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Confusion</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tangency</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tangency</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None:rtype: None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.ConfusionTolerance">
+<code class="sig-name descname">ConfusionTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.ConfusionTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the confusion tolerance of the intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.Intersect">
+<code class="sig-name descname">Intersect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.Intersect" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Intersects the curves C1 and C2. The results are retreived by the usual methods described in IntRes2d_Intersection. Creates an intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C1</dt>
+<dd class="field-even"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param C2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C2</dt>
+<dd class="field-even"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.LocalGeometry">
+<code class="sig-name descname">LocalGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.LocalGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns in &lt;T&gt;, &lt;N&gt; and &lt;C&gt; the tangent, normal and curvature of the edge &lt;E&gt; at parameter value &lt;U&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param T</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type T</dt>
+<dd class="field-even"><p>gp_Dir2d</p>
+</dd>
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>gp_Dir2d</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs the intersection between the 2d line segment (&lt;L&gt;, &lt;P&gt;) and the Curve &lt;E&gt;. The line segment is the part of the 2d line &lt;L&gt; of parameter range [0, &lt;P&gt;] (P is positive and can be RealLast()). Tol is the Tolerance on the segment. The order is relevant, the first argument is the segment, the second the Edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>Geom2dAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.SetConfusionTolerance">
+<code class="sig-name descname">SetConfusionTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.SetConfusionTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the confusion tolerance of the intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Confusion</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Confusion</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.SetTangencyTolerance">
+<code class="sig-name descname">SetTangencyTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.SetTangencyTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the tangency tolerance of the intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Tangency</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tangency</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.TangencyTolerance">
+<code class="sig-name descname">TangencyTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.TangencyTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the tangency tolerance of the intersector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_Intersector.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements">
+<em class="property">class </em><code class="sig-name descname">Geom2dHatch_MapOfElements</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.Geom2dHatch_MapOfElements.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dHatch.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dHatch.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

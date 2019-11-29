@@ -1,0 +1,2129 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.IntCurve module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.IntCurve module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.IntCurve module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.IntCurve.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.IntCurve">
+<span id="occ-core-intcurve-module"></span><h1>OCC.Core.IntCurve module<a class="headerlink" href="#module-OCC.Core.IntCurve" title="Permalink to this headline">¶</a></h1>
+<p>IntCurve module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_intcurve.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_intcurve.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool">
+<em class="property">class </em><code class="sig-name descname">IntCurve_IConicTool</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param IT:
+:type IT: IntCurve_IConicTool &amp;
+:rtype: None:param E:
+:type E: gp_Elips2d
+:rtype: None:param L:
+:type L: gp_Lin2d
+:rtype: None:param C:
+:type C: gp_Circ2d
+:rtype: None:param P:
+:type P: gp_Parab2d
+:rtype: None:param H:
+:type H: gp_Hypr2d
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool.D1">
+<code class="sig-name descname">D1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool.D1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool.D2">
+<code class="sig-name descname">D2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool.D2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-even">param N</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type N</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool.Distance">
+<code class="sig-name descname">Distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool.Distance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the value of the signed distance between the point P and the implicit curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool.FindParameter">
+<code class="sig-name descname">FindParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool.FindParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter U of the point on the implicit curve corresponding to the point P. The correspondance between P and the point P(U) on the implicit curve must be coherent with the way of determination of the signed distance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool.GradDistance">
+<code class="sig-name descname">GradDistance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool.GradDistance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the Gradient of the Signed Distance between a point and the implicit curve, at the point P.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> – <dl class="field-list simple">
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IConicTool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IConicTool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntCurve.IntCurve_IntConicConic">
+<em class="property">class </em><code class="sig-name descname">IntCurve_IntConicConic</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntConicConic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.IntRes2d.html#OCC.Core.IntRes2d.IntRes2d_Intersection" title="OCC.Core.IntRes2d.IntRes2d_Intersection"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.IntRes2d.IntRes2d_Intersection</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty Constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between 2 lines from gp.</p>
+</dd>
+<dt class="field-even">param L1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L1</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param D1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D1</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param L2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L2</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param D2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a line and a circle. The exception ConstructionError is raised if the method IsClosed of the domain of the circle returns False.</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param DL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DL</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param DC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DC</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a line and an ellipse. The exception ConstructionError is raised if the method IsClosed of the domain of the ellipse returns False.</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param DL</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DL</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param DE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DE</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a line and a parabola from gp.</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param DL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DL</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param DP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DP</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a line and an hyperbola.</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param DL</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DL</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">param DH</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DH</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between 2 circles from gp. The exception ConstructionError is raised if the method IsClosed of one of the domain returns False.</p>
+</dd>
+<dt class="field-odd">param C1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C1</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param D1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D1</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param C2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C2</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param D2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a circle and an ellipse. The exception ConstructionError is raised if the method IsClosed of one the domain returns False.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param DC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DC</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param DE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DE</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a circle and a parabola. The exception ConstructionError is raised if the method IsClosed of the domain of the circle returns False.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param DC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DC</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param DP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DP</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a circle and an hyperbola. The exception ConstructionError is raised if the method IsClosed of the domain of the circle returns False.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param DC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DC</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">param DH</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DH</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between 2 ellipses. The exception ConstructionError is raised if the method IsClosed of one of the domain returns False.</p>
+</dd>
+<dt class="field-odd">param E1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E1</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param D1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D1</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param E2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E2</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param D2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between an ellipse and a parabola. The exception ConstructionError is raised if the method IsClosed of the domain of the ellipse returns False.</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param DE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DE</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">param DP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DP</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between an ellipse and an hyperbola. The exception ConstructionError is raised if the method IsClosed of the domain of the ellipse returns False.</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param DE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DE</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param DH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DH</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between 2 parabolas.</p>
+</dd>
+<dt class="field-even">param P1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P1</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">param D1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D1</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param P2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P2</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">param D2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a parabola and an hyperbola.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param DP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DP</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param DH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DH</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between 2 hyperbolas.</p>
+</dd>
+<dt class="field-even">param H1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H1</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">param D1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D1</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param H2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H2</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">param D2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IntConicConic.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntConicConic.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Intersection between 2 lines from gp.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param L1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L1</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param D1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D1</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param L2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L2</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param D2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a line and a circle. The exception ConstructionError is raised if the method IsClosed of the domain of the circle returns False.</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param DL</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DL</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param DC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DC</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a line and an ellipse. The exception ConstructionError is raised if the method IsClosed of the domain of the ellipse returns False.</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param DL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DL</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param DE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DE</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a line and a parabola from gp.</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param DL</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DL</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">param DP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DP</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a line and an hyperbola.</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param DL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DL</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param DH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DH</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between 2 circles from gp. The exception ConstructionError is raised if the method IsClosed of the domain of one of the circle returns False.</p>
+</dd>
+<dt class="field-even">param C1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C1</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param D1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D1</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param C2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C2</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param D2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a circle and an ellipse. The exception ConstructionError is raised if the method IsClosed of one the domain returns False.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param DC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DC</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param DE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DE</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a circle and a parabola. The exception ConstructionError is raised if the method IsClosed of the domain of the circle returns False.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param DC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DC</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">param DP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DP</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a circle and an hyperbola. The exception ConstructionError is raised if the method IsClosed of the domain of the circle returns False.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param DC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DC</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param DH</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DH</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between 2 ellipses. The exception ConstructionError is raised if the method IsClosed of one of the domain returns False.</p>
+</dd>
+<dt class="field-even">param E1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E1</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param D1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D1</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param E2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E2</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param D2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between an ellipse and a parabola. The exception ConstructionError is raised if the method IsClosed of the domain of the ellipse returns False.</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param DE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DE</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param DP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DP</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between an ellipse and an hyperbola. The exception ConstructionError is raised if the method IsClosed of the domain of the ellipse returns False.</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param DE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DE</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">param DH</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DH</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between 2 parabolas.</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param D1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D1</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param D2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a parabola and an hyperbola.</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">param DP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DP</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">param DH</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DH</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between 2 hyperbolas.</p>
+</dd>
+<dt class="field-odd">param H1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H1</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param D1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D1</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param H2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H2</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param D2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IntConicConic.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntConicConic.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntCurve.IntCurve_IntImpConicParConic">
+<em class="property">class </em><code class="sig-name descname">IntCurve_IntImpConicParConic</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntImpConicParConic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.IntRes2d.html#OCC.Core.IntRes2d.IntRes2d_Intersection" title="OCC.Core.IntRes2d.IntRes2d_Intersection"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.IntRes2d.IntRes2d_Intersection</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between an implicit curve and a parametrised curve. The exception ConstructionError is raised if the domain of the parametrised curve does not verify HasFirstPoint and HasLastPoint return True.</p>
+</dd>
+<dt class="field-even">param ITool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ITool</dt>
+<dd class="field-odd"><p>IntCurve_IConicTool &amp;</p>
+</dd>
+<dt class="field-even">param Dom1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Dom1</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param PCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCurve</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param Dom2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Dom2</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IntImpConicParConic.And_Domaine_Objet1_Intersections">
+<code class="sig-name descname">And_Domaine_Objet1_Intersections</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntImpConicParConic.And_Domaine_Objet1_Intersections" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TheImpTool</strong> – <dl class="field-list simple">
+<dt class="field-odd">type TheImpTool</dt>
+<dd class="field-odd"><p>IntCurve_IConicTool &amp;</p>
+</dd>
+<dt class="field-even">param TheParCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheParCurve</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param TheImpCurveDomain</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheImpCurveDomain</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param TheParCurveDomain</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheParCurveDomain</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param NbResultats</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NbResultats</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">param Inter2_And_Domain2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Inter2_And_Domain2</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Inter1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Inter1</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Resultat1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resultat1</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Resultat2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resultat2</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param EpsNul</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type EpsNul</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IntImpConicParConic.FindU">
+<code class="sig-name descname">FindU</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntImpConicParConic.FindU" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parameter</strong> – <dl class="field-list simple">
+<dt class="field-odd">type parameter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param point</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type point</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param TheParCurev</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheParCurev</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param TheImpTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheImpTool</dt>
+<dd class="field-odd"><p>IntCurve_IConicTool &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IntImpConicParConic.FindV">
+<code class="sig-name descname">FindV</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntImpConicParConic.FindV" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parameter</strong> – <dl class="field-list simple">
+<dt class="field-odd">type parameter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param point</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type point</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param TheImpTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheImpTool</dt>
+<dd class="field-odd"><p>IntCurve_IConicTool &amp;</p>
+</dd>
+<dt class="field-even">param ParCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ParCurve</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param TheParCurveDomain</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheParCurveDomain</dt>
+<dd class="field-odd"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-even">param V0</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V0</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tolerance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IntImpConicParConic.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntImpConicParConic.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Intersection between an implicit curve and a parametrised curve. The exception ConstructionError is raised if the domain of the parametrised curve does not verify HasFirstPoint and HasLastPoint return True.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param ITool</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ITool</dt>
+<dd class="field-even"><p>IntCurve_IConicTool &amp;</p>
+</dd>
+<dt class="field-odd">param Dom1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dom1</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param PCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PCurve</dt>
+<dd class="field-even"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-odd">param Dom2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dom2</dt>
+<dd class="field-even"><p>IntRes2d_Domain &amp;</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_IntImpConicParConic.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_IntImpConicParConic.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntCurve.IntCurve_MyImpParToolOfIntImpConicParConic">
+<em class="property">class </em><code class="sig-name descname">IntCurve_MyImpParToolOfIntImpConicParConic</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_MyImpParToolOfIntImpConicParConic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_FunctionWithDerivative" title="OCC.Core.math.math_FunctionWithDerivative"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_FunctionWithDerivative</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor of the class.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IT</dt>
+<dd class="field-even"><p>IntCurve_IConicTool &amp;</p>
+</dd>
+<dt class="field-odd">param PC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PC</dt>
+<dd class="field-even"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_MyImpParToolOfIntImpConicParConic.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_MyImpParToolOfIntImpConicParConic.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic">
+<em class="property">class </em><code class="sig-name descname">IntCurve_PConic</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>PC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type PC</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param E:</p>
+</dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param H:</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param L:</p>
+</dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.Accuracy">
+<code class="sig-name descname">Accuracy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.Accuracy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.Axis2">
+<code class="sig-name descname">Axis2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.Axis2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Ax22d" title="OCC.Core.gp.gp_Ax22d">gp_Ax22d</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.EpsX">
+<code class="sig-name descname">EpsX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.EpsX" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.Param1">
+<code class="sig-name descname">Param1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.Param1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.Param2">
+<code class="sig-name descname">Param2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.Param2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.SetAccuracy">
+<code class="sig-name descname">SetAccuracy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.SetAccuracy" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Accuracy is the number of samples used to approximate the parametric curve on its domain.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Nb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Nb</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.SetEpsX">
+<code class="sig-name descname">SetEpsX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.SetEpsX" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>EpsX is a internal tolerance used in math algorithms, usually about 1e-10 (See FunctionAllRoots for more details)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param EpsDist</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type EpsDist</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.TypeCurve">
+<code class="sig-name descname">TypeCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.TypeCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>The Conics are manipulated as objects which only depend on three parameters<span class="classifier">Axis and two Real from Standards. Type Curve is used to select the correct Conic.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>GeomAbs_CurveType</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConic.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConic.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntCurve.IntCurve_PConicTool">
+<em class="property">class </em><code class="sig-name descname">IntCurve_PConicTool</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConicTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConicTool.D1">
+<em class="property">static </em><code class="sig-name descname">D1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConicTool.D1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConicTool.D2">
+<em class="property">static </em><code class="sig-name descname">D2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConicTool.D2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-even">param N</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type N</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConicTool.EpsX">
+<em class="property">static </em><code class="sig-name descname">EpsX</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConicTool.EpsX" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConicTool.NbSamples">
+<em class="property">static </em><code class="sig-name descname">NbSamples</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConicTool.NbSamples" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param U0</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U0</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConicTool.Value">
+<em class="property">static </em><code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConicTool.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param X</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_PConicTool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_PConicTool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntCurve.IntCurve_ProjectOnPConicTool">
+<em class="property">class </em><code class="sig-name descname">IntCurve_ProjectOnPConicTool</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_ProjectOnPConicTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_ProjectOnPConicTool.FindParameter">
+<em class="property">static </em><code class="sig-name descname">FindParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_ProjectOnPConicTool.FindParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter V of the point on the parametric curve corresponding to the Point Pnt. The Correspondance between Pnt and the point P(V) on the parametric curve must be coherent with the way of determination of the signed distance between a point and the implicit curve. Tol is the tolerance on the distance between a point and the parametrised curve. In that case, no bounds are given. The research of the rigth parameter has to be made on the natural parametric domain of the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-odd">param Pnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pnt</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Returns the parameter V of the point on the parametric curve corresponding to the Point Pnt. The Correspondance between Pnt and the point P(V) on the parametric curve must be coherent with the way of determination of the signed distance between a point and the implicit curve. Tol is the tolerance on the distance between a point and the parametrised curve. LowParameter and HighParameter give the boundaries of the interval in wich the parameter certainly lies. These parameters are given to implement a more efficient algoritm. So, it is not necessary to check that the returned value verifies LowParameter &lt;= Value &lt;= HighParameter.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>IntCurve_PConic &amp;</p>
+</dd>
+<dt class="field-even">param Pnt</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pnt</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param LowParameter</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LowParameter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param HighParameter</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type HighParameter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.IntCurve_ProjectOnPConicTool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.IntCurve_ProjectOnPConicTool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntCurve.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntCurve.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntCurve.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

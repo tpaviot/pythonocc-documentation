@@ -1,0 +1,2994 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.ChFi3d module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.ChFi3d module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.ChFi3d module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.ChFi3d.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.ChFi3d">
+<span id="occ-core-chfi3d-module"></span><h1>OCC.Core.ChFi3d module<a class="headerlink" href="#module-OCC.Core.ChFi3d" title="Permalink to this headline">¶</a></h1>
+<p>ChFi3d module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_chfi3d.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_chfi3d.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder">
+<em class="property">class </em><code class="sig-name descname">ChFi3d_Builder</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Abscissa">
+<code class="sig-name descname">Abscissa</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Abscissa" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the abscissa of the vertex V on the contour of index IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.BadShape">
+<code class="sig-name descname">BadShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.BadShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>if (HasResult()) returns partial result if (!HasResult())</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Builder">
+<code class="sig-name descname">Builder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Builder" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Builder of topologic operations.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TopOpeBRepBuild_HBuilder&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Closed">
+<code class="sig-name descname">Closed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Closed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns true if the contour of index IC is closed</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.ClosedAndTangent">
+<code class="sig-name descname">ClosedAndTangent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.ClosedAndTangent" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns true if the contour of index IC is closed an tangent.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Compute">
+<code class="sig-name descname">Compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Compute" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>general calculation of geometry on all edges, topologic reconstruction.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.ComputedSurface">
+<code class="sig-name descname">ComputedSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.ComputedSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the IS’th surface calculated on the contour IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param IS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IS</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Contains">
+<code class="sig-name descname">Contains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Contains" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the number of the contour containing E or 0 if E does not belong to any contour.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* gives the number of the contour containing E or 0 if E does not belong to any contour. Sets in IndexInSpine the index of E in the contour if it’s found</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param IndexInSpine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IndexInSpine</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.FaultyContour">
+<code class="sig-name descname">FaultyContour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.FaultyContour" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of I’th contour on which the calculation has failed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.FaultyVertex">
+<code class="sig-name descname">FaultyVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.FaultyVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the IV’th vertex on which the calculation has failed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IV</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Vertex</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.FirstVertex">
+<code class="sig-name descname">FirstVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.FirstVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the First vertex V of the contour of index IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Vertex</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Generated">
+<code class="sig-name descname">Generated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Generated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Advanced function for the history</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param EouV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type EouV</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.HasResult">
+<code class="sig-name descname">HasResult</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.HasResult" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns True if a partial result has been calculated</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns True if the computation is success</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.LastVertex">
+<code class="sig-name descname">LastVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.LastVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the Last vertex V of the contour of index IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Vertex</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Length" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the length of the contour of index IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.NbComputedSurfaces">
+<code class="sig-name descname">NbComputedSurfaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.NbComputedSurfaces" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of surfaces calculated on the contour IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.NbElements">
+<code class="sig-name descname">NbElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.NbElements" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the number of disjoint contours on which the fillets are calculated</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.NbFaultyContours">
+<code class="sig-name descname">NbFaultyContours</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.NbFaultyContours" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of contours on which the calculation has failed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.NbFaultyVertices">
+<code class="sig-name descname">NbFaultyVertices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.NbFaultyVertices" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of vertices on which the calculation has failed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.PerformTwoCornerbyInter">
+<code class="sig-name descname">PerformTwoCornerbyInter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.PerformTwoCornerbyInter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Index</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.RelativeAbscissa">
+<code class="sig-name descname">RelativeAbscissa</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.RelativeAbscissa" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the relative abscissa([0.,1.]) of the vertex V on the contour of index IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Remove" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>extracts from the list the contour containing edge E.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Reset">
+<code class="sig-name descname">Reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Reset" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reset all results of compute and returns the algorythm in the state of the last acquisition to enable modification of contours or areas.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.SetContinuity">
+<code class="sig-name descname">SetContinuity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.SetContinuity" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>InternalContinuity</strong> – <dl class="field-list simple">
+<dt class="field-odd">type InternalContinuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param AngularTolerance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AngularTolerance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.SetParams">
+<code class="sig-name descname">SetParams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.SetParams" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tang</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tesp</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tesp</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param T2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T2d</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param TApp3d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TApp3d</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param TolApp2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolApp2d</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Fleche</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fleche</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>if (Isdone()) makes the result. if (!Isdone())</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.SplitKPart">
+<code class="sig-name descname">SplitKPart</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.SplitKPart" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Method, implemented in the inheritants, calculates the elements of construction of the surface (fillet or chamfer).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Data</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Data</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_SurfData&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param SetData</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SetData</dt>
+<dd class="field-even"><p>ChFiDS_SequenceOfSurfData &amp;</p>
+</dd>
+<dt class="field-odd">param Spine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Spine</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Iedge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Iedge</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param I1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param I2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Intf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Intf</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Intl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Intl</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.StripeStatus">
+<code class="sig-name descname">StripeStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.StripeStatus" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>for the stripe IC ,indication on the cause of failure WalkingFailure,TwistedSurface,Error, Ok</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>ChFiDS_ErrorStatus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the n’th set of edges (contour) if I &gt;NbElements()</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_Spine&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_Builder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_Builder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder">
+<em class="property">class </em><code class="sig-name descname">ChFi3d_ChBuilder</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ChFi3d.ChFi3d_Builder" title="OCC.Core.ChFi3d.ChFi3d_Builder"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ChFi3d.ChFi3d_Builder</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>initializes the Builder with the Shape &lt;S&gt; for the computation of chamfers</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param Ta</dt>
+<dd class="field-odd"><p>default value is 1.0e-2</p>
+</dd>
+<dt class="field-even">type Ta</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>initializes a contour with the edge &lt;E&gt; as first (the next are found by propagation ). The two distances (parameters of the chamfer) must be set after. if the edge &lt;E&gt; has more than 2 adjacent faces</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* initializes a new contour with the edge &lt;E&gt; as first (the next are found by propagation ), and the distance &lt;Dis&gt; if the edge &lt;E&gt; has more than 2 adjacent faces</p>
+</dd>
+<dt class="field-even">param Dis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Dis</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* initializes a new contour with the edge &lt;E&gt; as first (the next are found by propagation ), and the distance &lt;Dis1&gt; and &lt;Dis2&gt; if the edge &lt;E&gt; has more than 2 adjacent faces</p>
+</dd>
+<dt class="field-odd">param Dis1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Dis2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.AddDA">
+<code class="sig-name descname">AddDA</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.AddDA" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>initializes a new contour with the edge &lt;E&gt; as first (the next are found by propagation ), and the distance &lt;Dis1&gt; and &lt;Angle&gt; if the edge &lt;E&gt; has more than 2 adjacent faces</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Dis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Angle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.Dists">
+<code class="sig-name descname">Dists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.Dists" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the distances &lt;Dis1&gt; and &lt;Dis2&gt; of the fillet contour of index &lt;IC&gt; in the DS</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Dis1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis1</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Dis2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis2</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.GetDist">
+<code class="sig-name descname">GetDist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.GetDist" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the distances &lt;Dis&gt; of the fillet contour of index &lt;IC&gt; in the DS</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Dis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.GetDistAngle">
+<code class="sig-name descname">GetDistAngle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.GetDistAngle" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the distances &lt;Dis&gt; and &lt;Angle&gt; of the fillet contour of index &lt;IC&gt; in the DS</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Dis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Angle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.IsChamfer">
+<code class="sig-name descname">IsChamfer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.IsChamfer" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>renvoi la methode des chanfreins utilisee</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>ChFiDS_ChamfMethod</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.Mode">
+<code class="sig-name descname">Mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.Mode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the mode of chamfer used</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>ChFiDS_ChamfMode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.NbSurf">
+<code class="sig-name descname">NbSurf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.NbSurf" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.PerformSurf">
+<code class="sig-name descname">PerformSurf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.PerformSurf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Methode, implemented in inheritants, calculates the elements of construction of the surface (fillet or chamfer).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Data</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Data</dt>
+<dd class="field-even"><p>ChFiDS_SequenceOfSurfData &amp;</p>
+</dd>
+<dt class="field-odd">param Guide</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Guide</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_HElSpine&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Spine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Spine</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Choix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Choix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param I1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param I2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param MaxStep</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxStep</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Fleche</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Fleche</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TolGuide</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolGuide</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Last</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Last</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Inside</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Inside</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Appro</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Appro</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Forward</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Forward</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param RecOnS1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RecOnS1</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param RecOnS2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RecOnS2</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Soldep</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Soldep</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Intf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Intf</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param Intl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Intl</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Method, implemented in the inheritants, calculates the elements of construction of the surface (fillet or chamfer) contact edge/face.</p>
+</dd>
+<dt class="field-even">param Data</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Data</dt>
+<dd class="field-odd"><p>ChFiDS_SequenceOfSurfData &amp;</p>
+</dd>
+<dt class="field-even">param Guide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Guide</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_HElSpine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Spine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PCref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Decroch1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Decroch1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Or2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or2</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param MaxStep</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxStep</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Fleche</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fleche</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param TolGuide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolGuide</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Inside</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Inside</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Appro</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Appro</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Forward</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Forward</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecP</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecS</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecRst</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecRst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Soldep</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Soldep</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Method, implemented in inheritants, calculates the elements of construction of the surface (fillet or chamfer) contact edge/face.</p>
+</dd>
+<dt class="field-odd">param Data</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Data</dt>
+<dd class="field-even"><p>ChFiDS_SequenceOfSurfData &amp;</p>
+</dd>
+<dt class="field-odd">param Guide</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Guide</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_HElSpine&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Spine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Spine</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Choix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Choix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param I1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Or1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or1</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param I2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param PC2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PC2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Sref2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sref2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param PCref2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PCref2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Decroch2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Decroch2</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param MaxStep</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxStep</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Fleche</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Fleche</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TolGuide</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolGuide</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Last</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Last</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Inside</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Inside</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Appro</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Appro</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Forward</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Forward</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param RecP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RecP</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param RecS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RecS</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param RecRst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RecRst</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Soldep</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Soldep</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Method, implemented in inheritants, calculates the elements of construction of the surface (fillet or chamfer) contact edge/edge.</p>
+</dd>
+<dt class="field-even">param Data</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Data</dt>
+<dd class="field-odd"><p>ChFiDS_SequenceOfSurfData &amp;</p>
+</dd>
+<dt class="field-even">param Guide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Guide</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_HElSpine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Spine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PCref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Decroch1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Decroch1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Or1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or1</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sref2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sref2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PCref2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCref2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Decroch2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Decroch2</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Or2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or2</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param MaxStep</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxStep</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Fleche</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fleche</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param TolGuide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolGuide</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Inside</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Inside</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Appro</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Appro</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Forward</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Forward</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecP1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecP1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecRst1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecRst1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecP2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecP2</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecRst2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecRst2</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Soldep</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Soldep</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.ResetContour">
+<code class="sig-name descname">ResetContour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.ResetContour" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reset tous rayons du contour IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.Sect">
+<code class="sig-name descname">Sect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.Sect" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IS</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_SecHArray1&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetDist">
+<code class="sig-name descname">SetDist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetDist" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>set the distance &lt;Dis&gt; of the fillet contour of index &lt;IC&gt; in the DS with &lt;Dis&gt; on &lt;F&gt;. if the face &lt;F&gt; is not one of common faces of an edge of the contour &lt;IC&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Dis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetDistAngle">
+<code class="sig-name descname">SetDistAngle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetDistAngle" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>set the distance &lt;Dis&gt; and &lt;Angle&gt; of the fillet contour of index &lt;IC&gt; in the DS with &lt;Dis&gt; on &lt;F&gt;. if the face &lt;F&gt; is not one of common faces of an edge of the contour &lt;IC&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Dis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Angle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetDists">
+<code class="sig-name descname">SetDists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetDists" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>set the distances &lt;Dis1&gt; and &lt;Dis2&gt; of the fillet contour of index &lt;IC&gt; in the DS with &lt;Dis1&gt; on &lt;F&gt;. if the face &lt;F&gt; is not one of common faces of an edge of the contour &lt;IC&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Dis1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Dis2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dis2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetMode">
+<code class="sig-name descname">SetMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.SetMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>set the mode of shamfer</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMode</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMode</dt>
+<dd class="field-even"><p>ChFiDS_ChamfMode</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.SimulSurf">
+<code class="sig-name descname">SimulSurf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.SimulSurf" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Data</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Data</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_SurfData&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Guide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Guide</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_HElSpine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Spine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PCref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Decroch1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Decroch1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Or2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or2</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param Fleche</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fleche</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param TolGuide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolGuide</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Inside</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Inside</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Appro</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Appro</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Forward</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Forward</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecP</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecS</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecRst</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecRst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Soldep</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Soldep</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param Data:</p>
+</dd>
+<dt class="field-odd">type Data</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_SurfData&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Guide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Guide</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_HElSpine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Spine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Or1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or1</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sref2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sref2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PCref2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCref2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Decroch2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Decroch2</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Fleche</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fleche</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param TolGuide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolGuide</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Inside</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Inside</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Appro</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Appro</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Forward</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Forward</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecP</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecS</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecRst</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecRst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Soldep</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Soldep</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param Data:</p>
+</dd>
+<dt class="field-odd">type Data</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_SurfData&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Guide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Guide</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_HElSpine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Spine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ChFiDS_Spine&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PCref1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCref1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Decroch1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Decroch1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Or1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or1</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param I2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type I2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_TopolTool&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sref2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sref2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PCref2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PCref2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Decroch2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Decroch2</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Or2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or2</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param Fleche</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fleche</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param TolGuide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolGuide</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Inside</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Inside</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Appro</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Appro</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Forward</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Forward</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecP1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecP1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecRst1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecRst1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecP2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecP2</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RecRst2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RecRst2</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Soldep</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Soldep</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.Simulate">
+<code class="sig-name descname">Simulate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.Simulate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_ChBuilder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_ChBuilder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder">
+<em class="property">class </em><code class="sig-name descname">ChFi3d_FilBuilder</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ChFi3d.ChFi3d_Builder" title="OCC.Core.ChFi3d.ChFi3d_Builder"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ChFi3d.ChFi3d_Builder</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param FShape</dt>
+<dd class="field-even"><p>default value is ChFi3d_Rational</p>
+</dd>
+<dt class="field-odd">type FShape</dt>
+<dd class="field-odd"><p>ChFi3d_FilletShape</p>
+</dd>
+<dt class="field-even">param Ta</dt>
+<dd class="field-even"><p>default value is 1.0e-2</p>
+</dd>
+<dt class="field-odd">type Ta</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>initialisation of a contour with the first edge (the following are found by propagation). Attention, you need to start with SetRadius.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* initialisation of the constant vector the corresponding 1st edge.</p>
+</dd>
+<dt class="field-even">param Radius</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Radius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.GetBounds">
+<code class="sig-name descname">GetBounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.GetBounds" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns in First and Last les extremities of the part of variable vector framing E, returns False if E is flagged as edge constant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Last</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Last</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.GetFilletShape">
+<code class="sig-name descname">GetFilletShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.GetFilletShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of fillet surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>ChFi3d_FilletShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.GetLaw">
+<code class="sig-name descname">GetLaw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.GetLaw" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the rule of elementary evolution of the part to variable vector framing E, returns a rule zero if E is flagged as edge constant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Law_Function&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.IsConstant">
+<code class="sig-name descname">IsConstant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.IsConstant" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true the contour is flaged as edge constant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns true E is flagged as edge constant.</p>
+</dd>
+<dt class="field-even">param IC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.NbSurf">
+<code class="sig-name descname">NbSurf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.NbSurf" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.Radius">
+<code class="sig-name descname">Radius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.Radius" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the vector if the contour is flagged as edge constant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Returns the vector if E is flagged as edge constant.</p>
+</dd>
+<dt class="field-even">param IC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.ResetContour">
+<code class="sig-name descname">ResetContour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.ResetContour" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reset all vectors of contour IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.Sect">
+<code class="sig-name descname">Sect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.Sect" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IS</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ChFiDS_SecHArray1&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.SetFilletShape">
+<code class="sig-name descname">SetFilletShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.SetFilletShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the type of fillet surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param FShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FShape</dt>
+<dd class="field-even"><p>ChFi3d_FilletShape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.SetLaw">
+<code class="sig-name descname">SetLaw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.SetLaw" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the rule of elementary evolution of the part to variable vector framing E.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Law_Function&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.SetRadius">
+<code class="sig-name descname">SetRadius</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.SetRadius" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the radius of the contour of index IC.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Law_Function&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param IinC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IinC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Set a constant on edge E of the contour of index IC. Since then E is flagged as constant.</p>
+</dd>
+<dt class="field-even">param Radius</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Radius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param IC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Set a vector on vertex V of the contour of index IC.</p>
+</dd>
+<dt class="field-odd">param Radius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Radius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Set a vertex on the point of parametre U in the edge IinC of the contour of index IC</p>
+</dd>
+<dt class="field-even">param UandR</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UandR</dt>
+<dd class="field-odd"><p>gp_XY</p>
+</dd>
+<dt class="field-even">param IC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IinC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IinC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.Simulate">
+<code class="sig-name descname">Simulate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.Simulate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.UnSet">
+<code class="sig-name descname">UnSet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.UnSet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Extracts the flag constant and the vector of edge E.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IC</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Extracts the vector of the vertex V.</p>
+</dd>
+<dt class="field-even">param IC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IC</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_FilBuilder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_FilBuilder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ChFi3d.ChFi3d_SearchSing">
+<em class="property">class </em><code class="sig-name descname">ChFi3d_SearchSing</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_SearchSing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_FunctionWithDerivative" title="OCC.Core.math.math_FunctionWithDerivative"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_FunctionWithDerivative</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.ChFi3d_SearchSing.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ChFi3d.ChFi3d_SearchSing.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ChFi3d.chfi3d">
+<em class="property">class </em><code class="sig-name descname">chfi3d</code><a class="headerlink" href="#OCC.Core.ChFi3d.chfi3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.chfi3d.ConcaveSide">
+<em class="property">static </em><code class="sig-name descname">ConcaveSide</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.chfi3d.ConcaveSide" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns Reversed in Or1 and(or) Or2 if the concave edge defined by the interior of faces F1 and F2, in the neighbourhood of their boundary E is of the edge opposite to the normal of their surface support. The orientation of faces is not taken into consideration in the calculation. The function returns 0 if the calculation fails (tangence), if not, it returns the number of choice of the fillet or chamfer corresponding to the orientations calculated and to the tangent to the guide line read in E.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>BRepAdaptor_Surface &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>BRepAdaptor_Surface &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param Or1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or1</dt>
+<dd class="field-even"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-odd">param Or2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or2</dt>
+<dd class="field-even"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.chfi3d.NextSide">
+<em class="property">static </em><code class="sig-name descname">NextSide</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.chfi3d.NextSide" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Same as ConcaveSide, but the orientations are logically deduced from the result of the call of ConcaveSide on the first pair of faces of the fillet or chamnfer.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Or1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or1</dt>
+<dd class="field-even"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-odd">param Or2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or2</dt>
+<dd class="field-even"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-odd">param OrSave1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OrSave1</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">param OrSave2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OrSave2</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">param ChoixSauv</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ChoixSauv</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Same as the other NextSide, but the calculation is done on an edge only.</p>
+</dd>
+<dt class="field-even">param Or</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Or</dt>
+<dd class="field-odd"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-even">param OrSave</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OrSave</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">param OrFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OrFace</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.chfi3d.SameSide">
+<em class="property">static </em><code class="sig-name descname">SameSide</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ChFi3d.chfi3d.SameSide" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Enables to determine while processing an angle, if two fillets or chamfers constituting a face have identic or opposed concave edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Or</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">param OrSave1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OrSave1</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">param OrSave2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OrSave2</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">param OrFace1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OrFace1</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">param OrFace2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OrFace2</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ChFi3d.chfi3d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ChFi3d.chfi3d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

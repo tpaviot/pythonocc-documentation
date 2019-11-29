@@ -1,0 +1,3549 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BRepOffset module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BRepOffset module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BRepOffset module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BRepOffset.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BRepOffset">
+<span id="occ-core-brepoffset-module"></span><h1>OCC.Core.BRepOffset module<a class="headerlink" href="#module-OCC.Core.BRepOffset" title="Permalink to this headline">¶</a></h1>
+<p>BRepOffset module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepoffset.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepoffset.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_Analyse</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param S:
+:type S: TopoDS_Shape &amp;
+:param Angle:
+:type Angle: float
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.AddFaces">
+<code class="sig-name descname">AddFaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.AddFaces" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Add in &lt;CO&gt; the faces of the shell containing &lt;Face&gt; where all the connex edges are of type &lt;Side&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Face</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Face</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param Co</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Co</dt>
+<dd class="field-even"><p>TopoDS_Compound &amp;</p>
+</dd>
+<dt class="field-odd">param Map</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Map</dt>
+<dd class="field-even"><p>TopTools_MapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param Type</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Type</dt>
+<dd class="field-even"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Add in &lt;CO&gt; the faces of the shell containing &lt;Face&gt; where all the connex edges are of type &lt;Side1&gt; or &lt;Side2&gt;.</p>
+</dd>
+<dt class="field-even">param Face</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Face</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param Co</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Co</dt>
+<dd class="field-odd"><p>TopoDS_Compound &amp;</p>
+</dd>
+<dt class="field-even">param Map</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Map</dt>
+<dd class="field-odd"><p>TopTools_MapOfShape &amp;</p>
+</dd>
+<dt class="field-even">param Type1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Type1</dt>
+<dd class="field-odd"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-even">param Type2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Type2</dt>
+<dd class="field-odd"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.Ancestors">
+<code class="sig-name descname">Ancestors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.Ancestors" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.Edges">
+<code class="sig-name descname">Edges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.Edges" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Stores in &lt;L&gt; all the edges of Type &lt;T&gt; on the vertex &lt;V&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param T</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type T</dt>
+<dd class="field-even"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Stores in &lt;L&gt; all the edges of Type &lt;T&gt; on the face &lt;F&gt;.</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.Explode">
+<code class="sig-name descname">Explode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.Explode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Explode in compounds of faces where all the connex edges are of type &lt;Side&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param Type</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Type</dt>
+<dd class="field-even"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Explode in compounds of faces where all the connex edges are of type &lt;Side1&gt; or &lt;Side2&gt;</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param Type1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Type1</dt>
+<dd class="field-odd"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-even">param Type2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Type2</dt>
+<dd class="field-odd"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.HasAncestor">
+<code class="sig-name descname">HasAncestor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.HasAncestor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param Angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.TangentEdges">
+<code class="sig-name descname">TangentEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.TangentEdges" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>set in &lt;Edges&gt; all the Edges of &lt;Shape&gt; which are tangent to &lt;Edge&gt; at the vertex &lt;Vertex&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Edge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Edge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param Vertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Vertex</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param Edges</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Edges</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.Type">
+<code class="sig-name descname">Type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.Type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>E</strong> – <dl class="field-list simple">
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>BRepOffset_ListOfInterval</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Analyse.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Analyse.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_DataMapOfShapeListOfInterval</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeListOfInterval.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_DataMapOfShapeMapOfShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeMapOfShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_DataMapOfShapeOffset</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_DataMapOfShapeOffset.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter2d">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_Inter2d</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter2d.Compute">
+<em class="property">static </em><code class="sig-name descname">Compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter2d.Compute" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the intersections between the edges stored is AsDes as descendants of &lt;F&gt; . Intersections is computed between two edges if one of them is bound in NewEdges. When all faces of the shape are treated the intersection vertices have to be fused using the FuseVertices method. theDMVV contains the vertices that should be fused</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param AsDes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AsDes</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param NewEdges</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewEdges</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theDMVV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDMVV</dt>
+<dd class="field-even"><p>TopTools_IndexedDataMapOfShapeListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter2d.ConnexIntByInt">
+<em class="property">static </em><code class="sig-name descname">ConnexIntByInt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter2d.ConnexIntByInt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the intersection between the offset edges of the &lt;FI&gt;. All intersection vertices will be stored in AsDes2d. When all faces of the shape are treated the intersection vertices have to be fused using the FuseVertices method. theDMVV contains the vertices that should be fused.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param FI</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FI</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param OFI</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OFI</dt>
+<dd class="field-even"><p>BRepOffset_Offset &amp;</p>
+</dd>
+<dt class="field-odd">param MES</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MES</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-odd">param Build</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Build</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-odd">param AsDes2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AsDes2d</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Offset</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Offset</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param FacesWithVerts</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FacesWithVerts</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theDMVV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDMVV</dt>
+<dd class="field-even"><p>TopTools_IndexedDataMapOfShapeListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter2d.ConnexIntByIntInVert">
+<em class="property">static </em><code class="sig-name descname">ConnexIntByIntInVert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter2d.ConnexIntByIntInVert" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the intersection between the offset edges generated from vertices and stored into AsDes as descendants of the &lt;FI&gt;. All intersection vertices will be stored in AsDes2d. When all faces of the shape are treated the intersection vertices have to be fused using the FuseVertices method. theDMVV contains the vertices that should be fused.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param FI</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FI</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param OFI</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OFI</dt>
+<dd class="field-even"><p>BRepOffset_Offset &amp;</p>
+</dd>
+<dt class="field-odd">param MES</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MES</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-odd">param Build</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Build</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-odd">param AsDes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AsDes</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param AsDes2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AsDes2d</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theDMVV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDMVV</dt>
+<dd class="field-even"><p>TopTools_IndexedDataMapOfShapeListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter2d.ExtentEdge">
+<em class="property">static </em><code class="sig-name descname">ExtentEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter2d.ExtentEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>extents the edge</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param NE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theOffset</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOffset</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter2d.FuseVertices">
+<em class="property">static </em><code class="sig-name descname">FuseVertices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter2d.FuseVertices" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Fuses the chains of vertices in the theDMVV and updates AsDes by replacing the old vertices with the new ones.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theDMVV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDMVV</dt>
+<dd class="field-even"><p>TopTools_IndexedDataMapOfShapeListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theAsDes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theAsDes</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter2d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter2d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_Inter3d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>AsDes</strong> – <dl class="field-list simple">
+<dt class="field-odd">type AsDes</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Side</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Side</dt>
+<dd class="field-odd"><p>TopAbs_State</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.AddCommonEdges">
+<code class="sig-name descname">AddCommonEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.AddCommonEdges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SetOfFaces</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SetOfFaces</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.AsDes">
+<code class="sig-name descname">AsDes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.AsDes" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.CompletInt">
+<code class="sig-name descname">CompletInt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.CompletInt" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SetOfFaces</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SetOfFaces</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param InitOffsetFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitOffsetFace</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.ConnexIntByArc">
+<code class="sig-name descname">ConnexIntByArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.ConnexIntByArc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SetOfFaces</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SetOfFaces</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param ShapeInit</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ShapeInit</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param Analyse</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Analyse</dt>
+<dd class="field-odd"><p>BRepOffset_Analyse &amp;</p>
+</dd>
+<dt class="field-even">param InitOffsetFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitOffsetFace</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.ConnexIntByInt">
+<code class="sig-name descname">ConnexIntByInt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.ConnexIntByInt" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SI</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SI</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param MapSF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MapSF</dt>
+<dd class="field-odd"><p>BRepOffset_DataMapOfShapeOffset &amp;</p>
+</dd>
+<dt class="field-even">param A</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type A</dt>
+<dd class="field-odd"><p>BRepOffset_Analyse &amp;</p>
+</dd>
+<dt class="field-even">param MES</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MES</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param Build</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Build</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param Failed</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Failed</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param bIsPlanar</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type bIsPlanar</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.ContextIntByArc">
+<code class="sig-name descname">ContextIntByArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.ContextIntByArc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ContextFaces</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ContextFaces</dt>
+<dd class="field-odd"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-even">param ExtentContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ExtentContext</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Analyse</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Analyse</dt>
+<dd class="field-odd"><p>BRepOffset_Analyse &amp;</p>
+</dd>
+<dt class="field-even">param InitOffsetFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitOffsetFace</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">param InitOffsetEdge</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitOffsetEdge</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.ContextIntByInt">
+<code class="sig-name descname">ContextIntByInt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.ContextIntByInt" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ContextFaces</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ContextFaces</dt>
+<dd class="field-odd"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-even">param ExtentContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ExtentContext</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param MapSF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MapSF</dt>
+<dd class="field-odd"><p>BRepOffset_DataMapOfShapeOffset &amp;</p>
+</dd>
+<dt class="field-even">param A</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type A</dt>
+<dd class="field-odd"><p>BRepOffset_Analyse &amp;</p>
+</dd>
+<dt class="field-even">param MES</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MES</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param Build</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Build</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param Failed</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Failed</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param bIsPlanar</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type bIsPlanar</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.FaceInter">
+<code class="sig-name descname">FaceInter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.FaceInter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F1</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param F2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F2</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param InitOffsetFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitOffsetFace</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F1</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param F2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F2</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.NewEdges">
+<code class="sig-name descname">NewEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.NewEdges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_IndexedMapOfShape" title="OCC.Core.TopTools.TopTools_IndexedMapOfShape">TopTools_IndexedMapOfShape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.SetDone">
+<code class="sig-name descname">SetDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.SetDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F1</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param F2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F2</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.TouchedFaces">
+<code class="sig-name descname">TouchedFaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.TouchedFaces" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_IndexedMapOfShape" title="OCC.Core.TopTools.TopTools_IndexedMapOfShape">TopTools_IndexedMapOfShape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Inter3d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Inter3d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Interval">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_Interval</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param U1:
+:type U1: float
+:param U2:
+:type U2: float
+:param Type:
+:type Type: BRepOffset_Type
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Interval.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Interval.First" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Interval.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Interval.Last" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Interval.Type">
+<code class="sig-name descname">Type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Interval.Type" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>T</strong> – <dl class="field-list simple">
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>BRepOffset_Type</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: BRepOffset_Type</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Interval.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Interval.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_ListIteratorOfListOfInterval</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.More" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.Next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListIteratorOfListOfInterval.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_ListOfInterval</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.RemoveFirst">
+<code class="sig-name descname">RemoveFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.RemoveFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_ListOfInterval.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_ListOfInterval.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeLoops">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_MakeLoops</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeLoops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeLoops.Build">
+<code class="sig-name descname">Build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeLoops.Build" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>LF</strong> – <dl class="field-list simple">
+<dt class="field-odd">type LF</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param AsDes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AsDes</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Image</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Image</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeLoops.BuildFaces">
+<code class="sig-name descname">BuildFaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeLoops.BuildFaces" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>LF</strong> – <dl class="field-list simple">
+<dt class="field-odd">type LF</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param AsDes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AsDes</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Image</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Image</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeLoops.BuildOnContext">
+<code class="sig-name descname">BuildOnContext</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeLoops.BuildOnContext" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>LContext</strong> – <dl class="field-list simple">
+<dt class="field-odd">type LContext</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param Analyse</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Analyse</dt>
+<dd class="field-odd"><p>BRepOffset_Analyse &amp;</p>
+</dd>
+<dt class="field-even">param AsDes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AsDes</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Image</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Image</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">param InSide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InSide</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeLoops.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeLoops.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_MakeOffset</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param S:
+:type S: TopoDS_Shape &amp;
+:param Offset:
+:type Offset: float
+:param Tol:
+:type Tol: float
+:param Mode: default value is BRepOffset_Skin
+:type Mode: BRepOffset_Mode
+:param Intersection: default value is Standard_False
+:type Intersection: bool
+:param SelfInter: default value is Standard_False
+:type SelfInter: bool
+:param Join: default value is GeomAbs_Arc
+:type Join: GeomAbs_JoinType
+:param Thickening: default value is Standard_False
+:type Thickening: bool
+:param RemoveIntEdges: default value is Standard_False
+:type RemoveIntEdges: bool
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.AddFace">
+<code class="sig-name descname">AddFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.AddFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Add Closing Faces, &lt;F&gt; has to be in the initial shape S.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.CheckInputData">
+<code class="sig-name descname">CheckInputData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.CheckInputData" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Makes pre analysis of possibility offset perform. Use method Error() to get more information. Finds first error. List of checks: 1) Check for existence object with non-null offset. 2) Check for connectivity in offset shell. 3) Check continuity of input surfaces. 4) Check for normals existence on grid. returns True if possible make computations and false otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.ClosingFaces">
+<code class="sig-name descname">ClosingFaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.ClosingFaces" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the list of closing faces stores by AddFace</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_IndexedMapOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.Error" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns information about offset state.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepOffset_Error</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.GetBadShape">
+<code class="sig-name descname">GetBadShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.GetBadShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return bad shape, which obtained in CheckInputData.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.GetJoinType">
+<code class="sig-name descname">GetJoinType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.GetJoinType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns myJoin.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.Initialize">
+<code class="sig-name descname">Initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.Initialize" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Mode</dt>
+<dd class="field-even"><p>default value is BRepOffset_Skin</p>
+</dd>
+<dt class="field-odd">type Mode</dt>
+<dd class="field-odd"><p>BRepOffset_Mode</p>
+</dd>
+<dt class="field-even">param Intersection</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Intersection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param SelfInter</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type SelfInter</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Join</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type Join</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">param Thickening</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Thickening</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param RemoveIntEdges</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type RemoveIntEdges</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.MakeOffsetShape">
+<code class="sig-name descname">MakeOffsetShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.MakeOffsetShape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.MakeThickSolid">
+<code class="sig-name descname">MakeThickSolid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.MakeThickSolid" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.OffsetEdgesFromShapes">
+<code class="sig-name descname">OffsetEdgesFromShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.OffsetEdgesFromShapes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns &lt;Image&gt; containing links between initials shapes and offset edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepAlgo_Image</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.OffsetFacesFromShapes">
+<code class="sig-name descname">OffsetFacesFromShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.OffsetFacesFromShapes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns &lt;Image&gt; containing links between initials shapes and offset faces.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepAlgo_Image</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.SetOffsetOnFace">
+<code class="sig-name descname">SetOffsetOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.SetOffsetOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>set the offset &lt;Off&gt; on the Face &lt;F&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param Off</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Off</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeOffset.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeOffset.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_MakeSimpleOffset</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor. Does nothing.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor.</p>
+</dd>
+<dt class="field-even">param theInputShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theInputShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theOffsetValue</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theOffsetValue</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Generated">
+<code class="sig-name descname">Generated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Generated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returnes result shape for the given one (if exists).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetBuildSolidFlag">
+<code class="sig-name descname">GetBuildSolidFlag</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetBuildSolidFlag" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gets solid building flag.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetError">
+<code class="sig-name descname">GetError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetError" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gets error code.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepOffsetSimple_Status</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetErrorMessage">
+<code class="sig-name descname">GetErrorMessage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetErrorMessage" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gets error message.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TCollection_AsciiString</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetOffsetValue">
+<code class="sig-name descname">GetOffsetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetOffsetValue" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gets offset value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetResultShape">
+<code class="sig-name descname">GetResultShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetResultShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns result shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gets tolerance (used for handling singularities).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Initialize">
+<code class="sig-name descname">Initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Initialize" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initialies shape for modifications.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInputShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInputShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOffsetValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOffsetValue</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gets done state.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Modified">
+<code class="sig-name descname">Modified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Modified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returnes modified shape for the given one (if exists).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes offset shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.SetBuildSolidFlag">
+<code class="sig-name descname">SetBuildSolidFlag</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.SetBuildSolidFlag" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets solid building flag.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBuildFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBuildFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.SetOffsetValue">
+<code class="sig-name descname">SetOffsetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.SetOffsetValue" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets offset value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theOffsetValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOffsetValue</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.SetTolerance">
+<code class="sig-name descname">SetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.SetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets tolerance (used for handling singularities).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theValue</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_MakeSimpleOffset.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Offset">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_Offset</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Offset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param Face:
+:type Face: TopoDS_Face &amp;
+:param Offset:
+:type Offset: float
+:param OffsetOutside: default value is Standard_True
+:type OffsetOutside: bool
+:param JoinType: default value is GeomAbs_Arc
+:type JoinType: GeomAbs_JoinType
+:rtype: None* This method will be called when you want to share the edges soon generated from an other face. e.g. when two faces are tangents the common edge will generate only one edge ( no pipe) //! The Map will be fill as follow: //! Created(E) = E’ with: E = an edge of &lt;Face&gt; E’ = the image of E in the offseting of another face sharing E with a continuity at least G1
+:param Face:
+:type Face: TopoDS_Face &amp;
+:param Offset:
+:type Offset: float
+:param Created:
+:type Created: TopTools_DataMapOfShapeShape &amp;
+:param OffsetOutside: default value is Standard_True
+:type OffsetOutside: bool
+:param JoinType: default value is GeomAbs_Arc
+:type JoinType: GeomAbs_JoinType
+:rtype: None:param Path:
+:type Path: TopoDS_Edge &amp;
+:param Edge1:
+:type Edge1: TopoDS_Edge &amp;
+:param Edge2:
+:type Edge2: TopoDS_Edge &amp;
+:param Offset:
+:type Offset: float
+:param Polynomial: default value is Standard_False
+:type Polynomial: bool
+:param Tol: default value is 1.0e-4
+:type Tol: float
+:param Conti: default value is GeomAbs_C1
+:type Conti: GeomAbs_Shape
+:rtype: None:param Path:
+:type Path: TopoDS_Edge &amp;
+:param Edge1:
+:type Edge1: TopoDS_Edge &amp;
+:param Edge2:
+:type Edge2: TopoDS_Edge &amp;
+:param Offset:
+:type Offset: float
+:param FirstEdge:
+:type FirstEdge: TopoDS_Edge &amp;
+:param LastEdge:
+:type LastEdge: TopoDS_Edge &amp;
+:param Polynomial: default value is Standard_False
+:type Polynomial: bool
+:param Tol: default value is 1.0e-4
+:type Tol: float
+:param Conti: default value is GeomAbs_C1
+:type Conti: GeomAbs_Shape
+:rtype: None* Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)
+:param Vertex:
+:type Vertex: TopoDS_Vertex &amp;
+:param LEdge:
+:type LEdge: TopTools_ListOfShape &amp;
+:param Offset:
+:type Offset: float
+:param Polynomial: default value is Standard_False
+:type Polynomial: bool
+:param Tol: default value is 1.0e-4
+:type Tol: float
+:param Conti: default value is GeomAbs_C1
+:type Conti: GeomAbs_Shape
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Offset.Face">
+<code class="sig-name descname">Face</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Offset.Face" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Face" title="OCC.Core.TopoDS.TopoDS_Face">TopoDS_Face</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Offset.Generated">
+<code class="sig-name descname">Generated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Offset.Generated" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Shape</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Shape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Offset.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Offset.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Face</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Face</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param OffsetOutside</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type OffsetOutside</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param JoinType</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type JoinType</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Face:</p>
+</dd>
+<dt class="field-odd">type Face</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Created</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Created</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param OffsetOutside</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type OffsetOutside</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param JoinType</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type JoinType</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Path:</p>
+</dd>
+<dt class="field-odd">type Path</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Edge1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Edge1</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Edge2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Edge2</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Polynomial</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Polynomial</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Conti</dt>
+<dd class="field-even"><p>default value is GeomAbs_C1</p>
+</dd>
+<dt class="field-odd">type Conti</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Path:</p>
+</dd>
+<dt class="field-odd">type Path</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Edge1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Edge1</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Edge2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Edge2</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param FirstEdge</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FirstEdge</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param LastEdge</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LastEdge</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Polynomial</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Polynomial</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Conti</dt>
+<dd class="field-even"><p>default value is GeomAbs_C1</p>
+</dd>
+<dt class="field-odd">type Conti</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)</p>
+</dd>
+<dt class="field-odd">param Vertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Vertex</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param LEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LEdge</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param Offset</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Offset</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Polynomial</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Polynomial</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Conti</dt>
+<dd class="field-odd"><p>default value is GeomAbs_C1</p>
+</dd>
+<dt class="field-even">type Conti</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Only used in Rolling Ball. Pipe on Free Boundary</p>
+</dd>
+<dt class="field-even">param Edge</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Edge</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Offset.InitialShape">
+<code class="sig-name descname">InitialShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Offset.InitialShape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Offset.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Offset.Status" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>BRepOffset_Status</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Offset.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Offset.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_SimpleOffset">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_SimpleOffset</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_SimpleOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepTools.html#OCC.Core.BRepTools.BRepTools_Modification" title="OCC.Core.BRepTools.BRepTools_Modification"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepTools.BRepTools_Modification</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor. &#64;param theInputShape shape to be offset &#64;param theOffsetValue offset distance (signed) &#64;param theTolerance tolerance for handling singular points</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInputShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInputShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOffsetValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOffsetValue</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theTolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_SimpleOffset.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_SimpleOffset.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_SimpleOffset.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_SimpleOffset.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool">
+<em class="property">class </em><code class="sig-name descname">BRepOffset_Tool</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.BuildNeighbour">
+<em class="property">static </em><code class="sig-name descname">BuildNeighbour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.BuildNeighbour" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Via the wire explorer store in &lt;NOnV1&gt; for an Edge &lt;E&gt; of &lt;W&gt; his Edge neighbour on the first vertex &lt;V1&gt; of &lt;E&gt;. Store in NOnV2 the Neighbour of &lt;E&gt;on the last vertex &lt;V2&gt; of &lt;E&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param W</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param NOnV1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NOnV1</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-odd">param NOnV2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NOnV2</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.CheckBounds">
+<em class="property">static </em><code class="sig-name descname">CheckBounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.CheckBounds" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param Analyse</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Analyse</dt>
+<dd class="field-odd"><p>BRepOffset_Analyse &amp;</p>
+</dd>
+<dt class="field-even">param enlargeU</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type enlargeU</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param enlargeVfirst</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type enlargeVfirst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param enlargeVlast</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type enlargeVlast</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.CheckPlanesNormals">
+<em class="property">static </em><code class="sig-name descname">CheckPlanesNormals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.CheckPlanesNormals" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compares the normal directions of the planar faces and returns True if the directions are the same with the given precision.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theFace2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theTolAng</dt>
+<dd class="field-odd"><p>default value is 1e-8</p>
+</dd>
+<dt class="field-even">type theTolAng</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.CorrectOrientation">
+<em class="property">static </em><code class="sig-name descname">CorrectOrientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.CorrectOrientation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SI</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SI</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param NewEdges</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewEdges</dt>
+<dd class="field-odd"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-even">param AsDes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AsDes</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAlgo_AsDes&gt; &amp;</p>
+</dd>
+<dt class="field-even">param InitOffset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitOffset</dt>
+<dd class="field-odd"><p>BRepAlgo_Image &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.Deboucle3D">
+<em class="property">static </em><code class="sig-name descname">Deboucle3D</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.Deboucle3D" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Remove the non valid part of an offsetshape 1 - Remove all the free boundary and the faces connex to such edges. 2 - Remove all the shapes not valid in the result (according to the side of offseting) in this verion only the first point is implemented.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param Boundary</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Boundary</dt>
+<dd class="field-even"><p>TopTools_MapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.EdgeVertices">
+<em class="property">static </em><code class="sig-name descname">EdgeVertices</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.EdgeVertices" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&lt;V1&gt; is the FirstVertex ,&lt;V2&gt; is the Last Vertex of &lt;Edge&gt; taking account the orientation of Edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.EnLargeFace">
+<em class="property">static </em><code class="sig-name descname">EnLargeFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.EnLargeFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if The Surface of &lt;NF&gt; has changed. if &lt;ChangeGeom&gt; is True , the surface can be changed . if &lt;UpdatePCurve&gt; is True, update the pcurves of the edges of &lt;F&gt; on the new surface if the surface has been changed. &lt;enlargeU&gt;, &lt;enlargeVfirst&gt;, &lt;enlargeVlast&gt; allow or forbid enlargement in U and V directions correspondingly. &lt;theExtensionMode&gt; is a mode of extension of the surface of the face: if &lt;theExtensionMode&gt; equals 1, potentially infinite surfaces are extended by maximum value, and limited surfaces are extended by 25%. if &lt;theExtensionMode&gt; equals 2, potentially infinite surfaces are extended by 10*(correspondent size of face), and limited surfaces are extended by 100%. &lt;theLenBeforeUfirst&gt;, &lt;theLenAfterUlast&gt;, &lt;theLenBeforeVfirst&gt;, &lt;theLenAfterVlast&gt; set the values of enlargement on correspondent directions. If some of them equals -1, the default value of enlargement is used.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param NF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param ChangeGeom</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ChangeGeom</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param UpDatePCurve</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type UpDatePCurve</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param enlargeU</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type enlargeU</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param enlargeVfirst</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type enlargeVfirst</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param enlargeVlast</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type enlargeVlast</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theExtensionMode</dt>
+<dd class="field-odd"><p>default value is 1</p>
+</dd>
+<dt class="field-even">type theExtensionMode</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theLenBeforeUfirst</dt>
+<dd class="field-odd"><p>default value is -1</p>
+</dd>
+<dt class="field-even">type theLenBeforeUfirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theLenAfterUlast</dt>
+<dd class="field-odd"><p>default value is -1</p>
+</dd>
+<dt class="field-even">type theLenAfterUlast</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theLenBeforeVfirst</dt>
+<dd class="field-odd"><p>default value is -1</p>
+</dd>
+<dt class="field-even">type theLenBeforeVfirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theLenAfterVlast</dt>
+<dd class="field-odd"><p>default value is -1</p>
+</dd>
+<dt class="field-even">type theLenAfterVlast</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.ExtentFace">
+<em class="property">static </em><code class="sig-name descname">ExtentFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.ExtentFace" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param ConstShapes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ConstShapes</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param ToBuild</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ToBuild</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param Side</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Side</dt>
+<dd class="field-odd"><p>TopAbs_State</p>
+</dd>
+<dt class="field-even">param TolConf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolConf</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param NF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.FindCommonShapes">
+<em class="property">static </em><code class="sig-name descname">FindCommonShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.FindCommonShapes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Looks for the common Vertices and Edges between faces &lt;theF1&gt; and &lt;theF2&gt;. Returns True if common shapes have been found. &lt;theLE&gt; will contain the found common edges; &lt;theLV&gt; will contain the found common vertices.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theF1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theF2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theLE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLE</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theLV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLV</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Looks for the common shapes of type &lt;theType&gt; between shapes &lt;theS1&gt; and &lt;theS2&gt;. Returns True if common shapes have been found. &lt;theLSC&gt; will contain the found common shapes.</p>
+</dd>
+<dt class="field-even">param theS1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theS1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theS2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theS2</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theType</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-even">param theLSC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theLSC</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.Gabarit">
+<em class="property">static </em><code class="sig-name descname">Gabarit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.Gabarit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aCurve</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aCurve</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.Inter2d">
+<em class="property">static </em><code class="sig-name descname">Inter2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.Inter2d" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param E1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E1</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param E2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E2</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param LV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LV</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.Inter3D">
+<em class="property">static </em><code class="sig-name descname">Inter3D</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.Inter3D" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the Section betwwen &lt;F1&gt; and &lt;F2&gt; the edges solution are stored in &lt;LInt1&gt; with the orientation on &lt;F1&gt;, the sames edges are stored in &lt;Lint2&gt; with the orientation on &lt;F2&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param F2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param LInt1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LInt1</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param LInt2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LInt2</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param Side</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Side</dt>
+<dd class="field-even"><p>TopAbs_State</p>
+</dd>
+<dt class="field-odd">param RefEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RefEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param IsRefEdgeDefined</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type IsRefEdgeDefined</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.InterOrExtent">
+<em class="property">static </em><code class="sig-name descname">InterOrExtent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.InterOrExtent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F1</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param F2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F2</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param LInt1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LInt1</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param LInt2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LInt2</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param Side</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Side</dt>
+<dd class="field-odd"><p>TopAbs_State</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.MapVertexEdges">
+<em class="property">static </em><code class="sig-name descname">MapVertexEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.MapVertexEdges" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Store in MVE for a vertex &lt;V&gt; in &lt;S&gt; the incident edges &lt;E&gt; in &lt;S&gt;. An Edge is Store only one Time for a vertex.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param MVE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MVE</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.OriEdgeInFace">
+<em class="property">static </em><code class="sig-name descname">OriEdgeInFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.OriEdgeInFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the cumul of the orientation of &lt;Edge&gt; and thc containing wire in &lt;Face&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.OrientSection">
+<em class="property">static </em><code class="sig-name descname">OrientSection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.OrientSection" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&lt;E&gt; is a section between &lt;F1&gt; and &lt;F2&gt;. Computes &lt;O1&gt; the orientation of &lt;E&gt; in &lt;F1&gt; influenced by &lt;F2&gt;. idem for &lt;O2&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param F2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param O1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type O1</dt>
+<dd class="field-even"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-odd">param O2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type O2</dt>
+<dd class="field-even"><p>TopAbs_Orientation &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.PipeInter">
+<em class="property">static </em><code class="sig-name descname">PipeInter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.PipeInter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>F1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type F1</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param F2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F2</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param LInt1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LInt1</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param LInt2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LInt2</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param Side</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Side</dt>
+<dd class="field-odd"><p>TopAbs_State</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.TryProject">
+<em class="property">static </em><code class="sig-name descname">TryProject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.TryProject" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Find if the edges &lt;Edges&gt; of the face &lt;F2&gt; are on the face &lt;F1&gt;. Set in &lt;LInt1&gt; &lt;LInt2&gt; the updated edges. If all the edges are computed, returns true.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param F2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param Edges</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Edges</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param LInt1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LInt1</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param LInt2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LInt2</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param Side</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Side</dt>
+<dd class="field-even"><p>TopAbs_State</p>
+</dd>
+<dt class="field-odd">param TolConf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolConf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.BRepOffset_Tool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.BRepOffset_Tool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffset.brepoffset">
+<em class="property">class </em><code class="sig-name descname">brepoffset</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.brepoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.brepoffset.CollapseSingularities">
+<em class="property">static </em><code class="sig-name descname">CollapseSingularities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.brepoffset.CollapseSingularities" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Preprocess surface to be offset (bspline, bezier, or revolution based on bspline or bezier curve), by collapsing each singular side to single point. //! This is to avoid possible flipping of normal at the singularity of the surface due to non-zero distance between the poles that logically should be in one point (singularity). The (parametric) side of the surface is considered to be singularity if face has degenerated edge whose vertex encompasses (by its tolerance) all points on that side, or if all poles defining that side fit into sphere with radius thePrecision. //! Returns either original surface or its modified copy (if some poles have been moved).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSurface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSurface</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param thePrecision</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePrecision</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.brepoffset.Surface">
+<em class="property">static </em><code class="sig-name descname">Surface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffset.brepoffset.Surface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the Offset surface computed from the surface &lt;Surface&gt; at an OffsetDistance &lt;Offset&gt;. //! If possible, this method returns the real type of the surface ( e.g. An Offset of a plane is a plane). //! If no particular case is detected, the returned surface will have the Type Geom_OffsetSurface. Parameter allowC0 is then passed as last argument to constructor of Geom_OffsetSurface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Surface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Surface</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Offset</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Offset</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theStatus</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theStatus</dt>
+<dd class="field-even"><p>BRepOffset_Status &amp;</p>
+</dd>
+<dt class="field-odd">param allowC0</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type allowC0</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffset.brepoffset.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffset.brepoffset.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

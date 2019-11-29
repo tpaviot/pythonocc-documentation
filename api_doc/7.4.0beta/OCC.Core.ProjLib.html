@@ -1,0 +1,3172 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.ProjLib module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.ProjLib module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.ProjLib module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.ProjLib.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.ProjLib">
+<span id="occ-core-projlib-module"></span><h1>OCC.Core.ProjLib module<a class="headerlink" href="#module-OCC.Core.ProjLib" title="Permalink to this headline">¶</a></h1>
+<p>ProjLib module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_projlib.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_projlib.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve">
+<em class="property">class </em><code class="sig-name descname">ProjLib_CompProjectedCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Adaptor2d.html#OCC.Core.Adaptor2d.Adaptor2d_Curve2d" title="OCC.Core.Adaptor2d.Adaptor2d_Curve2d"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Adaptor2d.Adaptor2d_Curve2d</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* try to find all solutions
+:param S:
+:type S: opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;
+:param C:
+:type C: opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;
+:param TolU:
+:type TolU: float
+:param TolV:
+:type TolV: float
+:rtype: None* this constructor tries to optimize the search using the assumption that maximum distance between surface and curve less or equal then MaxDist. if MaxDist &lt; 0 then algorithm works as above.
+:param S:
+:type S: opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;
+:param C:
+:type C: opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;
+:param TolU:
+:type TolU: float
+:param TolV:
+:type TolV: float
+:param MaxDist:
+:type MaxDist: float
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.Bounds">
+<code class="sig-name descname">Bounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.Bounds" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the bounds of the continuous part corresponding to Index</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Udeb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Udeb</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Ufin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Ufin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetCurve">
+<code class="sig-name descname">GetCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetSequence">
+<code class="sig-name descname">GetSequence</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetSequence" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ProjLib_HSequenceOfHSequenceOfPnt&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetSurface">
+<code class="sig-name descname">GetSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetSurface" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TolU</strong> – <dl class="field-list simple">
+<dt class="field-odd">type TolU</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param TolV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolV</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>computes a set of projected point and determine the continuous parts of the projected curves. The points corresponding to a projection on the bounds of the surface are included in this set of points.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.IsSinglePnt">
+<code class="sig-name descname">IsSinglePnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.IsSinglePnt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns True if part of projection with number Index is a single point and writes its coordinates in P</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.IsUIso">
+<code class="sig-name descname">IsUIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.IsUIso" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns True if part of projection with number Index is an u-isoparametric curve of input surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.IsVIso">
+<code class="sig-name descname">IsVIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.IsVIso" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns True if part of projection with number Index is an v-isoparametric curve of input surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.Load">
+<code class="sig-name descname">Load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.Load" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Changes the surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Changes the curve.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.MaxDistance">
+<code class="sig-name descname">MaxDistance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.MaxDistance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the maximum distance between curve to project and surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.NbCurves">
+<code class="sig-name descname">NbCurves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.NbCurves" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the number of continuous part of the projected curve</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_CompProjectedCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_CompProjectedCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox">
+<em class="property">class </em><code class="sig-name descname">ProjLib_ComputeApprox</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor, it only sets some initial values for class fields.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* &lt;Tol&gt; is the tolerance with which the approximation is performed. Other parameters for approximation have default values.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.BSpline">
+<code class="sig-name descname">BSpline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.BSpline" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.Bezier">
+<code class="sig-name descname">Bezier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.Bezier" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BezierCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs projecting. In case of approximation current values of parameters are used: default values or set by corresponding methods Set…</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.SetBndPnt">
+<code class="sig-name descname">SetBndPnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.SetBndPnt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which defines type of boundary condition between segments during approximation. It can be AppParCurves_PassPoint or AppParCurves_TangencyPoint. Default value is AppParCurves_TangencyPoint;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBndPnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBndPnt</dt>
+<dd class="field-even"><p>AppParCurves_Constraint</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.SetDegree">
+<code class="sig-name descname">SetDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.SetDegree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set min and max possible degree of result BSpline curve2d, which is got by approximation. If theDegMin/Max &lt; 0, algorithm uses values that are chosen depending of types curve 3d and surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theDegMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegMin</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theDegMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.SetMaxSegments">
+<code class="sig-name descname">SetMaxSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.SetMaxSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which defines maximal value of parametric intervals the projected curve can be cut for approximation. If theMaxSegments &lt; 0, algorithm uses default value = 1000.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMaxSegments</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxSegments</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.SetTolerance">
+<code class="sig-name descname">SetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.SetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set tolerance of approximation. Default value is Precision::Confusion().</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theTolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.Tolerance">
+<code class="sig-name descname">Tolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.Tolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the reached Tolerance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApprox.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApprox.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface">
+<em class="property">class </em><code class="sig-name descname">ProjLib_ComputeApproxOnPolarSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor, it only sets some initial values for class fields.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor, which performs projecting.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor, which performs projecting, using initial curve 2d InitCurve2d, which is any rough approximation of result curve. Parameter Tol is 3d tolerance of approximation.</p>
+</dd>
+<dt class="field-odd">param InitCurve2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type InitCurve2d</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor, which performs projecting, using two initial curves 2d: InitCurve2d and InitCurve2dBis that are any rough approximations of result curves. This constructor is used to get two pcurves for seem edge. Parameter Tol is 3d tolerance of approximation.</p>
+</dd>
+<dt class="field-even">param InitCurve2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitCurve2d</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param InitCurve2dBis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitCurve2dBis</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.BSpline">
+<code class="sig-name descname">BSpline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.BSpline" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns result curve 2d.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.BuildInitialCurve2d">
+<code class="sig-name descname">BuildInitialCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.BuildInitialCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Builds initial 2d curve as BSpline with degree = 1 using Extrema algoritm. Method is used in method Perform(…).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Curve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.Curve2d">
+<code class="sig-name descname">Curve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.Curve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns second 2d curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Method, which performs projecting, using default values of parameters or they must be set by corresponding methods before using.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Method, which performs projecting, using default values of parameters or they must be set by corresponding methods before using. Parameter InitCurve2d is any rough estimation of 2d result curve.</p>
+</dd>
+<dt class="field-even">param InitCurve2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InitCurve2d</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.ProjectUsingInitialCurve2d">
+<code class="sig-name descname">ProjectUsingInitialCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.ProjectUsingInitialCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Method, which performs projecting. Method is used in method Perform(…).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Curve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curve</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param InitCurve2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type InitCurve2d</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetBndPnt">
+<code class="sig-name descname">SetBndPnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetBndPnt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which defines type of boundary condition between segments during approximation. It can be AppParCurves_PassPoint or AppParCurves_TangencyPoint. Default value is AppParCurves_TangencyPoint.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBndPnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBndPnt</dt>
+<dd class="field-even"><p>AppParCurves_Constraint</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetDegree">
+<code class="sig-name descname">SetDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetDegree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set min and max possible degree of result BSpline curve2d, which is got by approximation. If theDegMin/Max &lt; 0, algorithm uses values min = 2, max = 8.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theDegMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegMin</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theDegMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetMaxDist">
+<code class="sig-name descname">SetMaxDist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetMaxDist" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which defines maximal possible distance between projected curve and surface. It is used only for projecting on not analytical surfaces. If theMaxDist &lt; 0, algoritm uses default value 100.*Tolerance. If real distance between curve and surface more then theMaxDist, algorithm stops working.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMaxDist</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxDist</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetMaxSegments">
+<code class="sig-name descname">SetMaxSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetMaxSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which defines maximal value of parametric intervals the projected curve can be cut for approximation. If theMaxSegments &lt; 0, algorithm uses default value = 1000.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMaxSegments</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxSegments</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetTolerance">
+<code class="sig-name descname">SetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.SetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the tolerance used to project the curve on the surface. Default value is Precision::Approximation().</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theTolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.Tolerance">
+<code class="sig-name descname">Tolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.Tolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the reached Tolerance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ComputeApproxOnPolarSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_Cone">
+<em class="property">class </em><code class="sig-name descname">ProjLib_Cone</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ProjLib.ProjLib_Projector" title="OCC.Core.ProjLib.ProjLib_Projector"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ProjLib.ProjLib_Projector</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Undefined projection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection on the cone &lt;Co&gt;.</p>
+</dd>
+<dt class="field-even">param Co</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Co</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the line &lt;L&gt; on the cone &lt;Co&gt;.</p>
+</dd>
+<dt class="field-odd">param Co</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Co</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection of the circle &lt;C&gt; on the cone &lt;Co&gt;.</p>
+</dd>
+<dt class="field-even">param Co</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Co</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Cone.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cone.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Co</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Co</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Cone.Project">
+<code class="sig-name descname">Project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cone.Project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param E:</p>
+</dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param H:</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Cone.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cone.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_Cylinder">
+<em class="property">class </em><code class="sig-name descname">ProjLib_Cylinder</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cylinder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ProjLib.ProjLib_Projector" title="OCC.Core.ProjLib.ProjLib_Projector"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ProjLib.ProjLib_Projector</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Undefined projection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection on the cylinder &lt;Cyl&gt;.</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the line &lt;L&gt; on the cylinder &lt;Cyl&gt;.</p>
+</dd>
+<dt class="field-odd">param Cyl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection of the circle &lt;C&gt; on the cylinder &lt;Cyl&gt;.</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the ellipse &lt;E&gt; on the cylinder &lt;Cyl&gt;.</p>
+</dd>
+<dt class="field-odd">param Cyl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Cylinder.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cylinder.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Cyl</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Cylinder.Project">
+<code class="sig-name descname">Project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cylinder.Project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param E:</p>
+</dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param H:</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Cylinder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Cylinder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_HCompProjectedCurve">
+<em class="property">class </em><code class="sig-name descname">ProjLib_HCompProjectedCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HCompProjectedCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Adaptor2d.html#OCC.Core.Adaptor2d.Adaptor2d_HCurve2d" title="OCC.Core.Adaptor2d.Adaptor2d_HCurve2d"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Adaptor2d.Adaptor2d_HCurve2d</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an empty GenHCurve2d.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a GenHCurve2d from a Curve</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>ProjLib_CompProjectedCurve &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.ChangeCurve2d">
+<code class="sig-name descname">ChangeCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.ChangeCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve used to create the GenHCurve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>ProjLib_CompProjectedCurve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.Set" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the field of the GenHCurve2d.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>ProjLib_CompProjectedCurve &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HCompProjectedCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_HProjectedCurve">
+<em class="property">class </em><code class="sig-name descname">ProjLib_HProjectedCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HProjectedCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Adaptor2d.html#OCC.Core.Adaptor2d.Adaptor2d_HCurve2d" title="OCC.Core.Adaptor2d.Adaptor2d_HCurve2d"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Adaptor2d.Adaptor2d_HCurve2d</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an empty GenHCurve2d.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a GenHCurve2d from a Curve</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>ProjLib_ProjectedCurve &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HProjectedCurve.ChangeCurve2d">
+<code class="sig-name descname">ChangeCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HProjectedCurve.ChangeCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve used to create the GenHCurve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>ProjLib_ProjectedCurve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HProjectedCurve.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HProjectedCurve.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HProjectedCurve.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HProjectedCurve.Set" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the field of the GenHCurve2d.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>ProjLib_ProjectedCurve &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HProjectedCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HProjectedCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_HSequenceOfHSequenceOfPnt">
+<em class="property">class </em><code class="sig-name descname">ProjLib_HSequenceOfHSequenceOfPnt</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HSequenceOfHSequenceOfPnt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt" title="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt</span></code></a>, <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><p>Empty constructor</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Copy constructor – does nothing</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>&amp;</strong> (<a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><em>Standard_Transient</em></a>) – </p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HSequenceOfHSequenceOfPnt.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HSequenceOfHSequenceOfPnt.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_HSequenceOfHSequenceOfPnt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_HSequenceOfHSequenceOfPnt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_Plane">
+<em class="property">class </em><code class="sig-name descname">ProjLib_Plane</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Plane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ProjLib.ProjLib_Projector" title="OCC.Core.ProjLib.ProjLib_Projector"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ProjLib.ProjLib_Projector</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Undefined projection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection on the plane &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-even">param Pl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the line &lt;L&gt; on the plane &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-odd">param Pl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pl</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection of the circle &lt;C&gt; on the plane &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-even">param Pl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the ellipse &lt;E&gt; on the plane &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-odd">param Pl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pl</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection of the parabola &lt;P&gt; on the plane &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-even">param Pl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the hyperbola &lt;H&gt; on the plane &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-odd">param Pl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pl</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Plane.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Plane.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Pl</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Plane.Project">
+<code class="sig-name descname">Project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Plane.Project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param E:</p>
+</dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param H:</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Plane.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Plane.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjFunc">
+<em class="property">class </em><code class="sig-name descname">ProjLib_PrjFunc</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjFunc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_FunctionSetWithDerivatives" title="OCC.Core.math.math_FunctionSetWithDerivatives"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_FunctionSetWithDerivatives</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor3d_CurvePtr &amp;</p>
+</dd>
+<dt class="field-even">param FixVal</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FixVal</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>Adaptor3d_SurfacePtr &amp;</p>
+</dd>
+<dt class="field-even">param Fix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjFunc.Solution">
+<code class="sig-name descname">Solution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjFunc.Solution" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns point on surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjFunc.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjFunc.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjResolve">
+<em class="property">class </em><code class="sig-name descname">ProjLib_PrjResolve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjResolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>Adaptor3d_Surface &amp;</p>
+</dd>
+<dt class="field-even">param Fix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Fix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjResolve.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjResolve.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the distance is found.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjResolve.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjResolve.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calculates the ort from C(t) to S with a close point. The close point is defined by the parameter values U0 and V0. The function F(u,v)=distance(S(u,v),C(t)) has an extremum when gradient(F)=0. The algorithm searchs a zero near the close point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param t</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type t</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Inf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Inf</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Sup</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sup</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param FTol</dt>
+<dd class="field-odd"><p>default value is -1</p>
+</dd>
+<dt class="field-even">type FTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param StrictInside</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type StrictInside</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjResolve.Solution">
+<code class="sig-name descname">Solution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjResolve.Solution" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the point of the extremum distance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_PrjResolve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_PrjResolve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnPlane">
+<em class="property">class </em><code class="sig-name descname">ProjLib_ProjectOnPlane</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnPlane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Adaptor3d.html#OCC.Core.Adaptor3d.Adaptor3d_Curve" title="OCC.Core.Adaptor3d.Adaptor3d_Curve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Adaptor3d.Adaptor3d_Curve</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* The projection will be normal to the Plane defined by the Ax3 &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-even">param Pl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Ax3</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* The projection will be along the direction &lt;D&gt; on the plane defined by the Ax3 &lt;Pl&gt;. raises if the direction &lt;D&gt; is parallel to the plane &lt;Pl&gt;.</p>
+</dd>
+<dt class="field-odd">param Pl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pl</dt>
+<dd class="field-even"><p>gp_Ax3</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetCurve">
+<code class="sig-name descname">GetCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetDirection">
+<code class="sig-name descname">GetDirection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetDirection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Dir" title="OCC.Core.gp.gp_Dir">gp_Dir</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetPlane">
+<code class="sig-name descname">GetPlane</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetPlane" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Ax3" title="OCC.Core.gp.gp_Ax3">gp_Ax3</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetResult">
+<code class="sig-name descname">GetResult</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnPlane.GetResult" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;GeomAdaptor_HCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnPlane.Load">
+<code class="sig-name descname">Load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnPlane.Load" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the Curve and perform the projection. if &lt;KeepParametrization&gt; is true, the parametrization of the Projected Curve &lt;PC&gt; will be the same as the parametrization of the initial curve &lt;C&gt;. It meens: proj(C(u)) = PC(u) for each u. Otherwize, the parametrization may change.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Tolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param KeepParametrization</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type KeepParametrization</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnPlane.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnPlane.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnSurface">
+<em class="property">class </em><code class="sig-name descname">ProjLib_ProjectOnSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Create an empty projector.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Create a projector normaly to the surface &lt;S&gt;.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnSurface.BSpline">
+<code class="sig-name descname">BSpline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnSurface.BSpline" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnSurface.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnSurface.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectOnSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectOnSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve">
+<em class="property">class </em><code class="sig-name descname">ProjLib_ProjectedCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Adaptor2d.html#OCC.Core.Adaptor2d.Adaptor2d_Curve2d" title="OCC.Core.Adaptor2d.Adaptor2d_Curve2d"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Adaptor2d.Adaptor2d_Curve2d</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor, it only sets some initial values for class fields.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with initialisation field mySurface</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor, which performs projecting. If projecting uses approximation, default parameters are used, in particular, 3d tolerance of approximation is Precision::Confusion()</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor, which performs projecting. If projecting uses approximation, 3d tolerance is Tol, default parameters are used,</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.GetCurve">
+<code class="sig-name descname">GetCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.GetCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.GetSurface">
+<code class="sig-name descname">GetSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.GetSurface" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the tolerance reached if an approximation is Done.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs projecting for given curve. If projecting uses approximation, approximation parameters can be set before by corresponding methods SetDegree(…), SetMaxSegmets(…), SetBndPnt(…), SetMaxDist(…)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetBndPnt">
+<code class="sig-name descname">SetBndPnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetBndPnt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which defines type of boundary condition between segments during approximation. It can be AppParCurves_PassPoint or AppParCurves_TangencyPoint. Default value is AppParCurves_TangencyPoint;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBndPnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBndPnt</dt>
+<dd class="field-even"><p>AppParCurves_Constraint</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetDegree">
+<code class="sig-name descname">SetDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetDegree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set min and max possible degree of result BSpline curve2d, which is got by approximation. If theDegMin/Max &lt; 0, algorithm uses values that are chosen depending of types curve 3d and surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theDegMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegMin</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theDegMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegMax</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetMaxDist">
+<code class="sig-name descname">SetMaxDist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetMaxDist" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which degines maximal possible distance between projected curve and surface. It uses only for projecting on not analytical surfaces. If theMaxDist &lt; 0, algoritm uses default value 100.*Tolerance. If real distance between curve and surface more then theMaxDist, algorithm stops working.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMaxDist</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxDist</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetMaxSegments">
+<code class="sig-name descname">SetMaxSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.SetMaxSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the parameter, which defines maximal value of parametric intervals the projected curve can be cut for approximation. If theMaxSegments &lt; 0, algorithm uses default value = 1000.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMaxSegments</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxSegments</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_ProjectedCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_ProjectedCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector">
+<em class="property">class </em><code class="sig-name descname">ProjLib_Projector</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Sets the type to OtherCurve</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.BSpline">
+<code class="sig-name descname">BSpline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.BSpline" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Bezier">
+<code class="sig-name descname">Bezier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Bezier" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BezierCurve&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Circle">
+<code class="sig-name descname">Circle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Circle" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Circ2d" title="OCC.Core.gp.gp_Circ2d">gp_Circ2d</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Done">
+<code class="sig-name descname">Done</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Done" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set isDone = Standard_True;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Ellipse">
+<code class="sig-name descname">Ellipse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Ellipse" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Elips2d" title="OCC.Core.gp.gp_Elips2d">gp_Elips2d</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.GetType">
+<code class="sig-name descname">GetType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.GetType" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>GeomAbs_CurveType</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Hyperbola">
+<code class="sig-name descname">Hyperbola</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Hyperbola" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Hypr2d" title="OCC.Core.gp.gp_Hypr2d">gp_Hypr2d</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.IsPeriodic">
+<code class="sig-name descname">IsPeriodic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.IsPeriodic" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Line">
+<code class="sig-name descname">Line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Line" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Lin2d" title="OCC.Core.gp.gp_Lin2d">gp_Lin2d</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Parabola">
+<code class="sig-name descname">Parabola</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Parabola" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Parab2d" title="OCC.Core.gp.gp_Parab2d">gp_Parab2d</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.Project">
+<code class="sig-name descname">Project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.Project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param E:</p>
+</dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param H:</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.SetBSpline">
+<code class="sig-name descname">SetBSpline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.SetBSpline" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.SetBezier">
+<code class="sig-name descname">SetBezier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.SetBezier" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BezierCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.SetPeriodic">
+<code class="sig-name descname">SetPeriodic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.SetPeriodic" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.SetType">
+<code class="sig-name descname">SetType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.SetType" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Type</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Type</dt>
+<dd class="field-odd"><p>GeomAbs_CurveType</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.UFrame">
+<code class="sig-name descname">UFrame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.UFrame" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Translates the 2d curve to set the part of the curve [CFirst, CLast] in the range [ UFirst, UFirst + Period [</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param CFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CFirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param CLast</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CLast</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UFirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Period</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Period</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.VFrame">
+<code class="sig-name descname">VFrame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.VFrame" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Translates the 2d curve to set the part of the curve [CFirst, CLast] in the range [ VFirst, VFirst + Period [</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param CFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CFirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param CLast</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CLast</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VFirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Period</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Period</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Projector.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Projector.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt">
+<em class="property">class </em><code class="sig-name descname">ProjLib_SequenceOfHSequenceOfPnt</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_SequenceOfHSequenceOfPnt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_Sphere">
+<em class="property">class </em><code class="sig-name descname">ProjLib_Sphere</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Sphere" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ProjLib.ProjLib_Projector" title="OCC.Core.ProjLib.ProjLib_Projector"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ProjLib.ProjLib_Projector</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Undefined projection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection on the sphere &lt;Sp&gt;.</p>
+</dd>
+<dt class="field-even">param Sp</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sp</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the circle &lt;C&gt; on the sphere &lt;Sp&gt;.</p>
+</dd>
+<dt class="field-odd">param Sp</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sp</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Sphere.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Sphere.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Sp</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Sp</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Sphere.Project">
+<code class="sig-name descname">Project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Sphere.Project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param E:</p>
+</dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param H:</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Sphere.SetInBounds">
+<code class="sig-name descname">SetInBounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Sphere.SetInBounds" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the point of parameter U on C in the natural restrictions of the sphere.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Sphere.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Sphere.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.ProjLib_Torus">
+<em class="property">class </em><code class="sig-name descname">ProjLib_Torus</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Torus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ProjLib.ProjLib_Projector" title="OCC.Core.ProjLib.ProjLib_Projector"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ProjLib.ProjLib_Projector</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Undefined projection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Projection on the torus &lt;To&gt;.</p>
+</dd>
+<dt class="field-even">param To</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type To</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Projection of the circle &lt;C&gt; on the torus &lt;To&gt;.</p>
+</dd>
+<dt class="field-odd">param To</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type To</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Torus.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Torus.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>To</strong> – <dl class="field-list simple">
+<dt class="field-odd">type To</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Torus.Project">
+<code class="sig-name descname">Project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Torus.Project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>L</strong> – <dl class="field-list simple">
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param C:</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param E:</p>
+</dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param H:</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.ProjLib_Torus.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.ProjLib_Torus.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ProjLib.projlib">
+<em class="property">class </em><code class="sig-name descname">projlib</code><a class="headerlink" href="#OCC.Core.ProjLib.projlib" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ProjLib.projlib.IsAnaSurf">
+<em class="property">static </em><code class="sig-name descname">IsAnaSurf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.projlib.IsAnaSurf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ‘true’ if surface is analytical, that is it can be Plane, Cylinder, Cone, Sphere, Torus. For all other types of surface method returns ‘false’.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theAS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theAS</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.projlib.MakePCurveOfType">
+<em class="property">static </em><code class="sig-name descname">MakePCurveOfType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.projlib.MakePCurveOfType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Make empty P-Curve &lt;aC&gt; of relevant to &lt;PC&gt; type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param PC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PC</dt>
+<dd class="field-even"><p>ProjLib_ProjectedCurve &amp;</p>
+</dd>
+<dt class="field-odd">param aC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aC</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.projlib.Project">
+<em class="property">static </em><code class="sig-name descname">Project</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ProjLib.projlib.Project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Pl</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt2d:param Pl:</p>
+</dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Lin2d:param Pl:</p>
+</dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Circ2d:param Pl:</p>
+</dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Elips2d:param Pl:</p>
+</dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Parab2d:param Pl:</p>
+</dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Hypr2d:param Cy:</p>
+</dd>
+<dt class="field-odd">type Cy</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt2d:param Cy:</p>
+</dd>
+<dt class="field-odd">type Cy</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Lin2d:param Cy:</p>
+</dd>
+<dt class="field-odd">type Cy</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Ci</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Ci</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Lin2d:param Co:</p>
+</dd>
+<dt class="field-odd">type Co</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt2d:param Co:</p>
+</dd>
+<dt class="field-odd">type Co</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Lin2d:param Co:</p>
+</dd>
+<dt class="field-odd">type Co</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Ci</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Ci</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Lin2d:param Sp:</p>
+</dd>
+<dt class="field-odd">type Sp</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt2d:param Sp:</p>
+</dd>
+<dt class="field-odd">type Sp</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param Ci</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Ci</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Lin2d:param To:</p>
+</dd>
+<dt class="field-odd">type To</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Pnt2d:param To:</p>
+</dd>
+<dt class="field-odd">type To</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Ci</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Ci</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ProjLib.projlib.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ProjLib.projlib.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

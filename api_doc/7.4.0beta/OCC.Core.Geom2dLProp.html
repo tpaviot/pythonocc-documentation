@@ -1,0 +1,1069 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.Geom2dLProp module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.Geom2dLProp module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.Geom2dLProp module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.Geom2dLProp.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.Geom2dLProp">
+<span id="occ-core-geom2dlprop-module"></span><h1>OCC.Core.Geom2dLProp module<a class="headerlink" href="#module-OCC.Core.Geom2dLProp" title="Permalink to this headline">¶</a></h1>
+<p>Geom2dLProp module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geom2dlprop.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geom2dlprop.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d">
+<em class="property">class </em><code class="sig-name descname">Geom2dLProp_CLProps2d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the local properties of the curve &lt;C&gt; The current point and the derivatives are computed at the same time, which allows an optimization of the computation time. &lt;N&gt; indicates the maximum number of derivations to be done (0, 1, 2 or 3). For example, to compute only the tangent, N should be equal to 1. &lt;Resolution&gt; is the linear tolerance (it is used to test if a vector is null).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Same as previous constructor but here the parameter is set to the value &lt;U&gt;. All the computations done will be related to &lt;C&gt; and &lt;U&gt;.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param N</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type N</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Resolution</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Resolution</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Same as previous constructor but here the parameter is set to the value &lt;U&gt; and the curve is set with SetCurve. the curve can have a empty constructor All the computations done will be related to &lt;C&gt; and &lt;U&gt; when the functions ‘set’ will be done.</p>
+</dd>
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Resolution</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Resolution</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.CentreOfCurvature">
+<code class="sig-name descname">CentreOfCurvature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.CentreOfCurvature" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the centre of curvature &lt;P&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Curvature">
+<code class="sig-name descname">Curvature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Curvature" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curvature.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.D1">
+<code class="sig-name descname">D1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.D1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the first derivative. The derivative is computed if it has not been yet.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.D2">
+<code class="sig-name descname">D2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.D2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the second derivative. The derivative is computed if it has not been yet.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.D3">
+<code class="sig-name descname">D3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.D3" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the third derivative. The derivative is computed if it has not been yet.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.IsTangentDefined">
+<code class="sig-name descname">IsTangentDefined</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.IsTangentDefined" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the tangent is defined. For example, the tangent is not defined if the three first derivatives are all null.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Normal">
+<code class="sig-name descname">Normal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Normal" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the normal direction &lt;N&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>gp_Dir2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.SetCurve">
+<code class="sig-name descname">SetCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.SetCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the local properties of the curve for the new curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.SetParameter">
+<code class="sig-name descname">SetParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.SetParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the local properties of the curve for the parameter value &lt;U&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Tangent">
+<code class="sig-name descname">Tangent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Tangent" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>output the tangent direction &lt;D&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>gp_Dir2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CLProps2d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d">
+<em class="property">class </em><code class="sig-name descname">Geom2dLProp_CurAndInf2d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.LProp.html#OCC.Core.LProp.LProp_CurAndInf" title="OCC.Core.LProp.LProp_CurAndInf"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.LProp.LProp_CurAndInf</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the framework. Note: The curve on which the local properties are computed is defined using one of the following functions: Perform, PerformCurExt or PerformInf.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>True if the solutions are found.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>For the curve C, Computes both the inflection points and the maximum and minimum curvatures.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.PerformCurExt">
+<code class="sig-name descname">PerformCurExt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.PerformCurExt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>For the curve C, Computes the locals extremas of curvature.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.PerformInf">
+<code class="sig-name descname">PerformInf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.PerformInf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>For the curve C, Computes the inflections. After computation, the following functions can be used: - IsDone to check if the computation was successful - NbPoints to obtain the number of computed particular points - Parameter to obtain the parameter on the curve for each particular point - Type to check if the point is an inflection point or an extremum of curvature of the curve C. Warning These functions can be used to analyze a series of curves, however it is necessary to clear the table of results between each computation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_CurAndInf2d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool">
+<em class="property">class </em><code class="sig-name descname">Geom2dLProp_Curve2dTool</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.Continuity">
+<em class="property">static </em><code class="sig-name descname">Continuity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.Continuity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the order of continuity of the curve &lt;C&gt;. returns 1<span class="classifier">first derivative only is computable returns 2</span><span class="classifier">first and second derivative only are computable. returns 3</span><span class="classifier">first, second and third are computable.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.D1">
+<em class="property">static </em><code class="sig-name descname">D1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.D1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the point &lt;P&gt; and first derivative &lt;V1&gt; of parameter &lt;U&gt; on the curve &lt;C&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.D2">
+<em class="property">static </em><code class="sig-name descname">D2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.D2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the point &lt;P&gt;, the first derivative &lt;V1&gt; and second derivative &lt;V2&gt; of parameter &lt;U&gt; on the curve &lt;C&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.D3">
+<em class="property">static </em><code class="sig-name descname">D3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.D3" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the point &lt;P&gt;, the first derivative &lt;V1&gt;, the second derivative &lt;V2&gt; and third derivative &lt;V3&gt; of parameter &lt;U&gt; on the curve &lt;C&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">param V3</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V3</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.FirstParameter">
+<em class="property">static </em><code class="sig-name descname">FirstParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.FirstParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the first parameter bound of the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.LastParameter">
+<em class="property">static </em><code class="sig-name descname">LastParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.LastParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the last parameter bound of the curve. FirstParameter must be less than LastParameter.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.Value">
+<em class="property">static </em><code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the point &lt;P&gt; of parameter &lt;U&gt; on the curve &lt;C&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_Curve2dTool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurExt">
+<em class="property">class </em><code class="sig-name descname">Geom2dLProp_FuncCurExt</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurExt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_FunctionWithDerivative" title="OCC.Core.math.math_FunctionWithDerivative"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_FunctionWithDerivative</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurExt.IsMinKC">
+<code class="sig-name descname">IsMinKC</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurExt.IsMinKC" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>True if Param corresponds to a minus of the radius of curvature.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Param</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurExt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurExt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurNul">
+<em class="property">class </em><code class="sig-name descname">Geom2dLProp_FuncCurNul</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurNul" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_FunctionWithDerivative" title="OCC.Core.math.math_FunctionWithDerivative"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_FunctionWithDerivative</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurNul.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_FuncCurNul.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d">
+<em class="property">class </em><code class="sig-name descname">Geom2dLProp_NumericCurInf2d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>True if the solutions are found.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.PerformCurExt">
+<code class="sig-name descname">PerformCurExt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.PerformCurExt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the locals extremas of curvature.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Result</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Result</dt>
+<dd class="field-even"><p>LProp_CurAndInf &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Computes the locals extremas of curvature. in the interval of parmeters [UMin,UMax].</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param UMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMax</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Result</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Result</dt>
+<dd class="field-odd"><p>LProp_CurAndInf &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.PerformInf">
+<code class="sig-name descname">PerformInf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.PerformInf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the inflections.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Result</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Result</dt>
+<dd class="field-even"><p>LProp_CurAndInf &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Computes the inflections in the interval of parmeters [UMin,UMax].</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param UMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMax</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Result</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Result</dt>
+<dd class="field-odd"><p>LProp_CurAndInf &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.Geom2dLProp_NumericCurInf2d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Geom2dLProp.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Geom2dLProp.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1123 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.FilletSurf module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.FilletSurf module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.FilletSurf module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.FilletSurf.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.FilletSurf">
+<span id="occ-core-filletsurf-module"></span><h1>OCC.Core.FilletSurf module<a class="headerlink" href="#module-OCC.Core.FilletSurf" title="Permalink to this headline">¶</a></h1>
+<p>FilletSurf module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_filletsurf.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_filletsurf.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder">
+<em class="property">class </em><code class="sig-name descname">FilletSurf_Builder</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>initialize of the informations necessary for the computation of the fillet on the Shape S from a list of edges E and a radius R. //! Ta is the angular tolerance Tapp3d is the 3d approximation tolerance Tapp2d is the 2d approximation tolerance</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Ta</dt>
+<dd class="field-odd"><p>default value is 1.0e-2</p>
+</dd>
+<dt class="field-even">type Ta</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tapp3d</dt>
+<dd class="field-odd"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-even">type Tapp3d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tapp2d</dt>
+<dd class="field-odd"><p>default value is 1.0e-5</p>
+</dd>
+<dt class="field-even">type Tapp2d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.CurveOnFace1">
+<code class="sig-name descname">CurveOnFace1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.CurveOnFace1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the 3d curve of SurfaceFillet(Index) on SupportFace1(Index)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.CurveOnFace2">
+<code class="sig-name descname">CurveOnFace2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.CurveOnFace2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the 3d curve of SurfaceFillet(Index) on SupportFace2(Index)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.EndSectionStatus">
+<code class="sig-name descname">EndSectionStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.EndSectionStatus" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>FilletSurf_StatusType</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.FirstParameter">
+<code class="sig-name descname">FirstParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.FirstParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the parameter of the fillet on the first edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the status about the computation of the fillet returns: IsOK :no problem during the computation IsNotOk: no result is produced IsPartial: the result is partial</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>FilletSurf_StatusDone</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.LastParameter">
+<code class="sig-name descname">LastParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.LastParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the parameter of the fillet on the last edge</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.NbSection">
+<code class="sig-name descname">NbSection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.NbSection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IndexSurf</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IndexSurf</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.NbSurface">
+<code class="sig-name descname">NbSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.NbSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the number of NUBS surfaces of the Fillet.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.PCurve1OnFillet">
+<code class="sig-name descname">PCurve1OnFillet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.PCurve1OnFillet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurveOnFace1(Index) on the Fillet</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.PCurve2OnFillet">
+<code class="sig-name descname">PCurve2OnFillet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.PCurve2OnFillet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurveOnSup2(Index) on the fillet</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.PCurveOnFace1">
+<code class="sig-name descname">PCurveOnFace1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.PCurveOnFace1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurvOnSup1(Index) on the support face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.PCurveOnFace2">
+<code class="sig-name descname">PCurveOnFace2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.PCurveOnFace2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurveOnSup2(Index) on the support face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>—Purpose computation of the fillet (list of NUBS)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.Section" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IndexSurf</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IndexSurf</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IndexSec</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IndexSec</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Circ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Circ</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_TrimmedCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.Simulate">
+<code class="sig-name descname">Simulate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.Simulate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.StartSectionStatus">
+<code class="sig-name descname">StartSectionStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.StartSectionStatus" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>FilletSurf_StatusType</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.StatusError">
+<code class="sig-name descname">StatusError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.StatusError" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives informations about error status if IsDone=IsNotOk returns EdgeNotG1: the edges are not G1 FacesNotG1<span class="classifier">two connected faces on a same support are not G1 EdgeNotOnShape: the edge is not on shape NotSharpEdge: the edge is not sharp PbFilletCompute: problem during the computation of the fillet</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>FilletSurf_ErrorTypeStatus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.SupportFace1">
+<code class="sig-name descname">SupportFace1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.SupportFace1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the first support face relative to SurfaceFillet(Index);</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.SupportFace2">
+<code class="sig-name descname">SupportFace2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.SupportFace2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the second support face relative to SurfaceFillet(Index);</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.SurfaceFillet">
+<code class="sig-name descname">SurfaceFillet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.SurfaceFillet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the NUBS surface of index Index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.TolApp3d">
+<code class="sig-name descname">TolApp3d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.TolApp3d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the 3d tolerance reached during approximation of surface of index Index</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_Builder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_Builder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder">
+<em class="property">class </em><code class="sig-name descname">FilletSurf_InternalBuilder</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.ChFi3d.html#OCC.Core.ChFi3d.ChFi3d_FilBuilder" title="OCC.Core.ChFi3d.ChFi3d_FilBuilder"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ChFi3d.ChFi3d_FilBuilder</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param FShape</dt>
+<dd class="field-even"><p>default value is ChFi3d_Polynomial</p>
+</dd>
+<dt class="field-odd">type FShape</dt>
+<dd class="field-odd"><p>ChFi3d_FilletShape</p>
+</dd>
+<dt class="field-even">param Ta</dt>
+<dd class="field-even"><p>default value is 1.0e-2</p>
+</dd>
+<dt class="field-odd">type Ta</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tapp3d</dt>
+<dd class="field-even"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-odd">type Tapp3d</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tapp2d</dt>
+<dd class="field-even"><p>default value is 1.0e-5</p>
+</dd>
+<dt class="field-odd">type Tapp2d</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the contour with a list of Edges 0<span class="classifier">no problem 1</span><span class="classifier">empty list 2</span><span class="classifier">the edges are not G1 3</span><span class="classifier">two connected faces on a same support are not G1 4</span><span class="classifier">the edge is not on shape 5</span><span class="classifier">NotSharpEdge: the edge is not sharp</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.CurveOnFace1">
+<code class="sig-name descname">CurveOnFace1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.CurveOnFace1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the 3d curve of SurfaceFillet(Index) on SupportFace1(Index)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.CurveOnFace2">
+<code class="sig-name descname">CurveOnFace2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.CurveOnFace2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the 3d curve of SurfaceFillet(Index) on SupportFace2(Index)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Done">
+<code class="sig-name descname">Done</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Done" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.EndSectionStatus">
+<code class="sig-name descname">EndSectionStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.EndSectionStatus" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>FilletSurf_StatusType</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.FirstParameter">
+<code class="sig-name descname">FirstParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.FirstParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the parameter of the fillet on the first edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.LastParameter">
+<code class="sig-name descname">LastParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.LastParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the parameter of the fillet on the last edge</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.NbSection">
+<code class="sig-name descname">NbSection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.NbSection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IndexSurf</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IndexSurf</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.NbSurface">
+<code class="sig-name descname">NbSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.NbSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the number of NUBS surfaces of the Fillet.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurve1OnFillet">
+<code class="sig-name descname">PCurve1OnFillet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurve1OnFillet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurveOnFace1(Index) on the Fillet</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurve2OnFillet">
+<code class="sig-name descname">PCurve2OnFillet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurve2OnFillet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurveOnSup2(Index) on the fillet</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurveOnFace1">
+<code class="sig-name descname">PCurveOnFace1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurveOnFace1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurvOnSup1(Index) on the support face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurveOnFace2">
+<code class="sig-name descname">PCurveOnFace2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.PCurveOnFace2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the PCurve associated to CurveOnSup2(Index) on the support face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Section" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IndexSurf</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IndexSurf</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IndexSec</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IndexSec</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Circ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Circ</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_TrimmedCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Simulate">
+<code class="sig-name descname">Simulate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.Simulate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.StartSectionStatus">
+<code class="sig-name descname">StartSectionStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.StartSectionStatus" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>FilletSurf_StatusType</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.SupportFace1">
+<code class="sig-name descname">SupportFace1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.SupportFace1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the first support face relative to SurfaceFillet(Index);</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.SupportFace2">
+<code class="sig-name descname">SupportFace2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.SupportFace2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the second support face relative to SurfaceFillet(Index);</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.SurfaceFillet">
+<code class="sig-name descname">SurfaceFillet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.SurfaceFillet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the NUBS surface of index Index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.TolApp3d">
+<code class="sig-name descname">TolApp3d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.TolApp3d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>gives the 3d tolerance reached during approximation of the surface of index Index</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.FilletSurf_InternalBuilder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FilletSurf.FilletSurf_InternalBuilder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FilletSurf.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FilletSurf.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

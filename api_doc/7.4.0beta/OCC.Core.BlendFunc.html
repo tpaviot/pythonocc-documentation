@@ -1,0 +1,3653 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BlendFunc module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BlendFunc module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BlendFunc module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BlendFunc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BlendFunc">
+<span id="occ-core-blendfunc-module"></span><h1>OCC.Core.BlendFunc module<a class="headerlink" href="#module-OCC.Core.BlendFunc" title="Permalink to this headline">¶</a></h1>
+<p>BlendFunc module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_blendfunc.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_blendfunc.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSCircular">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_CSCircular</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSCircular" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_CSFunction" title="OCC.Core.Blend.Blend_CSFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_CSFunction</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates a function for a circular blending between a curve &lt;C&gt; and a surface &lt;S&gt;. The direction of the planes are given by &lt;CGuide&gt;. The position of the plane is determined on the curve &lt;C&gt;. &lt;L&gt; defines the change of parameter between &lt;C&gt; and &lt;CGuide&gt;. So, the planes are defined as described below<span class="classifier">t is the current parameter on the guide line. Pguide = C(L(t)); Nguide = CGuide’(t)/||CGuide’(t)||</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param CGuide</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CGuide</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Law_Function&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSCircular.GetSection">
+<code class="sig-name descname">GetSection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSCircular.GetSection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param tabP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type tabP</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param tabV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type tabV</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSCircular.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSCircular.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tolerance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Returns the tolerance to reach in approximation to respecte BoundTol error at the Boundary AngleTol tangent error at the Boundary SurfTol error inside the surface.</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param SurfTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SurfTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AngleTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol1D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1D</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSCircular.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSCircular.Section" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Pdeb</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pdeb</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Pfin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pfin</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Used for the first and last section The method returns Standard_True if the derivatives are computed, otherwise it returns Standard_False.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param DPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param D2Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DPoles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param D2Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DWeigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DWeigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param D2Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Used for the first and last section</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param DPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DPoles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DWeigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DWeigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSCircular.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSCircular.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param First:</p>
+</dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Radius:</p>
+</dd>
+<dt class="field-odd">type Radius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the type of section generation for the approximations.</p>
+</dd>
+<dt class="field-odd">param TypeSection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TypeSection</dt>
+<dd class="field-even"><p>BlendFunc_SectionShape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSCircular.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSCircular.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSConstRad">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_CSConstRad</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSConstRad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_CSFunction" title="OCC.Core.Blend.Blend_CSFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_CSFunction</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param CGuide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CGuide</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSConstRad.GetSection">
+<code class="sig-name descname">GetSection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSConstRad.GetSection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param tabP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type tabP</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param tabV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type tabV</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSConstRad.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSConstRad.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tolerance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Returns the tolerance to reach in approximation to respecte BoundTol error at the Boundary AngleTol tangent error at the Boundary SurfTol error inside the surface.</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param SurfTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SurfTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AngleTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol1D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1D</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSConstRad.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSConstRad.Section" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Pdeb</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pdeb</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Pfin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pfin</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Used for the first and last section The method returns Standard_True if the derivatives are computed, otherwise it returns Standard_False.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param DPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param D2Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DPoles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param D2Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DWeigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DWeigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param D2Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Used for the first and last section</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param DPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DPoles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DWeigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DWeigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSConstRad.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSConstRad.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param First:</p>
+</dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Radius:</p>
+</dd>
+<dt class="field-odd">type Radius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the type of section generation for the approximations.</p>
+</dd>
+<dt class="field-odd">param TypeSection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TypeSection</dt>
+<dd class="field-even"><p>BlendFunc_SectionShape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_CSConstRad.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_CSConstRad.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsym">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ChAsym</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsym" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_Function" title="OCC.Core.Blend.Blend_Function"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_Function</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsym.ComputeValues">
+<code class="sig-name descname">ComputeValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsym.ComputeValues" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>computes the values &lt;F&gt; of the derivatives for the variable &lt;X&gt; between DegF and DegL. Returns True if the computation was done successfully, False otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param DegF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DegF</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param DegL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DegL</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsym.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsym.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tolerance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Returns the tolerance to reach in approximation to respecte BoundTol error at the Boundary AngleTol tangent error at the Boundary SurfTol error inside the surface.</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param SurfTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SurfTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AngleTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol1D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1D</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsym.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsym.Section" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Utile pour une visu rapide et approximative de la surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Param</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Pdeb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pdeb</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Pfin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pfin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None:param P:</p>
+</dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Used for the first and last section</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param DPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DPoles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DWeigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DWeigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Used for the first and last section</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param DPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param D2Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DPoles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param D2Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DWeigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DWeigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param D2Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsym.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsym.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param First:</p>
+</dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the distances and the angle.</p>
+</dd>
+<dt class="field-odd">param Dist1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dist1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Angle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Choix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Choix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsym.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsym.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsymInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ChAsymInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsymInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_FuncInv" title="OCC.Core.Blend.Blend_FuncInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_FuncInv</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsymInv.ComputeValues">
+<code class="sig-name descname">ComputeValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsymInv.ComputeValues" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>computes the values &lt;F&gt; of the derivatives for the variable &lt;X&gt; between DegF and DegL. Returns True if the computation was done successfully, False otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param DegF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DegF</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param DegL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DegL</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsymInv.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsymInv.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>OnFirst</strong> – <dl class="field-list simple">
+<dt class="field-odd">type OnFirst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param COnSurf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type COnSurf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Dist1:</p>
+</dd>
+<dt class="field-odd">type Dist1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChAsymInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChAsymInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChamfInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ChamfInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChamfInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfInv" title="OCC.Core.BlendFunc.BlendFunc_GenChamfInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BlendFunc.BlendFunc_GenChamfInv</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ChamfInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ChamfInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Chamfer">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_Chamfer</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Chamfer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfer" title="OCC.Core.BlendFunc.BlendFunc_GenChamfer"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BlendFunc.BlendFunc_GenChamfer</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param CG</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CG</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Chamfer.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Chamfer.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the distances and the ‘quadrant’.</p>
+</dd>
+<dt class="field-odd">param Dist1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dist1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Dist2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dist2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Choix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Choix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Chamfer.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Chamfer.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRad">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ConstRad</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_Function" title="OCC.Core.Blend.Blend_Function"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_Function</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRad.AxeRot">
+<code class="sig-name descname">AxeRot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRad.AxeRot" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Prm</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Prm</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Ax1</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRad.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRad.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tolerance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Returns the tolerance to reach in approximation to respecte BoundTol error at the Boundary AngleTol tangent error at the Boundary SurfTol error inside the surface.</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param SurfTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SurfTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AngleTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol1D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1D</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRad.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRad.Section" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Utile pour une visu rapide et approximative de la surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Param</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Pdeb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pdeb</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Pfin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pfin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Used for the first and last section</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param DPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param D2Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DPoles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param D2Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DWeigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DWeigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param D2Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Used for the first and last section</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param DPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DPoles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DWeigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DWeigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool:param P:</p>
+</dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRad.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRad.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param First:</p>
+</dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Inits the value of radius, and the ‘quadrant’.</p>
+</dd>
+<dt class="field-odd">param Radius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Radius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Choix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Choix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Sets the type of section generation for the approximations.</p>
+</dd>
+<dt class="field-even">param TypeSection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TypeSection</dt>
+<dd class="field-odd"><p>BlendFunc_SectionShape</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRad.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRad.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRadInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ConstRadInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRadInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_FuncInv" title="OCC.Core.Blend.Blend_FuncInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_FuncInv</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRadInv.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRadInv.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>OnFirst</strong> – <dl class="field-list simple">
+<dt class="field-odd">type OnFirst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param COnSurf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type COnSurf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param R:</p>
+</dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstRadInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstRadInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroat">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ConstThroat</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfer" title="OCC.Core.BlendFunc.BlendFunc_GenChamfer"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BlendFunc.BlendFunc_GenChamfer</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroat.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroat.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the throat and the ‘quadrant’.</p>
+</dd>
+<dt class="field-odd">param aThroat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aThroat</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Standard_Real</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Standard_Real</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">param Choix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Choix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroat.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroat.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroatInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ConstThroatInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroatInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfInv" title="OCC.Core.BlendFunc.BlendFunc_GenChamfInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BlendFunc.BlendFunc_GenChamfInv</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroatInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroatInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetration">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ConstThroatWithPenetration</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroat" title="OCC.Core.BlendFunc.BlendFunc_ConstThroat"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BlendFunc.BlendFunc_ConstThroat</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetration.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetration.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetrationInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_ConstThroatWithPenetrationInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetrationInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroatInv" title="OCC.Core.BlendFunc.BlendFunc_ConstThroatInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BlendFunc.BlendFunc_ConstThroatInv</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetrationInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_ConstThroatWithPenetrationInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_Corde</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param CGuide</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CGuide</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.DerFguide">
+<code class="sig-name descname">DerFguide</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.DerFguide" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Derived of the function compared to the parameter of the guideline</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Sol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sol</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param DerF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DerF</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.Derivatives">
+<code class="sig-name descname">Derivatives</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.Derivatives" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the values &lt;D&gt; of the derivatives for the variable &lt;X&gt;. Returns True if the computation was done successfully, False otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>math_Matrix &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.IsSolution">
+<code class="sig-name descname">IsSolution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.IsSolution" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns False if Sol is not solution else returns True and updates the fields tgs and tg2d</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Sol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sol</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.IsTangencyPoint">
+<code class="sig-name descname">IsTangencyPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.IsTangencyPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True when it is not possible to compute the tangent vectors at PointOnS.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.NPlan">
+<code class="sig-name descname">NPlan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.NPlan" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the normal to CGuide at Ptgui.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.PointOnGuide">
+<code class="sig-name descname">PointOnGuide</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.PointOnGuide" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the point of parameter &lt;Param&gt; on CGuide</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.PointOnS">
+<code class="sig-name descname">PointOnS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.PointOnS" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Pnt" title="OCC.Core.gp.gp_Pnt">gp_Pnt</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.SetDist">
+<code class="sig-name descname">SetDist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.SetDist" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Dist</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Dist</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.SetParam">
+<code class="sig-name descname">SetParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.SetParam" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.Tangent2dOnS">
+<code class="sig-name descname">Tangent2dOnS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.Tangent2dOnS" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the tangent vector at PointOnS, in the parametric space of the first surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.TangentOnS">
+<code class="sig-name descname">TangentOnS</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.TangentOnS" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the tangent vector at PointOnS, in 3d space.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>computes the values &lt;F&gt; of the Function for the variable &lt;X&gt;. Returns True if the computation was done successfully, False otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Corde.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Corde.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRad">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_EvolRad</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_Function" title="OCC.Core.Blend.Blend_Function"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_Function</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Law</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Law</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Law_Function&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRad.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRad.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tolerance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Returns the tolerance to reach in approximation to respecte BoundTol error at the Boundary AngleTol tangent error at the Boundary SurfTol error inside the surface.</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param SurfTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SurfTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AngleTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol1D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1D</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRad.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRad.Section" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Method for graphic traces</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Param</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Pdeb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pdeb</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Pfin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pfin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Used for the first and last section</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param DPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param D2Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DPoles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param D2Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DWeigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DWeigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param D2Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Used for the first and last section</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param DPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DPoles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DWeigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DWeigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool:param P:</p>
+</dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRad.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRad.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param First:</p>
+</dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Choix:</p>
+</dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the type of section generation for the approximations.</p>
+</dd>
+<dt class="field-odd">param TypeSection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TypeSection</dt>
+<dd class="field-even"><p>BlendFunc_SectionShape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRad.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRad.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRadInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_EvolRadInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRadInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_FuncInv" title="OCC.Core.Blend.Blend_FuncInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_FuncInv</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Law</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Law</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Law_Function&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRadInv.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRadInv.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>OnFirst</strong> – <dl class="field-list simple">
+<dt class="field-odd">type OnFirst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param COnSurf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type COnSurf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Choix:</p>
+</dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_EvolRadInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_EvolRadInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_GenChamfInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_FuncInv" title="OCC.Core.Blend.Blend_FuncInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_FuncInv</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfInv.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfInv.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>OnFirst</strong> – <dl class="field-list simple">
+<dt class="field-odd">type OnFirst</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param COnSurf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type COnSurf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor2d_HCurve2d&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param Dist1:</p>
+</dd>
+<dt class="field-odd">type Dist1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Dist2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Dist2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Choix</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Choix</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfer">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_GenChamfer</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_Function" title="OCC.Core.Blend.Blend_Function"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_Function</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfer.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfer.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tolerance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Returns the tolerance to reach in approximation to respecte BoundTol error at the Boundary AngleTol tangent error at the Boundary SurfTol error inside the surface.</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param SurfTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SurfTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AngleTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol1D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1D</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfer.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfer.Section" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Obsolete method</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Param</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Pdeb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pdeb</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Pfin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pfin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Used for the first and last section</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param DPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param D2Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DPoles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param D2Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DWeigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DWeigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param D2Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D2Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Used for the first and last section</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param DPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DPoles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DWeigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DWeigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool:param P:</p>
+</dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfer.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfer.Set" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the value of the parameter along the guide line. This determines the plane in which the solution has to be found.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Param</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Sets the bounds of the parametric interval on the guide line. This determines the derivatives in these values if the function is not Cn.</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the distances and the ‘quadrant’.</p>
+</dd>
+<dt class="field-odd">param Dist1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dist1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Dist2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dist2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Choix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Choix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_GenChamfer.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_GenChamfer.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Ruled">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_Ruled</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Ruled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_Function" title="OCC.Core.Blend.Blend_Function"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_Function</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Ruled.AxeRot">
+<code class="sig-name descname">AxeRot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Ruled.AxeRot" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Prm</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Prm</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>gp_Ax1</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Ruled.GetSection">
+<code class="sig-name descname">GetSection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Ruled.GetSection" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param tabP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type tabP</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param tabV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type tabV</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Ruled.GetTolerance">
+<code class="sig-name descname">GetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Ruled.GetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Tolerance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Returns the tolerance to reach in approximation to respecte BoundTol error at the Boundary AngleTol tangent error at the Boundary SurfTol error inside the surface.</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param SurfTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SurfTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AngleTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param Tol1D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1D</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Ruled.Section">
+<code class="sig-name descname">Section</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Ruled.Section" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Used for the first and last section</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param DPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param D2Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-odd">param Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param DPoles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DPoles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param D2Poles2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Poles2d</dt>
+<dd class="field-even"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-odd">param Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param DWeigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DWeigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param D2Weigths</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D2Weigths</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Used for the first and last section</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param DPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param DPoles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DPoles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfVec2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param DWeigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DWeigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool:param P:</p>
+</dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>Blend_Point &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">param Poles2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles2d</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Ruled.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Ruled.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Param</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param First:</p>
+</dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Ruled.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Ruled.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_RuledInv">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_RuledInv</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_RuledInv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Blend.html#OCC.Core.Blend.Blend_FuncInv" title="OCC.Core.Blend.Blend_FuncInv"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Blend.Blend_FuncInv</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_RuledInv.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_RuledInv.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Tensor">
+<em class="property">class </em><code class="sig-name descname">BlendFunc_Tensor</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Tensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>NbRow</strong> – <dl class="field-list simple">
+<dt class="field-odd">type NbRow</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NbCol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NbCol</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NbMat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NbMat</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Tensor.GetChangeValue">
+<code class="sig-name descname">GetChangeValue</code><span class="sig-paren">(</span><em class="sig-param">BlendFunc_Tensor self</em>, <em class="sig-param">Standard_Integer const Row</em>, <em class="sig-param">Standard_Integer const Col</em>, <em class="sig-param">Standard_Integer const Mat</em><span class="sig-paren">)</span> &#x2192; Standard_Real<a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Tensor.GetChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Tensor.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Tensor.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initialize all the elements of a Tensor to InitialValue.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param InitialValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type InitialValue</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Tensor.Multiply">
+<code class="sig-name descname">Multiply</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Tensor.Multiply" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Right</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Right</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param Product</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Product</dt>
+<dd class="field-odd"><p>math_Matrix &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Tensor.SetChangeValue">
+<code class="sig-name descname">SetChangeValue</code><span class="sig-paren">(</span><em class="sig-param">BlendFunc_Tensor self</em>, <em class="sig-param">Standard_Integer const Row</em>, <em class="sig-param">Standard_Integer const Col</em>, <em class="sig-param">Standard_Integer const Mat</em>, <em class="sig-param">Standard_Real value</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Tensor.SetChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Tensor.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Tensor.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>accesses (in read or write mode) the value of index &lt;Row&gt;, &lt;Col&gt; and &lt;Mat&gt; of a Tensor. An exception is raised if &lt;Row&gt;, &lt;Col&gt; or &lt;Mat&gt; are not in the correct range.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Row</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Row</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Col</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Col</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Mat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Mat</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.BlendFunc_Tensor.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.BlendFunc_Tensor.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BlendFunc.blendfunc">
+<em class="property">class </em><code class="sig-name descname">blendfunc</code><a class="headerlink" href="#OCC.Core.BlendFunc.blendfunc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.blendfunc.ComputeDNormal">
+<em class="property">static </em><code class="sig-name descname">ComputeDNormal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.blendfunc.ComputeDNormal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Surf</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Surf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param p2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type p2d</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Normal</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Normal</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param DNu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DNu</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param DNv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DNv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.blendfunc.ComputeNormal">
+<em class="property">static </em><code class="sig-name descname">ComputeNormal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.blendfunc.ComputeNormal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Surf</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Surf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param p2d</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type p2d</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Normal</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Normal</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.blendfunc.GetMinimalWeights">
+<em class="property">static </em><code class="sig-name descname">GetMinimalWeights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.blendfunc.GetMinimalWeights" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SectShape</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SectShape</dt>
+<dd class="field-odd"><p>BlendFunc_SectionShape</p>
+</dd>
+<dt class="field-even">param TConv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TConv</dt>
+<dd class="field-odd"><p>Convert_ParameterisationType</p>
+</dd>
+<dt class="field-even">param AngleMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AngleMin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param AngleMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AngleMax</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Weigths</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weigths</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.blendfunc.GetShape">
+<em class="property">static </em><code class="sig-name descname">GetShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.blendfunc.GetShape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SectShape</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SectShape</dt>
+<dd class="field-odd"><p>BlendFunc_SectionShape</p>
+</dd>
+<dt class="field-even">param MaxAng</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxAng</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param NbPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NbPoles</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">param NbKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NbKnots</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">param TypeConv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TypeConv</dt>
+<dd class="field-odd"><p>Convert_ParameterisationType &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.blendfunc.NextShape">
+<em class="property">static </em><code class="sig-name descname">NextShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BlendFunc.blendfunc.NextShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Used to obtain the next level of continuity.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BlendFunc.blendfunc.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BlendFunc.blendfunc.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

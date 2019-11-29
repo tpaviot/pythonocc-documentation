@@ -1,0 +1,1648 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.StdSelect module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.StdSelect module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.StdSelect module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.StdSelect.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.StdSelect">
+<span id="occ-core-stdselect-module"></span><h1>OCC.Core.StdSelect module<a class="headerlink" href="#module-OCC.Core.StdSelect" title="Permalink to this headline">¶</a></h1>
+<p>StdSelect module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_stdselect.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_stdselect.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner">
+<em class="property">class </em><code class="sig-name descname">StdSelect_BRepOwner</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.SelectMgr.html#OCC.Core.SelectMgr.SelectMgr_EntityOwner" title="OCC.Core.SelectMgr.SelectMgr_EntityOwner"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.SelectMgr.SelectMgr_EntityOwner</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an owner specification framework defined by the priority aPriority.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPriority</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPriority</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructs an owner specification framework defined by the shape aShape and the priority aPriority. aShape and aPriority are stored in this framework. If more than one owner are detected during dynamic selection, the one with the highest priority is the one stored.</p>
+</dd>
+<dt class="field-even">param aShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param aPriority</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type aPriority</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param ComesFromDecomposition</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type ComesFromDecomposition</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructs an owner specification framework defined by the shape aShape, the selectable object theOrigin and the priority aPriority. aShape, theOrigin and aPriority are stored in this framework. If more than one owner are detected during dynamic selection, the one with the highest priority is the one stored.</p>
+</dd>
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOrigin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOrigin</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_SelectableObject&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aPriority</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type aPriority</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param FromDecomposition</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type FromDecomposition</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears the presentation manager object aPM of all shapes with the selection mode aMode.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPM</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPM</dt>
+<dd class="field-even"><p>opencascade::handle&lt;PrsMgr_PresentationManager&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aMode</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type aMode</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.HasHilightMode">
+<code class="sig-name descname">HasHilightMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.HasHilightMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if this framework has a highlight mode defined for it.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.HasShape">
+<code class="sig-name descname">HasShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.HasShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns False if no shape was set</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.HilightMode">
+<code class="sig-name descname">HilightMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.HilightMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the highlight mode for this framework. This defines the type of display used to highlight the owner of the shape when it is detected by the selector. The default type of display is wireframe, defined by the index 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.IsHilighted">
+<code class="sig-name descname">IsHilighted</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.IsHilighted" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if an object with the selection mode aMode is highlighted in the presentation manager aPM.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPM</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPM</dt>
+<dd class="field-even"><p>opencascade::handle&lt;PrsMgr_PresentationManager&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aMode</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type aMode</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.ResetHilightMode">
+<code class="sig-name descname">ResetHilightMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.ResetHilightMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Resets the higlight mode for this framework. This defines the type of display used to highlight the owner of the shape when it is detected by the selector. The default type of display is wireframe, defined by the index 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.SetHilightMode">
+<code class="sig-name descname">SetHilightMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.SetHilightMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the highlight mode for this framework. This defines the type of display used to highlight the owner of the shape when it is detected by the selector. The default type of display is wireframe, defined by the index 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMode</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMode</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.SetLocation">
+<code class="sig-name descname">SetLocation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.SetLocation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aLoc</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aLoc</dt>
+<dd class="field-odd"><p>TopLoc_Location &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.Unhilight">
+<code class="sig-name descname">Unhilight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.Unhilight" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes highlighting from the type of shape identified the selection mode aMode in the presentation manager aPM.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPM</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPM</dt>
+<dd class="field-even"><p>opencascade::handle&lt;PrsMgr_PresentationManager&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aMode</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type aMode</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.UpdateHighlightTrsf">
+<code class="sig-name descname">UpdateHighlightTrsf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.UpdateHighlightTrsf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Implements immediate application of location transformation of parent object to dynamic highlight structure</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theViewer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theViewer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;V3d_Viewer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theManager</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theManager</dt>
+<dd class="field-even"><p>opencascade::handle&lt;PrsMgr_PresentationManager3d&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDispMode</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDispMode</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepOwner.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepOwner.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool">
+<em class="property">class </em><code class="sig-name descname">StdSelect_BRepSelectionTool</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool.ComputeSensitive">
+<em class="property">static </em><code class="sig-name descname">ComputeSensitive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool.ComputeSensitive" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the sensitive primitives, stores them in the SelectMgr_Selection object, and returns this object. &#64;param theShape shape to compute sensitive entities &#64;param theOwner selectable owner object &#64;param theSelection selection to append new sensitive entities &#64;param theDeflection linear deflection &#64;param theDeflAngle angular deflection &#64;param theNbPOnEdge sensitivity parameters for edges and wires &#64;param theMaxiParam sensitivity parameters for infinite objects (the default value is 500) &#64;param theAutoTriang flag to compute triangulation for the faces which have none</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOwner</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOwner</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_EntityOwner&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theSelection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSelection</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_Selection&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDeflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theDeflAngle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeflAngle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theNbPOnEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theNbPOnEdge</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theMaxiParam</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxiParam</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theAutoTriang</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theAutoTriang</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool.GetEdgeSensitive">
+<em class="property">static </em><code class="sig-name descname">GetEdgeSensitive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool.GetEdgeSensitive" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Create a sensitive edge or sensitive wire. &#64;param theShape either TopoDS_Edge or TopoDS_Wire to compute sensitive entities &#64;param theOwner selectable owner object &#64;param theSelection selection to append new sensitive entities &#64;param theDeflection linear deflection &#64;param theDeviationAngle angular deflection &#64;param theNbPOnEdge sensitivity parameters &#64;param theMaxiParam sensitivity parameters</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOwner</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOwner</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_EntityOwner&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theSelection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSelection</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_Selection&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDeflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theDeviationAngle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeviationAngle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theNbPOnEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theNbPOnEdge</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theMaxiParam</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxiParam</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theSensitive</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSensitive</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Select3D_SensitiveEntity&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool.GetSensitiveForFace">
+<em class="property">static </em><code class="sig-name descname">GetSensitiveForFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool.GetSensitiveForFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Creates the 3D sensitive entities for Face selection. &#64;param theFace face to compute sensitive entities &#64;param theOwner selectable owner object &#64;param theOutList output result list to append created entities &#64;param theAutoTriang obsolete flag (has no effect) &#64;param theNbPOnEdge sensitivity parameters &#64;param theMaxiParam sensitivity parameters &#64;param theInteriorFlag flag indicating that face interior (True) or face boundary (False) should be selectable</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theOwner</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOwner</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_EntityOwner&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theOutList</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOutList</dt>
+<dd class="field-even"><p>Select3D_EntitySequence &amp;</p>
+</dd>
+<dt class="field-odd">param theAutoTriang</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theAutoTriang</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theNbPOnEdge</dt>
+<dd class="field-odd"><p>default value is 9</p>
+</dd>
+<dt class="field-even">type theNbPOnEdge</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theMaxiParam</dt>
+<dd class="field-odd"><p>default value is 500</p>
+</dd>
+<dt class="field-even">type theMaxiParam</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theInteriorFlag</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theInteriorFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool.GetStandardPriority">
+<em class="property">static </em><code class="sig-name descname">GetStandardPriority</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool.GetStandardPriority" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the standard priority of the shape aShap having the type aType. This priority is passed to a StdSelect_BRepOwner object. You can use the function Load to modify the selection priority of an owner to make one entity more selectable than another one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool.Load">
+<em class="property">static </em><code class="sig-name descname">Load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool.Load" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Decomposition of &lt;aShape&gt; into sensitive entities following a mode of decomposition &lt;aType&gt;. These entities are stored in &lt;aSelection&gt;. BrepOwners are created to store the identity of the picked shapes during the selection process. In those BRepOwners is also stored the original shape. But One can’t get the selectable object which was decomposed to give the sensitive entities. maximal parameter is used for infinite objects, to limit the sensitive Domain…. If AutoTriangulation = True, a Triangulation will be computed for faces which have no existing one. if AutoTriangulation = False the old algorithm will be called to compute sensitive entities on faces.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aSelection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSelection</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_Selection&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">param theDeflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theDeviationAngle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeviationAngle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AutoTriangulation</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type AutoTriangulation</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param aPriority</dt>
+<dd class="field-odd"><p>default value is -1</p>
+</dd>
+<dt class="field-even">type aPriority</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NbPOnEdge</dt>
+<dd class="field-odd"><p>default value is 9</p>
+</dd>
+<dt class="field-even">type NbPOnEdge</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaximalParameter</dt>
+<dd class="field-odd"><p>default value is 500</p>
+</dd>
+<dt class="field-even">type MaximalParameter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Same functionnalities ; the only difference is that the selectable object from which the selection comes is stored in each Sensitive EntityOwner; decomposition of &lt;aShape&gt; into sensitive entities following a mode of decomposition &lt;aType&gt;. These entities are stored in &lt;aSelection&gt; The Major difference is that the known users are first inserted in the BRepOwners. the original shape is the last user… (see EntityOwner from SelectBasics and BrepOwner)…</p>
+</dd>
+<dt class="field-even">param aSelection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aSelection</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;SelectMgr_Selection&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Origin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Origin</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;SelectMgr_SelectableObject&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param aType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aType</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-even">param theDeflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDeflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theDeviationAngle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDeviationAngle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param AutoTriangulation</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type AutoTriangulation</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param aPriority</dt>
+<dd class="field-even"><p>default value is -1</p>
+</dd>
+<dt class="field-odd">type aPriority</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NbPOnEdge</dt>
+<dd class="field-even"><p>default value is 9</p>
+</dd>
+<dt class="field-odd">type NbPOnEdge</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaximalParameter</dt>
+<dd class="field-even"><p>default value is 500</p>
+</dd>
+<dt class="field-odd">type MaximalParameter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool.PreBuildBVH">
+<em class="property">static </em><code class="sig-name descname">PreBuildBVH</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool.PreBuildBVH" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Traverses the selection given and pre-builds BVH trees for heavyweight sensitive entities containing more than BVH_PRIMITIVE_LIMIT (defined in .cxx file) sub-elements.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSelection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSelection</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_Selection&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_BRepSelectionTool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_BRepSelectionTool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_EdgeFilter">
+<em class="property">class </em><code class="sig-name descname">StdSelect_EdgeFilter</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_EdgeFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.SelectMgr.html#OCC.Core.SelectMgr.SelectMgr_Filter" title="OCC.Core.SelectMgr.SelectMgr_Filter"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.SelectMgr.SelectMgr_Filter</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an edge filter object defined by the type of edge Edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Edge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Edge</dt>
+<dd class="field-even"><p>StdSelect_TypeOfEdge</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_EdgeFilter.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_EdgeFilter.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_EdgeFilter.SetType">
+<code class="sig-name descname">SetType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_EdgeFilter.SetType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the type of edge aNewType. aNewType is to be highlighted in selection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewType</dt>
+<dd class="field-even"><p>StdSelect_TypeOfEdge</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_EdgeFilter.Type">
+<code class="sig-name descname">Type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_EdgeFilter.Type" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of edge to be highlighted in selection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>StdSelect_TypeOfEdge</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_EdgeFilter.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_EdgeFilter.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_FaceFilter">
+<em class="property">class </em><code class="sig-name descname">StdSelect_FaceFilter</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_FaceFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.SelectMgr.html#OCC.Core.SelectMgr.SelectMgr_Filter" title="OCC.Core.SelectMgr.SelectMgr_Filter"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.SelectMgr.SelectMgr_Filter</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a face filter object defined by the type of face aTypeOfFace.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aTypeOfFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aTypeOfFace</dt>
+<dd class="field-even"><p>StdSelect_TypeOfFace</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_FaceFilter.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_FaceFilter.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_FaceFilter.SetType">
+<code class="sig-name descname">SetType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_FaceFilter.SetType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the type of face aNewType. aNewType is to be highlighted in selection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewType</dt>
+<dd class="field-even"><p>StdSelect_TypeOfFace</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_FaceFilter.Type">
+<code class="sig-name descname">Type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_FaceFilter.Type" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of face to be highlighted in selection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>StdSelect_TypeOfFace</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_FaceFilter.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_FaceFilter.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs">
+<em class="property">class </em><code class="sig-name descname">StdSelect_IndexedDataMapOfOwnerPrs</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ChangeFromIndex">
+<code class="sig-name descname">ChangeFromIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ChangeFromIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ChangeFromKey">
+<code class="sig-name descname">ChangeFromKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ChangeFromKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Contains">
+<code class="sig-name descname">Contains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Contains" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindFromIndex">
+<code class="sig-name descname">FindFromIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindFromIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindFromKey">
+<code class="sig-name descname">FindFromKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindFromKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindIndex">
+<code class="sig-name descname">FindIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindKey">
+<code class="sig-name descname">FindKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.FindKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.RemoveFromIndex">
+<code class="sig-name descname">RemoveFromIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.RemoveFromIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.RemoveKey">
+<code class="sig-name descname">RemoveKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.RemoveKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.RemoveLast">
+<code class="sig-name descname">RemoveLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.RemoveLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Substitute">
+<code class="sig-name descname">Substitute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Substitute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Swap">
+<code class="sig-name descname">Swap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.Swap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_IndexedDataMapOfOwnerPrs.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_Prs">
+<em class="property">class </em><code class="sig-name descname">StdSelect_Prs</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Prs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Graphic3d.html#OCC.Core.Graphic3d.Graphic3d_Structure" title="OCC.Core.Graphic3d.Graphic3d_Structure"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Graphic3d.Graphic3d_Structure</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aStructureManager</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aStructureManager</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_StructureManager&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_Prs.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Prs.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_Prs.Manager">
+<code class="sig-name descname">Manager</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Prs.Manager" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_StructureManager&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_Prs.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Prs.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_Shape">
+<em class="property">class </em><code class="sig-name descname">StdSelect_Shape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Shape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.PrsMgr.html#OCC.Core.PrsMgr.PrsMgr_PresentableObject" title="OCC.Core.PrsMgr.PrsMgr_PresentableObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.PrsMgr.PrsMgr_PresentableObject</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theShape</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p>default value is opencascade::handle&lt;Prs3d_Drawer&gt;()</p>
+</dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_Shape.Compute">
+<code class="sig-name descname">Compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Shape.Compute" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aPresentationManager</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aPresentationManager</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;PrsMgr_PresentationManager3d&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aPresentation</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aPresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aMode</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type aMode</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* computes the presentation according to a point of view given by &lt;aProjector&gt;. To be Used when the associated degenerated Presentations have been transformed by &lt;aTrsf&gt; which is not a Pure Translation. The HLR Prs can’t be deducted automatically WARNING :&lt;aTrsf&gt; must be applied to the object to display before computation !!!</p>
+</dd>
+<dt class="field-odd">param aProjector</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aProjector</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Projector&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aTrsf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aTrsf</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Transformation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_Shape.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Shape.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_Shape.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Shape.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>TopoDS_Shape:param theShape:
+:type theShape: TopoDS_Shape &amp;
+:rtype: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_Shape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_Shape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_ShapeTypeFilter">
+<em class="property">class </em><code class="sig-name descname">StdSelect_ShapeTypeFilter</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ShapeTypeFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.SelectMgr.html#OCC.Core.SelectMgr.SelectMgr_Filter" title="OCC.Core.SelectMgr.SelectMgr_Filter"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.SelectMgr.SelectMgr_Filter</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a filter object defined by the shape type aType.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ShapeTypeFilter.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ShapeTypeFilter.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ShapeTypeFilter.Type">
+<code class="sig-name descname">Type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ShapeTypeFilter.Type" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of shape selected by the filter.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ShapeTypeFilter.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ShapeTypeFilter.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d">
+<em class="property">class </em><code class="sig-name descname">StdSelect_ViewerSelector3d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an empty 3D selector object.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.ClearSensitive">
+<code class="sig-name descname">ClearSensitive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.ClearSensitive" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theView</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theView</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;V3d_View&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.DisplaySensitive">
+<code class="sig-name descname">DisplaySensitive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.DisplaySensitive" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Displays sensitives in view &lt;theView&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theView</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theView</dt>
+<dd class="field-even"><p>opencascade::handle&lt;V3d_View&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None:param theSel:</p>
+</dd>
+<dt class="field-even">type theSel</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_Selection&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theTrsf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTrsf</dt>
+<dd class="field-even"><p>gp_Trsf</p>
+</dd>
+<dt class="field-odd">param theView</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theView</dt>
+<dd class="field-even"><p>opencascade::handle&lt;V3d_View&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theToClearOthers</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theToClearOthers</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.Pick">
+<code class="sig-name descname">Pick</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.Pick" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Picks the sensitive entity at the pixel coordinates of the mouse &lt;theXPix&gt; and &lt;theYPix&gt;. The selector looks for touched areas and owners.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theXPix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theXPix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theYPix</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theYPix</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theView</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theView</dt>
+<dd class="field-even"><p>opencascade::handle&lt;V3d_View&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Picks the sensitive entity according to the minimum and maximum pixel values &lt;theXPMin&gt;, &lt;theYPMin&gt;, &lt;theXPMax&gt; and &lt;theYPMax&gt; defining a 2D area for selection in the 3D view aView.</p>
+</dd>
+<dt class="field-even">param theXPMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theXPMin</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theYPMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theYPMin</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theXPMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theXPMax</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theYPMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theYPMax</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theView</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theView</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;V3d_View&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* pick action - input pixel values for polyline selection for selection.</p>
+</dd>
+<dt class="field-odd">param thePolyline</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePolyline</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">param theView</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theView</dt>
+<dd class="field-even"><p>opencascade::handle&lt;V3d_View&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.PixelTolerance">
+<code class="sig-name descname">PixelTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.PixelTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the pixel tolerance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.SetPixelTolerance">
+<code class="sig-name descname">SetPixelTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.SetPixelTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the pixel tolerance &lt;theTolerance&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theTolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTolerance</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.ToPixMap">
+<code class="sig-name descname">ToPixMap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.ToPixMap" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Dump of detection results into image. This method performs axis picking for each pixel in the image and generates a color depending on picking results and selection image type. &#64;param theImage result image, should be initialized &#64;param theView 3D view defining camera position &#64;param theType type of image to define &#64;param thePickedIndex index of picked entity (1 means topmost)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theImage</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theImage</dt>
+<dd class="field-even"><p>Image_PixMap &amp;</p>
+</dd>
+<dt class="field-odd">param theView</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theView</dt>
+<dd class="field-even"><p>opencascade::handle&lt;V3d_View&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theType</dt>
+<dd class="field-even"><p>StdSelect_TypeOfSelectionImage</p>
+</dd>
+<dt class="field-odd">param thePickedIndex</dt>
+<dd class="field-odd"><p>default value is 1</p>
+</dd>
+<dt class="field-even">type thePickedIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.StdSelect_ViewerSelector3d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.StdSelect_ViewerSelector3d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdSelect.stdselect">
+<em class="property">class </em><code class="sig-name descname">stdselect</code><a class="headerlink" href="#OCC.Core.StdSelect.stdselect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdSelect.stdselect.SetDrawerForBRepOwner">
+<em class="property">static </em><code class="sig-name descname">SetDrawerForBRepOwner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdSelect.stdselect.SetDrawerForBRepOwner" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>puts The same drawer in every BRepOwner Of SensitivePrimitive Used Only for hilight Of BRepOwner…</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aSelection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSelection</dt>
+<dd class="field-even"><p>opencascade::handle&lt;SelectMgr_Selection&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdSelect.stdselect.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdSelect.stdselect.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

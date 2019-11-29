@@ -1,0 +1,3408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.MAT module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.MAT module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.MAT module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.MAT.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.MAT">
+<span id="occ-core-mat-module"></span><h1>OCC.Core.MAT module<a class="headerlink" href="#module-OCC.Core.MAT" title="Permalink to this headline">¶</a></h1>
+<p>MAT module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_mat.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_mat.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_Arc">
+<em class="property">class </em><code class="sig-name descname">MAT_Arc</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ArcIndex</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ArcIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param GeomIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type GeomIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param FirstElement</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FirstElement</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_BasicElt&gt; &amp;</p>
+</dd>
+<dt class="field-even">param SecondElement</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type SecondElement</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_BasicElt&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.FirstElement">
+<code class="sig-name descname">FirstElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.FirstElement" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns one of the BasicElt equidistant from &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_BasicElt&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.FirstNode">
+<code class="sig-name descname">FirstNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.FirstNode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns one Node extremity of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Node&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.GeomIndex">
+<code class="sig-name descname">GeomIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.GeomIndex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index associated of the geometric representation of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.HasNeighbour">
+<code class="sig-name descname">HasNeighbour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.HasNeighbour" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returnst True is there is an arc linked to the Node &lt;aNode&gt; located on the side &lt;aSide&gt; of &lt;self&gt;; if &lt;aNode&gt; is not on &lt;self&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNode</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNode</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_Node&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aSide</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSide</dt>
+<dd class="field-even"><p>MAT_Side</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.Index" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index of &lt;self&gt; in Graph.theArcs.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.Neighbour">
+<code class="sig-name descname">Neighbour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.Neighbour" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the first arc linked to the Node &lt;aNode&gt; located on the side &lt;aSide&gt; of &lt;self&gt;; if HasNeighbour() returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNode</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNode</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_Node&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aSide</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSide</dt>
+<dd class="field-even"><p>MAT_Side</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SecondElement">
+<code class="sig-name descname">SecondElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SecondElement" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the other BasicElt equidistant from &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_BasicElt&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SecondNode">
+<code class="sig-name descname">SecondNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SecondNode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the other Node extremity of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Node&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetFirstArc">
+<code class="sig-name descname">SetFirstArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetFirstArc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aSide</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aSide</dt>
+<dd class="field-odd"><p>MAT_Side</p>
+</dd>
+<dt class="field-even">param anArc</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type anArc</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetFirstElement">
+<code class="sig-name descname">SetFirstElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetFirstElement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aBasicElt</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aBasicElt</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_BasicElt&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetFirstNode">
+<code class="sig-name descname">SetFirstNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetFirstNode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aNode</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aNode</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Node&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetGeomIndex">
+<code class="sig-name descname">SetGeomIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetGeomIndex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anInteger</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anInteger</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetIndex">
+<code class="sig-name descname">SetIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetIndex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anInteger</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anInteger</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetNeighbour">
+<code class="sig-name descname">SetNeighbour</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetNeighbour" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aSide</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aSide</dt>
+<dd class="field-odd"><p>MAT_Side</p>
+</dd>
+<dt class="field-even">param aNode</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aNode</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Node&gt; &amp;</p>
+</dd>
+<dt class="field-even">param anArc</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type anArc</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetSecondArc">
+<code class="sig-name descname">SetSecondArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetSecondArc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aSide</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aSide</dt>
+<dd class="field-odd"><p>MAT_Side</p>
+</dd>
+<dt class="field-even">param anArc</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type anArc</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetSecondElement">
+<code class="sig-name descname">SetSecondElement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetSecondElement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aBasicElt</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aBasicElt</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_BasicElt&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.SetSecondNode">
+<code class="sig-name descname">SetSecondNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.SetSecondNode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aNode</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aNode</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Node&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.TheOtherNode">
+<code class="sig-name descname">TheOtherNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.TheOtherNode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>an Arc has two Node, if &lt;aNode&gt; egal one Returns the other. //! if &lt;aNode&gt; is not oh &lt;self&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNode</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNode</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_Node&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Node&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Arc.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_Arc.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_BasicElt">
+<em class="property">class </em><code class="sig-name descname">MAT_BasicElt</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor, &lt;anInteger&gt; is the &lt;index&gt; of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param anInteger</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type anInteger</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.EndArc">
+<code class="sig-name descname">EndArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.EndArc" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return &lt;endArcLeft&gt; or &lt;endArcRight&gt; corresponding to &lt;aSide&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.GeomIndex">
+<code class="sig-name descname">GeomIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.GeomIndex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the &lt;GeomIndex&gt; of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.Index" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the &lt;index&gt; of &lt;self&gt; in Graph.TheBasicElts.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.SetEndArc">
+<code class="sig-name descname">SetEndArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.SetEndArc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anArc</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anArc</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.SetGeomIndex">
+<code class="sig-name descname">SetGeomIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.SetGeomIndex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anInteger</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anInteger</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.SetIndex">
+<code class="sig-name descname">SetIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.SetIndex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anInteger</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anInteger</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.SetStartArc">
+<code class="sig-name descname">SetStartArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.SetStartArc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anArc</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anArc</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.StartArc">
+<code class="sig-name descname">StartArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.StartArc" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return &lt;startArcLeft&gt; or &lt;startArcRight&gt; corresponding to &lt;aSide&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_BasicElt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_BasicElt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_Bisector">
+<em class="property">class </em><code class="sig-name descname">MAT_Bisector</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.AddBisector">
+<code class="sig-name descname">AddBisector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.AddBisector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>abisector</strong> – <dl class="field-list simple">
+<dt class="field-odd">type abisector</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.BisectorNumber">
+<code class="sig-name descname">BisectorNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.BisectorNumber" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anumber</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anumber</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.DistIssuePoint">
+<code class="sig-name descname">DistIssuePoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.DistIssuePoint" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>areal</strong> – <dl class="field-list simple">
+<dt class="field-odd">type areal</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.Dump">
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ashift</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ashift</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param alevel</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type alevel</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.EndPoint">
+<code class="sig-name descname">EndPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.EndPoint" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>apoint</strong> – <dl class="field-list simple">
+<dt class="field-odd">type apoint</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.FirstBisector">
+<code class="sig-name descname">FirstBisector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.FirstBisector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.FirstEdge">
+<code class="sig-name descname">FirstEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.FirstEdge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anedge</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anedge</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.FirstParameter">
+<code class="sig-name descname">FirstParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.FirstParameter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aparameter</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aparameter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.FirstVector">
+<code class="sig-name descname">FirstVector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.FirstVector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>avector</strong> – <dl class="field-list simple">
+<dt class="field-odd">type avector</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.IndexNumber">
+<code class="sig-name descname">IndexNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.IndexNumber" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anumber</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anumber</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.IssuePoint">
+<code class="sig-name descname">IssuePoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.IssuePoint" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>apoint</strong> – <dl class="field-list simple">
+<dt class="field-odd">type apoint</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.LastBisector">
+<code class="sig-name descname">LastBisector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.LastBisector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.List">
+<code class="sig-name descname">List</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.List" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_ListOfBisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.SecondEdge">
+<code class="sig-name descname">SecondEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.SecondEdge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anedge</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anedge</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.SecondParameter">
+<code class="sig-name descname">SecondParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.SecondParameter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aparameter</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aparameter</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.SecondVector">
+<code class="sig-name descname">SecondVector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.SecondVector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>avector</strong> – <dl class="field-list simple">
+<dt class="field-odd">type avector</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.Sense">
+<code class="sig-name descname">Sense</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.Sense" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>asense</strong> – <dl class="field-list simple">
+<dt class="field-odd">type asense</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Bisector.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_Bisector.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc">
+<em class="property">class </em><code class="sig-name descname">MAT_DataMapOfIntegerArc</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerArc.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerArc.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt">
+<em class="property">class </em><code class="sig-name descname">MAT_DataMapOfIntegerBasicElt</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBasicElt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector">
+<em class="property">class </em><code class="sig-name descname">MAT_DataMapOfIntegerBisector</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerBisector.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerBisector.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode">
+<em class="property">class </em><code class="sig-name descname">MAT_DataMapOfIntegerNode</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_DataMapOfIntegerNode.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_DataMapOfIntegerNode.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_Edge">
+<em class="property">class </em><code class="sig-name descname">MAT_Edge</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.Distance">
+<code class="sig-name descname">Distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.Distance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>adistance</strong> – <dl class="field-list simple">
+<dt class="field-odd">type adistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.Dump">
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ashift</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ashift</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param alevel</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type alevel</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.EdgeNumber">
+<code class="sig-name descname">EdgeNumber</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.EdgeNumber" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anumber</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anumber</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.FirstBisector">
+<code class="sig-name descname">FirstBisector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.FirstBisector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>abisector</strong> – <dl class="field-list simple">
+<dt class="field-odd">type abisector</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.IntersectionPoint">
+<code class="sig-name descname">IntersectionPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.IntersectionPoint" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>apoint</strong> – <dl class="field-list simple">
+<dt class="field-odd">type apoint</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.SecondBisector">
+<code class="sig-name descname">SecondBisector</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.SecondBisector" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>abisector</strong> – <dl class="field-list simple">
+<dt class="field-odd">type abisector</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:rtype: opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Edge.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_Edge.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_Graph">
+<em class="property">class </em><code class="sig-name descname">MAT_Graph</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.Arc">
+<code class="sig-name descname">Arc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.Arc" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the Arc of index &lt;Index&gt; in &lt;theArcs&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.BasicElt">
+<code class="sig-name descname">BasicElt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.BasicElt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the BasicElt of index &lt;Index&gt; in &lt;theBasicElts&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_BasicElt&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.ChangeBasicElt">
+<code class="sig-name descname">ChangeBasicElt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.ChangeBasicElt" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Index</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_BasicElt&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.ChangeBasicElts">
+<code class="sig-name descname">ChangeBasicElts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.ChangeBasicElts" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>NewMap</strong> – <dl class="field-list simple">
+<dt class="field-odd">type NewMap</dt>
+<dd class="field-odd"><p>MAT_DataMapOfIntegerBasicElt &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.CompactArcs">
+<code class="sig-name descname">CompactArcs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.CompactArcs" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.CompactNodes">
+<code class="sig-name descname">CompactNodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.CompactNodes" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.FusionOfBasicElts">
+<code class="sig-name descname">FusionOfBasicElts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.FusionOfBasicElts" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Merge two BasicElts. The End of the BasicElt Elt1 of IndexElt1 becomes The End of the BasicElt Elt2 of IndexElt2. Elt2 is replaced in the arcs by Elt1, Elt2 is eliminated. //! &lt;MergeArc1&gt; is True if the fusion of the BasicElts =&gt; a fusion of two Arcs which separated the same elements. In this case &lt;GeomIndexArc1&gt; and &lt;GeomIndexArc2&gt; are the Geometric Index of this arcs. //! If the BasicElt corresponds to a close line , the StartArc and the EndArc of Elt1 can separate the same elements . In this case there is a fusion of this arcs, &lt;MergeArc2&gt; is true and &lt;GeomIndexArc3&gt; and &lt;GeomIndexArc4&gt; are the Geometric Index of this arcs.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IndexElt1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndexElt1</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param IndexElt2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IndexElt2</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MergeArc1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MergeArc1</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param GeomIndexArc1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type GeomIndexArc1</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param GeomIndexArc2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type GeomIndexArc2</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param MergeArc2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MergeArc2</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param GeomIndexArc3</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type GeomIndexArc3</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param GeomIndexArc4</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type GeomIndexArc4</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.Node">
+<code class="sig-name descname">Node</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.Node" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the Node of index &lt;Index&gt; in &lt;theNodes&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Node&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.NumberOfArcs">
+<code class="sig-name descname">NumberOfArcs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.NumberOfArcs" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the number of arcs of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.NumberOfBasicElts">
+<code class="sig-name descname">NumberOfBasicElts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.NumberOfBasicElts" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the number of basic elements of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.NumberOfInfiniteNodes">
+<code class="sig-name descname">NumberOfInfiniteNodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.NumberOfInfiniteNodes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the number of infinites nodes of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.NumberOfNodes">
+<code class="sig-name descname">NumberOfNodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.NumberOfNodes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the number of nodes of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Construct &lt;self&gt; from the result of the method &lt;CreateMat&gt; of the class &lt;MAT&gt; from &lt;MAT&gt;. //! &lt;SemiInfinite&gt;<span class="classifier">if some bisector are infinites. &lt;TheRoots&gt;</span><span class="classifier">Set of the bisectors. &lt;NbBasicElts&gt;</span><span class="classifier">Number of Basic Elements. &lt;NbArcs&gt;</span><span class="classifier">Number of Arcs = Number of Bisectors.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param SemiInfinite</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SemiInfinite</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param TheRoots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TheRoots</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_ListOfBisector&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param NbBasicElts</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NbBasicElts</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NbArcs</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NbArcs</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Graph.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_Graph.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector">
+<em class="property">class </em><code class="sig-name descname">MAT_ListOfBisector</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.BackAdd">
+<code class="sig-name descname">BackAdd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.BackAdd" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Brackets">
+<code class="sig-name descname">Brackets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Brackets" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anindex</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anindex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Current">
+<code class="sig-name descname">Current</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Current" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;:param anitem:
+:type anitem: opencascade::handle&lt;MAT_Bisector&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Dump">
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ashift</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ashift</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param alevel</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type alevel</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.First" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.FirstItem">
+<code class="sig-name descname">FirstItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.FirstItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.FrontAdd">
+<code class="sig-name descname">FrontAdd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.FrontAdd" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Index" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aniten</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aniten</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Last" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.LastItem">
+<code class="sig-name descname">LastItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.LastItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.LinkAfter">
+<code class="sig-name descname">LinkAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.LinkAfter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.LinkBefore">
+<code class="sig-name descname">LinkBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.LinkBefore" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Loop">
+<code class="sig-name descname">Loop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Loop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.More" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Next" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.NextItem">
+<code class="sig-name descname">NextItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.NextItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Number">
+<code class="sig-name descname">Number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Number" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Permute">
+<code class="sig-name descname">Permute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Permute" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Previous">
+<code class="sig-name descname">Previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Previous" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.PreviousItem">
+<code class="sig-name descname">PreviousItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.PreviousItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.Unlink">
+<code class="sig-name descname">Unlink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.Unlink" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfBisector.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfBisector.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge">
+<em class="property">class </em><code class="sig-name descname">MAT_ListOfEdge</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.BackAdd">
+<code class="sig-name descname">BackAdd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.BackAdd" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Brackets">
+<code class="sig-name descname">Brackets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Brackets" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anindex</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anindex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Current">
+<code class="sig-name descname">Current</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Current" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt;:param anitem:
+:type anitem: opencascade::handle&lt;MAT_Edge&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Dump">
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ashift</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ashift</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param alevel</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type alevel</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.First" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.FirstItem">
+<code class="sig-name descname">FirstItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.FirstItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.FrontAdd">
+<code class="sig-name descname">FrontAdd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.FrontAdd" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Index" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aniten</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aniten</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Last" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.LastItem">
+<code class="sig-name descname">LastItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.LastItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.LinkAfter">
+<code class="sig-name descname">LinkAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.LinkAfter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.LinkBefore">
+<code class="sig-name descname">LinkBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.LinkBefore" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Loop">
+<code class="sig-name descname">Loop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Loop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.More" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Next" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.NextItem">
+<code class="sig-name descname">NextItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.NextItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Number">
+<code class="sig-name descname">Number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Number" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Permute">
+<code class="sig-name descname">Permute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Permute" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Previous">
+<code class="sig-name descname">Previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Previous" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.PreviousItem">
+<code class="sig-name descname">PreviousItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.PreviousItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.Unlink">
+<code class="sig-name descname">Unlink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.Unlink" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_ListOfEdge.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_ListOfEdge.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_Node">
+<em class="property">class </em><code class="sig-name descname">MAT_Node</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>GeomIndex</strong> – <dl class="field-list simple">
+<dt class="field-odd">type GeomIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param LinkedArc</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LinkedArc</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Distance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Distance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.Distance">
+<code class="sig-name descname">Distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.Distance" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.GeomIndex">
+<code class="sig-name descname">GeomIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.GeomIndex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index associated of the geometric representation of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.Index" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index associated of the node</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.Infinite">
+<code class="sig-name descname">Infinite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.Infinite" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the distance of &lt;self&gt; is Infinite</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.LinkedArcs">
+<code class="sig-name descname">LinkedArcs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.LinkedArcs" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns in &lt;S&gt; the Arcs linked to &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>MAT_SequenceOfArc &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.NearElts">
+<code class="sig-name descname">NearElts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.NearElts" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns in &lt;S&gt; the BasicElts equidistant to &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>MAT_SequenceOfBasicElt &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.OnBasicElt">
+<code class="sig-name descname">OnBasicElt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.OnBasicElt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if &lt;self&gt; belongs to the figure.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.PendingNode">
+<code class="sig-name descname">PendingNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.PendingNode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if &lt;self&gt; is a pending Node. (ie<span class="classifier">the number of Arc Linked = 1)</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.SetIndex">
+<code class="sig-name descname">SetIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.SetIndex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the index associated of the node</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param anIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type anIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.SetLinkedArc">
+<code class="sig-name descname">SetLinkedArc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.SetLinkedArc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anArc</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anArc</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Node.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_Node.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc">
+<em class="property">class </em><code class="sig-name descname">MAT_SequenceOfArc</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfArc.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfArc.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt">
+<em class="property">class </em><code class="sig-name descname">MAT_SequenceOfBasicElt</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_SequenceOfBasicElt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_SequenceOfBasicElt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector">
+<em class="property">class </em><code class="sig-name descname">MAT_TListNodeOfListOfBisector</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param anitem:
+:type anitem: opencascade::handle&lt;MAT_Bisector&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector.Dummy">
+<code class="sig-name descname">Dummy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector.Dummy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector.GetItem">
+<code class="sig-name descname">GetItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector.GetItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector.Next" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_TListNodeOfListOfBisector&gt;:param atlistnode:
+:type atlistnode: opencascade::handle&lt;MAT_TListNodeOfListOfBisector&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector.Previous">
+<code class="sig-name descname">Previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector.Previous" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_TListNodeOfListOfBisector&gt;:param atlistnode:
+:type atlistnode: opencascade::handle&lt;MAT_TListNodeOfListOfBisector&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector.SetItem">
+<code class="sig-name descname">SetItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector.SetItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Bisector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfBisector.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfBisector.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge">
+<em class="property">class </em><code class="sig-name descname">MAT_TListNodeOfListOfEdge</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param anitem:
+:type anitem: opencascade::handle&lt;MAT_Edge&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge.Dummy">
+<code class="sig-name descname">Dummy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge.Dummy" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge.GetItem">
+<code class="sig-name descname">GetItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge.GetItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge.Next" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_TListNodeOfListOfEdge&gt;:param atlistnode:
+:type atlistnode: opencascade::handle&lt;MAT_TListNodeOfListOfEdge&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge.Previous">
+<code class="sig-name descname">Previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge.Previous" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_TListNodeOfListOfEdge&gt;:param atlistnode:
+:type atlistnode: opencascade::handle&lt;MAT_TListNodeOfListOfEdge&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge.SetItem">
+<code class="sig-name descname">SetItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge.SetItem" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>anitem</strong> – <dl class="field-list simple">
+<dt class="field-odd">type anitem</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_TListNodeOfListOfEdge.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_TListNodeOfListOfEdge.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.MAT_Zone">
+<em class="property">class </em><code class="sig-name descname">MAT_Zone</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Compute the frontier of the Zone of proximity.
+:param aBasicElt:
+:type aBasicElt: opencascade::handle&lt;MAT_BasicElt&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Zone.ArcOnFrontier">
+<code class="sig-name descname">ArcOnFrontier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone.ArcOnFrontier" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the Arc number &lt;Index&gt; on the frontier. of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;MAT_Arc&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Zone.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Zone.Limited">
+<code class="sig-name descname">Limited</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone.Limited" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return True if &lt;self&gt; is Limited.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Zone.NoEmptyZone">
+<code class="sig-name descname">NoEmptyZone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone.NoEmptyZone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return True if &lt;self&gt; is not empty .</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Zone.NumberOfArcs">
+<code class="sig-name descname">NumberOfArcs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone.NumberOfArcs" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the number Of Arcs On the frontier of &lt;self&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Zone.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute the frontier of the Zone of proximity.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aBasicElt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aBasicElt</dt>
+<dd class="field-even"><p>opencascade::handle&lt;MAT_BasicElt&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.MAT_Zone.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.MAT_Zone.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.MAT.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.MAT.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.MAT.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

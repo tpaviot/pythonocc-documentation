@@ -1,0 +1,3578 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BRepOffsetAPI module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BRepOffsetAPI module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BRepOffsetAPI module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BRepOffsetAPI.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BRepOffsetAPI">
+<span id="occ-core-brepoffsetapi-module"></span><h1>OCC.Core.BRepOffsetAPI module<a class="headerlink" href="#module-OCC.Core.BRepOffsetAPI" title="Permalink to this headline">¶</a></h1>
+<p>BRepOffsetAPI module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepoffsetapi.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepoffsetapi.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_DraftAngle</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_ModifyShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_ModifyShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_ModifyShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an empty algorithm to perform taper-adding transformations on faces of a shape. Use the Init function to define the shape to be tapered.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes an algorithm to perform taper-adding transformations on faces of the shape S. S will be referred to as the initial shape of the algorithm.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the face F, the direction Direction, the angle Angle, the plane NeutralPlane, and the flag Flag to the framework created at construction time, and with this data, defines the taper-adding transformation. F is a face, which belongs to the initial shape of this algorithm or to the shape loaded by the function Init. Only planar, cylindrical or conical faces can be tapered: - If the face F is planar, it is tapered by inclining it through the angle Angle about the line of intersection between the plane NeutralPlane and F. Direction indicates the side of NeutralPlane from which matter is removed if Angle is positive or added if Angle is negative. - If F is cylindrical or conical, it is transformed in the same way on a single face, resulting in a conical face if F is cylindrical, and a conical or cylindrical face if it is already conical. The taper-adding transformation is propagated from the face F along the series of planar, cylindrical or conical faces containing F, which are tangential to one another. Use the function AddDone to check if this taper-adding transformation is successful. Warning Nothing is done if: - the face F does not belong to the initial shape of this algorithm, or - the face F is not planar, cylindrical or conical. Exceptions - Standard_NullObject if the initial shape is not defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the Init function. - Standard_ConstructionError if the previous call to Add has failed. The function AddDone ought to have been used to check for this, and the function Remove to cancel the results of the unsuccessful taper-adding transformation and to retrieve the previous shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param Direction</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Direction</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">param Angle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param NeutralPlane</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NeutralPlane</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param Flag</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Flag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.AddDone">
+<code class="sig-name descname">AddDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.AddDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the previous taper-adding transformation performed by this algorithm in the last call to Add, was successful. If AddDone returns false: - the function ProblematicShape returns the face on which the error occurred, - the function Remove has to be used to cancel the results of the unsuccessful taper-adding transformation and to retrieve the previous shape. Exceptions Standard_NullObject if the initial shape has not been defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the .Init function.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Cancels the results of all taper-adding transformations performed by this algorithm on the initial shape. These results will have been defined by successive calls to the function Add.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.ConnectedFaces">
+<code class="sig-name descname">ConnectedFaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.ConnectedFaces" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns all the faces which have been added together with the face &lt;F&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.CorrectWires">
+<code class="sig-name descname">CorrectWires</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.CorrectWires" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes, or reinitializes this taper-adding algorithm with the shape S. S will be referred to as the initial shape of this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.ModifiedFaces">
+<code class="sig-name descname">ModifiedFaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.ModifiedFaces" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns all the faces on which a modification has been given.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.ProblematicShape">
+<code class="sig-name descname">ProblematicShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.ProblematicShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the shape on which an error occurred after an unsuccessful call to Add or when IsDone returns false. Exceptions Standard_NullObject if the initial shape has not been defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the Init function.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Remove" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Cancels the taper-adding transformation previously performed by this algorithm on the face F and the series of tangential faces which contain F, and retrieves the shape before the last taper-adding transformation. Warning You will have to use this function if the previous call to Add fails. Use the function AddDone to check it. Exceptions - Standard_NullObject if the initial shape has not been defined, i.e. if this algorithm has not been initialized with the non-empty constructor or the Init function. - Standard_NoSuchObject if F has not been added or has already been removed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.Status" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns an error status when an error has occured (Face, Edge or Vertex recomputaion problem). Otherwise returns Draft_NoError. The method may be called if AddDone returns Standard_False, or when IsDone returns Standard_False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Draft_ErrorStatus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_DraftAngle.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_FindContigousEdges</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Initializes an algorithm for identifying contiguous edges on shapes with tolerance as the tolerance of contiguity (defaulted to 1.0e-6). This tolerance value is used to determine whether two edges or sections of edges are coincident. Use the function Add to define the shapes to be checked. Set option to false. This argument (defaulted to true) will serve in subsequent software releases for performing an analysis of degenerated shapes.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param tolerance</dt>
+<dd class="field-odd"><p>default value is 1.0e-06</p>
+</dd>
+<dt class="field-even">type tolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param option</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type option</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the shape shape to the list of shapes to be checked by this algorithm. Once all the shapes to be checked have been added, use the function Perform to find the contiguous edges and the function ContigousEdge to return these edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.ContigousEdge">
+<code class="sig-name descname">ContigousEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.ContigousEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the contiguous edge of index index found by the function Perform on the shapes added to this algorithm. Exceptions Standard_OutOfRange if: - index is less than 1, or - index is greater than the number of contiguous edges found by the function Perform on the shapes added to this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Edge</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.ContigousEdgeCouple">
+<code class="sig-name descname">ContigousEdgeCouple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.ContigousEdgeCouple" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns a list of edges coincident with the contiguous edge of index index found by the function Perform. There are as many edges in the list as there are faces adjacent to this contiguous edge. Exceptions Standard_OutOfRange if: - index is less than 1, or - index is greater than the number of contiguous edges found by the function Perform on the shapes added to this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.DegeneratedShape">
+<code class="sig-name descname">DegeneratedShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.DegeneratedShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gives a degenerated shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Dump">
+<code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Dump properties of resulting shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes this algorithm for identifying contiguous edges on shapes using the tolerance of contiguity tolerance. This tolerance value is used to determine whether two edges or sections of edges are coincident. Use the function Add to define the shapes to be checked. Sets &lt;option&gt; to false.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param tolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type tolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param option</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type option</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.IsDegenerated">
+<code class="sig-name descname">IsDegenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.IsDegenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Indicates if a input shape is degenerated</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.IsModified">
+<code class="sig-name descname">IsModified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.IsModified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the copy of the initial shape shape was modified by the function Perform (i.e. if one or more of its edges was broken down into contiguous and non-contiguous sections). Warning Returns false if shape is not one of the initial shapes added to this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Modified">
+<code class="sig-name descname">Modified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Modified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gives a modifieded shape Raises NoSuchObject if shape has not been modified</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.NbContigousEdges">
+<code class="sig-name descname">NbContigousEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.NbContigousEdges" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of contiguous edges found by the function Perform on the shapes added to this algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.NbDegeneratedShapes">
+<code class="sig-name descname">NbDegeneratedShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.NbDegeneratedShapes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gives the number of degenerated shapes</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Finds coincident parts of edges of two or more shapes added to this algorithm and breaks down these edges into contiguous and non-contiguous sections on copies of the initial shapes. The function ContigousEdge returns contiguous edges. The function Modified can be used to return modified copies of the initial shapes where one or more edges were broken down into contiguous and non-contiguous sections. Warning This function must be used once all the shapes to be checked have been added. It is not possible to add further shapes subsequently and then to repeat the call to Perform.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.SectionToBoundary">
+<code class="sig-name descname">SectionToBoundary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.SectionToBoundary" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the edge on the initial shape, of which the modified copy contains the edge section. section is coincident with a contiguous edge found by the function Perform. Use the function ContigousEdgeCouple to obtain a valid section. This information is useful for verification purposes, since it provides a means of determining the surface to which the contiguous edge belongs. Exceptions Standard_NoSuchObject if section is not coincident with a contiguous edge. Use the function ContigousEdgeCouple to obtain a valid section.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param section</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type section</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Edge</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_FindContigousEdges.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakeDraft</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs the draft surface object defined by the shape Shape, the direction Dir, and the angle Angle. Shape must be a TopoDS_Wire, Topo_DS_Face or TopoDS_Shell with free boundaries. Exceptions Standard_NotDone if Shape is not a TopoDS_Wire, Topo_DS_Face or TopoDS_Shell with free boundaries.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param Dir</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dir</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">param Angle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs the draft using the length LengthMax as the maximum length for the corner edge between two draft faces.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param LengthMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LengthMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Performs the draft up to the surface Surface. If KeepInsideSurface is true, the part of Surface inside the draft is kept in the result.</p>
+</dd>
+<dt class="field-even">param Surface</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Surface</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param KeepInsideSurface</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type KeepInsideSurface</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Performs the draft up to the shape StopShape. If KeepOutSide is true, the part of StopShape which is outside the Draft is kept in the result.</p>
+</dd>
+<dt class="field-odd">param StopShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type StopShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param KeepOutSide</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type KeepOutSide</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.SetDraft">
+<code class="sig-name descname">SetDraft</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.SetDraft" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the direction of the draft for this object. If IsInternal is true, the draft is internal to the argument Shape used in the constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IsInternal</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type IsInternal</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.SetOptions">
+<code class="sig-name descname">SetOptions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.SetOptions" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the options of this draft tool. If a transition has to be performed, it can be defined by the mode Style as RightCorner or RoundCorner, RightCorner being a corner defined by a sharp angle, and RoundCorner being a rounded corner. AngleMin is an angular tolerance used to detect whether a transition has to be performed or not. AngleMax sets the maximum value within which a RightCorner transition can be performed. AngleMin and AngleMax are expressed in radians.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Style</dt>
+<dd class="field-odd"><p>default value is BRepBuilderAPI_RightCorner</p>
+</dd>
+<dt class="field-even">type Style</dt>
+<dd class="field-even"><p>BRepBuilderAPI_TransitionMode</p>
+</dd>
+<dt class="field-odd">param AngleMin</dt>
+<dd class="field-odd"><p>default value is 0.01</p>
+</dd>
+<dt class="field-even">type AngleMin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param AngleMax</dt>
+<dd class="field-odd"><p>default value is 3.0</p>
+</dd>
+<dt class="field-even">type AngleMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.Shell">
+<code class="sig-name descname">Shell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.Shell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the shell resulting from performance of the draft along the wire.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shell</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeDraft.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakeEvolved</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Constructs an evolved shape by sweeping the profile (theProfile) along the spine (theSpine) theSpine can be shape only of type wire or face. See description to this class for detailed information.
+:param theSpine:
+:type theSpine: TopoDS_Shape &amp;
+:param theProfile:
+:type theProfile: TopoDS_Wire &amp;
+:param theJoinType: default value is GeomAbs_Arc
+:type theJoinType: GeomAbs_JoinType
+:param theIsAxeProf: default value is Standard_True
+:type theIsAxeProf: bool
+:param theIsSolid: default value is Standard_False
+:type theIsSolid: bool
+:param theIsProfOnSpine: default value is Standard_False
+:type theIsProfOnSpine: bool
+:param theTol: default value is 0.0000001
+:type theTol: float
+:param theIsVolume: default value is Standard_False
+:type theIsVolume: bool
+:param theRunInParallel: default value is Standard_False
+:type theRunInParallel: bool
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.Bottom">
+<code class="sig-name descname">Bottom</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.Bottom" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the face Bottom if &lt;Solid&gt; is True in the constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.Evolved">
+<code class="sig-name descname">Evolved</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.Evolved" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.BRepFill.html#OCC.Core.BRepFill.BRepFill_Evolved" title="OCC.Core.BRepFill.BRepFill_Evolved">BRepFill_Evolved</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.GeneratedShapes">
+<code class="sig-name descname">GeneratedShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.GeneratedShapes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the shapes created from a subshape &lt;SpineShape&gt; of the spine and a subshape &lt;ProfShape&gt; on the profile.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param SpineShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SpineShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param ProfShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ProfShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.Top">
+<code class="sig-name descname">Top</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.Top" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return the face Top if &lt;Solid&gt; is True in the constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeEvolved.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakeFilling</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a wire filling object defined by - the energy minimizing criterion Degree - the number of points on the curve NbPntsOnCur - the number of iterations NbIter - the Boolean Anisotropie - the 2D tolerance Tol2d - the 3D tolerance Tol3d - the angular tolerance TolAng - the tolerance for curvature TolCur - the highest polynomial degree MaxDeg - the greatest number of segments MaxSeg. If the Boolean Anistropie is true, the algorithm’s performance is better in cases where the ratio of the length U and the length V indicate a great difference between the two. In other words, when the surface is, for example, extremely long.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Degree</dt>
+<dd class="field-odd"><p>default value is 3</p>
+</dd>
+<dt class="field-even">type Degree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NbPtsOnCur</dt>
+<dd class="field-odd"><p>default value is 15</p>
+</dd>
+<dt class="field-even">type NbPtsOnCur</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NbIter</dt>
+<dd class="field-odd"><p>default value is 2</p>
+</dd>
+<dt class="field-even">type NbIter</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Anisotropie</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Anisotropie</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Tol2d</dt>
+<dd class="field-odd"><p>default value is 0.00001</p>
+</dd>
+<dt class="field-even">type Tol2d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p>default value is 0.0001</p>
+</dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TolAng</dt>
+<dd class="field-odd"><p>default value is 0.01</p>
+</dd>
+<dt class="field-even">type TolAng</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TolCurv</dt>
+<dd class="field-odd"><p>default value is 0.1</p>
+</dd>
+<dt class="field-even">type TolCurv</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param MaxDeg</dt>
+<dd class="field-odd"><p>default value is 8</p>
+</dd>
+<dt class="field-even">type MaxDeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaxSegments</dt>
+<dd class="field-odd"><p>default value is 9</p>
+</dd>
+<dt class="field-even">type MaxSegments</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds a new constraint which also defines an edge of the wire of the face Order: Order of the constraint: GeomAbs_C0<span class="classifier">the surface has to pass by 3D representation of the edge GeomAbs_G1</span><span class="classifier">the surface has to pass by 3D representation of the edge and to respect tangency with the first face of the edge GeomAbs_G2</span><span class="classifier">the surface has to pass by 3D representation of the edge and to respect tangency and curvature with the first face of the edge. Raises ConstructionError if the edge has no representation on a face and Order is GeomAbs_G1 or GeomAbs_G2.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Constr</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Constr</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param Order</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Order</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param IsBound</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type IsBound</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Adds a new constraint which also defines an edge of the wire of the face Order: Order of the constraint: GeomAbs_C0 : the surface has to pass by 3D representation of the edge GeomAbs_G1 : the surface has to pass by 3D representation of the edge and to respect tangency with the given face GeomAbs_G2 : the surface has to pass by 3D representation of the edge and to respect tangency and curvature with the given face. Raises ConstructionError if the edge has no 2d representation on the given face</p>
+</dd>
+<dt class="field-even">param Constr</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Constr</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param Support</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Support</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param Order</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Order</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param IsBound</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type IsBound</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int* Adds a free constraint on a face. The corresponding edge has to be automatically recomputed. It is always a bound.</p>
+</dd>
+<dt class="field-odd">param Support</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Support</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param Order</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Order</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Adds a punctual constraint.</p>
+</dd>
+<dt class="field-even">param Point</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Point</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int* Adds a punctual constraint.</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Support</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Support</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param Order</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Order</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.G0Error">
+<code class="sig-name descname">G0Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.G0Error" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the maximum distance between the result and the constraints. This is set at construction time.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Returns the maximum distance attained between the result and the constraint Index. This is set at construction time.</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.G1Error">
+<code class="sig-name descname">G1Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.G1Error" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the maximum angle between the result and the constraints. This is set at construction time.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Returns the maximum angle between the result and the constraints. This is set at construction time.</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.G2Error">
+<code class="sig-name descname">G2Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.G2Error" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the maximum angle between the result and the constraints. This is set at construction time.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Returns the greatest difference in curvature found between the result and the constraint Index.</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.LoadInitSurface">
+<code class="sig-name descname">LoadInitSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.LoadInitSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Loads the initial surface Surf to begin the construction of the surface. This optional function is useful if the surface resulting from construction for the algorithm is likely to be complex. The support surface of the face under construction is computed by a deformation of Surf which satisfies the given constraints. The set of bounding edges defines the wire of the face. If no initial surface is given, the algorithm computes it automatically. If the set of edges is not connected (Free constraint), missing edges are automatically computed. Important: the initial surface must have orthogonal local coordinates, i.e. partial derivatives dS/du and dS/dv must be orthogonal at each point of surface. If this condition breaks, distortions of resulting surface are possible.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Surf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Surf</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.SetApproxParam">
+<code class="sig-name descname">SetApproxParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.SetApproxParam" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameters used to approximate the filling surface. These include: - MaxDeg - the highest degree which the polynomial defining the filling surface can have - MaxSegments - the greatest number of segments which the filling surface can have.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param MaxDeg</dt>
+<dd class="field-odd"><p>default value is 8</p>
+</dd>
+<dt class="field-even">type MaxDeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaxSegments</dt>
+<dd class="field-odd"><p>default value is 9</p>
+</dd>
+<dt class="field-even">type MaxSegments</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.SetConstrParam">
+<code class="sig-name descname">SetConstrParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.SetConstrParam" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the values of Tolerances used to control the constraint. Tol2d: Tol3d: it is the maximum distance allowed between the support surface and the constraints TolAng: it is the maximum angle allowed between the normal of the surface and the constraints TolCurv: it is the maximum difference of curvature allowed between the surface and the constraint</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Tol2d</dt>
+<dd class="field-odd"><p>default value is 0.00001</p>
+</dd>
+<dt class="field-even">type Tol2d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p>default value is 0.0001</p>
+</dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TolAng</dt>
+<dd class="field-odd"><p>default value is 0.01</p>
+</dd>
+<dt class="field-even">type TolAng</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TolCurv</dt>
+<dd class="field-odd"><p>default value is 0.1</p>
+</dd>
+<dt class="field-even">type TolCurv</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.SetResolParam">
+<code class="sig-name descname">SetResolParam</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.SetResolParam" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameters used for resolution. The default values of these parameters have been chosen for a good ratio quality/performance. Degree: it is the order of energy criterion to minimize for computing the deformation of the surface. The default value is 3 The recommanded value is i+2 where i is the maximum order of the constraints. NbPtsOnCur: it is the average number of points for discretisation of the edges. NbIter: it is the maximum number of iterations of the process. For each iteration the number of discretisation points is increased. Anisotropie:</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Degree</dt>
+<dd class="field-odd"><p>default value is 3</p>
+</dd>
+<dt class="field-even">type Degree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NbPtsOnCur</dt>
+<dd class="field-odd"><p>default value is 15</p>
+</dd>
+<dt class="field-even">type NbPtsOnCur</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NbIter</dt>
+<dd class="field-odd"><p>default value is 2</p>
+</dd>
+<dt class="field-even">type NbIter</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Anisotropie</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Anisotropie</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeFilling.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakeOffset</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an algorithm for creating an empty offset</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructs an algorithm for creating an algorithm to build parallels to the spine Spine</p>
+</dd>
+<dt class="field-even">param Spine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param Join</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type Join</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">param IsOpenResult</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type IsOpenResult</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Spine:</p>
+</dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-even">param Join</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type Join</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">param IsOpenResult</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type IsOpenResult</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.AddWire">
+<code class="sig-name descname">AddWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.AddWire" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the algorithm to construct parallels to the wire Spine.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Spine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Spine</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the algorithm to construct parallels to the spine Spine. Join defines the type of parallel generated by the salient vertices of the spine. The default type is GeomAbs_Arc where the vertices generate sections of a circle. If join type is GeomAbs_Intersection, the edges that intersect in a salient vertex generate the edges prolonged until intersection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Spine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Spine</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param Join</dt>
+<dd class="field-odd"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-even">type Join</dt>
+<dd class="field-even"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-odd">param IsOpenResult</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type IsOpenResult</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initialize the evaluation of Offseting.</p>
+</dd>
+<dt class="field-even">param Join</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type Join</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">param IsOpenResult</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type IsOpenResult</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes a parallel to the spine at distance Offset and at an altitude Alt from the plane of the spine in relation to the normal to the spine. Exceptions: StdFail_NotDone if the offset is not built.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Offset</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Offset</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Alt</dt>
+<dd class="field-odd"><p>default value is 0.0</p>
+</dd>
+<dt class="field-even">type Alt</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffset.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakeOffsetShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor does nothing.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Deprecated constructor. Please avoid usage of this constructor.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Mode</dt>
+<dd class="field-even"><p>default value is BRepOffset_Skin</p>
+</dd>
+<dt class="field-odd">type Mode</dt>
+<dd class="field-odd"><p>BRepOffset_Mode</p>
+</dd>
+<dt class="field-even">param Intersection</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Intersection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param SelfInter</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type SelfInter</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Join</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type Join</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">param RemoveIntEdges</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type RemoveIntEdges</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.GeneratedEdge">
+<code class="sig-name descname">GeneratedEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.GeneratedEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the list of edges generated from the shape &lt;S&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.GetJoinType">
+<code class="sig-name descname">GetJoinType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.GetJoinType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns offset join type.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.MakeOffset">
+<code class="sig-name descname">MakeOffset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.MakeOffset" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns instance of the unrelying intersection / arc algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepOffset_MakeOffset</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.PerformByJoin">
+<code class="sig-name descname">PerformByJoin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.PerformByJoin" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a shape parallel to the shape S, where - S may be a face, a shell, a solid or a compound of these shape kinds; - Offset is the offset value. The offset shape is constructed: - outside S, if Offset is positive, - inside S, if Offset is negative; - Tol defines the coincidence tolerance criterion for generated shapes; - Mode defines the construction type of parallels applied to the free edges of shape S; currently, only one construction type is implemented, namely the one where the free edges do not generate parallels; this corresponds to the default value BRepOffset_Skin; - Intersection specifies how the algorithm must work in order to limit the parallels to two adjacent shapes: - if Intersection is false (default value), the intersection is calculated with the parallels to the two adjacent shapes, - if Intersection is true, the intersection is calculated by taking all generated parallels into account; this computation method is more general as it avoids some self-intersections generated in the offset shape from features of small dimensions on shape S, however this method has not been completely implemented and therefore is not recommended for use; - SelfInter tells the algorithm whether a computation to eliminate self-intersections must be applied to the resulting shape; however, as this functionality is not yet implemented, it is recommended to use the default value (false); - Join defines how to fill the holes that may appear between parallels to the two adjacent faces. It may take values GeomAbs_Arc or GeomAbs_Intersection: - if Join is equal to GeomAbs_Arc, then pipes are generated between two free edges of two adjacent parallels, and spheres are generated on ‘images’ of vertices; it is the default value, - if Join is equal to GeomAbs_Intersection, then the parallels to the two adjacent faces are enlarged and intersected, so that there are no free edges on parallels to faces. RemoveIntEdges flag defines whether to remove the INTERNAL edges from the result or not. Warnings 1. All the faces of the shape S should be based on the surfaces with continuity at least C1. 2. The offset value should be sufficiently small to avoid self-intersections in resulting shape. Otherwise these self-intersections may appear inside an offset face if its initial surface is not plane or sphere or cylinder, also some non-adjacent offset faces may intersect each other. Also, some offset surfaces may ‘turn inside out’. 3. The algorithm may fail if the shape S contains vertices where more than 3 edges converge. 4. Since 3d-offset algorithm involves intersection of surfaces, it is under limitations of surface intersection algorithm. 5. A result cannot be generated if the underlying geometry of S is BSpline with continuity C0. Exceptions Geom_UndefinedDerivative if the underlying geometry of S is BSpline with continuity C0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param Offset</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Offset</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Mode</dt>
+<dd class="field-odd"><p>default value is BRepOffset_Skin</p>
+</dd>
+<dt class="field-even">type Mode</dt>
+<dd class="field-even"><p>BRepOffset_Mode</p>
+</dd>
+<dt class="field-odd">param Intersection</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Intersection</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param SelfInter</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type SelfInter</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Join</dt>
+<dd class="field-odd"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-even">type Join</dt>
+<dd class="field-even"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-odd">param RemoveIntEdges</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type RemoveIntEdges</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.PerformBySimple">
+<code class="sig-name descname">PerformBySimple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.PerformBySimple" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Constructs offset shape for the given one using simple algorithm without intersections computation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOffsetValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOffsetValue</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakePipe</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepPrimAPI.html#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a pipe by sweeping the shape Profile along the wire Spine.The angle made by the spine with the profile is maintained along the length of the pipe. Warning Spine must be G1 continuous; that is, on the connection vertex of two edges of the wire, the tangent vectors on the left and on the right must have the same direction, though not necessarily the same magnitude. Exceptions Standard_DomainError if the profile is a solid or a composite solid.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Spine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Spine</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">param Profile</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Profile</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* the same as previous but with setting of mode of sweep and the flag that indicates attempt to approximate a C1-continuous surface if a swept surface proved to be C0.</p>
+</dd>
+<dt class="field-even">param Spine</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Spine</dt>
+<dd class="field-odd"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-even">param Profile</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Profile</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param aMode</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aMode</dt>
+<dd class="field-odd"><p>GeomFill_Trihedron</p>
+</dd>
+<dt class="field-even">param ForceApproxC1</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type ForceApproxC1</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.ErrorOnSurface">
+<code class="sig-name descname">ErrorOnSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.ErrorOnSurface" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.Generated">
+<code class="sig-name descname">Generated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.Generated" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopTools_ListOfShape:param SSpine:</p>
+</dd>
+<dt class="field-odd">type SSpine</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param SProfile</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type SProfile</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.Pipe">
+<code class="sig-name descname">Pipe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.Pipe" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.BRepFill.html#OCC.Core.BRepFill.BRepFill_Pipe" title="OCC.Core.BRepFill.BRepFill_Pipe">BRepFill_Pipe</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipe.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakePipeShell</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepPrimAPI.html#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs the shell-generating framework defined by the wire Spine. Sets an sweep’s mode If no mode are setted, the mode use in MakePipe is used</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Spine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Spine</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the section Profile to this framework. First and last sections may be punctual, so the shape Profile may be both wire and vertex. Correspondent point on spine is computed automatically. If WithContact is true, the section is translated to be in contact with the spine. If WithCorrection is true, the section is rotated to be orthogonal to the spine?s tangent in the correspondent point. This option has no sense if the section is punctual (Profile is of type TopoDS_Vertex).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Profile</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Profile</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param WithContact</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type WithContact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param WithCorrection</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type WithCorrection</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Adds the section Profile to this framework. Correspondent point on the spine is given by Location. Warning: To be effective, it is not recommended to combine methods Add and SetLaw.</p>
+</dd>
+<dt class="field-even">param Profile</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Profile</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param Location</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Location</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param WithContact</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type WithContact</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param WithCorrection</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type WithCorrection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Delete">
+<code class="sig-name descname">Delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes the section Profile from this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Profile</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Profile</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.ErrorOnSurface">
+<code class="sig-name descname">ErrorOnSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.ErrorOnSurface" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#float" title="(in Python v2.7)">float</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.GetStatus">
+<code class="sig-name descname">GetStatus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.GetStatus" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get a status, when Simulate or Build failed. It can be BRepBuilderAPI_PipeDone, BRepBuilderAPI_PipeNotDone, BRepBuilderAPI_PlaneNotIntersectGuide, BRepBuilderAPI_ImpossibleContact.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepBuilderAPI_PipeError</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.IsReady">
+<code class="sig-name descname">IsReady</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.IsReady" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if this tool object is ready to build the shape, i.e. has a definition for the wire section Profile.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.MakeSolid">
+<code class="sig-name descname">MakeSolid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.MakeSolid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Transforms the sweeping Shell in Solid. If a propfile is not closed returns False</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Profiles">
+<code class="sig-name descname">Profiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Profiles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the list of original profiles</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theProfiles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theProfiles</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetDiscreteMode">
+<code class="sig-name descname">SetDiscreteMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetDiscreteMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets a Discrete trihedron to perform the sweeping</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetForceApproxC1">
+<code class="sig-name descname">SetForceApproxC1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetForceApproxC1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the flag that indicates attempt to approximate a C1-continuous surface if a swept surface proved to be C0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param ForceApproxC1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ForceApproxC1</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetLaw">
+<code class="sig-name descname">SetLaw</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetLaw" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the evolution law defined by the wire Profile with its position (Location, WithContact, WithCorrection are the same options as in methods Add) and a homotetic law defined by the function L. Warning: To be effective, it is not recommended to combine methods Add and SetLaw.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Profile</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Profile</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Law_Function&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param WithContact</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type WithContact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param WithCorrection</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type WithCorrection</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Sets the evolution law defined by the wire Profile with its position (Location, WithContact, WithCorrection are the same options as in methods Add) and a homotetic law defined by the function L. Warning: To be effective, it is not recommended to combine methods Add and SetLaw.</p>
+</dd>
+<dt class="field-even">param Profile</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Profile</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Law_Function&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Location</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Location</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param WithContact</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type WithContact</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param WithCorrection</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type WithCorrection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetMaxDegree">
+<code class="sig-name descname">SetMaxDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetMaxDegree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define the maximum V degree of resulting surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param NewMaxDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewMaxDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetMaxSegments">
+<code class="sig-name descname">SetMaxSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetMaxSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define the maximum number of spans in V-direction on resulting surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param NewMaxSegments</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewMaxSegments</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetMode">
+<code class="sig-name descname">SetMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets a Frenet or a CorrectedFrenet trihedron to perform the sweeping If IsFrenet is false, a corrected Frenet trihedron is used.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IsFrenet</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type IsFrenet</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Sets a fixed trihedron to perform the sweeping all sections will be parallel.</p>
+</dd>
+<dt class="field-even">param Axe</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axe</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets a fixed BiNormal direction to perform the – sweeping. Angular relations beetween the section(s) and &lt;BiNormal&gt; will be constant</p>
+</dd>
+<dt class="field-odd">param BiNormal</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BiNormal</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Sets support to the spine to define the BiNormal of the trihedron, like the normal to the surfaces. Warning: To be effective, Each edge of the &lt;spine&gt; must have an representaion on one face of&lt;SpineSupport&gt;</p>
+</dd>
+<dt class="field-even">param SpineSupport</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type SpineSupport</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Sets an auxiliary spine to define the Normal For each Point of the Spine P, an Point Q is evalued on &lt;AuxiliarySpine&gt; If &lt;CurvilinearEquivalence&gt; Q split &lt;AuxiliarySpine&gt; with the same length ratio than P split &lt;Spline&gt;. Else the plan define by P and the tangent to the &lt;Spine&gt; intersect &lt;AuxiliarySpine&gt; in Q. If &lt;KeepContact&gt; equals BRepFill_NoContact: The Normal is defined by the vector PQ. If &lt;KeepContact&gt; equals BRepFill_Contact: The Normal is defined to achieve that the sweeped section is in contact to the auxiliarySpine. The width of section is constant all along the path. In other words, the auxiliary spine lies on the swept surface, but not necessarily is a boundary of this surface. However, the auxiliary spine has to be close enough to the main spine to provide intersection with any section all along the path. If &lt;KeepContact&gt; equals BRepFill_ContactOnBorder: The auxiliary spine becomes a boundary of the swept surface and the width of section varies along the path. Give section to sweep. Possibilities are : - Give one or sevral section - Give one profile and an homotetic law. - Automatic compute of correspondance beetween spine, and section on the sweeped shape - correspondance beetween spine, and section on the sweeped shape defined by a vertex of the spine</p>
+</dd>
+<dt class="field-odd">param AuxiliarySpine</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type AuxiliarySpine</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">param CurvilinearEquivalence</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CurvilinearEquivalence</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param KeepContact</dt>
+<dd class="field-odd"><p>default value is BRepFill_NoContact</p>
+</dd>
+<dt class="field-even">type KeepContact</dt>
+<dd class="field-even"><p>BRepFill_TypeOfContact</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetTolerance">
+<code class="sig-name descname">SetTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the following tolerance values - 3D tolerance Tol3d - boundary tolerance BoundTol - angular tolerance TolAngular.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Tol3d</dt>
+<dd class="field-odd"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-even">type Tol3d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param BoundTol</dt>
+<dd class="field-odd"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-even">type BoundTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TolAngular</dt>
+<dd class="field-odd"><p>default value is 1.0e-2</p>
+</dd>
+<dt class="field-even">type TolAngular</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetTransitionMode">
+<code class="sig-name descname">SetTransitionMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.SetTransitionMode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the transition mode to manage discontinuities on the swept shape caused by fractures on the spine. The transition mode can be BRepBuilderAPI_Transformed (default value), BRepBuilderAPI_RightCorner, BRepBuilderAPI_RoundCorner: -  RepBuilderAPI_Transformed: discontinuities are treated by modification of the sweeping mode. The pipe is ‘transformed’ at the fractures of the spine. This mode assumes building a self-intersected shell. -  BRepBuilderAPI_RightCorner: discontinuities are treated like right corner. Two pieces of the pipe corresponding to two adjacent segments of the spine are extended and intersected at a fracture of the spine. -  BRepBuilderAPI_RoundCorner: discontinuities are treated like round corner. The corner is treated as rotation of the profile around an axis which passes through the point of the spine’s fracture. This axis is based on cross product of directions tangent to the adjacent segments of the spine at their common point. Warnings The mode BRepBuilderAPI_RightCorner provides a valid result if intersection of two pieces of the pipe (corresponding to two adjacent segments of the spine) in the neighborhood of the spine?s fracture is connected and planar. This condition can be violated if the spine is non-linear in some neighborhood of the fracture or if the profile was set with a scaling law. The last mode, BRepBuilderAPI_RoundCorner, will assuredly provide a good result only if a profile was set with option WithCorrection = True, i.e. it is strictly orthogonal to the spine.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Mode</dt>
+<dd class="field-odd"><p>default value is BRepBuilderAPI_Transformed</p>
+</dd>
+<dt class="field-even">type Mode</dt>
+<dd class="field-even"><p>BRepBuilderAPI_TransitionMode</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Simulate">
+<code class="sig-name descname">Simulate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Simulate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Simulates the resulting shape by calculating its cross-sections. The spine is devided by this cross-sections into (NumberOfSection - 1) equal parts, the number of cross-sections is NumberOfSection. The cross-sections are wires and they are returned in the list Result. This gives a rapid preview of the resulting shape, which will be obtained using the settings you have provided. Raises NotDone if &lt;self&gt; it is not Ready</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param NumberOfSection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NumberOfSection</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Result</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Result</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Spine">
+<code class="sig-name descname">Spine</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.Spine" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the spine</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Wire</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakePipeShell.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MakeThickSolid</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape" title="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeOffsetShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor does nothing.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Deprecated constructor. Please avoid usage of this constructor.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param ClosingFaces</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ClosingFaces</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param Offset</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Offset</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Mode</dt>
+<dd class="field-even"><p>default value is BRepOffset_Skin</p>
+</dd>
+<dt class="field-odd">type Mode</dt>
+<dd class="field-odd"><p>BRepOffset_Mode</p>
+</dd>
+<dt class="field-even">param Intersection</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Intersection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param SelfInter</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type SelfInter</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Join</dt>
+<dd class="field-even"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-odd">type Join</dt>
+<dd class="field-odd"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-even">param RemoveIntEdges</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type RemoveIntEdges</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid.MakeThickSolidByJoin">
+<code class="sig-name descname">MakeThickSolidByJoin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid.MakeThickSolidByJoin" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a hollowed solid from the solid S by removing the set of faces ClosingFaces from S, where: Offset defines the thickness of the walls. Its sign indicates which side of the surface of the solid the hollowed shape is built on; - Tol defines the tolerance criterion for coincidence in generated shapes; - Mode defines the construction type of parallels applied to free edges of shape S. Currently, only one construction type is implemented, namely the one where the free edges do not generate parallels; this corresponds to the default value BRepOffset_Skin; Intersection specifies how the algorithm must work in order to limit the parallels to two adjacent shapes: - if Intersection is false (default value), the intersection is calculated with the parallels to the two adjacent shapes, - if Intersection is true, the intersection is calculated by taking account of all parallels generated; this computation method is more general as it avoids self-intersections generated in the offset shape from features of small dimensions on shape S, however this method has not been completely implemented and therefore is not recommended for use; - SelfInter tells the algorithm whether a computation to eliminate self-intersections needs to be applied to the resulting shape. However, as this functionality is not yet implemented, you should use the default value (false); - Join defines how to fill the holes that may appear between parallels to the two adjacent faces. It may take values GeomAbs_Arc or GeomAbs_Intersection: - if Join is equal to GeomAbs_Arc, then pipes are generated between two free edges of two adjacent parallels, and spheres are generated on ‘images’ of vertices; it is the default value, - if Join is equal to GeomAbs_Intersection, then the parallels to the two adjacent faces are enlarged and intersected, so that there are no free edges on parallels to faces. RemoveIntEdges flag defines whether to remove the INTERNAL edges from the result or not. Warnings Since the algorithm of MakeThickSolid is based on MakeOffsetShape algorithm, the warnings are the same as for MakeOffsetShape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param ClosingFaces</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ClosingFaces</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param Offset</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Offset</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Mode</dt>
+<dd class="field-odd"><p>default value is BRepOffset_Skin</p>
+</dd>
+<dt class="field-even">type Mode</dt>
+<dd class="field-even"><p>BRepOffset_Mode</p>
+</dd>
+<dt class="field-odd">param Intersection</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Intersection</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param SelfInter</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type SelfInter</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Join</dt>
+<dd class="field-odd"><p>default value is GeomAbs_Arc</p>
+</dd>
+<dt class="field-even">type Join</dt>
+<dd class="field-even"><p>GeomAbs_JoinType</p>
+</dd>
+<dt class="field-odd">param RemoveIntEdges</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type RemoveIntEdges</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid.MakeThickSolidBySimple">
+<code class="sig-name descname">MakeThickSolidBySimple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid.MakeThickSolidBySimple" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Constructs solid using simple algorithm. According to its nature it is not possible to set list of the closing faces. This algorithm does not support faces removing. It is caused by fact that intersections are not computed during offset creation. Non-closed shell or face is expected as input.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOffsetValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOffsetValue</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MakeThickSolid.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MiddlePath">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_MiddlePath</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MiddlePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>General constructor. StartShape and EndShape may be a wire or a face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param StartShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type StartShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param EndShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type EndShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MiddlePath.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_MiddlePath.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_NormalProjection</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an empty framework to define projection on a shape according to the normal from each point to be projected to the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructs a framework to define projection onto the basis shape S according to the normal from each point to be projected from the shape added to this framework by Add. Default parameters of the algorithm: Tol3D = 1.e-04, Tol2D =sqr(tol3d) , InternalContinuity = GeomAbs_C2, MaxDegree = 14, MaxSeg = 16.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the shape ToProj to the framework for calculation of the projection by Compute3d. ToProj is an edge or a wire and will be projected onto the basis shape. Exceptions Standard_ConstructionError if ToProj is not added.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param ToProj</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ToProj</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Ancestor">
+<code class="sig-name descname">Ancestor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Ancestor" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the initial edge corresponding to the edge E resulting from the computation of the projection. Exceptions StdFail_NotDone if no edge was found. Standard_NoSuchObject if an edge corresponding to E has already been found.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.BuildWire">
+<code class="sig-name descname">BuildWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.BuildWire" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>build the result as a list of wire if possible in – a first returns a wire only if there is only a wire.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Liste</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Liste</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Compute3d">
+<code class="sig-name descname">Compute3d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Compute3d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if a 3D curve is computed. If not, false is returned and an initial 3D curve is kept to build the resulting edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param With3d</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type With3d</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Couple">
+<code class="sig-name descname">Couple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Couple" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the initial face corresponding to the projected edge E. Exceptions StdFail_NotDone if no face was found. Standard_NoSuchObject if if a face corresponding to E has already been found.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the empty constructor framework with the shape S.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Projection">
+<code class="sig-name descname">Projection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.Projection" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs the projection. The construction of the result is performed by Build. Exceptions StdFail_NotDone if the projection was not performed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.SetLimit">
+<code class="sig-name descname">SetLimit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.SetLimit" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Manage limitation of projected edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param FaceBoundaries</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type FaceBoundaries</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.SetMaxDistance">
+<code class="sig-name descname">SetMaxDistance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.SetMaxDistance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the maximum distance between target shape and shape to project. If this condition is not satisfied then corresponding part of solution is discarded. if MaxDist &lt; 0 then this method does not affect the algorithm</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param MaxDist</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxDist</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.SetParams">
+<code class="sig-name descname">SetParams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.SetParams" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameters used for computation Tol3 is the requiered tolerance between the 3d projected curve and its 2d representation InternalContinuity is the order of constraints used for approximation MaxDeg and MaxSeg are the maximum degree and the maximum number of segment for BSpline resulting of an approximation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Tol3D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol3D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param InternalContinuity</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type InternalContinuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param MaxDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaxSeg</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxSeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_NormalProjection.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_SequenceOfSequenceOfReal</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfReal.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_SequenceOfSequenceOfShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_SequenceOfSequenceOfShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections">
+<em class="property">class </em><code class="sig-name descname">BRepOffsetAPI_ThruSections</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Initializes an algorithm for building a shell or a solid passing through a set of sections, where: - isSolid is set to true if the construction algorithm is required to build a solid or to false if it is required to build a shell (the default value), - ruled is set to true if the faces generated between the edges of two consecutive wires are ruled surfaces or to false (the default value) if they are smoothed out by approximation, - pres3d defines the precision criterion used by the approximation algorithm; the default value is 1.0e-6. Use AddWire and AddVertex to define the successive sections of the shell or solid to be built.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param isSolid</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type isSolid</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param ruled</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type ruled</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param pres3d</dt>
+<dd class="field-odd"><p>default value is 1.0e-06</p>
+</dd>
+<dt class="field-even">type pres3d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.AddVertex">
+<code class="sig-name descname">AddVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.AddVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the vertex Vertex (punctual section) to the set of sections through which the shell or solid is built. A vertex may be added to the set of sections only as first or last section. At least one wire must be added to the set of sections by the method AddWire. Use the Build function to construct the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aVertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aVertex</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.AddWire">
+<code class="sig-name descname">AddWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.AddWire" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the wire wire to the set of sections through which the shell or solid is built. Use the Build function to construct the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param wire</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type wire</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.CheckCompatibility">
+<code class="sig-name descname">CheckCompatibility</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.CheckCompatibility" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets/unsets the option to compute origin and orientation on wires to avoid twisted results and update wires to have same number of edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param check</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type check</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.Continuity">
+<code class="sig-name descname">Continuity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.Continuity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the Continuity used in the approximation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.CriteriumWeight">
+<code class="sig-name descname">CriteriumWeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.CriteriumWeight" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the Weights associed to the criterium used in the optimization.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param W1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W1</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param W2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W2</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param W3</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W3</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.FirstShape">
+<code class="sig-name descname">FirstShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.FirstShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the bottom of the loft if solid</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.GeneratedFace">
+<code class="sig-name descname">GeneratedFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.GeneratedFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>if Ruled Returns the Face generated by each edge except the last wire if smoothed Returns the Face generated by each edge of the first wire</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Edge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Edge</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes this algorithm for building a shell or a solid passing through a set of sections, where: - isSolid is set to true if this construction algorithm is required to build a solid or to false if it is required to build a shell. false is the default value; - ruled is set to true if the faces generated between the edges of two consecutive wires are ruled surfaces or to false (the default value) if they are smoothed out by approximation, - pres3d defines the precision criterion used by the approximation algorithm; the default value is 1.0e-6. Use AddWire and AddVertex to define the successive sections of the shell or solid to be built.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param isSolid</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type isSolid</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param ruled</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type ruled</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param pres3d</dt>
+<dd class="field-odd"><p>default value is 1.0e-06</p>
+</dd>
+<dt class="field-even">type pres3d</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.LastShape">
+<code class="sig-name descname">LastShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.LastShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the top of the loft if solid</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.MaxDegree">
+<code class="sig-name descname">MaxDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.MaxDegree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the maximal U degree of result surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.ParType">
+<code class="sig-name descname">ParType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.ParType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the type of parametrization used in the approximation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Approx_ParametrizationType</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetContinuity">
+<code class="sig-name descname">SetContinuity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetContinuity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define the Continuity used in the approximation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetCriteriumWeight">
+<code class="sig-name descname">SetCriteriumWeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetCriteriumWeight" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>define the Weights associed to the criterium used in the optimization. //! if Wi &lt;= 0</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param W1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param W2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param W3</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W3</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetMaxDegree">
+<code class="sig-name descname">SetMaxDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetMaxDegree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define the maximal U degree of result surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param MaxDeg</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxDeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetParType">
+<code class="sig-name descname">SetParType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetParType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define the type of parametrization used in the approximation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param ParType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ParType</dt>
+<dd class="field-even"><p>Approx_ParametrizationType</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetSmoothing">
+<code class="sig-name descname">SetSmoothing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.SetSmoothing" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define the approximation algorithm</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UseSmoothing</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UseSmoothing</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.UseSmoothing">
+<code class="sig-name descname">UseSmoothing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.UseSmoothing" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define the approximation algorithm</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.Wires">
+<code class="sig-name descname">Wires</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.Wires" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the list of original wires</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.BRepOffsetAPI_ThruSections.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepOffsetAPI.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepOffsetAPI.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

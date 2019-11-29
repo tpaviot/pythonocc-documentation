@@ -1,0 +1,2982 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.IntAna module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.IntAna module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.IntAna module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.IntAna.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.IntAna">
+<span id="occ-core-intana-module"></span><h1>OCC.Core.IntAna module<a class="headerlink" href="#module-OCC.Core.IntAna" title="Permalink to this headline">¶</a></h1>
+<p>IntAna module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_intana.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_intana.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_Curve">
+<em class="property">class </em><code class="sig-name descname">IntAna_Curve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty Constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.D1u">
+<code class="sig-name descname">D1u</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.D1u" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the point and the first derivative at parameter Theta on the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Theta</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Theta</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.Domain">
+<code class="sig-name descname">Domain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.Domain" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the paramatric domain of the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFirst</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theLast</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLast</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.FindParameter">
+<code class="sig-name descname">FindParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.FindParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Tries to find the parameter of the point P on the curve. If the method returns False, the ‘projection’ is impossible. If the method returns True at least one parameter has been found. theParams is always sorted in ascending order.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theParams</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theParams</dt>
+<dd class="field-even"><p>TColStd_ListOfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.IsConstant">
+<code class="sig-name descname">IsConstant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.IsConstant" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the function is constant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.IsFirstOpen">
+<code class="sig-name descname">IsFirstOpen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.IsFirstOpen" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the domain is open at the beginning.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.IsLastOpen">
+<code class="sig-name descname">IsLastOpen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.IsLastOpen" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the domain is open at the end.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.IsOpen">
+<code class="sig-name descname">IsOpen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.IsOpen" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the curve is not infinite at the last parameter or at the first parameter of the domain.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.SetConeQuadValues">
+<code class="sig-name descname">SetConeQuadValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.SetConeQuadValues" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameters used to compute Points and Derivative on the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Cone</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cone</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Qxx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qxx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qyy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qyy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qzz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qzz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qxy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qxy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qxz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qxz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qyz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qyz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Q1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param DomInf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DomInf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param DomSup</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DomSup</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TwoZForATheta</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TwoZForATheta</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param ZIsPositive</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ZIsPositive</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.SetCylinderQuadValues">
+<code class="sig-name descname">SetCylinderQuadValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.SetCylinderQuadValues" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameters used to compute Points and Derivative on the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Cylinder</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cylinder</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Qxx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qxx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qyy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qyy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qzz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qzz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qxy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qxy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qxz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qxz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qyz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qyz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Qz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Qz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Q1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param DomInf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DomInf</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param DomSup</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type DomSup</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param TwoZForATheta</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TwoZForATheta</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param ZIsPositive</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ZIsPositive</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.SetDomain">
+<code class="sig-name descname">SetDomain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.SetDomain" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Trims this curve</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theLast</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLast</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.SetIsFirstOpen">
+<code class="sig-name descname">SetIsFirstOpen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.SetIsFirstOpen" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>If flag is True, the Curve is not defined at the first parameter of its domain.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Flag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Flag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.SetIsLastOpen">
+<code class="sig-name descname">SetIsLastOpen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.SetIsLastOpen" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>If flag is True, the Curve is not defined at the first parameter of its domain.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Flag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Flag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the point at parameter Theta on the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Theta</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Theta</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Curve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Curve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_Int3Pln">
+<em class="property">class </em><code class="sig-name descname">IntAna_Int3Pln</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Int3Pln" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Determination of the intersection point between 3 planes.
+:param P1:
+:type P1: gp_Pln
+:param P2:
+:type P2: gp_Pln
+:param P3:
+:type P3: gp_Pln
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Int3Pln.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Int3Pln.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the computation was successful.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Int3Pln.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Int3Pln.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if there is no intersection POINT. If 2 planes are identical or parallel, IsEmpty will return True.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Int3Pln.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Int3Pln.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Determination of the intersection point between 3 planes.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param P3</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P3</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Int3Pln.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Int3Pln.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the intersection point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Int3Pln.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Int3Pln.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad">
+<em class="property">class </em><code class="sig-name descname">IntAna_IntConicQuad</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between a line and a quadric.</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">param Q</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Q</dt>
+<dd class="field-odd"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection between a circle and a quadric.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ</p>
+</dd>
+<dt class="field-odd">param Q</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q</dt>
+<dd class="field-even"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between an ellipse and a quadric.</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">param Q</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Q</dt>
+<dd class="field-odd"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection between a parabola and a quadric.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Parab</p>
+</dd>
+<dt class="field-odd">param Q</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q</dt>
+<dd class="field-even"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between an hyperbola and a quadric.</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">param Q</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Q</dt>
+<dd class="field-odd"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between a line and a plane. Tolang is used to determine if the angle between two vectors is null. Tol is used to check the distance between line and plane on the distance &lt;Len&gt; from the origin of the line.</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param Tolang</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolang</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Len</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Len</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a circle and a plane. Tolang is used to determine if the angle between two vectors is null. Tol is used to determine if a distance is null.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param Tolang</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between an ellipse and a plane. Tolang is used to determine if the angle between two vectors is null. Tol is used to determine if a distance is null.</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param Tolang</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolang</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersection between a parabola and a plane. Tolang is used to determine if the angle between two vectors is null.</p>
+</dd>
+<dt class="field-even">param Pb</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pb</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param Tolang</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersection between an hyperbola and a plane. Tolang is used to determine if the angle between two vectors is null.</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param Tolang</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolang</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the creation completed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.IsInQuadric">
+<code class="sig-name descname">IsInQuadric</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.IsInQuadric" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the conic is in the quadric.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.IsParallel">
+<code class="sig-name descname">IsParallel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.IsParallel" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the line is in a quadric which is parallel to the quadric.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.NbPoints">
+<code class="sig-name descname">NbPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.NbPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of intersection point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.ParamOnConic">
+<code class="sig-name descname">ParamOnConic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.ParamOnConic" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter on the line of the intersection point of range N.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Intersects a line and a quadric.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">param Q</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q</dt>
+<dd class="field-even"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a circle and a quadric.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+<dt class="field-even">param Q</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Q</dt>
+<dd class="field-odd"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects an ellipse and a quadric.</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips</p>
+</dd>
+<dt class="field-odd">param Q</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q</dt>
+<dd class="field-even"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a parabola and a quadric.</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+<dt class="field-even">param Q</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Q</dt>
+<dd class="field-odd"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects an hyperbola and a quadric.</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr</p>
+</dd>
+<dt class="field-odd">param Q</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q</dt>
+<dd class="field-even"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a line and a plane. Tolang is used to determine if the angle between two vectors is null. Tol is used to check the distance between line and plane on the distance &lt;Len&gt; from the origin of the line.</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param Tolang</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Len</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type Len</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects a circle and a plane. Tolang is used to determine if the angle between two vectors is null. Tol is used to determine if a distance is null.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param Tolang</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolang</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects an ellipse and a plane. Tolang is used to determine if the angle between two vectors is null. Tol is used to determine if a distance is null.</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param Tolang</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects a parabola and a plane. Tolang is used to determine if the angle between two vectors is null.</p>
+</dd>
+<dt class="field-odd">param Pb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pb</dt>
+<dd class="field-even"><p>gp_Parab</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param Tolang</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolang</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects an hyperbola and a plane. Tolang is used to determine if the angle between two vectors is null.</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param Tolang</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the point of range N.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntConicQuad.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntConicQuad.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus">
+<em class="property">class </em><code class="sig-name descname">IntAna_IntLinTorus</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Creates the intersection between a line and a torus.
+:param L:
+:type L: gp_Lin
+:param T:
+:type T: gp_Torus
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the computation was successful.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus.NbPoints">
+<code class="sig-name descname">NbPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus.NbPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of intersection points.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus.ParamOnLine">
+<code class="sig-name descname">ParamOnLine</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus.ParamOnLine" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter on the line of the intersection point of range Index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus.ParamOnTorus">
+<code class="sig-name descname">ParamOnTorus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus.ParamOnTorus" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameters on the torus of the intersection point of range Index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param FI</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FI</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param THETA</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type THETA</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Intersects a line and a torus.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>gp_Lin</p>
+</dd>
+<dt class="field-odd">param T</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type T</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the intersection point of range Index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntLinTorus.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntLinTorus.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad">
+<em class="property">class </em><code class="sig-name descname">IntAna_IntQuadQuad</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty Constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between a cylinder and a quadric . Tol est a definir plus precisemment.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Q</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Q</dt>
+<dd class="field-odd"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection between a cone and a quadric. Tol est a definir plus precisemment.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Q</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q</dt>
+<dd class="field-even"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.Curve">
+<code class="sig-name descname">Curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the curve of range N.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntAna_Curve</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.HasNextCurve">
+<code class="sig-name descname">HasNextCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.HasNextCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the Curve I shares its last bound with another curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.HasPreviousCurve">
+<code class="sig-name descname">HasPreviousCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.HasPreviousCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the Curve I shares its first bound with another curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.IdenticalElements">
+<code class="sig-name descname">IdenticalElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.IdenticalElements" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the cylinder, the cone or the sphere is identical to the quadric.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the computation was successful.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.NbCurve">
+<code class="sig-name descname">NbCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.NbCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of curves solution.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.NbPnt">
+<code class="sig-name descname">NbPnt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.NbPnt" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of contact point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.NextCurve">
+<code class="sig-name descname">NextCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.NextCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>If HasNextCurve(I) returns True, this function returns the Index J of the curve which has a common bound with the curve I. If theOpposite == True , then the last parameter of the curve I, and the last parameter of the curve J give the same point. Else the last parameter of the curve I and the first parameter of the curve J are the same point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theOpposite</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOpposite</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.Parameters">
+<code class="sig-name descname">Parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.Parameters" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the paramaters on the ‘explicit quadric’ (i.e the cylinder or the cone, the first argument given to the constructor) of the point of range N.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Intersects a cylinder and a quadric . Tol est a definir plus precisemment.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Q</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Q</dt>
+<dd class="field-even"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a cone and a quadric. Tol est a definir plus precisemment.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Q</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Q</dt>
+<dd class="field-odd"><p>IntAna_Quadric &amp;</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the point of range N.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.PreviousCurve">
+<code class="sig-name descname">PreviousCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.PreviousCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>if HasPreviousCurve(I) returns True, this function returns the Index J of the curve which has a common bound with the curve I. If theOpposite == True , then the first parameter of the curve I, and the first parameter of the curve J give the same point. Else the first parameter of the curve I and the last parameter of the curve J are the same point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theOpposite</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOpposite</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_IntQuadQuad.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_IntQuadQuad.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve">
+<em class="property">class </em><code class="sig-name descname">IntAna_ListIteratorOfListOfCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.More" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.Next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListIteratorOfListOfCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve">
+<em class="property">class </em><code class="sig-name descname">IntAna_ListOfCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.RemoveFirst">
+<code class="sig-name descname">RemoveFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.RemoveFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_ListOfCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_ListOfCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo">
+<em class="property">class </em><code class="sig-name descname">IntAna_QuadQuadGeo</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between two planes. TolAng is the angular tolerance used to determine if the planes are parallel. Tol is the tolerance used to determine if the planes are identical (only when they are parallel).</p>
+</dd>
+<dt class="field-even">param P1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P1</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param P2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P2</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param TolAng</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolAng</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection between a plane and a cylinder. TolAng is the angular tolerance used to determine if the axis of the cylinder is parallel to the plane. Tol is the tolerance used to determine if the result is a circle or an ellipse. If the maximum distance between the ellipse solution and the circle centered at the ellipse center is less than Tol, the result will be the circle. H is the height of the cylinder &lt;Cyl&gt;. It is used to check whether the plane and cylinder are parallel.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Tolang</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolang</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between a plane and a sphere.</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection between a plane and a cone. TolAng is the angular tolerance used to determine if the axis of the cone is parallel or perpendicular to the plane, and if the generating line of the cone is parallel to the plane. Tol is the tolerance used to determine if the apex of the cone is in the plane.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Tolang</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolang</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between two cylinders.</p>
+</dd>
+<dt class="field-even">param Cyl1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl1</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Cyl2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl2</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection between a Cylinder and a Sphere.</p>
+</dd>
+<dt class="field-odd">param Cyl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Sph</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection between a Cylinder and a Cone</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Con</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Con</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection between two Spheres.</p>
+</dd>
+<dt class="field-odd">param Sph1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph1</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">param Sph2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph2</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection beween a Sphere and a Cone.</p>
+</dd>
+<dt class="field-even">param Sph</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sph</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param Con</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Con</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection beween two cones.</p>
+</dd>
+<dt class="field-odd">param Con1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Con1</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Con2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Con2</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection beween plane and torus.</p>
+</dd>
+<dt class="field-even">param Pln</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pln</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param Tor</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tor</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection beween cylinder and torus.</p>
+</dd>
+<dt class="field-odd">param Cyl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Tor</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tor</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection beween cone and torus.</p>
+</dd>
+<dt class="field-even">param Con</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Con</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Tor</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tor</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates the intersection beween sphere and torus.</p>
+</dd>
+<dt class="field-odd">param Sph</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">param Tor</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tor</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates the intersection beween two toruses.</p>
+</dd>
+<dt class="field-even">param Tor1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tor1</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Tor2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tor2</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.Circle">
+<code class="sig-name descname">Circle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.Circle" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the circle solution of range Num.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Num</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Circ</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.Ellipse">
+<code class="sig-name descname">Ellipse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.Ellipse" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the ellipse solution of range Num.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Num</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Elips</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.HasCommonGen">
+<code class="sig-name descname">HasCommonGen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.HasCommonGen" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.Hyperbola">
+<code class="sig-name descname">Hyperbola</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.Hyperbola" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the hyperbola solution of range Num.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Num</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Hypr</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns Standard_True if the computation was successful.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.Line">
+<code class="sig-name descname">Line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.Line" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the line solution of range Num.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Num</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Lin</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.NbSolutions">
+<code class="sig-name descname">NbSolutions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.NbSolutions" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of interesections. The possible intersections are<span class="classifier">- 1 point - 1 or 2 line(s) - 1 Point and 1 Line - 1 circle - 1 ellipse - 1 parabola - 1 or 2 hyperbola(s).</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.PChar">
+<code class="sig-name descname">PChar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.PChar" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.gp.html#OCC.Core.gp.gp_Pnt" title="OCC.Core.gp.gp_Pnt">gp_Pnt</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.Parabola">
+<code class="sig-name descname">Parabola</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.Parabola" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parabola solution of range Num.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Num</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Parab</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Intersects two planes. TolAng is the angular tolerance used to determine if the planes are parallel. Tol is the tolerance used to determine if the planes are identical (only when they are parallel).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param TolAng</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TolAng</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a plane and a cylinder. TolAng is the angular tolerance used to determine if the axis of the cylinder is parallel to the plane. Tol is the tolerance used to determine if the result is a circle or an ellipse. If the maximum distance between the ellipse solution and the circle centered at the ellipse center is less than Tol, the result will be the circle. H is the height of the cylinder &lt;Cyl&gt;. It is used to check whether the plane and cylinder are parallel.</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Tolang</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects a plane and a sphere.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a plane and a cone. TolAng is the angular tolerance used to determine if the axis of the cone is parallel or perpendicular to the plane, and if the generating line of the cone is parallel to the plane. Tol is the tolerance used to determine if the apex of the cone is in the plane.</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Tolang</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolang</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects two cylinders</p>
+</dd>
+<dt class="field-odd">param Cyl1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl1</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Cyl2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl2</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a cylinder and a sphere.</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Sph</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sph</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects a cylinder and a cone.</p>
+</dd>
+<dt class="field-odd">param Cyl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param Con</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Con</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects a two spheres.</p>
+</dd>
+<dt class="field-even">param Sph1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sph1</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param Sph2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sph2</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects a sphere and a cone.</p>
+</dd>
+<dt class="field-odd">param Sph</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">param Con</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Con</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects two cones.</p>
+</dd>
+<dt class="field-even">param Con1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Con1</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Con2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Con2</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects plane and torus.</p>
+</dd>
+<dt class="field-odd">param Pln</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pln</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param Tor</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tor</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects cylinder and torus.</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param Tor</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tor</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects cone and torus.</p>
+</dd>
+<dt class="field-odd">param Con</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Con</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param Tor</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tor</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Intersects sphere and torus.</p>
+</dd>
+<dt class="field-even">param Sph</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sph</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param Tor</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tor</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Tol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Intersects two toruses.</p>
+</dd>
+<dt class="field-odd">param Tor1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tor1</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param Tor2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tor2</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the point solution of range Num.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Num</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.TypeInter">
+<code class="sig-name descname">TypeInter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.TypeInter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of intersection.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntAna_ResultType</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_QuadQuadGeo.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_QuadQuadGeo.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.IntAna_Quadric">
+<em class="property">class </em><code class="sig-name descname">IntAna_Quadric</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Quadric" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty Constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a Quadric from a Pln</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates a Quadric from a Sphere</p>
+</dd>
+<dt class="field-odd">param Sph</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a Quadric from a Cylinder</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates a Quadric from a Cone</p>
+</dd>
+<dt class="field-odd">param Cone</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cone</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Quadric.Coefficients">
+<code class="sig-name descname">Coefficients</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Quadric.Coefficients" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the coefficients of the polynomial equation which define the quadric: xCXX x**2 + xCYY y**2 + xCZZ z**2 + 2 ( xCXY x y + xCXZ x z + xCYZ y z ) + 2 ( xCX x + xCY y + xCZ z ) + xCCte</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param xCXX</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCXX</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCYY</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCYY</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCZZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCZZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCXY</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCXY</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCXZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCXZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCYZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCYZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCX</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCX</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCY</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCY</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCCte</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCCte</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Quadric.NewCoefficients">
+<code class="sig-name descname">NewCoefficients</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Quadric.NewCoefficients" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the coefficients of the polynomial equation ( written in the natural coordinates system ) in the local coordinates system defined by Axis</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param xCXX</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCXX</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCYY</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCYY</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCZZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCZZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCXY</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCXY</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCXZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCXZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCYZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCYZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCX</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCX</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCY</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCY</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCZ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCZ</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param xCCte</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xCCte</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Axis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axis</dt>
+<dd class="field-even"><p>gp_Ax3</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Quadric.SetQuadric">
+<code class="sig-name descname">SetQuadric</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Quadric.SetQuadric" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the quadric with a Pln</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initialize the quadric with a Sphere</p>
+</dd>
+<dt class="field-even">param Sph</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sph</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initializes the quadric with a Cone</p>
+</dd>
+<dt class="field-odd">param Con</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Con</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes the quadric with a Cylinder</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Quadric.SpecialPoints">
+<code class="sig-name descname">SpecialPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Quadric.SpecialPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the list of special points (with singularities)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>NCollection_List&lt;gp_Pnt&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.IntAna_Quadric.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.IntAna_Quadric.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntAna.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntAna.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntAna.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

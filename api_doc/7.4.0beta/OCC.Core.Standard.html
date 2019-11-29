@@ -1,0 +1,1564 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.Standard module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.Standard module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.Standard module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.Standard.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.Standard">
+<span id="occ-core-standard-module"></span><h1>OCC.Core.Standard module<a class="headerlink" href="#module-OCC.Core.Standard" title="Permalink to this headline">¶</a></h1>
+<p>Standard module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_standard.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_standard.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_ArrayStreamBuffer">
+<em class="property">class </em><code class="sig-name descname">Standard_ArrayStreamBuffer</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ArrayStreamBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Main constructor. Passed pointer is stored as is (memory is NOT copied nor released with destructor). &#64;param theBegin pointer to the beggining of pre-allocated buffer &#64;param theSize length of pre-allocated buffer</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBegin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBegin</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param theSize</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSize</dt>
+<dd class="field-even"><p>size_t</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ArrayStreamBuffer.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ArrayStreamBuffer.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>(Re)-initialize the stream. Passed pointer is stored as is (memory is NOT copied nor released with destructor). &#64;param theBegin pointer to the beggining of pre-allocated buffer &#64;param theSize length of pre-allocated buffer</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBegin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBegin</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param theSize</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSize</dt>
+<dd class="field-even"><p>size_t</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ArrayStreamBuffer.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_ArrayStreamBuffer.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ArrayStreamBuffer.xsgetn">
+<code class="sig-name descname">xsgetn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ArrayStreamBuffer.xsgetn" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Read a bunch of bytes at once.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePtr</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePtr</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param theCount</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCount</dt>
+<dd class="field-even"><p>std::streamsize</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>std::streamsize</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_Condition">
+<em class="property">class </em><code class="sig-name descname">Standard_Condition</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Condition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Default constructor. &#64;param theIsSet Initial flag state</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theIsSet</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theIsSet</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Condition.Check">
+<code class="sig-name descname">Check</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Condition.Check" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Do not wait for signal - just test it state. returns true if get event</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Condition.CheckReset">
+<code class="sig-name descname">CheckReset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Condition.CheckReset" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Method perform two steps at-once - reset the event object and returns true if it was in signaling state. returns true if event object was in signaling state.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Condition.Reset">
+<code class="sig-name descname">Reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Condition.Reset" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reset event (unset signaling state)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Condition.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Condition.Set" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set event into signaling state.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Condition.Wait">
+<code class="sig-name descname">Wait</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Condition.Wait" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Wait for Event (infinity).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Wait for signal requested time. &#64;param theTimeMilliseconds wait limit in milliseconds returns true if get event</p>
+</dd>
+<dt class="field-even">param theTimeMilliseconds</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theTimeMilliseconds</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Condition.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_Condition.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler">
+<em class="property">class </em><code class="sig-name descname">Standard_ErrorHandler</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Create a ErrorHandler (to be used with try{}catch(){}). It uses the ‘setjmp’ and ‘longjmp’ routines.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.Catches">
+<code class="sig-name descname">Catches</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.Catches" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ‘True’ if the caught exception has the same type or inherits from ‘aType’</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aType</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Standard_Type&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.Destroy">
+<code class="sig-name descname">Destroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.Destroy" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Unlinks and checks if there is a raised exception.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.Error" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the current Error.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Standard_Failure&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.IsInTryBlock">
+<em class="property">static </em><code class="sig-name descname">IsInTryBlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.IsInTryBlock" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Test if the code is currently running in a try block</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.Label">
+<code class="sig-name descname">Label</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.Label" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns label for jump</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_JmpBuf</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.LastCaughtError">
+<em class="property">static </em><code class="sig-name descname">LastCaughtError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.LastCaughtError" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the caught exception.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Standard_Failure&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.Unlink">
+<code class="sig-name descname">Unlink</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.Unlink" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes handler from the handlers list</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_ErrorHandler.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_ErrorHandler.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_GUID">
+<em class="property">class </em><code class="sig-name descname">Standard_GUID</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* build a GUID from an ascii string with the following format: Length : 36 char ‘00000000-0000-0000-0000-000000000000’
+:param aGuid:
+:type aGuid: char *
+:rtype: None* build a GUID from an unicode string with the following format: //! ‘00000000-0000-0000-0000-000000000000’
+:param aGuid:
+:type aGuid: Standard_ExtString
+:rtype: None:param a32b:
+:type a32b: int
+:param a16b1:
+:type a16b1: Standard_ExtCharacter
+:param a16b2:
+:type a16b2: Standard_ExtCharacter
+:param a16b3:
+:type a16b3: Standard_ExtCharacter
+:param a8b1:
+:type a8b1: Standard_Byte
+:param a8b2:
+:type a8b2: Standard_Byte
+:param a8b3:
+:type a8b3: Standard_Byte
+:param a8b4:
+:type a8b4: Standard_Byte
+:param a8b5:
+:type a8b5: Standard_Byte
+:param a8b6:
+:type a8b6: Standard_Byte
+:rtype: None:param aGuid:
+:type aGuid: Standard_UUID &amp;
+:rtype: None:param aGuid:
+:type aGuid: Standard_GUID &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.Assign" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>uid</strong> – <dl class="field-list simple">
+<dt class="field-odd">type uid</dt>
+<dd class="field-odd"><p>Standard_GUID &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param uid:</p>
+</dd>
+<dt class="field-odd">type uid</dt>
+<dd class="field-odd"><p>Standard_UUID &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.CheckGUIDFormat">
+<em class="property">static </em><code class="sig-name descname">CheckGUIDFormat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.CheckGUIDFormat" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Check the format of a GUID string. It checks the size, the position of the ‘-‘ and the correct size of fields.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGuid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGuid</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.Hash">
+<code class="sig-name descname">Hash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.Hash" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Hash function for GUID.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Upper</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Upper</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.HashCode">
+<em class="property">static </em><code class="sig-name descname">HashCode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.HashCode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes a hash code for the given GUID of the Standard_Integer type, in the range [1, theUpperBound] &#64;param theGUID the GUID which hash code is to be computed &#64;param theUpperBound the upper bound of the range a computing hash code must be within returns a computed hash code, in the range [1, theUpperBound]</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theGUID</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theGUID</dt>
+<dd class="field-even"><p>Standard_GUID &amp;</p>
+</dd>
+<dt class="field-odd">param theUpperBound</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUpperBound</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.IsEqual">
+<em class="property">static </em><code class="sig-name descname">IsEqual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.IsEqual" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True when the two GUID are the same.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param string1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type string1</dt>
+<dd class="field-even"><p>Standard_GUID &amp;</p>
+</dd>
+<dt class="field-odd">param string2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type string2</dt>
+<dd class="field-even"><p>Standard_GUID &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.IsNotSame">
+<code class="sig-name descname">IsNotSame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.IsNotSame" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>uid</strong> – <dl class="field-list simple">
+<dt class="field-odd">type uid</dt>
+<dd class="field-odd"><p>Standard_GUID &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.IsSame">
+<code class="sig-name descname">IsSame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.IsSame" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>uid</strong> – <dl class="field-list simple">
+<dt class="field-odd">type uid</dt>
+<dd class="field-odd"><p>Standard_GUID &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>uid</strong> – <dl class="field-list simple">
+<dt class="field-odd">type uid</dt>
+<dd class="field-odd"><p>Standard_GUID &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param uid:</p>
+</dd>
+<dt class="field-odd">type uid</dt>
+<dd class="field-odd"><p>Standard_UUID &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.ShallowDumpToString">
+<code class="sig-name descname">ShallowDumpToString</code><span class="sig-paren">(</span><em class="sig-param">Standard_GUID self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.ShallowDumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.ToCString">
+<code class="sig-name descname">ToCString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.ToCString" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>translate the GUID into ascii string the aStrGuid is allocated by user. the guid have the following format: //! ‘00000000-0000-0000-0000-000000000000’</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aStrGuid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aStrGuid</dt>
+<dd class="field-even"><p>Standard_PCharacter</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.ToExtString">
+<code class="sig-name descname">ToExtString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.ToExtString" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>translate the GUID into unicode string the aStrGuid is allocated by user. the guid have the following format: //! ‘00000000-0000-0000-0000-000000000000’</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aStrGuid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aStrGuid</dt>
+<dd class="field-even"><p>Standard_PExtCharacter</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.ToUUID">
+<code class="sig-name descname">ToUUID</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.ToUUID" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Standard_UUID</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_GUID.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_GUID.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_MMgrOpt">
+<em class="property">class </em><code class="sig-name descname">Standard_MMgrOpt</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrOpt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Standard.Standard_MMgrRoot" title="OCC.Core.Standard.Standard_MMgrRoot"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_MMgrRoot</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor. If aClear is True, the allocated emmory will be nullified. For description of other parameters, see description of the class above.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aClear</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type aClear</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param aMMap</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type aMMap</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param aCellSize</dt>
+<dd class="field-odd"><p>default value is 200</p>
+</dd>
+<dt class="field-even">type aCellSize</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">param aNbPages</dt>
+<dd class="field-odd"><p>default value is 10000</p>
+</dd>
+<dt class="field-even">type aNbPages</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param aThreshold</dt>
+<dd class="field-odd"><p>default value is 40000</p>
+</dd>
+<dt class="field-even">type aThreshold</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrOpt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrOpt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_MMgrRaw">
+<em class="property">class </em><code class="sig-name descname">Standard_MMgrRaw</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRaw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Standard.Standard_MMgrRoot" title="OCC.Core.Standard.Standard_MMgrRoot"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_MMgrRoot</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor; if aClear is True, the memory will be nullified upon allocation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aClear</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type aClear</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrRaw.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRaw.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_MMgrRoot">
+<em class="property">class </em><code class="sig-name descname">Standard_MMgrRoot</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRoot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrRoot.Allocate">
+<code class="sig-name descname">Allocate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRoot.Allocate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allocate specified number of bytes. The actually allocated space should be rounded up to double word size (4 bytes), as this is expected by implementation of some classes in OCC (e.g. TCollection_AsciiString)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSize</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSize</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_Address</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrRoot.Free">
+<code class="sig-name descname">Free</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRoot.Free" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Frees previously allocated memory at specified address.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePtr</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePtr</dt>
+<dd class="field-even"><p>Standard_Address</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrRoot.Purge">
+<code class="sig-name descname">Purge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRoot.Purge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Purge internally cached unused memory blocks (if any) by releasing them to the operating system. Must return non-zero if some memory has been actually released, or zero otherwise. If option isDestroyed is True, this means that memory manager is not expected to be used any more; note however that in general case it is still possible to have calls to that instance of memory manager after this (e.g. to free memory of static objects in OCC). Thus this option should command the memory manager to release any cached memory to the system and not cache any more, but still remain operable… //! Default implementation does nothing and returns 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param isDestroyed</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type isDestroyed</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrRoot.Reallocate">
+<code class="sig-name descname">Reallocate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRoot.Reallocate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reallocate previously allocated memory to contain at least theSize bytes. In case of success, new pointer is returned.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePtr</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePtr</dt>
+<dd class="field-even"><p>Standard_Address</p>
+</dd>
+<dt class="field-odd">param theSize</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSize</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_Address</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrRoot.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrRoot.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_MMgrTBBalloc">
+<em class="property">class </em><code class="sig-name descname">Standard_MMgrTBBalloc</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrTBBalloc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Standard.Standard_MMgrRoot" title="OCC.Core.Standard.Standard_MMgrRoot"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_MMgrRoot</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor; if aClear is True, the memory will be nullified upon allocation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aClear</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type aClear</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_MMgrTBBalloc.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_MMgrTBBalloc.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_OutOfMemory">
+<em class="property">class </em><code class="sig-name descname">Standard_OutOfMemory</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_OutOfMemory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor is kept public for backward compatibility</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMessage</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type theMessage</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_OutOfMemory.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_OutOfMemory.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_OutOfMemory.GetMessageString">
+<code class="sig-name descname">GetMessageString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_OutOfMemory.GetMessageString" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns error message</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_OutOfMemory.NewInstance">
+<em class="property">static </em><code class="sig-name descname">NewInstance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_OutOfMemory.NewInstance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns global instance of exception</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMessage</dt>
+<dd class="field-odd"><p>default value is</p>
+</dd>
+<dt class="field-even">type theMessage</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Standard_OutOfMemory&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_OutOfMemory.Raise">
+<em class="property">static </em><code class="sig-name descname">Raise</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_OutOfMemory.Raise" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Raises exception with specified message string</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMessage</dt>
+<dd class="field-odd"><p>default value is</p>
+</dd>
+<dt class="field-even">type theMessage</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Raises exception with specified message string</p>
+</dd>
+<dt class="field-even">param theMessage</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theMessage</dt>
+<dd class="field-odd"><p>Standard_SStream &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_OutOfMemory.SetMessageString">
+<code class="sig-name descname">SetMessageString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_OutOfMemory.SetMessageString" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets error message</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aMessage</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aMessage</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_OutOfMemory.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_OutOfMemory.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_Persistent">
+<em class="property">class </em><code class="sig-name descname">Standard_Persistent</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Persistent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Persistent.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Persistent.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Persistent.GetTypeNum">
+<code class="sig-name descname">GetTypeNum</code><span class="sig-paren">(</span><em class="sig-param">Standard_Persistent self</em><span class="sig-paren">)</span> &#x2192; Standard_Integer<a class="headerlink" href="#OCC.Core.Standard.Standard_Persistent.GetTypeNum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Persistent.SetTypeNum">
+<code class="sig-name descname">SetTypeNum</code><span class="sig-paren">(</span><em class="sig-param">Standard_Persistent self</em>, <em class="sig-param">Standard_Integer value</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Persistent.SetTypeNum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Persistent.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_Persistent.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.Standard_Transient">
+<em class="property">class </em><code class="sig-name descname">Standard_Transient</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Copy constructor – does nothing</p>
+</dd>
+<dt class="field-even">param &amp;</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type &amp;</dt>
+<dd class="field-odd"><p>Standard_Transient</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.DecrementRefCounter">
+<code class="sig-name descname">DecrementRefCounter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.DecrementRefCounter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Decrements the reference counter of this object; returns the decremented value</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.Delete">
+<code class="sig-name descname">Delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.Delete" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Memory deallocator for transient classes</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.DynamicType">
+<code class="sig-name descname">DynamicType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.DynamicType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns a type descriptor about this object.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Standard_Type&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.GetRefCount">
+<code class="sig-name descname">GetRefCount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.GetRefCount" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="mailto://!&#37;&#52;&#48;name">//!<span>&#64;</span>name</a> Reference counting, for use by handle&lt;&gt; Get the reference counter of this object</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.IncrementRefCounter">
+<code class="sig-name descname">IncrementRefCounter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.IncrementRefCounter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Increments the reference counter of this object</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.IsInstance">
+<code class="sig-name descname">IsInstance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.IsInstance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns a true value if this is an instance of Type.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theType</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Standard_Type&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns a true value if this is an instance of TypeName.</p>
+</dd>
+<dt class="field-even">param theTypeName</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theTypeName</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.IsKind">
+<code class="sig-name descname">IsKind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.IsKind" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if this is an instance of Type or an instance of any class that inherits from Type. Note that multiple inheritance is not supported by OCCT RTTI mechanism.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theType</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Standard_Type&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns true if this is an instance of TypeName or an instance of any class that inherits from TypeName. Note that multiple inheritance is not supported by OCCT RTTI mechanism.</p>
+</dd>
+<dt class="field-even">param theTypeName</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theTypeName</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.This">
+<code class="sig-name descname">This</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.This" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns non-const pointer to this object (like const_cast). For protection against creating handle to objects allocated in stack or call from constructor, it will raise exception Standard_ProgramError if reference counter is zero.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_Transient *</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.get_type_descriptor">
+<em class="property">static </em><code class="sig-name descname">get_type_descriptor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.get_type_descriptor" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns type descriptor of Standard_Transient class</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Standard_Type&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.get_type_name">
+<em class="property">static </em><code class="sig-name descname">get_type_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.get_type_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.Standard_Transient.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.Standard_Transient.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Standard.standard">
+<em class="property">class </em><code class="sig-name descname">standard</code><a class="headerlink" href="#OCC.Core.Standard.standard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Standard.standard.Allocate">
+<em class="property">static </em><code class="sig-name descname">Allocate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.standard.Allocate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allocates memory blocks aSize - bytes to allocate</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aSize</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSize</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_Address</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.standard.AllocateAligned">
+<em class="property">static </em><code class="sig-name descname">AllocateAligned</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.standard.AllocateAligned" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allocates aligned memory blocks. Should be used with CPU instructions which require specific alignment. For example: SSE requires 16 bytes, AVX requires 32 bytes. &#64;param theSize bytes to allocate &#64;param theAlign alignment in bytes</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSize</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSize</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">param theAlign</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theAlign</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_Address</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.standard.Purge">
+<em class="property">static </em><code class="sig-name descname">Purge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.standard.Purge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Deallocates the storage retained on the free list and clears the list. Returns non-zero if some memory has been actually freed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.standard.Reallocate">
+<em class="property">static </em><code class="sig-name descname">Reallocate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Standard.standard.Reallocate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reallocates memory blocks aStorage - previously allocated memory block aNewSize - new size in bytes</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aStorage</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aStorage</dt>
+<dd class="field-even"><p>Standard_Address</p>
+</dd>
+<dt class="field-odd">param aNewSize</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewSize</dt>
+<dd class="field-even"><p>Standard_Size</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_Address</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Standard.standard.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Standard.standard.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

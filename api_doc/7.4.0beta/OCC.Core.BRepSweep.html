@@ -1,0 +1,2059 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BRepSweep module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BRepSweep module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BRepSweep module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BRepSweep.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BRepSweep">
+<span id="occ-core-brepsweep-module"></span><h1>OCC.Core.BRepSweep module<a class="headerlink" href="#module-OCC.Core.BRepSweep" title="Permalink to this headline">¶</a></h1>
+<p>BRepSweep module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepsweep.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepsweep.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Builder</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates a Builder.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aBuilder</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aBuilder</dt>
+<dd class="field-even"><p>BRep_Builder &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the Shape 1 in the Shape 2, set to &lt;Orient&gt; orientation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aShape2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param Orient</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Orient</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Adds the Shape 1 in the Shape 2.</p>
+</dd>
+<dt class="field-even">param aShape1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aShape1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param aShape2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aShape2</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.Builder">
+<code class="sig-name descname">Builder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.Builder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.BRep.html#OCC.Core.BRep.BRep_Builder" title="OCC.Core.BRep.BRep_Builder">BRep_Builder</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.MakeCompSolid">
+<code class="sig-name descname">MakeCompSolid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.MakeCompSolid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty CompSolid.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aCompSolid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCompSolid</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.MakeCompound">
+<code class="sig-name descname">MakeCompound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.MakeCompound" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty Compound.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aCompound</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCompound</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.MakeShell">
+<code class="sig-name descname">MakeShell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.MakeShell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty Shell.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShell</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShell</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.MakeSolid">
+<code class="sig-name descname">MakeSolid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.MakeSolid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty Solid.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aSolid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSolid</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.MakeWire">
+<code class="sig-name descname">MakeWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.MakeWire" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty Wire.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aWire</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aWire</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Builder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Builder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Iterator">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Iterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Iterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Iterator.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Iterator.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Resest the Iterator on sub-shapes of &lt;aShape&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Iterator.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Iterator.More" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if there is a current sub-shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Iterator.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Iterator.Next" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Moves to the next sub-shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Iterator.Orientation">
+<code class="sig-name descname">Orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Iterator.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the orientation of the current sub-shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Iterator.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Iterator.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the current sub-shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Iterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Iterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_NumLinearRegularSweep</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.Closed">
+<code class="sig-name descname">Closed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.Closed" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.DirectSolid">
+<code class="sig-name descname">DirectSolid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.DirectSolid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Orientation of the shell in the solid generated by the face aGenS with the edge aDirS. It is REVERSED if the surface is swept in the direction of the normal.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.FirstShape">
+<code class="sig-name descname">FirstShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.FirstShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the resulting Shape indexed by the first Vertex of myDirWire and myGenShape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the resulting Shape indexed by the first Vertex of myDirWire and aGenS.</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.GDDShapeIsToAdd">
+<code class="sig-name descname">GDDShapeIsToAdd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.GDDShapeIsToAdd" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if aNewSubShape (addressed by aGenS and aSubDirS) must be added in aNewShape (addressed by aGenS and aDirS).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewSubShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewSubShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param aSubDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSubDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.GGDShapeIsToAdd">
+<code class="sig-name descname">GGDShapeIsToAdd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.GGDShapeIsToAdd" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if aNewSubShape (addressed by aSubGenS and aDirS) must be added in aNewShape (addressed by aGenS and aDirS).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewSubShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewSubShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aSubGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSubGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.GenIsUsed">
+<code class="sig-name descname">GenIsUsed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.GenIsUsed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the shape, generated from theS is used in result shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.HasShape">
+<code class="sig-name descname">HasShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.HasShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if aDirS and aGenS addresses a resulting Shape. In some specific cases the shape can be geometrically inexsistant, then this function returns false.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.IsInvariant">
+<code class="sig-name descname">IsInvariant</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.IsInvariant" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if aGenS cannot be transformed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.IsUsed">
+<code class="sig-name descname">IsUsed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.IsUsed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the initial shape aGenS is used in result shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.LastShape">
+<code class="sig-name descname">LastShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.LastShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the resulting Shape indexed by the last Vertex of myDirWire and myGenShape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the resulting Shape indexed by the last Vertex of myDirWire and aGenS.</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyDirectingEdge">
+<code class="sig-name descname">MakeEmptyDirectingEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyDirectingEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Builds the edge addressed by [aGenV,aDirE], with its geometric part, but without subcomponents.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenV</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirE</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyFace">
+<code class="sig-name descname">MakeEmptyFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Builds the face addressed by [aGenS,aDirS], with its geometric part, but without subcomponents. The couple aGenS, aDirS can be a ‘generating face and a directing vertex’ or ‘a generating edge and a directing edge’.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyGeneratingEdge">
+<code class="sig-name descname">MakeEmptyGeneratingEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyGeneratingEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Builds the edge addressed by [aGenE,aDirV], with its geometric part, but without subcomponents.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenE</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyVertex">
+<code class="sig-name descname">MakeEmptyVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.MakeEmptyVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Builds the vertex addressed by [aGenV,aDirV], with its geometric part, but without subcomponents.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenV</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SeparatedWires">
+<code class="sig-name descname">SeparatedWires</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SeparatedWires" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>In some particular cases the topology of a generated face must be composed of independant closed wires, in this case this function returns true.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewSubShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewSubShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aSubGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSubGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetContinuity">
+<code class="sig-name descname">SetContinuity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetContinuity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Called to propagate the continuity of every vertex between two edges of the generating wire aGenS on the generated edge and faces.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetDirectingPCurve">
+<code class="sig-name descname">SetDirectingPCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetDirectingPCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the PCurve for a new edge on a new face. The new edge and the new face were generated using aGenE, aDirE and aGenV.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewFace</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewEdge</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenE</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenV</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirE</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param orien</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type orien</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetDirectingParameter">
+<code class="sig-name descname">SetDirectingParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetDirectingParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameter of the new vertex on the new edge. The new edge and new vertex where generated from aGenV aDirE, and aDirV.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewEdge</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewVertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewVertex</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenV</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirE</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetGeneratingPCurve">
+<code class="sig-name descname">SetGeneratingPCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetGeneratingPCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the PCurve for a new edge on a new face. The new edge and the new face were generated using aGenE, aDirE and aDirV.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewFace</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewEdge</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenE</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirE</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param orien</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type orien</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetGeneratingParameter">
+<code class="sig-name descname">SetGeneratingParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetGeneratingParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameter of the new vertex on the new edge. The new edge and new vertex where generated from aGenE, aGenV and aDirV .</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewEdge</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewVertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewVertex</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenE</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenV</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetPCurve">
+<code class="sig-name descname">SetPCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetPCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the PCurve for a new edge on a new face. The new edge and the new face were generated using aGenF, aGenE and aDirV.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewFace</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewEdge</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenF</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenE</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param orien</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type orien</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetParameters">
+<code class="sig-name descname">SetParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SetParameters" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the parameters of the new vertex on the new face. The new face and new vertex where generated from aGenF, aGenV and aDirV .</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewFace</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aNewVertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewVertex</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenF</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aGenV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenV</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the resulting Shape indexed by aDirS and aGenS.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirS</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the resulting Shape indexed by myDirWire and aGenS.</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape* Returns the resulting Shape indexed by myDirWire and myGenShape.</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SplitShell">
+<code class="sig-name descname">SplitShell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.SplitShell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>In some particular cases the topology of a generated Shell must be composed of independant closed Shells, in this case this function returns a Compound of independant Shells.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNewShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Prism</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Builds the prism of base S and vector V. If C is true, S is copied. If Canonize is true then generated surfaces are attempted to be canonized in simple types</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param Copy</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Copy</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Canonize</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Canonize</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Builds a semi-infinite or an infinite prism of base S. If Copy is true S is copied. If Inf is true the prism is infinite, if Inf is false the prism is infinite in the direction D. If Canonize is true then generated surfaces are attempted to be canonized in simple types</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D</dt>
+<dd class="field-odd"><p>gp_Dir</p>
+</dd>
+<dt class="field-even">param Inf</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Inf</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Copy</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Copy</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Canonize</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Canonize</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism.FirstShape">
+<code class="sig-name descname">FirstShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism.FirstShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the bottom of the prism.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape of the bottom of the prism. generated with aGenS (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism.GenIsUsed">
+<code class="sig-name descname">GenIsUsed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism.GenIsUsed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the shape, generated from theS is used in result shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism.IsUsed">
+<code class="sig-name descname">IsUsed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism.IsUsed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the aGenS is used in resulting shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism.LastShape">
+<code class="sig-name descname">LastShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism.LastShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the top of the prism.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape of the top of the prism. generated with aGenS (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape attached to the prism.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape generated with aGenS (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism.Vec">
+<code class="sig-name descname">Vec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism.Vec" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Vector of the Prism, if it is an infinite prism the Vec is unitar.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Prism.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Prism.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Revol</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Builds the Revol of meridian S axis A and angle D. If C is true S is copied.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param A</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type A</dt>
+<dd class="field-even"><p>gp_Ax1</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Builds the Revol of meridian S axis A and angle 2*Pi. If C is true S is copied.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param A</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type A</dt>
+<dd class="field-odd"><p>gp_Ax1</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol.Angle">
+<code class="sig-name descname">Angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol.Angle" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the angle.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol.Axe">
+<code class="sig-name descname">Axe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol.Axe" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the axis</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Ax1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol.FirstShape">
+<code class="sig-name descname">FirstShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol.FirstShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the first shape of the revol (coinciding with the generating shape).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the first shape of the revol (coinciding with the generating shape).</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol.IsUsed">
+<code class="sig-name descname">IsUsed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol.IsUsed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the aGenS is used in resulting Shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol.LastShape">
+<code class="sig-name descname">LastShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol.LastShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the top of the prism.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape of the top of the prism. generated with aGenS (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape attached to the Revol.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape generated with aGenS (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param aGenS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aGenS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Revol.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Revol.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Rotation">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Rotation</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepSweep.BRepSweep_Trsf" title="OCC.Core.BRepSweep.BRepSweep_Trsf"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepSweep.BRepSweep_Trsf</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates a topology by rotating &lt;S&gt; around A with the angle D.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>TopLoc_Location &amp;</p>
+</dd>
+<dt class="field-odd">param A</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type A</dt>
+<dd class="field-even"><p>gp_Ax1</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Rotation.Angle">
+<code class="sig-name descname">Angle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Rotation.Angle" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the angle.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Rotation.Axe">
+<code class="sig-name descname">Axe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Rotation.Axe" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the axis</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Ax1</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Rotation.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Rotation.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Tool</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Initialize the tool with &lt;aShape&gt;. The IndexTool must prepare an indexation for all the subshapes of this shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool.Index" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index of &lt;aShape&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool.NbShapes">
+<code class="sig-name descname">NbShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool.NbShapes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of subshapes in the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool.Orientation">
+<code class="sig-name descname">Orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Orientation of &lt;aShape&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool.SetOrientation">
+<code class="sig-name descname">SetOrientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool.SetOrientation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the Orientation of &lt;aShape&gt; with Or.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param Or</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Or</dt>
+<dd class="field-even"><p>TopAbs_Orientation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Shape at Index anIdex.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param anIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type anIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool.Type">
+<code class="sig-name descname">Type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool.Type" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of &lt;aShape&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Tool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Tool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Translation">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Translation</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepSweep.BRepSweep_Trsf" title="OCC.Core.BRepSweep.BRepSweep_Trsf"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepSweep.BRepSweep_Trsf</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates a topology by translating &lt;S&gt; with the vector &lt;V&gt;. If C is true S Sucomponents are copied. If Canonize is true then generated surfaces are attempted to be canonized in simple types</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>TopLoc_Location &amp;</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Canonize</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Canonize</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Translation.Vec">
+<code class="sig-name descname">Vec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Translation.Vec" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Vector of the Prism, if it is an infinite prism the Vec is unitar.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Translation.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Translation.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Trsf">
+<em class="property">class </em><code class="sig-name descname">BRepSweep_Trsf</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Trsf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep" title="OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepSweep.BRepSweep_NumLinearRegularSweep</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Trsf.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Trsf.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>ends the construction of the swept primitive calling the virtual geometric functions that can’t be called in the initialize.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Trsf.Process">
+<code class="sig-name descname">Process</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Trsf.Process" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>function called to analize the way of construction of the shapes generated by aGenS and aDirV.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aGenS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aGenS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDirV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDirV</dt>
+<dd class="field-even"><p>Sweep_NumShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.BRepSweep_Trsf.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.BRepSweep_Trsf.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepSweep.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepSweep.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,3825 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BOPTools module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BOPTools module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BOPTools module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BOPTools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BOPTools">
+<span id="occ-core-boptools-module"></span><h1>OCC.Core.BOPTools module<a class="headerlink" href="#module-OCC.Core.BOPTools" title="Permalink to this headline">¶</a></h1>
+<p>BOPTools module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_boptools.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_boptools.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools">
+<em class="property">class </em><code class="sig-name descname">BOPTools_AlgoTools</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.AreFacesSameDomain">
+<em class="property">static </em><code class="sig-name descname">AreFacesSameDomain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.AreFacesSameDomain" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Checking if the faces are coinciding Checks if the given faces are same-domain, i.e. coincide.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theF1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theF2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theFuzz</dt>
+<dd class="field-odd"><p>default value is Precision::Confusion()</p>
+</dd>
+<dt class="field-even">type theFuzz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeState">
+<em class="property">static </em><code class="sig-name descname">ComputeState</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeState" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Point/Edge/Face classification relatively solid Computes the 3-D state of the point thePoint toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePoint</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePoint</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theSolid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSolid</dt>
+<dd class="field-even"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-odd">param theTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_State* Computes the 3-D state of the vertex theVertex toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.</p>
+</dd>
+<dt class="field-even">param theVertex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVertex</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param theSolid</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theSolid</dt>
+<dd class="field-odd"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-even">param theTol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theTol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopAbs_State* Computes the 3-D state of the edge theEdge toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.</p>
+</dd>
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theSolid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSolid</dt>
+<dd class="field-even"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-odd">param theTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_State* Computes the 3-D state of the face theFace toward solid theSolid. theTol - value of precision of computation theBounds - set of edges of &lt;theSolid&gt; to avoid theContext- cahed geometrical tools Returns 3-D state.</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theSolid</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theSolid</dt>
+<dd class="field-odd"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-even">param theTol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theTol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theBounds</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theBounds</dt>
+<dd class="field-odd"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopAbs_State</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeStateByOnePoint">
+<em class="property">static </em><code class="sig-name descname">ComputeStateByOnePoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeStateByOnePoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the 3-D state of the shape theShape toward solid theSolid. theTol - value of precision of computation theContext- cahed geometrical tools Returns 3-D state.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theSolid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSolid</dt>
+<dd class="field-even"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-odd">param theTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_State</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeTolerance">
+<em class="property">static </em><code class="sig-name descname">ComputeTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Edge/Face Deviation computation Computes the necessary value of the tolerance for the edge</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theMaxDist</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxDist</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theMaxPar</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMaxPar</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeVV">
+<em class="property">static </em><code class="sig-name descname">ComputeVV</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.ComputeVV" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Intersection of the vertices Intersects the vertex &lt;theV1&gt; with the point &lt;theP&gt; with tolerance &lt;theTolP&gt;. Returns the error status: - 0 - no error, meaning that the vertex intersects the point; - 1 - the distance between vertex and point is grater than the sum of tolerances.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param theP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theP</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theTolP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTolP</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Intersects the given vertices with given fuzzy value. Returns the error status: - 0 - no error, meaning that the vertices interferes with given tolerance; - 1 - the distance between vertices is grater than the sum of their tolerances.</p>
+</dd>
+<dt class="field-even">param theV1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theV1</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param theV2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theV2</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param theFuzz</dt>
+<dd class="field-even"><p>default value is Precision::Confusion()</p>
+</dd>
+<dt class="field-odd">type theFuzz</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.CopyEdge">
+<em class="property">static </em><code class="sig-name descname">CopyEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.CopyEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Makes a copy of &lt;theEdge&gt; with vertices.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Edge</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectCurveOnSurface">
+<em class="property">static </em><code class="sig-name descname">CorrectCurveOnSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectCurveOnSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Provides valid values of tolerances for the shape &lt;theS&gt; in terms of BRepCheck_InvalidCurveOnSurface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theMapToAvoid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMapToAvoid</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theTolMax</dt>
+<dd class="field-odd"><p>default value is 0.0001</p>
+</dd>
+<dt class="field-even">type theTolMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theRunParallel</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type theRunParallel</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectPointOnCurve">
+<em class="property">static </em><code class="sig-name descname">CorrectPointOnCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectPointOnCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Provides valid values of tolerances for the shape &lt;theS&gt; in terms of BRepCheck_InvalidPointOnCurve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theMapToAvoid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMapToAvoid</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theTolMax</dt>
+<dd class="field-odd"><p>default value is 0.0001</p>
+</dd>
+<dt class="field-even">type theTolMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theRunParallel</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type theRunParallel</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectRange">
+<em class="property">static </em><code class="sig-name descname">CorrectRange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectRange" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Correction of the edges range Correct shrunk range &lt;aSR&gt; taking into account 3D-curve resolution and corresponding tolerance values of &lt;aE1&gt;, &lt;aE2&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE1</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aE2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE2</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aSR</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSR</dt>
+<dd class="field-even"><p>IntTools_Range &amp;</p>
+</dd>
+<dt class="field-odd">param aNewSR</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewSR</dt>
+<dd class="field-even"><p>IntTools_Range &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Correct shrunk range &lt;aSR&gt; taking into account 3D-curve resolution and corresponding tolerance values of &lt;aE&gt;, &lt;aF&gt;</p>
+</dd>
+<dt class="field-even">param aE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param aF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param aSR</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aSR</dt>
+<dd class="field-odd"><p>IntTools_Range &amp;</p>
+</dd>
+<dt class="field-even">param aNewSR</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aNewSR</dt>
+<dd class="field-odd"><p>IntTools_Range &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectShapeTolerances">
+<em class="property">static </em><code class="sig-name descname">CorrectShapeTolerances</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectShapeTolerances" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Corrects tolerance values of the sub-shapes of the shape &lt;theS&gt; if needed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theMapToAvoid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMapToAvoid</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theRunParallel</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type theRunParallel</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectTolerances">
+<em class="property">static </em><code class="sig-name descname">CorrectTolerances</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.CorrectTolerances" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Methods for shape validation (correction) Provides valid values of tolerances for the shape &lt;theS&gt; &lt;theTolMax&gt; is max value of the tolerance that can be accepted for correction. If real value of the tolerance will be greater than &lt;aTolMax&gt;, the correction does not perform.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theMapToAvoid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMapToAvoid</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theTolMax</dt>
+<dd class="field-odd"><p>default value is 0.0001</p>
+</dd>
+<dt class="field-even">type theTolMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theRunParallel</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type theRunParallel</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.Dimension">
+<em class="property">static </em><code class="sig-name descname">Dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.Dimension" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Retutns dimension of the shape &lt;theS&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.GetEdgeOff">
+<em class="property">static </em><code class="sig-name descname">GetEdgeOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.GetEdgeOff" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Looking for the edge in the face Returns True if the face theFace contains the edge theEdge but with opposite orientation. If the method returns True theEdgeOff is the edge founded</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theEdgeOff</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdgeOff</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.GetEdgeOnFace">
+<em class="property">static </em><code class="sig-name descname">GetEdgeOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.GetEdgeOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>For the face theFace gets the edge theEdgeOnF that is the same as theEdge Returns True if such edge exists Returns False if there is no such edge</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theEdgeOnF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdgeOnF</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.GetFaceOff">
+<em class="property">static </em><code class="sig-name descname">GetFaceOff</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.GetFaceOff" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Face classification relatively solid For the face theFace and its edge theEdge finds the face suitable to produce shell. theLCEF - set of faces to search. All faces from theLCEF must share edge theEdge</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theLCEF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLCEF</dt>
+<dd class="field-even"><p>BOPTools_ListOfCoupleOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theFaceOff</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFaceOff</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsBlockInOnFace">
+<em class="property">static </em><code class="sig-name descname">IsBlockInOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsBlockInOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if PaveBlock &lt;aPB&gt; lays on the face &lt;aF&gt;, i.e the &lt;PB&gt; is IN or ON in 2D of &lt;aF&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aShR</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShR</dt>
+<dd class="field-even"><p>IntTools_Range &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsHole">
+<em class="property">static </em><code class="sig-name descname">IsHole</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsHole" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Wire classification relatively face Checks if the wire is a hole for the face.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theW</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theW</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsInternalFace">
+<em class="property">static </em><code class="sig-name descname">IsInternalFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsInternalFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the face theFace is inside of the couple of faces theFace1, theFace2. The faces theFace, theFace1, theFace2 must share the edge theEdge Return values: * 0 state is not IN * 1 state is IN * 2 state can not be found by the method of angles</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theFace1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theFace2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Returns True if the face theFace is inside of the appropriate couple of faces (from the set theLF) . The faces of the set theLF and theFace must share the edge theEdge * 0 state is not IN * 1 state is IN * 2 state can not be found by the method of angles</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theEdge</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theEdge</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param theLF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theLF</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int* Returns True if the face theFace is inside the solid theSolid. theMEF - Map Edge/Faces for theSolid theTol - value of precision of computation theContext- cahed geometrical tools</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theSolid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSolid</dt>
+<dd class="field-even"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-odd">param theMEF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMEF</dt>
+<dd class="field-even"><p>TopTools_IndexedDataMapOfShapeListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsInvertedSolid">
+<em class="property">static </em><code class="sig-name descname">IsInvertedSolid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsInvertedSolid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Solid classification Returns true if the solid &lt;theSolid&gt; is inverted</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSolid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSolid</dt>
+<dd class="field-even"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsMicroEdge">
+<em class="property">static </em><code class="sig-name descname">IsMicroEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsMicroEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Checking edge on micro status Checks if it is possible to compute shrunk range for the edge &lt;aE&gt; Flag &lt;theCheckSplittable&gt; defines whether to take into account the possibility to split the edge or not.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theCheckSplittable</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theCheckSplittable</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsOpenShell">
+<em class="property">static </em><code class="sig-name descname">IsOpenShell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsOpenShell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the shell &lt;theShell&gt; is open</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShell</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShell</dt>
+<dd class="field-even"><p>TopoDS_Shell &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsSplitToReverse">
+<em class="property">static </em><code class="sig-name descname">IsSplitToReverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsSplitToReverse" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Choosing correct orientation for the split shape Checks if the direction of the split shape is opposite to the direction of the original shape. The method is an overload for (Edge,Edge) and (Face,Face) corresponding methods and checks only these types of shapes. For faces the method checks if normal directions are opposite. For edges the method checks if tangent vectors are opposite. //! In case the directions do not coincide, it returns True, meaning that split shape has to be reversed to match the direction of the original shape. //! If requested (&lt;theError&gt; is not null), the method returns the status of the operation: - 0 - no error; - Error from (Edge,Edge) or (Face,Face) corresponding method - 100 - bad types. In case of any error the method always returns False. //! &#64;param theSplit [in] Split shape &#64;param theShape [in] Original shape &#64;param theContext [in] Cashed geometrical tools &#64;param theError [out] Error Status of the operation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSplit</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSplit</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theError</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type theError</dt>
+<dd class="field-even"><p>int *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Checks if the normal direction of the split face is opposite to the normal direction of the original face. The normal directions for both faces are taken in the same point - point inside the split face is projected onto the original face. Returns True if the normals do not coincide, meaning the necessity to revert the orientation of the split face to match the direction of the original face. //! If requested (&lt;theError&gt; is not null), the method returns the status of the operation: - 0 - no error; - 1 - unable to find the point inside split face; - 2 - unable to compute the normal for the split face; - 3 - unable to project the point inside the split face on the original face; - 4 - unable to compute the normal for the original face. In case of any error the method always returns False. //! &#64;param theSplit [in] Split face &#64;param theShape [in] Original face &#64;param theContext [in] Cashed geometrical tools &#64;param theError [out] Error Status of the operation</p>
+</dd>
+<dt class="field-even">param theSplit</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theSplit</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theError</dt>
+<dd class="field-even"><p>default value is NULL</p>
+</dd>
+<dt class="field-odd">type theError</dt>
+<dd class="field-odd"><p>int *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Checks if the tangent vector of the split edge is opposite to the tangent vector of the original edge. The tangent vectors for both edges are computed in the same point - point inside the split edge is projected onto the original edge. Returns True if the tangent vectors do not coincide, meaning the necessity to revert the orientation of the split edge to match the direction of the original edge. //! If requested (&lt;theError&gt; is not null), the method returns the status of the operation: - 0 - no error; - 1 - degenerated edges are given; - 2 - unable to compute the tangent vector for the split edge; - 3 - unable to project the point inside the split edge on the original edge; - 4 - unable to compute the tangent vector for the original edge; In case of any error the method always returns False. //! &#64;param theSplit [in] Split edge &#64;param theShape [in] Original edge &#64;param theContext [in] Cashed geometrical tools &#64;param theError [out] Error Status of the operation</p>
+</dd>
+<dt class="field-odd">param theSplit</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSplit</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theError</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type theError</dt>
+<dd class="field-even"><p>int *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.IsSplitToReverseWithWarn">
+<em class="property">static </em><code class="sig-name descname">IsSplitToReverseWithWarn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.IsSplitToReverseWithWarn" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Add-on for the <em>IsSplitToReverse()</em> to check for its errors and in case of any add the <em>BOPAlgo_AlertUnableToOrientTheShape</em> warning to the report.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSplit</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSplit</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theReport</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type theReport</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Message_Report&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeConnexityBlock">
+<em class="property">static </em><code class="sig-name descname">MakeConnexityBlock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeConnexityBlock" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Making connexity blocks For the list of faces theLS build block theLSCB in terms of connexity by edges theMapAvoid - set of edges to avoid for the treatment</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theLS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLS</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theMapAvoid</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMapAvoid</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theLSCB</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLSCB</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theAllocator</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theAllocator</dt>
+<dd class="field-even"><p>opencascade::handle&lt;NCollection_BaseAllocator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeConnexityBlocks">
+<em class="property">static </em><code class="sig-name descname">MakeConnexityBlocks</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeConnexityBlocks" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>For the compound &lt;theS&gt; builds the blocks (compounds) of elements of type &lt;theElementType&gt; connected through the shapes of the type &lt;theConnectionType&gt;. The blocks are stored into the list &lt;theLCB&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theConnectionType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theConnectionType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">param theElementType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theElementType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">param theLCB</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLCB</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* For the compound &lt;theS&gt; builds the blocks (compounds) of elements of type &lt;theElementType&gt; connected through the shapes of the type &lt;theConnectionType&gt;. The blocks are stored into the list of lists &lt;theLCB&gt;. Returns also the connection map &lt;theConnectionMap&gt;, filled during operation.</p>
+</dd>
+<dt class="field-even">param theS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theConnectionType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theConnectionType</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-even">param theElementType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theElementType</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-even">param theLCB</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theLCB</dt>
+<dd class="field-odd"><p>TopTools_ListOfListOfShape &amp;</p>
+</dd>
+<dt class="field-even">param theConnectionMap</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theConnectionMap</dt>
+<dd class="field-odd"><p>TopTools_IndexedDataMapOfShapeListOfShape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Makes connexity blocks of elements of the given type with the given type of the connecting elements. The blocks are checked on regularity (multi-connectivity) and stored to the list of blocks &lt;theLCB&gt;.</p>
+</dd>
+<dt class="field-odd">param theLS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLS</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theConnectionType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theConnectionType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">param theElementType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theElementType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">param theLCB</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLCB</dt>
+<dd class="field-even"><p>BOPTools_ListOfConnexityBlock &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeContainer">
+<em class="property">static </em><code class="sig-name descname">MakeContainer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeContainer" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Other methods Makes empty container of requested type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theType</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeEdge">
+<em class="property">static </em><code class="sig-name descname">MakeEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Edge construction Makes the edge based on the given curve with given bounding vertices.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCurve</dt>
+<dd class="field-even"><p>IntTools_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param theV1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV1</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param theT1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theT1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theV2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV2</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param theT2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theT2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theTolR3D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTolR3D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeNewVertex">
+<em class="property">static </em><code class="sig-name descname">MakeNewVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeNewVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Make a vertex using 3D-point &lt;aP1&gt; and 3D-tolerance value &lt;aTol&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aP1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP1</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param aTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aNewVertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewVertex</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Make a vertex using couple of vertices &lt;aV1, aV2&gt;</p>
+</dd>
+<dt class="field-even">param aV1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aV1</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param aV2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aV2</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param aNewVertex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aNewVertex</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Make a vertex in place of intersection between two edges &lt;aE1, aE2&gt; with parameters &lt;aP1, aP2&gt;</p>
+</dd>
+<dt class="field-odd">param aE1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE1</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aP1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aE2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE2</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aP2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aNewVertex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewVertex</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Make a vertex in place of intersection between the edge &lt;aE1&gt; with parameter &lt;aP1&gt; and the face &lt;aF2&gt;</p>
+</dd>
+<dt class="field-even">param aE1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aE1</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param aP1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aP1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aF2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aF2</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param aNewVertex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aNewVertex</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakePCurve">
+<em class="property">static </em><code class="sig-name descname">MakePCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakePCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name PCurve construction Makes 2d curve of the edge &lt;theE&gt; on the faces &lt;theF1&gt; and &lt;theF2&gt;. &lt;theContext&gt; - storage for caching the geometrical tools</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theF1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theF2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCurve</dt>
+<dd class="field-even"><p>IntTools_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param thePC1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePC1</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param thePC2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePC2</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeSectEdge">
+<em class="property">static </em><code class="sig-name descname">MakeSectEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeSectEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Make the edge from 3D-Curve &lt;aIC&gt; and two vertices &lt;aV1,aV2&gt; at parameters &lt;aP1,aP2&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aIC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aIC</dt>
+<dd class="field-even"><p>IntTools_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aV1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aV1</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param aP1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aV2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aV2</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param aP2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aNewEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeSplitEdge">
+<em class="property">static </em><code class="sig-name descname">MakeSplitEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeSplitEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Make the edge from base edge &lt;aE1&gt; and two vertices &lt;aV1,aV2&gt; at parameters &lt;aP1,aP2&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE1</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aV1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aV1</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param aP1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aV2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aV2</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param aP2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aNewEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNewEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.MakeVertex">
+<em class="property">static </em><code class="sig-name descname">MakeVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.MakeVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Vertices construction Makes the vertex in the middle of given vertices with the tolerance covering all tolerance spheres of vertices.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theLV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLV</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">param theV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.OrientEdgesOnWire">
+<em class="property">static </em><code class="sig-name descname">OrientEdgesOnWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.OrientEdgesOnWire" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Orienting elements in container Correctly orients edges on the wire</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theWire</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theWire</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.OrientFacesOnShell">
+<em class="property">static </em><code class="sig-name descname">OrientFacesOnShell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.OrientFacesOnShell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Correctly orients faces on the shell</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShell</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShell</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.PointOnEdge">
+<em class="property">static </em><code class="sig-name descname">PointOnEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.PointOnEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute a 3D-point on the edge &lt;aEdge&gt; at parameter &lt;aPrm&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aEdge</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aEdge</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aPrm</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPrm</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.Sense">
+<em class="property">static </em><code class="sig-name descname">Sense</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.Sense" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Checks if the normals direction of the given faces computed near the shared edge coincide. Returns the status of operation: * 0 - in case of error (shared edge not found or directions are not collinear) * 1 - normal directions coincide; * -1 - normal directions are opposite.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theF1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theF2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.UpdateVertex">
+<em class="property">static </em><code class="sig-name descname">UpdateVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.UpdateVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Updating the vertex Update the tolerance value for vertex &lt;aV&gt; taking into account the fact that &lt;aV&gt; lays on the curve &lt;aIC&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aIC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aIC</dt>
+<dd class="field-even"><p>IntTools_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aV</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Update the tolerance value for vertex &lt;aV&gt; taking into account the fact that &lt;aV&gt; lays on the edge &lt;aE&gt;</p>
+</dd>
+<dt class="field-even">param aE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param aT</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aT</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aV</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Update the tolerance value for vertex &lt;aVN&gt; taking into account the fact that &lt;aVN&gt; should cover tolerance zone of &lt;aVF&gt;</p>
+</dd>
+<dt class="field-odd">param aVF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aVF</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param aVN</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aVN</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D">
+<em class="property">class </em><code class="sig-name descname">BOPTools_AlgoTools2D</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.AdjustPCurveOnFace">
+<em class="property">static </em><code class="sig-name descname">AdjustPCurveOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.AdjustPCurveOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adjust P-Curve &lt;theC2D&gt; (3D-curve &lt;theC3D&gt;) on surface of the face &lt;theF&gt;. &lt;theContext&gt; - storage for caching the geometrical tools</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theC3D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theC3D</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theC2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theC2D</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theC2DA</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theC2DA</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Adjust P-Curve &lt;aC2D&gt; (3D-curve &lt;C3D&gt;) on surface &lt;aF&gt; . [aT1, aT2] - range to adjust &lt;theContext&gt; - storage for caching the geometrical tools</p>
+</dd>
+<dt class="field-even">param theF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theFirst</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFirst</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theLast</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theLast</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theC2D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theC2D</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theC2DA</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theC2DA</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.AdjustPCurveOnSurf">
+<em class="property">static </em><code class="sig-name descname">AdjustPCurveOnSurf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.AdjustPCurveOnSurf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adjust P-Curve &lt;aC2D&gt; (3D-curve &lt;C3D&gt;) on surface &lt;aF&gt; . [aT1, aT2] - range to adjust</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>BRepAdaptor_Surface &amp;</p>
+</dd>
+<dt class="field-odd">param aT1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aT2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aC2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aC2D</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aC2DA</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aC2DA</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.AttachExistingPCurve">
+<em class="property">static </em><code class="sig-name descname">AttachExistingPCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.AttachExistingPCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Attach P-Curve from the edge &lt;aEold&gt; on surface &lt;aF&gt; to the edge &lt;aEnew&gt; Returns 0 in case of success</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aEold</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aEold</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aEnew</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aEnew</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aCtx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCtx</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.BuildPCurveForEdgeOnFace">
+<em class="property">static </em><code class="sig-name descname">BuildPCurveForEdgeOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.BuildPCurveForEdgeOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute P-Curve for the edge &lt;aE&gt; on the face &lt;aF&gt;. Raises exception Standard_ConstructionError if projection algorithm fails. &lt;theContext&gt; - storage for caching the geometrical tools</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.EdgeTangent">
+<em class="property">static </em><code class="sig-name descname">EdgeTangent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.EdgeTangent" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute tangent for the edge &lt;aE&gt; [in 3D] at parameter &lt;aT&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param anE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type anE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tau</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tau</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.HasCurveOnSurface">
+<em class="property">static </em><code class="sig-name descname">HasCurveOnSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.HasCurveOnSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the edge &lt;aE&gt; has P-Curve &lt;aC&gt; on surface &lt;aF&gt; . [aFirst, aLast] - range of the P-Curve [aToler] - reached tolerance If the P-Curve does not exist, aC.IsNull()=True.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aC</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aFirst</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param aLast</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aLast</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param aToler</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aToler</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns True if the edge &lt;aE&gt; has P-Curve &lt;aC&gt; on surface &lt;aF&gt; . If the P-Curve does not exist, aC.IsNull()=True.</p>
+</dd>
+<dt class="field-even">param aE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param aF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.IntermediatePoint">
+<em class="property">static </em><code class="sig-name descname">IntermediatePoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.IntermediatePoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute intermediate value in between [aFirst, aLast] .</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aFirst</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aLast</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aLast</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float* Compute intermediate value of parameter for the edge &lt;anE&gt;.</p>
+</dd>
+<dt class="field-even">param anE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type anE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.IsEdgeIsoline">
+<em class="property">static </em><code class="sig-name descname">IsEdgeIsoline</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.IsEdgeIsoline" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Checks if CurveOnSurface of theE on theF matches with isoline of theF surface. Sets corresponding values for isTheUIso and isTheVIso variables. ATTENTION!!! This method is based on comparation between direction of surface (which theF is based on) iso-lines and the direction of the edge p-curve (on theF) in middle-point of the p-curve. This method should be used carefully (e.g. BRep_Tool::IsClosed(…) together) in order to avoid false classification some p-curves as isoline (e.g. circle on a plane).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param isTheUIso</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type isTheUIso</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param isTheVIso</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type isTheVIso</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.Make2D">
+<em class="property">static </em><code class="sig-name descname">Make2D</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.Make2D" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Make P-Curve &lt;aC&gt; for the edge &lt;aE&gt; on surface &lt;aF&gt; . [aFirst, aLast] - range of the P-Curve [aToler] - reached tolerance Raises exception Standard_ConstructionError if algorithm fails. &lt;theContext&gt; - storage for caching the geometrical tools</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aC</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aFirst</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aFirst</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param aLast</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aLast</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param aToler</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aToler</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.MakePCurveOnFace">
+<em class="property">static </em><code class="sig-name descname">MakePCurveOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.MakePCurveOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Make P-Curve &lt;aC&gt; for the 3D-curve &lt;C3D&gt; on surface &lt;aF&gt; . [aToler] - reached tolerance Raises exception Standard_ConstructionError if projection algorithm fails. &lt;theContext&gt; - storage for caching the geometrical tools</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param C3D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C3D</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aC</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aToler</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aToler</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Make P-Curve &lt;aC&gt; for the 3D-curve &lt;C3D&gt; on surface &lt;aF&gt; . [aT1, aT2] - range to build [aToler] - reached tolerance Raises exception Standard_ConstructionError if projection algorithm fails. &lt;theContext&gt; - storage for caching the geometrical tools</p>
+</dd>
+<dt class="field-even">param aF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param C3D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C3D</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aT1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aT1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aT2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aT2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aC</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aToler</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aToler</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.PointOnSurface">
+<em class="property">static </em><code class="sig-name descname">PointOnSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.PointOnSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute surface parameters &lt;U,V&gt; of the face &lt;aF&gt; for the point from the edge &lt;aE&gt; at parameter &lt;aT&gt;. If &lt;aE&gt; has’t pcurve on surface, algorithm tries to get it by projection and can raise exception Standard_ConstructionError if projection algorithm fails. &lt;theContext&gt; - storage for caching the geometrical tools</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools2D.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools2D.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D">
+<em class="property">class </em><code class="sig-name descname">BOPTools_AlgoTools3D</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.DoSplitSEAMOnFace">
+<em class="property">static </em><code class="sig-name descname">DoSplitSEAMOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.DoSplitSEAMOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Make the edge &lt;aSp&gt; seam edge for the face &lt;aF&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aSp</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSp</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.GetApproxNormalToFaceOnEdge">
+<em class="property">static </em><code class="sig-name descname">GetApproxNormalToFaceOnEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.GetApproxNormalToFaceOnEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes normal to the face &lt;aF&gt; for the 3D-point that belongs to the edge &lt;aE&gt; at parameter &lt;aT&gt;. Output: aPx - the 3D-point where the normal computed aD - the normal; Warning: The normal is computed not exactly in the point on the edge, but in point that is near to the edge towards to the face material (so, we’ll have approx. normal); The point is computed using PointNearEdge function, with the shifting value BOPTools_AlgoTools3D::MinStepIn2d(), from the edge, but if this value is too big, the point will be computed using Hatcher (PointInFace function). Returns True in case of success.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aPx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPx</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param aD</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aD</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Computes normal to the face &lt;aF&gt; for the 3D-point that belongs to the edge &lt;aE&gt; at parameter &lt;aT&gt;. Output: aPx - the 3D-point where the normal computed aD - the normal; Warning: The normal is computed not exactly in the point on the edge, but in point that is near to the edge towards to the face material (so, we’ll have approx. normal); The point is computed using PointNearEdge function with the shifting value &lt;aDt2D&gt; from the edge; No checks on this value will be done. Returns True in case of success.</p>
+</dd>
+<dt class="field-even">param theE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param theF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param aT</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aT</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aP</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param aDNF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDNF</dt>
+<dd class="field-odd"><p>gp_Dir</p>
+</dd>
+<dt class="field-even">param aDt2D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDt2D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* Computes normal to the face &lt;aF&gt; for the 3D-point that belongs to the edge &lt;aE&gt; at parameter &lt;aT&gt;. Output: aPx - the 3D-point where the normal computed aD - the normal; Warning: The normal is computed not exactly in the point on the edge, but in point that is near to the edge towards to the face material (so, we’ll have approx. normal); The point is computed using PointNearEdge function with the shifting value &lt;aDt2D&gt; from the edge, but if this value is too big the point will be computed using Hatcher (PointInFace function). Returns True in case of success.</p>
+</dd>
+<dt class="field-odd">param theE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDt2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDt2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param aDNF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDNF</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.GetNormalToFaceOnEdge">
+<em class="property">static </em><code class="sig-name descname">GetNormalToFaceOnEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.GetNormalToFaceOnEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes normal to the face &lt;aF&gt; for the point on the edge &lt;aE&gt; at parameter &lt;aT&gt;. &lt;theContext&gt; - storage for caching the geometrical tools</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aD</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aD</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Computes normal to the face &lt;aF&gt; for the point on the edge &lt;aE&gt; at arbitrary intermediate parameter. &lt;theContext&gt; - storage for caching the geometrical tools</p>
+</dd>
+<dt class="field-even">param aE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param aF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param aD</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aD</dt>
+<dd class="field-odd"><p>gp_Dir</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p>default value is opencascade::handle&lt;IntTools_Context&gt;()</p>
+</dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.GetNormalToSurface">
+<em class="property">static </em><code class="sig-name descname">GetNormalToSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.GetNormalToSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute normal &lt;aD&gt; to surface &lt;aS&gt; in point (U,V) Returns True if directions aD1U, aD1V coincide</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aS</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aD</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aD</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.IsEmptyShape">
+<em class="property">static </em><code class="sig-name descname">IsEmptyShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.IsEmptyShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the shape &lt;aS&gt; does not contain geometry information (e.g. empty compound)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.MinStepIn2d">
+<em class="property">static </em><code class="sig-name descname">MinStepIn2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.MinStepIn2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns simple step value that is used in 2D-computations = 1.e-5</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.OrientEdgeOnFace">
+<em class="property">static </em><code class="sig-name descname">OrientEdgeOnFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.OrientEdgeOnFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get the edge &lt;aER&gt; from the face &lt;aF&gt; that is the same as the edge &lt;aE&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aER</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aER</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.PointInFace">
+<em class="property">static </em><code class="sig-name descname">PointInFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.PointInFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes arbitrary point &lt;theP&gt; inside the face &lt;theF&gt;. &lt;theP2D&gt; - 2D representation of &lt;theP&gt; on the surface of &lt;theF&gt; Returns 0 in case of success.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theP</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theP2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theP2D</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Computes a point &lt;theP&gt; inside the face &lt;theF&gt; using starting point taken by the parameter &lt;theT&gt; from the 2d curve of the edge &lt;theE&gt; on the face &lt;theF&gt; in the direction perpendicular to the tangent vector of the 2d curve of the edge. The point will be distanced on &lt;theDt2D&gt; from the 2d curve. &lt;theP2D&gt; - 2D representation of &lt;theP&gt; on the surface of &lt;theF&gt; Returns 0 in case of success.</p>
+</dd>
+<dt class="field-even">param theF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param theT</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theT</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theDt2D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDt2D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theP</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param theP2D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theP2D</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int* Computes a point &lt;theP&gt; inside the face &lt;theF&gt; using the line &lt;theL&gt; so that 2D point &lt;theP2D&gt;, 2D representation of &lt;theP&gt; on the surface of &lt;theF&gt;, lies on that line. Returns 0 in case of success.</p>
+</dd>
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theL</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theP</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theP2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theP2D</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDt2D</dt>
+<dd class="field-odd"><p>default value is 0.0</p>
+</dd>
+<dt class="field-even">type theDt2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.PointNearEdge">
+<em class="property">static </em><code class="sig-name descname">PointNearEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.PointNearEdge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute the point &lt;aPx&gt;, (&lt;aP2D&gt;) that is near to the edge &lt;aE&gt; at parameter &lt;aT&gt; towards to the material of the face &lt;aF&gt;. The value of shifting in 2D is &lt;aDt2D&gt; If the value of shifting is too big the point will be computed using Hatcher (PointInFace function). Returns error status: 0 - in case of success; 1 - &lt;aE&gt; does not have 2d curve on the face &lt;aF&gt;; 2 - the computed point is out of the face.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDt2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDt2D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aP2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP2D</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param aPx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPx</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Compute the point &lt;aPx&gt;, (&lt;aP2D&gt;) that is near to the edge &lt;aE&gt; at parameter &lt;aT&gt; towards to the material of the face &lt;aF&gt;. The value of shifting in 2D is &lt;aDt2D&gt;. No checks on this value will be done. Returns error status: 0 - in case of success; 1 - &lt;aE&gt; does not have 2d curve on the face &lt;aF&gt;.</p>
+</dd>
+<dt class="field-even">param aE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param aF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param aT</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aT</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDt2D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDt2D</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aP2D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aP2D</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param aPx</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aPx</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int* Computes the point &lt;aPx&gt;, (&lt;aP2D&gt;) that is near to the edge &lt;aE&gt; at parameter &lt;aT&gt; towards to the material of the face &lt;aF&gt;. The value of shifting in 2D is dt2D=BOPTools_AlgoTools3D::MinStepIn2d() If the value of shifting is too big the point will be computed using Hatcher (PointInFace function). Returns error status: 0 - in case of success; 1 - &lt;aE&gt; does not have 2d curve on the face &lt;aF&gt;; 2 - the computed point is out of the face.</p>
+</dd>
+<dt class="field-odd">param aE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param aF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param aT</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aT</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aP2D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aP2D</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param aPx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPx</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theContext</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theContext</dt>
+<dd class="field-even"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int* Compute the point &lt;aPx&gt;, (&lt;aP2D&gt;) that is near to the edge &lt;aE&gt; at arbitrary parameter towards to the material of the face &lt;aF&gt;. The value of shifting in 2D is dt2D=BOPTools_AlgoTools3D::MinStepIn2d(). If the value of shifting is too big the point will be computed using Hatcher (PointInFace function). Returns error status: 0 - in case of success; 1 - &lt;aE&gt; does not have 2d curve on the face &lt;aF&gt;; 2 - the computed point is out of the face.</p>
+</dd>
+<dt class="field-even">param aE</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aE</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param aF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aF</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param aP2D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aP2D</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param aPx</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aPx</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param theContext</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theContext</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;IntTools_Context&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.SenseFlag">
+<em class="property">static </em><code class="sig-name descname">SenseFlag</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.SenseFlag" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns 1 if scalar product aNF1* aNF2&gt;0. Returns 0 if directions aNF1 aNF2 coincide Returns -1 if scalar product aNF1* aNF2&lt;0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aNF1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNF1</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">param aNF2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aNF2</dt>
+<dd class="field-even"><p>gp_Dir</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_AlgoTools3D.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_AlgoTools3D.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock">
+<em class="property">class </em><code class="sig-name descname">BOPTools_ConnexityBlock</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param theAllocator:
+:type theAllocator: opencascade::handle&lt;NCollection_BaseAllocator&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock.ChangeLoops">
+<code class="sig-name descname">ChangeLoops</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock.ChangeLoops" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_ListOfShape" title="OCC.Core.TopTools.TopTools_ListOfShape">TopTools_ListOfShape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock.ChangeShapes">
+<code class="sig-name descname">ChangeShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock.ChangeShapes" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_ListOfShape" title="OCC.Core.TopTools.TopTools_ListOfShape">TopTools_ListOfShape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock.IsRegular">
+<code class="sig-name descname">IsRegular</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock.IsRegular" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock.Loops">
+<code class="sig-name descname">Loops</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock.Loops" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_ListOfShape" title="OCC.Core.TopTools.TopTools_ListOfShape">TopTools_ListOfShape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock.SetRegular">
+<code class="sig-name descname">SetRegular</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock.SetRegular" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theFlag</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theFlag</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock.Shapes">
+<code class="sig-name descname">Shapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock.Shapes" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_ListOfShape" title="OCC.Core.TopTools.TopTools_ListOfShape">TopTools_ListOfShape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ConnexityBlock.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ConnexityBlock.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_CoupleOfShape">
+<em class="property">class </em><code class="sig-name descname">BOPTools_CoupleOfShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_CoupleOfShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_CoupleOfShape.SetShape1">
+<code class="sig-name descname">SetShape1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_CoupleOfShape.SetShape1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theShape</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_CoupleOfShape.SetShape2">
+<code class="sig-name descname">SetShape2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_CoupleOfShape.SetShape2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theShape</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_CoupleOfShape.Shape1">
+<code class="sig-name descname">Shape1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_CoupleOfShape.Shape1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_CoupleOfShape.Shape2">
+<code class="sig-name descname">Shape2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_CoupleOfShape.Shape2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_CoupleOfShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_CoupleOfShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape">
+<em class="property">class </em><code class="sig-name descname">BOPTools_IndexedDataMapOfSetShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ChangeFromIndex">
+<code class="sig-name descname">ChangeFromIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ChangeFromIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ChangeFromKey">
+<code class="sig-name descname">ChangeFromKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ChangeFromKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Contains">
+<code class="sig-name descname">Contains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Contains" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindFromIndex">
+<code class="sig-name descname">FindFromIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindFromIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindFromKey">
+<code class="sig-name descname">FindFromKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindFromKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindIndex">
+<code class="sig-name descname">FindIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindKey">
+<code class="sig-name descname">FindKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.FindKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.RemoveFromIndex">
+<code class="sig-name descname">RemoveFromIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.RemoveFromIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.RemoveKey">
+<code class="sig-name descname">RemoveKey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.RemoveKey" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.RemoveLast">
+<code class="sig-name descname">RemoveLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.RemoveLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Substitute">
+<code class="sig-name descname">Substitute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Substitute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Swap">
+<code class="sig-name descname">Swap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.Swap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_IndexedDataMapOfSetShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock">
+<em class="property">class </em><code class="sig-name descname">BOPTools_ListOfConnexityBlock</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.RemoveFirst">
+<code class="sig-name descname">RemoveFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.RemoveFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfConnexityBlock.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape">
+<em class="property">class </em><code class="sig-name descname">BOPTools_ListOfCoupleOfShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.RemoveFirst">
+<code class="sig-name descname">RemoveFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.RemoveFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_ListOfCoupleOfShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet">
+<em class="property">class </em><code class="sig-name descname">BOPTools_MapOfSet</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Added">
+<code class="sig-name descname">Added</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Added" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Contains">
+<code class="sig-name descname">Contains</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Contains" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Differ">
+<code class="sig-name descname">Differ</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Differ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Difference">
+<code class="sig-name descname">Difference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Difference" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.HasIntersection">
+<code class="sig-name descname">HasIntersection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.HasIntersection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Intersect">
+<code class="sig-name descname">Intersect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Intersect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Intersection">
+<code class="sig-name descname">Intersection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Intersection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.IsEqual">
+<code class="sig-name descname">IsEqual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.IsEqual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Subtract">
+<code class="sig-name descname">Subtract</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Subtract" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Subtraction">
+<code class="sig-name descname">Subtraction</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Subtraction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Union">
+<code class="sig-name descname">Union</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Union" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.Unite">
+<code class="sig-name descname">Unite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.Unite" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_MapOfSet.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_MapOfSet.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_Set">
+<em class="property">class </em><code class="sig-name descname">BOPTools_Set</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param theAllocator:
+:type theAllocator: opencascade::handle&lt;NCollection_BaseAllocator&gt; &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.Add" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theS</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theType</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theType</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.Assign" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Other</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Other</dt>
+<dd class="field-odd"><p>BOPTools_Set &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>BOPTools_Set</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.HashCode">
+<code class="sig-name descname">HashCode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.HashCode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes a hash code for this set, in the range [1, theUpperBound] &#64;param theUpperBound the upper bound of the range a computing hash code must be within returns a computed hash code, in the range [1, theUpperBound]</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theUpperBound</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUpperBound</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.IsEqual">
+<code class="sig-name descname">IsEqual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.IsEqual" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aOther</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aOther</dt>
+<dd class="field-odd"><p>BOPTools_Set &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.NbShapes">
+<code class="sig-name descname">NbShapes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.NbShapes" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.Set" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Other</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Other</dt>
+<dd class="field-odd"><p>BOPTools_Set &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>BOPTools_Set</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_Set.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_Set.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.BOPTools_SetMapHasher">
+<em class="property">class </em><code class="sig-name descname">BOPTools_SetMapHasher</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_SetMapHasher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_SetMapHasher.HashCode">
+<em class="property">static </em><code class="sig-name descname">HashCode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_SetMapHasher.HashCode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes a hash code for the given set, in the range [1, theUpperBound] &#64;param theSet the set which hash code is to be computed &#64;param theUpperBound the upper bound of the range a computing hash code must be within returns a computed hash code, in the range [1, theUpperBound]</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSet</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSet</dt>
+<dd class="field-even"><p>BOPTools_Set &amp;</p>
+</dd>
+<dt class="field-odd">param theUpperBound</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUpperBound</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_SetMapHasher.IsEqual">
+<em class="property">static </em><code class="sig-name descname">IsEqual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_SetMapHasher.IsEqual" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aSet1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aSet1</dt>
+<dd class="field-odd"><p>BOPTools_Set &amp;</p>
+</dd>
+<dt class="field-even">param aSet2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aSet2</dt>
+<dd class="field-odd"><p>BOPTools_Set &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.BOPTools_SetMapHasher.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.BOPTools_SetMapHasher.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BOPTools.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BOPTools.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BOPTools.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

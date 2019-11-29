@@ -1,0 +1,1632 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.FairCurve module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.FairCurve module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.FairCurve module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.FairCurve.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.FairCurve">
+<span id="occ-core-faircurve-module"></span><h1>OCC.Core.FairCurve module<a class="headerlink" href="#module-OCC.Core.FairCurve" title="Permalink to this headline">¶</a></h1>
+<p>FairCurve module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_faircurve.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_faircurve.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten">
+<em class="property">class </em><code class="sig-name descname">FairCurve_Batten</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor with the two points and the geometrical characteristics of the batten (elastic beam) Height is the height of the deformation, and Slope is the slope value, initialized at 0. The user can then supply the desired slope value by the method, SetSlope. Other parameters are initialized as follow<span class="classifier">- FreeSliding = False - ConstraintOrder1 = 1 - ConstraintOrder2 = 1 - Angle1 = 0 - Angle2 = 0 - SlidingFactor = 1 Exceptions NegativeValue if Height is less than or equal to 0. NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Height</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Height</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Slope</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Slope</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.Compute">
+<code class="sig-name descname">Compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.Compute" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs the algorithm, using the arguments Code, NbIterations and Tolerance and computes the curve with respect to the constraints. Code will have one of the following values: - OK - NotConverged - InfiniteSliding - NullHeight The parameters Tolerance and NbIterations control how precise the computation is, and how long it will take.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Code</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Code</dt>
+<dd class="field-even"><p>FairCurve_AnalysisCode &amp;</p>
+</dd>
+<dt class="field-odd">param NbIterations</dt>
+<dd class="field-odd"><p>default value is 50</p>
+</dd>
+<dt class="field-even">type NbIterations</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Tolerance</dt>
+<dd class="field-odd"><p>default value is 1.0e-3</p>
+</dd>
+<dt class="field-even">type Tolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.Curve">
+<code class="sig-name descname">Curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the computed curve a 2d BSpline.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_BSplineCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">FairCurve_Batten self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetAngle1">
+<code class="sig-name descname">GetAngle1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetAngle1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the established first angle.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetAngle2">
+<code class="sig-name descname">GetAngle2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetAngle2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the established second angle.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetConstraintOrder1">
+<code class="sig-name descname">GetConstraintOrder1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetConstraintOrder1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the established first constraint order.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetConstraintOrder2">
+<code class="sig-name descname">GetConstraintOrder2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetConstraintOrder2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the established second constraint order.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetFreeSliding">
+<code class="sig-name descname">GetFreeSliding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetFreeSliding" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the initial free sliding value, false by default. Free sliding is generally more aesthetically pleasing than constrained sliding. However, the computation can fail with values such as angles greater than PI/2. This is because the resulting batten length is theoretically infinite.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetHeight">
+<code class="sig-name descname">GetHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetHeight" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the thickness of the lathe.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetP1">
+<code class="sig-name descname">GetP1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetP1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the established location of the point P1.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetP2">
+<code class="sig-name descname">GetP2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetP2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the established location of the point P2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetSlidingFactor">
+<code class="sig-name descname">GetSlidingFactor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetSlidingFactor" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the initial sliding factor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.GetSlope">
+<code class="sig-name descname">GetSlope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.GetSlope" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the established slope value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetAngle1">
+<code class="sig-name descname">SetAngle1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetAngle1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the angle Angle1 at the first point, P1. The default setting is 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Angle1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetAngle2">
+<code class="sig-name descname">SetAngle2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetAngle2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the angle Angle2 at the second point, P2. The default setting is 0.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Angle2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetConstraintOrder1">
+<code class="sig-name descname">SetConstraintOrder1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetConstraintOrder1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the order of the constraint on the first point. ConstraintOrder has the default setting of 1. The following settings are available: - 0-the curve must pass through a point - 1-the curve must pass through a point and have a given tangent - 2-the curve must pass through a point, have a given tangent and a given curvature. The third setting is only valid for FairCurve_MinimalVariation curves. These constraints, though geometric, represent the mechanical constraints due, for example, to the resistance of the material the actual physical batten is made of.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param ConstraintOrder</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ConstraintOrder</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetConstraintOrder2">
+<code class="sig-name descname">SetConstraintOrder2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetConstraintOrder2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the order of the constraint on the second point. ConstraintOrder is initialized with the default setting of 1. The following settings are available: - 0-the curve must pass through a point - 1-the curve must pass through a point and have a given tangent - 2-the curve must pass through a point, have a given tangent and a given curvature. The third setting is only valid for FairCurve_MinimalVariation curves. These constraints, though geometric, represent the mechanical constraints due, for example, to the resistance of the material the actual physical batten is made of.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param ConstraintOrder</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ConstraintOrder</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetFreeSliding">
+<code class="sig-name descname">SetFreeSliding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetFreeSliding" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Freesliding is initialized with the default setting false. When Freesliding is set to true and, as a result, sliding is free, the sliding factor is automatically computed to satisfy the equilibrium of the batten.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param FreeSliding</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FreeSliding</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetHeight">
+<code class="sig-name descname">SetHeight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetHeight" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the height of the deformation. Raises NegativeValue; – if Height &lt;= 0 if Height &lt;= 0</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Height</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Height</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetP1">
+<code class="sig-name descname">SetP1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetP1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the location of the point, P1, and in doing so, modify the curve. Warning This method changes the angle as well as the point. Exceptions NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetP2">
+<code class="sig-name descname">SetP2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetP2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the location of the point, P1, and in doing so, modify the curve. Warning This method changes the angle as well as the point. Exceptions NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetSlidingFactor">
+<code class="sig-name descname">SetSlidingFactor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetSlidingFactor" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to change the ratio SlidingFactor. This compares the length of the batten and the reference length, which is, in turn, a function of the constraints. This modification has one of the following two effects: - if you increase the value, it inflates the batten - if you decrease the value, it flattens the batten. When sliding is free, the sliding factor is automatically computed to satisfy the equilibrium of the batten. When sliding is imposed, a value is required for the sliding factor. SlidingFactor is initialized with the default setting of 1.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param SlidingFactor</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type SlidingFactor</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SetSlope">
+<code class="sig-name descname">SetSlope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SetSlope" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to set the slope value, Slope.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Slope</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Slope</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.SlidingOfReference">
+<code class="sig-name descname">SlidingOfReference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.SlidingOfReference" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the real number value for length Sliding of Reference for new constraints. If you want to give a specific length to a batten curve, use the following syntax: b.SetSlidingFactor(L / b.SlidingOfReference()) where b is the name of the batten curve object.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Batten.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Batten.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_BattenLaw">
+<em class="property">class </em><code class="sig-name descname">FairCurve_BattenLaw</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_BattenLaw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_Function" title="OCC.Core.math.math_Function"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_Function</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor of linear batten with Heigth<span class="classifier">the Heigth at the middle point Slope</span><span class="classifier">the geometric slope of the batten Sliding</span><span class="classifier">Active Length of the batten without extension</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Heigth</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Heigth</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Slope</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Slope</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Sliding</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sliding</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_BattenLaw.SetHeigth">
+<code class="sig-name descname">SetHeigth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_BattenLaw.SetHeigth" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Change the value of Heigth at the middle point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Heigth</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Heigth</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_BattenLaw.SetSliding">
+<code class="sig-name descname">SetSliding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_BattenLaw.SetSliding" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Change the value of sliding</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Sliding</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sliding</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_BattenLaw.SetSlope">
+<code class="sig-name descname">SetSlope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_BattenLaw.SetSlope" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Change the value of the geometric slope.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Slope</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Slope</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_BattenLaw.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_BattenLaw.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfEnergy">
+<em class="property">class </em><code class="sig-name descname">FairCurve_DistributionOfEnergy</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_FunctionSet" title="OCC.Core.math.math_FunctionSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_FunctionSet</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfEnergy.SetDerivativeOrder">
+<code class="sig-name descname">SetDerivativeOrder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfEnergy.SetDerivativeOrder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>DerivativeOrder</strong> – <dl class="field-list simple">
+<dt class="field-odd">type DerivativeOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfEnergy.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfEnergy.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfJerk">
+<em class="property">class </em><code class="sig-name descname">FairCurve_DistributionOfJerk</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfJerk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.FairCurve.FairCurve_DistributionOfEnergy" title="OCC.Core.FairCurve.FairCurve_DistributionOfEnergy"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.FairCurve.FairCurve_DistributionOfEnergy</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>BSplOrder</strong> – <dl class="field-list simple">
+<dt class="field-odd">type BSplOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param FlatKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FlatKnots</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+<dt class="field-even">param DerivativeOrder</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DerivativeOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Law</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Law</dt>
+<dd class="field-odd"><p>FairCurve_BattenLaw &amp;</p>
+</dd>
+<dt class="field-even">param NbValAux</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type NbValAux</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfJerk.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfJerk.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfSagging">
+<em class="property">class </em><code class="sig-name descname">FairCurve_DistributionOfSagging</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfSagging" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.FairCurve.FairCurve_DistributionOfEnergy" title="OCC.Core.FairCurve.FairCurve_DistributionOfEnergy"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.FairCurve.FairCurve_DistributionOfEnergy</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>BSplOrder</strong> – <dl class="field-list simple">
+<dt class="field-odd">type BSplOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param FlatKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FlatKnots</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+<dt class="field-even">param DerivativeOrder</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DerivativeOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Law</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Law</dt>
+<dd class="field-odd"><p>FairCurve_BattenLaw &amp;</p>
+</dd>
+<dt class="field-even">param NbValAux</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type NbValAux</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfSagging.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfSagging.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfTension">
+<em class="property">class </em><code class="sig-name descname">FairCurve_DistributionOfTension</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfTension" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.FairCurve.FairCurve_DistributionOfEnergy" title="OCC.Core.FairCurve.FairCurve_DistributionOfEnergy"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.FairCurve.FairCurve_DistributionOfEnergy</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>BSplOrder</strong> – <dl class="field-list simple">
+<dt class="field-odd">type BSplOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param FlatKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FlatKnots</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+<dt class="field-even">param DerivativeOrder</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DerivativeOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param LengthSliding</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LengthSliding</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Law</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Law</dt>
+<dd class="field-odd"><p>FairCurve_BattenLaw &amp;</p>
+</dd>
+<dt class="field-even">param NbValAux</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type NbValAux</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Uniform</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Uniform</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfTension.SetLengthSliding">
+<code class="sig-name descname">SetLengthSliding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfTension.SetLengthSliding" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>change the length sliding</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param LengthSliding</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LengthSliding</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_DistributionOfTension.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_DistributionOfTension.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_Energy">
+<em class="property">class </em><code class="sig-name descname">FairCurve_Energy</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_MultipleVarFunctionWithHessian" title="OCC.Core.math.math_MultipleVarFunctionWithHessian"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_MultipleVarFunctionWithHessian</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Energy.Poles">
+<code class="sig-name descname">Poles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Energy.Poles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the poles</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Energy.Values">
+<code class="sig-name descname">Values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Energy.Values" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>computes the Energy &lt;E&gt; and the gradient &lt;G&gt; of the energy for the variable &lt;X&gt;. Returns True if the computation was done successfully, False otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param G</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type G</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* computes the Energy &lt;E&gt;, the gradient &lt;G&gt; and the Hessian &lt;H&gt; of the energy for the variable &lt;X&gt;. Returns True if the computation was done successfully, False otherwise.</p>
+</dd>
+<dt class="field-even">param X</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param G</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type G</dt>
+<dd class="field-odd"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>math_Matrix &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Energy.Variable">
+<code class="sig-name descname">Variable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Energy.Variable" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>compute the variables &lt;X&gt; wich correspond with the field &lt;MyPoles&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>math_Vector &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Energy.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Energy.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfBatten">
+<em class="property">class </em><code class="sig-name descname">FairCurve_EnergyOfBatten</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfBatten" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.FairCurve.FairCurve_Energy" title="OCC.Core.FairCurve.FairCurve_Energy"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.FairCurve.FairCurve_Energy</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Angles corresspond to the Ox axis</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param BSplOrder</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BSplOrder</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param FlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FlatKnots</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+<dt class="field-odd">param ContrOrder1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ContrOrder1</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param ContrOrder2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ContrOrder2</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Law</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Law</dt>
+<dd class="field-even"><p>FairCurve_BattenLaw &amp;</p>
+</dd>
+<dt class="field-odd">param LengthSliding</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LengthSliding</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param FreeSliding</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type FreeSliding</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Angle1</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Angle2</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfBatten.LengthSliding">
+<code class="sig-name descname">LengthSliding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfBatten.LengthSliding" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the lengthSliding = P1P2 + Sliding</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfBatten.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfBatten.Status" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the status</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>FairCurve_AnalysisCode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfBatten.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfBatten.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfMVC">
+<em class="property">class </em><code class="sig-name descname">FairCurve_EnergyOfMVC</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfMVC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.FairCurve.FairCurve_Energy" title="OCC.Core.FairCurve.FairCurve_Energy"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.FairCurve.FairCurve_Energy</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Angles corresspond to the Ox axis</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param BSplOrder</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type BSplOrder</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param FlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FlatKnots</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColgp_HArray1OfPnt2d&gt;</p>
+</dd>
+<dt class="field-odd">param ContrOrder1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ContrOrder1</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param ContrOrder2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ContrOrder2</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Law</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Law</dt>
+<dd class="field-even"><p>FairCurve_BattenLaw &amp;</p>
+</dd>
+<dt class="field-odd">param PhysicalRatio</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PhysicalRatio</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param LengthSliding</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LengthSliding</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param FreeSliding</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type FreeSliding</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Angle1</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Angle2</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Curvature1</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Curvature1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Curvature2</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Curvature2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfMVC.LengthSliding">
+<code class="sig-name descname">LengthSliding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfMVC.LengthSliding" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the lengthSliding = P1P2 + Sliding</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfMVC.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfMVC.Status" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>return the status</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>FairCurve_AnalysisCode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_EnergyOfMVC.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_EnergyOfMVC.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation">
+<em class="property">class </em><code class="sig-name descname">FairCurve_MinimalVariation</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.FairCurve.FairCurve_Batten" title="OCC.Core.FairCurve.FairCurve_Batten"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.FairCurve.FairCurve_Batten</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs the two contact points P1 and P2 and the geometrical characteristics of the batten (elastic beam) These include the real number values for height of deformation Height, slope value Slope, and kind of energy PhysicalRatio. The kinds of energy include: - Jerk (0) - Sagging (1). Note that the default setting for Physical Ration is in FairCurve_Batten Other parameters are initialized as follow<span class="classifier">- FreeSliding = False - ConstraintOrder1 = 1 - ConstraintOrder2 = 1 - Angle1 = 0 - Angle2 = 0 - Curvature1 = 0 - Curvature2 = 0 - SlidingFactor = 1 Warning If PhysicalRatio equals 1, you cannot impose constraints on curvature. Exceptions NegativeValue if Height is less than or equal to 0. NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case. Definition of the geometricals constraints</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Heigth</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Heigth</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Slope</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type Slope</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param PhysicalRatio</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type PhysicalRatio</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">FairCurve_MinimalVariation self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.GetCurvature1">
+<code class="sig-name descname">GetCurvature1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.GetCurvature1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the first established curvature.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.GetCurvature2">
+<code class="sig-name descname">GetCurvature2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.GetCurvature2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the second established curvature.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.GetPhysicalRatio">
+<code class="sig-name descname">GetPhysicalRatio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.GetPhysicalRatio" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the physical ratio, or kind of energy.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.SetCurvature1">
+<code class="sig-name descname">SetCurvature1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.SetCurvature1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to set a new constraint on curvature at the first point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Curvature</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curvature</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.SetCurvature2">
+<code class="sig-name descname">SetCurvature2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.SetCurvature2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to set a new constraint on curvature at the second point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Curvature</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Curvature</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.SetPhysicalRatio">
+<code class="sig-name descname">SetPhysicalRatio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.SetPhysicalRatio" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Allows you to set the physical ratio Ratio. The kinds of energy which you can specify include: 0 is only ‘Jerk’ Energy 1 is only ‘Sagging’ Energy like batten Warning: if Ratio is 1 it is impossible to impose curvature constraints. Raises DomainError if Ratio &lt; 0 or Ratio &gt; 1</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Ratio</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Ratio</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_MinimalVariation.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_MinimalVariation.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.FairCurve_Newton">
+<em class="property">class </em><code class="sig-name descname">FairCurve_Newton</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Newton" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.math.html#OCC.Core.math.math_NewtonMinimum" title="OCC.Core.math.math_NewtonMinimum"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.math.math_NewtonMinimum</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The tolerance required on the solution is given by Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H &lt; Convexity) or IsConverged() returns True for 2 successives Iterations. Warning: This constructor do not computation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFunction</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFunction</dt>
+<dd class="field-even"><p>math_MultipleVarFunctionWithHessian &amp;</p>
+</dd>
+<dt class="field-odd">param theSpatialTolerance</dt>
+<dd class="field-odd"><p>default value is 1.0e-7</p>
+</dd>
+<dt class="field-even">type theSpatialTolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theCriteriumTolerance</dt>
+<dd class="field-odd"><p>default value is 1.0e-7</p>
+</dd>
+<dt class="field-even">type theCriteriumTolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theNbIterations</dt>
+<dd class="field-odd"><p>default value is 40</p>
+</dd>
+<dt class="field-even">type theNbIterations</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theConvexity</dt>
+<dd class="field-odd"><p>default value is 1.0e-6</p>
+</dd>
+<dt class="field-even">type theConvexity</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theWithSingularity</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theWithSingularity</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Newton.IsConverged">
+<code class="sig-name descname">IsConverged</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Newton.IsConverged" title="Permalink to this definition">¶</a></dt>
+<dd><ul>
+<li><dl>
+<dt>This method is called at the end of each iteration to check the convergence<span class="classifier">|| Xi+1 - Xi || &lt; SpatialTolerance/100 Or || Xi+1 - Xi || &lt; SpatialTolerance and <a href="#id1"><span class="problematic" id="id2">|F(Xi+1) - F(Xi)|</span></a> &lt; CriteriumTolerance * <a href="#id3"><span class="problematic" id="id4">|F(xi)|</span></a> It can be redefined in a sub-class to implement a specific test.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.FairCurve_Newton.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.FairCurve_Newton.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.FairCurve.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.FairCurve.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.FairCurve.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,2515 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.StepToTopoDS module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.StepToTopoDS module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.StepToTopoDS module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.StepToTopoDS.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.StepToTopoDS">
+<span id="occ-core-steptotopods-module"></span><h1>OCC.Core.StepToTopoDS module<a class="headerlink" href="#module-OCC.Core.StepToTopoDS" title="Permalink to this headline">¶</a></h1>
+<p>StepToTopoDS module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_steptotopods.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_steptotopods.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_CartesianPointHasher</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher.HashCode">
+<em class="property">static </em><code class="sig-name descname">HashCode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher.HashCode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes a hash code for the cartesian point, in the range [1, theUpperBound] &#64;param theCartesianPoint the cartesian point which hash code is to be computed &#64;param theUpperBound the upper bound of the range a computing hash code must be within returns a computed hash code, in the range [1, theUpperBound]</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theCartesianPoint</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCartesianPoint</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_CartesianPoint&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theUpperBound</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUpperBound</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher.IsEqual">
+<em class="property">static </em><code class="sig-name descname">IsEqual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher.IsEqual" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True when the two CartesianPoint are the same</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param K1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type K1</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_CartesianPoint&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param K2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type K2</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_CartesianPoint&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_CartesianPointHasher.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_DataMapOfRI</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRI.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_DataMapOfRINames</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfRINames.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_DataMapOfTRI</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_DataMapOfTRI.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_GeometricTool</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.IsLikeSeam">
+<em class="property">static </em><code class="sig-name descname">IsLikeSeam</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.IsLikeSeam" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SC</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_SurfaceCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">param EL</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type EL</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_EdgeLoop&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.IsSeamCurve">
+<em class="property">static </em><code class="sig-name descname">IsSeamCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.IsSeamCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SC</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_SurfaceCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">param EL</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type EL</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_EdgeLoop&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.PCurve">
+<em class="property">static </em><code class="sig-name descname">PCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.PCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>SC</strong> – <dl class="field-list simple">
+<dt class="field-odd">type SC</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_SurfaceCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PC</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_Pcurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param last</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type last</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.UpdateParam3d">
+<em class="property">static </em><code class="sig-name descname">UpdateParam3d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.UpdateParam3d" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param w1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type w1</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param w2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type w2</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param preci</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type preci</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_GeometricTool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_MakeTransformed</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.Compute">
+<code class="sig-name descname">Compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.Compute" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes a transformation to pass from an Origin placement to a Target placement. Returns True when done If not done, the transformation will by Identity</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Origin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Origin</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_Axis2Placement3d&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Target</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Target</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_Axis2Placement3d&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Computes a transformation defined by an operator 3D</p>
+</dd>
+<dt class="field-even">param Operator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Operator</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_CartesianTransformationOperator3d&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.Transform">
+<code class="sig-name descname">Transform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.Transform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Applies the computed transformation to a shape Returns False if the transformation is Identity</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.Transformation">
+<code class="sig-name descname">Transformation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.Transformation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the computed transformation (Identity if not yet or if failed)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Trsf</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.TranslateMappedItem">
+<code class="sig-name descname">TranslateMappedItem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.TranslateMappedItem" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Translates a MappedItem. More precisely A MappedItem has a MappingSource and a MappingTarget MappingSource has a MappedRepresentation and a MappingOrigin MappedRepresentation is the basic item to be instanced MappingOrigin is the starting placement MappingTarget is the final placement //! Hence, the transformation from MappingOrigin and MappingTarget is computed, the MappedRepr. is converted to a Shape, then transformed as an instance of this Shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param mapit</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type mapit</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepRepr_MappedItem&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param TP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TP</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Transfer_TransientProcess&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_MakeTransformed.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_NMTool</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param MapOfRI:
+:type MapOfRI: StepToTopoDS_DataMapOfRI &amp;
+:param MapOfRINames:
+:type MapOfRINames: StepToTopoDS_DataMapOfRINames &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.Bind" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>RI</strong> – <dl class="field-list simple">
+<dt class="field-odd">type RI</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepRepr_RepresentationItem&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param RIName:</p>
+</dd>
+<dt class="field-odd">type RIName</dt>
+<dd class="field-odd"><p>TCollection_AsciiString &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.CleanUp">
+<code class="sig-name descname">CleanUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.CleanUp" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.Find" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>RI</strong> – <dl class="field-list simple">
+<dt class="field-odd">type RI</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepRepr_RepresentationItem&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape:param RIName:</p>
+</dd>
+<dt class="field-odd">type RIName</dt>
+<dd class="field-odd"><p>TCollection_AsciiString &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>MapOfRI</strong> – <dl class="field-list simple">
+<dt class="field-odd">type MapOfRI</dt>
+<dd class="field-odd"><p>StepToTopoDS_DataMapOfRI &amp;</p>
+</dd>
+<dt class="field-even">param MapOfRINames</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MapOfRINames</dt>
+<dd class="field-odd"><p>StepToTopoDS_DataMapOfRINames &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsActive">
+<code class="sig-name descname">IsActive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsActive" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>RI</strong> – <dl class="field-list simple">
+<dt class="field-odd">type RI</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepRepr_RepresentationItem&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool:param RIName:</p>
+</dd>
+<dt class="field-odd">type RIName</dt>
+<dd class="field-odd"><p>TCollection_AsciiString &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsIDEASCase">
+<code class="sig-name descname">IsIDEASCase</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsIDEASCase" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsPureNMShell">
+<code class="sig-name descname">IsPureNMShell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsPureNMShell" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Shell</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Shell</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsSuspectedAsClosing">
+<code class="sig-name descname">IsSuspectedAsClosing</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.IsSuspectedAsClosing" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>BaseShell</strong> – <dl class="field-list simple">
+<dt class="field-odd">type BaseShell</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param SuspectedShell</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type SuspectedShell</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.RegisterNMEdge">
+<code class="sig-name descname">RegisterNMEdge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.RegisterNMEdge" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Edge</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Edge</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.SetActive">
+<code class="sig-name descname">SetActive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.SetActive" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>isActive</strong> – <dl class="field-list simple">
+<dt class="field-odd">type isActive</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.SetIDEASCase">
+<code class="sig-name descname">SetIDEASCase</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.SetIDEASCase" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>IDEASCase</strong> – <dl class="field-list simple">
+<dt class="field-odd">type IDEASCase</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_NMTool.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_PointEdgeMap</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointEdgeMap.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointPair">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_PointPair</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointPair" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>P1</strong> – <dl class="field-list simple">
+<dt class="field-odd">type P1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_CartesianPoint&gt; &amp;</p>
+</dd>
+<dt class="field-even">param P2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_CartesianPoint&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointPair.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointPair.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_PointPairHasher</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher.HashCode">
+<em class="property">static </em><code class="sig-name descname">HashCode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher.HashCode" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes a hash code for the point pair, in the range [1, theUpperBound] &#64;param thePointPair the point pair which hash code is to be computed &#64;param theUpperBound the upper bound of the range a computing hash code must be within returns a computed hash code, in the range [1, theUpperBound]</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePointPair</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePointPair</dt>
+<dd class="field-even"><p>StepToTopoDS_PointPair &amp;</p>
+</dd>
+<dt class="field-odd">param theUpperBound</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUpperBound</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher.IsEqual">
+<em class="property">static </em><code class="sig-name descname">IsEqual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher.IsEqual" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True when the two PointPair are the same</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param K1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type K1</dt>
+<dd class="field-even"><p>StepToTopoDS_PointPair &amp;</p>
+</dd>
+<dt class="field-odd">param K2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type K2</dt>
+<dd class="field-even"><p>StepToTopoDS_PointPair &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointPairHasher.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_PointVertexMap</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_PointVertexMap.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_Root">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_Root</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_Root.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_Root.MaxTol">
+<code class="sig-name descname">MaxTol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root.MaxTol" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the value of ‘MaxTol’</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_Root.Precision">
+<code class="sig-name descname">Precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root.Precision" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the value of ‘MyPrecision’</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_Root.SetMaxTol">
+<code class="sig-name descname">SetMaxTol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root.SetMaxTol" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the value of MaxTol</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param maxpreci</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type maxpreci</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_Root.SetPrecision">
+<code class="sig-name descname">SetPrecision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root.SetPrecision" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the value of ‘MyPrecision’</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param preci</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type preci</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_Root.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateCompositeCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Translates standalone composite_curve</p>
+</dd>
+<dt class="field-even">param CC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CC</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_CompositeCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TP</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Transfer_TransientProcess&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Translates composite_curve lying on surface</p>
+</dd>
+<dt class="field-odd">param CC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CC</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_CompositeCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param TP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TP</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Transfer_TransientProcess&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Surf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Surf</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Translates standalone composite_curve</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param CC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CC</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_CompositeCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param TP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TP</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Transfer_TransientProcess&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Translates composite_curve lying on surface</p>
+</dd>
+<dt class="field-even">param CC</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CC</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_CompositeCurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TP</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Transfer_TransientProcess&gt; &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Surf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Surf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.IsInfiniteSegment">
+<code class="sig-name descname">IsInfiniteSegment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.IsInfiniteSegment" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if composite_curve contains a segment with infinite parameters.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns result of last translation or null wire if failed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Wire</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCompositeCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateCurveBoundedSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Create empty tool</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Translate surface</p>
+</dd>
+<dt class="field-even">param CBS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CBS</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_CurveBoundedSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TP</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Transfer_TransientProcess&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Translate surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param CBS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CBS</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_CurveBoundedSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param TP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TP</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Transfer_TransientProcess&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns result of last translation or null wire if failed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateCurveBoundedSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateEdge</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param E:
+:type E: opencascade::handle&lt;StepShape_Edge&gt; &amp;
+:param T:
+:type T: StepToTopoDS_Tool &amp;
+:param NMTool:
+:type NMTool: StepToTopoDS_NMTool &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateEdgeError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>E</strong> – <dl class="field-list simple">
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_Edge&gt; &amp;</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-even">param NMTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NMTool</dt>
+<dd class="field-odd"><p>StepToTopoDS_NMTool &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.MakeFromCurve3D">
+<code class="sig-name descname">MakeFromCurve3D</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.MakeFromCurve3D" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Warning! C3D is assumed to be a Curve 3D … other cases to checked before calling this</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C3D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C3D</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepGeom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param EC</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type EC</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepShape_EdgeCurve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Vend</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Vend</dt>
+<dd class="field-even"><p>opencascade::handle&lt;StepShape_Vertex&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param preci</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type preci</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param T</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type T</dt>
+<dd class="field-even"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.MakePCurve">
+<code class="sig-name descname">MakePCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.MakePCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>PCU</strong> – <dl class="field-list simple">
+<dt class="field-odd">type PCU</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_Pcurve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param ConvSurf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ConvSurf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdge.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateEdgeLoop</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param FB:
+:type FB: opencascade::handle&lt;StepShape_FaceBound&gt; &amp;
+:param F:
+:type F: TopoDS_Face &amp;
+:param S:
+:type S: opencascade::handle&lt;Geom_Surface&gt; &amp;
+:param SS:
+:type SS: opencascade::handle&lt;StepGeom_Surface&gt; &amp;
+:param ss:
+:type ss: bool
+:param T:
+:type T: StepToTopoDS_Tool &amp;
+:param NMTool:
+:type NMTool: StepToTopoDS_NMTool &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateEdgeLoopError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>FB</strong> – <dl class="field-list simple">
+<dt class="field-odd">type FB</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_FaceBound&gt; &amp;</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param SS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type SS</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepGeom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param ss</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ss</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-even">param NMTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NMTool</dt>
+<dd class="field-odd"><p>StepToTopoDS_NMTool &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateEdgeLoop.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateFace</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param FS:
+:type FS: opencascade::handle&lt;StepShape_FaceSurface&gt; &amp;
+:param T:
+:type T: StepToTopoDS_Tool &amp;
+:param NMTool:
+:type NMTool: StepToTopoDS_NMTool &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateFaceError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>FS</strong> – <dl class="field-list simple">
+<dt class="field-odd">type FS</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_FaceSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-even">param NMTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NMTool</dt>
+<dd class="field-odd"><p>StepToTopoDS_NMTool &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateFace.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslatePolyLoop</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param PL:
+:type PL: opencascade::handle&lt;StepShape_PolyLoop&gt; &amp;
+:param T:
+:type T: StepToTopoDS_Tool &amp;
+:param S:
+:type S: opencascade::handle&lt;Geom_Surface&gt; &amp;
+:param F:
+:type F: TopoDS_Face &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslatePolyLoopError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>PL</strong> – <dl class="field-list simple">
+<dt class="field-odd">type PL</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_PolyLoop&gt; &amp;</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslatePolyLoop.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateShell</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param CFS:
+:type CFS: opencascade::handle&lt;StepShape_ConnectedFaceSet&gt; &amp;
+:param T:
+:type T: StepToTopoDS_Tool &amp;
+:param NMTool:
+:type NMTool: StepToTopoDS_NMTool &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateShellError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>CFS</strong> – <dl class="field-list simple">
+<dt class="field-odd">type CFS</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_ConnectedFaceSet&gt; &amp;</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-even">param NMTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NMTool</dt>
+<dd class="field-odd"><p>StepToTopoDS_NMTool &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateShell.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateVertex</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param V:
+:type V: opencascade::handle&lt;StepShape_Vertex&gt; &amp;
+:param T:
+:type T: StepToTopoDS_Tool &amp;
+:param NMTool:
+:type NMTool: StepToTopoDS_NMTool &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateVertexError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>V</strong> – <dl class="field-list simple">
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_Vertex&gt; &amp;</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-even">param NMTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NMTool</dt>
+<dd class="field-odd"><p>StepToTopoDS_NMTool &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertex.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop">
+<em class="property">class </em><code class="sig-name descname">StepToTopoDS_TranslateVertexLoop</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.StepToTopoDS.StepToTopoDS_Root" title="OCC.Core.StepToTopoDS.StepToTopoDS_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.StepToTopoDS.StepToTopoDS_Root</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None:param VL:
+:type VL: opencascade::handle&lt;StepShape_VertexLoop&gt; &amp;
+:param T:
+:type T: StepToTopoDS_Tool &amp;
+:param NMTool:
+:type NMTool: StepToTopoDS_NMTool &amp;
+:rtype: None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.Error">
+<code class="sig-name descname">Error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.Error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateVertexLoopError</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.Init" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>VL</strong> – <dl class="field-list simple">
+<dt class="field-odd">type VL</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;StepShape_VertexLoop&gt; &amp;</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>StepToTopoDS_Tool &amp;</p>
+</dd>
+<dt class="field-even">param NMTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NMTool</dt>
+<dd class="field-odd"><p>StepToTopoDS_NMTool &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopoDS.html#OCC.Core.TopoDS.TopoDS_Shape" title="OCC.Core.TopoDS.TopoDS_Shape">TopoDS_Shape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.StepToTopoDS_TranslateVertexLoop.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StepToTopoDS.steptotopods">
+<em class="property">class </em><code class="sig-name descname">steptotopods</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodeBuilderError">
+<em class="property">static </em><code class="sig-name descname">DecodeBuilderError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodeBuilderError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_BuilderError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TCollection_HAsciiString&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodeEdgeError">
+<em class="property">static </em><code class="sig-name descname">DecodeEdgeError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodeEdgeError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateEdgeError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TCollection_HAsciiString&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodeFaceError">
+<em class="property">static </em><code class="sig-name descname">DecodeFaceError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodeFaceError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateFaceError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TCollection_HAsciiString&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodeGeometricToolError">
+<em class="property">static </em><code class="sig-name descname">DecodeGeometricToolError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodeGeometricToolError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_GeometricToolError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodePolyLoopError">
+<em class="property">static </em><code class="sig-name descname">DecodePolyLoopError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodePolyLoopError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslatePolyLoopError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TCollection_HAsciiString&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodeShellError">
+<em class="property">static </em><code class="sig-name descname">DecodeShellError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodeShellError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateShellError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TCollection_HAsciiString&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodeVertexError">
+<em class="property">static </em><code class="sig-name descname">DecodeVertexError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodeVertexError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateVertexError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TCollection_HAsciiString&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.DecodeVertexLoopError">
+<em class="property">static </em><code class="sig-name descname">DecodeVertexLoopError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.DecodeVertexLoopError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Error</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Error</dt>
+<dd class="field-odd"><p>StepToTopoDS_TranslateVertexLoopError</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TCollection_HAsciiString&gt;</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StepToTopoDS.steptotopods.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StepToTopoDS.steptotopods.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

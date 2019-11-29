@@ -1,0 +1,1217 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.GeomTools module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.GeomTools module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.GeomTools module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.GeomTools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.GeomTools">
+<span id="occ-core-geomtools-module"></span><h1>OCC.Core.GeomTools module<a class="headerlink" href="#module-OCC.Core.GeomTools" title="Permalink to this headline">¶</a></h1>
+<p>GeomTools module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geomtools.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_geomtools.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet">
+<em class="property">class </em><code class="sig-name descname">GeomTools_Curve2dSet</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty set of Curves.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Incorporate a new Curve in the set and returns its index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears the content of the set.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.Curve2d">
+<code class="sig-name descname">Curve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.Curve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Curve of index &lt;I&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_Curve2dSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.GetProgress">
+<code class="sig-name descname">GetProgress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.GetProgress" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.Index" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index of &lt;L&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.PrintCurve2d">
+<em class="property">static </em><code class="sig-name descname">PrintCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.PrintCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Dumps the curve on the stream, if compact is True use the compact format that can be read back.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">param compact</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type compact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.ReadCurve2dFromString">
+<code class="sig-name descname">ReadCurve2dFromString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_Curve2dSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.ReadCurve2dFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.ReadFromString">
+<code class="sig-name descname">ReadFromString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_Curve2dSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.ReadFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.SetProgress">
+<code class="sig-name descname">SetProgress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.SetProgress" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>PR</strong> – <dl class="field-list simple">
+<dt class="field-odd">type PR</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.WriteToString">
+<code class="sig-name descname">WriteToString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_Curve2dSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.WriteToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_Curve2dSet.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_Curve2dSet.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet">
+<em class="property">class </em><code class="sig-name descname">GeomTools_CurveSet</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty set of Curves.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Incorporate a new Curve in the set and returns its index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears the content of the set.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.Curve">
+<code class="sig-name descname">Curve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.Curve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Curve of index &lt;I&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_CurveSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.GetProgress">
+<code class="sig-name descname">GetProgress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.GetProgress" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.Index" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index of &lt;L&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.PrintCurve">
+<em class="property">static </em><code class="sig-name descname">PrintCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.PrintCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Dumps the curve on the stream, if compact is True use the compact format that can be read back.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">param compact</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type compact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.ReadCurveFromString">
+<code class="sig-name descname">ReadCurveFromString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_CurveSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.ReadCurveFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.ReadFromString">
+<code class="sig-name descname">ReadFromString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_CurveSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.ReadFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.SetProgress">
+<code class="sig-name descname">SetProgress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.SetProgress" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>PR</strong> – <dl class="field-list simple">
+<dt class="field-odd">type PR</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.WriteToString">
+<code class="sig-name descname">WriteToString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_CurveSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.WriteToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_CurveSet.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_CurveSet.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet">
+<em class="property">class </em><code class="sig-name descname">GeomTools_SurfaceSet</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty set of Surfaces.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Incorporate a new Surface in the set and returns its index.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears the content of the set.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_SurfaceSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.GetProgress">
+<code class="sig-name descname">GetProgress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.GetProgress" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.Index">
+<code class="sig-name descname">Index</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.Index" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the index of &lt;L&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.PrintSurface">
+<em class="property">static </em><code class="sig-name descname">PrintSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.PrintSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Dumps the surface on the stream, if compact is True use the compact format that can be read back.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">param compact</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type compact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.ReadFromString">
+<code class="sig-name descname">ReadFromString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_SurfaceSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.ReadFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.ReadSurfaceFromString">
+<code class="sig-name descname">ReadSurfaceFromString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_SurfaceSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.ReadSurfaceFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.SetProgress">
+<code class="sig-name descname">SetProgress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.SetProgress" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>PR</strong> – <dl class="field-list simple">
+<dt class="field-odd">type PR</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.Surface">
+<code class="sig-name descname">Surface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.Surface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Surface of index &lt;I&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param I</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.WriteToString">
+<code class="sig-name descname">WriteToString</code><span class="sig-paren">(</span><em class="sig-param">GeomTools_SurfaceSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.WriteToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_SurfaceSet.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_SurfaceSet.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler">
+<em class="property">class </em><code class="sig-name descname">GeomTools_UndefinedTypeHandler</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.PrintCurve">
+<code class="sig-name descname">PrintCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.PrintCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param OS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OS</dt>
+<dd class="field-odd"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-even">param compact</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type compact</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.PrintCurve2d">
+<code class="sig-name descname">PrintCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.PrintCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>C</strong> – <dl class="field-list simple">
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param OS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OS</dt>
+<dd class="field-odd"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-even">param compact</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type compact</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.PrintSurface">
+<code class="sig-name descname">PrintSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.PrintSurface" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>S</strong> – <dl class="field-list simple">
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param OS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OS</dt>
+<dd class="field-odd"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-even">param compact</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type compact</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.ReadCurve">
+<code class="sig-name descname">ReadCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.ReadCurve" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ctype</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ctype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IS</dt>
+<dd class="field-odd"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Standard_IStream</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.ReadCurve2d">
+<code class="sig-name descname">ReadCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.ReadCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ctype</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ctype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IS</dt>
+<dd class="field-odd"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Standard_IStream</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.ReadSurface">
+<code class="sig-name descname">ReadSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.ReadSurface" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ctype</strong> – <dl class="field-list simple">
+<dt class="field-odd">type ctype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param IS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IS</dt>
+<dd class="field-odd"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>Standard_IStream</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GeomTools.GeomTools_UndefinedTypeHandler.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GeomTools.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GeomTools.geomtools">
+<em class="property">class </em><code class="sig-name descname">geomtools</code><a class="headerlink" href="#OCC.Core.GeomTools.geomtools" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.GeomTools.geomtools.Dump">
+<em class="property">static </em><code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.geomtools.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>A set of Curves from Geom2d. Dumps the surface on the stream.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Dumps the Curve on the stream.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param OS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OS</dt>
+<dd class="field-odd"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Dumps the Curve on the stream.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.geomtools.GetReal">
+<em class="property">static </em><code class="sig-name descname">GetReal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.geomtools.GetReal" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reads the Standard_Real value from the stream. Zero is read in case of error</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param IS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IS</dt>
+<dd class="field-even"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-odd">param theValue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theValue</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.geomtools.GetUndefinedTypeHandler">
+<em class="property">static </em><code class="sig-name descname">GetUndefinedTypeHandler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.geomtools.GetUndefinedTypeHandler" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;GeomTools_UndefinedTypeHandler&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.geomtools.Read">
+<em class="property">static </em><code class="sig-name descname">Read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.geomtools.Read" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reads the surface from the stream.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param IS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IS</dt>
+<dd class="field-even"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Reads the Curve from the stream.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param IS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IS</dt>
+<dd class="field-odd"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Reads the Curve from the stream.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param IS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IS</dt>
+<dd class="field-even"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.geomtools.SetUndefinedTypeHandler">
+<em class="property">static </em><code class="sig-name descname">SetUndefinedTypeHandler</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.geomtools.SetUndefinedTypeHandler" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aHandler</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aHandler</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;GeomTools_UndefinedTypeHandler&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.geomtools.Write">
+<em class="property">static </em><code class="sig-name descname">Write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GeomTools.geomtools.Write" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Writes the surface on the stream.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Writes the Curve on the stream.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param OS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OS</dt>
+<dd class="field-odd"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Writes the Curve on the stream.</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GeomTools.geomtools.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GeomTools.geomtools.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

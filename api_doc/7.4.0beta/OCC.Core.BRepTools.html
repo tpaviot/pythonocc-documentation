@@ -1,0 +1,2953 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BRepTools module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BRepTools module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BRepTools module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BRepTools.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BRepTools">
+<span id="occ-core-breptools-module"></span><h1>OCC.Core.BRepTools module<a class="headerlink" href="#module-OCC.Core.BRepTools" title="Permalink to this headline">¶</a></h1>
+<p>BRepTools module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_breptools.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_breptools.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_GTrsfModification">
+<em class="property">class </em><code class="sig-name descname">BRepTools_GTrsfModification</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_GTrsfModification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepTools.BRepTools_Modification" title="OCC.Core.BRepTools.BRepTools_Modification"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepTools.BRepTools_Modification</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>T</strong> – <dl class="field-list simple">
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>gp_GTrsf</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_GTrsfModification.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_GTrsfModification.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_GTrsfModification.GTrsf">
+<code class="sig-name descname">GTrsf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_GTrsfModification.GTrsf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gives an access on the GTrsf.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_GTrsf</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_GTrsfModification.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_GTrsfModification.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_History">
+<em class="property">class </em><code class="sig-name descname">BRepTools_History</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><p>Empty constructor</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Copy constructor – does nothing</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>&amp;</strong> (<a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><em>Standard_Transient</em></a>) – </p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.AddGenerated">
+<code class="sig-name descname">AddGenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.AddGenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Methods to set the history. Set the second shape as generated one from the first shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInitial</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInitial</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theGenerated</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theGenerated</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.AddModified">
+<code class="sig-name descname">AddModified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.AddModified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the second shape as modified one from the first shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInitial</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInitial</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theModified</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theModified</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears the history.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_History self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.Generated">
+<code class="sig-name descname">Generated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.Generated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Methods to read the history. Returns all shapes generated from the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInitial</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInitial</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.HasGenerated">
+<code class="sig-name descname">HasGenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.HasGenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ‘true’ if there any shapes with Generated elements present</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.HasModified">
+<code class="sig-name descname">HasModified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.HasModified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ‘true’ if there any Modified shapes present</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.HasRemoved">
+<code class="sig-name descname">HasRemoved</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.HasRemoved" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ‘true’ if there any removed shapes present</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.IsRemoved">
+<code class="sig-name descname">IsRemoved</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.IsRemoved" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ‘true’ if the shape is removed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInitial</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInitial</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.IsSupportedType">
+<em class="property">static </em><code class="sig-name descname">IsSupportedType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.IsSupportedType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ‘true’ if the type of the shape is supported by the history.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.Modified">
+<code class="sig-name descname">Modified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.Modified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns all shapes modified from the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInitial</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInitial</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.Remove" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the shape as removed one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theRemoved</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theRemoved</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.ReplaceGenerated">
+<code class="sig-name descname">ReplaceGenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.ReplaceGenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the second shape as the only generated one from the first one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInitial</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInitial</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theGenerated</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theGenerated</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.ReplaceModified">
+<code class="sig-name descname">ReplaceModified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.ReplaceModified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the second shape as the only modified one from the first one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theInitial</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theInitial</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theModified</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theModified</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="OCC.Core.BRepTools.BRepTools_History.TRelationType_Generated">
+<code class="sig-name descname">TRelationType_Generated</code><em class="property"> = 1</em><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.TRelationType_Generated" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="OCC.Core.BRepTools.BRepTools_History.TRelationType_Modified">
+<code class="sig-name descname">TRelationType_Modified</code><em class="property"> = 2</em><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.TRelationType_Modified" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="OCC.Core.BRepTools.BRepTools_History.TRelationType_Removed">
+<code class="sig-name descname">TRelationType_Removed</code><em class="property"> = 0</em><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.TRelationType_Removed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_History.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_History.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d">
+<em class="property">class </em><code class="sig-name descname">BRepTools_MapOfVertexPnt2d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Bind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Bound">
+<code class="sig-name descname">Bound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Bound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.ChangeFind">
+<code class="sig-name descname">ChangeFind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.ChangeFind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.ChangeSeek">
+<code class="sig-name descname">ChangeSeek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.ChangeSeek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Find">
+<code class="sig-name descname">Find</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.IsBound">
+<code class="sig-name descname">IsBound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.IsBound" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.ReSize">
+<code class="sig-name descname">ReSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.ReSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Seek">
+<code class="sig-name descname">Seek</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Seek" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.UnBind">
+<code class="sig-name descname">UnBind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.UnBind" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_MapOfVertexPnt2d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification">
+<em class="property">class </em><code class="sig-name descname">BRepTools_Modification</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><p>Empty constructor</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Copy constructor – does nothing</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>&amp;</strong> (<a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><em>Standard_Transient</em></a>) – </p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.Continuity">
+<code class="sig-name descname">Continuity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.Continuity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the continuity of &lt;NewE&gt; between &lt;NewF1&gt; and &lt;NewF2&gt;. &lt;NewE&gt; is the new edge created from &lt;E&gt;. &lt;NewF1&gt; (resp. &lt;NewF2&gt;) is the new face created from &lt;F1&gt; (resp. &lt;F2&gt;).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param F2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param NewE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param NewF1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewF1</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param NewF2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewF2</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewCurve">
+<code class="sig-name descname">NewCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the edge, E, has been modified. If the edge has been modified: - C is the new geometry associated with the edge, - L is its new location, and - Tol is the new tolerance. If the edge has not been modified, this function returns false, and the values of C, L and Tol are not significant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>TopLoc_Location &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewCurve2d">
+<code class="sig-name descname">NewCurve2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the edge, E, has a new curve on surface on the face, F. If a new curve exists: - C is the new geometry of the edge, - L is the new location, and - Tol is the new tolerance. NewE is the new edge created from E, and NewF is the new face created from F. If there is no new curve on the face, this function returns false, and the values of C, L and Tol are not significant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param NewE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param NewF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewParameter">
+<code class="sig-name descname">NewParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the vertex V has a new parameter on the edge E. If a new parameter exists: - P is the parameter, and - Tol is the new tolerance. If there is no new parameter this function returns false, and the values of P and Tol are not significant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewPoint">
+<code class="sig-name descname">NewPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the vertex V has been modified. If V has been modified: - P is the new geometry of the vertex, and - Tol is the new tolerance. If the vertex has not been modified this function returns false, and the values of P and Tol are not significant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewPolygon">
+<code class="sig-name descname">NewPolygon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewPolygon" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the edge has been modified according to changed polygon. If the edge has been modified: - P is a new polygon</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Poly_Polygon3D&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewPolygonOnTriangulation">
+<code class="sig-name descname">NewPolygonOnTriangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewPolygonOnTriangulation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the edge has been modified according to changed polygon on triangulation. If the edge has been modified: - P is a new polygon on triangulation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Poly_PolygonOnTriangulation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewSurface">
+<code class="sig-name descname">NewSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the face, F, has been modified. If the face has been modified: - S is the new geometry of the face, - L is its new location, and - Tol is the new tolerance. The flag, RevWires, is set to true when the modification reverses the normal of the surface, (i.e. the wires have to be reversed). The flag, RevFace, is set to true if the orientation of the modified face changes in the shells which contain it. If the face has not been modified this function returns false, and the values of S, L, Tol, RevWires and RevFace are not significant.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param L</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type L</dt>
+<dd class="field-even"><p>TopLoc_Location &amp;</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param RevWires</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RevWires</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param RevFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RevFace</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.NewTriangulation">
+<code class="sig-name descname">NewTriangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.NewTriangulation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the face has been modified according to changed triangulation. If the face has been modified: - T is a new triangulation on the face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param T</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type T</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Poly_Triangulation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modification.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modification.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier">
+<em class="property">class </em><code class="sig-name descname">BRepTools_Modifier</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an empty Modifier.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMutableInput</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type theMutableInput</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a modifier on the shape &lt;S&gt;.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates a modifier on the shape &lt;S&gt;, and performs the modifications described by &lt;M&gt;.</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param M</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type M</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepTools_Modification&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes the modifier with the shape &lt;S&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns Standard_True if the modification has been computed successfully.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier.IsMutableInput">
+<code class="sig-name descname">IsMutableInput</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier.IsMutableInput" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the current mutable input state</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier.ModifiedShape">
+<code class="sig-name descname">ModifiedShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier.ModifiedShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the modified shape corresponding to &lt;S&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs the modifications described by &lt;M&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param M</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type M</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepTools_Modification&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aProgress</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type aProgress</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier.SetMutableInput">
+<code class="sig-name descname">SetMutableInput</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier.SetMutableInput" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the mutable input state If true then the input (original) shape can be modified during modification process</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theMutableInput</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theMutableInput</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Modifier.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Modifier.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_NurbsConvertModification">
+<em class="property">class </em><code class="sig-name descname">BRepTools_NurbsConvertModification</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_NurbsConvertModification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepTools.BRepTools_Modification" title="OCC.Core.BRepTools.BRepTools_Modification"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepTools.BRepTools_Modification</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_NurbsConvertModification.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_NurbsConvertModification.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_NurbsConvertModification.GetUpdatedEdges">
+<code class="sig-name descname">GetUpdatedEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_NurbsConvertModification.GetUpdatedEdges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_ListOfShape" title="OCC.Core.TopTools.TopTools_ListOfShape">TopTools_ListOfShape</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_NurbsConvertModification.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_NurbsConvertModification.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_Quilt">
+<em class="property">class </em><code class="sig-name descname">BRepTools_Quilt</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Quilt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Quilt.Add">
+<code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Quilt.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Add the faces of &lt;S&gt; to the Quilt, the faces containing bounded edges are copied.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Quilt.Bind">
+<code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Quilt.Bind" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Binds &lt;Enew&gt; to be the new edge instead of &lt;Eold&gt;. //! The faces of the added shape containing &lt;Eold&gt; will be copied to substitute &lt;Eold&gt; by &lt;Enew&gt;. //! The vertices of &lt;Eold&gt; will be bound to the vertices of &lt;Enew&gt; with the same orientation. //! If &lt;Eold&gt; and &lt;Enew&gt; have different orientations the curves are considered to be opposite and the pcurves of &lt;Eold&gt; will be copied and reversed in the new faces. //! &lt;Eold&gt; must belong to the next added shape, &lt;Enew&gt; must belong to a Shape added before.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Eold</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Eold</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param Enew</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Enew</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Binds &lt;VNew&gt; to be a new vertex instead of &lt;Vold&gt;. //! The faces of the added shape containing &lt;Vold&gt; will be copied to substitute &lt;Vold&gt; by &lt;Vnew&gt;.</p>
+</dd>
+<dt class="field-even">param Vold</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vold</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param Vnew</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vnew</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Quilt.Copy">
+<code class="sig-name descname">Copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Quilt.Copy" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the shape substitued to &lt;S&gt; in the Quilt.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Quilt.IsCopied">
+<code class="sig-name descname">IsCopied</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Quilt.IsCopied" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if &lt;S&gt; has been copied (&lt;S&gt; is a vertex, an edge or a face)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Quilt.Shells">
+<code class="sig-name descname">Shells</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Quilt.Shells" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns a Compound of shells made from the current set of faces. The shells will be flagged as closed or not closed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Quilt.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Quilt.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape">
+<em class="property">class </em><code class="sig-name descname">BRepTools_ReShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Returns an empty Reshape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.Apply">
+<code class="sig-name descname">Apply</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.Apply" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Applies the substitutions requests to a shape. //! &lt;until&gt; gives the level of type until which requests are taken into account. For subshapes of the type &lt;until&gt; no rebuild and futher exploring are done. //! NOTE: each subshape can be replaced by shape of the same type or by shape containing only shapes of that type (for example, TopoDS_Edge can be replaced by TopoDS_Edge, TopoDS_Wire or TopoDS_Compound containing TopoDS_Edges). If incompatible shape type is encountered, it is ignored and flag FAIL1 is set in Status.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param until</dt>
+<dd class="field-odd"><p>default value is TopAbs_SHAPE</p>
+</dd>
+<dt class="field-even">type until</dt>
+<dd class="field-even"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears all substitutions requests</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.CopyVertex">
+<code class="sig-name descname">CopyVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.CopyVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns modified copy of vertex if original one is not recorded or returns modified original vertex otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param theTol</dt>
+<dd class="field-odd"><p>default value is -1.0</p>
+</dd>
+<dt class="field-even">type theTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Vertex* Returns modified copy of vertex if original one is not recorded or returns modified original vertex otherwise.</p>
+</dd>
+<dt class="field-even">param theV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theV</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param theNewPos</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theNewPos</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param aTol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aTol</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Vertex</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.GetModeConsiderLocation">
+<code class="sig-name descname">GetModeConsiderLocation</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ReShape self</em><span class="sig-paren">)</span> &#x2192; Standard_Boolean<a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.GetModeConsiderLocation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.History">
+<code class="sig-name descname">History</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.History" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the history of the substituted shapes.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepTools_History&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.IsNewShape">
+<code class="sig-name descname">IsNewShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.IsNewShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Checks if shape has been recorded by reshaper as a value</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.IsRecorded">
+<code class="sig-name descname">IsRecorded</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.IsRecorded" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Tells if a shape is recorded for Replace/Remove</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.Remove" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets a request to Remove a Shape whatever the orientation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.Replace">
+<code class="sig-name descname">Replace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.Replace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets a request to Replace a Shape by a new one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param newshape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type newshape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.SetModeConsiderLocation">
+<code class="sig-name descname">SetModeConsiderLocation</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ReShape self</em>, <em class="sig-param">Standard_Boolean value</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.SetModeConsiderLocation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.Status" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns a complete substitution status for a shape 0<span class="classifier">not recorded, &lt;newsh&gt; = original &lt;shape&gt; &lt; 0: to be removed, &lt;newsh&gt; is NULL &gt; 0: to be replaced, &lt;newsh&gt; is a new item If &lt;last&gt; is False, returns status and new shape recorded in the map directly for the shape, if True and status &gt; 0 then recursively searches for the last status and new shape.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param newsh</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type newsh</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param last</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type last</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the new value for an individual shape If not recorded, returns the original shape itself If to be Removed, returns a Null Shape Else, returns the replacing item</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param shape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type shape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ReShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ReShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet">
+<em class="property">class </em><code class="sig-name descname">BRepTools_ShapeSet</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.TopTools.html#OCC.Core.TopTools.TopTools_ShapeSet" title="OCC.Core.TopTools.TopTools_ShapeSet"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.TopTools.TopTools_ShapeSet</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Builds an empty ShapeSet. Parameter &lt;isWithTriangles&gt; is added for XML Persistence</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param isWithTriangles</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type isWithTriangles</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Builds an empty ShapeSet. Parameter &lt;isWithTriangles&gt; is added for XML Persistence</p>
+</dd>
+<dt class="field-even">param B</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type B</dt>
+<dd class="field-odd"><p>BRep_Builder &amp;</p>
+</dd>
+<dt class="field-even">param isWithTriangles</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type isWithTriangles</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.DumpGeometryToString">
+<code class="sig-name descname">DumpGeometryToString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.DumpGeometryToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.DumpPolygon3DToString">
+<code class="sig-name descname">DumpPolygon3DToString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.DumpPolygon3DToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.DumpPolygonOnTriangulationToString">
+<code class="sig-name descname">DumpPolygonOnTriangulationToString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.DumpPolygonOnTriangulationToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.DumpTriangulationToString">
+<code class="sig-name descname">DumpTriangulationToString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.DumpTriangulationToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.ReadGeometryFromString">
+<code class="sig-name descname">ReadGeometryFromString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.ReadGeometryFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.ReadPolygon3DFromString">
+<code class="sig-name descname">ReadPolygon3DFromString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.ReadPolygon3DFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.ReadPolygonOnTriangulationFromString">
+<code class="sig-name descname">ReadPolygonOnTriangulationFromString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.ReadPolygonOnTriangulationFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.ReadTriangulationFromString">
+<code class="sig-name descname">ReadTriangulationFromString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em>, <em class="sig-param">std::string src</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.ReadTriangulationFromString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.WriteGeometryToString">
+<code class="sig-name descname">WriteGeometryToString</code><span class="sig-paren">(</span><em class="sig-param">BRepTools_ShapeSet self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.WriteGeometryToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.WritePolygon3D">
+<code class="sig-name descname">WritePolygon3D</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.WritePolygon3D" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Writes the 3d polygons on the stream &lt;OS&gt; in a format that can be read back by Read.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">param Compact</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Compact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.WritePolygonOnTriangulation">
+<code class="sig-name descname">WritePolygonOnTriangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.WritePolygonOnTriangulation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Writes the polygons on triangulation on the stream &lt;OS&gt; in a format that can be read back by Read.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">param Compact</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Compact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.WriteTriangulation">
+<code class="sig-name descname">WriteTriangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.WriteTriangulation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Writes the triangulation on the stream &lt;OS&gt; in a format that can be read back by Read.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param OS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OS</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">param Compact</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Compact</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_ShapeSet.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_ShapeSet.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_Substitution">
+<em class="property">class </em><code class="sig-name descname">BRepTools_Substitution</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Substitution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Substitution.Build">
+<code class="sig-name descname">Build</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Substitution.Build" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Build NewShape from &lt;S&gt; if its subshapes has modified. //! The methods &lt;IsCopied&gt; and &lt;Copy&gt; allows you to keep the resul of &lt;Build&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Substitution.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Substitution.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reset all the fields.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Substitution.Copy">
+<code class="sig-name descname">Copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Substitution.Copy" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the set of shapes substitued to &lt;S&gt; .</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Substitution.IsCopied">
+<code class="sig-name descname">IsCopied</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Substitution.IsCopied" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if &lt;S&gt; has been replaced .</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Substitution.Substitute">
+<code class="sig-name descname">Substitute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Substitution.Substitute" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&lt;Oldshape&gt; will be replaced by &lt;NewShapes&gt;. //! &lt;NewShapes&gt; can be empty , in this case &lt;OldShape&gt; will disparate from its ancestors. //! if an item of &lt;NewShapes&gt; is oriented FORWARD. it will be oriented as &lt;OldShape&gt; in its ancestors. else it will be reversed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param OldShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OldShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param NewShapes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewShapes</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_Substitution.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_Substitution.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_TrsfModification">
+<em class="property">class </em><code class="sig-name descname">BRepTools_TrsfModification</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_TrsfModification" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepTools.BRepTools_Modification" title="OCC.Core.BRepTools.BRepTools_Modification"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepTools.BRepTools_Modification</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>T</strong> – <dl class="field-list simple">
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>gp_Trsf</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_TrsfModification.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_TrsfModification.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_TrsfModification.Trsf">
+<code class="sig-name descname">Trsf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_TrsfModification.Trsf" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Provides access to the gp_Trsf associated with this modification. The transformation can be changed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Trsf</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_TrsfModification.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_TrsfModification.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer">
+<em class="property">class </em><code class="sig-name descname">BRepTools_WireExplorer</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs an empty explorer (which can be initialized using Init)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* IInitializes an exploration of the wire &lt;W&gt;.</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initializes an exploration of the wire &lt;W&gt;. F is used to select the edge connected to the previous in the parametric representation of &lt;F&gt;.</p>
+</dd>
+<dt class="field-odd">param W</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears the content of the explorer.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.Current">
+<code class="sig-name descname">Current</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.Current" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the current edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Edge</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.CurrentVertex">
+<code class="sig-name descname">CurrentVertex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.CurrentVertex" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the vertex connecting the current edge to the previous one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Vertex</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes an exploration of the wire &lt;W&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param W</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes an exploration of the wire &lt;W&gt;. F is used to select the edge connected to the previous in the parametric representation of &lt;F&gt;.</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initializes an exploration of the wire &lt;W&gt;. F is used to select the edge connected to the previous in the parametric representation of &lt;F&gt;. &lt;UMIn&gt;, &lt;UMax&gt;, &lt;VMin&gt;, &lt;VMax&gt; - the UV bounds of the face &lt;F&gt;.</p>
+</dd>
+<dt class="field-odd">param W</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param UMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.More" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if there is a current edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.Next" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Proceeds to the next edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.Orientation">
+<code class="sig-name descname">Orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns an Orientation for the current edge.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.BRepTools_WireExplorer.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.BRepTools_WireExplorer.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepTools.breptools">
+<em class="property">class </em><code class="sig-name descname">breptools</code><a class="headerlink" href="#OCC.Core.BRepTools.breptools" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.AddUVBounds">
+<em class="property">static </em><code class="sig-name descname">AddUVBounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.AddUVBounds" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds to the box &lt;B&gt; the bounding values in the parametric space of F.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param B</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type B</dt>
+<dd class="field-even"><p>Bnd_Box2d &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Adds to the box &lt;B&gt; the bounding values of the wire in the parametric space of F.</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-even">param B</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type B</dt>
+<dd class="field-odd"><p>Bnd_Box2d &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Adds to the box &lt;B&gt; the bounding values of the edge in the parametric space of F.</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param B</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type B</dt>
+<dd class="field-even"><p>Bnd_Box2d &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Clean">
+<em class="property">static </em><code class="sig-name descname">Clean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Clean" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes all the triangulations of the faces of &lt;S&gt; and removes all polygons on triangulations of the edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.CleanGeometry">
+<em class="property">static </em><code class="sig-name descname">CleanGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.CleanGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes geometry (curves and surfaces) from all edges and faces of the shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Compare">
+<em class="property">static </em><code class="sig-name descname">Compare</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Compare" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the distance between the two vertices is lower than their tolerance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* Returns True if the distance between the two edges is lower than their tolerance.</p>
+</dd>
+<dt class="field-even">param E1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E1</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">param E2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E2</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.DetectClosedness">
+<em class="property">static </em><code class="sig-name descname">DetectClosedness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.DetectClosedness" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Detect closedness of face in U and V directions</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theUclosed</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUclosed</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theVclosed</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theVclosed</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Dump">
+<em class="property">static </em><code class="sig-name descname">Dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Dump" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Dumps the topological structure and the geometry of &lt;Sh&gt; on the stream &lt;S&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Sh</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sh</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.EvalAndUpdateTol">
+<em class="property">static </em><code class="sig-name descname">EvalAndUpdateTol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.EvalAndUpdateTol" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Evals real tolerance of edge &lt;theE&gt;. &lt;theC3d&gt;, &lt;theC2d&gt;, &lt;theS&gt;, &lt;theF&gt;, &lt;theL&gt; are correspondently 3d curve of edge, 2d curve on surface &lt;theS&gt; and rang of edge If calculated tolerance is more then current edge tolerance, edge is updated. Method returns actual tolerance of edge</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theE</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theE</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param theC3d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theC3d</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theC2d</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theC2d</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom2d_Curve&gt;</p>
+</dd>
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theL</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theL</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.IsReallyClosed">
+<em class="property">static </em><code class="sig-name descname">IsReallyClosed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.IsReallyClosed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Verifies that the edge &lt;E&gt; is found two times on the face &lt;F&gt; before calling BRep_Tool::IsClosed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Map3DEdges">
+<em class="property">static </em><code class="sig-name descname">Map3DEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Map3DEdges" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Stores in the map &lt;M&gt; all the 3D topology edges of &lt;S&gt;.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param M</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type M</dt>
+<dd class="field-even"><p>TopTools_IndexedMapOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.OuterWire">
+<em class="property">static </em><code class="sig-name descname">OuterWire</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.OuterWire" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the outer most wire of &lt;F&gt;. Returns a Null wire if &lt;F&gt; has no wires.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Wire</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Read">
+<em class="property">static </em><code class="sig-name descname">Read</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Read" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reads a Shape from &lt;S&gt; in returns it in &lt;Sh&gt;. &lt;B&gt; is used to build the shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Sh</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sh</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>Standard_IStream &amp;</p>
+</dd>
+<dt class="field-odd">param B</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type B</dt>
+<dd class="field-even"><p>BRep_Builder &amp;</p>
+</dd>
+<dt class="field-odd">param PR</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type PR</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Reads a Shape from &lt;File&gt;, returns it in &lt;Sh&gt;. &lt;B&gt; is used to build the shape.</p>
+</dd>
+<dt class="field-even">param Sh</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sh</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param File</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type File</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param B</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type B</dt>
+<dd class="field-odd"><p>BRep_Builder &amp;</p>
+</dd>
+<dt class="field-even">param PR</dt>
+<dd class="field-even"><p>default value is NULL</p>
+</dd>
+<dt class="field-odd">type PR</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.RemoveUnusedPCurves">
+<em class="property">static </em><code class="sig-name descname">RemoveUnusedPCurves</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.RemoveUnusedPCurves" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Removes all the pcurves of the edges of &lt;S&gt; that refer to surfaces not belonging to any face of &lt;S&gt;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Triangulation">
+<em class="property">static </em><code class="sig-name descname">Triangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Triangulation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>verifies that each face from the shape &lt;S&gt; has got a triangulation with a deflection &lt;= deflec and the edges a discretisation on this triangulation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param deflec</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type deflec</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.UVBounds">
+<em class="property">static </em><code class="sig-name descname">UVBounds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.UVBounds" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns in UMin, UMax, VMin, VMax the bounding values in the parametric space of F.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param UMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param UMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMax</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param VMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param VMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMax</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Returns in UMin, UMax, VMin, VMax the bounding values of the wire in the parametric space of F.</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param W</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type W</dt>
+<dd class="field-odd"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-even">param UMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMin</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param UMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMax</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param VMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMin</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param VMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMax</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Returns in UMin, UMax, VMin, VMax the bounding values of the edge in the parametric space of F.</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-odd">param UMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param UMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMax</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param VMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param VMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMax</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Update">
+<em class="property">static </em><code class="sig-name descname">Update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Update" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Update a vertex (nothing is done)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Update an edge, compute 2d bounding boxes.</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>TopoDS_Edge &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Update a wire (nothing is done)</p>
+</dd>
+<dt class="field-odd">param W</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W</dt>
+<dd class="field-even"><p>TopoDS_Wire &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Update a Face, update UV points.</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Update a shell (nothing is done)</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shell &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Update a solid (nothing is done)</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Solid &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Update a composite solid (nothing is done)</p>
+</dd>
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>TopoDS_CompSolid &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Update a compound (nothing is done)</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>TopoDS_Compound &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Update a shape, call the corect update.</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.UpdateFaceUVPoints">
+<em class="property">static </em><code class="sig-name descname">UpdateFaceUVPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.UpdateFaceUVPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>For each edge of the face &lt;F&gt; reset the UV points to the bounding points of the parametric curve of the edge on the face.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theF</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theF</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.Write">
+<em class="property">static </em><code class="sig-name descname">Write</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepTools.breptools.Write" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Writes &lt;Sh&gt; on &lt;S&gt; in an ASCII format.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Sh</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sh</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>Standard_OStream &amp;</p>
+</dd>
+<dt class="field-odd">param PR</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type PR</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Writes &lt;Sh&gt; in &lt;File&gt;.</p>
+</dd>
+<dt class="field-even">param Sh</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sh</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param File</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type File</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param PR</dt>
+<dd class="field-even"><p>default value is NULL</p>
+</dd>
+<dt class="field-odd">type PR</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepTools.breptools.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepTools.breptools.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

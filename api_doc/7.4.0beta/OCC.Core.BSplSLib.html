@@ -1,0 +1,3022 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BSplSLib module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BSplSLib module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BSplSLib module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BSplSLib.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BSplSLib">
+<span id="occ-core-bsplslib-module"></span><h1>OCC.Core.BSplSLib module<a class="headerlink" href="#module-OCC.Core.BSplSLib" title="Permalink to this headline">¶</a></h1>
+<p>BSplSLib module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_bsplslib.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_bsplslib.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache">
+<em class="property">class </em><code class="sig-name descname">BSplSLib_Cache</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructor for caching of the span for the surface param theDegreeU degree along the first parameter (U) of the surface param thePeriodicU identify the surface is periodical along U axis param theFlatKnotsU knots of the surface (with repetition) along U axis param theDegreeV degree alogn the second parameter (V) of the surface param thePeriodicV identify the surface is periodical along V axis param theFlatKnotsV knots of the surface (with repetition) along V axis param theWeights array of weights of corresponding poles</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theDegreeU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegreeU</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param thePeriodicU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePeriodicU</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theFlatKnotsU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFlatKnotsU</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theDegreeV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDegreeV</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param thePeriodicV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePeriodicV</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theFlatKnotsV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFlatKnotsV</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theWeights</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type theWeights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache.BuildCache">
+<code class="sig-name descname">BuildCache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache.BuildCache" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Recomputes the cache data. Does not verify validity of the cache param theParameterU the parametric value on the U axis to identify the span param theParameterV the parametric value on the V axis to identify the span param theDegreeU degree along U axis param thePeriodicU identify whether the surface is periodic along U axis param theFlatKnotsU flat knots of the surface along U axis param theDegreeV degree along V axis param thePeriodicV identify whether the surface is periodic along V axis param theFlatKnotsV flat knots of the surface along V axis param thePoles array of poles of the surface param theWeights array of weights of corresponding poles</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theParameterU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theParameterU</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theParameterV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theParameterV</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theFlatKnotsU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFlatKnotsU</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theFlatKnotsV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFlatKnotsV</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param thePoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePoles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param theWeights</dt>
+<dd class="field-odd"><p>default value is NULL</p>
+</dd>
+<dt class="field-even">type theWeights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache.D0">
+<code class="sig-name descname">D0</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache.D0" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calculates the point on the surface for specified parameters param[in] theU first parameter for calculation of the value param[in] theV second parameter for calculation of the value param[out] thePoint the result of calculation (the point on the surface)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theU</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param thePoint</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePoint</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache.D1">
+<code class="sig-name descname">D1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache.D1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calculates the point on the surface and its first derivative param[in] theU first parameter of calculation of the value param[in] theV second parameter of calculation of the value param[out] thePoint the result of calculation (the point on the surface) param[out] theTangentU tangent vector along U axis in the calculated point param[out] theTangentV tangent vector along V axis in the calculated point</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theU</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param thePoint</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePoint</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theTangentU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTangentU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param theTangentV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTangentV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache.D2">
+<code class="sig-name descname">D2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache.D2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calculates the point on the surface and derivatives till second order param[in] theU first parameter of calculation of the value param[in] theV second parameter of calculation of the value param[out] thePoint the result of calculation (the point on the surface) param[out] theTangentU tangent vector along U axis in the calculated point param[out] theTangentV tangent vector along V axis in the calculated point param[out] theCurvatureU curvature vector (2nd derivative on U) along U axis param[out] theCurvatureV curvature vector (2nd derivative on V) along V axis param[out] theCurvatureUV 2nd mixed derivative on U anv V</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theU</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theV</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param thePoint</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePoint</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param theTangentU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTangentU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param theTangentV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTangentV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param theCurvatureU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCurvatureU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param theCurvatureV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCurvatureV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param theCurvatureUV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCurvatureUV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache.IsCacheValid">
+<code class="sig-name descname">IsCacheValid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache.IsCacheValid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Verifies validity of the cache using parameters of the point param theParameterU first parameter of the point placed in the span param theParameterV second parameter of the point placed in the span</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theParameterU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theParameterU</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theParameterV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theParameterV</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.BSplSLib_Cache.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BSplSLib.BSplSLib_Cache.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BSplSLib.bsplslib">
+<em class="property">class </em><code class="sig-name descname">bsplslib</code><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.BuildCache">
+<em class="property">static </em><code class="sig-name descname">BuildCache</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.BuildCache" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Perform the evaluation of the Taylor expansion of the Bspline normalized between 0 and 1. If rational computes the homogeneous Taylor expension for the numerator and stores it in CachePoles</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param USpanDomain</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type USpanDomain</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VSpanDomain</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VSpanDomain</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UPeriodicFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UPeriodicFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param VPeriodicFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VPeriodicFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param CachePoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CachePoles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param CacheWeights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CacheWeights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Perform the evaluation of the Taylor expansion of the Bspline normalized between 0 and 1. Structure of result optimized for BSplSLib_Cache.</p>
+</dd>
+<dt class="field-even">param theU</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theU</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theV</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theV</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theUSpanDomain</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUSpanDomain</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theVSpanDomain</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVSpanDomain</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theUPeriodic</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUPeriodic</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theVPeriodic</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVPeriodic</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theUDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theVDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theUIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theVIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theUFlatKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUFlatKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param theVFlatKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVFlatKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param thePoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePoles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param theWeights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theWeights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param theCacheArray</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theCacheArray</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.CacheD0">
+<em class="property">static </em><code class="sig-name descname">CacheD0</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.CacheD0" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UCacheParameter</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UCacheParameter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VCacheParameter</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VCacheParameter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param USpanLenght</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type USpanLenght</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VSpanLength</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VSpanLength</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.CacheD1">
+<em class="property">static </em><code class="sig-name descname">CacheD1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.CacheD1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UCacheParameter</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UCacheParameter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VCacheParameter</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VCacheParameter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param USpanLenght</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type USpanLenght</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VSpanLength</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VSpanLength</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param VecU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.CacheD2">
+<em class="property">static </em><code class="sig-name descname">CacheD2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.CacheD2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UCacheParameter</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UCacheParameter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VCacheParameter</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VCacheParameter</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param USpanLenght</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type USpanLenght</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VSpanLength</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VSpanLength</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param VecU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecUU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecUU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecUV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecUV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecVV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecVV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.CoefsD0">
+<em class="property">static </em><code class="sig-name descname">CoefsD0</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.CoefsD0" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.CoefsD1">
+<em class="property">static </em><code class="sig-name descname">CoefsD1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.CoefsD1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param VecU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.CoefsD2">
+<em class="property">static </em><code class="sig-name descname">CoefsD2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.CoefsD2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Calls CacheD0 for Bezier Surfaces Arrays computed with the method PolesCoefficients. Warning: To be used for BezierSurfaces ONLY!!!</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param VecU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecUU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecUU</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecUV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecUV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param VecVV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VecVV</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.D0">
+<em class="property">static </em><code class="sig-name descname">D0</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.D0" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param UKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param VKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param VMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param UDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param URat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type URat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VRat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VRat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param UPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.D1">
+<em class="property">static </em><code class="sig-name descname">D1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.D1" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param UKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param VKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param VMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param URat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type URat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VRat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VRat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param UPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param Vu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vu</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.D2">
+<em class="property">static </em><code class="sig-name descname">D2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.D2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param UKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param VKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param VMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param UDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param URat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type URat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VRat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VRat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param UPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param Vu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vu</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vuu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vuu</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vvv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vvv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vuv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vuv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.D3">
+<em class="property">static </em><code class="sig-name descname">D3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.D3" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param UKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param VKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param VMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param UDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param URat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type URat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VRat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VRat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param UPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param Vu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vu</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vuu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vuu</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vvv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vvv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vuv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vuv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vuuu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vuuu</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vvvv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vvvv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vuuv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vuuv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">param Vuvv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vuvv</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.DN">
+<em class="property">static </em><code class="sig-name descname">DN</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.DN" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>U</strong> – <dl class="field-list simple">
+<dt class="field-odd">type U</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Nu</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Nu</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Nv</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Nv</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param UIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VIndex</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VIndex</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param UKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param VKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param VMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param UDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param URat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type URat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VRat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VRat</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param UPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param VPer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VPer</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Vn</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Vn</dt>
+<dd class="field-odd"><p>gp_Vec</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.FunctionMultiply">
+<em class="property">static </em><code class="sig-name descname">FunctionMultiply</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.FunctionMultiply" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>this will multiply a given BSpline numerator N(u,v) and denominator D(u,v) defined by its U/VBSplineDegree and U/VBSplineKnots, and U/VMults. Its Poles and Weights are arrays which are coded as array2 of the form [1..UNumPoles][1..VNumPoles] by a function a(u,v) which is assumed to satisfy the following<span class="classifier">1. a(u,v) * N(u,v) and a(u,v) * D(u,v) is a polynomial BSpline that can be expressed exactly as a BSpline of degree U/VNewDegree on the knots U/VFlatKnots 2. the range of a(u,v) is the same as the range of N(u,v) or D(u,v) —Warning: it is the caller’s responsability to insure that conditions 1. and 2. above are satisfied</span><span class="classifier">no check whatsoever is made in this method – theStatus will return 0 if OK else it will return the pivot index – of the matrix that was inverted to compute the multiplied – BSpline</span><span class="classifier">the method used is interpolation at Schoenenberg – points of a(u,v)* N(u,v) and a(u,v) * D(u,v) theStatus will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline</span><span class="classifier">the method used is interpolation at Schoenenberg points of a(u,v)*F(u,v) –</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Function</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Function</dt>
+<dd class="field-even"><p>BSplSLib_EvaluatorFunction &amp;</p>
+</dd>
+<dt class="field-odd">param UBSplineDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UBSplineDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VBSplineDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VBSplineDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UBSplineKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UBSplineKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VBSplineKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VBSplineKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-odd">param VMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param UFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UNewDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UNewDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VNewDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VNewDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NewNumerator</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewNumerator</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param NewDenominator</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewDenominator</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theStatus</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theStatus</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.GetPoles">
+<em class="property">static </em><code class="sig-name descname">GetPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.GetPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get from FP the coordinates of the poles.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param FP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FP</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param UDirection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDirection</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Get from FP the coordinates of the poles.</p>
+</dd>
+<dt class="field-even">param FP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FP</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UDirection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDirection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.HomogeneousD0">
+<em class="property">static </em><code class="sig-name descname">HomogeneousD0</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.HomogeneousD0" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Makes an homogeneous evaluation of Poles and Weights any and returns in P the Numerator value and in W the Denominator value if Weights are present otherwise returns 1.0e0</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param UKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-odd">param VMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param URat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type URat</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param VRat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VRat</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param UPer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UPer</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param VPer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VPer</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param W</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type W</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.HomogeneousD1">
+<em class="property">static </em><code class="sig-name descname">HomogeneousD1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.HomogeneousD1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Makes an homogeneous evaluation of Poles and Weights any and returns in P the Numerator value and in W the Denominator value if Weights are present otherwise returns 1.0e0</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param UKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-odd">param VMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param URat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type URat</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param VRat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VRat</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param UPer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UPer</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param VPer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VPer</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param Nu</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Nu</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param Nv</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Nv</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Du</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Du</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param Dv</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dv</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.IncreaseDegree">
+<em class="property">static </em><code class="sig-name descname">IncreaseDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.IncreaseDegree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>UDirection</strong> – <dl class="field-list simple">
+<dt class="field-odd">type UDirection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NewDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Periodic</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Periodic</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param Knots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Knots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Mults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Mults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param NewPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewPoles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param NewWeights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewWeights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param NewKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param NewMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.InsertKnots">
+<em class="property">static </em><code class="sig-name descname">InsertKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.InsertKnots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>UDirection</strong> – <dl class="field-list simple">
+<dt class="field-odd">type UDirection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Periodic</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Periodic</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param Knots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Knots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Mults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Mults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param AddKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AddKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param AddMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AddMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-even">param NewPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewPoles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param NewWeights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewWeights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param NewKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param NewMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param Epsilon</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Epsilon</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Add</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Add</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.Interpolate">
+<em class="property">static </em><code class="sig-name descname">Interpolate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.Interpolate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs the interpolation of the data points given in the Poles array in the form [1,…,RL][1,…,RC][1…PolesDimension] . The ColLength CL and the Length of UParameters must be the same. The length of VFlatKnots is VDegree + CL + 1. //! The RowLength RL and the Length of VParameters must be the same. The length of VFlatKnots is Degree + RL + 1. //! Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UParameters</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UParameters</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VParameters</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VParameters</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param InversionProblem</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type InversionProblem</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Performs the interpolation of the data points given in the Poles array. The ColLength CL and the Length of UParameters must be the same. The length of VFlatKnots is VDegree + CL + 1. //! The RowLength RL and the Length of VParameters must be the same. The length of VFlatKnots is Degree + RL + 1. //! Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot</p>
+</dd>
+<dt class="field-even">param UDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param UFlatKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UFlatKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param VFlatKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VFlatKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UParameters</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UParameters</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param VParameters</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VParameters</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param InversionProblem</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type InversionProblem</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.IsRational">
+<em class="property">static </em><code class="sig-name descname">IsRational</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.IsRational" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns False if all the weights of the array &lt;Weights&gt; in the area [I1,I2] * [J1,J2] are identic. Epsilon is used for comparing weights. If Epsilon is 0. the Epsilon of the first weight is used.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param I1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I1</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param I2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type I2</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param J1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type J1</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param J2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type J2</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Epsilon</dt>
+<dd class="field-odd"><p>default value is 0.0</p>
+</dd>
+<dt class="field-even">type Epsilon</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.Iso">
+<em class="property">static </em><code class="sig-name descname">Iso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.Iso" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes the poles and weights of an isoparametric curve at parameter &lt;Param&gt; (UIso if &lt;IsU&gt; is True, VIso else).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Param</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param IsU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type IsU</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param Knots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Knots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param Mults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Mults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger *</p>
+</dd>
+<dt class="field-odd">param Degree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Degree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Periodic</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Periodic</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param CPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CPoles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">param CWeights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CWeights</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.MovePoint">
+<em class="property">static </em><code class="sig-name descname">MovePoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.MovePoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Find the new poles which allows an old point (with a given u,v as parameters) to reach a new position UIndex1,UIndex2 indicate the range of poles we can move for U (1, UNbPoles-1) or (2, UNbPoles) -&gt; no constraint for one side in U (2, UNbPoles-1) -&gt; the ends are enforced for U don’t enter (1,NbPoles) and (1,VNbPoles) -&gt; error: rigid move if problem in BSplineBasis calculation, no change for the curve and UFirstIndex, VLastIndex = 0 VFirstIndex, VLastIndex = 0</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param U</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Displ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Displ</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param UIndex1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex1</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UIndex2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex2</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VIndex1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex1</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VIndex2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex2</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Rational</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Rational</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VFlatKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VFlatKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UFirstIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UFirstIndex</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param ULastIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ULastIndex</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param VFirstIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VFirstIndex</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param VLastIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VLastIndex</dt>
+<dd class="field-even"><p>int &amp;</p>
+</dd>
+<dt class="field-odd">param NewPoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NewPoles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.NoWeights">
+<em class="property">static </em><code class="sig-name descname">NoWeights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.NoWeights" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Used as argument for a non rational curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.PolesCoefficients">
+<em class="property">static </em><code class="sig-name descname">PolesCoefficients</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.PolesCoefficients" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Warning! To be used for BezierSurfaces ONLY!!!</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param CachePoles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type CachePoles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Encapsulation of BuildCache to perform the evaluation of the Taylor expansion for beziersurfaces at parameters 0.,0.; Warning: To be used for BezierSurfaces ONLY!!!</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param CachePoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CachePoles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param CacheWeights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CacheWeights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.RationalDerivative">
+<em class="property">static </em><code class="sig-name descname">RationalDerivative</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.RationalDerivative" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>this is a one dimensional function typedef void (<a href="#id1"><span class="problematic" id="id2">*</span></a>EvaluatorFunction) ( Standard_Integer // Derivative Request Standard_Real * // StartEnd[2][2] // [0] = U // [1] = V // [0] = start // [1] = end Standard_Real // UParameter Standard_Real // VParamerer Standard_Real &amp; // Result Standard_Integer &amp;) ;// Error Code serves to multiply a given vectorial BSpline by a function Computes the derivatives of a ratio of two-variables functions x(u,v) / w(u,v) at orders &lt;N,M&gt;, x(u,v) is a vector in dimension &lt;3&gt;. //! &lt;Ders&gt; is an array containing the values of the input derivatives from 0 to Min(&lt;N&gt;,&lt;UDeg&gt;), 0 to Min(&lt;M&gt;,&lt;VDeg&gt;). For orders higher than &lt;UDeg,VDeg&gt; the input derivatives are assumed to be 0. //! The &lt;Ders&gt; is a 2d array and the dimension of the lines is always (&lt;VDeg&gt;+1) * (&lt;3&gt;+1), even if &lt;N&gt; is smaller than &lt;Udeg&gt; (the derivatives higher than &lt;N&gt; are not used). //! Content of &lt;Ders&gt;<span class="classifier">//! x(i,j)[k] means</span><span class="classifier">the composant k of x derivated (i) times in u and (j) times in v. //! … First line … //! x[1],x[2],…,x[3],w x(0,1)[1],…,x(0,1)[3],w(1,0) … x(0,VDeg)[1],…,x(0,VDeg)[3],w(0,VDeg) //! … Then second line … //! x(1,0)[1],…,x(1,0)[3],w(1,0) x(1,1)[1],…,x(1,1)[3],w(1,1) … x(1,VDeg)[1],…,x(1,VDeg)[3],w(1,VDeg) //! … //! … Last line … //! x(UDeg,0)[1],…,x(UDeg,0)[3],w(UDeg,0) x(UDeg,1)[1],…,x(UDeg,1)[3],w(UDeg,1) … x(Udeg,VDeg)[1],…,x(UDeg,VDeg)[3],w(Udeg,VDeg) //! If &lt;All&gt; is false, only the derivative at order &lt;N,M&gt; is computed. &lt;RDers&gt; is an array of length 3 which will contain the result</span><span class="classifier">//! x(1)/w , x(2)/w , … derivated &lt;N&gt; &lt;M&gt; times //! If &lt;All&gt; is true multiples derivatives are computed. All the derivatives (i,j) with 0 &lt;= i+j &lt;= Max(N,M) are computed. &lt;RDers&gt; is an array of length 3 * (&lt;N&gt;+1) * (&lt;M&gt;+1) which will contains</span><span class="classifier">//! x(1)/w , x(2)/w , … x(1)/w , x(2)/w , … derivated &lt;0,1&gt; times x(1)/w , x(2)/w , … derivated &lt;0,2&gt; times … x(1)/w , x(2)/w , … derivated &lt;0,N&gt; times //! x(1)/w , x(2)/w , … derivated &lt;1,0&gt; times x(1)/w , x(2)/w , … derivated &lt;1,1&gt; times … x(1)/w , x(2)/w , … derivated &lt;1,N&gt; times //! x(1)/w , x(2)/w , … derivated &lt;N,0&gt; times …. Warning: &lt;RDers&gt; must be dimensionned properly.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UDeg</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDeg</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param M</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type M</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Ders</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Ders</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param RDers</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RDers</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param All</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type All</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.RemoveKnot">
+<em class="property">static </em><code class="sig-name descname">RemoveKnot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.RemoveKnot" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>UDirection</strong> – <dl class="field-list simple">
+<dt class="field-odd">type UDirection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Mult</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Mult</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Periodic</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Periodic</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param Knots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Knots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Mults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Mults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param NewPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewPoles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param NewWeights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewWeights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param NewKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param NewMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param Tolerance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tolerance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.Resolution">
+<em class="property">static </em><code class="sig-name descname">Resolution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.Resolution" title="Permalink to this definition">¶</a></dt>
+<dd><ul>
+<li><dl>
+<dt>Given a tolerance in 3D space returns two tolerances, one in U one in V such that for all (u1,v1) and (u0,v0) in the domain of the surface f(u,v) we have<span class="classifier">| u1 - u0 | &lt; UTolerance and | v1 - v0 | &lt; VTolerance we have <a href="#id3"><span class="problematic" id="id4">|f (u1,v1) - f (u0,v0)|</span></a> &lt; Tolerance3D</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Weights</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Weights</dt>
+<dd class="field-even"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-odd">param UKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param VKnots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VKnots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-odd">param VMults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-odd">param UDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param URat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type URat</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param VRat</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VRat</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param UPer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UPer</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param VPer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VPer</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Tolerance3D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tolerance3D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param UTolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UTolerance</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param VTolerance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VTolerance</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.Reverse">
+<em class="property">static </em><code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Reverses the array of poles. Last is the Index of the new first Row( Col) of Poles. On a non periodic surface Last is Poles.Upper(). On a periodic curve last is (number of flat knots - degree - 1) or (sum of multiplicities(but for the last) + degree - 1)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param Last</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Last</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param UDirection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDirection</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Reverses the array of weights.</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param UDirection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDirection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.SetPoles">
+<em class="property">static </em><code class="sig-name descname">SetPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.SetPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Copy in FP the coordinates of the poles.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-odd">param FP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type FP</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param UDirection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UDirection</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Copy in FP the coordinates of the poles.</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-even">param FP</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type FP</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param UDirection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UDirection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.Unperiodize">
+<em class="property">static </em><code class="sig-name descname">Unperiodize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.Unperiodize" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>UDirection</strong> – <dl class="field-list simple">
+<dt class="field-odd">type UDirection</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Mults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Mults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param Knots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Knots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Poles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Poles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param Weights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Weights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">param NewMults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewMults</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param NewKnots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewKnots</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param NewPoles</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewPoles</dt>
+<dd class="field-odd"><p>TColgp_Array2OfPnt</p>
+</dd>
+<dt class="field-even">param NewWeights</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NewWeights</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BSplSLib.bsplslib.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BSplSLib.bsplslib.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

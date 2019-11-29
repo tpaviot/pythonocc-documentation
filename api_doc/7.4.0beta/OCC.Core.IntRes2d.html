@@ -1,0 +1,1613 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.IntRes2d module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.IntRes2d module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.IntRes2d module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.IntRes2d.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.IntRes2d">
+<span id="occ-core-intres2d-module"></span><h1>OCC.Core.IntRes2d module<a class="headerlink" href="#module-OCC.Core.IntRes2d" title="Permalink to this headline">¶</a></h1>
+<p>IntRes2d module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_intres2d.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_intres2d.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain">
+<em class="property">class </em><code class="sig-name descname">IntRes2d_Domain</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an infinite Domain (HasFirstPoint = False and HasLastPoint = False).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a bounded Domain.</p>
+</dd>
+<dt class="field-even">param Pnt1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pnt1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Par1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Par1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Pnt2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pnt2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Par2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Par2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Tol2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tol2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates a semi-infinite Domain. If First is set to True, the given point is the first point of the domain, otherwise it is the last point.</p>
+</dd>
+<dt class="field-odd">param Pnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pnt</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Par</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Par</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.EquivalentParameters">
+<code class="sig-name descname">EquivalentParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.EquivalentParameters" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns Equivalent parameters if the domain is closed. Otherwise, the exception DomainError is raised.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param zero</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type zero</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param zeroplusperiod</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type zeroplusperiod</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.FirstParameter">
+<code class="sig-name descname">FirstParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.FirstParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter of the first point of the domain The exception DomainError is raised if HasFirstPoint returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.FirstPoint">
+<code class="sig-name descname">FirstPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.FirstPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the first point of the domain. The exception DomainError is raised if HasFirstPoint returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.FirstTolerance">
+<code class="sig-name descname">FirstTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.FirstTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the tolerance of the first (left) bound. The exception DomainError is raised if HasFirstPoint returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.HasFirstPoint">
+<code class="sig-name descname">HasFirstPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.HasFirstPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the domain has a first point, i-e a point defining the lowest admitted parameter on the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.HasLastPoint">
+<code class="sig-name descname">HasLastPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.HasLastPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the domain has a last point, i-e a point defining the highest admitted parameter on the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.IsClosed">
+<code class="sig-name descname">IsClosed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.IsClosed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the domain is closed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.LastParameter">
+<code class="sig-name descname">LastParameter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.LastParameter" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter of the last point of the domain. The exception DomainError is raised if HasLastPoint returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.LastPoint">
+<code class="sig-name descname">LastPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.LastPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the last point of the domain. The exception DomainError is raised if HasLastPoint returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.LastTolerance">
+<code class="sig-name descname">LastTolerance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.LastTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the tolerance of the last (right) bound. The exception DomainError is raised if HasLastPoint returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.SetEquivalentParameters">
+<code class="sig-name descname">SetEquivalentParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.SetEquivalentParameters" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Defines a closed domain.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param zero</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type zero</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param period</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type period</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.SetValues">
+<code class="sig-name descname">SetValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.SetValues" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the values for a bounded domain.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Pnt1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pnt1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Par1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Par1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Pnt2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pnt2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Par2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Par2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Sets the values for an infinite domain.</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the values for a semi-infinite domain.</p>
+</dd>
+<dt class="field-odd">param Pnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pnt</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Par</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Par</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Tol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Domain.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Domain.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection">
+<em class="property">class </em><code class="sig-name descname">IntRes2d_Intersection</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns True when the computation was successful.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if there is no intersection between the given arguments. The exception NotDone is raised if IsDone returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.NbPoints">
+<code class="sig-name descname">NbPoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.NbPoints" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>This function returns the number of intersection points between the 2 curves. The exception NotDone is raised if IsDone returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.NbSegments">
+<code class="sig-name descname">NbSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.NbSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>This function returns the number of intersection segments between the two curves. The exception NotDone is raised if IsDone returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.Point">
+<code class="sig-name descname">Point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.Point" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>This function returns the intersection point of range N; The exception NotDone is raised if IsDone returns False. The exception OutOfRange is raised if (N &lt;= 0) or (N &gt; NbPoints).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_IntersectionPoint</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.Segment">
+<code class="sig-name descname">Segment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.Segment" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>This function returns the intersection segment of range N; The exception NotDone is raised if IsDone returns False. The exception OutOfRange is raised if (N &lt;= 0) or (N &gt; NbPoints).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param N</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type N</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_IntersectionSegment</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.SetReversedParameters">
+<code class="sig-name descname">SetReversedParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.SetReversedParameters" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Reverseflag</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Reverseflag</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Intersection.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Intersection.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint">
+<em class="property">class </em><code class="sig-name descname">IntRes2d_IntersectionPoint</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates an IntersectionPoint. if ReversedFlag is False, the parameter Uc1(resp. Uc2) and the Transition Trans1 (resp. Trans2) refer to the first curve (resp. second curve) otherwise Uc1 and Trans1 (resp. Uc2 and Trans2) refer to the second curve (resp. the first curve).</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Uc1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Uc1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Uc2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Uc2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Trans1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Trans1</dt>
+<dd class="field-odd"><p>IntRes2d_Transition &amp;</p>
+</dd>
+<dt class="field-even">param Trans2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Trans2</dt>
+<dd class="field-odd"><p>IntRes2d_Transition &amp;</p>
+</dd>
+<dt class="field-even">param ReversedFlag</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ReversedFlag</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.ParamOnFirst">
+<code class="sig-name descname">ParamOnFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.ParamOnFirst" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter on the first curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.ParamOnSecond">
+<code class="sig-name descname">ParamOnSecond</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.ParamOnSecond" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the parameter on the second curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.SetValues">
+<code class="sig-name descname">SetValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.SetValues" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the values for an existing intersection point. The meaning of the parameters are the same as for the Create.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Uc1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Uc1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Uc2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Uc2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Trans1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Trans1</dt>
+<dd class="field-even"><p>IntRes2d_Transition &amp;</p>
+</dd>
+<dt class="field-odd">param Trans2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Trans2</dt>
+<dd class="field-even"><p>IntRes2d_Transition &amp;</p>
+</dd>
+<dt class="field-odd">param ReversedFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ReversedFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.TransitionOfFirst">
+<code class="sig-name descname">TransitionOfFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.TransitionOfFirst" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the transition of the 1st curve compared to the 2nd one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_Transition</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.TransitionOfSecond">
+<code class="sig-name descname">TransitionOfSecond</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.TransitionOfSecond" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the transition of the 2nd curve compared to the 1st one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_Transition</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the value of the coordinates of the intersection point in the 2D space.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionPoint.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionSegment">
+<em class="property">class </em><code class="sig-name descname">IntRes2d_IntersectionSegment</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionSegment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None:param P1:</p>
+</dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>IntRes2d_IntersectionPoint &amp;</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>IntRes2d_IntersectionPoint &amp;</p>
+</dd>
+<dt class="field-odd">param Oppos</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Oppos</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param ReverseFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ReverseFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None:param P:</p>
+</dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>IntRes2d_IntersectionPoint &amp;</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Oppos</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Oppos</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param ReverseFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ReverseFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates an infinite segment of intersection.</p>
+</dd>
+<dt class="field-even">param Oppos</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Oppos</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.FirstPoint">
+<code class="sig-name descname">FirstPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.FirstPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the first point of the segment as an IntersectionPoint (with a transition). The exception DomainError is raised if HasFirstPoint returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_IntersectionPoint</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.HasFirstPoint">
+<code class="sig-name descname">HasFirstPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.HasFirstPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the segment is limited by a first point. This point defines the lowest parameter admitted on the first curve for the segment. If IsOpposite returns False, it defines the lowest parameter on the second curve, otherwise, it is the highest parameter on the second curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.HasLastPoint">
+<code class="sig-name descname">HasLastPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.HasLastPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if the segment is limited by a last point. This point defines the highest parameter admitted on the first curve for the segment. If IsOpposite returns False, it defines the highest parameter on the second curve, otherwise, it is the lowest parameter on the second curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.IsOpposite">
+<code class="sig-name descname">IsOpposite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.IsOpposite" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns False if the intersection segment has got the same orientation on both curves.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.LastPoint">
+<code class="sig-name descname">LastPoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.LastPoint" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the last point of the segment as an IntersectionPoint (with a transition). The exception DomainError is raised if HasLastExtremity returns False.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_IntersectionPoint</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_IntersectionSegment.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint">
+<em class="property">class </em><code class="sig-name descname">IntRes2d_SequenceOfIntersectionPoint</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionPoint.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment">
+<em class="property">class </em><code class="sig-name descname">IntRes2d_SequenceOfIntersectionSegment</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_SequenceOfIntersectionSegment.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition">
+<em class="property">class </em><code class="sig-name descname">IntRes2d_Transition</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates an IN or OUT transition.</p>
+</dd>
+<dt class="field-even">param Tangent</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tangent</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Pos</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pos</dt>
+<dd class="field-odd"><p>IntRes2d_Position</p>
+</dd>
+<dt class="field-even">param Type</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Type</dt>
+<dd class="field-odd"><p>IntRes2d_TypeTrans</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates a TOUCH transition.</p>
+</dd>
+<dt class="field-odd">param Tangent</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tangent</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Pos</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pos</dt>
+<dd class="field-even"><p>IntRes2d_Position</p>
+</dd>
+<dt class="field-odd">param Situ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Situ</dt>
+<dd class="field-even"><p>IntRes2d_Situation</p>
+</dd>
+<dt class="field-odd">param Oppos</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Oppos</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates an UNDECIDED transition.</p>
+</dd>
+<dt class="field-even">param Pos</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pos</dt>
+<dd class="field-odd"><p>IntRes2d_Position</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.IsOpposite">
+<code class="sig-name descname">IsOpposite</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.IsOpposite" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns a significant value if TransitionType returns TOUCH. In this case, the function returns true when the 2 curves locally define two different parts of the space. If TransitionType returns IN or OUT or UNDECIDED, the exception DomainError is raised.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.IsTangent">
+<code class="sig-name descname">IsTangent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.IsTangent" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True when the 2 curves are tangent at the intersection point. Theexception DomainError is raised if the type of transition is UNDECIDED.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.PositionOnCurve">
+<code class="sig-name descname">PositionOnCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.PositionOnCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Indicates if the intersection is at the beginning (IntRes2d_Head), at the end (IntRes2d_End), or in the middle (IntRes2d_Middle) of the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_Position</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.SetPosition">
+<code class="sig-name descname">SetPosition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.SetPosition" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the value of the position.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Pos</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pos</dt>
+<dd class="field-even"><p>IntRes2d_Position</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the values of an IN or OUT transition.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Tangent</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Tangent</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Pos</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pos</dt>
+<dd class="field-even"><p>IntRes2d_Position</p>
+</dd>
+<dt class="field-odd">param Type</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Type</dt>
+<dd class="field-even"><p>IntRes2d_TypeTrans</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Sets the values of a TOUCH transition.</p>
+</dd>
+<dt class="field-even">param Tangent</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Tangent</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Pos</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pos</dt>
+<dd class="field-odd"><p>IntRes2d_Position</p>
+</dd>
+<dt class="field-even">param Situ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Situ</dt>
+<dd class="field-odd"><p>IntRes2d_Situation</p>
+</dd>
+<dt class="field-even">param Oppos</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Oppos</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Sets the values of an UNDECIDED transition.</p>
+</dd>
+<dt class="field-odd">param Pos</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pos</dt>
+<dd class="field-even"><p>IntRes2d_Position</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.Situation">
+<code class="sig-name descname">Situation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.Situation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns a significant value if TransitionType returns TOUCH. In this case, the function returns<span class="classifier">INSIDE when the curve remains inside the other one, OUTSIDE when it remains outside the other one, UNKNOWN when the calculus, based on the second derivatives cannot give the result. If TransitionType returns IN or OUT or UNDECIDED, the exception DomainError is raised.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_Situation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.TransitionType">
+<code class="sig-name descname">TransitionType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.TransitionType" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of transition at the intersection. It may be IN or OUT or TOUCH, or UNDECIDED if the two first derivatives are not enough to give the tangent to one of the two curves.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>IntRes2d_TypeTrans</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.IntRes2d_Transition.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.IntRes2d_Transition.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.IntRes2d.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.IntRes2d.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

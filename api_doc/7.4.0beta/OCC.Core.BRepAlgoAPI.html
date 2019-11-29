@@ -1,0 +1,2006 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BRepAlgoAPI module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BRepAlgoAPI module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BRepAlgoAPI module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BRepAlgoAPI.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BRepAlgoAPI">
+<span id="occ-core-brepalgoapi-module"></span><h1>OCC.Core.BRepAlgoAPI module<a class="headerlink" href="#module-OCC.Core.BRepAlgoAPI" title="Permalink to this headline">¶</a></h1>
+<p>BRepAlgoAPI module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepalgoapi.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepalgoapi.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Algo</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.Clear" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears all warnings and errors, and any data cached by the algorithm. User defined options are not cleared.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.ClearWarnings">
+<code class="sig-name descname">ClearWarnings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.ClearWarnings" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Clears the warnings of the algorithm</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.FuzzyValue">
+<code class="sig-name descname">FuzzyValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.FuzzyValue" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the additional tolerance</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.GetReport">
+<code class="sig-name descname">GetReport</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.GetReport" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns report collecting all errors and warnings</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_Report&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasError">
+<code class="sig-name descname">HasError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasError" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if algorithm has generated error of specified type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theType</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Standard_Type&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasErrors">
+<code class="sig-name descname">HasErrors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasErrors" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if algorithm has failed</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasWarning">
+<code class="sig-name descname">HasWarning</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasWarning" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if algorithm has generated warning of specified type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theType</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theType</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Standard_Type&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasWarnings">
+<code class="sig-name descname">HasWarnings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.HasWarnings" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if algorithm has generated some warning alerts</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.RunParallel">
+<code class="sig-name descname">RunParallel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.RunParallel" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the flag of parallel processing</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetFuzzyValue">
+<code class="sig-name descname">SetFuzzyValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetFuzzyValue" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="mailto://!&#37;&#52;&#48;name">//!<span>&#64;</span>name</a> Fuzzy tolerance Sets the additional tolerance</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFuzz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFuzz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetProgressIndicator">
+<code class="sig-name descname">SetProgressIndicator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetProgressIndicator" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="mailto://!&#37;&#52;&#48;name">//!<span>&#64;</span>name</a> Progress indicator Set the Progress Indicator object.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theObj</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theObj</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetRunParallel">
+<code class="sig-name descname">SetRunParallel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetRunParallel" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set the flag of parallel processing if &lt;theFlag&gt; is true the parallel processing is switched on if &lt;theFlag&gt; is false the parallel processing is switched off</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetUseOBB">
+<code class="sig-name descname">SetUseOBB</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.SetUseOBB" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="mailto://!&#37;&#52;&#48;name">//!<span>&#64;</span>name</a> Usage of Oriented Bounding boxes Enables/Disables the usage of OBB</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theUseOBB</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUseOBB</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_BooleanOperation</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Constructors Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with precomputed intersections of arguments.</p>
+</dd>
+<dt class="field-even">param thePF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Operation">
+<code class="sig-name descname">Operation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Operation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the type of Boolean Operation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BOPAlgo_Operation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.SetOperation">
+<code class="sig-name descname">SetOperation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.SetOperation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Setting/Getting the type of Boolean operation Sets the type of Boolean operation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBOP</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBOP</dt>
+<dd class="field-even"><p>BOPAlgo_Operation</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.SetTools">
+<code class="sig-name descname">SetTools</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.SetTools" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the Tool arguments</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theLS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLS</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Shape1">
+<code class="sig-name descname">Shape1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Shape1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Setting/getting arguments Returns the first argument involved in this Boolean operation. Obsolete</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Shape2">
+<code class="sig-name descname">Shape2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Shape2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the second argument involved in this Boolean operation. Obsolete</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Tools">
+<code class="sig-name descname">Tools</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.Tools" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Tools arguments</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_BuilderAlgo</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Constructors Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with prepared Filler object</p>
+</dd>
+<dt class="field-even">param thePF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.Arguments">
+<code class="sig-name descname">Arguments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.Arguments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Gets the arguments</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.Builder">
+<code class="sig-name descname">Builder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.Builder" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Building tool</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BOPAlgo_PBuilder</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.CheckInverted">
+<code class="sig-name descname">CheckInverted</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.CheckInverted" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the flag defining whether the check for input solids on inverted status should be performed or not.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.DSFiller">
+<code class="sig-name descname">DSFiller</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.DSFiller" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Getting tools performing the job Returns the Intersection tool</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BOPAlgo_PPaveFiller</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.Glue">
+<code class="sig-name descname">Glue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.Glue" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the glue option of the algorithm</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BOPAlgo_GlueEnum</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasDeleted">
+<code class="sig-name descname">HasDeleted</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasDeleted" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if any of the input shapes has been deleted during operation. Normally, General Fuse operation should not have Deleted elements, but all derived operation can have.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasGenerated">
+<code class="sig-name descname">HasGenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasGenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if any of the input shapes has generated shapes during operation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasHistory">
+<code class="sig-name descname">HasHistory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasHistory" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns flag of history availability</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasModified">
+<code class="sig-name descname">HasModified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.HasModified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if any of the input shapes has been modified during operation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.History">
+<code class="sig-name descname">History</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.History" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>History tool</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepTools_History&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.NonDestructive">
+<code class="sig-name descname">NonDestructive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.NonDestructive" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the flag that defines the mode of treatment. In non-destructive mode the argument shapes are not modified. Instead a copy of a sub-shape is created in the result if it is needed to be updated.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SectionEdges">
+<code class="sig-name descname">SectionEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SectionEdges" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Getting the section edges Returns a list of section edges. The edges represent the result of intersection between arguments of operation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetArguments">
+<code class="sig-name descname">SetArguments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetArguments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Setting/Getting data for the algorithm Sets the arguments</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theLS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLS</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetCheckInverted">
+<code class="sig-name descname">SetCheckInverted</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetCheckInverted" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Enables/Disables the check of the input solids for inverted status</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theCheck</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theCheck</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetGlue">
+<code class="sig-name descname">SetGlue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetGlue" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets the glue option for the algorithm, which allows increasing performance of the intersection of the input shapes.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theGlue</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theGlue</dt>
+<dd class="field-even"><p>BOPAlgo_GlueEnum</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetNonDestructive">
+<code class="sig-name descname">SetNonDestructive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetNonDestructive" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Setting options Sets the flag that defines the mode of treatment. In non-destructive mode the argument shapes are not modified. Instead a copy of a sub-shape is created in the result if it is needed to be updated.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetToFillHistory">
+<code class="sig-name descname">SetToFillHistory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SetToFillHistory" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Enabling/Disabling the history collection. Allows disabling the history collection</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theHistFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theHistFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SimplifyResult">
+<code class="sig-name descname">SimplifyResult</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.SimplifyResult" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Result simplification Simplification of the result shape is performed by the means of <em>ShapeUpgrade_UnifySameDomain</em> algorithm. The result of the operation will be overwritten with the simplified result. //! The simplification is performed without creation of the Internal shapes, i.e. shapes connections will never be broken. //! Simplification is performed on the whole result shape. Thus, if the input shapes contained connected tangent edges or faces unmodified during the operation they will also be unified. //! After simplification, the History of result simplification is merged into the main history of operation. So, it is taken into account when asking for Modified, Generated and Deleted shapes. //! Some options of the main operation are passed into the Unifier: - Fuzzy tolerance of the operation is given to the Unifier as the linear tolerance. - Non destructive mode here controls the safe input mode in Unifier. //! &#64;param theUnifyEdges Controls the edges unification. True by default. &#64;param theUnifyFaces Controls the faces unification. True by default. &#64;param theAngularTol Angular criteria for tangency of edges and faces.  Precision::Angular() by default.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theUnifyEdges</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theUnifyEdges</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theUnifyFaces</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theUnifyFaces</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param theAngularTol</dt>
+<dd class="field-odd"><p>default value is Precision::Angular()</p>
+</dd>
+<dt class="field-even">type theAngularTol</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Check</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BOPAlgo.html#OCC.Core.BOPAlgo.BOPAlgo_Options" title="OCC.Core.BOPAlgo.BOPAlgo_Options"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BOPAlgo.BOPAlgo_Options</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Constructors Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor for checking single shape. //! &#64;param theS [in] - the shape to check; &#64;param bTestSE [in] - flag which specifies whether to check the shape  on small edges or not; by default it is set to True; &#64;param bTestSI [in] - flag which specifies whether to check the shape  on self-interference or not; by default it is set to True;</p>
+</dd>
+<dt class="field-even">param theS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theS</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param bTestSE</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type bTestSE</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param bTestSI</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type bTestSI</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor for checking the couple of shapes. Additionally to the validity checks of each given shape, the types of the given shapes will be checked on validity for Boolean operation of given type. //! &#64;param theS1 [in] - the first shape to check; &#64;param theS2 [in] - the second shape to check; &#64;param theOp [in] - the type of Boolean Operation for which the validity of given shapes should be checked. &#64;param bTestSE [in] - flag which specifies whether to check the shape  on small edges or not; by default it is set to True; &#64;param bTestSI [in] - flag which specifies whether to check the shape  on self-interference or not; by default it is set to True;</p>
+</dd>
+<dt class="field-odd">param theS1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theS2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theOp</dt>
+<dd class="field-odd"><p>default value is BOPAlgo_UNKNOWN</p>
+</dd>
+<dt class="field-even">type theOp</dt>
+<dd class="field-even"><p>BOPAlgo_Operation</p>
+</dd>
+<dt class="field-odd">param bTestSE</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type bTestSE</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param bTestSI</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type bTestSI</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.IsValid">
+<code class="sig-name descname">IsValid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.IsValid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Getting the results. Shows whether shape(s) valid or not.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Performing the operation Performs the check.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.Result">
+<code class="sig-name descname">Result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.Result" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns faulty shapes.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BOPAlgo_ListOfCheckResult</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.SetData">
+<code class="sig-name descname">SetData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.SetData" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Initializing the algorithm Initializes the algorithm with single shape. //! &#64;param theS [in] - the shape to check; &#64;param bTestSE [in] - flag which specifies whether to check the shape  on small edges or not; by default it is set to True; &#64;param bTestSI [in] - flag which specifies whether to check the shape  on self-interference or not; by default it is set to True;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theS</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param bTestSE</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type bTestSE</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param bTestSI</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type bTestSI</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Initializes the algorithm with couple of shapes. Additionally to the validity checks of each given shape, the types of the given shapes will be checked on validity for Boolean operation of given type. //! &#64;param theS1 [in] - the first shape to check; &#64;param theS2 [in] - the second shape to check; &#64;param theOp [in] - the type of Boolean Operation for which the validity of given shapes should be checked. &#64;param bTestSE [in] - flag which specifies whether to check the shape  on small edges or not; by default it is set to True; &#64;param bTestSI [in] - flag which specifies whether to check the shape  on self-interference or not; by default it is set to True;</p>
+</dd>
+<dt class="field-even">param theS1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theS1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theS2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theS2</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theOp</dt>
+<dd class="field-even"><p>default value is BOPAlgo_UNKNOWN</p>
+</dd>
+<dt class="field-odd">type theOp</dt>
+<dd class="field-odd"><p>BOPAlgo_Operation</p>
+</dd>
+<dt class="field-even">param bTestSE</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type bTestSE</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param bTestSI</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type bTestSI</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Check.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Common">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Common</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Common" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Empty constructor &lt;PF&gt; - PaveFiller object that is carried out</p>
+</dd>
+<dt class="field-even">param PF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;anOperation&gt; - the type of the operation Obsolete</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;anOperation&gt; - the type of the operation &lt;PF&gt; - PaveFiller object that is carried out Obsolete</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param PF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Common.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Common.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Cut">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Cut</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Cut" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Empty constructor &lt;PF&gt; - PaveFiller object that is carried out</p>
+</dd>
+<dt class="field-even">param PF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;anOperation&gt; - the type of the operation Obsolete</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;anOperation&gt; - the type of the operation &lt;PF&gt; - PaveFiller object that is carried out Obsolete</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param aDSF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDSF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">param bFWD</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type bFWD</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Cut.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Cut.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Defeaturing</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Algo</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Constructors Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.AddFaceToRemove">
+<code class="sig-name descname">AddFaceToRemove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.AddFaceToRemove" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the features to remove from the input shape. &#64;param theFace [in] The shape to extract the faces for removal.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.AddFacesToRemove">
+<code class="sig-name descname">AddFacesToRemove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.AddFacesToRemove" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the faces to remove from the input shape. &#64;param theFaces [in] The list of shapes to extract the faces for removal.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFaces</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFaces</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.FacesToRemove">
+<code class="sig-name descname">FacesToRemove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.FacesToRemove" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the list of faces which have been requested for removal from the input shape.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasDeleted">
+<code class="sig-name descname">HasDeleted</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasDeleted" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if any of the input shapes has been deleted during operation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasGenerated">
+<code class="sig-name descname">HasGenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasGenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if any of the input shapes has generated shapes during operation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasHistory">
+<code class="sig-name descname">HasHistory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasHistory" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns whether the history was requested or not.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasModified">
+<code class="sig-name descname">HasModified</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.HasModified" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if any of the input shapes has been modified during operation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.History">
+<code class="sig-name descname">History</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.History" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the History of shapes modifications</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepTools_History&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.InputShape">
+<code class="sig-name descname">InputShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.InputShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the input shape</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.SetShape">
+<code class="sig-name descname">SetShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.SetShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Setting input data for the algorithm Sets the shape for processing. &#64;param theShape [in] The shape to remove the features from.  It should either be the SOLID, COMPSOLID or COMPOUND of Solids.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.SetToFillHistory">
+<code class="sig-name descname">SetToFillHistory</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.SetToFillHistory" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name History Methods Defines whether to track the modification of the shapes or not.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFlag</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFlag</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Defeaturing.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Fuse">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Fuse</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Fuse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Empty constructor &lt;PF&gt; - PaveFiller object that is carried out</p>
+</dd>
+<dt class="field-even">param PF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;anOperation&gt; - the type of the operation Obsolete</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;anOperation&gt; - the type of the operation &lt;PF&gt; - PaveFiller object that is carried out Obsolete</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param aDSF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDSF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Fuse.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Fuse.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Section</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BooleanOperation</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Empty constructor &lt;PF&gt; - PaveFiller object that is carried out</p>
+</dd>
+<dt class="field-even">param PF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;PerformNow&gt; - the flag: if &lt;PerformNow&gt;=True - the algorithm is performed immediatly Obsolete</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param PerformNow</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type PerformNow</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with two shapes &lt;S1&gt; -argument &lt;S2&gt; -tool &lt;PF&gt; - PaveFiller object that is carried out &lt;PerformNow&gt; - the flag: if &lt;PerformNow&gt;=True - the algorithm is performed immediatly Obsolete</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param aDSF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDSF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">param PerformNow</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type PerformNow</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor with two shapes &lt;S1&gt; - argument &lt;Pl&gt; - tool &lt;PerformNow&gt; - the flag: if &lt;PerformNow&gt;=True - the algorithm is performed immediatly Obsolete</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param Pl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Pl</dt>
+<dd class="field-even"><p>gp_Pln</p>
+</dd>
+<dt class="field-odd">param PerformNow</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type PerformNow</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with two shapes &lt;S1&gt; - argument &lt;Sf&gt; - tool &lt;PerformNow&gt; - the flag: if &lt;PerformNow&gt;=True - the algorithm is performed immediatly Obsolete</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param Sf</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sf</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PerformNow</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type PerformNow</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Constructor with two shapes &lt;Sf&gt; - argument &lt;S2&gt; - tool &lt;PerformNow&gt; - the flag: if &lt;PerformNow&gt;=True - the algorithm is performed immediatly Obsolete</p>
+</dd>
+<dt class="field-odd">param Sf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sf</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param PerformNow</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type PerformNow</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with two shapes &lt;Sf1&gt; - argument &lt;Sf2&gt; - tool &lt;PerformNow&gt; - the flag: if &lt;PerformNow&gt;=True - the algorithm is performed immediatly Obsolete</p>
+</dd>
+<dt class="field-even">param Sf1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sf1</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Sf2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sf2</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PerformNow</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type PerformNow</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.Approximation">
+<code class="sig-name descname">Approximation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.Approximation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>B</strong> – <dl class="field-list simple">
+<dt class="field-odd">type B</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.ComputePCurveOn1">
+<code class="sig-name descname">ComputePCurveOn1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.ComputePCurveOn1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Indicates whether the P-Curve should be (or not) performed on the argument. By default, no parametric 2D curve (pcurve) is defined for the edges of the result. If ComputePCurve1 equals true, further computations performed to attach an P-Curve in the parametric space of the argument to the constructed edges. Obsolete</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param B</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type B</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.ComputePCurveOn2">
+<code class="sig-name descname">ComputePCurveOn2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.ComputePCurveOn2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Indicates whether the P-Curve should be (or not) performed on the tool. By default, no parametric 2D curve (pcurve) is defined for the edges of the result. If ComputePCurve1 equals true, further computations performed to attach an P-Curve in the parametric space of the tool to the constructed edges. Obsolete</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param B</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type B</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.HasAncestorFaceOn1">
+<code class="sig-name descname">HasAncestorFaceOn1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.HasAncestorFaceOn1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>get the face of the first part giving section edge &lt;E&gt;. Returns True on the 3 following conditions<span class="classifier">1/ &lt;E&gt; is an edge returned by the Shape() metwod. 2/ First part of section performed is a shape. 3/ &lt;E&gt; is built on a intersection curve (i.e &lt;E&gt; is not the result of common edges) When False, F remains untouched. Obsolete</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.HasAncestorFaceOn2">
+<code class="sig-name descname">HasAncestorFaceOn2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.HasAncestorFaceOn2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Identifies the ancestor faces of the intersection edge E resulting from the last computation performed in this framework, that is, the faces of the two original shapes on which the edge E lies: - HasAncestorFaceOn1 gives the ancestor face in the first shape, and - HasAncestorFaceOn2 gives the ancestor face in the second shape. These functions return true if an ancestor face F is found, or false if not. An ancestor face is identifiable for the edge E if the following conditions are satisfied: - the first part on which this algorithm performed its last computation is a shape, that is, it was not given as a surface or a plane at the time of construction of this algorithm or at a later time by the Init1 function, - E is one of the elementary edges built by the last computation of this section algorithm. To use these functions properly, you have to test the returned Boolean value before using the ancestor face: F is significant only if the returned Boolean value equals true. Obsolete</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param F</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type F</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.Init1">
+<code class="sig-name descname">Init1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.Init1" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>initialize the argument &lt;S1&gt; - argument Obsolete</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* initialize the argument &lt;Pl&gt; - argument Obsolete</p>
+</dd>
+<dt class="field-even">param Pl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* initialize the argument &lt;Sf&gt; - argument Obsolete</p>
+</dd>
+<dt class="field-odd">param Sf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sf</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.Init2">
+<code class="sig-name descname">Init2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.Init2" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>initialize the tool &lt;S2&gt; - tool Obsolete</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S2</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* initialize the tool &lt;Pl&gt; - tool Obsolete</p>
+</dd>
+<dt class="field-even">param Pl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Pl</dt>
+<dd class="field-odd"><p>gp_Pln</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* initialize the tool &lt;Sf&gt; - tool Obsolete</p>
+</dd>
+<dt class="field-odd">param Sf</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sf</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Section.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter">
+<em class="property">class </em><code class="sig-name descname">BRepAlgoAPI_Splitter</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo" title="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepAlgoAPI.BRepAlgoAPI_BuilderAlgo</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Constructors Empty constructor</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with already prepared intersection tool - PaveFiller</p>
+</dd>
+<dt class="field-even">param thePF</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePF</dt>
+<dd class="field-odd"><p>BOPAlgo_PaveFiller &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter.SetTools">
+<code class="sig-name descname">SetTools</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter.SetTools" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>&#64;name Setters/Getters for the Tools Sets the Tool arguments</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theLS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLS</dt>
+<dd class="field-even"><p>TopTools_ListOfShape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter.Tools">
+<code class="sig-name descname">Tools</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter.Tools" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the Tool arguments</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.BRepAlgoAPI_Splitter.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepAlgoAPI.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepAlgoAPI.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

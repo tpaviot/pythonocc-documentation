@@ -1,0 +1,2076 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.BRepPrimAPI module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.BRepPrimAPI module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.BRepPrimAPI module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.BRepPrimAPI.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.BRepPrimAPI">
+<span id="occ-core-brepprimapi-module"></span><h1>OCC.Core.BRepPrimAPI module<a class="headerlink" href="#module-OCC.Core.BRepPrimAPI" title="Permalink to this headline">¶</a></h1>
+<p>BRepPrimAPI module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepprimapi.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_brepprimapi.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeBox</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a box with a corner at 0,0,0 and the other dx,dy,dz</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param dx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param dy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param dz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a box with a corner at P and size dx, dy, dz.</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param dx</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dx</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dy</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dy</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dz</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dz</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a box with corners P1,P2.</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Ax2 is the left corner and the axis. Constructs a box such that its sides are parallel to the axes of - the global coordinate system, or - the local coordinate system Axis. and - with a corner at (0, 0, 0) and of size (dx, dy, dz), or - with a corner at point P and of size (dx, dy, dz), or - with corners at points P1 and P2. Exceptions Standard_DomainError if: dx, dy, dz are less than or equal to Precision::Confusion(), or - the vector joining the points P1 and P2 has a component projected onto the global coordinate system less than or equal to Precision::Confusion(). In these cases, the box would be flat.</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param dx</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dx</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dy</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dy</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dz</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dz</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.BackFace">
+<code class="sig-name descname">BackFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.BackFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns XMin face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.BottomFace">
+<code class="sig-name descname">BottomFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.BottomFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ZMin face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.FrontFace">
+<code class="sig-name descname">FrontFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.FrontFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns XMax face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.LeftFace">
+<code class="sig-name descname">LeftFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.LeftFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns YMin face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.RightFace">
+<code class="sig-name descname">RightFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.RightFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns YMax face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.Shell">
+<code class="sig-name descname">Shell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.Shell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed box as a shell.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shell</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.Solid">
+<code class="sig-name descname">Solid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.Solid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed box as a solid.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Solid</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.TopFace">
+<code class="sig-name descname">TopFace</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.TopFace" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns ZMax face</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.Wedge">
+<code class="sig-name descname">Wedge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.Wedge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the internal algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepPrim_Wedge</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeBox.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCone">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeCone</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a cone of height H radius R1 in the plane z = 0, R2 in the plane Z = H. R1 and R2 may be null.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param R1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param R2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a cone of height H radius R1 in the plane z = 0, R2 in the plane Z = H. R1 and R2 may be null. Take a section of &lt;angle&gt;</p>
+</dd>
+<dt class="field-even">param R1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param R2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a cone of height H radius R1 in the plane z = 0, R2 in the plane Z = H. R1 and R2 may be null.</p>
+</dd>
+<dt class="field-odd">param Axes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axes</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param R1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param R2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a cone of height H radius R1 in the plane z = 0, R2 in the plane Z = H. R1 and R2 may be null. Take a section of &lt;angle&gt; Constructs a cone, or a portion of a cone, of height H, and radius R1 in the plane z = 0 and R2 in the plane z = H. The result is a sharp cone if R1 or R2 is equal to 0. The cone is constructed about the ‘Z Axis’ of either: - the global coordinate system, or - the local coordinate system Axes. It is limited in these coordinate systems as follows: - in the v parametric direction (the Z coordinate), by the two parameter values 0 and H, - and in the u parametric direction (defined by the angle of rotation around the Z axis), in the case of a portion of a cone, by the two parameter values 0 and angle. Angle is given in radians. The resulting shape is composed of: - a lateral conical face - two planar faces in the planes z = 0 and z = H, or only one planar face in one of these two planes if a radius value is null (in the case of a complete cone, these faces are circles), and - and in the case of a portion of a cone, two planar faces to close the shape. (either two parallelograms or two triangles, in the planes u = 0 and u = angle). Exceptions Standard_DomainError if: - H is less than or equal to Precision::Confusion(), or - the half-angle at the apex of the cone, defined by R1, R2 and H, is less than Precision::Confusion()/H, or greater than (Pi/2)-Precision::Confusion()/H.f</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param R1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param R2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCone.Cone">
+<code class="sig-name descname">Cone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCone.Cone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Missing detailed docstring.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepPrim_Cone</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCone.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCone.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCylinder">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeCylinder</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCylinder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a cylinder of radius R and length H.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a cylinder of radius R and length H with angle H.</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a cylinder of radius R and length H.</p>
+</dd>
+<dt class="field-odd">param Axes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axes</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a cylinder of radius R and length H with angle H. Constructs - a cylinder of radius R and height H, or - a portion of cylinder of radius R and height H, and of the angle Angle defining the missing portion of the cylinder. The cylinder is constructed about the ‘Z Axis’ of either: - the global coordinate system, or - the local coordinate system Axes. It is limited in this coordinate system as follows: - in the v parametric direction (the Z axis), by the two parameter values 0 and H, - and in the u parametric direction (the rotation angle around the Z Axis), in the case of a portion of a cylinder, by the two parameter values 0 and Angle. Angle is given in radians. The resulting shape is composed of: - a lateral cylindrical face, - two planar faces in the planes z = 0 and z = H (in the case of a complete cylinder, these faces are circles), and - in case of a portion of a cylinder, two additional planar faces to close the shape.(two rectangles in the planes u = 0 and u = Angle). Exceptions Standard_DomainError if: - R is less than or equal to Precision::Confusion(), or - H is less than or equal to Precision::Confusion().</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param H</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type H</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCylinder.Cylinder">
+<code class="sig-name descname">Cylinder</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCylinder.Cylinder" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Missing detailed docstring.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepPrim_Cylinder</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCylinder.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeCylinder.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeHalfSpace">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeHalfSpace</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeHalfSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a HalfSpace defined with a Face and a Point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Face</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Face</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param RefPnt</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type RefPnt</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a HalfSpace defined with a Shell and a Point.</p>
+</dd>
+<dt class="field-even">param Shell</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Shell</dt>
+<dd class="field-odd"><p>TopoDS_Shell &amp;</p>
+</dd>
+<dt class="field-even">param RefPnt</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type RefPnt</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeHalfSpace.Solid">
+<code class="sig-name descname">Solid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeHalfSpace.Solid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed half-space as a solid.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Solid</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeHalfSpace.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeHalfSpace.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeOneAxis</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.Face">
+<code class="sig-name descname">Face</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.Face" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the lateral face of the rotational primitive.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Face</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.OneAxis">
+<code class="sig-name descname">OneAxis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.OneAxis" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>The inherited commands should provide the algorithm. Returned as a pointer.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Standard_Address</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.Shell">
+<code class="sig-name descname">Shell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.Shell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed rotational primitive as a shell.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shell</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.Solid">
+<code class="sig-name descname">Solid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.Solid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed rotational primitive as a solid.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Solid</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakePrism</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Builds the prism of base S and vector V. If C is true, S is copied. If Canonize is true then generated surfaces are attempted to be canonized in simple types</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>gp_Vec</p>
+</dd>
+<dt class="field-odd">param Copy</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Copy</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">param Canonize</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Canonize</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Builds a semi-infinite or an infinite prism of base S. If Inf is true the prism is infinite, if Inf is false the prism is semi-infinite (in the direction D). If C is true S is copied (for semi-infinite prisms). If Canonize is true then generated surfaces are attempted to be canonized in simple types</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D</dt>
+<dd class="field-odd"><p>gp_Dir</p>
+</dd>
+<dt class="field-even">param Inf</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Inf</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Copy</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Copy</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Canonize</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Canonize</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.FirstShape">
+<code class="sig-name descname">FirstShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.FirstShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the bottom of the prism.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape of the bottom of the prism. generated with theShape (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.LastShape">
+<code class="sig-name descname">LastShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.LastShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the top of the prism. In the case of a finite prism, FirstShape returns the basis of the prism, in other words, S if Copy is false; otherwise, the copy of S belonging to the prism. LastShape returns the copy of S translated by V at the time of construction.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape of the top of the prism. generated with theShape (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.Prism">
+<code class="sig-name descname">Prism</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.Prism" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the internal sweeping algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepSweep_Prism</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakePrism.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeRevol</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Builds the Revol of base S, axis A and angle D. If C is true, S is copied.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param A</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type A</dt>
+<dd class="field-even"><p>gp_Ax1</p>
+</dd>
+<dt class="field-odd">param D</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type D</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Copy</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type Copy</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Builds the Revol of base S, axis A and angle 2*Pi. If C is true, S is copied.</p>
+</dd>
+<dt class="field-even">param S</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param A</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type A</dt>
+<dd class="field-odd"><p>gp_Ax1</p>
+</dd>
+<dt class="field-even">param Copy</dt>
+<dd class="field-even"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-odd">type Copy</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.Degenerated">
+<code class="sig-name descname">Degenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.Degenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the list of degenerated edges</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_ListOfShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.FirstShape">
+<code class="sig-name descname">FirstShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.FirstShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the first shape of the revol (coinciding with the generating shape).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape of the beginning of the revolution, generated with theShape (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.HasDegenerated">
+<code class="sig-name descname">HasDegenerated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.HasDegenerated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Check if there are degenerated edges in the result.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.LastShape">
+<code class="sig-name descname">LastShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.LastShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the end of the revol.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape* Returns the TopoDS Shape of the end of the revolution, generated with theShape (subShape of the generating shape).</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.Revol">
+<code class="sig-name descname">Revol</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.Revol" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the internal sweeping algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepSweep_Revol</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevol.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevolution">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeRevolution</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a revolution body by rotating a curve around Z.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Meridian</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Meridian</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a revolution body by rotating a curve around Z.</p>
+</dd>
+<dt class="field-even">param Meridian</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Meridian</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a revolution body by rotating a curve around Z.</p>
+</dd>
+<dt class="field-odd">param Meridian</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Meridian</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param VMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a revolution body by rotating a curve around Z.</p>
+</dd>
+<dt class="field-even">param Meridian</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Meridian</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param VMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param VMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMax</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a revolution body by rotating a curve around Z.</p>
+</dd>
+<dt class="field-odd">param Axes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axes</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param Meridian</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Meridian</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a revolution body by rotating a curve around Z.</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param Meridian</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Meridian</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a revolution body by rotating a curve around Z.</p>
+</dd>
+<dt class="field-odd">param Axes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axes</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param Meridian</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Meridian</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param VMin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param VMax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VMax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a revolution body by rotating a curve around Z. For all algorithms the resulting shape is composed of - a lateral revolved face, - two planar faces in planes parallel to the plane z = 0, and passing by the extremities of the revolved portion of Meridian, if these points are not on the Z axis (in case of a complete revolved shape, these faces are circles), - and in the case of a portion of a revolved shape, two planar faces to close the shape (in the planes u = 0 and u = angle).</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param Meridian</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Meridian</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Curve&gt; &amp;</p>
+</dd>
+<dt class="field-even">param VMin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param VMax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VMax</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevolution.Revolution">
+<code class="sig-name descname">Revolution</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevolution.Revolution" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Missing detailed docstring.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepPrim_Revolution</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevolution.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeRevolution.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSphere">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeSphere</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSphere" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a sphere of radius R.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle3</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle3</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-odd">param Center</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Center</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-even">param Center</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Center</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-odd">param Center</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Center</dt>
+<dd class="field-even"><p>gp_Pnt</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-even">param Center</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Center</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle3</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle3</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-odd">param Axis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axis</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-even">param Axis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axis</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a sphere of radius R.</p>
+</dd>
+<dt class="field-odd">param Axis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axis</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param R</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a sphere of radius R. For all algorithms The resulting shape is composed of - a lateral spherical face, - two planar faces parallel to the plane z = 0 if the sphere is truncated in the v parametric direction, or only one planar face if angle1 is equal to -p/2 or if angle2 is equal to p/2 (these faces are circles in case of a complete truncated sphere), - and in case of a portion of sphere, two planar faces to shut the shape.(in the planes u = 0 and u = angle).</p>
+</dd>
+<dt class="field-even">param Axis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axis</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param R</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle3</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle3</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSphere.Sphere">
+<code class="sig-name descname">Sphere</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSphere.Sphere" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Missing detailed docstring.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepPrim_Sphere</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSphere.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSphere.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeSweep</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep.FirstShape">
+<code class="sig-name descname">FirstShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep.FirstShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the bottom of the sweep.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep.LastShape">
+<code class="sig-name descname">LastShape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep.LastShape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the TopoDS Shape of the top of the sweep.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeSweep.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeTorus">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeTorus</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeTorus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis" title="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeOneAxis</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a torus of radii R1 R2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param R1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param R2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a section of a torus of radii R1 R2.</p>
+</dd>
+<dt class="field-even">param R1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param R2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a torus of radii R2, R2 with angles on the small circle.</p>
+</dd>
+<dt class="field-odd">param R1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param R2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a torus of radii R2, R2 with angles on the small circle.</p>
+</dd>
+<dt class="field-even">param R1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param R2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a torus of radii R1 R2.</p>
+</dd>
+<dt class="field-odd">param Axes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axes</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param R1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param R2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a section of a torus of radii R1 R2.</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param R1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param R2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a torus of radii R1 R2.</p>
+</dd>
+<dt class="field-odd">param Axes</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axes</dt>
+<dd class="field-even"><p>gp_Ax2</p>
+</dd>
+<dt class="field-odd">param R1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param R2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type R2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param angle2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type angle2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a section of a torus of radii R1 R2. For all algorithms The resulting shape is composed of - a lateral toroidal face, - two conical faces (defined by the equation v = angle1 and v = angle2) if the sphere is truncated in the v parametric direction (they may be cylindrical faces in some particular conditions), and in case of a portion of torus, two planar faces to close the shape.(in the planes u = 0 and u = angle). Notes: - The u parameter corresponds to a rotation angle around the Z axis. - The circle whose radius is equal to the minor radius, located in the plane defined by the X axis and the Z axis, centered on the X axis, on its positive side, and positioned at a distance from the origin equal to the major radius, is the reference circle of the torus. The rotation around an axis parallel to the Y axis and passing through the center of the reference circle gives the v parameter on the reference circle. The X axis gives the origin of the v parameter. Near 0, as v increases, the Z coordinate decreases.</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param R1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param R2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type R2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param angle</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type angle</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeTorus.Torus">
+<code class="sig-name descname">Torus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeTorus.Torus" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Missing detailed docstring.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepPrim_Torus</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeTorus.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeTorus.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge">
+<em class="property">class </em><code class="sig-name descname">BRepPrimAPI_MakeWedge</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.BRepBuilderAPI.html#OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape" title="OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.BRepBuilderAPI.BRepBuilderAPI_MakeShape</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a STEP right angular wedge. (ltx &gt;= 0)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param dx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param dy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param dz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param ltx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ltx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a STEP right angular wedge. (ltx &gt;= 0)</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param dx</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dx</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dy</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dy</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dz</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dz</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param ltx</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ltx</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a wedge. The face at dy is xmin,zmin xmax,zmax</p>
+</dd>
+<dt class="field-odd">param dx</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dx</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param dy</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dy</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param dz</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type dz</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param xmin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xmin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param zmin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type zmin</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param xmax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type xmax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param zmax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type zmax</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a wedge. The face at dy is xmin,zmin xmax,zmax</p>
+</dd>
+<dt class="field-even">param Axes</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axes</dt>
+<dd class="field-odd"><p>gp_Ax2</p>
+</dd>
+<dt class="field-even">param dx</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dx</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dy</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dy</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param dz</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type dz</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param xmin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type xmin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param zmin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type zmin</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param xmax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type xmax</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param zmax</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type zmax</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.Shell">
+<code class="sig-name descname">Shell</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.Shell" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed box in the form of a shell.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shell</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.Solid">
+<code class="sig-name descname">Solid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.Solid" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed box in the form of a solid.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Solid</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.Wedge">
+<code class="sig-name descname">Wedge</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.Wedge" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the internal algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>BRepPrim_Wedge</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.BRepPrimAPI_MakeWedge.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.BRepPrimAPI.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.BRepPrimAPI.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

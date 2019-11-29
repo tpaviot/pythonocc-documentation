@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Extend.ShapeFactory module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Extend.ShapeFactory module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Extend.ShapeFactory module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Extend.ShapeFactory.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Extend.ShapeFactory">
+<span id="occ-extend-shapefactory-module"></span><h1>OCC.Extend.ShapeFactory module<a class="headerlink" href="#module-OCC.Extend.ShapeFactory" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="OCC.Extend.ShapeFactory.assert_isdone">
+<em class="property">class </em><code class="sig-name descname">assert_isdone</code><span class="sig-paren">(</span><em class="sig-param">to_check</em>, <em class="sig-param">error_statement</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.assert_isdone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>raises an assertion error when IsDone() returns false, with the error
+specified in error_statement</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.center_boundingbox">
+<code class="sig-name descname">center_boundingbox</code><span class="sig-paren">(</span><em class="sig-param">shape</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.center_boundingbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the center point of a TopoDS_Shape, based on its bounding box</p>
+<p>shape : TopoDS_Shape instance or a subclass like TopoDS_Face</p>
+<p>gp_Pnt</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.get_boundingbox">
+<code class="sig-name descname">get_boundingbox</code><span class="sig-paren">(</span><em class="sig-param">shape</em>, <em class="sig-param">tol=1e-06</em>, <em class="sig-param">as_vec=False</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.get_boundingbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the bounding box of the TopoDS_Shape <cite>shape</cite></p>
+<dl class="simple">
+<dt>shape<span class="classifier">TopoDS_Shape or a subclass such as TopoDS_Face</span></dt><dd><p>the shape to compute the bounding box from</p>
+</dd>
+<dt>tol: float</dt><dd><p>tolerance of the computed boundingbox</p>
+</dd>
+<dt>as_vec<span class="classifier">bool</span></dt><dd><p>wether to return the lower and upper point of the bounding box as gp_Vec instances</p>
+</dd>
+</dl>
+<blockquote>
+<div><dl class="simple">
+<dt>if <cite>as_vec</cite> is True, return a tuple of gp_Vec instances</dt><dd><p>for the lower and another for the upper X,Y,Z values representing the bounding box</p>
+</dd>
+<dt>if <cite>as_vec</cite> is False, return a tuple of lower and then upper X,Y,Z values</dt><dd><p>representing the bounding box</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.make_edge">
+<code class="sig-name descname">make_edge</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.make_edge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.make_edge2d">
+<code class="sig-name descname">make_edge2d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.make_edge2d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.make_extrusion">
+<code class="sig-name descname">make_extrusion</code><span class="sig-paren">(</span><em class="sig-param">face</em>, <em class="sig-param">length</em>, <em class="sig-param">vector=class&lt;'gp_Vec'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.make_extrusion" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates a extrusion from a face, along the vector vector.
+with a distance legnth. Note that the normal vector does not
+necessary be normalized.
+By default, the extrusion is along the z axis.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.make_face">
+<code class="sig-name descname">make_face</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.make_face" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.make_n_sided">
+<code class="sig-name descname">make_n_sided</code><span class="sig-paren">(</span><em class="sig-param">edges</em>, <em class="sig-param">continuity=0</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.make_n_sided" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.make_vertex">
+<code class="sig-name descname">make_vertex</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.make_vertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.make_wire">
+<code class="sig-name descname">make_wire</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.make_wire" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.midpoint">
+<code class="sig-name descname">midpoint</code><span class="sig-paren">(</span><em class="sig-param">pntA</em>, <em class="sig-param">pntB</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.midpoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>computes the point that lies in the middle between pntA and pntB</p>
+<p>pntA, pntB : gp_Pnt</p>
+<p>gp_Pnt</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.point_list_to_TColgp_Array1OfPnt">
+<code class="sig-name descname">point_list_to_TColgp_Array1OfPnt</code><span class="sig-paren">(</span><em class="sig-param">li</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.point_list_to_TColgp_Array1OfPnt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.points_to_bspline">
+<code class="sig-name descname">points_to_bspline</code><span class="sig-paren">(</span><em class="sig-param">pnts</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.points_to_bspline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.rotate_shp_3_axis">
+<code class="sig-name descname">rotate_shp_3_axis</code><span class="sig-paren">(</span><em class="sig-param">shape</em>, <em class="sig-param">rx</em>, <em class="sig-param">ry</em>, <em class="sig-param">rz</em>, <em class="sig-param">unity='deg'</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.rotate_shp_3_axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotate a shape around (O,x), (O,y) and (O,z).</p>
+<p>&#64;param rx_degree : rotation around (O,x)
+&#64;param ry_degree : rotation around (O,y)
+&#64;param rz_degree : rotation around (O,z)</p>
+<p>&#64;return : the rotated shape.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="OCC.Extend.ShapeFactory.translate_shp">
+<code class="sig-name descname">translate_shp</code><span class="sig-paren">(</span><em class="sig-param">shp</em>, <em class="sig-param">vec</em>, <em class="sig-param">copy=False</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Extend.ShapeFactory.translate_shp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

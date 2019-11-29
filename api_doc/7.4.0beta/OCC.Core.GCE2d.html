@@ -1,0 +1,1686 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.GCE2d module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.GCE2d module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.GCE2d module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.GCE2d.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.GCE2d">
+<span id="occ-core-gce2d-module"></span><h1>OCC.Core.GCE2d module<a class="headerlink" href="#module-OCC.Core.GCE2d" title="Permalink to this headline">¶</a></h1>
+<p>GCE2d module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_gce2d.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_gce2d.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfCircle">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeArcOfCircle</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfCircle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Makes an arc of circle (TrimmedCurve from Geom2d) from a circle between two parameters Alpha1 and Alpha2. The two parameters are angles. The parameters are in radians.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Circ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Circ</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param Alpha1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Alpha2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Makes an arc of circle (TrimmedCurve from Geom2d) from a circle between point &lt;P&gt; and the parameter Alpha. Alpha is given in radians.</p>
+</dd>
+<dt class="field-even">param Circ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Circ</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Alpha</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Alpha</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Makes an arc of circle (TrimmedCurve from Geom2d) from a circle between two points P1 and P2.</p>
+</dd>
+<dt class="field-odd">param Circ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Circ</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Makes an arc of circle (TrimmedCurve from Geom2d) from three points P1,P2,P3 between two points P1 and P3, and passing through the point P2.</p>
+</dd>
+<dt class="field-even">param P1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param P2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param P3</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P3</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Makes an arc of circle (TrimmedCurve from Geom2d) from two points P1,P2 and the tangente to the solution at the point P1.</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfCircle.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfCircle.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed arc of circle. Exceptions StdFail_NotDone if no arc of circle is constructed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_TrimmedCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfCircle.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfCircle.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfEllipse">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeArcOfEllipse</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfEllipse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make an arc of Ellipse (TrimmedCurve from Geom2d) from a Ellipse between two parameters Alpha1 and Alpha2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Elips</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Elips</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param Alpha1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Alpha2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make an arc of Ellipse (TrimmedCurve from Geom2d) from a Ellipse between point &lt;P&gt; and the parameter Alpha.</p>
+</dd>
+<dt class="field-even">param Elips</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Elips</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Alpha</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Alpha</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make an arc of Ellipse (TrimmedCurve from Geom2d) from a Ellipse between two points P1 and P2. Please, note: The orientation of the arc is: - the trigonometric sense if Sense is not defined or is true (default value), or - the opposite sense if Sense is false. - Alpha1, Alpha2 and Alpha are angle values, given in radians. - IsDone always returns true.</p>
+</dd>
+<dt class="field-odd">param Elips</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Elips</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfEllipse.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfEllipse.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed arc of ellipse.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_TrimmedCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfEllipse.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfEllipse.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfHyperbola">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeArcOfHyperbola</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfHyperbola" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Makes an arc of Hyperbola (TrimmedCurve from Geom2d) from a Hyperbola between two parameters Alpha1 and Alpha2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Hypr</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Hypr</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param Alpha1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Alpha2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Makes an arc of Hyperbola (TrimmedCurve from Geom2d) from a Hyperbola between point &lt;P&gt; and the parameter Alpha.</p>
+</dd>
+<dt class="field-even">param Hypr</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Hypr</dt>
+<dd class="field-odd"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Alpha</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Alpha</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Makes an arc of Hyperbola (TrimmedCurve from Geom2d) from a Hyperbola between two points P1 and P2. Note: the orientation of the arc of hyperbola is: - the trigonometric sense if Sense is not defined or is true (default value), or - the opposite sense if Sense is false. - IsDone always returns true.</p>
+</dd>
+<dt class="field-odd">param Hypr</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Hypr</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfHyperbola.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfHyperbola.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed arc of hyperbola.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_TrimmedCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfHyperbola.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfHyperbola.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfParabola">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeArcOfParabola</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfParabola" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make an arc of Parabola (TrimmedCurve from Geom2d) from a Parabola between two parameters Alpha1 and Alpha2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Parab</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Parab</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param Alpha1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Alpha2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Alpha2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make an arc of Parabola (TrimmedCurve from Geom2d) from a Parabola between point &lt;P&gt; and the parameter Alpha.</p>
+</dd>
+<dt class="field-even">param Parab</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Parab</dt>
+<dd class="field-odd"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Alpha</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Alpha</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make an arc of Parabola (TrimmedCurve from Geom2d) from a Parabola between two points P1 and P2. Please, note: the orientation of the arc of parabola is: - the trigonometric sense if Sense is not defined or is true (default value), or - the opposite sense if Sense is false. - IsDone always returns true.</p>
+</dd>
+<dt class="field-odd">param Parab</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Parab</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfParabola.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfParabola.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed arc of parabola.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_TrimmedCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeArcOfParabola.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeArcOfParabola.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeCircle">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeCircle</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeCircle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>creates a circle from a non persistent one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* A is the ‘XAxis’ of the circle which defines the origin of parametrization. It is not forbidden to create a circle with Radius = 0.0 The status is ‘NegativeRadius’ if Radius &lt; 0.</p>
+</dd>
+<dt class="field-even">param A</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type A</dt>
+<dd class="field-odd"><p>gp_Ax2d</p>
+</dd>
+<dt class="field-even">param Radius</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Radius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* A is the local coordinate system of the circle which defines the origin of parametrization. It is not forbidden to create a circle with Radius = 0.0 The status is ‘NegativeRadius’ if Radius &lt; 0.</p>
+</dd>
+<dt class="field-odd">param A</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type A</dt>
+<dd class="field-even"><p>gp_Ax22d</p>
+</dd>
+<dt class="field-odd">param Radius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Radius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a Circle from Geom2d &lt;TheCirc&gt; parallel to another Circ &lt;Circ&gt; with a distance &lt;Dist&gt;. If Dist is greater than zero the result is enclosing the circle &lt;Circ&gt;, else the result is enclosed by the circle &lt;Circ&gt;.</p>
+</dd>
+<dt class="field-even">param Circ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Circ</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param Dist</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Dist</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a Circle from Geom2d &lt;TheCirc&gt; parallel to another Circ &lt;Circ&gt; and passing through a Pnt &lt;Point&gt;.</p>
+</dd>
+<dt class="field-odd">param Circ</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Circ</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a Circ from gp &lt;TheCirc&gt; passing through 3 Pnt2d &lt;P1&gt;,&lt;P2&gt;,&lt;P3&gt;.</p>
+</dd>
+<dt class="field-even">param P1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param P2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param P3</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P3</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a Circ from geom2d &lt;TheCirc&gt; by its center an radius.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Radius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Radius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Makes a Circle from geom2d &lt;TheCirc&gt; with its center &lt;Center&gt; and a point giving the radius. If Sense is true the local coordinate system of the solution is direct and non direct in the other case. Warning The MakeCircle class does not prevent the construction of a circle with a null radius. If an error occurs (that is, when IsDone returns false), the Status function returns: - gce_NegativeRadius if Radius is less than 0.0, or - gce_IntersectionError if points P1, P2 and P3 are collinear and the three are not coincident.</p>
+</dd>
+<dt class="field-even">param Center</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Center</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Point</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Point</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeCircle.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeCircle.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Circle&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeCircle.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeCircle.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeEllipse">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeEllipse</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeEllipse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an ellipse from a non persistent one from package gp</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* MajorAxis is the local coordinate system of the ellipse. It is the ‘XAxis’. The minor axis is the YAxis of the ellipse. Sense give the sense of parametrization of the Ellipse. It is not forbidden to create an ellipse with MajorRadius = MinorRadius. The status is ‘InvertRadius’ if MajorRadius &lt; MinorRadius or ‘NegativeRadius’ if MinorRadius &lt; 0.</p>
+</dd>
+<dt class="field-even">param MajorAxis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MajorAxis</dt>
+<dd class="field-odd"><p>gp_Ax2d</p>
+</dd>
+<dt class="field-even">param MajorRadius</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MajorRadius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param MinorRadius</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MinorRadius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Axis is the local coordinate system of the ellipse. It is not forbidden to create an ellipse with MajorRadius = MinorRadius. The status is ‘InvertRadius’ if MajorRadius &lt; MinorRadius or ‘NegativeRadius’ if MinorRadius &lt; 0.</p>
+</dd>
+<dt class="field-odd">param Axis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axis</dt>
+<dd class="field-even"><p>gp_Ax22d</p>
+</dd>
+<dt class="field-odd">param MajorRadius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MajorRadius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param MinorRadius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MinorRadius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make an Ellipse centered on the point Center, where - the major axis of the ellipse is defined by Center and S1, - its major radius is the distance between Center and S1, and - its minor radius is the distance between S2 and the major axis. The implicit orientation of the ellipse is: - the sense defined by Axis or E, - the sense defined by points Center, S1 and S2, - the trigonometric sense if Sense is not given or is true, or - the opposite sense if Sense is false.</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Center</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Center</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeEllipse.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeEllipse.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Ellipse&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeEllipse.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeEllipse.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeHyperbola">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeHyperbola</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeHyperbola" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an Hyperbola from a non persistent one from package gp</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* MajorAxis is the ‘XAxis’ of the hyperbola. The major radius of the hyperbola is on this ‘XAxis’ and the minor radius is on the ‘YAxis’ of the hyperbola. The status is ‘NegativeRadius’ if MajorRadius &lt; 0.0 or if MinorRadius &lt; 0.0</p>
+</dd>
+<dt class="field-even">param MajorAxis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MajorAxis</dt>
+<dd class="field-odd"><p>gp_Ax2d</p>
+</dd>
+<dt class="field-even">param MajorRadius</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MajorRadius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param MinorRadius</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MinorRadius</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Axis is the local coordinate system of the hyperbola. The major radius of the hyperbola is on this ‘XAxis’ and the minor radius is on the ‘YAxis’ of the hyperbola. The status is ‘NegativeRadius’ if MajorRadius &lt; 0.0 or if MinorRadius &lt; 0.0</p>
+</dd>
+<dt class="field-odd">param Axis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Axis</dt>
+<dd class="field-even"><p>gp_Ax22d</p>
+</dd>
+<dt class="field-odd">param MajorRadius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MajorRadius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param MinorRadius</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MinorRadius</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a hyperbol centered on the origin of the coordinate system Axis, with major and minor radii MajorRadius and MinorRadius, where the major axis is the ‘X Axis’ of Axis (Axis is the local coordinate system of the hyperbola). The implicit orientation of the ellipse is: - the sense defined by Axis or H, - the sense defined by points Center, S1 and S2, - the trigonometric sense if Sense is not given or is true, or - the opposite sense if Sense is false. Warning If an error occurs (that is, when IsDone returns false), the Status function returns: - gce_NegativeRadius if MajorRadius or MinorRadius is less than 0.0, or - gce_InvertAxis if the major radius defined by Center and S1 is less than the minor radius defined by Center, S1 and S2.Make an Hyperbola with its center and two apexes.</p>
+</dd>
+<dt class="field-even">param S1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param S2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type S2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Center</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Center</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeHyperbola.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeHyperbola.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed hyperbola. Exceptions: StdFail_NotDone if no hyperbola is constructed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Hyperbola&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeHyperbola.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeHyperbola.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeLine">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeLine</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates a line located in 2D space with the axis placement A. The Location of A is the origin of the line.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param A</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type A</dt>
+<dd class="field-even"><p>gp_Ax2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a line from a non persistent line from package gp.</p>
+</dd>
+<dt class="field-even">param L</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type L</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* P is the origin and V is the direction of the line.</p>
+</dd>
+<dt class="field-odd">param P</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param V</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V</dt>
+<dd class="field-even"><p>gp_Dir2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a Line from Geom2d &lt;TheLin&gt; parallel to another Lin &lt;Lin&gt; and passing through a Pnt &lt;Point&gt;.</p>
+</dd>
+<dt class="field-even">param Lin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Lin</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param Point</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Point</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a Line from Geom2d &lt;TheLin&gt; parallel to another Lin &lt;Lin&gt; at a distance &lt;Dist&gt;.</p>
+</dd>
+<dt class="field-odd">param Lin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Lin</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param Dist</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dist</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a Line from Geom2d &lt;TheLin&gt; passing through 2 Pnt &lt;P1&gt;,&lt;P2&gt;. It returns false if &lt;p1&gt; and &lt;P2&gt; are confused. Warning If points P1 and P2 coincident (that is, when IsDone returns false), the Status function returns gce_ConfusedPoints.</p>
+</dd>
+<dt class="field-even">param P1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param P2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeLine.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeLine.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed line. Exceptions StdFail_NotDone if no line is constructed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Line&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeLine.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeLine.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeMirror">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeMirror</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeMirror" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Point</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Point</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Axis:</p>
+</dd>
+<dt class="field-odd">type Axis</dt>
+<dd class="field-odd"><p>gp_Ax2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Line:</p>
+</dd>
+<dt class="field-odd">type Line</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a symetry transformation af axis defined by &lt;Point&gt; and &lt;Direc&gt;.</p>
+</dd>
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Direc</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Direc</dt>
+<dd class="field-even"><p>gp_Dir2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeMirror.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeMirror.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed transformation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Transformation&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeMirror.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeMirror.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeParabola">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeParabola</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeParabola" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates a parabola from a non persistent one.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Prb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Prb</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a parabola with its local coordinate system and it’s focal length ‘Focal’. The ‘Location’ point of ‘Axis’ is the vertex of the parabola Status is ‘NegativeFocusLength’ if Focal &lt; 0.0</p>
+</dd>
+<dt class="field-even">param Axis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Axis</dt>
+<dd class="field-odd"><p>gp_Ax22d</p>
+</dd>
+<dt class="field-even">param Focal</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Focal</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Creates a parabola with its ‘MirrorAxis’ and it’s focal length ‘Focal’. MirrorAxis is the axis of symmetry of the curve, it is the ‘XAxis’. The ‘YAxis’ is parallel to the directrix of the parabola. The ‘Location’ point of ‘MirrorAxis’ is the vertex of the parabola Status is ‘NegativeFocusLength’ if Focal &lt; 0.0</p>
+</dd>
+<dt class="field-odd">param MirrorAxis</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MirrorAxis</dt>
+<dd class="field-even"><p>gp_Ax2d</p>
+</dd>
+<dt class="field-odd">param Focal</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Focal</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Sense</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sense</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* D is the directrix of the parabola and F the focus point. The symmetry axis ‘XAxis’ of the parabola is normal to the directrix and pass through the focus point F, but its ‘Location’ point is the vertex of the parabola. The ‘YAxis’ of the parabola is parallel to D and its ‘Location’ point is the vertex of the parabola.</p>
+</dd>
+<dt class="field-even">param D</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type D</dt>
+<dd class="field-odd"><p>gp_Ax2d</p>
+</dd>
+<dt class="field-even">param F</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type F</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Sense</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type Sense</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a parabola with focal point S1 and center O The branch of the parabola returned will have &lt;S1&gt; as focal point The implicit orientation of the parabola is: - the same one as the parabola Prb, - the sense defined by the coordinate system Axis or the directrix D, - the trigonometric sense if Sense is not given or is true, or - the opposite sense if Sense is false. Warning The MakeParabola class does not prevent the construction of a parabola with a null focal distance. If an error occurs (that is, when IsDone returns false), the Status function returns: - gce_NullFocusLength if Focal is less than 0.0, or - gce_NullAxis if points S1 and O are coincident.</p>
+</dd>
+<dt class="field-odd">param S1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param O</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type O</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeParabola.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeParabola.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed parabola. Exceptions StdFail_NotDone if no parabola is constructed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Parabola&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeParabola.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeParabola.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeRotation">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeRotation</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeRotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a rotation through angle Angle about the center Point.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Angle</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Angle</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeRotation.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeRotation.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed transformation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Transformation&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeRotation.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeRotation.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeScale">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeScale</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a scaling transformation with - Point as the center of the transformation, and - Scale as the scale factor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Point</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Point</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param Scale</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Scale</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeScale.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeScale.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed transformation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Transformation&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeScale.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeScale.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeSegment">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeSegment</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeSegment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.GCE2d.GCE2d_Root" title="OCC.Core.GCE2d.GCE2d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.GCE2d.GCE2d_Root</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Make a segment of Line from the 2 points &lt;P1&gt; and &lt;P2&gt;. Status is ‘ConfusedPoints’ if &lt;P1&gt; and &lt;P2&gt; are confused.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a segment of Line from the point &lt;P1&gt; with the direction &lt;P&gt; and ended by the projection of &lt;P2&gt; on the line &lt;P1,V&gt;. Status is ‘ConfusedPoints’ if &lt;P1&gt; and &lt;P2&gt; are confused.</p>
+</dd>
+<dt class="field-even">param P1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param V</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V</dt>
+<dd class="field-odd"><p>gp_Dir2d</p>
+</dd>
+<dt class="field-even">param P2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a segment of Line from the line &lt;Line&gt; between the two parameters U1 and U2. Status is ‘SameParamters’ if &lt;U1&gt; is equal &lt;U2&gt;.</p>
+</dd>
+<dt class="field-odd">param Line</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Line</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Make a segment of Line from the line &lt;Line&gt; between the point &lt;Point&gt; and the parameter Ulast. It returns NullObject if &lt;U1&gt; is equal &lt;U2&gt;.</p>
+</dd>
+<dt class="field-even">param Line</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Line</dt>
+<dd class="field-odd"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-even">param Point</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Point</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Ulast</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Ulast</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Make a segment of Line from the line &lt;Line&gt; between the two points &lt;P1&gt; and &lt;P2&gt;. It returns NullObject if &lt;P1&gt; and &lt;P2&gt; are confused. Warning If the points which limit the segment are coincident for given points or for the projection of given points on the line which supports the line segment (that is, when IsDone returns false), the Status function returns gce_ConfusedPoints. This warning only concerns the first two constructors.</p>
+</dd>
+<dt class="field-odd">param Line</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Line</dt>
+<dd class="field-even"><p>gp_Lin2d</p>
+</dd>
+<dt class="field-odd">param P1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P1</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">param P2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type P2</dt>
+<dd class="field-even"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeSegment.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeSegment.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed line segment. Exceptions StdFail_NotDone if no line segment is constructed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_TrimmedCurve&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeSegment.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeSegment.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeTranslation">
+<em class="property">class </em><code class="sig-name descname">GCE2d_MakeTranslation</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a translation along the vector Vect.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Vect</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Vect</dt>
+<dd class="field-even"><p>gp_Vec2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructs a translation along the vector (Point1,Point2) defined from the point Point1 to the point Point2.</p>
+</dd>
+<dt class="field-even">param Point1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Point1</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param Point2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Point2</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeTranslation.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeTranslation.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the constructed transformation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom2d_Transformation&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_MakeTranslation.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_MakeTranslation.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.GCE2d_Root">
+<em class="property">class </em><code class="sig-name descname">GCE2d_Root</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_Root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_Root.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_Root.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the construction is successful.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_Root.Status">
+<code class="sig-name descname">Status</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_Root.Status" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the status of the construction - gce_Done, if the construction is successful, or - another value of the gce_ErrorType enumeration indicating why the construction failed.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gce_ErrorType</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.GCE2d_Root.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.GCE2d_Root.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.GCE2d.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.GCE2d.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.GCE2d.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,551 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.Visualization module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.Visualization module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.Visualization module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.Visualization.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.Visualization">
+<span id="occ-core-visualization-module"></span><h1>OCC.Core.Visualization module<a class="headerlink" href="#module-OCC.Core.Visualization" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="OCC.Core.Visualization.Display3d">
+<em class="property">class </em><code class="sig-name descname">Display3d</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span> &#x2192; Display3d<a class="headerlink" href="#OCC.Core.Visualization.Display3d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.ChangeRenderingParams">
+<code class="sig-name descname">ChangeRenderingParams</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em>, <em class="sig-param">int Method</em>, <em class="sig-param">int RaytracingDepth</em>, <em class="sig-param">bool IsShadowEnabled</em>, <em class="sig-param">bool IsReflectionEnabled</em>, <em class="sig-param">bool IsAntialiasingEnabled</em>, <em class="sig-param">bool IsTransparentShadowEnabled</em>, <em class="sig-param">int StereoMode</em>, <em class="sig-param">int AnaglyphFilter</em>, <em class="sig-param">bool ToReverseStere</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Display3d.ChangeRenderingParams" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.DisableVBO">
+<code class="sig-name descname">DisableVBO</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Display3d.DisableVBO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.EnableVBO">
+<code class="sig-name descname">EnableVBO</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Display3d.EnableVBO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.GetContext">
+<code class="sig-name descname">GetContext</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span> &#x2192; Handle_AIS_InteractiveContext<a class="headerlink" href="#OCC.Core.Visualization.Display3d.GetContext" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.GetImageData">
+<code class="sig-name descname">GetImageData</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em>, <em class="sig-param">int bufType=0</em><span class="sig-paren">)</span> &#x2192; PyObject<a class="headerlink" href="#OCC.Core.Visualization.Display3d.GetImageData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.GetSize">
+<code class="sig-name descname">GetSize</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span> &#x2192; PyObject *<a class="headerlink" href="#OCC.Core.Visualization.Display3d.GetSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.GetView">
+<code class="sig-name descname">GetView</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span> &#x2192; Handle_V3d_View &amp;<a class="headerlink" href="#OCC.Core.Visualization.Display3d.GetView" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.GetViewer">
+<code class="sig-name descname">GetViewer</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span> &#x2192; Handle_V3d_Viewer &amp;<a class="headerlink" href="#OCC.Core.Visualization.Display3d.GetViewer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em>, <em class="sig-param">long const handle</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Display3d.Init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.InitOffscreen">
+<code class="sig-name descname">InitOffscreen</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em>, <em class="sig-param">int size_x</em>, <em class="sig-param">int size_y</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#OCC.Core.Visualization.Display3d.InitOffscreen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.IsOffscreen">
+<code class="sig-name descname">IsOffscreen</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#OCC.Core.Visualization.Display3d.IsOffscreen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.SetAnaglyphMode">
+<code class="sig-name descname">SetAnaglyphMode</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em>, <em class="sig-param">int mode</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Display3d.SetAnaglyphMode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.SetSize">
+<code class="sig-name descname">SetSize</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em>, <em class="sig-param">int size_x</em>, <em class="sig-param">int size_y</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#OCC.Core.Visualization.Display3d.SetSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.Test">
+<code class="sig-name descname">Test</code><span class="sig-paren">(</span><em class="sig-param">Display3d self</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Display3d.Test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Display3d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Visualization.Display3d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Visualization.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Visualization.Tesselator">
+<em class="property">class </em><code class="sig-name descname">Tesselator</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">TopoDS_Shape aShape</em>, <em class="sig-param">theTextureMappingRule aTxtMapType</em>, <em class="sig-param">float anAutoScaleSizeOnU</em>, <em class="sig-param">float anAutoScaleSizeOnV</em>, <em class="sig-param">float aDeviation</em>, <em class="sig-param">float aUOrigin</em>, <em class="sig-param">float aVOrigin</em>, <em class="sig-param">float aURepeat</em>, <em class="sig-param">float aVRepeat</em>, <em class="sig-param">float aScaleU</em>, <em class="sig-param">float aScaleV</em>, <em class="sig-param">float aRotationAngle</em><span class="sig-paren">)</span> &#x2192; Tesselator<a class="headerlink" href="#OCC.Core.Visualization.Tesselator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>__init__(Tesselator self, TopoDS_Shape aShape) -&gt; Tesselator</p>
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.Compute">
+<code class="sig-name descname">Compute</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">bool uv_coords=True</em>, <em class="sig-param">bool compute_edges=False</em>, <em class="sig-param">float mesh_quality=1.0</em>, <em class="sig-param">bool parallel=False</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Tesselator.Compute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ExportShapeToThreejsJSONString">
+<code class="sig-name descname">ExportShapeToThreejsJSONString</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">char * shape_function_name</em>, <em class="sig-param">bool export_uv=False</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ExportShapeToThreejsJSONString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ExportShapeToX3D">
+<code class="sig-name descname">ExportShapeToX3D</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">char * filename</em>, <em class="sig-param">int diffR=1</em>, <em class="sig-param">int diffG=0</em>, <em class="sig-param">int diffB=0</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ExportShapeToX3D" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ExportShapeToX3DIndexedFaceSet">
+<code class="sig-name descname">ExportShapeToX3DIndexedFaceSet</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ExportShapeToX3DIndexedFaceSet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.GetEdgeVertex">
+<code class="sig-name descname">GetEdgeVertex</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">int iEdge</em>, <em class="sig-param">int ivert</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Tesselator.GetEdgeVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.GetNormal">
+<code class="sig-name descname">GetNormal</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">int inorm</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Tesselator.GetNormal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.GetNormalsAsTuple">
+<code class="sig-name descname">GetNormalsAsTuple</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; vector_float<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.GetNormalsAsTuple" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.GetTriangleIndex">
+<code class="sig-name descname">GetTriangleIndex</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">int triangleIdx</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Tesselator.GetTriangleIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.GetVertex">
+<code class="sig-name descname">GetVertex</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">int ivert</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.Tesselator.GetVertex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.GetVerticesPositionAsTuple">
+<code class="sig-name descname">GetVerticesPositionAsTuple</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; vector_float<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.GetVerticesPositionAsTuple" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ObjEdgeGetVertexCount">
+<code class="sig-name descname">ObjEdgeGetVertexCount</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em>, <em class="sig-param">int iEdge</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ObjEdgeGetVertexCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ObjGetEdgeCount">
+<code class="sig-name descname">ObjGetEdgeCount</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ObjGetEdgeCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ObjGetNormalCount">
+<code class="sig-name descname">ObjGetNormalCount</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ObjGetNormalCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ObjGetTriangleCount">
+<code class="sig-name descname">ObjGetTriangleCount</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ObjGetTriangleCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.ObjGetVertexCount">
+<code class="sig-name descname">ObjGetVertexCount</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.ObjGetVertexCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.VerticesList">
+<code class="sig-name descname">VerticesList</code><span class="sig-paren">(</span><em class="sig-param">Tesselator self</em><span class="sig-paren">)</span> &#x2192; float *<a class="headerlink" href="#OCC.Core.Visualization.Tesselator.VerticesList" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.Tesselator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Visualization.Tesselator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Visualization.vector_float">
+<em class="property">class </em><code class="sig-name descname">vector_float</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.assign">
+<code class="sig-name descname">assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.back">
+<code class="sig-name descname">back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.capacity">
+<code class="sig-name descname">capacity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.capacity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.empty">
+<code class="sig-name descname">empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.empty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.erase">
+<code class="sig-name descname">erase</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.erase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.front">
+<code class="sig-name descname">front</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.front" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.get_allocator">
+<code class="sig-name descname">get_allocator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.get_allocator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.insert">
+<code class="sig-name descname">insert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.insert" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.iterator">
+<code class="sig-name descname">iterator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.iterator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.pop">
+<code class="sig-name descname">pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.pop_back">
+<code class="sig-name descname">pop_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.pop_back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.push_back">
+<code class="sig-name descname">push_back</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.push_back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.rbegin">
+<code class="sig-name descname">rbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.rbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.rend">
+<code class="sig-name descname">rend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.rend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.reserve">
+<code class="sig-name descname">reserve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.reserve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.resize">
+<code class="sig-name descname">resize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.size">
+<code class="sig-name descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.swap">
+<code class="sig-name descname">swap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Visualization.vector_float.swap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Visualization.vector_float.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Visualization.vector_float.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

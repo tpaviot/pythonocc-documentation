@@ -1,0 +1,3290 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.StdPrs module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.StdPrs module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.StdPrs module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.StdPrs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.StdPrs">
+<span id="occ-core-stdprs-module"></span><h1>OCC.Core.StdPrs module<a class="headerlink" href="#module-OCC.Core.StdPrs" title="Permalink to this headline">¶</a></h1>
+<p>StdPrs module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_stdprs.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_stdprs.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_BndBox">
+<em class="property">class </em><code class="sig-name descname">StdPrs_BndBox</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_BndBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_BndBox.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_BndBox.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes presentation of a bounding box. &#64;param thePresentation [in] the presentation. &#64;param theBndBox [in] the bounding box. &#64;param theDrawer [in] the drawer.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theBndBox</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBndBox</dt>
+<dd class="field-even"><p>Bnd_Box &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Computes presentation of a bounding box. &#64;param thePresentation [in] the presentation. &#64;param theBndBox [in] the bounding box. &#64;param theDrawer [in] the drawer.</p>
+</dd>
+<dt class="field-even">param thePresentation</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theBndBox</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theBndBox</dt>
+<dd class="field-odd"><p>Bnd_OBB &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_BndBox.FillSegments">
+<em class="property">static </em><code class="sig-name descname">FillSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_BndBox.FillSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Create primitive array with line segments for displaying a box. &#64;param theBox [in] the box to add</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theBox</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBox</dt>
+<dd class="field-even"><p>Bnd_OBB &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_ArrayOfSegments&gt;* Create primitive array with line segments for displaying a box. &#64;param theBox [in] the box to add</p>
+</dd>
+<dt class="field-even">param theBox</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theBox</dt>
+<dd class="field-odd"><p>Bnd_Box &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Graphic3d_ArrayOfSegments&gt;* Create primitive array with line segments for displaying a box. &#64;param theSegments [in] [out] primitive array to be filled;  should be at least 8 nodes and 24 edges in size &#64;param theBox [in] the box to add</p>
+</dd>
+<dt class="field-odd">param theSegments</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSegments</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Graphic3d_ArrayOfSegments&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theBox</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBox</dt>
+<dd class="field-even"><p>Bnd_OBB &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Create primitive array with line segments for displaying a box. &#64;param theSegments [in] [out] primitive array to be filled;  should be at least 8 nodes and 24 edges in size &#64;param theBox [in] the box to add</p>
+</dd>
+<dt class="field-even">param theSegments</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theSegments</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_ArrayOfSegments&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theBox</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theBox</dt>
+<dd class="field-odd"><p>Bnd_Box &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_BndBox.fillSegments">
+<em class="property">static </em><code class="sig-name descname">fillSegments</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_BndBox.fillSegments" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Create primitive array with line segments for displaying a box. &#64;param theSegments [in] [out] primitive array to be filled;  should be at least 8 nodes and 24 edges in size &#64;param theBox [in] the box to add</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theSegments</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSegments</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Graphic3d_ArrayOfSegments&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theBox</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBox</dt>
+<dd class="field-even"><p>gp_Pnt *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_BndBox.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_BndBox.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_Curve">
+<em class="property">class </em><code class="sig-name descname">StdPrs_Curve</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Curve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Curve.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Curve.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds to the presentation aPresentation the drawing of the curve aCurve. The aspect is defined by LineAspect in aDrawer. If drawCurve equals Standard_False the curve will not be displayed, it is used if the curve is a part of some shape and PrimitiveArray visualization approach is activated (it is activated by default).</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCurve</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param drawCurve</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type drawCurve</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Adds to the presentation aPresentation the drawing of the curve aCurve. The aspect is defined by LineAspect in aDrawer. The drawing will be limited between the points of parameter U1 and U2. If drawCurve equals Standard_False the curve will not be displayed, it is used if the curve is a part of some shape and PrimitiveArray visualization approach is activated (it is activated by default).</p>
+</dd>
+<dt class="field-even">param aPresentation</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aPresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aCurve</dt>
+<dd class="field-odd"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param drawCurve</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type drawCurve</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* adds to the presentation aPresentation the drawing of the curve aCurve. The aspect is the current aspect. aDeflection is used in the circle case. Points give a sequence of curve points. If drawCurve equals Standard_False the curve will not be displayed, it is used if the curve is a part of some shape and PrimitiveArray visualization approach is activated (it is activated by default).</p>
+</dd>
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCurve</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Points</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Points</dt>
+<dd class="field-even"><p>TColgp_SequenceOfPnt</p>
+</dd>
+<dt class="field-odd">param drawCurve</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type drawCurve</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* adds to the presentation aPresentation the drawing of the curve aCurve. The aspect is the current aspect. The drawing will be limited between the points of parameter U1 and U2. aDeflection is used in the circle case. Points give a sequence of curve points. If drawCurve equals Standard_False the curve will not be displayed, it is used if the curve is a part of some shape and PrimitiveArray visualization approach is activated (it is activated by default).</p>
+</dd>
+<dt class="field-even">param aPresentation</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aPresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aCurve</dt>
+<dd class="field-odd"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Points</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Points</dt>
+<dd class="field-odd"><p>TColgp_SequenceOfPnt</p>
+</dd>
+<dt class="field-even">param aNbPoints</dt>
+<dd class="field-even"><p>default value is 30</p>
+</dd>
+<dt class="field-odd">type aNbPoints</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param drawCurve</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type drawCurve</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Curve.Match">
+<em class="property">static </em><code class="sig-name descname">Match</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Curve.Match" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns true if the distance between the point (X,Y,Z) and the drawing of the curve is less than aDistance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Y</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Y</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Z</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Z</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDistance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDistance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCurve</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* returns true if the distance between the point (X,Y,Z) and the drawing of the curve is less than aDistance.</p>
+</dd>
+<dt class="field-even">param X</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aCurve</dt>
+<dd class="field-odd"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-even">param aDeflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDeflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aLimit</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aLimit</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aNbPoints</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aNbPoints</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool* returns true if the distance between the point (X,Y,Z) and the drawing of the curve aCurve is less than aDistance. The drawing is considered between the points of parameter U1 and U2;</p>
+</dd>
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Y</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Y</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Z</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Z</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDistance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDistance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCurve</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool* returns true if the distance between the point (X,Y,Z) and the drawing of the curve aCurve is less than aDistance. The drawing is considered between the points of parameter U1 and U2;</p>
+</dd>
+<dt class="field-even">param X</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aCurve</dt>
+<dd class="field-odd"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDeflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDeflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aNbPoints</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aNbPoints</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Curve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Curve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRPolyShape">
+<em class="property">class </em><code class="sig-name descname">StdPrs_HLRPolyShape</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRPolyShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRPolyShape.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRPolyShape.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Defines the hidden line removal display of the topology aShape in the projection defined by aProjector. The shape and the projection are added to the display aPresentation, and the attributes of the elements present in the aPresentation are defined by the attribute manager aDrawer.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aProjector</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aProjector</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Projector&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRPolyShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRPolyShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRShape">
+<em class="property">class </em><code class="sig-name descname">StdPrs_HLRShape</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRShape.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRShape.Add" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>thePresentation</strong> – <dl class="field-list simple">
+<dt class="field-odd">type thePresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theProjector</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theProjector</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Projector&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape">
+<em class="property">class </em><code class="sig-name descname">StdPrs_HLRToolShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TheShape</strong> – <dl class="field-list simple">
+<dt class="field-odd">type TheShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param TheProjector</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TheProjector</dt>
+<dd class="field-odd"><p>HLRAlgo_Projector &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.Hidden">
+<code class="sig-name descname">Hidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.Hidden" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TheEdge</strong> – <dl class="field-list simple">
+<dt class="field-odd">type TheEdge</dt>
+<dd class="field-odd"><p>BRepAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.InitHidden">
+<code class="sig-name descname">InitHidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.InitHidden" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>EdgeNumber</strong> – <dl class="field-list simple">
+<dt class="field-odd">type EdgeNumber</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.InitVisible">
+<code class="sig-name descname">InitVisible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.InitVisible" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>EdgeNumber</strong> – <dl class="field-list simple">
+<dt class="field-odd">type EdgeNumber</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.MoreHidden">
+<code class="sig-name descname">MoreHidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.MoreHidden" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.MoreVisible">
+<code class="sig-name descname">MoreVisible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.MoreVisible" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.NbEdges">
+<code class="sig-name descname">NbEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.NbEdges" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.NextHidden">
+<code class="sig-name descname">NextHidden</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.NextHidden" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.NextVisible">
+<code class="sig-name descname">NextVisible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.NextVisible" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.Visible">
+<code class="sig-name descname">Visible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.Visible" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TheEdge</strong> – <dl class="field-list simple">
+<dt class="field-odd">type TheEdge</dt>
+<dd class="field-odd"><p>BRepAdaptor_Curve &amp;</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_HLRToolShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_HLRToolShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_Isolines">
+<em class="property">class </em><code class="sig-name descname">StdPrs_Isolines</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Isolines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Isolines.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Isolines.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes isolines presentation for a TopoDS face. This method chooses proper version of isoline builder algorithm<span class="classifier">on triangulation or surface depending on the flag passed from Prs3d_Drawer attributes. This method is a default way to display isolines for a given TopoDS face. &#64;param thePresentation [in] the presentation. &#64;param theFace [in] the face. &#64;param theDrawer [in] the display settings. &#64;param theDeflection [in] the deflection for isolines-on-surface version.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDeflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>inline void* Computes isolines presentation for a TopoDS face. This method chooses proper version of isoline builder algorithm : on triangulation or surface depending on the flag passed from Prs3d_Drawer attributes. This method is a default way to display isolines for a given TopoDS face. &#64;param theFace [in] the face. &#64;param theDrawer [in] the display settings. &#64;param theDeflection [in] the deflection for isolines-on-surface version.</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDeflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDeflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theUPolylines</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUPolylines</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">param theVPolylines</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVPolylines</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Isolines.AddOnSurface">
+<em class="property">static </em><code class="sig-name descname">AddOnSurface</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Isolines.AddOnSurface" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes isolines on surface and adds them to presentation. &#64;param thePresentation [in] the presentation. &#64;param theFace [in] the face. &#64;param theDrawer [in] the display settings. &#64;param theDeflection [in] the deflection value.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDeflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Computes isolines on surface and adds them to presentation. &#64;param theFace [in] the face &#64;param theDrawer [in] the display settings &#64;param theDeflection [in] the deflection value &#64;param theUPolylines [out] the sequence of result polylines &#64;param theVPolylines [out] the sequence of result polylines</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDeflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDeflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theUPolylines</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUPolylines</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">param theVPolylines</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVPolylines</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Computes isolines on surface and adds them to presentation. &#64;param thePresentation [in] the presentation. &#64;param theSurface [in] the surface. &#64;param theDrawer [in] the display settings. &#64;param theDeflection [in] the deflection value. &#64;param theUIsoParams [in] the parameters of u isolines to compute. &#64;param theVIsoParams [in] the parameters of v isolines to compute.</p>
+</dd>
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theSurface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSurface</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theDeflection</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDeflection</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theUIsoParams</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUIsoParams</dt>
+<dd class="field-even"><p>TColStd_SequenceOfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theVIsoParams</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theVIsoParams</dt>
+<dd class="field-even"><p>TColStd_SequenceOfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Isolines.AddOnTriangulation">
+<em class="property">static </em><code class="sig-name descname">AddOnTriangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Isolines.AddOnTriangulation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes isolines on triangulation and adds them to a presentation. &#64;param thePresentation [in] the presentation. &#64;param theFace [in] the face. &#64;param theDrawer [in] the display settings.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Computes isolines on triangulation. &#64;param theFace [in] the face. &#64;param theDrawer [in] the display settings. &#64;param theUPolylines [out] the sequence of result polylines &#64;param theVPolylines [out] the sequence of result polylines</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theUPolylines</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUPolylines</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">param theVPolylines</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theVPolylines</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void* Computes isolines on triangulation and adds them to a presentation. &#64;param thePresentation [in] the presentation. &#64;param theTriangulation [in] the triangulation. &#64;param theSurface [in] the definition of triangulated surface. The surface adapter is used to precisely evaluate isoline points using surface law and fit them on triangulation. If NULL is passed, the method will use linear interpolation of triangle node’s UV coordinates to evaluate isoline points. &#64;param theLocation [in] the location transformation defined for triangulation (surface). &#64;param theDrawer [in] the display settings. &#64;param theUIsoParams [in] the parameters of u isolines to compute. &#64;param theVIsoParams [in] the parameters of v isolines to compute.</p>
+</dd>
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theTriangulation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTriangulation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Poly_Triangulation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theSurface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theSurface</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Geom_Surface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theLocation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theLocation</dt>
+<dd class="field-even"><p>TopLoc_Location &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theUIsoParams</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUIsoParams</dt>
+<dd class="field-even"><p>TColStd_SequenceOfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theVIsoParams</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theVIsoParams</dt>
+<dd class="field-even"><p>TColStd_SequenceOfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Isolines.UVIsoParameters">
+<em class="property">static </em><code class="sig-name descname">UVIsoParameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Isolines.UVIsoParameters" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Evalute sequence of parameters for drawing uv isolines for a given face. &#64;param theFace [in] the face. &#64;param theNbIsoU [in] the number of u isolines. &#64;param theNbIsoV [in] the number of v isolines. &#64;param theUVLimit [in] the u, v parameter value limit. &#64;param theUIsoParams [out] the sequence of u isoline parameters. &#64;param theVIsoParams [out] the sequence of v isoline parameters. &#64;param theUmin [out] the lower U boundary of theFace. &#64;param theUmax [out] the upper U boundary of theFace. &#64;param theVmin [out] the lower V boundary of theFace. &#64;param theVmax [out] the upper V boundary of theFace.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theNbIsoU</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theNbIsoU</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theNbIsoV</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theNbIsoV</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param theUVLimit</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUVLimit</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param theUIsoParams</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUIsoParams</dt>
+<dd class="field-even"><p>TColStd_SequenceOfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theVIsoParams</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theVIsoParams</dt>
+<dd class="field-even"><p>TColStd_SequenceOfReal &amp;</p>
+</dd>
+<dt class="field-odd">param theUmin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUmin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theUmax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theUmax</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theVmin</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theVmin</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">param theVmax</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theVmax</dt>
+<dd class="field-even"><p>float &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Isolines.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Isolines.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_Plane">
+<em class="property">class </em><code class="sig-name descname">StdPrs_Plane</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Plane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Plane.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Plane.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Defines display of infinite planes. The infinite plane aPlane is added to the display aPresentation, and the attributes of the display are defined by the attribute manager aDrawer.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aPlane</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPlane</dt>
+<dd class="field-even"><p>Adaptor3d_Surface &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Plane.Match">
+<em class="property">static </em><code class="sig-name descname">Match</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Plane.Match" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns true if the distance between the point (X,Y,Z) and the plane is less than aDistance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Y</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Y</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Z</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Z</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDistance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDistance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aPlane</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPlane</dt>
+<dd class="field-even"><p>Adaptor3d_Surface &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Plane.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Plane.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_Point">
+<em class="property">class </em><code class="sig-name descname">StdPrs_Point</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Point.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Point.Add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Point.Match">
+<em class="property">static </em><code class="sig-name descname">Match</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Point.Match" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Point.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Point.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_PoleCurve">
+<em class="property">class </em><code class="sig-name descname">StdPrs_PoleCurve</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_PoleCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_PoleCurve.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_PoleCurve.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Defines display of BSpline and Bezier curves. Adds the 3D curve aCurve to the StdPrs_PoleCurve algorithm. This shape is found in the presentation object aPresentation, and its display attributes are set in the attribute manager aDrawer. The curve object from Adaptor3d provides data from a Geom curve. This makes it possible to use the surface in a geometric algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCurve</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_PoleCurve.Match">
+<em class="property">static </em><code class="sig-name descname">Match</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_PoleCurve.Match" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns true if the distance between the point (X,Y,Z) and the broken line made of the poles is less then aDistance.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Y</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Y</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Z</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Z</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDistance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDistance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCurve</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_PoleCurve.Pick">
+<em class="property">static </em><code class="sig-name descname">Pick</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_PoleCurve.Pick" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the pole the most near of the point (X,Y,Z) and returns its range. The distance between the pole and (X,Y,Z) must be less then aDistance. If no pole corresponds, 0 is returned.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param X</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type X</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Y</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Y</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Z</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Z</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aDistance</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDistance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param aCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aCurve</dt>
+<dd class="field-even"><p>Adaptor3d_Curve &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_PoleCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_PoleCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape">
+<em class="property">class </em><code class="sig-name descname">StdPrs_ShadedShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Shades &lt;theShape&gt;. &#64;param theVolumeType defines the way how to interpret input shapes - as Closed volumes (to activate back-face culling and capping plane algorithms), as Open volumes (shells or solids with holes) or to perform Autodetection (would split input shape into two groups)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theVolume</dt>
+<dd class="field-odd"><p>default value is StdPrs_Volume_Autodetection</p>
+</dd>
+<dt class="field-even">type theVolume</dt>
+<dd class="field-even"><p>StdPrs_Volume</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Shades &lt;theShape&gt; with texture coordinates. &#64;param theVolumeType defines the way how to interpret input shapes - as Closed volumes (to activate back-face culling and capping plane algorithms), as Open volumes (shells or solids with holes) or to perform Autodetection (would split input shape into two groups)</p>
+</dd>
+<dt class="field-even">param thePresentation</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theHasTexels</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theHasTexels</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theUVOrigin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUVOrigin</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param theUVRepeat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUVRepeat</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param theUVScale</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUVScale</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param theVolume</dt>
+<dd class="field-even"><p>default value is StdPrs_Volume_Autodetection</p>
+</dd>
+<dt class="field-odd">type theVolume</dt>
+<dd class="field-odd"><p>StdPrs_Volume</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape.AddWireframeForFacesWithoutTriangles">
+<em class="property">static </em><code class="sig-name descname">AddWireframeForFacesWithoutTriangles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape.AddWireframeForFacesWithoutTriangles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes special wireframe presentation for faces without triangulation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePrs</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePrs</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape.AddWireframeForFreeElements">
+<em class="property">static </em><code class="sig-name descname">AddWireframeForFreeElements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape.AddWireframeForFreeElements" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes wireframe presentation for free wires and vertices</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePrs</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePrs</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape.ExploreSolids">
+<em class="property">static </em><code class="sig-name descname">ExploreSolids</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape.ExploreSolids" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Searches closed and unclosed subshapes in shape structure and puts them into two compounds for separate processing of closed and unclosed sub-shapes</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theBuilder</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theBuilder</dt>
+<dd class="field-even"><p>BRep_Builder &amp;</p>
+</dd>
+<dt class="field-odd">param theClosed</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theClosed</dt>
+<dd class="field-even"><p>TopoDS_Compound &amp;</p>
+</dd>
+<dt class="field-odd">param theOpened</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theOpened</dt>
+<dd class="field-even"><p>TopoDS_Compound &amp;</p>
+</dd>
+<dt class="field-odd">param theIgnore1DSubShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theIgnore1DSubShape</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape.FillFaceBoundaries">
+<em class="property">static </em><code class="sig-name descname">FillFaceBoundaries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape.FillFaceBoundaries" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Define primitive array of boundary segments for specified shape. &#64;param theShape segments array or NULL if specified face does not have computed triangulation &#64;param theUpperContinuity the most edge continuity class to be included to result (edges with more continuity will be ignored)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theUpperContinuity</dt>
+<dd class="field-odd"><p>default value is GeomAbs_CN</p>
+</dd>
+<dt class="field-even">type theUpperContinuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_ArrayOfSegments&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape.FillTriangles">
+<em class="property">static </em><code class="sig-name descname">FillTriangles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape.FillTriangles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Create primitive array with triangles for specified shape. &#64;param theShape [in] the shape with precomputed triangulation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_ArrayOfTriangles&gt;* Create primitive array of triangles for specified shape. &#64;param theShape the shape with precomputed triangulation &#64;param theHasTexels define UV coordinates in primitive array &#64;param theUVOrigin origin for UV coordinates &#64;param theUVRepeat repeat parameters for UV coordinates &#64;param theUVScale scale coefficients for UV coordinates returns triangles array or NULL if specified face does not have computed triangulation</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theHasTexels</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theHasTexels</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theUVOrigin</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUVOrigin</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param theUVRepeat</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUVRepeat</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">param theUVScale</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theUVScale</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Graphic3d_ArrayOfTriangles&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedSurface">
+<em class="property">class </em><code class="sig-name descname">StdPrs_ShadedSurface</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedSurface.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedSurface.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the surface aSurface to the presentation object aPresentation. The surface’s display attributes are set in the attribute manager aDrawer. The surface object from Adaptor3d provides data from a Geom surface in order to use the surface in an algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aSurface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSurface</dt>
+<dd class="field-even"><p>Adaptor3d_Surface &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ShadedSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ShadedSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolPoint">
+<em class="property">class </em><code class="sig-name descname">StdPrs_ToolPoint</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolPoint.Coord">
+<em class="property">static </em><code class="sig-name descname">Coord</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolPoint.Coord" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aPoint</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aPoint</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Geom_Point&gt; &amp;</p>
+</dd>
+<dt class="field-even">param X</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolPoint.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolPoint.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace">
+<em class="property">class </em><code class="sig-name descname">StdPrs_ToolRFace</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Empty constructor.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Constructor with initialization.</p>
+</dd>
+<dt class="field-even">param aSurface</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aSurface</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Move iterator to the first element.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.IsInvalidGeometry">
+<code class="sig-name descname">IsInvalidGeometry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.IsInvalidGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return True if NULL curves have been skipped.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.IsOriented">
+<code class="sig-name descname">IsOriented</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.IsOriented" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return True indicating that iterator looks only for oriented edges.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.More">
+<code class="sig-name descname">More</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.More" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return True if iterator points to the curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.Next">
+<code class="sig-name descname">Next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.Next" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Go to the next curve in the face.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.Orientation">
+<code class="sig-name descname">Orientation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return current edge orientation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_Orientation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.Value" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Return current curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>Adaptor2d_Curve2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolRFace.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolRFace.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape">
+<em class="property">class </em><code class="sig-name descname">StdPrs_ToolTriangulatedShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.ClearOnOwnDeflectionChange">
+<em class="property">static </em><code class="sig-name descname">ClearOnOwnDeflectionChange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.ClearOnOwnDeflectionChange" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>If presentation has own deviation coefficient and IsAutoTriangulation() is true, function will compare actual coefficients with previous values and will clear triangulation on their change (regardless actual tessellation quality). Function is placed here for compatibility reasons - new code should avoid using IsAutoTriangulation(). &#64;param theShape [in] the shape &#64;param theDrawer [in] the display settings &#64;param theToResetCoeff [in] updates coefficients in theDrawer to actual state to avoid redundant recomputations</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theToResetCoeff</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theToResetCoeff</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.ComputeNormals">
+<em class="property">static </em><code class="sig-name descname">ComputeNormals</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.ComputeNormals" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes nodal normals for Poly_Triangulation structure using UV coordinates and surface. Does nothing if triangulation already defines normals. &#64;param theFace [in] the face &#64;param theTris [in] the definition of a face triangulation</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param theTris</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theTris</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Poly_Triangulation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Computes nodal normals for Poly_Triangulation structure using UV coordinates and surface. Does nothing if triangulation already defines normals. &#64;param theFace [in] the face &#64;param theTris [in] the definition of a face triangulation &#64;param thePolyConnect [in,out] optional, initialized tool for exploring triangulation</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-even">param theTris</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theTris</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Poly_Triangulation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param thePolyConnect</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type thePolyConnect</dt>
+<dd class="field-odd"><p>Poly_Connect &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.IsClosed">
+<em class="property">static </em><code class="sig-name descname">IsClosed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.IsClosed" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Checks back faces visibility for specified shape (to activate back-face culling). returns true if shape is closed manifold Solid or compound of such Solids.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.IsTessellated">
+<em class="property">static </em><code class="sig-name descname">IsTessellated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.IsTessellated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Checks whether the shape is properly triangulated for a given display settings. &#64;param theShape [in] the shape. &#64;param theDrawer [in] the display settings.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.IsTriangulated">
+<em class="property">static </em><code class="sig-name descname">IsTriangulated</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.IsTriangulated" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Similar to BRepTools::Triangulation() but without extra checks. returns true if all faces within shape are triangulated.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.Normal">
+<em class="property">static </em><code class="sig-name descname">Normal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.Normal" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Evaluate normals for a triangle of a face. &#64;param theFace [in] the face. &#64;param thePolyConnect [in] the definition of a face triangulation. &#64;param theNormal [out] the array of normals for each triangle.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theFace</dt>
+<dd class="field-even"><p>TopoDS_Face &amp;</p>
+</dd>
+<dt class="field-odd">param thePolyConnect</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePolyConnect</dt>
+<dd class="field-even"><p>Poly_Connect &amp;</p>
+</dd>
+<dt class="field-odd">param theNormals</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theNormals</dt>
+<dd class="field-even"><p>TColgp_Array1OfDir</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.Tessellate">
+<em class="property">static </em><code class="sig-name descname">Tessellate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.Tessellate" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Validates triangulation within the shape and performs tessellation if necessary. &#64;param theShape [in] the shape. &#64;param theDrawer [in] the display settings. returns true if tesselation was recomputed and false otherwise.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolTriangulatedShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolVertex">
+<em class="property">class </em><code class="sig-name descname">StdPrs_ToolVertex</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolVertex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolVertex.Coord">
+<em class="property">static </em><code class="sig-name descname">Coord</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolVertex.Coord" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>aPoint</strong> – <dl class="field-list simple">
+<dt class="field-odd">type aPoint</dt>
+<dd class="field-odd"><p>TopoDS_Vertex &amp;</p>
+</dd>
+<dt class="field-even">param X</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_ToolVertex.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_ToolVertex.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_Vertex">
+<em class="property">class </em><code class="sig-name descname">StdPrs_Vertex</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Vertex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Vertex.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Vertex.Add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Vertex.Match">
+<em class="property">static </em><code class="sig-name descname">Match</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Vertex.Match" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_Vertex.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_Vertex.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace">
+<em class="property">class </em><code class="sig-name descname">StdPrs_WFDeflectionRestrictedFace</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Defines a display featuring U and V isoparameters. Adds the surface aFace to the StdPrs_WFRestrictedFace algorithm. This face is found in a shape in the presentation object aPresentation, and its display attributes - in particular, the number of U and V isoparameters - are set in the attribute manager aDrawer. aFace is BRepAdaptor_HSurface surface created from a face in a topological shape. which is passed as an argument through the BRepAdaptor_HSurface surface created from it. This is what allows the topological face to be treated as a geometric surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aFace</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void* Defines a display of a delection-specified face. The display will feature U and V isoparameters. Adds the topology aShape to the StdPrs_WFRestrictedFace algorithm. This shape is found in the presentation object aPresentation, and its display attributes - except the number of U and V isoparameters - are set in the attribute manager aDrawer. The function sets the number of U and V isoparameters, NBUiso and NBViso, in the shape. To do this, the arguments DrawUIso and DrawVIso must be true. aFace is BRepAdaptor_HSurface surface created from a face in a topological shape. which is passed as an argument through the BRepAdaptor_HSurface surface created from it. This is what allows the topological face to be treated as a geometric surface. Curves give a sequence of face curves, it is used if the PrimitiveArray visualization approach is activated (it is activated by default).</p>
+</dd>
+<dt class="field-even">param aPresentation</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aPresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param DrawUIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DrawUIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param DrawVIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DrawVIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param Deflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Deflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param NBUiso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NBUiso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NBViso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NBViso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param aDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Curves</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Curves</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.AddUIso">
+<em class="property">static </em><code class="sig-name descname">AddUIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.AddUIso" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Defines a display featuring U isoparameters respectively. Add the surface aFace to the StdPrs_WFRestrictedFace algorithm. This face is found in a shape in the presentation object aPresentation, and its display attributes - in particular, the number of U isoparameters - are set in the attribute manager aDrawer. aFace is BRepAdaptor_HSurface surface created from a face in a topological shape. which is passed to the function as an argument through the BRepAdaptor_HSurface surface created from it. This is what allows the topological face to be treated as a geometric surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aFace</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.AddVIso">
+<em class="property">static </em><code class="sig-name descname">AddVIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.AddVIso" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Defines a display featuring V isoparameters respectively. Add the surface aFace to the StdPrs_WFRestrictedFace algorithm. This face is found in a shape in the presentation object aPresentation, and its display attributes - in particular, the number of V isoparameters - are set in the attribute manager aDrawer. aFace is BRepAdaptor_HSurface surface created from a face in a topological shape. which is passed to the function as an argument through the BRepAdaptor_HSurface surface created from it. This is what allows the topological face to be treated as a geometric surface.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aFace</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aFace</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.Match">
+<em class="property">static </em><code class="sig-name descname">Match</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.Match" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> – <dl class="field-list simple">
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool:param X:</p>
+</dd>
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param DrawUIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DrawUIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param DrawVIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type DrawVIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param aDeflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDeflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param NBUiso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NBUiso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NBViso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NBViso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.MatchUIso">
+<em class="property">static </em><code class="sig-name descname">MatchUIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.MatchUIso" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> – <dl class="field-list simple">
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.MatchVIso">
+<em class="property">static </em><code class="sig-name descname">MatchVIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.MatchVIso" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>X</strong> – <dl class="field-list simple">
+<dt class="field-odd">type X</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Y</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Y</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Z</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Z</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param aFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param aDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type aDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionRestrictedFace.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionSurface">
+<em class="property">class </em><code class="sig-name descname">StdPrs_WFDeflectionSurface</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionSurface.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionSurface.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the surface aSurface to the presentation object aPresentation, and defines its boundaries and isoparameters. The shape’s display attributes are set in the attribute manager aDrawer. These include whether deflection is absolute or relative to the size of the shape. The surface aSurface is a surface object from Adaptor, and provides data from a Geom surface. This makes it possible to use the surface in a geometric algorithm. Note that this surface object is manipulated by handles.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aSurface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSurface</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFDeflectionSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFDeflectionSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_WFPoleSurface">
+<em class="property">class </em><code class="sig-name descname">StdPrs_WFPoleSurface</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFPoleSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFPoleSurface.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFPoleSurface.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the surface aSurface to the presentation object aPresentation. The shape’s display attributes are set in the attribute manager aDrawer. The surface aSurface is a surface object from Adaptor3d, and provides data from a Geom surface. This makes it possible to use the surface in a geometric algorithm.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aSurface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSurface</dt>
+<dd class="field-even"><p>Adaptor3d_Surface &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFPoleSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFPoleSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace">
+<em class="property">class </em><code class="sig-name descname">StdPrs_WFRestrictedFace</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace.Add" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>thePresentation</strong> – <dl class="field-list simple">
+<dt class="field-odd">type thePresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawUIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawUIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theDrawVIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawVIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theNbUIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theNbUIso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theNbVIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theNbVIso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theCurves</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theCurves</dt>
+<dd class="field-odd"><p>Prs3d_NListOfSequenceOfPnt &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void:param thePresentation:</p>
+</dd>
+<dt class="field-odd">type thePresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace.AddUIso">
+<em class="property">static </em><code class="sig-name descname">AddUIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace.AddUIso" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>thePresentation</strong> – <dl class="field-list simple">
+<dt class="field-odd">type thePresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace.AddVIso">
+<em class="property">static </em><code class="sig-name descname">AddVIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace.AddVIso" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>thePresentation</strong> – <dl class="field-list simple">
+<dt class="field-odd">type thePresentation</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace.Match">
+<em class="property">static </em><code class="sig-name descname">Match</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace.Match" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theX</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theX</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theY</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theY</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theZ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theZ</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawUIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawUIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theDrawVIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawVIso</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">param theDeflection</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDeflection</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theNbUIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theNbUIso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theNbVIso</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theNbVIso</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool:param theX:</p>
+</dd>
+<dt class="field-odd">type theX</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theY</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theY</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theZ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theZ</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace.MatchUIso">
+<em class="property">static </em><code class="sig-name descname">MatchUIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace.MatchUIso" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theX</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theX</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theY</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theY</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theZ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theZ</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace.MatchVIso">
+<em class="property">static </em><code class="sig-name descname">MatchVIso</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace.MatchVIso" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>theX</strong> – <dl class="field-list simple">
+<dt class="field-odd">type theX</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theY</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theY</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theZ</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theZ</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theDistance</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDistance</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param theFace</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theFace</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;BRepAdaptor_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-even">param theDrawer</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theDrawer</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFRestrictedFace.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFRestrictedFace.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_WFShape">
+<em class="property">class </em><code class="sig-name descname">StdPrs_WFShape</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFShape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFShape.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFShape.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes wireframe presentation of a shape. &#64;param thePresentation [in] the presentation. &#64;param theShape [in] the shape. &#64;param theDrawer [in] the draw settings. &#64;param theIsParallel [in] perform algorithm using multiple threads</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param thePresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type thePresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theIsParallel</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type theIsParallel</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFShape.AddAllEdges">
+<em class="property">static </em><code class="sig-name descname">AddAllEdges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFShape.AddAllEdges" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute all edges (wire, free, unfree) and put them into single primitive array. &#64;param theShape [in] the shape &#64;param theDrawer [in] the drawer settings (deviation angle and maximal parameter value)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_ArrayOfPrimitives&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFShape.AddEdgesOnTriangulation">
+<em class="property">static </em><code class="sig-name descname">AddEdgesOnTriangulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFShape.AddEdgesOnTriangulation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute free and boundary edges on a triangulation of each face in the given shape. &#64;param theShape  [in] the list of triangulated faces &#64;param theToExcludeGeometric [in] flag indicating that Faces with defined Surface should be skipped</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theToExcludeGeometric</dt>
+<dd class="field-odd"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-even">type theToExcludeGeometric</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_ArrayOfPrimitives&gt;* Compute free and boundary edges on a triangulation of each face in the given shape. &#64;param theSegments  [in] the sequence of points defining segments &#64;param theShape  [in] the list of triangulated faces &#64;param theToExcludeGeometric [in] flag indicating that Faces with defined Surface should be skipped</p>
+</dd>
+<dt class="field-even">param theSegments</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theSegments</dt>
+<dd class="field-odd"><p>TColgp_SequenceOfPnt</p>
+</dd>
+<dt class="field-even">param theShape</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type theShape</dt>
+<dd class="field-odd"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-even">param theToExcludeGeometric</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type theToExcludeGeometric</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFShape.AddVertexes">
+<em class="property">static </em><code class="sig-name descname">AddVertexes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFShape.AddVertexes" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Compute vertex presentation for a shape. &#64;param theShape [in] the shape &#64;param theVertexMode [in] vertex filter</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theShape</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theShape</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param theVertexMode</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theVertexMode</dt>
+<dd class="field-even"><p>Prs3d_VertexDrawMode</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Graphic3d_ArrayOfPoints&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFShape.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFShape.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.StdPrs_WFSurface">
+<em class="property">class </em><code class="sig-name descname">StdPrs_WFSurface</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Prs3d.html#OCC.Core.Prs3d.Prs3d_Root" title="OCC.Core.Prs3d.Prs3d_Root"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Prs3d.Prs3d_Root</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFSurface.Add">
+<em class="property">static </em><code class="sig-name descname">Add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFSurface.Add" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Draws a surface by drawing the isoparametric curves with respect to a fixed number of points given by the Drawer. The number of isoparametric curves to be drawn and their color are controlled by the furnished Drawer.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param aPresentation</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aPresentation</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Presentation&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aSurface</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aSurface</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Adaptor3d_HSurface&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param aDrawer</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type aDrawer</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Prs3d_Drawer&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.StdPrs_WFSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.StdPrs_WFSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.StdPrs.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.StdPrs.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.StdPrs.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

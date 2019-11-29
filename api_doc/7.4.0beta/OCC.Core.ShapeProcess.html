@@ -1,0 +1,1358 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.ShapeProcess module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.ShapeProcess module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.ShapeProcess module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.ShapeProcess.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.ShapeProcess">
+<span id="occ-core-shapeprocess-module"></span><h1>OCC.Core.ShapeProcess module<a class="headerlink" href="#module-OCC.Core.ShapeProcess" title="Permalink to this headline">¶</a></h1>
+<p>ShapeProcess module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_shapeprocess.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_shapeprocess.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context">
+<em class="property">class </em><code class="sig-name descname">ShapeProcess_Context</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates an empty tool</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Creates a new tool and initialises by name of resource file and (if specified) starting scope Calls method Init()</p>
+</dd>
+<dt class="field-even">param file</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type file</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param scope</dt>
+<dd class="field-even"><p>default value is</p>
+</dd>
+<dt class="field-odd">type scope</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.BooleanVal">
+<code class="sig-name descname">BooleanVal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.BooleanVal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type param</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param def</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type def</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.GetBoolean">
+<code class="sig-name descname">GetBoolean</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.GetBoolean" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type param</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param val</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type val</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.GetInteger">
+<code class="sig-name descname">GetInteger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.GetInteger" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type param</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param val</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type val</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.GetReal">
+<code class="sig-name descname">GetReal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.GetReal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type param</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param val</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type val</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.GetString">
+<code class="sig-name descname">GetString</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.GetString" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get value of parameter as being of specific type Returns False if parameter is not defined or has a wrong type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type param</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param val</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type val</dt>
+<dd class="field-even"><p>TCollection_AsciiString &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initialises a tool by loading resource file and (if specified) sets starting scope Returns False if resource file not found</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param file</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type file</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param scope</dt>
+<dd class="field-odd"><p>default value is</p>
+</dd>
+<dt class="field-even">type scope</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.IntegerVal">
+<code class="sig-name descname">IntegerVal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.IntegerVal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type param</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param def</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type def</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.IsParamSet">
+<code class="sig-name descname">IsParamSet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.IsParamSet" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns True if parameter is defined in the resource file</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type param</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.LoadResourceManager">
+<code class="sig-name descname">LoadResourceManager</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.LoadResourceManager" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Loading Resource_Manager object if this object not equal internal static Resource_Manager object or internal static Resource_Manager object is null</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param file</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type file</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Resource_Manager&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.Messenger">
+<code class="sig-name descname">Messenger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.Messenger" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns Messenger used for outputting messages.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_Messenger&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.Progress">
+<code class="sig-name descname">Progress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.Progress" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns Progress Indicator.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Message_ProgressIndicator&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.RealVal">
+<code class="sig-name descname">RealVal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.RealVal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – <dl class="field-list simple">
+<dt class="field-odd">type param</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param def</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type def</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.ResourceManager">
+<code class="sig-name descname">ResourceManager</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.ResourceManager" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns internal Resource_Manager object</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;Resource_Manager&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.SetMessenger">
+<code class="sig-name descname">SetMessenger</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.SetMessenger" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets Messenger used for outputting messages.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param messenger</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type messenger</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Message_Messenger&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.SetProgress">
+<code class="sig-name descname">SetProgress</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.SetProgress" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets Progress Indicator.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theProgress</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theProgress</dt>
+<dd class="field-even"><p>opencascade::handle&lt;Message_ProgressIndicator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.SetScope">
+<code class="sig-name descname">SetScope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.SetScope" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set a new (sub)scope</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param scope</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type scope</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.SetTraceLevel">
+<code class="sig-name descname">SetTraceLevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.SetTraceLevel" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets trace level used for outputting messages - 0: no trace at all - 1: errors - 2: errors and warnings - 3: all messages Default is 1<span class="classifier">Errors traced</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param tracelev</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type tracelev</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.StringVal">
+<code class="sig-name descname">StringVal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.StringVal" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get value of parameter as being of specific type If parameter is not defined or does not have expected type, returns default value as specified</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type param</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param def</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type def</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.TraceLevel">
+<code class="sig-name descname">TraceLevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.TraceLevel" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns trace level used for outputting messages.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.UnSetScope">
+<code class="sig-name descname">UnSetScope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.UnSetScope" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Go out of current scope</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Context.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Context.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_OperLibrary">
+<em class="property">class </em><code class="sig-name descname">ShapeProcess_OperLibrary</code><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_OperLibrary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_OperLibrary.ApplyModifier">
+<em class="property">static </em><code class="sig-name descname">ApplyModifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_OperLibrary.ApplyModifier" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Applies BRepTools_Modification to a shape, taking into account sharing of components of compounds. if theMutableInput vat is set to true then imput shape S can be modified during the modification process.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param context</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type context</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ShapeProcess_ShapeContext&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param M</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type M</dt>
+<dd class="field-even"><p>opencascade::handle&lt;BRepTools_Modification&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param map</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type map</dt>
+<dd class="field-even"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-odd">param msg</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type msg</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ShapeExtend_MsgRegistrator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param theMutableInput</dt>
+<dd class="field-odd"><p>default value is Standard_False</p>
+</dd>
+<dt class="field-even">type theMutableInput</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_OperLibrary.Init">
+<em class="property">static </em><code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_OperLibrary.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Registers all the operators</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_OperLibrary.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_OperLibrary.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Operator">
+<em class="property">class </em><code class="sig-name descname">ShapeProcess_Operator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Operator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Standard.Standard_Transient</span></code></a></p>
+<ul class="simple">
+<li><p>Empty constructor</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None* Copy constructor – does nothing</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>&amp;</strong> (<a class="reference internal" href="OCC.Core.Standard.html#OCC.Core.Standard.Standard_Transient" title="OCC.Core.Standard.Standard_Transient"><em>Standard_Transient</em></a>) – </p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Operator.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Operator.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Operator.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Operator.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs operation and eventually records changes in the context</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param context</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type context</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ShapeProcess_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_Operator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_Operator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext">
+<em class="property">class </em><code class="sig-name descname">ShapeProcess_ShapeContext</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ShapeProcess.ShapeProcess_Context" title="OCC.Core.ShapeProcess.ShapeProcess_Context"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ShapeProcess.ShapeProcess_Context</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> – <dl class="field-list simple">
+<dt class="field-odd">type file</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">param seq</dt>
+<dd class="field-even"><p>default value is</p>
+</dd>
+<dt class="field-odd">type seq</dt>
+<dd class="field-odd"><p>char *</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Initializes a tool by resource file and shape to be processed</p>
+</dd>
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param file</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type file</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param seq</dt>
+<dd class="field-odd"><p>default value is</p>
+</dd>
+<dt class="field-even">type seq</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.AddMessage">
+<code class="sig-name descname">AddMessage</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.AddMessage" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Record a message for shape S Shape S should be one of subshapes of original shape (or whole one), but not one of intermediate shapes Records only if Message() is not Null</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param msg</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type msg</dt>
+<dd class="field-even"><p>Message_Msg &amp;</p>
+</dd>
+<dt class="field-odd">param gravity</dt>
+<dd class="field-odd"><p>default value is Message_Warning</p>
+</dd>
+<dt class="field-even">type gravity</dt>
+<dd class="field-even"><p>Message_Gravity</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.ContinuityVal">
+<code class="sig-name descname">ContinuityVal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.ContinuityVal" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get value of parameter as being of the type GeomAbs_Shape If parameter is not defined or does not have expected type, returns default value as specified</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type param</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param def</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type def</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.GetContinuity">
+<code class="sig-name descname">GetContinuity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.GetContinuity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get value of parameter as being of the type GeomAbs_Shape Returns False if parameter is not defined or has a wrong type</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param param</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type param</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param val</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type val</dt>
+<dd class="field-even"><p>GeomAbs_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.GetDetalisation">
+<code class="sig-name descname">GetDetalisation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.GetDetalisation" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set and get value for detalisation level Only shapes of types from TopoDS_COMPOUND and until specified detalisation level will be recorded in maps To cancel mapping, use TopAbs_SHAPE To force full mapping, use TopAbs_VERTEX The default level is TopAbs_FACE</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Init">
+<code class="sig-name descname">Init</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Init" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Initializes tool by a new shape and clears all results</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.IsNonManifold">
+<code class="sig-name descname">IsNonManifold</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.IsNonManifold" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Get NonManifold flag</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Map">
+<code class="sig-name descname">Map</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Map" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns map of replacements shape -&gt; shape This map is not recursive</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Messages">
+<code class="sig-name descname">Messages</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Messages" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ShapeExtend_MsgRegistrator&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.PrintStatistics">
+<code class="sig-name descname">PrintStatistics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.PrintStatistics" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Prints statistics on Shape Processing onto the current Messenger.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.RecordModification">
+<code class="sig-name descname">RecordModification</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.RecordModification" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>repl</strong> – <dl class="field-list simple">
+<dt class="field-odd">type repl</dt>
+<dd class="field-odd"><p>TopTools_DataMapOfShapeShape &amp;</p>
+</dd>
+<dt class="field-even">param msg</dt>
+<dd class="field-even"><p>default value is 0</p>
+</dd>
+<dt class="field-odd">type msg</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ShapeExtend_MsgRegistrator&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param repl:</p>
+</dd>
+<dt class="field-odd">type repl</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ShapeBuild_ReShape&gt; &amp;</p>
+</dd>
+<dt class="field-even">param msg</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type msg</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ShapeExtend_MsgRegistrator&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param repl:</p>
+</dd>
+<dt class="field-odd">type repl</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;ShapeBuild_ReShape&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* Records modifications and resets result accordingly NOTE: modification of resulting shape should be explicitly defined in the maps along with modifications of subshapes //! In the last function, sh is the shape on which Modifier was run. It can be different from the whole shape, but in that case result as a whole should be reset later either by call to SetResult(), or by another call to RecordModification() which contains mapping of current result to a new one explicitly</p>
+</dd>
+<dt class="field-odd">param sh</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type sh</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">param repl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type repl</dt>
+<dd class="field-even"><p>BRepTools_Modifier &amp;</p>
+</dd>
+<dt class="field-odd">param msg</dt>
+<dd class="field-odd"><p>default value is 0</p>
+</dd>
+<dt class="field-even">type msg</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ShapeExtend_MsgRegistrator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Result">
+<code class="sig-name descname">Result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Result" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns current result</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.SetDetalisation">
+<code class="sig-name descname">SetDetalisation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.SetDetalisation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>level</strong> – <dl class="field-list simple">
+<dt class="field-odd">type level</dt>
+<dd class="field-odd"><p>TopAbs_ShapeEnum</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.SetNonManifold">
+<code class="sig-name descname">SetNonManifold</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.SetNonManifold" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Set NonManifold flag</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param theNonManifold</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type theNonManifold</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.SetResult">
+<code class="sig-name descname">SetResult</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.SetResult" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Sets a new result shape NOTE: this method should be used very carefully to keep consistency of modifications It is recommended to use RecordModification() methods with explicit definition of mapping from current result to a new one</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param S</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type S</dt>
+<dd class="field-even"><p>TopoDS_Shape &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Shape">
+<code class="sig-name descname">Shape</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.Shape" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns shape being processed</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>TopoDS_Shape</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_ShapeContext.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_UOperator">
+<em class="property">class </em><code class="sig-name descname">ShapeProcess_UOperator</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_UOperator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.ShapeProcess.ShapeProcess_Operator" title="OCC.Core.ShapeProcess.ShapeProcess_Operator"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.ShapeProcess.ShapeProcess_Operator</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Creates operator with implementation defined as OperFunc (static function)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param func</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type func</dt>
+<dd class="field-even"><p>ShapeProcess_OperFunc</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_UOperator.DownCast">
+<em class="property">static </em><code class="sig-name descname">DownCast</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_UOperator.DownCast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.ShapeProcess_UOperator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ShapeProcess.ShapeProcess_UOperator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.ShapeProcess.shapeprocess">
+<em class="property">class </em><code class="sig-name descname">shapeprocess</code><a class="headerlink" href="#OCC.Core.ShapeProcess.shapeprocess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.shapeprocess.FindOperator">
+<em class="property">static </em><code class="sig-name descname">FindOperator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.shapeprocess.FindOperator" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Finds operator by its name</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type name</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param op</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type op</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ShapeProcess_Operator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.shapeprocess.Perform">
+<em class="property">static </em><code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.shapeprocess.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Performs a specified sequence of operators on Context Resource file and other data should be already loaded to Context (including description of sequence seq)</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param context</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type context</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ShapeProcess_Context&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param seq</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type seq</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.shapeprocess.RegisterOperator">
+<em class="property">static </em><code class="sig-name descname">RegisterOperator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.ShapeProcess.shapeprocess.RegisterOperator" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Registers operator to make it visible for Performer</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param name</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type name</dt>
+<dd class="field-even"><p>char *</p>
+</dd>
+<dt class="field-odd">param op</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type op</dt>
+<dd class="field-even"><p>opencascade::handle&lt;ShapeProcess_Operator&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.ShapeProcess.shapeprocess.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.ShapeProcess.shapeprocess.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

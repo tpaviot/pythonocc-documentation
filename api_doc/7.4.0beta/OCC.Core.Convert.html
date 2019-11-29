@@ -1,0 +1,2306 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.Convert module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.Convert module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.Convert module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.Convert.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.Convert">
+<span id="occ-core-convert-module"></span><h1>OCC.Core.Convert module<a class="headerlink" href="#module-OCC.Core.Convert" title="Permalink to this headline">¶</a></h1>
+<p>Convert module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_convert.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_convert.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_CircleToBSplineCurve">
+<em class="property">class </em><code class="sig-name descname">Convert_CircleToBSplineCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CircleToBSplineCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve" title="OCC.Core.Convert.Convert_ConicToBSplineCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ConicToBSplineCurve</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The equivalent B-spline curve has the same orientation as the circle C.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-odd">param Parameterisation</dt>
+<dd class="field-odd"><p>default value is Convert_TgtThetaOver2</p>
+</dd>
+<dt class="field-even">type Parameterisation</dt>
+<dd class="field-even"><p>Convert_ParameterisationType</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* The circle C is limited between the parametric values U1, U2 in radians. U1 and U2 [0.0, 2*Pi] . The equivalent B-spline curve is oriented from U1 to U2 and has the same orientation as the circle C. //! Raised if U1 = U2 or U1 = U2 + 2.0 * Pi</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Circ2d</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Parameterisation</dt>
+<dd class="field-even"><p>default value is Convert_TgtThetaOver2</p>
+</dd>
+<dt class="field-odd">type Parameterisation</dt>
+<dd class="field-odd"><p>Convert_ParameterisationType</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CircleToBSplineCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_CircleToBSplineCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d">
+<em class="property">class </em><code class="sig-name descname">Convert_CompBezierCurves2dToBSplineCurve2d</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a framework for converting a sequence of adjacent non-rational Bezier curves into a BSpline curve. Knots will be created on the computed BSpline curve at each junction point of two consecutive Bezier curves. The degree of continuity of the BSpline curve will be increased at the junction point of two consecutive Bezier curves if their tangent vectors at this point are parallel. AngularTolerance (given in radians, and defaulted to 1.0 e-4) will be used to check the parallelism of the two tangent vectors. Use the following functions: - AddCurve to define in sequence the adjacent Bezier curves to be converted, - Perform to compute the data needed to build the BSpline curve, - and the available consultation functions to access the computed data. This data may be used to construct the BSpline curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param AngularTolerance</dt>
+<dd class="field-odd"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-even">type AngularTolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.AddCurve">
+<code class="sig-name descname">AddCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.AddCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the Bezier curve defined by the table of poles Poles, to the sequence (still contained in this framework) of adjacent Bezier curves to be converted into a BSpline curve. Only polynomial (i.e. non-rational) Bezier curves are converted using this framework. If this is not the first call to the function (i.e. if this framework still contains data in its sequence of Bezier curves), the degree of continuity of the BSpline curve will be increased at the time of computation at the first point of the added Bezier curve (i.e. the first point of the Poles table). This will be the case if the tangent vector of the curve at this point is parallel to the tangent vector at the end point of the preceding Bezier curve in the sequence of Bezier curves still contained in this framework. An angular tolerance given at the time of construction of this framework, will be used to check the parallelism of the two tangent vectors. This checking procedure, and all the relative computations will be performed by the function Perform. When the sequence of adjacent Bezier curves is complete, use the following functions: - Perform to compute the data needed to build the BSpline curve, - and the available consultation functions to access the computed data. This data may be used to construct the BSpline curve. Warning The sequence of Bezier curves treated by this framework is automatically initialized with the first Bezier curve when the function is first called. During subsequent use of this function, ensure that the first point of the added Bezier curve (i.e. the first point of the Poles table) is coincident with the last point of the sequence (i.e. the last point of the preceding Bezier curve in the sequence) of Bezier curves still contained in this framework. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above, as this condition is not checked either when defining the sequence of Bezier curves or at the time of computation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.Degree">
+<code class="sig-name descname">Degree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.Degree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the degree of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.KnotsAndMults">
+<code class="sig-name descname">KnotsAndMults</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.KnotsAndMults" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Loads the Knots table with the knots and the Mults table with the corresponding multiplicities of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Knots and Mults arrays must be equal to the number of knots in the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above as these conditions are not checked, and an error may occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Knots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Knots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param Mults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Mults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.NbKnots">
+<code class="sig-name descname">NbKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.NbKnots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of knots of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.NbPoles">
+<code class="sig-name descname">NbPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.NbPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of poles of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes all the data needed to build a BSpline curve equivalent to the sequence of adjacent Bezier curves still contained in this framework. A knot is inserted on the computed BSpline curve at the junction point of two consecutive Bezier curves. The degree of continuity of the BSpline curve will be increased at the junction point of two consecutive Bezier curves if their tangent vectors at this point are parallel. An angular tolerance given at the time of construction of this framework is used to check the parallelism of the two tangent vectors. Use the available consultation functions to access the computed data. This data may then be used to construct the BSpline curve. Warning Ensure that the curves in the sequence of Bezier curves contained in this framework are adjacent. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above as this condition is not checked, either when defining the Bezier curve sequence or at the time of computation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.Poles">
+<code class="sig-name descname">Poles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.Poles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Loads the Poles table with the poles of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Poles array must be equal to the number of poles of the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above, as these conditions are not checked, and an error may occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurves2dToBSplineCurve2d.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve">
+<em class="property">class </em><code class="sig-name descname">Convert_CompBezierCurvesToBSplineCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs a framework for converting a sequence of adjacent non-rational Bezier curves into a BSpline curve. Knots will be created on the computed BSpline curve at each junction point of two consecutive Bezier curves. The degree of continuity of the BSpline curve will be increased at the junction point of two consecutive Bezier curves if their tangent vectors at this point are parallel. AngularTolerance (given in radians, and defaulted to 1.0 e-4) will be used to check the parallelism of the two tangent vectors. Use the following functions: - AddCurve to define in sequence the adjacent Bezier curves to be converted, - Perform to compute the data needed to build the BSpline curve, - and the available consultation functions to access the computed data. This data may be used to construct the BSpline curve.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param AngularTolerance</dt>
+<dd class="field-odd"><p>default value is 1.0e-4</p>
+</dd>
+<dt class="field-even">type AngularTolerance</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.AddCurve">
+<code class="sig-name descname">AddCurve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.AddCurve" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Adds the Bezier curve defined by the table of poles Poles, to the sequence (still contained in this framework) of adjacent Bezier curves to be converted into a BSpline curve. Only polynomial (i.e. non-rational) Bezier curves are converted using this framework. If this is not the first call to the function (i.e. if this framework still contains data in its Bezier curve sequence), the degree of continuity of the BSpline curve will be increased at the time of computation at the first point of the added Bezier curve (i.e. the first point of the Poles table). This will be the case if the tangent vector of the curve at this point is parallel to the tangent vector at the end point of the preceding Bezier curve in the Bezier curve sequence still contained in this framework. An angular tolerance given at the time of construction of this framework will be used to check the parallelism of the two tangent vectors. This checking procedure and all related computations will be performed by the Perform function. When the adjacent Bezier curve sequence is complete, use the following functions: - Perform to compute the data needed to build the BSpline curve, - and the available consultation functions to access the computed data. This data may be used to construct the BSpline curve. Warning The Bezier curve sequence treated by this framework is automatically initialized with the first Bezier curve when the function is first called. During subsequent use of this function, ensure that the first point of the added Bezier curve (i.e. the first point of the Poles table) is coincident with the last point of the Bezier curve sequence (i.e. the last point of the preceding Bezier curve in the sequence) still contained in this framework. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above, as this condition is not checked either when defining the Bezier curve sequence or at the time of computation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.Degree">
+<code class="sig-name descname">Degree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.Degree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the degree of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.KnotsAndMults">
+<code class="sig-name descname">KnotsAndMults</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.KnotsAndMults" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><ul>
+<li><dl class="simple">
+<dt>loads the Knots table with the knots, - and loads the Mults table with the corresponding multiplicities of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Knots and Mults arrays must be equal to the number of knots in the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above as these conditions are not checked, and an error may occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Knots</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Knots</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param Mults</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Mults</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.NbKnots">
+<code class="sig-name descname">NbKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.NbKnots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of knots of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.NbPoles">
+<code class="sig-name descname">NbPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.NbPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of poles of the BSpline curve whose data is computed in this framework. Warning Take particular care not to use this function before the computation is performed (Perform function), as this condition is not checked and an error may therefore occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Computes all the data needed to build a BSpline curve equivalent to the adjacent Bezier curve sequence still contained in this framework. A knot is inserted on the computed BSpline curve at the junction point of two consecutive Bezier curves. The degree of continuity of the BSpline curve will be increased at the junction point of two consecutive Bezier curves if their tangent vectors at this point are parallel. An angular tolerance given at the time of construction of this framework is used to check the parallelism of the two tangent vectors. Use the available consultation functions to access the computed data. This data may then be used to construct the BSpline curve. Warning Make sure that the curves in the Bezier curve sequence contained in this framework are adjacent. An error may occur at the time of computation if this condition is not satisfied. Particular care must be taken with respect to the above as this condition is not checked, either when defining the Bezier curve sequence or at the time of computation.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.Poles">
+<code class="sig-name descname">Poles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.Poles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Loads the Poles table with the poles of the BSpline curve whose data is computed in this framework. Warning - Do not use this function before the computation is performed (Perform function). - The length of the Poles array must be equal to the number of poles of the BSpline curve whose data is computed in this framework. Particular care must be taken with respect to the above, as these conditions are not checked, and an error may occur.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_CompBezierCurvesToBSplineCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles">
+<em class="property">class </em><code class="sig-name descname">Convert_CompPolynomialToPoles</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Warning! Continuity can be at MOST the maximum degree of the polynomial functions TrueIntervals<span class="classifier">this is the true parameterisation for the composite curve that is</span><span class="classifier">the curve has myContinuity if the nth curve is parameterized between myTrueIntervals(n) and myTrueIntervals(n+1) //! Coefficients have to be the implicit ‘c form’: Coefficients[Numcurves][MaxDegree+1][Dimension] //! Warning! The NumberOfCoefficient of an polynome is his degree + 1 Example: To convert the linear function f(x) = 2*x + 1 on the domaine [2,5] to BSpline with the bound [-1,1]. Arguments are</span><span class="classifier">NumCurves = 1; Continuity = 1; Dimension = 1; MaxDegree = 1; NumCoeffPerCurve [1] = {2}; Coefficients[2] = {1, 2}; PolynomialIntervals[1,2] = {{2,5}} TrueIntervals[2] = {-1, 1}</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param NumCurves</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NumCurves</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Continuity</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Continuity</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Dimension</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dimension</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaxDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NumCoeffPerCurve</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NumCoeffPerCurve</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Coefficients</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Coefficients</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param PolynomialIntervals</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PolynomialIntervals</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray2OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param TrueIntervals</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TrueIntervals</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* To Convert sevral span with different order of Continuity. Warning: The Length of Continuity have to be NumCurves-1</p>
+</dd>
+<dt class="field-even">param NumCurves</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NumCurves</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Dimension</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Dimension</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaxDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param NumCoeffPerCurve</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NumCoeffPerCurve</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param Coefficients</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Coefficients</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param PolynomialIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PolynomialIntervals</dt>
+<dd class="field-odd"><p>TColStd_Array2OfReal &amp;</p>
+</dd>
+<dt class="field-even">param TrueIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TrueIntervals</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* To Convert only one span.</p>
+</dd>
+<dt class="field-odd">param Dimension</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dimension</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaxDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Degree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Degree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Coefficients</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Coefficients</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param PolynomialIntervals</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PolynomialIntervals</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param TrueIntervals</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TrueIntervals</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.Degree">
+<code class="sig-name descname">Degree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.Degree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.Knots">
+<code class="sig-name descname">Knots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.Knots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Knots of the n-dimensional Bspline</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param K</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type K</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.Multiplicities">
+<code class="sig-name descname">Multiplicities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.Multiplicities" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Multiplicities of the knots in the BSpline</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param M</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type M</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.NbKnots">
+<code class="sig-name descname">NbKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.NbKnots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Degree of the n-dimensional Bspline</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.NbPoles">
+<code class="sig-name descname">NbPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.NbPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>number of poles of the n-dimensional BSpline</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.Poles">
+<code class="sig-name descname">Poles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.Poles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the poles of the n-dimensional BSpline in the following format<span class="classifier">[1..NumPoles][1..Dimension]</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Poles</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Poles</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray2OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CompPolynomialToPoles.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_CompPolynomialToPoles.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_ConeToBSplineSurface">
+<em class="property">class </em><code class="sig-name descname">Convert_ConeToBSplineSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConeToBSplineSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface" title="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The equivalent B-spline surface as the same orientation as the Cone in the U and V parametric directions. //! Raised if U1 = U2 or U1 = U2 + 2.0 * Pi Raised if V1 = V2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param C</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type C</dt>
+<dd class="field-even"><p>gp_Cone</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* The equivalent B-spline surface as the same orientation as the Cone in the U and V parametric directions. //! Raised if V1 = V2.</p>
+</dd>
+<dt class="field-even">param C</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type C</dt>
+<dd class="field-odd"><p>gp_Cone</p>
+</dd>
+<dt class="field-even">param V1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConeToBSplineSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_ConeToBSplineSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve">
+<em class="property">class </em><code class="sig-name descname">Convert_ConicToBSplineCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.BuildCosAndSin">
+<code class="sig-name descname">BuildCosAndSin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.BuildCosAndSin" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Parametrisation</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Parametrisation</dt>
+<dd class="field-odd"><p>Convert_ParameterisationType</p>
+</dd>
+<dt class="field-even">param CosNumerator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CosNumerator</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param SinNumerator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type SinNumerator</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Denominator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Denominator</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">param Knots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Knots</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Mults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Mults</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None:param Parametrisation:</p>
+</dd>
+<dt class="field-odd">type Parametrisation</dt>
+<dd class="field-odd"><p>Convert_ParameterisationType</p>
+</dd>
+<dt class="field-even">param UFirst</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UFirst</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param ULast</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ULast</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param CosNumerator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CosNumerator</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param SinNumerator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type SinNumerator</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Denominator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Denominator</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Degree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Degree</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">param Knots</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Knots</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Mults</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Mults</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.Degree">
+<code class="sig-name descname">Degree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.Degree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the degree of the BSpline curve whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.IsPeriodic">
+<code class="sig-name descname">IsPeriodic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.IsPeriodic" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the BSpline curve whose data is computed in this framework is periodic.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.Knot">
+<code class="sig-name descname">Knot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.Knot" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the knot of index Index to the knots table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the knots table of the BSpline curve whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.Multiplicity">
+<code class="sig-name descname">Multiplicity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.Multiplicity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the multiplicity of the knot of index Index to the knots table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the knots table of the BSpline curve whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.NbKnots">
+<code class="sig-name descname">NbKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.NbKnots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of knots of the BSpline curve whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.NbPoles">
+<code class="sig-name descname">NbPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.NbPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of poles of the BSpline curve whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.Pole">
+<code class="sig-name descname">Pole</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.Pole" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the pole of index Index to the poles table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table of the BSpline curve whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt2d</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.Weight">
+<code class="sig-name descname">Weight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.Weight" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the weight of the pole of index Index to the poles table of the BSpline curve whose data is computed in this framework. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table of the BSpline curve whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ConicToBSplineCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_CylinderToBSplineSurface">
+<em class="property">class </em><code class="sig-name descname">Convert_CylinderToBSplineSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_CylinderToBSplineSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface" title="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The equivalent B-splineSurface as the same orientation as the cylinder in the U and V parametric directions. //! Raised if U1 = U2 or U1 = U2 + 2.0 * Pi Raised if V1 = V2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Cyl</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Cyl</dt>
+<dd class="field-even"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* The equivalent B-splineSurface as the same orientation as the cylinder in the U and V parametric directions. //! Raised if V1 = V2.</p>
+</dd>
+<dt class="field-even">param Cyl</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Cyl</dt>
+<dd class="field-odd"><p>gp_Cylinder</p>
+</dd>
+<dt class="field-even">param V1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param V2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type V2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_CylinderToBSplineSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_CylinderToBSplineSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface">
+<em class="property">class </em><code class="sig-name descname">Convert_ElementarySurfaceToBSplineSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.IsUPeriodic">
+<code class="sig-name descname">IsUPeriodic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.IsUPeriodic" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.IsVPeriodic">
+<code class="sig-name descname">IsVPeriodic</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.IsVPeriodic" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns true if the BSpline surface whose data is computed in this framework is periodic in the u or v parametric direction.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbUKnots">
+<code class="sig-name descname">NbUKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbUKnots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbUPoles">
+<code class="sig-name descname">NbUPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbUPoles" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbVKnots">
+<code class="sig-name descname">NbVKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbVKnots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of knots for the u or v parametric direction of the BSpline surface whose data is computed in this framework .</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbVPoles">
+<code class="sig-name descname">NbVPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.NbVPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the number of poles for the u or v parametric direction of the BSpline surface whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.Pole">
+<code class="sig-name descname">Pole</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.Pole" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the pole of index (UIndex,VIndex) to the poles table of the BSpline surface whose data is computed in this framework. Exceptions Standard_OutOfRange if, for the BSpline surface whose data is computed in this framework: - UIndex is outside the bounds of the poles table in the u parametric direction, or - VIndex is outside the bounds of the poles table in the v parametric direction.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>gp_Pnt</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.UDegree">
+<code class="sig-name descname">UDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.UDegree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.UKnot">
+<code class="sig-name descname">UKnot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.UKnot" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the U-knot of range UIndex. Raised if UIndex &lt; 1 or UIndex &gt; NbUKnots.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.UMultiplicity">
+<code class="sig-name descname">UMultiplicity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.UMultiplicity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the multiplicity of the U-knot of range UIndex. Raised if UIndex &lt; 1 or UIndex &gt; NbUKnots.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.VDegree">
+<code class="sig-name descname">VDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.VDegree" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the degree for the u or v parametric direction of the BSpline surface whose data is computed in this framework.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.VKnot">
+<code class="sig-name descname">VKnot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.VKnot" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the V-knot of range VIndex. Raised if VIndex &lt; 1 or VIndex &gt; NbVKnots.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.VMultiplicity">
+<code class="sig-name descname">VMultiplicity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.VMultiplicity" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the multiplicity of the V-knot of range VIndex. Raised if VIndex &lt; 1 or VIndex &gt; NbVKnots.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param VIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.Weight">
+<code class="sig-name descname">Weight</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.Weight" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Returns the weight of the pole of index (UIndex,VIndex) to the poles table of the BSpline surface whose data is computed in this framework. Exceptions Standard_OutOfRange if, for the BSpline surface whose data is computed in this framework: - UIndex is outside the bounds of the poles table in the u parametric direction, or - VIndex is outside the bounds of the poles table in the v parametric direction.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param UIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type UIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param VIndex</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type VIndex</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_EllipseToBSplineCurve">
+<em class="property">class </em><code class="sig-name descname">Convert_EllipseToBSplineCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_EllipseToBSplineCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve" title="OCC.Core.Convert.Convert_ConicToBSplineCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ConicToBSplineCurve</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The equivalent B-spline curve has the same orientation as the ellipse E.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param E</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type E</dt>
+<dd class="field-even"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-odd">param Parameterisation</dt>
+<dd class="field-odd"><p>default value is Convert_TgtThetaOver2</p>
+</dd>
+<dt class="field-even">type Parameterisation</dt>
+<dd class="field-even"><p>Convert_ParameterisationType</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* The ellipse E is limited between the parametric values U1, U2. The equivalent B-spline curve is oriented from U1 to U2 and has the same orientation as E. //! Raised if U1 = U2 or U1 = U2 + 2.0 * Pi</p>
+</dd>
+<dt class="field-even">param E</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type E</dt>
+<dd class="field-odd"><p>gp_Elips2d</p>
+</dd>
+<dt class="field-even">param U1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param U2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type U2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Parameterisation</dt>
+<dd class="field-even"><p>default value is Convert_TgtThetaOver2</p>
+</dd>
+<dt class="field-odd">type Parameterisation</dt>
+<dd class="field-odd"><p>Convert_ParameterisationType</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_EllipseToBSplineCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_EllipseToBSplineCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles">
+<em class="property">class </em><code class="sig-name descname">Convert_GridPolynomialToPoles</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>To only one polynomial Surface. The Length of &lt;PolynomialUIntervals&gt; and &lt;PolynomialVIntervals&gt; have to be 2. This values defined the parametric domain of the Polynomial Equation. //! Coefficients<span class="classifier">The &lt;Coefficients&gt; have to be formated than an ‘C array’ [MaxUDegree+1] [MaxVDegree+1] [3]</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param MaxUDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxUDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaxVDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxVDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param NumCoeff</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type NumCoeff</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param Coefficients</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Coefficients</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param PolynomialUIntervals</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PolynomialUIntervals</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param PolynomialVIntervals</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type PolynomialVIntervals</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* To one grid of polynomial Surface. Warning! Continuity in each parametric direction can be at MOST the maximum degree of the polynomial functions. //! &lt;TrueUIntervals&gt;, &lt;TrueVIntervals&gt; : this is the true parameterisation for the composite surface //! Coefficients : The Coefficients have to be formated than an ‘C array’ [NbVSurfaces] [NBUSurfaces] [MaxUDegree+1] [MaxVDegree+1] [3] raises DomainError if &lt;NumCoeffPerSurface&gt; is not a [1, NbVSurfaces*NbUSurfaces, 1,2] array. if &lt;Coefficients&gt; is not a</p>
+</dd>
+<dt class="field-even">param NbUSurfaces</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NbUSurfaces</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NBVSurfaces</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NBVSurfaces</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param UContinuity</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type UContinuity</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VContinuity</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VContinuity</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaxUDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxUDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaxVDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxVDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NumCoeffPerSurface</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NumCoeffPerSurface</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray2OfInteger&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Coefficients</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Coefficients</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PolynomialUIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PolynomialUIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PolynomialVIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PolynomialVIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TrueUIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TrueUIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TrueVIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TrueVIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.NbUKnots">
+<code class="sig-name descname">NbUKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.NbUKnots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.NbUPoles">
+<code class="sig-name descname">NbUPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.NbUPoles" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.NbVKnots">
+<code class="sig-name descname">NbVKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.NbVKnots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.NbVPoles">
+<code class="sig-name descname">NbVPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.NbVPoles" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>UContinuity</strong> – <dl class="field-list simple">
+<dt class="field-odd">type UContinuity</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param VContinuity</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type VContinuity</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaxUDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxUDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaxVDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxVDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NumCoeffPerSurface</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NumCoeffPerSurface</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray2OfInteger&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Coefficients</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Coefficients</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PolynomialUIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PolynomialUIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param PolynomialVIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PolynomialVIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TrueUIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TrueUIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TrueVIntervals</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TrueVIntervals</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.Poles">
+<code class="sig-name descname">Poles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.Poles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the poles of the BSpline Surface</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray2OfPnt&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.UDegree">
+<code class="sig-name descname">UDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.UDegree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.UKnots">
+<code class="sig-name descname">UKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.UKnots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Knots in the U direction</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.UMultiplicities">
+<code class="sig-name descname">UMultiplicities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.UMultiplicities" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Multiplicities of the knots in the U direction</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.VDegree">
+<code class="sig-name descname">VDegree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.VDegree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.VKnots">
+<code class="sig-name descname">VKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.VKnots" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Knots in the V direction</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.VMultiplicities">
+<code class="sig-name descname">VMultiplicities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.VMultiplicities" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Multiplicities of the knots in the V direction</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_GridPolynomialToPoles.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_GridPolynomialToPoles.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_HyperbolaToBSplineCurve">
+<em class="property">class </em><code class="sig-name descname">Convert_HyperbolaToBSplineCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_HyperbolaToBSplineCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve" title="OCC.Core.Convert.Convert_ConicToBSplineCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ConicToBSplineCurve</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The hyperbola H is limited between the parametric values U1, U2 and the equivalent B-spline curve has the same orientation as the hyperbola.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param H</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type H</dt>
+<dd class="field-even"><p>gp_Hypr2d</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_HyperbolaToBSplineCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_HyperbolaToBSplineCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_ParabolaToBSplineCurve">
+<em class="property">class </em><code class="sig-name descname">Convert_ParabolaToBSplineCurve</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_ParabolaToBSplineCurve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ConicToBSplineCurve" title="OCC.Core.Convert.Convert_ConicToBSplineCurve"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ConicToBSplineCurve</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The parabola Prb is limited between the parametric values U1, U2 and the equivalent B-spline curve as the same orientation as the parabola Prb.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Prb</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Prb</dt>
+<dd class="field-even"><p>gp_Parab2d</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_ParabolaToBSplineCurve.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_ParabolaToBSplineCurve.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles">
+<em class="property">class </em><code class="sig-name descname">Convert_SequenceOfArray1OfPoles</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Append">
+<code class="sig-name descname">Append</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Assign">
+<code class="sig-name descname">Assign</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.ChangeFirst">
+<code class="sig-name descname">ChangeFirst</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.ChangeFirst" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.ChangeLast">
+<code class="sig-name descname">ChangeLast</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.ChangeLast" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.ChangeValue">
+<code class="sig-name descname">ChangeValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.ChangeValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Clear">
+<code class="sig-name descname">Clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Exchange">
+<code class="sig-name descname">Exchange</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Exchange" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.First">
+<code class="sig-name descname">First</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.First" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.InsertAfter">
+<code class="sig-name descname">InsertAfter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.InsertAfter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.InsertBefore">
+<code class="sig-name descname">InsertBefore</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.InsertBefore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.IsEmpty">
+<code class="sig-name descname">IsEmpty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.IsEmpty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Last">
+<code class="sig-name descname">Last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Length">
+<code class="sig-name descname">Length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Lower">
+<code class="sig-name descname">Lower</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Lower" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Prepend">
+<code class="sig-name descname">Prepend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Prepend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Remove">
+<code class="sig-name descname">Remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Remove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Reverse">
+<code class="sig-name descname">Reverse</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Reverse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Set">
+<code class="sig-name descname">Set</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Set" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.SetValue">
+<code class="sig-name descname">SetValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.SetValue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Size">
+<code class="sig-name descname">Size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Split">
+<code class="sig-name descname">Split</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Upper">
+<code class="sig-name descname">Upper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Upper" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.Value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.begin">
+<code class="sig-name descname">begin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.begin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.cbegin">
+<code class="sig-name descname">cbegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.cbegin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.cend">
+<code class="sig-name descname">cend</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.cend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.delNode">
+<em class="property">static </em><code class="sig-name descname">delNode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.delNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.end">
+<code class="sig-name descname">end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.end" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_SequenceOfArray1OfPoles.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_SphereToBSplineSurface">
+<em class="property">class </em><code class="sig-name descname">Convert_SphereToBSplineSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_SphereToBSplineSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface" title="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The equivalent B-spline surface as the same orientation as the sphere in the U and V parametric directions. //! Raised if U1 = U2 or U1 = U2 + 2.0 * Pi Raised if V1 = V2.</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Sph</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* The equivalent B-spline surface as the same orientation as the sphere in the U and V parametric directions. //! Raised if UTrim = True and Param1 = Param2 or Param1 = Param2 + 2.0 * Pi Raised if UTrim = False and Param1 = Param2</p>
+</dd>
+<dt class="field-even">param Sph</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Sph</dt>
+<dd class="field-odd"><p>gp_Sphere</p>
+</dd>
+<dt class="field-even">param Param1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Param1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Param2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Param2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UTrim</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type UTrim</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* The equivalent B-spline surface as the same orientation as the sphere in the U and V parametric directions.</p>
+</dd>
+<dt class="field-odd">param Sph</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Sph</dt>
+<dd class="field-even"><p>gp_Sphere</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_SphereToBSplineSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_SphereToBSplineSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.Convert_TorusToBSplineSurface">
+<em class="property">class </em><code class="sig-name descname">Convert_TorusToBSplineSurface</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.Convert_TorusToBSplineSurface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface" title="OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.Convert.Convert_ElementarySurfaceToBSplineSurface</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>The equivalent B-spline surface as the same orientation as the torus in the U and V parametric directions. //! Raised if U1 = U2 or U1 = U2 + 2.0 * Pi Raised if V1 = V2 or V1 = V2 + 2.0 * Pi</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param T</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type T</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">param U1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param U2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type U2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V1</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V1</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param V2</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type V2</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* The equivalent B-spline surface as the same orientation as the torus in the U and V parametric directions. //! Raised if Param1 = Param2 or Param1 = Param2 + 2.0 * Pi</p>
+</dd>
+<dt class="field-even">param T</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type T</dt>
+<dd class="field-odd"><p>gp_Torus</p>
+</dd>
+<dt class="field-even">param Param1</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Param1</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Param2</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Param2</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param UTrim</dt>
+<dd class="field-even"><p>default value is Standard_True</p>
+</dd>
+<dt class="field-odd">type UTrim</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None* The equivalent B-spline surface as the same orientation as the torus in the U and V parametric directions.</p>
+</dd>
+<dt class="field-odd">param T</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type T</dt>
+<dd class="field-even"><p>gp_Torus</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.Convert.Convert_TorusToBSplineSurface.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.Convert_TorusToBSplineSurface.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.Convert.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.Convert.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.Convert.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

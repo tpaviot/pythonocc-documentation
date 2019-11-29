@@ -1,0 +1,1108 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>OCC.Core.AdvApprox module &mdash; pythonocc API 7.4.0beta documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pythonocc API
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                7.4.0beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">OCC.Core.AdvApprox module</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pythonocc API</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>OCC.Core.AdvApprox module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/OCC.Core.AdvApprox.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-OCC.Core.AdvApprox">
+<span id="occ-core-advapprox-module"></span><h1>OCC.Core.AdvApprox module<a class="headerlink" href="#module-OCC.Core.AdvApprox" title="Permalink to this headline">¶</a></h1>
+<p>AdvApprox module, see official documentation at
+<a class="reference external" href="https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_advapprox.html">https://www.opencascade.com/doc/occt-7.4.0/refman/html/package_advapprox.html</a></p>
+<dl class="class">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction">
+<em class="property">class </em><code class="sig-name descname">AdvApprox_ApproxAFunction</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Constructs approximator tool. //! Warning: the Func should be valid reference to object of type inherited from class EvaluatorFunction from Approx with life time longer than that of the approximator tool; //! the result should be formatted in the following way<span class="classifier">&lt;–Num1DSS–&gt; &lt;–2 * Num2DSS–&gt; &lt;–3 * Num3DSS–&gt; R[0] …. R[Num1DSS]…..  R[Dimension-1] //! the order in which each Subspace appears should be consistent with the tolerances given in the create function and the results will be given in that order as well that is</span><span class="classifier">Curve2d(n) will correspond to the nth entry described by Num2DSS, Curve(n) will correspond to the nth entry described by Num3DSS The same type of schema applies to the Poles1d, Poles2d and Poles.</span></dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Num1DSS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num1DSS</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Num2DSS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num2DSS</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Num3DSS</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Num3DSS</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param OneDTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type OneDTol</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param TwoDTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type TwoDTol</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param ThreeDTol</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type ThreeDTol</dt>
+<dd class="field-even"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Last</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Last</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Continuity</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Continuity</dt>
+<dd class="field-even"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-odd">param MaxDeg</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxDeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param MaxSeg</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxSeg</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Func</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Func</dt>
+<dd class="field-even"><p>AdvApprox_EvaluatorFunction &amp;</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None* Approximation with user methode of cutting</p>
+</dd>
+<dt class="field-even">param Num1DSS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Num1DSS</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Num2DSS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Num2DSS</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Num3DSS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Num3DSS</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param OneDTol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type OneDTol</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param TwoDTol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TwoDTol</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param ThreeDTol</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ThreeDTol</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt; &amp;</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param MaxDeg</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxDeg</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaxSeg</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxSeg</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Func</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Func</dt>
+<dd class="field-odd"><p>AdvApprox_EvaluatorFunction &amp;</p>
+</dd>
+<dt class="field-even">param CutTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CutTool</dt>
+<dd class="field-odd"><p>AdvApprox_Cutting &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Approximation">
+<em class="property">static </em><code class="sig-name descname">Approximation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Approximation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TotalDimension</strong> – <dl class="field-list simple">
+<dt class="field-odd">type TotalDimension</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param TotalNumSS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TotalNumSS</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param LocalDimension</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LocalDimension</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param First</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type First</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Last</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Last</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param Evaluator</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Evaluator</dt>
+<dd class="field-odd"><p>AdvApprox_EvaluatorFunction &amp;</p>
+</dd>
+<dt class="field-even">param CutTool</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type CutTool</dt>
+<dd class="field-odd"><p>AdvApprox_Cutting &amp;</p>
+</dd>
+<dt class="field-even">param ContinuityOrder</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ContinuityOrder</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NumMaxCoeffs</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NumMaxCoeffs</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param MaxSegments</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type MaxSegments</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param TolerancesArray</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TolerancesArray</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param code_precis</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type code_precis</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NumCurves</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NumCurves</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">param NumCoeffPerCurveArray</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NumCoeffPerCurveArray</dt>
+<dd class="field-odd"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-even">param LocalCoefficientArray</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type LocalCoefficientArray</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param IntervalsArray</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type IntervalsArray</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param ErrorMaxArray</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ErrorMaxArray</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param AverageErrorArray</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type AverageErrorArray</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param ErrorCode</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type ErrorCode</dt>
+<dd class="field-odd"><p>int &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.AverageError">
+<code class="sig-name descname">AverageError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.AverageError" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the error as is in the algorithms</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Dimension</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dimension</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;:param Dimension:</p>
+</dd>
+<dt class="field-even">type Dimension</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Degree">
+<code class="sig-name descname">Degree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Degree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">AdvApprox_ApproxAFunction self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.HasResult">
+<code class="sig-name descname">HasResult</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.HasResult" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Knots">
+<code class="sig-name descname">Knots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Knots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.MaxError">
+<code class="sig-name descname">MaxError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.MaxError" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the error as is in the algorithms</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param Dimension</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Dimension</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;:param Dimension:</p>
+</dd>
+<dt class="field-even">type Dimension</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">param Index</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Index</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Multiplicities">
+<code class="sig-name descname">Multiplicities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Multiplicities" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfInteger&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.NbKnots">
+<code class="sig-name descname">NbKnots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.NbKnots" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.NbPoles">
+<code class="sig-name descname">NbPoles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.NbPoles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>as the name says</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.NumSubSpaces">
+<code class="sig-name descname">NumSubSpaces</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.NumSubSpaces" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Dimension</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Dimension</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Poles">
+<code class="sig-name descname">Poles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Poles" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>– returns the poles from the algorithms as is</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray2OfPnt&gt;* returns the poles at Index from the 3d subspace</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Poles1d">
+<code class="sig-name descname">Poles1d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Poles1d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the poles from the algorithms as is</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray2OfReal&gt;* returns the poles at Index from the 1d subspace</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Poles2d">
+<code class="sig-name descname">Poles2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.Poles2d" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the poles from the algorithms as is</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColgp_HArray2OfPnt2d&gt;* returns the poles at Index from the 2d subspace</p>
+</dd>
+<dt class="field-even">param Index</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param P</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type P</dt>
+<dd class="field-odd"><p>TColgp_Array1OfPnt2d</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_ApproxAFunction.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.AdvApprox.AdvApprox_Cutting">
+<em class="property">class </em><code class="sig-name descname">AdvApprox_Cutting</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_Cutting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_Cutting.Value">
+<code class="sig-name descname">Value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_Cutting.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>a</strong> – <dl class="field-list simple">
+<dt class="field-odd">type a</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param b</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type b</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">param cuttingvalue</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type cuttingvalue</dt>
+<dd class="field-odd"><p>float &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_Cutting.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_Cutting.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.AdvApprox.AdvApprox_DichoCutting">
+<em class="property">class </em><code class="sig-name descname">AdvApprox_DichoCutting</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_DichoCutting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.AdvApprox.AdvApprox_Cutting" title="OCC.Core.AdvApprox.AdvApprox_Cutting"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.AdvApprox.AdvApprox_Cutting</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/constants.html#None" title="(in Python v2.7)">None</a></p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_DichoCutting.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_DichoCutting.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.AdvApprox.AdvApprox_PrefAndRec">
+<em class="property">class </em><code class="sig-name descname">AdvApprox_PrefAndRec</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_PrefAndRec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.AdvApprox.AdvApprox_Cutting" title="OCC.Core.AdvApprox.AdvApprox_Cutting"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.AdvApprox.AdvApprox_Cutting</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>RecomendedCut</strong> – <dl class="field-list simple">
+<dt class="field-odd">type RecomendedCut</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param PrefferedCut</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type PrefferedCut</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">param Weight</dt>
+<dd class="field-even"><p>default value is 5</p>
+</dd>
+<dt class="field-odd">type Weight</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_PrefAndRec.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_PrefAndRec.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.AdvApprox.AdvApprox_PrefCutting">
+<em class="property">class </em><code class="sig-name descname">AdvApprox_PrefCutting</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_PrefCutting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#OCC.Core.AdvApprox.AdvApprox_Cutting" title="OCC.Core.AdvApprox.AdvApprox_Cutting"><code class="xref py py-class docutils literal notranslate"><span class="pre">OCC.Core.AdvApprox.AdvApprox_Cutting</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>CutPnts</strong> – <dl class="field-list simple">
+<dt class="field-odd">type CutPnts</dt>
+<dd class="field-odd"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_PrefCutting.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_PrefCutting.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox">
+<em class="property">class </em><code class="sig-name descname">AdvApprox_SimpleApprox</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>TotalDimension</strong> – <dl class="field-list simple">
+<dt class="field-odd">type TotalDimension</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param TotalNumSS</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type TotalNumSS</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param Continuity</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Continuity</dt>
+<dd class="field-odd"><p>GeomAbs_Shape</p>
+</dd>
+<dt class="field-even">param WorkDegree</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type WorkDegree</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param NbGaussPoints</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type NbGaussPoints</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">param JacobiBase</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type JacobiBase</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;PLib_JacobiPolynomial&gt; &amp;</p>
+</dd>
+<dt class="field-even">param Func</dt>
+<dd class="field-even"><p></p></dd>
+<dt class="field-odd">type Func</dt>
+<dd class="field-odd"><p>AdvApprox_EvaluatorFunction &amp;</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.AverageError">
+<code class="sig-name descname">AverageError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.AverageError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Index</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.Coefficients">
+<code class="sig-name descname">Coefficients</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.Coefficients" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the coefficients in the Jacobi Base</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.Degree">
+<code class="sig-name descname">Degree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.Degree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#int" title="(in Python v2.7)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.DifTab">
+<code class="sig-name descname">DifTab</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.DifTab" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.DumpToString">
+<code class="sig-name descname">DumpToString</code><span class="sig-paren">(</span><em class="sig-param">AdvApprox_SimpleApprox self</em><span class="sig-paren">)</span> &#x2192; std::string<a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.DumpToString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.FirstConstr">
+<code class="sig-name descname">FirstConstr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.FirstConstr" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the constraints at First</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray2OfReal&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.IsDone">
+<code class="sig-name descname">IsDone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.IsDone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/2/library/functions.html#bool" title="(in Python v2.7)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.LastConstr">
+<code class="sig-name descname">LastConstr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.LastConstr" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>returns the constraints at Last</dt><dd><dl class="field-list simple">
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray2OfReal&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.MaxError">
+<code class="sig-name descname">MaxError</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.MaxError" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Index</strong> – <dl class="field-list simple">
+<dt class="field-odd">type Index</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.Perform">
+<code class="sig-name descname">Perform</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.Perform" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><dl class="simple">
+<dt>Constructs approximator tool. //! Warning: the Func should be valid reference to object of type inherited from class EvaluatorFunction from Approx with life time longer than that of the approximator tool;</dt><dd><dl class="field-list simple">
+<dt class="field-odd">param LocalDimension</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LocalDimension</dt>
+<dd class="field-even"><p>TColStd_Array1OfInteger &amp;</p>
+</dd>
+<dt class="field-odd">param LocalTolerancesArray</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type LocalTolerancesArray</dt>
+<dd class="field-even"><p>TColStd_Array1OfReal &amp;</p>
+</dd>
+<dt class="field-odd">param First</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type First</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param Last</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type Last</dt>
+<dd class="field-even"><p>float</p>
+</dd>
+<dt class="field-odd">param MaxDegree</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">type MaxDegree</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+<dt class="field-odd">rtype</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.SomTab">
+<code class="sig-name descname">SomTab</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.SomTab" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>opencascade::handle&lt;TColStd_HArray1OfReal&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.AdvApprox_SimpleApprox.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.AdvApprox.AdvApprox_SimpleApprox.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator">
+<em class="property">class </em><code class="sig-name descname">SwigPyIterator</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.advance">
+<code class="sig-name descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.advance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.decr">
+<code class="sig-name descname">decr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.decr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.distance">
+<code class="sig-name descname">distance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.distance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.equal">
+<code class="sig-name descname">equal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.incr">
+<code class="sig-name descname">incr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.incr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.next" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.previous">
+<code class="sig-name descname">previous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.previous" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.thisown">
+<em class="property">property </em><code class="sig-name descname">thisown</code><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.thisown" title="Permalink to this definition">¶</a></dt>
+<dd><p>The membership flag</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="OCC.Core.AdvApprox.SwigPyIterator.value">
+<code class="sig-name descname">value</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#OCC.Core.AdvApprox.SwigPyIterator.value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Thomas Paviot
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
