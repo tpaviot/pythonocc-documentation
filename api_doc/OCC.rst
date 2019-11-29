@@ -6,21 +6,15 @@ Subpackages
 
 .. toctree::
 
-    OCC.Display
-
-Submodules
-----------
-
-.. toctree::
-
-   OCC.AIS
-   OCC.Adaptor2d
-   OCC.Adaptor3d
+   OCC.Core
+   OCC.Display
+   OCC.Extend
+   OCC.Wrapper
 
 Module contents
 ---------------
 
 .. automodule:: OCC
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

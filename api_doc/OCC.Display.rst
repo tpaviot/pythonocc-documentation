@@ -6,7 +6,7 @@ Subpackages
 
 .. toctree::
 
-    OCC.Display.WebGl
+   OCC.Display.WebGl
 
 Submodules
 ----------
@@ -23,6 +23,6 @@ Module contents
 ---------------
 
 .. automodule:: OCC.Display
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,7 +1,7 @@
-OCC\.Display\.WebGl\.simple\_server module
-==========================================
+OCC.Display.WebGl.simple\_server module
+=======================================
 
 .. automodule:: OCC.Display.WebGl.simple_server
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
