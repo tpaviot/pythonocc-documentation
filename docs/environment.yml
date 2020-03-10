@@ -1,0 +1,10 @@
+name: pythonocc-doc
+channels:
+  - dlr-sc
+dependencies:
+  # OCC
+  - pythonocc-core=7.4.0
+
+  # Doc
+  - sphinx
+  - sphinx_rtd_theme
