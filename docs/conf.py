@@ -295,13 +295,14 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
-intersphinx_mapping = {'https://docs.python.org/': None}
-
+intersphinx_mapping = {'https://docs.python.org/3/': None}
 
 # Automate building apidoc when building with readthedocs
 # https://github.com/rtfd/readthedocs.org/issues/1139
 def run_apidoc(_):
-    module = 'pythonocc'
+    import OCC
+    print("OCC path:", OCC.__path__)
+    module = 'OCC'
     cur_dir = os.path.abspath(os.path.dirname(__file__))
     output_path = os.path.join(cur_dir, 'apidoc')
     module_path = os.path.join(cur_dir, '..', module)
