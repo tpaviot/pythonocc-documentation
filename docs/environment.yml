@@ -1,6 +1,6 @@
 name: pythonocc-doc
 channels:
-  - conda-forge
+  - dlr-sc
 dependencies:
   # OCC
   - pythonocc-core=7.4.0
