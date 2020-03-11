@@ -301,11 +301,11 @@ intersphinx_mapping = {'https://docs.python.org/3/': None}
 # https://github.com/rtfd/readthedocs.org/issues/1139
 def run_apidoc(_):
     import OCC
-    print("OCC path:", OCC.__path__)
     module = 'OCC'
     cur_dir = os.path.abspath(os.path.dirname(__file__))
     output_path = os.path.join(cur_dir, 'apidoc')
-    module_path = os.path.join(cur_dir, '..', module)
+    module_path = OCC.__path__[0]
+    print(module_path)
     cmd_path = 'sphinx-apidoc'
     if hasattr(sys, 'real_prefix'):  # Check to see if we are in a virtualenv
         # If we are, assemble the path manually
