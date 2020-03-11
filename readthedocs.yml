@@ -4,9 +4,5 @@ sphinx:
   builder: html
   configuration: docs/conf.py
 
-formats:
-  - epub
-  - pdf
-
 conda:
   environment: docs/environment.yml
